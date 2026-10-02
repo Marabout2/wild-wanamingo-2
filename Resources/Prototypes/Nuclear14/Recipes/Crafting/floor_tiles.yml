@@ -1,0 +1,59 @@
+- type: construction
+  parent: BaseTile
+  id: FloorTileItemWoodOak
+  graph: N14FloorTileWoodOak
+  targetNode: woodtileoak
+
+- type: construction
+  parent: BaseTile
+  id: FloorTileItemWoodHouse
+  graph: N14FloorTileWoodHouse
+  targetNode: woodtilehouse
+
+- type: construction
+  parent: BaseTile
+  id: FloorTileItemWoodMaple
+  graph: N14FloorTileWoodMaple
+  targetNode: woodtilemaple
+
+- type: construction
+  parent: BaseTile
+  id: FloorTileItemMetalBlue
+  graph: N14FloorTileMetalBlue
+  targetNode: metaltileblue
+
+- type: construction
+  parent: BaseTile
+  id: FloorTileItemMetalRed
+  graph: N14FloorTileMetalRed
+  targetNode: metaltilered
+
+- type: construction
+  parent: BaseTile
+  id: FloorTileItemMetalGreen
+  graph: N14FloorTileMetalGreen
+  targetNode: metaltilegreen
+
+- type: construction
+  parent: BaseTile
+  id: FloorTilesItemMS13WoodCommon
+  graph: N14TilesWood
+  targetNode: WoodCommon
+
+- type: construction
+  parent: BaseTile
+  id: FloorTilesItemMS13WoodFancy
+  graph: N14TilesWood
+  targetNode: WoodFancy
+
+- type: construction
+  parent: BaseTile
+  id: FloorTilesItemMS13WoodMosaic
+  graph: N14TilesWood
+  targetNode: WoodMosaic
+
+- type: construction
+  parent: BaseTile
+  id: FloorTilesItemMS13WoodWide
+  graph: N14TilesWood
+  targetNode: WoodWide

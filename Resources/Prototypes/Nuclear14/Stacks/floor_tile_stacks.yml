@@ -1,0 +1,165 @@
+# Metal
+
+- type: stack
+  id: FloorTileMetalBlue
+  name: stack-n14-metal-floor-blue
+  spawn: FloorTileItemMetalBlue
+  maxCount: 30
+  
+- type: stack
+  id: FloorTileMetalBlueSolid
+  name: stack-n14-metal-floor-blue-solid
+  spawn: FloorTileItemMetalBlueSolid
+  
+- type: stack
+  id: FloorTileMetalGreen
+  name: stack-n14-metal-floor-green
+  spawn: FloorTileItemMetalGreen
+  
+- type: stack
+  id: FloorTileMetalGreenSolid
+  name: stack-n14-metal-floor-green-solid
+  spawn: FloorTileItemMetalGreenSolid
+  
+- type: stack
+  id: FloorTileMetalGrey
+  name: stack-n14-metal-floor-grey
+  spawn: FloorTileItemMetalGrey
+  
+- type: stack
+  id: FloorTileMetalGreySolid
+  name: stack-n14-metal-floor-grey-solid
+  spawn: FloorTileItemMetalGreySolid
+  
+- type: stack
+  id: FloorTileMetalGreyDark
+  name: stack-n14-metal-floor-grey-dark
+  spawn: FloorTileItemMetalGreyDark
+  
+- type: stack
+  id: FloorTileMetalGreyDarkSolid
+  name: stack-n14-metal-floor-grey-dark-solid
+  spawn: FloorTileItemMetalGreyDarkSolid
+  
+- type: stack
+  id: FloorTileMetalPurple
+  name: stack-n14-metal-floor-purple
+  spawn: FloorTileItemMetalPurple
+  
+- type: stack
+  id: FloorTileMetalPurpleSolid
+  name: stack-n14-metal-floor-purple-solid
+  spawn: FloorTileItemMetalPurpleSolid
+  
+- type: stack
+  id: FloorTileMetalRed
+  name: stack-n14-metal-floor-red
+  spawn: FloorTileItemMetalRed
+  
+- type: stack
+  id: FloorTileMetalRedSolid
+  name: stack-n14-metal-floor-red-solid
+  spawn: FloorTileItemMetalRedSolid
+  
+- type: stack
+  id: FloorTileMetalTeal
+  name: stack-n14-metal-floor-teal
+  spawn: FloorTileItemMetalTeal
+  
+- type: stack
+  id: FloorTileMetalTealSolid
+  name: stack-n14-metal-floor-teal-solid
+  spawn: FloorTileItemMetalTealSolid
+  
+- type: stack
+  id: FloorTileMetalWhite
+  name: stack-n14-metal-floor-white
+  spawn: FloorTileItemMetalWhite
+  
+- type: stack
+  id: FloorTileMetalWhiteSolid
+  name: stack-n14-metal-floor-white-solid
+  spawn: FloorTileItemMetalWhiteSolid
+  
+- type: stack
+  id: FloorTileMetalYellow
+  name: stack-n14-metal-floor-yellow
+  spawn: FloorTileItemMetalYellow
+  
+- type: stack
+  id: FloorTileMetalYellowSolid
+  name: stack-n14-metal-floor-yellow-solid
+  spawn: FloorTileItemMetalYellowSolid
+  
+- type: stack
+  id: FloorTileMetalFreezer
+  name: stack-n14-metal-floor-freezer
+  spawn: FloorTileItemMetalFreezer
+  
+# Other
+
+- type: stack
+  id: FloorTileWoodOak
+  name: stack-n14-wood-floor
+  spawn: FloorTileItemWoodOak
+  maxCount: 30
+
+# #Misfits Add: Plating-compatible stack for base SS14 areas
+- type: stack
+  id: FloorTileWoodOakCompat
+  name: stack-n14-wood-floor-station-compatible
+  spawn: FloorTileItemWoodOakCompat
+  maxCount: 30
+  
+- type: stack
+  id: FloorTileWoodHouse
+  name: stack-n14-wood-floor
+  spawn: FloorTileItemWoodHouse
+  maxCount: 30
+
+# #Misfits Add: Plating-compatible stack for base SS14 areas
+- type: stack
+  id: FloorTileWoodHouseCompat
+  name: stack-n14-wood-floor-station-compatible
+  spawn: FloorTileItemWoodHouseCompat
+  maxCount: 30
+
+- type: stack
+  id: FloorTileWoodMaple
+  name: stack-n14-wood-floor
+  spawn: FloorTileItemWoodMaple
+  maxCount: 30
+
+# #Misfits Add: Plating-compatible stack for base SS14 areas
+- type: stack
+  id: FloorTileWoodMapleCompat
+  name: stack-n14-wood-floor-station-compatible
+  spawn: FloorTileItemWoodMapleCompat
+  maxCount: 30
+  
+- type: stack
+  id: FloorTileCarpetRed
+  name: stack-n14-carpet-floor
+  spawn: FloorTileItemCarpetRed
+  
+  
+# MS13
+- type: stack
+  id: FloorTileMetalIndustrial
+  name: stack-n14-industrial-floor
+  spawn: FloorTileItemMetalIndustrial
+  
+- type: stack
+  id: FloorTileMetalMS13
+  name: stack-n14-metal-tile-floor
+  spawn: FloorTileItemMetalMS13
+  
+- type: stack
+  id: FloorTileMetalGrate
+  name: stack-n14-metal-grate-floor
+  spawn: FloorTileItemMetalGrate
+  
+- type: stack
+  id: FloorTileMetalSolid
+  name: stack-n14-metal-solid-floor
+  spawn: FloorTileItemMetalSolid

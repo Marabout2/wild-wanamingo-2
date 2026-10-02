@@ -1,0 +1,8 @@
+- type: material
+  id: N14Iron
+  stackEntity: N14IngotIron1
+  name: materials-N14iron
+  unit: materials-unit-bar
+  icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: ingot_iron }
+  color: "#B0C4DE"
+  price: 0.02

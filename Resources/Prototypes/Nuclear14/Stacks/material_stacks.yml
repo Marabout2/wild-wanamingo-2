@@ -1,0 +1,6 @@
+- type: stack
+  id: N14Iron
+  name: stack-n14-iron
+  icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: ingot_iron }
+  spawn: N14IngotIron1
+  maxCount: 30
