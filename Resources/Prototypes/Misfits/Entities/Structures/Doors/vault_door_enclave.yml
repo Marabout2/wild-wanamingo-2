@@ -1,0 +1,32 @@
+- type: entity
+  parent: N14DoorVaultControls
+  id: MisfitsDoorVaultEnclaveControls
+  name: Enclave Blast Door Controls
+  description: A handy control panel for opening the Enclave blast door.
+  suffix: Enclave
+  components:
+  - type: AutoLinkTransmitter
+    channel: EnclaveVaultdoor
+
+# Inside panel, NCO and above. EnclaveNCO is held by the NCO, Junior Officer, Senior Officer,
+# Command and Head Scientist access groups, and by nobody below them - see
+# Resources/Prototypes/Misfits/Access/enclave.yml.
+#
+# Lock is what actually enforces this. SignalSwitchSystem runs no access check of its own, so a bare
+# AccessReader here would do nothing; a locked panel eats the click in TryUnlock instead. Note the
+# inherited quirk: LockOnClick is false, so once someone with access unlocks it the panel stays
+# unlocked for everyone until it is re-locked with the alt-click verb. Same as the vault panel.
+
+- type: entity
+  parent: MisfitsDoorVaultEnclaveControls
+  id: MisfitsDoorVaultEnclaveControlsLocked
+  suffix: Enclave, NCO locked
+  components:
+  - type: Appearance
+  - type: Lock
+  - type: LockVisuals
+  - type: AccessReader
+    access: [["EnclaveNCO"]]
+
+# The outside terminal raiders hack. No AccessReader on purpose - the Pip-Boy check and the active
+# raid check in SharedVaultDoorConsoleSystem are the gate.

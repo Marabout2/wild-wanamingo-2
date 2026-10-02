@@ -1,0 +1,39 @@
+- type: accessLevel
+  id: BOS
+  name: id-card-access-level-bos
+
+- type: accessLevel
+  id: BOSInitiate
+  name: id-card-access-level-bos-initiate
+
+- type: accessLevel
+  id: BOSScribe
+  name: id-card-access-level-bos-scribe
+
+- type: accessLevel
+  id: BOSKnight
+  name: id-card-access-level-bos-knight
+
+- type: accessLevel
+  id: BOSPaladin
+  name: id-card-access-level-bos-paladin
+
+- type: accessLevel
+  id: BOSSeniorScribe
+  name: id-card-access-level-bos-senior-scribe
+
+- type: accessLevel
+  id: BOSSeniorKnight
+  name: id-card-access-level-bos-senior-knight
+
+- type: accessLevel
+  id: BOSSeniorPaladin
+  name: id-card-access-level-bos-senior-paladin
+
+- type: accessLevel
+  id: BOSHeadKnight
+  name: id-card-access-level-bos-head-knight
+
+- type: accessLevel
+  id: BOSHeadPaladin
+  name: id-card-access-level-bos-head-paladin

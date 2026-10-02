@@ -1,0 +1,15 @@
+# Ported from Resources/Prototypes/Decals/markings.yml in wild-wanamingo.
+
+- type: decal
+  id: Markings
+  abstract: true
+
+- type: decal
+  id: Bots
+  parent: Markings
+  abstract: true
+
+- type: decal
+  id: Warn
+  parent: Markings
+  abstract: true

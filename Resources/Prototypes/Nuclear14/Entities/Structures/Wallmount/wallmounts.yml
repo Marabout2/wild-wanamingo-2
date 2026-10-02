@@ -1,0 +1,59 @@
+# Rewritten for Wizden's stash system (SecretStash + ToolOpenable), same pattern as the toilet stash.
+- type: entity
+  parent: BaseSign
+  id: N14WallmountVent
+  name: vent
+  description: An airvent. Could be a good stash.
+  components:
+  - type: WallMount
+    arc: 360
+  - type: Sprite
+    drawdepth: Overdoors
+    sprite: Misfits/Legacy/Structures/Storage/storage.rsi
+    layers:
+    - state: vent
+      map: [ "base" ]
+  - type: SecretStash
+    secretStashName: secret-stash-part-vent
+    maxItemSize: Normal
+  - type: ToolOpenable
+    name: secret-stash-part-vent
+  - type: ContainerContainer
+    containers:
+      stash: !type:ContainerSlot {}
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ToolOpenableVisuals.ToolOpenableVisualState:
+        base:
+          Open: { state: vent-open }
+          Closed: { state: vent }
+
+- type: entity
+  parent: N14WallmountVent
+  id: N14WallmountVentDamaged
+  suffix: damaged
+  components:
+  - type: Sprite
+    layers:
+    - state: vent-damaged
+      map: [ "base" ]
+  - type: GenericVisualizer
+    visuals:
+      enum.ToolOpenableVisuals.ToolOpenableVisualState:
+        base:
+          Open: { state: vent-open }
+          Closed: { state: vent-damaged }
+
+- type: entity
+  parent: N14WallmountVent
+  id: N14WallmountVentOpen
+  suffix: open
+  components:
+  - type: Sprite
+    layers:
+    - state: vent-open
+      map: [ "base" ]
+  - type: ToolOpenable
+    name: secret-stash-part-vent
+    isOpen: true

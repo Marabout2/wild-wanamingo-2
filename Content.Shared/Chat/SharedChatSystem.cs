@@ -102,6 +102,7 @@ public abstract partial class SharedChatSystem : EntitySystem
     private void CacheRadios()
     {
         _keyCodes = ProtoMan.EnumeratePrototypes<RadioChannelPrototype>()
+            .Where(x => x.KeyCode != '\0') // Misfits Change: channels with no keycode can't be used with a prefix
             .ToFrozenDictionary(x => x.KeyCode);
     }
 

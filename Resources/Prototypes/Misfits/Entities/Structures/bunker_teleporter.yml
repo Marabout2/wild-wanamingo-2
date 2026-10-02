@@ -1,0 +1,6 @@
+- type: entity
+  id: N14BaseBunkerTeleporter
+  parent: BaseStructure
+  abstract: true
+  components:
+  - type: InteractionOutline

@@ -1,0 +1,6 @@
+# Ported from Resources/Prototypes/Decals/minitile_white.yml in wild-wanamingo.
+
+- type: decal
+  id: MiniTileWhite
+  parent: MiniTile
+  abstract: true

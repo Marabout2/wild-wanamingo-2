@@ -1,0 +1,37 @@
+- type: entity
+  id: N14WellBoarded
+  name: Boarded well
+  description: It's a well that's been boarded up. Maybe a crowbar will reveal it's secrets.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Structures/Misc/well.rsi
+    noRot: true
+    netsync: false
+    state: well
+  - type: Transform
+    anchored: true
+    noRot: true
+  - type: Clickable
+  - type: Tag
+    tags:
+      - Structure
+  - type: InteractionOutline
+  - type: Physics
+    bodyType: Static
+    canCollide: true
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.60,-0.4,0.6,0.7"
+        density: 190
+        mask:
+        - MachineMask
+        layer:
+        - Impassable
+        - MidImpassable
+        - LowImpassable
+# N14:TODO Add a way to open this and turn it into a ladder to dungeons.

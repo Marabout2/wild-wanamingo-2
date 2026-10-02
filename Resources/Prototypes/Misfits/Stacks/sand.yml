@@ -1,0 +1,6 @@
+- type: stack
+  id: N14Sand
+  name: sand
+  icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: powder_brass }
+  spawn: N14Sand1
+  maxCount: 30

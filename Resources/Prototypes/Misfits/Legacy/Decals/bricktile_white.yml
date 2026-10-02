@@ -1,0 +1,6 @@
+# Ported from Resources/Prototypes/Decals/bricktile_white.yml in wild-wanamingo.
+
+- type: decal
+  id: BrickTileWhite
+  parent: BrickTile
+  abstract: true

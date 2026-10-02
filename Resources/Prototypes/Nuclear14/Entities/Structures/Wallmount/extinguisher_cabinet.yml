@@ -1,0 +1,40 @@
+# Rewritten for Wizden's cabinet system (ItemSlots + Openable); only the sprite differs from ExtinguisherCabinet.
+- type: entity
+  parent: ExtinguisherCabinet
+  id: N14FireExtinguisherCabinet
+  name: extinguisher cabinet
+  description: A small wall mounted cabinet designed to hold a fire extinguisher.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Structures/Wallmounts/fireextinguisher.rsi
+    drawdepth: Overdoors
+    layers:
+    - state: frame
+    - state: extinguisher
+      map: ["enum.ItemCabinetVisuals.Layer"]
+      visible: true
+    - state: closed
+      map: ["enum.OpenableVisuals.Layer"]
+
+- type: entity
+  parent: N14FireExtinguisherCabinet
+  id: N14FireExtinguisherCabinetOpen
+  suffix: Open
+  components:
+  - type: Openable
+    opened: true
+
+- type: entity
+  parent: N14FireExtinguisherCabinet
+  id: N14FireExtinguisherCabinetFilled
+  suffix: Filled
+  components:
+  - type: ContainerFill
+    containers:
+      ItemCabinet:
+      - FireExtinguisher
+
+- type: entity
+  parent: [N14FireExtinguisherCabinetFilled, N14FireExtinguisherCabinetOpen]
+  id: N14FireExtinguisherCabinetFilledOpen
+  suffix: Filled, Open

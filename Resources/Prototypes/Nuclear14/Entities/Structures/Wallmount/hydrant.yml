@@ -1,0 +1,75 @@
+# Rewritten for Wizden's cabinet system (ItemSlots + Openable via BaseItemCabinet).
+- type: entity
+  parent: BaseItemCabinet
+  id: N14WallmountFireHydrant
+  name: fire hydrant
+  description: A wall mounted hydrant for putting out large fires.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: WallMount
+    arc: 360
+  - type: Transform
+    anchored: true
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Sprite
+    sprite: Nuclear14/Structures/Wallmounts/hydrant.rsi
+    snapCardinals: true
+    drawdepth: Overdoors
+    layers:
+    - state: frame
+    - state: closed
+      map: ["enum.OpenableVisuals.Layer"]
+    - state: closed # N14:TODO: Add a contents state
+      map: ["enum.ItemCabinetVisuals.Layer"]
+      visible: true
+  - type: ItemSlots
+    slots:
+      ItemCabinet:
+        ejectOnInteract: true
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Injurable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 80
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 40
+      behaviors:
+      - !type:EmptyAllContainersBehaviour
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+
+- type: entity
+  parent: N14WallmountFireHydrant
+  id: N14WallmountFireHydrantOpen
+  suffix: Open
+  components:
+  - type: Openable
+    opened: true
+
+- type: entity
+  parent: N14WallmountFireHydrant
+  id: N14WallmountFireHydrantOld
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Structures/Wallmounts/hydrantold.rsi
+
+- type: entity
+  parent: N14WallmountFireHydrantOld
+  id: N14WallmountFireHydrantOldOpen
+  suffix: Open
+  components:
+  - type: Openable
+    opened: true

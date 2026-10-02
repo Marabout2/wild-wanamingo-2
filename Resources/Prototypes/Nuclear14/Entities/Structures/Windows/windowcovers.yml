@@ -1,0 +1,64 @@
+- type: entity
+  id: N14WindowBars
+  parent: BaseStructure
+  name: window bars
+  description: Sturdy looking bars blocking access.
+  components:
+    - type: Construction
+      graph: N14WindowBars
+      node: bars
+    - type: MeleeSound
+      soundGroups:
+        Brute:
+          path:
+            "/Audio/Weapons/grille_hit.ogg"
+    - type: Sprite
+      sprite: Nuclear14/Structures/Windows/windowbars.rsi
+      state: icon
+    - type: Icon
+      sprite: Nuclear14/Structures/Windows/windowbars.rsi
+      state: icon
+    - type: Damageable
+      damageModifierSet: Metallic
+    - type: Injurable
+      damageContainer: Inorganic
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 200
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+    - type: PowerConsumer
+    - type: Electrified
+      requirePower: true
+      noWindowInTile: true
+      highVoltageNode: high
+      mediumVoltageNode: medium
+      lowVoltageNode: low
+    - type: NodeContainer
+      nodes:
+        high:
+          !type:CableDeviceNode
+          nodeGroupID: HVPower
+        medium:
+          !type:CableDeviceNode
+          nodeGroupID: MVPower
+        low:
+          !type:CableDeviceNode
+          nodeGroupID: Apc
+              
+
+- type: entity
+  id: N14WindowBars2
+  parent: N14WindowBars
+  components:
+    - type: Sprite
+      netsync: false
+      drawdepth: Overdoors
+      sprite: Nuclear14/Structures/Furniture/barricades.rsi
+      state: bars
+    - type: Icon
+      sprite: Nuclear14/Structures/Furniture/barricades.rsi
+      state: bars

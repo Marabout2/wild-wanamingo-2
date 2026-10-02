@@ -1,0 +1,7 @@
+- type: reagent
+  id: Cement
+  name: reagent-name-cement
+  group: Other
+  desc: reagent-desc-cement
+  physicalDesc: reagent-physical-desc-powdery
+  color: "#c0bdb8"

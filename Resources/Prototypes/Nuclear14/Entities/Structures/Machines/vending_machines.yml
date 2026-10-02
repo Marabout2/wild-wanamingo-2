@@ -1,0 +1,27 @@
+- type: entity
+  parent: BaseStructure
+  id: N14VendingMachineCigarette
+  suffix: storage, empty
+  name: cigarette vendor
+  description: A Pre-War vending machine that dispenses cigarettes.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Structures/Machines/VendingMachines/vendors.rsi
+    layers:
+    - state: cigarette
+  - type: Storage
+    grid:
+    - 0,0,3,3
+    maxItemSize: Normal
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+  - type: Transform
+    anchored: true
+  - type: InteractionOutline
+
+#MARK: Cig Filled

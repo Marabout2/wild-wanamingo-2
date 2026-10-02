@@ -1,0 +1,16 @@
+- type: constructionGraph
+  id: N14SandbagBarricade
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: sandbag
+          steps:
+            - material: N14Sand
+              amount: 2
+              doAfter: 2
+            - material: Thread
+              amount: 2
+              doAfter: 1
+    - node: sandbag
+      entity: N14BarricadeSandbagSingle

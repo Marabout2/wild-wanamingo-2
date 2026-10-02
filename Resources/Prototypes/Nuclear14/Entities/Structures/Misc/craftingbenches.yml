@@ -1,0 +1,70 @@
+- type: entity
+  parent: BaseStructure
+  id: N14WorkbenchBase
+  description: A workbench with metal working tools for crafting.
+  name: workbench
+  abstract: true
+  components:
+  - type: InteractionOutline
+  - type: Appearance
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,0,1.25,0.3"
+        density: 3000
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: Sprite
+    sprite: Nuclear14/Structures/Misc/workbenches.rsi
+    state: workbench
+    # Misfit Remove: Fix the offset issue with construction benches
+    offset: 0.5, 0
+  - type: Lathe
+  - type: MaterialStorage
+  - type: ActivatableUI
+    key: enum.LatheUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.LatheUiKey.Key:
+        type: LatheBoundUserInterface
+  - type: ExtensionCableReceiver
+  - type: ApcPowerReceiver
+    needsPower: false
+  - type: Anchorable
+  - type: Rotatable
+  - type: Tag
+    tags:
+    - N14Workbench
+
+- type: entity
+  parent: BaseLathe
+  id: N14WorkbenchIDPrinter # Circuit imprinter parent of this
+  description: An ID printer.
+  name: ID Printer
+  abstract: true # Base off of this per faction.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Structures/Machines/circuit_imprinter.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: [ "enum.LatheVisualLayers.IsRunning" ]
+    - state: unlit
+      shader: unshaded
+      map: [ "enum.PowerDeviceVisualLayers.Powered" ]
+    - state: panel
+      map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+  - type: MaterialStorage
+    whitelist:
+      tags:
+      - Sheet
+      - RawMaterial
+      - Ingot # Corvax-Change
+  - type: Lathe
+    producingSound: /Audio/Machines/circuitprinter.ogg
+    idleState: icon
+    runningState: building

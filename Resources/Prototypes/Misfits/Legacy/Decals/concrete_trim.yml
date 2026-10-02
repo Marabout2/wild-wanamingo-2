@@ -1,0 +1,15 @@
+# Ported from Resources/Prototypes/Decals/concrete_trim.yml in wild-wanamingo.
+
+- type: decal
+  id: ConcreteTrim
+  abstract: true
+
+- type: decal
+  id: GrayConcreteTrim
+  parent: ConcreteTrim
+  abstract: true
+
+- type: decal
+  id: OldConcreteTrim
+  parent: ConcreteTrim
+  abstract: true

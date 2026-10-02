@@ -1,0 +1,8 @@
+- type: material
+  id: Zinc
+  stackEntity: N14IngotZinc1
+  name: materials-zinc
+  unit: materials-unit-bar
+  icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: ingot_aluminum }
+  color: "#b0b7bd"
+  price: 0.02

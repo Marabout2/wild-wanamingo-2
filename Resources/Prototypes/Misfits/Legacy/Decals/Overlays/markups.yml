@@ -1,0 +1,6 @@
+# Ported from Resources/Prototypes/Decals/Overlays/markups.yml in wild-wanamingo.
+
+- type: decal
+  id: Markup
+  parent: Overlays
+  abstract: true

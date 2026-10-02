@@ -1,0 +1,6 @@
+- type: stack
+  id: Zinc
+  name: misfits-kit-zinc
+  icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: ingot_aluminum }
+  spawn: N14IngotZinc1
+  maxCount: 30
