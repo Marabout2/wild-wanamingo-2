@@ -1,5 +1,6 @@
 using System.Numerics;
 using Content.Client.CombatMode;
+using Content.Client.Misfits.Administration.Events; // Misfits Change: admin drag-teleport hook
 using Content.Client.Gameplay;
 using Content.Client.Graphics;
 using Content.Client.Outline;
@@ -397,6 +398,16 @@ public sealed partial class DragDropSystem : SharedDragDropSystem
             EndDrag();
             return true;
         }
+
+        // Misfits Change start: let admin drag-teleport handle drops on empty space.
+        var dragNoTargetEv = new DragNoTargetEvent(_draggedEntity.Value, coords);
+        RaiseLocalEvent(dragNoTargetEv);
+        if (dragNoTargetEv.Handled)
+        {
+            EndDrag();
+            return true;
+        }
+        // Misfits Change end
 
         if (outOfRange)
         {
