@@ -1757,6 +1757,23 @@
   weather: true
   indestructible: true
 
+# Wild Wanamingo: desert sand using Mojave Sun 13's ground sprite, otherwise the same as FloorWasteland.
+- type: tile
+  id: FloorWastelandSand
+  name: tiles-wasteland-sand
+  sprite: /Textures/Nuclear14/Tiles/ms13/desert.png
+  variants: 3
+  placementVariants: [0, 1, 2]
+  baseTurf: Space
+  isSubfloor: true
+  footstepSounds:
+    collection: N14FootstepDirt
+  friction: 0.30
+  thermalConductivity: 0.04
+  heatCapacity: 10000
+  weather: true
+  indestructible: true
+
 - type: tile
   id: FloorDirtNew
   name: tiles-dirt

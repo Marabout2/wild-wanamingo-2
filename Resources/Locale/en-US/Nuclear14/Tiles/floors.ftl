@@ -117,6 +117,7 @@ tiles-road-inner-middle-with-top = road inner middle with top
 tiles-road-outer-turn-south-top = road outer turn south top
 tiles-road-outer-turn-west-top = road outer turn west top
 tiles-wasteland = wasteland
+tiles-wasteland-sand = wasteland sand
 tiles-dirt = dirt
 tiles-dirt-indoors = dirt indoors
 tiles-rubble = rubble

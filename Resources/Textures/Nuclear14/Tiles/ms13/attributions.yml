@@ -1,0 +1,4 @@
+- files: ["desert.png"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/turf/ground.dmi, states desert_1-3)"
+  source: "https://github.com/Mojave-Sun/mojave-sun-13/blob/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e/mojave/icons/turf/ground.dmi"
