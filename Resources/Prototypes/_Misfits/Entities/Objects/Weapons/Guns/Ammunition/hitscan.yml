@@ -1,0 +1,302 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Weapons/Guns/Ammunition/hitscan.yml
+
+- type: entity
+  parent: LaserHitscanBase
+  id: N14MFLaserRed
+  name: N14MFLaserRed
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HitscanBasicDamage
+    damage:
+      types:
+        Heat: 24
+  - type: HitscanBasicVisuals
+    muzzleFlash:
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: muzzle_laser
+    travelFlash:
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: beam
+    impactFlash:
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: impact_laser
+
+- type: entity
+  parent: LaserHitscanBase
+  id: N14MFLaserAmber
+  name: N14MFLaserAmber
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HitscanBasicDamage
+    damage:
+      types:
+        Heat: 26
+  - type: HitscanBasicVisuals
+    muzzleFlash:
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: muzzle_laser
+    travelFlash:
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: beam
+    impactFlash:
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: impact_laser
+
+- type: entity
+  parent: LaserHitscanBase
+  id: N14MFLaserGreen
+  name: N14MFLaserGreen
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HitscanBasicDamage
+    damage:
+      types:
+        Heat: 24
+  - type: HitscanBasicVisuals
+    muzzleFlash:
+      sprite: Misfits/Objects/Weapons/Guns/Projectiles/green_laser.rsi
+      state: muzzle_green_laser
+    travelFlash:
+      sprite: Misfits/Objects/Weapons/Guns/Projectiles/green_laser.rsi
+      state: beam_green
+    impactFlash:
+      sprite: Misfits/Objects/Weapons/Guns/Projectiles/green_laser.rsi
+      state: impact_green_laser
+
+- type: entity
+  parent: LaserHitscanBase
+  id: N14MFLaserBlue
+  name: N14MFLaserBlue
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HitscanBasicDamage
+    damage:
+      types:
+        Heat: 28
+  - type: HitscanBasicVisuals
+    muzzleFlash:
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: muzzle_blue
+    travelFlash:
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: beam_blue
+    impactFlash:
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: impact_blue
+
+- type: entity
+  parent: LaserHitscanBase
+  id: N14MFLaserViolet
+  name: N14MFLaserViolet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HitscanBasicDamage
+    damage:
+      types:
+        Heat: 30
+  - type: HitscanBasicVisuals
+    muzzleFlash:
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: muzzle_u_laser
+    travelFlash:
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: u_laser
+    impactFlash:
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: impact_u_laser
+
+- type: entity
+  parent: LaserHitscanBase
+  id: N14AER9AutoLaser
+  name: N14AER9AutoLaser
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HitscanBasicDamage
+    damage:
+      types:
+        Heat: 20
+  - type: HitscanBasicVisuals
+    muzzleFlash:
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: muzzle_laser
+    travelFlash:
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: beam
+    impactFlash:
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: impact_laser
+
+- type: entity
+  parent: LaserHitscanBase
+  id: N14RCWLaserGreen
+  name: N14RCWLaserGreen
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HitscanBasicDamage
+    damage:
+      types:
+        Heat: 19
+  - type: HitscanBasicVisuals
+    muzzleFlash:
+      sprite: Misfits/Objects/Weapons/Guns/Projectiles/green_laser.rsi
+      state: muzzle_green_laser
+    travelFlash:
+      sprite: Misfits/Objects/Weapons/Guns/Projectiles/green_laser.rsi
+      state: beam_green
+    impactFlash:
+      sprite: Misfits/Objects/Weapons/Guns/Projectiles/green_laser.rsi
+      state: impact_green_laser
+
+- type: entity
+  parent: LaserHitscanBase
+  id: N14MFLaserYellow
+  name: N14MFLaserYellow
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HitscanBasicDamage
+    damage:
+      types:
+        Heat: 17
+  - type: HitscanBasicVisuals
+    muzzleFlash:
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: muzzle_laser
+    travelFlash:
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: beam
+    impactFlash:
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: impact_laser
+
+- type: entity
+  parent: BasicHitscan
+  id: N14PulseRed
+  name: N14PulseRed
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HitscanBasicDamage
+    damage:
+      types:
+        Heat: 15
+        Shock: 5
+  - type: HitscanBasicVisuals
+    muzzleFlash:
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: muzzle_laser
+    travelFlash:
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: beam
+    impactFlash:
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: impact_laser
+
+- type: entity
+  parent: LaserHitscanBase
+  id: N14PulseGreen
+  name: N14PulseGreen
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HitscanBasicDamage
+    damage:
+      types:
+        Heat: 18
+        Shock: 8
+  - type: HitscanBasicVisuals
+    muzzleFlash:
+      sprite: Misfits/Objects/Weapons/Guns/Projectiles/green_laser.rsi
+      state: muzzle_green_laser
+    travelFlash:
+      sprite: Misfits/Objects/Weapons/Guns/Projectiles/green_laser.rsi
+      state: beam_green
+    impactFlash:
+      sprite: Misfits/Objects/Weapons/Guns/Projectiles/green_laser.rsi
+      state: impact_green_laser
+
+- type: entity
+  parent: BasicHitscan
+  id: N14PulseBlue
+  name: N14PulseBlue
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HitscanBasicDamage
+    damage:
+      types:
+        Heat: 22
+        Shock: 10
+  - type: HitscanBasicVisuals
+    muzzleFlash:
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: muzzle_blue
+    travelFlash:
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: beam_blue
+    impactFlash:
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: impact_blue
+
+- type: entity
+  parent: BasicHitscan
+  id: N14ZAXPulseBlue
+  name: N14ZAXPulseBlue
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HitscanBasicDamage
+    damage:
+      types:
+        Piercing: 12
+        Shock: 12
+        Structural: 20
+  - type: HitscanBasicVisuals
+    muzzleFlash:
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: muzzle_blue
+    travelFlash:
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: beam_blue
+    impactFlash:
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: impact_blue
+
+- type: entity
+  parent: LaserHitscanBase
+  id: N14PulseViolet
+  name: N14PulseViolet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HitscanBasicDamage
+    damage:
+      types:
+        Heat: 28
+        Shock: 12
+  - type: HitscanBasicVisuals
+    muzzleFlash:
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: muzzle_u_laser
+    travelFlash:
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: u_laser
+    impactFlash:
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: impact_u_laser
+
+- type: entity
+  parent: LaserHitscanBase
+  id: N14AssaultronHeadLaser
+  name: N14AssaultronHeadLaser
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HitscanBasicDamage
+    damage:
+      types:
+        Heat: 75
+        Structural: 10
+  - type: HitscanBasicVisuals
+    muzzleFlash:
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: muzzle_laser
+    travelFlash:
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: beam
+    impactFlash:
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: impact_laser

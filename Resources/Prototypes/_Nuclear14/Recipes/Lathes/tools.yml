@@ -122,7 +122,7 @@
   completetime: 2
   materials:
     N14Copper: 500 #Misfits Change: Makes More sense
-    Steel: 100
+    Steel: 300
     Plastic: 200
 
 - type: latheRecipe

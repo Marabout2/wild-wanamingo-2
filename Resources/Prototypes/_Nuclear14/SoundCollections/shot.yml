@@ -253,12 +253,27 @@
 # Battery
 
 - type: soundCollection
+  id: N14LaserPistolGunshot
+  files:
+  - /Audio/Nuclear14/Weapons/Guns/Battery/N14WeaponLaserPistol/shot1.ogg
+  - /Audio/Nuclear14/Weapons/Guns/Battery/N14WeaponLaserPistol/shot2.ogg
+  - /Audio/Nuclear14/Weapons/Guns/Battery/N14WeaponLaserPistol/shot3.ogg
+
+- type: soundCollection
   id: N14PlasmaPistolGunshot
   files:
   - /Audio/Nuclear14/Weapons/Guns/Battery/N14WeaponPlasmaPistol/shot1.ogg
   - /Audio/Nuclear14/Weapons/Guns/Battery/N14WeaponPlasmaPistol/shot2.ogg
   - /Audio/Nuclear14/Weapons/Guns/Battery/N14WeaponPlasmaPistol/shot3.ogg
   - /Audio/Nuclear14/Weapons/Guns/Battery/N14WeaponPlasmaPistol/shot4.ogg
+
+- type: soundCollection
+  id: N14PlasmaDefenderGunshot
+  files:
+  - /Audio/Nuclear14/Weapons/Guns/Battery/N14WeaponPlasmaDefender/shot1.ogg
+  - /Audio/Nuclear14/Weapons/Guns/Battery/N14WeaponPlasmaDefender/shot2.ogg
+  - /Audio/Nuclear14/Weapons/Guns/Battery/N14WeaponPlasmaDefender/shot3.ogg
+  - /Audio/Nuclear14/Weapons/Guns/Battery/N14WeaponPlasmaDefender/shot4.ogg
 
 - type: soundCollection
   id: N14RechargerRifleGunshot
@@ -268,12 +283,62 @@
   - /Audio/Nuclear14/Weapons/Guns/Battery/N14WeaponRechargerRifle/shot3.ogg
 
 - type: soundCollection
+  id: N14RechargerPistolGunshot
+  files:
+  - /Audio/Nuclear14/Weapons/Guns/Battery/N14WeaponRechargerPistol/shot1.ogg
+  - /Audio/Nuclear14/Weapons/Guns/Battery/N14WeaponRechargerPistol/shot2.ogg
+  - /Audio/Nuclear14/Weapons/Guns/Battery/N14WeaponRechargerPistol/shot3.ogg
+  - /Audio/Nuclear14/Weapons/Guns/Battery/N14WeaponRechargerPistol/shot4.ogg
+  - /Audio/Nuclear14/Weapons/Guns/Battery/N14WeaponRechargerPistol/shot5.ogg
+  - /Audio/Nuclear14/Weapons/Guns/Battery/N14WeaponRechargerPistol/shot6.ogg
+  - /Audio/Nuclear14/Weapons/Guns/Battery/N14WeaponRechargerPistol/shot7.ogg
+  - /Audio/Nuclear14/Weapons/Guns/Battery/N14WeaponRechargerPistol/shot8.ogg
+
+- type: soundCollection
+  id: N14LaserAutoRifleGunshot
+  files:
+  - /Audio/Nuclear14/Weapons/Guns/Battery/N14WeaponLaserAutoRifle/shot1.ogg
+  - /Audio/Nuclear14/Weapons/Guns/Battery/N14WeaponLaserAutoRifle/shot2.ogg
+  - /Audio/Nuclear14/Weapons/Guns/Battery/N14WeaponLaserAutoRifle/shot3.ogg
+  - /Audio/Nuclear14/Weapons/Guns/Battery/N14WeaponLaserAutoRifle/shot4.ogg
+
+- type: soundCollection
   id: N14PlasmaAutoRifleGunshot
   files:
   - /Audio/Nuclear14/Weapons/Guns/Battery/N14WeaponPlasmaAutoRifle/shot1.ogg
   - /Audio/Nuclear14/Weapons/Guns/Battery/N14WeaponPlasmaAutoRifle/shot2.ogg
   - /Audio/Nuclear14/Weapons/Guns/Battery/N14WeaponPlasmaAutoRifle/shot3.ogg
   - /Audio/Nuclear14/Weapons/Guns/Battery/N14WeaponPlasmaAutoRifle/shot4.ogg
+
+- type: soundCollection
+  id: N14MultiplasGunshot
+  files:
+  - /Audio/Nuclear14/Weapons/Guns/Battery/N14WeaponMultiplas/shot1.ogg
+  - /Audio/Nuclear14/Weapons/Guns/Battery/N14WeaponMultiplas/shot2.ogg
+  - /Audio/Nuclear14/Weapons/Guns/Battery/N14WeaponMultiplas/shot3.ogg
+  - /Audio/Nuclear14/Weapons/Guns/Battery/N14WeaponMultiplas/shot4.ogg
+
+- type: soundCollection
+  id: N14WattzGunshot
+  files:
+  - /Audio/Nuclear14/Weapons/Guns/Battery/N14WeaponWattz/shot1.ogg
+
+- type: soundCollection
+  id: N14PlasmaCasterGunshot
+  files:
+  - /Audio/Nuclear14/Weapons/Guns/Battery/N14WeaponPlasmaCaster/shot1.ogg
+  - /Audio/Nuclear14/Weapons/Guns/Battery/N14WeaponPlasmaCaster/shot2.ogg
+  - /Audio/Nuclear14/Weapons/Guns/Battery/N14WeaponPlasmaCaster/shot3.ogg
+  - /Audio/Nuclear14/Weapons/Guns/Battery/N14WeaponPlasmaCaster/shot4.ogg
+  - /Audio/Nuclear14/Weapons/Guns/Battery/N14WeaponPlasmaCaster/shot5.ogg
+  - /Audio/Nuclear14/Weapons/Guns/Battery/N14WeaponPlasmaCaster/shot6.ogg
+
+- type: soundCollection
+  id: N14LaserGatlingGunshot
+  files:
+  - /Audio/Nuclear14/Weapons/Guns/Battery/N14WeaponLaserGatling/shot1.ogg
+
+# SMGs
 
 - type: soundCollection
   id: N1445SMGGunshot
@@ -377,3 +442,8 @@
   - /Audio/Nuclear14/Weapons/Guns/Heavy/N14WeaponLauncherGrenade/shot2.ogg
   - /Audio/Nuclear14/Weapons/Guns/Heavy/N14WeaponLauncherGrenade/shot3.ogg
   - /Audio/Nuclear14/Weapons/Guns/Heavy/N14WeaponLauncherGrenade/shot4.ogg
+
+- type: soundCollection
+  id: N14MinigunGunshot
+  files:
+  - /Audio/Nuclear14/Weapons/Guns/Heavy/N14WeaponMinigun/shot1.ogg

@@ -1,0 +1,249 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Recipes/Construction/tables.yml
+
+- type: construction
+  id: N14TableDeskSchoolDamaged
+  graph: N14WoodTableRecipes
+  startNode: start
+  targetNode: TableDeskSchoolDamaged
+  category: construction-category-furniture
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+  hide: false
+
+- type: construction
+  id: N14TableWoodEnd
+  graph: N14WoodTableRecipes
+  startNode: start
+  targetNode: TableWoodEnd
+  category: construction-category-furniture
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+  hide: false
+
+- type: construction
+  id: N14TableWoodRound
+  graph: N14WoodTableRecipes
+  startNode: start
+  targetNode: TableWoodRound
+  category: construction-category-furniture
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+  hide: false
+
+- type: construction
+  id: N14TableWoodSquare
+  graph: N14WoodTableRecipes
+  startNode: start
+  targetNode: TableWoodSquare
+  category: construction-category-furniture
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+  hide: false
+
+- type: construction
+  id: N14TableWoodLow
+  graph: N14WoodTableRecipes
+  startNode: start
+  targetNode: TableWoodLow
+  category: construction-category-furniture
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+  hide: false
+
+- type: construction
+  id: N14TableWoodStand
+  graph: N14WoodTableRecipes
+  startNode: start
+  targetNode: TableWoodStand
+  category: construction-category-furniture
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+  hide: false
+
+- type: construction
+  id: N14TableWoodCabledrum
+  graph: N14WoodTableRecipes
+  startNode: start
+  targetNode: TableWoodCabledrum
+  category: construction-category-furniture
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+  hide: false
+
+- type: construction
+  id: N14TableDeskWood
+  graph: N14WoodTableRecipes
+  startNode: start
+  targetNode: TableDeskWood
+  category: construction-category-furniture
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+  hide: false
+
+- type: construction
+  id: N14TableDeskWood2
+  graph: N14WoodTableRecipes
+  startNode: start
+  targetNode: TableDeskWood2
+  category: construction-category-furniture
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+  hide: false
+
+- type: construction
+  id: N14TableDeskWoodSmall
+  graph: N14WoodTableRecipes
+  startNode: start
+  targetNode: TableDeskWoodSmall
+  category: construction-category-furniture
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+  hide: false
+
+- type: construction
+  id: N14TableCasinoCards
+  graph: N14WoodTableRecipes
+  startNode: start
+  targetNode: TableCasinoCards
+  category: construction-category-furniture
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+  hide: false
+
+- type: construction
+  id: N14TableCasinoPool
+  graph: N14WoodTableRecipes
+  startNode: start
+  targetNode: TableCasinoPool
+  category: construction-category-furniture
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+  hide: false
+
+- type: construction
+  id: N14TableWoodenOvalWide
+  graph: N14WoodTableRecipes
+  startNode: start
+  targetNode: TableWoodenOvalWide
+  category: construction-category-furniture
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+  hide: false
+
+- type: construction
+  id: N14TableWoodenSquareWide
+  graph: N14WoodTableRecipes
+  startNode: start
+  targetNode: TableWoodenSquareWide
+  category: construction-category-furniture
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+  hide: false
+
+- type: construction
+  id: N14TableCounterCraft
+  graph: N14WoodTableRecipes
+  startNode: start
+  targetNode: TableCounterCraft
+  category: construction-category-furniture
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+  hide: false
+
+- type: construction
+  id: N14TableCounterCraftBend
+  graph: N14WoodTableRecipes
+  startNode: start
+  targetNode: TableCounterCraftBend
+  category: construction-category-furniture
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+  hide: false
+
+- type: construction
+  id: N14TableCounterCraftIntersect
+  graph: N14WoodTableRecipes
+  startNode: start
+  targetNode: TableCounterCraftIntersect
+  category: construction-category-furniture
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+  hide: false
+
+- type: construction
+  id: N14TableCounterCraftCross
+  graph: N14WoodTableRecipes
+  startNode: start
+  targetNode: TableCounterCraftCross
+  category: construction-category-furniture
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+  hide: false
+
+- type: construction
+  id: N14TableCasinoDice
+  graph: N14WoodTableRecipes
+  startNode: start
+  targetNode: TableCasinoDice
+  category: construction-category-furniture
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+  hide: false

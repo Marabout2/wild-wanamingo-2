@@ -1,0 +1,15 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Recipes/Construction/hydroponics.yml
+
+- type: construction
+  id: N14SeedExtractor
+  graph: N14SeedExtractor
+  startNode: start
+  targetNode: seedextractor
+  category: construction-category-machines
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+  hide: false

@@ -1,0 +1,143 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Recipes/Construction/machines.yml
+
+- type: construction
+  id: N14TallMachineFrame
+  graph: N14TallMachineFrame
+  startNode: start
+  targetNode: machineFrame
+  category: construction-category-machines
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+#MARK: Servers / Racks / Panels
+
+- type: construction
+  id: N14RackElectronics
+  graph: N14TallMachineFrame
+  startNode: start
+  targetNode: ElectronicsRack
+  category: construction-category-machines
+  objectType: Structure
+  canBuildInImpassable: false
+  hide: true #MARK: Hide (Forge-Change)
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: N14ServerRack
+  graph: N14TallMachineFrame
+  startNode: start
+  targetNode: ServerRack
+  category: construction-category-machines
+  objectType: Structure
+  canBuildInImpassable: false
+  hide: true #MARK: Hide (Forge-Change)
+  conditions:
+    - !type:TileNotBlocked
+
+#MARK: Terminals
+
+- type: construction
+  id: N14Terminal
+  graph: N14TallMachineFrame
+  startNode: start
+  targetNode: ServerRack
+  category: construction-category-machines
+  objectType: Structure
+  canBuildInImpassable: false
+  hide: true #MARK: Hide (Forge-Change)
+  conditions:
+    - !type:TileNotBlocked
+
+#MARK: Crafting Benches
+
+- type: construction
+  id: N14WorkbenchMetal
+  graph: N14WorkbenchMetal
+  startNode: start
+  targetNode: WorkbenchMetal
+  category: construction-category-machines
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+  hide: false
+
+- type: construction
+  id: N14WorkbenchAmmobench
+  graph: N14WorkbenchAmmobench
+  startNode: start
+  targetNode: WorkbenchAmmobench
+  category: construction-category-machines
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+  hide: false
+
+- type: construction
+  id: N14WorkbenchChemistryset
+  graph: N14WorkbenchChemistryset
+  startNode: start
+  targetNode: WorkbenchChemistryset
+  category: construction-category-machines
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+  hide: false
+
+- type: construction
+  id: N14WorkbenchForge
+  graph: N14WorkbenchForge
+  startNode: start
+  targetNode: WorkbenchForge
+  category: construction-category-machines
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+  hide: false
+
+- type: construction
+  id: N14WorkbenchTinkerbench
+  graph: N14WorkbenchTinkerbench
+  startNode: start
+  targetNode: WorkbenchTinkerbench
+  category: construction-category-machines
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+  hide: false
+
+- type: construction
+  id: N14WorkbenchArmorbench
+  graph: N14WorkbenchArmorbench
+  startNode: start
+  targetNode: WorkbenchArmorbench
+  category: construction-category-machines
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+  hide: false
+
+- type: construction
+  id: N14WorkbenchWeaponbench
+  graph: N14WorkbenchWeaponbench
+  startNode: start
+  targetNode: WorkbenchWeaponbench
+  category: construction-category-machines
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+  hide: false

@@ -1,0 +1,9 @@
+- type: construction
+  parent: BaseStructureFullTile
+  id: F14Smelter
+  graph: F14Smelter
+  startNode: start
+  targetNode: smelter
+  category: construction-category-machines
+  objectType: Structure
+  placementMode: SnapgridCenter

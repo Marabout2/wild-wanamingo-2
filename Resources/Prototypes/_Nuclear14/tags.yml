@@ -234,6 +234,45 @@
 #MARK: Ammo tags(Battery).
 
 - type: Tag
+  id: N14AmmoCell
+
+- type: Tag
+  id: N14PlasmaCartridge
+
+- type: Tag
+  id: N14PlasmaCartridgeMultiplas # #Misfits Add - dedicated tag for Multiplas spread ammo
+
+- type: Tag
+  id: N14PlasmaShell
+
+- type: Tag
+  id: N14PowerCellSmall
+
+- type: Tag
+  id: N14PowerCellAdvanced
+
+#Misfits Add — shared whitelist tags for consolidated energy ammo tiers.
+
+- type: Tag
+  id: N14MicrofusionCell
+
+# #Misfits Add - Dedicated tag for fusion cores (Gatling-only high-capacity cells)
+
+- type: Tag
+  id: N14FusionCore
+
+- type: Tag
+  id: N14ElectronChargePack
+
+- type: Tag
+  id: N14PulseEnergyCell
+
+- type: Tag
+  id: N14PulseMicrofusionCell
+
+#MARK: Ammo tags(explosives)
+
+- type: Tag
   id: N14Grenade
 
 - type: Tag

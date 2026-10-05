@@ -1,6 +1,86 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Weapons/Throwable/grenades.yml
 
 - type: entity
+  id: MisfitsBaseImpactGrenade
+  parent: BaseItem
+  abstract: true
+  components:
+  - type: Item
+    size: Small
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - Belt
+  - type: Appearance
+  - type: ImpactGrenade
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.25,0.25,0.25"
+        density: 20
+        mask:
+        - ItemMask
+        restitution: 0.3
+        friction: 0.2
+      impact:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.2
+        hard: false
+        mask:
+        - ThrownItem
+
+# #Misfits Add - T13-inspired impact fragmentation grenade. It has no timed
+# fuse: using it in hand removes the safety, and the shared ImpactGrenadeSystem
+# triggers it when the subsequent throw hits a surface, mob, vehicle, or stops.
+
+- type: entity
+  id: MisfitsGrenadeImpact
+  name: impact grenade
+  description: A ball-shaped fragmentation grenade with an impact fuze. Arm it before throwing; there is no timed fuse.
+  parent: MisfitsBaseImpactGrenade
+  components:
+  - type: Sprite
+    sprite: Misfits/Objects/Weapons/Throwable/beano_grenade.rsi
+    layers:
+    - state: icon
+      map: ["enum.TriggerVisualLayers.Base"]
+  - type: AnimationPlayer
+  - type: GenericVisualizer
+    visuals:
+      enum.Trigger.TriggerVisuals.VisualState:
+        enum.TriggerVisualLayers.Base:
+          Primed: { state: primed }
+          Unprimed: { state: icon }
+  - type: Damageable
+  - type: Injurable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 10
+      behaviors:
+      - !type:TriggerBehavior
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: ProjectileGrenade
+    triggerKey: trigger
+    fillPrototype: PelletClusterLethal
+    capacity: 20
+  - type: SpawnOnTrigger
+    proto: MisfitsGrenadeFragExplosion
+  - type: PacifismDangerousAttack
+  - type: ContainerContainer
+    containers:
+      cluster-payload: !type:Container
+
+# #Misfits Add - The tin grenade spawns this blast after its light fragments are
+# dispersed, avoiding trigger-order deletion of the fragment payload.
+
+- type: entity
   id: MisfitsGrenadeTinExplosion
   categories: [ HideSpawnMenu ]
   components:
@@ -14,6 +94,43 @@
     canCreateVacuum: false
     maxTileBreak: 0
     tileBreakScale: 0
+
+- type: entity
+  parent: GrenadeBase
+  id: MisfitsGrenadeFragDefensive
+  name: defensive frag grenade
+  description: A fragmentation-heavy grenade intended to be thrown from cover. Its small blast scatters lethal fragments across a wide area.
+  components:
+  - type: Sprite
+    sprite: Misfits/Objects/Weapons/Throwable/defensive_frag_grenade.rsi
+    layers:
+    - state: icon
+      map: ["enum.TriggerVisualLayers.Base"]
+  - type: ProjectileGrenade
+    triggerKey: trigger
+    fillPrototype: MisfitsPelletClusterDefensive
+    capacity: 45
+  - type: SpawnOnTrigger
+    proto: MisfitsGrenadeFragDefensiveExplosion
+  - type: PacifismDangerousAttack
+  - type: TriggerOnUse
+    keyOut: prime
+  - type: TimerTrigger
+    keysIn: [ prime ]
+    keyOut: trigger
+    delay: 4
+    beepSound:
+      path: "/Audio/Effects/beep1.ogg"
+      params:
+        volume: 5
+    initialBeepDelay: 0
+    beepInterval: 2
+  - type: EmitSoundOnTrigger
+    sound:
+      path: "/Audio/Weapons/Guns/Gunshots/batrifle.ogg"
+  - type: ContainerContainer
+    containers:
+      cluster-payload: !type:Container
 
 - type: entity
   id: MisfitsGrenadeFragExplosion
@@ -59,6 +176,39 @@
     canCreateVacuum: false
     maxTileBreak: 0
     tileBreakScale: 0
+
+- type: entity
+  name: plasma grenade
+  description: A high-energy grenade that erupts in a devastating burst of caustic green plasma.
+  parent: GrenadeBase
+  id: MisfitsGrenadePlasma
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Grenades/empgrenade.rsi
+    color: "#53FF38"
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: MisfitsPlasma
+    maxIntensity: 8
+    intensitySlope: 4
+    totalIntensity: 55
+    canCreateVacuum: false
+    maxTileBreak: 0
+    tileBreakScale: 0
+  - type: TriggerOnUse
+    keyOut: prime
+  - type: TimerTrigger
+    keysIn: [ prime ]
+    keyOut: trigger
+    beepSound:
+      path: "/Audio/Effects/beep1.ogg"
+      params:
+        volume: 5
+    initialBeepDelay: 0
+    beepInterval: 2
+  - type: TimerTriggerVisuals
+    primingSound:
+      path: /Audio/Effects/countdown.ogg
 
 - type: entity
   parent: SmokeGrenade

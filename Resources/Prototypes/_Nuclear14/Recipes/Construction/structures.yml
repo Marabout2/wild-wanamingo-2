@@ -1,0 +1,322 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Recipes/Construction/structures.yml
+
+- type: construction
+  id: N14WallWoodLog # Forge-Change
+  graph: N14WoodWall
+  startNode: start
+  targetNode: logWall
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  hide: false
+  conditions:
+    - !type:TileNotBlocked
+
+# # Doors
+
+- type: construction
+  id: N14DoorMakeshift # Forge-Change
+  graph: N14DoorGraph
+  startNode: start
+  targetNode: woodDoorMakeshift
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  hide: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: N14DoorBunker
+  graph: N14DoorBunker
+  startNode: start
+  targetNode: bunker
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  hide: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: N14DoorBunkerGlass
+  graph: N14DoorBunker
+  startNode: start
+  targetNode: glassBunker
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  hide: false
+  conditions:
+    - !type:TileNotBlocked
+
+# Slanted Structures
+## Walls
+
+- type: construction
+  id: N14WallWoodSlanted
+  graph: N14WoodWall
+  startNode: start
+  targetNode: WoodWall
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  hide: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: N14WallWoodTall
+  graph: N14WoodWall
+  startNode: start
+  targetNode: WallWoodTall
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  hide: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: N14WallScrapSlanted
+  graph: N14ScrapWall
+  startNode: start
+  targetNode: SheetScrapWall
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  hide: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: N14WallScrapTall
+  graph: N14ScrapWall
+  startNode: start
+  targetNode: SheetScrapWallTall
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  hide: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: N14WallScrapWhiteSlanted
+  graph: N14ScrapWall
+  startNode: start
+  targetNode: WhiteScrapWall
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  hide: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: N14WallScrapWhiteTall
+  graph: N14ScrapWall
+  startNode: start
+  targetNode: WhiteScrapWallTall
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  hide: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: N14WallScrapBlueSlanted
+  graph: N14ScrapWall
+  startNode: start
+  targetNode: BlueScrapWall
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  hide: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: N14WallScrapBlueTall
+  graph: N14ScrapWall
+  startNode: start
+  targetNode: BlueScrapWallTall
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  hide: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: N14WallScrapRedSlanted
+  graph: N14ScrapWall
+  startNode: start
+  targetNode: RedScrapWall
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  hide: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: N14WallScrapRedTall
+  graph: N14ScrapWall
+  startNode: start
+  targetNode: RedScrapWallTall
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  hide: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: N14WallRoughScrapSlanted
+  graph: N14ScrapWall
+  startNode: start
+  targetNode: RoughScrapWall
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  hide: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: N14WallRoughScrapTall
+  graph: N14ScrapWall
+  startNode: start
+  targetNode: RoughScrapWallTall
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  hide: false
+  conditions:
+    - !type:TileNotBlocked
+
+## Half Walls
+
+- type: construction
+  id: N14WallWoodHalf # Forge-Change
+  graph: N14HalfWall
+  startNode: start
+  targetNode: Wood
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  hide: false
+  conditions:
+    - !type:TileNotBlocked
+
+## Doors
+
+- type: construction
+  id: N14DoorWoodSlanted # Forge-Change
+  graph: N14DoorGraph
+  startNode: start
+  targetNode: WoodDoor
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  hide: false
+  conditions:
+    - !type:TileNotBlocked
+
+## Windows
+
+- type: construction
+  id: N14WallMetalHalf
+  graph: N14HalfWall
+  startNode: start
+  targetNode: Metal
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  hide: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: N14WindowBars
+  graph: N14WindowBars
+  startNode: start
+  targetNode: bars
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  hide: false
+  conditions:
+    - !type:TileNotBlocked
+
+
+
+# #Misfits Add: Concrete and brick wall construction recipes
+
+- type: construction
+  id: N14WallAdobe
+  graph: N14AdobeWall
+  startNode: start
+  targetNode: AdobeWall
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  hide: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: N14WallAdobeTall
+  graph: N14AdobeWall
+  startNode: start
+  targetNode: AdobeWallTall
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  hide: false
+  conditions:
+    - !type:TileNotBlocked
+
+# #Misfits Add: Tent construction recipes

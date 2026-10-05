@@ -97,6 +97,95 @@
 
     
 
+- type: entity
+  name: Baseball grenade
+  description: A hollowed-out baseball filled with explosives. Prime it in hand before throwing to detonate on impact.
+  parent: MisfitsBaseImpactGrenade
+  id: N14BaseballNade
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Weapons/Grenades/Baseballnade.rsi
+    layers:
+    - state: icon
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    #Misfits Change - use the structural-capable N14 explosion profile.
+    explosionType: N14DefaultStructural
+    maxIntensity: 2
+    intensitySlope: 10
+    totalIntensity: 20
+    canCreateVacuum: false
+    maxTileBreak: 0
+    tileBreakScale: 0
+
+- type: entity
+  name: Tin-nade
+  description: An improvised grenade whose thin casing scatters a small amount of weak shrapnel.
+  parent: GrenadeBase
+  id: N14TinNade
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Weapons/Grenades/TincanNade.rsi
+  # #Misfits Add - 10 x 15-piercing fragments. This is deliberately far below
+  # the offensive frag grenade's 20 x 45-piercing military fragmentation.
+  - type: ProjectileGrenade
+    triggerKey: trigger
+    fillPrototype: MisfitsPelletTinFragment
+    capacity: 10
+  - type: SpawnOnTrigger
+    proto: MisfitsGrenadeTinExplosion
+  - type: TriggerOnUse
+    keyOut: prime
+  - type: TimerTrigger
+    keysIn: [ prime ]
+    keyOut: trigger
+    examinable: false
+    delay: 1
+    beepSound:
+      path: "/Audio/Nuclear14/Weapons/Effects/Wpn_dynam_fuse.ogg"
+      params:
+        volume: 4
+  - type: RandomTimerTrigger
+    min: 1
+    max: 5
+  - type: ContainerContainer
+    containers:
+      cluster-payload: !type:Container
+
+- type: entity
+  name: Nuka-nade
+  description: An improvised Nuka-Cola grenade that erupts in a compact burst of Quantum-blue caustic plasma.
+  parent: GrenadeBase
+  id: N14NukaNade
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Weapons/Grenades/NukaNade.rsi
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    # Misfits Change - lighter plasma: 5 x 15 = 75 maximum caustic damage,
+    # with a smaller footprint than the standard plasma grenade. No ignition.
+    explosionType: MisfitsNukaPlasma
+    maxIntensity: 5
+    intensitySlope: 4
+    totalIntensity: 25
+    canCreateVacuum: false
+    maxTileBreak: 0
+    tileBreakScale: 0
+  - type: TriggerOnUse
+    keyOut: prime
+  - type: TimerTrigger
+    keysIn: [ prime ]
+    keyOut: trigger
+    examinable: false
+    delay: 1.5
+    beepSound:
+      path: "/Audio/Nuclear14/Weapons/Effects/Wpn_dynam_fuse.ogg"
+      params:
+        volume: 4
+  - type: RandomTimerTrigger
+    min: 3
+    max: 4
+
 - type: entity #should spawn fire only when it was activated and then thrown, but when its not activated it just breaks and spills welding fuel. 
   name: Nuka cocktail
   description: Nuka-Cola bottle filled with flammable fuel.
@@ -177,6 +266,136 @@
 
 - type: entity
   parent: GrenadeBase
+  id: N14PlasmaGrenade
+  name: plasma grenade
+  description: Powerful plasma grenade.
+  components:
+  - type: Sprite
+    sprite:  Nuclear14/Objects/Weapons/Grenades/PlasmaGrenade.rsi  
+    layers:
+    - state: icon
+      map: ["enum.TriggerVisualLayers.Base"]
+  - type: ProjectileGrenade
+    triggerKey: trigger
+    fillPrototype: BulletPlasma
+    capacity: 16
+  - type: PacifismDangerousAttack
+  - type: TriggerOnUse
+    keyOut: prime
+  - type: TimerTrigger
+    keysIn: [ prime ]
+    keyOut: trigger
+    beepSound:
+      path: "/Audio/Effects/beep1.ogg"
+      params:
+        volume: 5
+    initialBeepDelay: 0
+    beepInterval: 2
+  - type: EmitSoundOnTrigger
+    sound:
+      path: "/Audio/Nuclear14/Weapons/Guns/Battery/N14WeaponPlasmaAutoRifle/shot1.ogg"
+  - type: ContainerContainer
+    containers:
+      cluster-payload: !type:Container
+
+- type: entity
+  parent: GrenadeBase
+  id: N14KettleBomb
+  name: kettle bomb
+  description: Caution, hot!
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Weapons/Grenades/KettleBomb.rsi 
+    layers:
+    - state: icon
+      map: ["enum.TriggerVisualLayers.Base"]
+  - type: ProjectileGrenade
+    triggerKey: trigger
+    fillPrototype: BoilingWaterShot
+    capacity: 20
+  - type: PacifismDangerousAttack
+  - type: TriggerOnUse
+    keyOut: prime
+  - type: TimerTrigger
+    keysIn: [ prime ]
+    keyOut: trigger
+    beepSound:
+      path: "/Audio/Effects/beep1.ogg" #has to be whistling sound
+      params:
+        volume: 5
+    initialBeepDelay: 0
+    beepInterval: 2
+  - type: EmitSoundOnTrigger
+    sound:
+      path: "/Audio/Weapons/Guns/Gunshots/water_spray.ogg"
+  - type: ContainerContainer
+    containers:
+      cluster-payload: !type:Container
+
+- type: entity
+  parent: GrenadeBase
+  id: N14FirecrackerFull
+  name: firecrackers
+  description: BIG POP POP!
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Weapons/Grenades/FirecrackerFull.rsi  
+    layers:
+    - state: icon
+      map: ["enum.TriggerVisualLayers.Base"]
+  - type: ScatteringGrenade
+    triggerKey: trigger
+    fillPrototype: N14FirecrackerHalf
+    capacity: 3
+    distance: 15
+    velocity: 3
+  - type: PacifismDangerousAttack
+  - type: EmitSoundOnTrigger
+    sound:
+      path: "/Audio/Nuclear14/Weapons/Guns/Battery/N14WeaponPlasmaAutoRifle/shot1.ogg" # NEEDS small explosion sound probably from those popping thingies
+  - type: Damageable
+  - type: Injurable
+    damageContainer: Inorganic
+  - type: ContainerContainer
+    containers:
+      cluster-payload: !type:Container
+  - type: TriggerOnUse
+    keyOut: prime
+  - type: TimerTrigger
+    keysIn: [ prime ]
+    keyOut: trigger
+    delay: 10
+
+- type: entity
+  parent: GrenadeBase
+  id: N14FirecrackerHalf
+  name: firecrackers
+  description: POP POP!
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Weapons/Grenades/FirecrackerHalf.rsi  
+    layers:
+    - state: icon
+      map: ["enum.TriggerVisualLayers.Base"]
+  - type: ScatteringGrenade
+    triggerKey: trigger
+    fillPrototype: N14Firecracker
+    capacity: 4
+    distance: 7
+    velocity: 2
+  - type: PacifismDangerousAttack
+  - type: EmitSoundOnTrigger
+    sound:
+      path: "/Audio/Effects/snap.ogg" 
+  - type: Damageable
+  - type: Injurable
+    damageContainer: Inorganic
+  - type: ContainerContainer
+    containers:
+      cluster-payload: !type:Container
+
+- type: entity
+  parent: GrenadeBase
   id: N14Firecracker
   name: firecracker
   description: POP POP!
@@ -215,3 +434,43 @@
   - type: Damageable
   - type: Injurable
     damageContainer: Inorganic
+
+- type: entity
+  name: cryo grenade
+  description: B-brrr.
+  parent: GrenadeBase
+  id: N14CryoGrenade
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Weapons/Grenades/CryoGrenade.rsi
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    #Misfits Change - use the structural-capable N14 explosion profile.
+    explosionType: N14DefaultStructural
+    maxIntensity: 5
+    intensitySlope: 1
+    totalIntensity: 1
+    canCreateVacuum: false
+    maxTileBreak: 0
+    tileBreakScale: 0
+  - type: TriggerOnUse
+    keyOut: prime
+  - type: TimerTrigger
+    keysIn: [ prime ]
+    keyOut: trigger
+    examinable: false
+    delay: 1.5
+    beepSound:
+      path: "/Audio/Nuclear14/Weapons/Effects/Wpn_dynam_fuse.ogg"
+      params:
+        volume: 4
+  - type: RandomTimerTrigger
+    min: 3
+    max: 4
+  - type: SmokeOnTrigger
+    duration: 5
+    spreadAmount: 15
+    solution:
+      reagents:
+      - ReagentId: Fresium
+        Quantity: 15

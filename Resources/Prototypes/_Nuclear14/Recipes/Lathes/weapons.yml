@@ -18,6 +18,20 @@
 # MARK: Melee
 
 - type: latheRecipe
+  id: N14WastelandSpear
+  icon:
+    sprite: Nuclear14/Objects/Weapons/Melee/spear.rsi
+    state: spear
+  result: N14WastelandSpear
+  categories:
+  - N14WeaponMelee
+  completetime: 12
+  materials:
+    Steel: 100
+    Wood: 600
+    Cloth: 100
+
+- type: latheRecipe
   id: N14ScrapMachete
   icon:
     sprite: Nuclear14/Objects/Weapons/Melee/scrap_machete.rsi
@@ -127,7 +141,7 @@
   - N14Weapons
   completetime: 10
   materials:
-    Steel: 300
+    Steel: 500
 
 
 # Misfits Add: Recipes for payloads because there is none for modular mines.

@@ -79,7 +79,7 @@
     - back
     sprite: Objects/Fun/Instruments/guitar.rsi
   - type: StaticPrice # Forge-Add
-    price: 15
+    price: 35
 
 - type: entity
   parent: SaxophoneInstrument

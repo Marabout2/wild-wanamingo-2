@@ -1,0 +1,13 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/Datasets/Names/N14pet_robot.yml
+- type: localizedDataset
+  id: names_N14pet_robot
+  values:
+    prefix: names-n14-pet-robot-dataset-
+    count: 38
+
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/Datasets/Names/N14shopkeep_cat.yml
+- type: localizedDataset
+  id: names_N14shopkeep_cat
+  values:
+    prefix: names-n14-shopkeep-cat-dataset-
+    count: 21

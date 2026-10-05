@@ -11,15 +11,14 @@
     sprite: Nuclear14/Objects/Consumable/Food/meat.rsi
     state: brahminmeat
     netsync: false
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 20
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 5
-        - ReagentId: UncookedAnimalProteins
-          Quantity: 1
+  - type: Solution
+    solution:
+      maxVol: 20
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 5
+      - ReagentId: UncookedAnimalProteins
+        Quantity: 1
   - type: Temperature
   - type: InternalTemperature
     conductance: 0.43
@@ -44,12 +43,11 @@
     - Raw
   - type: Sprite
     state: morsels
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        reagents:
-        - ReagentId: N14UncookedAnimalProteinsRad
-          Quantity: 5
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: N14UncookedAnimalProteinsRad
+        Quantity: 5
   - type: ToolRefinable
     refineResult:
     - id: N14FoodMeatRadCutlet
@@ -65,12 +63,11 @@
   components:
   - type: Sprite
     state: brahminmeat
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        reagents:
-        - ReagentId: N14UncookedAnimalProteinsRad
-          Quantity: 9
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: N14UncookedAnimalProteinsRad
+        Quantity: 9
   - type: ToolRefinable
     refineResult:
     - id: N14FoodMeatBrahminCutlet
@@ -97,12 +94,11 @@
   components:
   - type: Sprite
     state: brahminmeat
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        reagents:
-        - ReagentId: N14UncookedAnimalProteinsRad
-          Quantity: 9
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: N14UncookedAnimalProteinsRad
+        Quantity: 9
   - type: ToolRefinable
     refineResult:
     - id: N14FoodMeatYaoguaiCutlet
@@ -156,14 +152,13 @@
   - type: Sprite
     sprite: Objects/Consumable/Food/meat.rsi
     state: cutlet
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        reagents:
-        - ReagentId: N14UncookedAnimalProteinsRad
-          Quantity: 3
-        - ReagentId: N14RadParticleFood
-          Quantity: 1
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: N14UncookedAnimalProteinsRad
+        Quantity: 3
+      - ReagentId: N14RadParticleFood
+        Quantity: 1
   - type: Temperature
   - type: InternalTemperature
     conductance: 0.43

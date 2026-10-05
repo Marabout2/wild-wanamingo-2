@@ -172,7 +172,7 @@
     containers:
     - board
   - type: StaticPrice
-    price: 280
+    price: 500
   - type: Physics
     bodyType: Static
   - type: Fixtures

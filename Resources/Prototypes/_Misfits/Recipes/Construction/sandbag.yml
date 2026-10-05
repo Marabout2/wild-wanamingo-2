@@ -1,5 +1,19 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Recipes/Construction/sandbag.yml
 
+- type: construction
+  id: N14BarricadeSandbagSingleConstruction
+  graph: N14SandbagBarricade
+  startNode: start
+  targetNode: sandbag
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  canRotate: true
+  hide: false
+
+# Construction graph defining the build steps
+
 - type: constructionGraph
   id: N14SandbagBarricade
   start: start

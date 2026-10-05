@@ -1,0 +1,22 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Entities/Mobs/NPCs/pets_decor.yml
+
+- type: entity
+  name: Haggis
+  id: N14MobCatHaggis
+  parent: MobCat
+  description: A little rough around the edges, but still cute as can be.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Mobs/Pets/cathaggis.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: cathaggis
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: cathaggis
+      Dead:
+        Base: cathaggis_dead
+  - type: RandomMetadata
+    nameSegments: [names_N14shopkeep_cat]

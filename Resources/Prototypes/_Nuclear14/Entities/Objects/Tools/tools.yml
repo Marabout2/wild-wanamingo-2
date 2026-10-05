@@ -6,7 +6,7 @@
   id: N14PowerDrill
   components:
   - type: StaticPrice
-    price: 30
+    price: 65
 
 - type: entity
   name: wirecutters

@@ -1,0 +1,254 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Entities/Mobs/NPCs/pets_machine.yml
+
+- type: entity
+  save: false
+  abstract: true
+  id: N14MobFriendlyRobot
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: LagCompensation
+  - type: Reactive
+    groups:
+      Acidic: [Touch]
+  - type: Clickable
+  - type: Damageable
+  - type: Injurable
+    damageContainer: Inorganic
+  - type: InteractionOutline
+  - type: Sprite
+    noRot: true
+    drawdepth: Mobs
+  - type: HealthExaminable
+    examinableTypes:
+    - Blunt
+    - Slash
+    - Piercing
+    - Heat
+    - Shock
+    locPrefix: silicon
+  - type: StatusEffects
+    allowed:
+    - Stun
+    - KnockedDown
+    - SlowedDown
+    - Stutter
+    - Electrocution
+  - type: MovedByPressure
+  - type: Examiner
+  - type: Physics
+    bodyType: KinematicController
+  - type: NameIdentifier
+    group: GenericNumber
+  - type: Repairable
+    doAfterDelay: 8
+    fuelCost: 15
+  - type: Pullable
+  - type: MobState
+    allowedStates:
+      - Alive
+      - Critical
+      - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      100: Critical
+      200: Dead
+    allowRevives: true # Misfits Fix - repaired pet robots need to transition back out of dead state
+  - type: Stamina
+    baseCritThreshold: 150
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 400
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+  - type: Input
+    context: "human"
+  - type: InputMover
+  - type: MobMover
+  - type: Body
+  - type: CombatMode
+  - type: RandomMetadata
+    nameSegments: [names_N14pet_robot]
+  - type: Grammar # Misfits Change - proper noun so names appear capitalized in says/emotes when possessed
+    attributes:
+      proper: true
+  - type: ZombieImmune # #Misfits Fix - robots should not be zombifiable; matches silicon_base, borg chassis, and NPC silicon patterns
+
+- type: entity
+  name: Waster Eyebot
+  id: N14MobPetEyebot #Basic Eyebot every other inherits from.
+  parent: N14MobFriendlyRobot
+  description: A military Eyebot with a smiling face to look at!
+  components:
+  - type: HTN
+    rootTask:
+      task: SimpleRangedHostileCompound
+  - type: InputMover
+  - type: MobMover
+  - type: NpcFactionMember
+    factions:
+    - SimpleNeutral
+  - type: GhostRole
+    name: ghost-role-information-n14pet-eyebot-name
+    description: ghost-role-information-n14pet-eyebot-description
+    rules: ghost-role-component-default-rules
+    makeSentient: false
+    allowMovement: true
+  - type: GhostTakeoverAvailable
+  - type: Sprite
+    sprite: Nuclear14/Mobs/Pets/eyebot_smile.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: icon
+    - state: shadow_eyebot
+  - type: Appearance
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      75: Critical
+      150: Dead
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: icon
+      Critical:
+        Base: dead
+      Dead:
+        Base: dead
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+            radius: 0.4
+        density: 150
+        mask:
+        - FlyingMobMask # Corvax-Change
+        layer:
+        - FlyingMobLayer # Corvax-Change
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 3
+    baseSprintSpeed : 6
+  - type: MovementAlwaysTouching
+  - type: Gun
+    minAngle: 8
+    maxAngle: 12
+    angleIncrease: 4
+    angleDecay: 4
+    fireRate: 1
+    soundGunshot:
+      collection: N14RechargerRifleGunshot
+    useKey: false
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+  - type: BasicEntityAmmoProvider
+    proto: BulletLaser
+    capacity: 9
+    count: 9
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 2
+    rechargeSound:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+  - type: RadioSpeaker
+    channels:
+    - PBS
+    enabled: true
+    toggleOnInteract: true
+  - type: IntrinsicRadioReceiver # Misfits Add - Eyebot speaks binary on the Binary radio channel
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - Binary
+  - type: ActiveRadio
+    channels:
+    - Binary
+    - Common
+  - type: HandheldLight
+    toggleOnInteract: false
+    addPrefix: true
+    blinkingBehaviourId: blinking
+    radiatingBehaviourId: radiating
+  - type: ToggleableVisuals
+    spriteLayer: light # old component defaulted to this
+  - type: PointLight
+    enabled: false
+    radius: 4.5
+    energy: 1
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+    netsync: false # #Misfits Fix - ToggleableLightVisualsSystem asserts PointLight must not have netsync; appearance changes handle client sync
+  - type: LightBehaviour
+    behaviours:
+      - !type:FadeBehaviour
+        id: radiating
+        interpolate: Linear
+        maxDuration: 2.0
+        startValue: 3.0
+        endValue: 2.0
+        isLooped: true
+        reverseWhenFinished: true
+      - !type:PulseBehaviour
+        id: blinking
+        interpolate: Nearest
+        maxDuration: 1.0
+        startValue: 0.1
+        endValue: 2.0
+        isLooped: true
+  - type: Battery
+    maxCharge: 600 # lights drain 3/s but recharge of 2 makes this 1/s. Therefore 600 is 10 minutes of light.
+    startingCharge: 600
+  - type: BatterySelfRecharger
+    autoRechargeRate: 2
+  - type: NoSlip
+  - type: Damageable
+  - type: Injurable
+    damageContainer: Silicon
+  - type: PassiveDamage
+    allowedStates:
+    - Alive
+    - Critical
+    damage:
+      types:
+        Blunt: -0.166667
+        Slash: -0.166667
+        Piercing: -0.166667
+        Heat: -0.125
+        Shock: -0.125
+        Cold: -0.125
+        Caustic: -0.125
+  - type: Speech # Corvax-Change
+    speechSounds: Borg
+  - type: TypingIndicator # Corvax-Change
+    proto: robot
+  - type: IdleSound #Misfits Change
+  - type: SpamEmitSound #Misfits Change
+    minInterval: 10
+    maxInterval: 60
+    sound:
+      collection: N14EyebotIdle
+      params:
+        volume: -5
+        maxDistance: 5
+
+- type: entity
+  name: Washington BoS Eyebot
+  id: N14MobPetEyebotWBoS
+  parent: N14MobPetEyebot
+  description: A military Eyebot in the colours of the Washington Brotherhood!
+  components:
+  - type: NpcFactionMember
+    factions:
+    - SimpleNeutral
+  - type: Sprite
+    sprite: Nuclear14/Mobs/Pets/eyebot_wbos.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: icon
+    - state: shadow_eyebot

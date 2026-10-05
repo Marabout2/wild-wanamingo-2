@@ -37,6 +37,9 @@
       - Ingot
       - Ore
       - Scrap
+  - type: Construction
+    graph: F14Smelter
+    node: smelter
   - type: Lathe
     idleState: smelter
     runningState: smelter

@@ -1,0 +1,12 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Recipes/Construction/utilities.yml
+
+- type: construction
+  id: N14LightSmallEmpty # Forge-Change
+  graph: N14Lightbulb
+  startNode: start
+  targetNode: bulbLight
+  category: construction-category-utilities
+  objectType: Structure
+  placementMode: SnapgridCenter
+  hide: false

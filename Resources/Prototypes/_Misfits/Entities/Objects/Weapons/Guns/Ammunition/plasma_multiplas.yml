@@ -1,0 +1,25 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Weapons/Guns/Ammunition/plasma_multiplas.yml
+
+- type: entity
+  name: multiplas cartridge
+  description: A high-capacity plasma cartridge engineered for the multiplas. It discharges three plasma bolts simultaneously, producing a concentrated spread rather than a single beam.
+  id: N14PlasmaCartridgeMultiplas
+  suffix: Full
+  parent: N14BasePlasmaCell
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Weapons/Guns/Ammunition/Battery/plasma.rsi
+    layers:
+      - map: [ "enum.PowerCellVisualLayers.Base" ]
+        state: empty
+      - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+        state: o2
+        shader: unshaded
+  - type: Tag
+    tags:
+      - N14PlasmaCartridgeMultiplas  # dedicated tag — keeps it out of single-shot plasma weapons
+      - N14AmmoCell
+  - type: Battery
+    maxCharge: 1800
+    startingCharge: 1800
+  # Override parent's ammo provider: fire BulletPlasmaSpread (3-pellet) at 300 cost/shot
