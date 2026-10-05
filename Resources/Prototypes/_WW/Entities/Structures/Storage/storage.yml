@@ -1,0 +1,100 @@
+# Mojave Sun 13 sprites on copies of Misfits/N14 prototypes (Wizden ones where N14 has none).
+# Sprites: Resources/Textures/MojaveSun (CC-BY-NC-SA-3.0, Mojave Sun 13).
+
+- type: entity
+  parent: N14ClosetFridgeDirty
+  id: F14Fridge
+  name: fridge
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Storage/storage.rsi
+    layers:
+    - state: fridge2
+      map: ["enum.StorageVisualLayers.Base"]
+    - state: fridge2_door
+      map: ["enum.StorageVisualLayers.Door"]
+    - sprite: Nuclear14/Structures/Storage/Closets/closet.rsi
+      state: welded
+      visible: false
+      map: ["enum.WeldableLayers.BaseWelded"]
+  - type: Icon
+    sprite: MojaveSun/Structures/Storage/storage.rsi
+    state: fridge2
+  - type: EntityStorageVisuals
+    stateBaseClosed: fridge2
+    stateDoorOpen: fridge2_open
+    stateDoorClosed: fridge2_door
+
+- type: entity
+  parent: N14ClosetFridgeDirty
+  id: F14FridgeTall
+  name: fridge
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Storage/storage.rsi
+    layers:
+    - state: fridge3
+      map: ["enum.StorageVisualLayers.Base"]
+    - state: fridge3_door
+      map: ["enum.StorageVisualLayers.Door"]
+    - sprite: Nuclear14/Structures/Storage/Closets/closet.rsi
+      state: welded
+      visible: false
+      map: ["enum.WeldableLayers.BaseWelded"]
+  - type: Icon
+    sprite: MojaveSun/Structures/Storage/storage.rsi
+    state: fridge3
+  - type: EntityStorageVisuals
+    stateBaseClosed: fridge3
+    stateDoorOpen: fridge3_open
+    stateDoorClosed: fridge3_door
+
+- type: entity
+  parent: N14ClosetBaseW
+  id: F14Safe
+  name: safe
+  description: A heavy old safe.
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Storage/storage.rsi
+    layers:
+    - state: safe
+      map: ["enum.StorageVisualLayers.Base"]
+    - state: safe
+      map: ["enum.StorageVisualLayers.Door"]
+    - sprite: Nuclear14/Structures/Storage/Closets/closet.rsi
+      state: welded
+      visible: false
+      map: ["enum.WeldableLayers.BaseWelded"]
+  - type: Icon
+    sprite: MojaveSun/Structures/Storage/storage.rsi
+    state: safe
+  - type: EntityStorageVisuals
+    stateBaseClosed: safe
+    stateDoorOpen: safe-open
+    stateDoorClosed: safe
+
+- type: entity
+  parent: N14ClosetBaseW
+  id: F14SafeSpinner
+  name: safe
+  description: A heavy old safe with a combination dial.
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Storage/storage.rsi
+    layers:
+    - state: safe_spinner
+      map: ["enum.StorageVisualLayers.Base"]
+    - state: safe_spinner
+      map: ["enum.StorageVisualLayers.Door"]
+    - sprite: Nuclear14/Structures/Storage/Closets/closet.rsi
+      state: welded
+      visible: false
+      map: ["enum.WeldableLayers.BaseWelded"]
+  - type: Icon
+    sprite: MojaveSun/Structures/Storage/storage.rsi
+    state: safe_spinner
+  - type: EntityStorageVisuals
+    stateBaseClosed: safe_spinner
+    stateDoorOpen: safe_spinner-open
+    stateDoorClosed: safe_spinner

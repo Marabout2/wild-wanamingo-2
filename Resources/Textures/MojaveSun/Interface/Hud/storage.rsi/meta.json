@@ -1,0 +1,56 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/hud/storage.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "block_under"
+        },
+        {
+            "name": "left"
+        },
+        {
+            "name": "right"
+        },
+        {
+            "name": "up"
+        },
+        {
+            "name": "down"
+        },
+        {
+            "name": "corner_left_up"
+        },
+        {
+            "name": "corner_right_up"
+        },
+        {
+            "name": "corner_left_down"
+        },
+        {
+            "name": "corner_right_down"
+        },
+        {
+            "name": "background"
+        },
+        {
+            "name": "close_overlay"
+        },
+        {
+            "name": "close"
+        },
+        {
+            "name": "close_left"
+        },
+        {
+            "name": "close_mid"
+        },
+        {
+            "name": "close_right"
+        }
+    ]
+}

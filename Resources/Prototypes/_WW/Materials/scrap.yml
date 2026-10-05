@@ -1,0 +1,28 @@
+# Scrap materials Misfits had no item for (see _WW/Entities/Objects/Materials/scrap.yml).
+
+- type: material
+  id: F14ScrapAluminum
+  stackEntity: F14ScrapAluminum1
+  name: materials-f14-scrap-aluminum
+  unit: materials-unit-bunch
+  icon: { sprite: /Textures/MojaveSun/Objects/Materials/scrap.rsi, state: scrap_aluminum }
+  color: "#A8A9AD"
+  price: 0.005
+
+- type: material
+  id: F14ScrapSilver
+  stackEntity: F14ScrapSilver1
+  name: materials-f14-scrap-silver
+  unit: materials-unit-bunch
+  icon: { sprite: /Textures/MojaveSun/Objects/Materials/scrap.rsi, state: scrap_silver }
+  color: "#C0C0C0"
+  price: 0.01
+
+- type: material
+  id: F14ScrapGlass
+  stackEntity: F14ScrapGlass1
+  name: materials-f14-scrap-glass
+  unit: materials-unit-bunch
+  icon: { sprite: /Textures/MojaveSun/Objects/Materials/scrap.rsi, state: scrap_glass_3 }
+  color: "#A9D6E5"
+  price: 0.002

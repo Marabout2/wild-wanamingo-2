@@ -1,0 +1,278 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/SoundCollections/mob_sounds.yml
+
+- type: soundCollection
+  id: N14DeathclawAttack
+  files:
+    - /Audio/Misfits/Mobs/Deathclaw/aggro1.ogg
+    - /Audio/Misfits/Mobs/Deathclaw/aggro2.ogg
+    - /Audio/Misfits/Mobs/Deathclaw/taunt.ogg
+
+# Deathclaw ambient idle
+
+- type: soundCollection
+  id: N14DeathclawIdle
+  files:
+    - /Audio/Misfits/Mobs/Deathclaw/idle.ogg
+
+# Gecko attack sounds (charge/hiss)
+
+- type: soundCollection
+  id: N14GeckoAttack
+  files:
+    - /Audio/Misfits/Mobs/Gecko/gecko_charge1.ogg
+    - /Audio/Misfits/Mobs/Gecko/gecko_charge2.ogg
+    - /Audio/Misfits/Mobs/Gecko/gecko_charge3.ogg
+
+# Gecko ambient idle
+
+- type: soundCollection
+  id: N14GeckoIdle
+  files:
+    - /Audio/Misfits/Mobs/Gecko/gecko_alert.ogg
+
+# Nightstalker attack sounds (bite/attack)
+
+- type: soundCollection
+  id: N14MoleratAttack
+  files:
+    - /Audio/Misfits/Mobs/Molerat/aggro1.ogg
+    - /Audio/Misfits/Mobs/Molerat/aggro2.ogg
+    - /Audio/Misfits/Mobs/Molerat/molerat_attack.ogg
+
+# Molerat ambient idle
+
+- type: soundCollection
+  id: N14MoleratIdle
+  files:
+    - /Audio/Misfits/Mobs/Molerat/idle.ogg
+    - /Audio/Misfits/Mobs/Molerat/taunt.ogg
+
+# Radscorpion attack sounds
+
+- type: soundCollection
+  id: N14RadscorpionAttack
+  files:
+    - /Audio/Misfits/Mobs/Radscorpion/radscorpion_attack.ogg
+    - /Audio/Misfits/Mobs/Radscorpion/radscorpion_snip.ogg
+    - /Audio/Misfits/Mobs/Scorpion/aggro.ogg
+
+# Radscorpion ambient idle
+
+- type: soundCollection
+  id: N14DogAttack
+  files:
+    - /Audio/Misfits/Mobs/Dog/dog_charge1.ogg
+    - /Audio/Misfits/Mobs/Dog/dog_charge2.ogg
+    - /Audio/Misfits/Mobs/Dog/dog_charge3.ogg
+    - /Audio/Misfits/Mobs/Dog/dog_charge4.ogg
+    - /Audio/Misfits/Mobs/Dog/dog_charge5.ogg
+    - /Audio/Misfits/Mobs/Dog/dog_charge6.ogg
+    - /Audio/Misfits/Mobs/Dog/dog_charge7.ogg
+
+# Dog alert/bark sounds
+
+- type: soundCollection
+  id: N14DogBark
+  files:
+    - /Audio/Misfits/Mobs/Dog/dog_bark1.ogg
+    - /Audio/Misfits/Mobs/Dog/dog_bark2.ogg
+    - /Audio/Misfits/Mobs/Dog/dog_bark3.ogg
+
+# Dog ambient idle (alert)
+
+- type: soundCollection
+  id: N14DogIdle
+  files:
+    - /Audio/Misfits/Mobs/Dog/dog_alert1.ogg
+    - /Audio/Misfits/Mobs/Dog/dog_alert2.ogg
+    - /Audio/Misfits/Mobs/Dog/dog_alert3.ogg
+
+# Radroach attack sounds
+
+- type: soundCollection
+  id: N14RadroachAttack
+  files:
+    - /Audio/Misfits/Mobs/Roach/radroach_attack.ogg
+    - /Audio/Misfits/Mobs/Roach/radroach_chitter.ogg
+
+# Radroach ambient idle
+
+- type: soundCollection
+  id: N14RadroachIdle
+  files:
+    - /Audio/Misfits/Mobs/Roach/idle1.ogg
+    - /Audio/Misfits/Mobs/Roach/idle2.ogg
+    - /Audio/Misfits/Mobs/Roach/idle3.ogg
+
+# Supermutant attack sounds (roar/aggro)
+
+- type: soundCollection
+  id: N14GhoulAttack
+  files:
+    - /Audio/Misfits/Mobs/Ghoul/aggro1.ogg
+    - /Audio/Misfits/Mobs/Ghoul/aggro2.ogg
+
+# Ghoul combat-entry alert — distinct from hit sounds, used by AggroSound component
+
+- type: soundCollection
+  id: N14GhoulAggro
+  files:
+    - /Audio/Misfits/Mobs/Ghoul/taunt.ogg
+
+# Ghoul ambient idle
+
+- type: soundCollection
+  id: N14GhoulIdle
+  files:
+    - /Audio/Misfits/Mobs/Ghoul/idle.ogg
+    - /Audio/Misfits/Mobs/Ghoul/taunt.ogg
+
+# Protectron aggro/attack sounds
+
+- type: soundCollection
+  id: N14ProtectronAttack
+  files:
+    - /Audio/Misfits/Mobs/Protectron/aggro1.ogg
+    - /Audio/Misfits/Mobs/Protectron/aggro2.ogg
+    - /Audio/Misfits/Mobs/Protectron/aggro3.ogg
+    - /Audio/Misfits/Mobs/Protectron/aggro4.ogg
+
+# Protectron ambient idle
+
+- type: soundCollection
+  id: N14ProtectronIdle
+  files:
+    - /Audio/Misfits/Mobs/Protectron/idle1.ogg
+    - /Audio/Misfits/Mobs/Protectron/idle2.ogg
+    - /Audio/Misfits/Mobs/Protectron/idle3.ogg
+    - /Audio/Misfits/Mobs/Protectron/idle4.ogg
+    - /Audio/Misfits/Mobs/Protectron/taunt1.ogg
+    - /Audio/Misfits/Mobs/Protectron/taunt2.ogg
+    - /Audio/Misfits/Mobs/Protectron/taunt3.ogg
+
+- type: soundCollection
+  id: N14SecuritronAttack
+  files:
+    - /Audio/Misfits/Mobs/Securitron/aggro1.ogg
+    - /Audio/Misfits/Mobs/Securitron/aggro2.ogg
+    - /Audio/Misfits/Mobs/Securitron/aggro3.ogg
+
+- type: soundCollection
+  id: N14SecuritronIdle
+  files:
+    - /Audio/Misfits/Mobs/Securitron/idle1.ogg
+    - /Audio/Misfits/Mobs/Securitron/idle2.ogg
+    - /Audio/Misfits/Mobs/Securitron/idle3.ogg
+    - /Audio/Misfits/Mobs/Securitron/idle4.ogg
+    - /Audio/Misfits/Mobs/Securitron/taunt1.ogg
+    - /Audio/Misfits/Mobs/Securitron/taunt2.ogg
+    - /Audio/Misfits/Mobs/Securitron/taunt3.ogg
+
+# Mr. Gutsy aggro/attack sounds
+
+- type: soundCollection
+  id: N14GutsyAttack
+  files:
+    - /Audio/Misfits/Mobs/Gutsy/aggro1.ogg
+    - /Audio/Misfits/Mobs/Gutsy/aggro2.ogg
+    - /Audio/Misfits/Mobs/Gutsy/aggro3.ogg
+    - /Audio/Misfits/Mobs/Gutsy/aggro4.ogg
+    - /Audio/Misfits/Mobs/Gutsy/aggro5.ogg
+    - /Audio/Misfits/Mobs/Gutsy/aggro6.ogg
+
+# Mr. Gutsy ambient idle
+
+- type: soundCollection
+  id: N14GutsyIdle
+  files:
+    - /Audio/Misfits/Mobs/Gutsy/idle1.ogg
+    - /Audio/Misfits/Mobs/Gutsy/idle2.ogg
+    - /Audio/Misfits/Mobs/Gutsy/idle3.ogg
+    - /Audio/Misfits/Mobs/Gutsy/taunt1.ogg
+    - /Audio/Misfits/Mobs/Gutsy/taunt2.ogg
+    - /Audio/Misfits/Mobs/Gutsy/taunt3.ogg
+    - /Audio/Misfits/Mobs/Gutsy/taunt4.ogg
+
+# Mr. Handy aggro/attack sounds
+
+- type: soundCollection
+  id: N14HandyAttack
+  files:
+    - /Audio/Misfits/Mobs/Handy/aggro1.ogg
+    - /Audio/Misfits/Mobs/Handy/aggro2.ogg
+
+# Mr. Handy ambient idle
+
+- type: soundCollection
+  id: N14HandyIdle
+  files:
+    - /Audio/Misfits/Mobs/Handy/idle2.ogg
+    - /Audio/Misfits/Mobs/Handy/idle3.ogg
+    - /Audio/Misfits/Mobs/Handy/taunt1.ogg
+    - /Audio/Misfits/Mobs/Handy/taunt2.ogg
+
+# Eyebot aggro/attack sounds
+
+- type: soundCollection
+  id: N14EyebotAttack
+  files:
+    - /Audio/Misfits/Mobs/Eyebot/aggro.ogg
+
+# Eyebot ambient idle (robot beeps)
+
+- type: soundCollection
+  id: N14EyebotIdle
+  files:
+    - /Audio/Misfits/Mobs/Eyebot/idle1.ogg
+    - /Audio/Misfits/Mobs/Eyebot/idle2.ogg
+
+# Sentry Bot aggro/attack sounds
+
+- type: soundCollection
+  id: N14AssaultronAttack
+  files:
+    - /Audio/Misfits/Mobs/Assaultron/aggro1.ogg
+    - /Audio/Misfits/Mobs/Assaultron/aggro2.ogg
+    - /Audio/Misfits/Mobs/Assaultron/aggro3.ogg
+    - /Audio/Misfits/Mobs/Assaultron/aggro4.ogg
+    - /Audio/Misfits/Mobs/Assaultron/aggro5.ogg
+
+# Assaultron taunt/alert sounds
+
+- type: soundCollection
+  id: N14AssaultronIdle
+  files:
+    - /Audio/Misfits/Mobs/Assaultron/idle1.ogg
+    - /Audio/Misfits/Mobs/Assaultron/idle2.ogg
+    - /Audio/Misfits/Mobs/Assaultron/idle3.ogg
+
+# Centaur attack sounds
+
+- type: soundCollection
+  id: N14SuperMutantAttack
+  files:
+    - /Audio/Misfits/Mobs/Supermutant/attack1.ogg
+    - /Audio/Misfits/Mobs/Supermutant/attack2.ogg
+    - /Audio/Misfits/Mobs/Supermutant/attack3.ogg
+
+# Super Mutant ambient idle
+
+- type: soundCollection
+  id: N14SuperMutantIdle
+  files:
+    - /Audio/Misfits/Mobs/Supermutant/idle1.ogg
+    - /Audio/Misfits/Mobs/Supermutant/idle2.ogg
+    - /Audio/Misfits/Mobs/Supermutant/idle3.ogg
+    - /Audio/Misfits/Mobs/Supermutant/idle4.ogg
+
+# Super Mutant alert/aggro sounds
+
+- type: soundCollection
+  id: N14SuperMutantAlert
+  files:
+    - /Audio/Misfits/Mobs/Supermutant/alert1.ogg
+    - /Audio/Misfits/Mobs/Supermutant/alert2.ogg
+    - /Audio/Misfits/Mobs/Supermutant/alert3.ogg
+    - /Audio/Misfits/Mobs/Supermutant/alert4.ogg
+
+# Super Mutant death sounds

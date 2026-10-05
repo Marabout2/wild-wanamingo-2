@@ -1,0 +1,53 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/hud/ms_ui_buttons.dmi)",
+    "size": {
+        "x": 96,
+        "y": 140
+    },
+    "states": [
+        {
+            "name": "base_for_aligning"
+        },
+        {
+            "name": "rest"
+        },
+        {
+            "name": "rest0"
+        },
+        {
+            "name": "walking"
+        },
+        {
+            "name": "running"
+        },
+        {
+            "name": "act_throw_off"
+        },
+        {
+            "name": "act_throw_on"
+        },
+        {
+            "name": "pull0"
+        },
+        {
+            "name": "pull"
+        },
+        {
+            "name": "inventory"
+        },
+        {
+            "name": "inventory_on"
+        },
+        {
+            "name": "suit_storage"
+        },
+        {
+            "name": "belt"
+        },
+        {
+            "name": "back"
+        }
+    ]
+}

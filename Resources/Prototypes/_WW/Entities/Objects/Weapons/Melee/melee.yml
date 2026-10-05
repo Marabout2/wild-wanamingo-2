@@ -1,0 +1,272 @@
+# Mojave Sun 13 sprites on copies of Wizden items (behaviour comes from the parent).
+# Sprites: Resources/Textures/MojaveSun (CC-BY-NC-SA-3.0, Mojave Sun 13).
+
+- type: entity
+  parent: FireAxe
+  id: F14FireAxe
+  name: fire axe
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Melee/fireaxe.rsi
+    state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Melee/fireaxe.rsi
+    storedSprite:
+      sprite: MojaveSun/Objects/Weapons/Melee/fireaxe.rsi
+      state: icon
+  - type: Clothing
+    sprite: MojaveSun/Objects/Weapons/Melee/fireaxe.rsi
+    slots:
+    - back
+
+- type: entity
+  parent: KitchenKnife
+  id: F14KitchenKnife
+  name: kitchen knife
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Melee/kitchen_knife.rsi
+    state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Melee/kitchen_knife.rsi
+    storedSprite:
+      sprite: MojaveSun/Objects/Weapons/Melee/kitchen_knife.rsi
+      state: icon
+
+- type: entity
+  parent: CombatKnife
+  id: F14KnifeBowie
+  name: bowie knife
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Melee/knife_bowie.rsi
+    state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Melee/knife_bowie.rsi
+    storedSprite:
+      sprite: MojaveSun/Objects/Weapons/Melee/knife_bowie.rsi
+      state: icon
+
+- type: entity
+  parent: CombatKnife
+  id: F14KnifeSoviet
+  name: combat knife
+  suffix: MS13
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Melee/knife_soviet.rsi
+    state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Melee/knife_soviet.rsi
+    storedSprite:
+      sprite: MojaveSun/Objects/Weapons/Melee/knife_soviet.rsi
+      state: icon
+
+- type: entity
+  parent: CombatKnife
+  id: F14KnifeBayonet
+  name: bayonet
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Melee/knife_bayonet.rsi
+    state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Melee/knife_bayonet.rsi
+    storedSprite:
+      sprite: MojaveSun/Objects/Weapons/Melee/knife_bayonet.rsi
+      state: icon
+
+- type: entity
+  parent: CombatKnife
+  id: F14KnifeTribal
+  name: tribal knife
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Melee/tribal_knife.rsi
+    state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Melee/tribal_knife.rsi
+    storedSprite:
+      sprite: MojaveSun/Objects/Weapons/Melee/tribal_knife.rsi
+      state: icon
+
+- type: entity
+  parent: SurvivalKnife
+  id: F14SurvivalKnife
+  name: survival knife
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Melee/survival_knife.rsi
+    state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Melee/survival_knife.rsi
+    storedSprite:
+      sprite: MojaveSun/Objects/Weapons/Melee/survival_knife.rsi
+      state: icon
+
+- type: entity
+  parent: SurvivalKnife
+  id: F14KnifeHunting
+  name: hunting knife
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Melee/knife_hunting_u.rsi
+    state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Melee/knife_hunting_u.rsi
+    storedSprite:
+      sprite: MojaveSun/Objects/Weapons/Melee/knife_hunting_u.rsi
+      state: icon
+
+- type: entity
+  parent: ThrowingKnife
+  id: F14ThrowingKnife
+  name: throwing knife
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Melee/throwing_knife.rsi
+    state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Melee/throwing_knife.rsi
+    storedSprite:
+      sprite: MojaveSun/Objects/Weapons/Melee/throwing_knife.rsi
+      state: icon
+
+- type: entity
+  parent: ButchCleaver
+  id: F14Cleaver
+  name: cleaver
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Melee/cleaver.rsi
+    state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Melee/cleaver.rsi
+    storedSprite:
+      sprite: MojaveSun/Objects/Weapons/Melee/cleaver.rsi
+      state: icon
+
+- type: entity
+  parent: ButchCleaver
+  id: F14CleaverRusty
+  name: rusty cleaver
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Melee/knife_cleaver_rust.rsi
+    state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Melee/knife_cleaver_rust.rsi
+    storedSprite:
+      sprite: MojaveSun/Objects/Weapons/Melee/knife_cleaver_rust.rsi
+      state: icon
+
+- type: entity
+  parent: Machete
+  id: F14Machete
+  name: machete
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Melee/machete.rsi
+    state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Melee/machete.rsi
+    storedSprite:
+      sprite: MojaveSun/Objects/Weapons/Melee/machete.rsi
+      state: icon
+  - type: Clothing
+    sprite: MojaveSun/Objects/Weapons/Melee/machete.rsi
+    slots:
+    - Belt
+
+- type: entity
+  parent: Machete
+  id: F14Gladius
+  name: gladius
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Melee/machete_gladius.rsi
+    state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Melee/machete_gladius.rsi
+    storedSprite:
+      sprite: MojaveSun/Objects/Weapons/Melee/machete_gladius.rsi
+      state: icon
+  - type: Clothing
+    sprite: MojaveSun/Objects/Weapons/Melee/machete_gladius.rsi
+    slots:
+    - Belt
+
+- type: entity
+  parent: Katana
+  id: F14Katana
+  name: katana
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Melee/katana.rsi
+    state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Melee/katana.rsi
+    storedSprite:
+      sprite: MojaveSun/Objects/Weapons/Melee/katana.rsi
+      state: icon
+  - type: Clothing
+    sprite: MojaveSun/Objects/Weapons/Melee/katana.rsi
+    slots:
+    - Belt
+
+- type: entity
+  parent: Katana
+  id: F14KatanaRed
+  name: katana
+  suffix: red
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Melee/katana_red.rsi
+    state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Melee/katana_red.rsi
+    storedSprite:
+      sprite: MojaveSun/Objects/Weapons/Melee/katana_red.rsi
+      state: icon
+
+- type: entity
+  parent: Pickaxe
+  id: F14Pickaxe
+  name: pickaxe
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Melee/pickaxe.rsi
+    state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Melee/pickaxe.rsi
+    storedSprite:
+      sprite: MojaveSun/Objects/Weapons/Melee/pickaxe.rsi
+      state: icon
+
+- type: entity
+  parent: Sledgehammer
+  id: F14Sledgehammer
+  name: sledgehammer
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Melee/sledgehammer.rsi
+    state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Melee/sledgehammer.rsi
+    storedSprite:
+      sprite: MojaveSun/Objects/Weapons/Melee/sledgehammer.rsi
+      state: icon
+
+- type: entity
+  parent: HydroponicsToolHatchet
+  id: F14HatchetBroad
+  name: broad hatchet
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Weapons/Melee/hatchet_broad.rsi
+    state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Weapons/Melee/hatchet_broad.rsi
+    storedSprite:
+      sprite: MojaveSun/Objects/Weapons/Melee/hatchet_broad.rsi
+      state: icon

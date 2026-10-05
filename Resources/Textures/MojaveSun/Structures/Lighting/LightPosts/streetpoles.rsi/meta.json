@@ -1,0 +1,31 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/structure/streetpoles.dmi)",
+    "size": {
+        "x": 96,
+        "y": 160
+    },
+    "states": [
+        {
+            "name": "trafficlightright",
+            "directions": 4
+        },
+        {
+            "name": "trafficlightleft",
+            "directions": 4
+        },
+        {
+            "name": "streetlight",
+            "directions": 4
+        },
+        {
+            "name": "streetlightcorner",
+            "directions": 4
+        },
+        {
+            "name": "streetlightduo",
+            "directions": 4
+        }
+    ]
+}

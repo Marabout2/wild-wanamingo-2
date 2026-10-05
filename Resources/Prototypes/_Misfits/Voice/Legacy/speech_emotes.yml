@@ -1,0 +1,13 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/Voice/speech_emotes.yml
+# (Misfits' copy of a Space Station 14 or other-fork file.)
+
+- type: emote
+  id: SiliconDeathgasp
+  name: chat-emote-name-deathgasp
+  icon: Interface/Emotes/deathgasp.png
+  whitelist:
+    tags:
+    - SiliconEmotes
+  chatMessages: ["chat-emote-msg-deathgasp-silicon"]
+  chatTriggers:
+  - sdeathgasp

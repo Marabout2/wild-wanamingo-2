@@ -1,0 +1,165 @@
+# Mojave Sun 13 sprites on copies of Wizden items (behaviour comes from the parent).
+# Sprites: Resources/Textures/MojaveSun (CC-BY-NC-SA-3.0, Mojave Sun 13).
+
+- type: entity
+  parent: Crowbar
+  id: F14Crowbar
+  name: crowbar
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Tools/crowbar.rsi
+    state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Tools/crowbar.rsi
+    storedSprite:
+      sprite: MojaveSun/Objects/Tools/crowbar.rsi
+      state: icon
+
+- type: entity
+  parent: Screwdriver
+  id: F14Screwdriver
+  name: screwdriver
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Tools/screwdriver.rsi
+    layers:
+    - state: icon
+      map: [ "enum.DamageStateVisualLayers.Base" ]
+  - type: Item
+    sprite: MojaveSun/Objects/Tools/screwdriver.rsi
+    storedSprite:
+      sprite: MojaveSun/Objects/Tools/screwdriver.rsi
+      state: icon
+  - type: RandomSprite
+    available: [] # MS13 tools have one fixed colour
+
+- type: entity
+  parent: Wirecutter
+  id: F14Wirecutter
+  name: wirecutters
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Tools/wirecutters.rsi
+    layers:
+    - state: icon
+      map: [ "enum.DamageStateVisualLayers.Base" ]
+  - type: Item
+    sprite: MojaveSun/Objects/Tools/wirecutters.rsi
+    storedSprite:
+      sprite: MojaveSun/Objects/Tools/wirecutters.rsi
+      state: icon
+  - type: RandomSprite
+    available: [] # MS13 tools have one fixed colour
+
+- type: entity
+  parent: Wrench
+  id: F14Wrench
+  name: wrench
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Tools/wrench.rsi
+    state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Tools/wrench.rsi
+    storedSprite:
+      sprite: MojaveSun/Objects/Tools/wrench.rsi
+      state: icon
+
+- type: entity
+  parent: Shovel
+  id: F14Shovel
+  name: shovel
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Tools/shovel.rsi
+    state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Tools/shovel.rsi
+    storedSprite:
+      sprite: MojaveSun/Objects/Tools/shovel.rsi
+      state: icon
+
+- type: entity
+  parent: Shovel
+  id: F14ShovelSnow
+  name: snow shovel
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Tools/shovel_snow.rsi
+    state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Tools/shovel_snow.rsi
+    storedSprite:
+      sprite: MojaveSun/Objects/Tools/shovel_snow.rsi
+      state: icon
+
+- type: entity
+  parent: Saw
+  id: F14Handsaw
+  name: handsaw
+  description: A rusty old handsaw.
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Tools/handsaw.rsi
+    state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Tools/handsaw.rsi
+    storedSprite:
+      sprite: MojaveSun/Objects/Tools/handsaw.rsi
+      state: icon
+
+- type: entity
+  parent: BarberScissors
+  id: F14Scissors
+  name: scissors
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Tools/scissors.rsi
+    state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Tools/scissors.rsi
+    storedSprite:
+      sprite: MojaveSun/Objects/Tools/scissors.rsi
+      state: icon
+
+- type: entity
+  parent: HydroponicsToolSpade
+  id: F14HydroponicsToolSpade
+  name: spade
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Tools/Hydroponics/spade.rsi
+    state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Tools/Hydroponics/spade.rsi
+    storedSprite:
+      sprite: MojaveSun/Objects/Tools/Hydroponics/spade.rsi
+      state: icon
+
+- type: entity
+  parent: HydroponicsToolMiniHoe
+  id: F14HydroponicsToolCultivator
+  name: cultivator
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Tools/Hydroponics/rake.rsi
+    state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Tools/Hydroponics/rake.rsi
+    storedSprite:
+      sprite: MojaveSun/Objects/Tools/Hydroponics/rake.rsi
+      state: icon
+
+- type: entity
+  parent: HydroponicsToolHatchet
+  id: F14HydroponicsToolHatchet
+  name: hatchet
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Tools/Hydroponics/hatchet.rsi
+    state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Tools/Hydroponics/hatchet.rsi
+    storedSprite:
+      sprite: MojaveSun/Objects/Tools/Hydroponics/hatchet.rsi
+      state: icon

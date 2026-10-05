@@ -1,7 +1,0 @@
-# Ported from Resources/Prototypes/Decals/derelictsign.yml in wild-wanamingo.
-
-- type: decal
-  id: DerelictSign
-  abstract: true
-
-#Bottom

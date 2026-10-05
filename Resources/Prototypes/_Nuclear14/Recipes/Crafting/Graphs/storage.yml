@@ -1,3 +1,6 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Recipes/Crafting/Graphs/storage.yml
+
 - type: constructionGraph
   id: N14CrateAluminium
   start: start

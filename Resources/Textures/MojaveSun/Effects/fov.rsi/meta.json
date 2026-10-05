@@ -1,0 +1,43 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/effects/ms_fov.dmi)",
+    "size": {
+        "x": 480,
+        "y": 480
+    },
+    "states": [
+        {
+            "name": "60_v",
+            "directions": 4
+        },
+        {
+            "name": "90_v",
+            "directions": 4
+        },
+        {
+            "name": "120_v",
+            "directions": 4
+        },
+        {
+            "name": "180_v",
+            "directions": 4
+        },
+        {
+            "name": "60",
+            "directions": 4
+        },
+        {
+            "name": "90",
+            "directions": 4
+        },
+        {
+            "name": "120",
+            "directions": 4
+        },
+        {
+            "name": "180",
+            "directions": 4
+        }
+    ]
+}

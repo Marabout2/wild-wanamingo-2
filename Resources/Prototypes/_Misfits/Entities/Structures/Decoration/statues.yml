@@ -1,3 +1,5 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Structures/Decoration/statues.yml
+
 - type: entity
   id: StatueBino
   parent: BaseStructure

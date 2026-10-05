@@ -1,0 +1,86 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/structure/medical.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "medlamp",
+            "directions": 4
+        },
+        {
+            "name": "medlamp_on",
+            "directions": 4
+        },
+        {
+            "name": "bodybag"
+        },
+        {
+            "name": "bodybag_open"
+        },
+        {
+            "name": "bodybag_folded"
+        },
+        {
+            "name": "curtain",
+            "directions": 4
+        },
+        {
+            "name": "iv_drip"
+        },
+        {
+            "name": "iv_drip_injecting"
+        },
+        {
+            "name": "iv_drip_donating"
+        },
+        {
+            "name": "iv_drip_injectidle"
+        },
+        {
+            "name": "iv_drip_donateidle"
+        },
+        {
+            "name": "beakeridle"
+        },
+        {
+            "name": "beakeractive"
+        },
+        {
+            "name": "reagent100"
+        },
+        {
+            "name": "reagent80"
+        },
+        {
+            "name": "reagent75"
+        },
+        {
+            "name": "reagent50"
+        },
+        {
+            "name": "reagent25"
+        },
+        {
+            "name": "reagent10"
+        },
+        {
+            "name": "reagent0"
+        },
+        {
+            "name": "medical_stand"
+        },
+        {
+            "name": "tank_overlay"
+        },
+        {
+            "name": "mask"
+        },
+        {
+            "name": "mask_on"
+        }
+    ]
+}

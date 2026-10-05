@@ -1,0 +1,9 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Structures/Machines/base_factory.yml
+
+- type: entity
+  abstract: true
+  id: BaseAutomatedMachine
+  components:
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: BasicDevice

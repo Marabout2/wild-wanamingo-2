@@ -1,3 +1,5 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Access/followers_of_the_apocalypse.yml
+
 - type: accessLevel
   id: FotA
   name: id-card-access-level-fota

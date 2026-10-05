@@ -1,0 +1,12 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Weapons/Guns/Projectiles/energy.yml
+
+- type: entity
+  name: plasma spread
+  id: BulletPlasmaSpread
+  parent: BulletPlasma
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: ProjectileSpread
+    proto: BulletPlasma  # each pellet is a standard plasma bolt
+    count: 3             # three simultaneous bolts per trigger pull
+    spread: 20           # 20 degrees total arc (shotgun-like spread)

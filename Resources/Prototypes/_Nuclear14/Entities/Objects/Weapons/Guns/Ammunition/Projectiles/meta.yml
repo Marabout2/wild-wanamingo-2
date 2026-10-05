@@ -1,0 +1,17 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Projectiles/meta.yml
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: N14Bullet50HEIAPMeta # for spawn turrets and fun
+  name: bullet (.50 HEIAP anti-materiel)
+  components:
+  - type: IgniteOnCollide
+    fireStacks: 1
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 500
+        Blunt: 500
+    ignoreResistances: true

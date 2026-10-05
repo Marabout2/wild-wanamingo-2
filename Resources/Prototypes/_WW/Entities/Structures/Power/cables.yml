@@ -1,0 +1,90 @@
+# Wizden power cables drawn with Mojave Sun 13's cable sprites: red HV, blue MV, green LV.
+# The MS13 pieces are combined into SS14's 16 connection states (cable_<N1|S2|E4|W8>).
+
+- type: entity
+  parent: CableHV
+  id: F14CableHV
+  name: HV power cable
+  description: A thick red high voltage power cable.
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Power/Cables/hv_cable.rsi
+    layers:
+    - state: cable_0
+  - type: Icon
+    sprite: MojaveSun/Structures/Power/Cables/hv_cable.rsi
+    state: cable_12
+  - type: Cable
+    cableDroppedOnCutPrototype: F14CableHVStack1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 60
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          F14CableHVStack1:
+            min: 1
+            max: 1
+  - type: CableVisualizer
+    statePrefix: cable_
+
+- type: entity
+  parent: CableMV
+  id: F14CableMV
+  name: MV power cable
+  description: A blue medium voltage power cable.
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Power/Cables/mv_cable.rsi
+    layers:
+    - state: cable_0
+  - type: Icon
+    sprite: MojaveSun/Structures/Power/Cables/mv_cable.rsi
+    state: cable_12
+  - type: Cable
+    cableDroppedOnCutPrototype: F14CableMVStack1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 60
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          F14CableMVStack1:
+            min: 1
+            max: 1
+  - type: CableVisualizer
+    statePrefix: cable_
+    extraLayerPrefix: null # Wizden's MV cable has a stripes layer; the MS13 sprite doesn't
+
+- type: entity
+  parent: CableApcExtension
+  id: F14CableLV
+  name: LV power cable
+  description: A green low voltage power cable.
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Power/Cables/lv_cable.rsi
+    layers:
+    - state: cable_0
+  - type: Icon
+    sprite: MojaveSun/Structures/Power/Cables/lv_cable.rsi
+    state: cable_12
+  - type: Cable
+    cableDroppedOnCutPrototype: F14CableLVStack1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 60
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          F14CableLVStack1:
+            min: 1
+            max: 1
+  - type: CableVisualizer
+    statePrefix: cable_

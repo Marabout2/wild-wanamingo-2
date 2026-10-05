@@ -1,0 +1,16 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/Decals/concrete_trim.yml
+# (Misfits' copy of a Space Station 14 or other-fork file.)
+
+- type: decal
+  id: ConcreteTrim
+  abstract: true
+
+- type: decal
+  id: GrayConcreteTrim
+  parent: ConcreteTrim
+  abstract: true
+
+- type: decal
+  id: OldConcreteTrim
+  parent: ConcreteTrim
+  abstract: true

@@ -1,0 +1,553 @@
+# Mojave Sun 13 sprites on copies of Misfits/N14 prototypes (Wizden ones where N14 has none).
+# Sprites: Resources/Textures/MojaveSun (CC-BY-NC-SA-3.0, Mojave Sun 13).
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14Bones01
+  name: bones
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/bones.rsi
+    state: 0_1
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/bones.rsi
+    state: 0_1
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14Bones21
+  name: bones
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/bones.rsi
+    state: 2_1
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/bones.rsi
+    state: 2_1
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14Bones31
+  name: bones
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/bones.rsi
+    state: 3_1
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/bones.rsi
+    state: 3_1
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14Bones41
+  name: bones
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/bones.rsi
+    state: 4_1
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/bones.rsi
+    state: 4_1
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14Bones51
+  name: bones
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/bones.rsi
+    state: 5_1
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/bones.rsi
+    state: 5_1
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14Bones61
+  name: bones
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/bones.rsi
+    state: 6_1
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/bones.rsi
+    state: 6_1
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14Bones00
+  name: bones
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/bones.rsi
+    state: 0_0
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/bones.rsi
+    state: 0_0
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14Bones10
+  name: bones
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/bones.rsi
+    state: 1_0
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/bones.rsi
+    state: 1_0
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14Bones30
+  name: bones
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/bones.rsi
+    state: 3_0
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/bones.rsi
+    state: 3_0
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14BonesScoliosis
+  name: crooked skeleton
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/bones.rsi
+    state: scoliosis
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/bones.rsi
+    state: scoliosis
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14BonesCow
+  name: cattle skeleton
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/bones.rsi
+    state: cow
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/bones.rsi
+    state: cow
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14BonesHorse
+  name: horse skeleton
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/bones.rsi
+    state: horse
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/bones.rsi
+    state: horse
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14GraveCairn
+  name: cairn
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: cairn
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: cairn
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14GraveTombstone0
+  name: tombstone
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: tombstone0
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: tombstone0
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14GraveTombstone1
+  name: tombstone
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: tombstone1
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: tombstone1
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14GraveTombstone2
+  name: tombstone
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: tombstone2
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: tombstone2
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14GraveCross0
+  name: grave cross
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: cross0
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: cross0
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14GraveCross1
+  name: grave cross
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: cross1
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: cross1
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14GraveCross2
+  name: grave cross
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: cross2
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: cross2
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14GraveCross3
+  name: grave cross
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: cross3
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: cross3
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14GravePlank
+  name: grave marker
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: plank
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: plank
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14GraveMoundLight0
+  name: grave
+  suffix: light
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: grave_light_0
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: grave_light_0
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14GraveMoundLight1
+  name: grave
+  suffix: light
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: grave_light_1
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: grave_light_1
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14GraveMoundLight2
+  name: grave
+  suffix: light
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: grave_light_2
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: grave_light_2
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14GraveMoundLight3
+  name: grave
+  suffix: light
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: grave_light_3
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: grave_light_3
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14GraveMoundLight4
+  name: grave
+  suffix: light
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: grave_light_4
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: grave_light_4
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14GraveMoundLight5
+  name: grave
+  suffix: light
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: grave_light_5
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: grave_light_5
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14GraveMoundLight6
+  name: grave
+  suffix: light
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: grave_light_6
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: grave_light_6
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14GraveMoundLight7
+  name: grave
+  suffix: light
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: grave_light_7
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: grave_light_7
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14GraveMoundLight8
+  name: grave
+  suffix: light
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: grave_light_8
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: grave_light_8
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14GraveMoundLight9
+  name: grave
+  suffix: light
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: grave_light_9
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: grave_light_9
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14GraveMoundDark0
+  name: grave
+  suffix: dark
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: grave_dark_0
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: grave_dark_0
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14GraveMoundDark1
+  name: grave
+  suffix: dark
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: grave_dark_1
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: grave_dark_1
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14GraveMoundDark2
+  name: grave
+  suffix: dark
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: grave_dark_2
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: grave_dark_2
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14GraveMoundDark3
+  name: grave
+  suffix: dark
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: grave_dark_3
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: grave_dark_3
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14GraveMoundDark4
+  name: grave
+  suffix: dark
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: grave_dark_4
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: grave_dark_4
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14GraveMoundDark5
+  name: grave
+  suffix: dark
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: grave_dark_5
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: grave_dark_5
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14GraveMoundDark6
+  name: grave
+  suffix: dark
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: grave_dark_6
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: grave_dark_6
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14GraveMoundDark7
+  name: grave
+  suffix: dark
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: grave_dark_7
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: grave_dark_7
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14GraveMoundDark8
+  name: grave
+  suffix: dark
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: grave_dark_8
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: grave_dark_8
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14GraveMoundDark9
+  name: grave
+  suffix: dark
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: grave_dark_9
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/graves.rsi
+    state: grave_dark_9
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14Cross
+  name: wooden cross
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/cross.rsi
+    state: cross
+    offset: 0, 0.5
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/cross.rsi
+    state: cross
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14CrossLashing
+  name: lashing cross
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/cross.rsi
+    state: lashing
+    offset: 0, 0.5
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/cross.rsi
+    state: lashing
+
+- type: entity
+  parent: N14DecorFloorSkeleton
+  id: F14SignMammoth
+  name: Mammoth sign
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Decoration/misc_64x64.rsi
+    state: mammoth_sign
+    offset: 0.5, 0.5
+  - type: Icon
+    sprite: MojaveSun/Structures/Decoration/misc_64x64.rsi
+    state: mammoth_sign

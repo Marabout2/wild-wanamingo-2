@@ -1,0 +1,43 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/mob/inhands/misc/smokeables_lefthand.dmi, mojave/icons/mob/inhands/misc/smokeables_righthand.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "red-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "red-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "green-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "green-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "lucky-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "lucky-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "brown-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "brown-inhand-right",
+            "directions": 4
+        }
+    ]
+}

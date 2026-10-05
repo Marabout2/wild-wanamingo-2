@@ -1,0 +1,123 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/structure/doors.dmi)",
+    "size": {
+        "x": 64,
+        "y": 64
+    },
+    "states": [
+        {
+            "name": "metal_red_open",
+            "directions": 4
+        },
+        {
+            "name": "metal_alt_open",
+            "directions": 4
+        },
+        {
+            "name": "metal_window_open",
+            "directions": 4
+        },
+        {
+            "name": "metal_grate_open",
+            "directions": 4
+        },
+        {
+            "name": "metal_bar_open",
+            "directions": 4
+        },
+        {
+            "name": "wood_open",
+            "directions": 4
+        },
+        {
+            "name": "wood_red_open",
+            "directions": 4
+        },
+        {
+            "name": "wood_white_open",
+            "directions": 4
+        },
+        {
+            "name": "wood_blue_open",
+            "directions": 4
+        },
+        {
+            "name": "wood_green_open",
+            "directions": 4
+        },
+        {
+            "name": "metal_frame_vertical_overlay"
+        },
+        {
+            "name": "wood_frame_vertical_overlay"
+        },
+        {
+            "name": "Fence_Doors"
+        },
+        {
+            "name": "barbfence_closed",
+            "directions": 4
+        },
+        {
+            "name": "barbfence_open",
+            "directions": 4
+        },
+        {
+            "name": "Mirrored_version"
+        },
+        {
+            "name": "metal_red_mirrored_open",
+            "directions": 4
+        },
+        {
+            "name": "metal_alt_mirrored_open",
+            "directions": 4
+        },
+        {
+            "name": "metal_window_mirrored_open",
+            "directions": 4
+        },
+        {
+            "name": "metal_grate_mirrored_open",
+            "directions": 4
+        },
+        {
+            "name": "metal_bar_mirrored_open",
+            "directions": 4
+        },
+        {
+            "name": "wood_mirrored_open",
+            "directions": 4
+        },
+        {
+            "name": "wood_red_mirrored_open",
+            "directions": 4
+        },
+        {
+            "name": "wood_white_mirrored_open",
+            "directions": 4
+        },
+        {
+            "name": "wood_blue_mirrored_open",
+            "directions": 4
+        },
+        {
+            "name": "wood_green_mirrored_open",
+            "directions": 4
+        },
+        {
+            "name": "Damage_States"
+        },
+        {
+            "name": "damage_closed_1"
+        },
+        {
+            "name": "damage_closed_2"
+        },
+        {
+            "name": "damage_closed_3"
+        }
+    ]
+}

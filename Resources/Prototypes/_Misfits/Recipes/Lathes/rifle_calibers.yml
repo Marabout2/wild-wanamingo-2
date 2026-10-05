@@ -1,0 +1,207 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Recipes/Lathes/rifle_calibers.yml
+
+- type: latheRecipe
+  id: N14Magazine303Bren
+  result: N14Magazine303Bren
+  categories:
+  - N14AmmoMagazine
+  completetime: 5
+  materials:
+    Lead: 120
+    Steel: 260
+    N14Gunpowder: 120
+
+- type: latheRecipe
+  id: N14SpeedLoader303
+  result: N14SpeedLoader303
+  categories:
+  - N14AmmoMagazine
+  completetime: 5
+  materials:
+    Lead: 24
+    Steel: 132
+    N14Gunpowder: 24
+
+- type: latheRecipe
+  id: N14Cartridge762x51FMJ
+  result: N14Cartridge762x51FMJ
+  categories:
+  - N14Ammo
+  completetime: 2
+  materials:
+    Lead: 3
+    Steel: 4
+    N14Gunpowder: 3
+
+- type: latheRecipe
+  id: N14MagazineBox762x51FMJ
+  result: N14MagazineBox762x51FMJ
+  categories:
+  - N14AmmoBox
+  completetime: 5
+  materials:
+    Lead: 96
+    Steel: 128
+    N14Gunpowder: 96
+    Cardboard: 100
+
+- type: latheRecipe
+  id: N14Cartridge762x51AP
+  result: N14Cartridge762x51AP
+  categories:
+  - N14Ammo
+  completetime: 2
+  materials:
+    Lead: 3
+    Steel: 5
+    N14Gunpowder: 3
+
+- type: latheRecipe
+  id: N14MagazineBox762x51AP
+  result: N14MagazineBox762x51AP
+  categories:
+  - N14AmmoBox
+  completetime: 5
+  materials:
+    Lead: 96
+    Steel: 160
+    N14Gunpowder: 96
+    Cardboard: 100
+
+- type: latheRecipe
+  id: N14Cartridge308JHP
+  result: N14Cartridge308JHP
+  categories:
+  - N14Ammo
+  completetime: 2
+  materials:
+    Lead: 3
+    Steel: 4
+    N14Gunpowder: 3
+
+- type: latheRecipe
+  id: N14MagazineBox308JHP
+  result: N14MagazineBox308JHP
+  categories:
+  - N14AmmoBox
+  completetime: 5
+  materials:
+    Lead: 96
+    Steel: 128
+    N14Gunpowder: 96
+    Cardboard: 100
+
+- type: latheRecipe
+  id: N14Cartridge308Match
+  result: N14Cartridge308Match
+  categories:
+  - N14Ammo
+  completetime: 2
+  materials:
+    Lead: 3
+    Steel: 5
+    N14Gunpowder: 3
+
+- type: latheRecipe
+  id: N14MagazineBox308Match
+  result: N14MagazineBox308Match
+  categories:
+  - N14AmmoBox
+  completetime: 5
+  materials:
+    Lead: 96
+    Steel: 160
+    N14Gunpowder: 96
+    Cardboard: 100
+
+- type: latheRecipe
+  id: N14Cartridge556FMJ
+  result: N14Cartridge556FMJ
+  categories:
+  - N14Ammo
+  completetime: 2
+  materials:
+    Lead: 2
+    Steel: 3
+    N14Gunpowder: 2
+
+- type: latheRecipe
+  id: N14MagazineBox556FMJ
+  result: N14MagazineBox556FMJ
+  categories:
+  - N14AmmoBox
+  completetime: 5
+  materials:
+    Lead: 150
+    Steel: 225
+    N14Gunpowder: 150
+    Cardboard: 100
+
+- type: latheRecipe
+  id: N14Cartridge556AP
+  result: N14Cartridge556AP
+  categories:
+  - N14Ammo
+  completetime: 2
+  materials:
+    Lead: 2
+    Steel: 4
+    N14Gunpowder: 2
+
+- type: latheRecipe
+  id: N14MagazineBox556AP
+  result: N14MagazineBox556AP
+  categories:
+  - N14AmmoBox
+  completetime: 5
+  materials:
+    Lead: 150
+    Steel: 300
+    N14Gunpowder: 150
+    Cardboard: 100
+
+- type: latheRecipe
+  id: N14Cartridge223JHP
+  result: N14Cartridge223JHP
+  categories:
+  - N14Ammo
+  completetime: 2
+  materials:
+    Lead: 2
+    Steel: 3
+    N14Gunpowder: 2
+
+- type: latheRecipe
+  id: N14MagazineBox223JHP
+  result: N14MagazineBox223JHP
+  categories:
+  - N14AmmoBox
+  completetime: 5
+  materials:
+    Lead: 150
+    Steel: 225
+    N14Gunpowder: 150
+    Cardboard: 100
+
+- type: latheRecipe
+  id: N14Cartridge303
+  result: N14Cartridge303
+  categories:
+  - N14Ammo
+  completetime: 2
+  materials:
+    Lead: 3
+    Steel: 4
+    N14Gunpowder: 3
+
+- type: latheRecipe
+  id: N14MagazineBox303
+  result: N14MagazineBox303
+  categories:
+  - N14AmmoBox
+  completetime: 5
+  materials:
+    Lead: 96
+    Steel: 128
+    N14Gunpowder: 96
+    Cardboard: 100

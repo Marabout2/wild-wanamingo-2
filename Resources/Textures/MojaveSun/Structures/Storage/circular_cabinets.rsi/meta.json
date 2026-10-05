@@ -1,0 +1,35 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/structure/circular_cabinets.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "pristine_circabinet_orange"
+        },
+        {
+            "name": "pristine_circabinet_torquise"
+        },
+        {
+            "name": "pristine_circabinet_orange-open"
+        },
+        {
+            "name": "pristine_circabinet_torquise-open"
+        },
+        {
+            "name": "circabinet_orange"
+        },
+        {
+            "name": "circabinet_torquise"
+        },
+        {
+            "name": "circabinet_orange-open"
+        },
+        {
+            "name": "circabinet_torquise-open"
+        }
+    ]
+}

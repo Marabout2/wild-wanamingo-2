@@ -1,0 +1,70 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Entities/Objects/Misc/craftingmaterials.yml
+
+- type: entity
+  parent: BaseItem
+  id: N14MaterialBaseHide
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Misc/mob_drops.rsi
+    state: hide_brahmin
+  - type: Tag
+    tags:
+      - RawLeather
+  - type: PhysicalComposition
+    materialComposition:
+      RawLeather: 400
+  - type: Material
+  - type: Item
+    size: Normal
+  # - type: Craftable # Corvax-Change  # #Misfits Remove: Stalker14 crafting system
+
+- type: entity
+  parent: N14MaterialBaseHide
+  id: N14MaterialYaoguaiHide
+  name: Yao Guai hide
+  description: The big hide of a Yao Guai, heavy and strong.
+  components:
+  - type: Sprite
+    state: hide_yaoguai
+  - type: Tag
+    tags:
+      - YaoguaiHide
+      - RawLeather
+  - type: PhysicalComposition
+    materialComposition:
+      RawLeather: 600
+  - type: StaticPrice # Forge-Change
+    price: 50
+
+- type: entity
+  parent: BaseItem
+  id: N14MaterialHideGecko
+  name: silver gecko hide
+  description: A thick hide from a gecko.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Misc/mob_drops.rsi
+    state: hide_gecko
+  - type: Tag
+    tags:
+      - RawLeather
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      RawLeather: 600
+  - type: Item
+    size: Normal
+  # - type: Craftable # Corvax-Change  # #Misfits Remove: Stalker14 crafting system
+  - type: StaticPrice # Forge-Change
+    price: 3
+
+- type: entity
+  parent: N14MaterialHideGecko
+  id: N14MaterialHideGeckoGolden
+  name: golden gecko hide
+  description: A thick beautiful hide from a golden gecko.
+  components:
+  - type: StaticPrice # Forge-Change
+    price: 15

@@ -1,0 +1,32 @@
+- type: stack
+  parent: BaseMediumStack
+  id: F14ScrapAluminum
+  name: stack-f14-scrap-aluminum
+  icon: { sprite: "/Textures/MojaveSun/Objects/Materials/scrap.rsi", state: scrap_aluminum }
+  spawn: F14ScrapAluminum1
+  maxCount: 30
+
+- type: stack
+  parent: BaseMediumStack
+  id: F14ScrapSilver
+  name: stack-f14-scrap-silver
+  icon: { sprite: "/Textures/MojaveSun/Objects/Materials/scrap.rsi", state: scrap_silver }
+  spawn: F14ScrapSilver1
+  maxCount: 30
+
+- type: stack
+  parent: BaseMediumStack
+  id: F14ScrapGlass
+  name: stack-f14-scrap-glass
+  icon: { sprite: "/Textures/MojaveSun/Objects/Materials/scrap.rsi", state: scrap_glass_3 }
+  spawn: F14ScrapGlass1
+  maxCount: 30
+
+# The N14 exoskeleton material had no stack; Wizden needs every material to have one.
+- type: stack
+  parent: BaseMediumStack
+  id: F14Exoskeleton
+  name: stack-f14-exoskeleton
+  icon: { sprite: "/Textures/Nuclear14/Objects/Misc/mob_drops.rsi", state: rad_exo }
+  spawn: N14MaterialExoskeleton
+  maxCount: 10

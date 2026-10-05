@@ -1,5 +1,0 @@
-# Ported from Resources/Prototypes/Decals/burnt.yml in wild-wanamingo.
-
-- type: decal
-  id: burnt
-  abstract: true

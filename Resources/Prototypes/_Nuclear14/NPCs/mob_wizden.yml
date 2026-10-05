@@ -1,0 +1,25 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/NPCs/mob.yml and root.yml
+# Rewritten on Wizden's combat compounds. Misfits' versions also handled recruited followers (follow, passive and
+# neutral orders), which aren't ported. Like N14, hostile mobs don't wander when they have no target.
+
+- type: htnCompound
+  id: N14HostileCompound
+  branches:
+    - tasks:
+        - !type:HTNCompoundTask
+          task: MeleeCombatCompound
+
+- type: htnCompound
+  id: N14RangedHostileCompound
+  branches:
+    - tasks:
+        - !type:HTNCompoundTask
+          task: RangedCombatCompound
+
+- type: htnCompound
+  id: N14TurretCompound
+  branches:
+    - tasks:
+        - !type:HTNCompoundTask
+          task: TurretCompound

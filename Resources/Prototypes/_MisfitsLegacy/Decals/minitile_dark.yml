@@ -1,6 +1,0 @@
-# Ported from Resources/Prototypes/Decals/minitile_dark.yml in wild-wanamingo.
-
-- type: decal
-  id: MiniTileDark
-  parent: MiniTile
-  abstract: true

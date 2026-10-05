@@ -1,0 +1,44 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/storage_fills_M14/storage_fills_rp.yml
+
+- type: entity
+  abstract: true
+  id: N14StorageFillCurrencyFill # Wasteland currencies
+  components:
+    - type: StorageFill
+      contents:
+        - id: N14CurrencyCap10
+          prob: 0.1
+          orGroup: Currency
+        - id: N14CurrencyCap50
+          prob: 0.09
+          orGroup: Currency
+        - id: N14CurrencyCap100
+          prob: 0.07
+          orGroup: Currency
+        - id: N14CurrencyCap500
+          prob: 0.05
+          orGroup: Currency
+        - id: N14CurrencyPrewarMoney10
+          prob: 0.1
+          orGroup: Currency
+        - id: N14CurrencyPrewarMoney50
+          prob: 0.09
+          orGroup: Currency
+        - id: N14CurrencyPrewarMoney100
+          prob: 0.07
+          orGroup: Currency
+        - id: N14CurrencyPrewarMoney500
+          prob: 0.05
+          orGroup: Currency
+        - id:  N14CurrencyNCRDollar10
+          prob: 0.1
+          orGroup: Currency
+        - id:  N14CurrencyNCRDollar50
+          prob: 0.09
+          orGroup: Currency
+        - id:  N14CurrencyNCRDollar100
+          prob: 0.07
+          orGroup: Currency
+        - id:  N14CurrencyNCRDollar500
+          prob: 0.05
+          orGroup: Currency

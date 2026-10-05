@@ -1,0 +1,8 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/Decals/derelictsign.yml
+# (Misfits' copy of a Space Station 14 or other-fork file.)
+
+- type: decal
+  id: DerelictSign
+  abstract: true
+
+#Bottom

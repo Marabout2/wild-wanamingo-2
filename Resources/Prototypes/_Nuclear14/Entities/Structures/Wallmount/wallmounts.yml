@@ -1,3 +1,5 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Entities/Structures/Wallmount/wallmounts.yml
 # Rewritten for Wizden's stash system (SecretStash + ToolOpenable), same pattern as the toilet stash.
 - type: entity
   parent: BaseSign

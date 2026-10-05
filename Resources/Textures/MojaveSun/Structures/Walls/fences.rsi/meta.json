@@ -1,0 +1,65 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/structure/fences.dmi)",
+    "size": {
+        "x": 32,
+        "y": 48
+    },
+    "states": [
+        {
+            "name": "barbfence"
+        },
+        {
+            "name": "barbfence_corner",
+            "directions": 4
+        },
+        {
+            "name": "barbfence_west"
+        },
+        {
+            "name": "barbfence_east"
+        },
+        {
+            "name": "barbfence_end_west"
+        },
+        {
+            "name": "barbfence_end_east"
+        },
+        {
+            "name": "barbfence_west_T",
+            "directions": 4
+        },
+        {
+            "name": "barbfence_east_T",
+            "directions": 4
+        },
+        {
+            "name": "wirefence"
+        },
+        {
+            "name": "wirefence_corner",
+            "directions": 4
+        },
+        {
+            "name": "wirefence_west"
+        },
+        {
+            "name": "wirefence_east"
+        },
+        {
+            "name": "wirefence_end_west"
+        },
+        {
+            "name": "wirefence_end_east"
+        },
+        {
+            "name": "wirefence_west_T",
+            "directions": 4
+        },
+        {
+            "name": "wirefence_east_T",
+            "directions": 4
+        }
+    ]
+}

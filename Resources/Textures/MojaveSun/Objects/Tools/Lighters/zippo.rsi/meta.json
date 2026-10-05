@@ -1,0 +1,44 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/mob/inhands/misc/lightables_lefthand.dmi, mojave/icons/mob/inhands/misc/lightables_righthand.dmi, mojave/icons/objects/tools/lightables_inventory.dmi)",
+    "size": {
+        "x": 40,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "icon"
+        },
+        {
+            "name": "inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "open-icon"
+        },
+        {
+            "name": "open-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "open-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "flame-icon",
+            "delays": [
+                [
+                    0.15,
+                    0.15,
+                    0.1,
+                    0.1
+                ]
+            ]
+        }
+    ]
+}

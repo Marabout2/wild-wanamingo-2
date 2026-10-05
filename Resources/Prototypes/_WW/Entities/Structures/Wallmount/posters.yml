@@ -1,0 +1,206 @@
+# Mojave Sun 13 sprites on copies of Misfits/N14 prototypes (Wizden ones where N14 has none).
+# Sprites: Resources/Textures/MojaveSun (CC-BY-NC-SA-3.0, Mojave Sun 13).
+
+- type: entity
+  parent: N14SignNotice
+  id: F14PosterNCR1
+  name: NCR poster
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Wallmounts/posters.rsi
+    state: NCR_1
+  - type: Icon
+    sprite: MojaveSun/Structures/Wallmounts/posters.rsi
+    state: NCR_1
+
+- type: entity
+  parent: N14SignNotice
+  id: F14PosterNCR2
+  name: NCR poster
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Wallmounts/posters.rsi
+    state: NCR_2
+  - type: Icon
+    sprite: MojaveSun/Structures/Wallmounts/posters.rsi
+    state: NCR_2
+
+- type: entity
+  parent: N14SignNotice
+  id: F14PosterCorporate
+  name: corporate poster
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Wallmounts/posters.rsi
+    state: corporate
+  - type: Icon
+    sprite: MojaveSun/Structures/Wallmounts/posters.rsi
+    state: corporate
+
+- type: entity
+  parent: N14SignNotice
+  id: F14PosterHandgun
+  name: handgun poster
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Wallmounts/posters.rsi
+    state: handgun
+  - type: Icon
+    sprite: MojaveSun/Structures/Wallmounts/posters.rsi
+    state: handgun
+
+- type: entity
+  parent: N14SignNotice
+  id: F14PosterProtectron
+  name: Protectron poster
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Wallmounts/posters.rsi
+    state: protectron
+  - type: Icon
+    sprite: MojaveSun/Structures/Wallmounts/posters.rsi
+    state: protectron
+
+- type: entity
+  parent: N14SignNotice
+  id: F14PosterVaulttec
+  name: Vault-Tec poster
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Wallmounts/posters.rsi
+    state: vaulttec
+  - type: Icon
+    sprite: MojaveSun/Structures/Wallmounts/posters.rsi
+    state: vaulttec
+
+- type: entity
+  parent: N14SignNotice
+  id: F14PosterVacation
+  name: vacation poster
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Wallmounts/posters.rsi
+    state: vacation
+  - type: Icon
+    sprite: MojaveSun/Structures/Wallmounts/posters.rsi
+    state: vacation
+
+- type: entity
+  parent: N14SignNotice
+  id: F14PosterMoon
+  name: moon poster
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Wallmounts/posters.rsi
+    state: moon
+  - type: Icon
+    sprite: MojaveSun/Structures/Wallmounts/posters.rsi
+    state: moon
+
+- type: entity
+  parent: N14SignNotice
+  id: F14PosterPlanet
+  name: planet poster
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Wallmounts/posters.rsi
+    state: planet
+  - type: Icon
+    sprite: MojaveSun/Structures/Wallmounts/posters.rsi
+    state: planet
+
+- type: entity
+  parent: N14SignNotice
+  id: F14PosterPinup1
+  name: pinup poster
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Wallmounts/posters.rsi
+    state: pinup_1
+  - type: Icon
+    sprite: MojaveSun/Structures/Wallmounts/posters.rsi
+    state: pinup_1
+
+- type: entity
+  parent: N14SignNotice
+  id: F14PosterPinup2
+  name: pinup poster
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Wallmounts/posters.rsi
+    state: pinup_2
+  - type: Icon
+    sprite: MojaveSun/Structures/Wallmounts/posters.rsi
+    state: pinup_2
+
+- type: entity
+  parent: N14SignNotice
+  id: F14PosterPinup3
+  name: pinup poster
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Wallmounts/posters.rsi
+    state: pinup_3
+  - type: Icon
+    sprite: MojaveSun/Structures/Wallmounts/posters.rsi
+    state: pinup_3
+
+- type: entity
+  parent: N14SignNotice
+  id: F14WallDecorFlagWestbos
+  name: Brotherhood flag
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Wallmounts/wall_decor.rsi
+    state: flag_westbos
+  - type: Icon
+    sprite: MojaveSun/Structures/Wallmounts/wall_decor.rsi
+    state: flag_westbos
+
+- type: entity
+  parent: N14SignNotice
+  id: F14WallDecorMineWarn
+  name: mine warning sign
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Wallmounts/wall_decor.rsi
+    state: mine_warn
+  - type: Icon
+    sprite: MojaveSun/Structures/Wallmounts/wall_decor.rsi
+    state: mine_warn
+
+- type: entity
+  parent: N14SignNotice
+  id: F14WallDecorCross
+  name: wall cross
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Wallmounts/wall_decor.rsi
+    state: cross
+  - type: Icon
+    sprite: MojaveSun/Structures/Wallmounts/wall_decor.rsi
+    state: cross
+
+- type: entity
+  parent: N14SignNotice
+  id: F14WallDecorNoticeRobot
+  name: robot notice
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Wallmounts/wall_decor.rsi
+    state: notice_robot
+  - type: Icon
+    sprite: MojaveSun/Structures/Wallmounts/wall_decor.rsi
+    state: notice_robot
+
+- type: entity
+  parent: N14SignNotice
+  id: F14WallDecorNoisefoam
+  name: noise foam
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Wallmounts/wall_decor.rsi
+    state: noisefoam
+  - type: Icon
+    sprite: MojaveSun/Structures/Wallmounts/wall_decor.rsi
+    state: noisefoam

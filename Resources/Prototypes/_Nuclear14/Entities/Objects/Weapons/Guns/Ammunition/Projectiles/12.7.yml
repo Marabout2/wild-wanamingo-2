@@ -1,0 +1,21 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Projectiles/12.7.yml
+
+- type: entity
+  id: N14Bullet127
+  name: bullet (12.7mm)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 20 # #Misfits Tweak - potent pistol-caliber round, was 12 + 5
+        Blunt: 5
+  # Misfits Add - 12.7mm heavy round; strong range retention
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 9.0
+    maxFalloffTiles: 20.0
+    minDamageMultiplier: 0.7
+  - type: Reflective
+    reflective: [ NonEnergy ]

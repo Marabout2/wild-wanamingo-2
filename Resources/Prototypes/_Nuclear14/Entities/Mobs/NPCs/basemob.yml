@@ -1,0 +1,445 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Entities/Mobs/NPCs/basemob.yml
+
+- type: entity
+  name: wasteland animal
+  abstract: true
+  id: N14MobBaseSimple
+  parent: SimpleSpaceMobBase
+  description: It's a dirty wasteland animal. Watch out for it's bite, it could be infectious.
+  components:
+  - type: Body
+  - type: InputMover
+  - type: ProximityNPC # Misfits fix — Didn't have comp to reduce tick load and activate ai
+                        #TODO: make every NPC inherit from same base to avoid issues in future
+  - type: MobMover
+  - type: NpcFactionMember
+    factions:
+    - WastelandAnimal
+  - type: Sprite
+    drawdepth: Mobs # Replace this with a mob error or something
+  - type: Physics
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 2
+    baseSprintSpeed : 3.9
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+            radius: 0.30
+        density: 20
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: MobState
+    allowedStates:
+      - Alive
+      - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      15: Dead
+  - type: MovementAlwaysTouching
+  - type: Appearance
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: alive
+      Dead:
+        Base: dead
+  - type: Butcherable
+    spawned:
+    - id: N14FoodMeatRadRaw
+      amount: 1
+    - id: N14MaterialRawLeather1
+      amount: 1
+  - type: Bloodstream
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: WastelandBlood
+        Quantity: 50
+  - type: Damageable
+    damageModifierSet: WastelandAnimal
+  - type: Injurable
+    damageContainer: Biological
+  - type: Puller
+    needsHands: true
+  - type: IgnitionSource
+  - type: Grammar # Misfits Change - proper noun so names appear capitalized in says/emotes when possessed
+    attributes:
+      proper: true
+  - type: Tag #Misfits Change - footstep sounds
+    tags:
+    - DoorBumpOpener
+    - FootstepSound
+
+#MARK: Base Hostile
+
+- type: entity
+  abstract: true
+  id: N14MobBaseHostile
+  parent: N14MobBaseSimple
+  description: It's a dirty wasteland animal. Watch out for it's bite, it could be infectious.
+  components:
+  - type: NPCRetaliation # Aggro on the attacker when damaged from any range
+    attackMemoryLength: 30
+  - type: NpcFactionMember
+    factions:
+    - WastelandAnimal
+  - type: ProximityNPC # Misfits Add — sleep distant NPCs to reduce tick load
+  - type: HTN
+    rootTask:
+      task: N14RangedHostileCompound
+    blackboard:
+      NavSmash: !type:Bool
+        true
+      MeleeRange: !type:Single
+        1.5
+  - type: Sprite
+    drawdepth: Mobs
+  - type: MobState
+    allowedStates:
+      - Alive
+      - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      15: Dead
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: alive
+      Dead:
+        Base: dead
+  - type: Butcherable
+    spawned:
+    - id: N14FoodMeatRadRaw
+      amount: 1
+  - type: Bloodstream
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: WastelandBlood
+        Quantity: 50
+  - type: CombatMode
+  - type: MeleeWeapon
+    hidden: true
+    attackRate: 2
+    range: 1.5
+    soundHit:
+        path: /Audio/Effects/bite.ogg
+    angle: 60
+    animation: WeaponArcBite
+    wideAnimation: WeaponArcBite
+    damage:
+      types:
+        Blunt: 0.666667
+        Slash: 0.666667
+        Piercing: 0.666667
+  - type: SolutionContainerManager
+    solutions:
+      melee:
+        reagents:
+        - ReagentId: Toxin
+          Quantity: 0.1
+  - type: MeleeChemicalInjector
+    solution: melee
+  - type: ReplacementAccent
+    accent: genericAggressive
+
+- type: entity
+  abstract: true
+  id: N14MobBaseHostileNoAccent
+  parent: N14MobBaseSimple
+  description: It's a dirty wasteland animal. Watch out for it's bite, it could be infectious.
+  components:
+  - type: NPCRetaliation # Aggro on the attacker when damaged from any range
+    attackMemoryLength: 30
+  - type: NpcFactionMember
+    factions:
+    - WastelandAnimal
+  - type: ProximityNPC # Misfits Add — sleep distant NPCs to reduce tick load
+  - type: HTN
+    rootTask:
+      task: N14RangedHostileCompound
+    blackboard:
+      NavSmash: !type:Bool
+        true
+      MeleeRange: !type:Single
+        1.5
+  - type: Sprite
+    drawdepth: Mobs
+  - type: MobState
+    allowedStates:
+    - Alive
+    - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      15: Dead
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: alive
+      Dead:
+        Base: dead
+  - type: Butcherable
+    spawned:
+    - id: N14FoodMeatRadRaw
+      amount: 1
+  - type: Bloodstream
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: WastelandBlood
+        Quantity: 50
+  - type: CombatMode
+  - type: MeleeWeapon
+    hidden: true
+    attackRate: 2
+    range: 1.5
+    soundHit:
+      path: /Audio/Effects/bite.ogg
+    angle: 60
+    animation: WeaponArcBite
+    wideAnimation: WeaponArcBite
+    damage:
+      types:
+        Blunt: 0.666667
+        Slash: 0.666667
+        Piercing: 0.666667
+  - type: SolutionContainerManager
+    solutions:
+      melee:
+        reagents:
+        - ReagentId: Toxin
+          Quantity: 0.1
+  - type: MeleeChemicalInjector
+    solution: melee
+
+#MARK: Base Scaley
+
+- type: entity
+  name: scaley wasteland animal
+  abstract: true
+  id: N14MobBaseHostileScaley
+  parent: N14MobBaseHostile
+  components:
+  - type: Damageable
+    damageModifierSet: N14Scale
+  - type: Injurable
+    damageContainer: Biological
+  - type: Speech
+    speechSounds: Squeak
+  - type: ReplacementAccent
+    accent: genericAggressive
+
+#MARK: Base Insect
+
+- type: entity
+  name: wasteland insect
+  abstract: true
+  id: N14MobBaseHostileInsect
+  parent: N14MobBaseHostile
+  components:
+  - type: Damageable
+    damageModifierSet: N14Insect
+  - type: Injurable
+    damageContainer: Biological
+  - type: NoSlip
+  - type: NpcFactionMember
+    factions:
+    - WastelandInsect
+  - type: Speech
+    speechSounds: Squeak
+  - type: ReplacementAccent
+    accent: genericAggressive
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+            radius: 0.30
+        density: 30
+        mask:
+        - SmallMobMask
+        layer:
+        - SmallMobLayer
+
+#MARK: Base Humanoid
+
+- type: entity
+  name: raider
+  abstract: true
+  id: N14MobBaseHostileRaider
+  parent: N14MobBaseHostile
+  components:
+  - type: Damageable
+  - type: Injurable
+    damageContainer: MisfitsNPCBiological # Misfits Change
+  - type: NoSlip
+  - type: NpcFactionMember
+    factions:
+    - Raider
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+            radius: 0.50
+        density: 20
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+
+- type: entity
+  name: feral ghoul
+  abstract: true
+  id: N14MobBaseHostileFeral
+  parent: N14MobBaseHostile
+  description: A mean looking ghoul.
+  components:
+  - type: Damageable
+    damageModifierSet: GhoulNPC
+  # - type: NoSlip
+  - type: Injurable
+    damageContainer: MisfitsNPCBiological  # Misfits Change - no hunger/thirst damage for feral ghouls
+  - type: NpcFactionMember
+    factions:
+    - Feral
+  #- type: MobGhoulAggro #Misfits Change — removed: NPC feral ghouls should be hostile to player ghouls, not neutral.
+  - type: HTN
+    rootTask:
+      task: N14HostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
+      MeleeRange: !type:Single
+        1.5
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      100: Dead
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: alive
+      Critical:
+        Base: alive
+      Dead:
+        Base: dead
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 2.75
+    baseSprintSpeed : 5.5
+  - type: Hands
+  - type: Puller
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      60: 0.8
+      80: 0.6
+  - type: Appearance
+  - type: PassiveDamage
+    allowedStates:
+    - Alive
+    - Critical
+    damage:
+      types:
+        Radiation: -5
+
+#MARK: SuperMutant Base
+# Misfits Change - Base entity for all Super Mutant NPC variants
+# Ported from DesertRose2/desertrose supermutant.dm
+
+- type: entity
+  name: super mutant
+  abstract: true
+  id: N14MobBaseHostileSuperMutant
+  parent: N14MobBaseHostile
+  description: A hulking post-human mutation, product of the FEV virus. Radiation resistant and brutally strong.
+  components:
+  - type: Damageable
+    damageModifierSet: N14SuperMutant
+  - type: Injurable
+    damageContainer: MisfitsNPCBiological  # Misfits Change
+  - type: NpcFactionMember
+    factions:
+    - SuperMutant
+  - type: HTN
+    rootTask:
+      task: N14RangedHostileCompound
+    blackboard:
+      NavSmash: !type:Bool
+        true
+      MeleeRange: !type:Single
+        1.8
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      200: Dead
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: base
+      Dead:
+        Base: base_dead
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 2.5
+    baseSprintSpeed: 4.5
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+            radius: 0.55
+        density: 60
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: Hands
+  - type: Puller
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      60: 0.85
+      80: 0.7
+  - type: IdleSound #Misfits Change
+  - type: SpamEmitSound #Misfits Change
+    minInterval: 15
+    maxInterval: 60
+    sound:
+      collection: N14SuperMutantIdle
+      params:
+        volume: -6
+        maxDistance: 7
+  - type: AggroSound #Misfits Change - separate aggro/alert vocalization on combat entry
+    sound:
+      collection: N14SuperMutantAlert
+      params:
+        volume: -3
+        maxDistance: 10
+
+# Wave Defence Base Hostile
+#MARK: WAVE
+
+- type: entity
+  abstract: true
+  id: N14TameableMobBase
+  parent: SimpleMobBase
+  components:
+#  - type: NPCTamingOnTouchBehaviour
+#    follow: true
+#    persistent: true
+#    tameChance: 0.5
+#    oneTry: false
+#    successPopup: This pet is your friend now!
+#    deniedPopup: This pet refused to be your friend.
+#    whitelist:
+#      components:
+#      - HumanoidAppearance
+  - type: ProximityNPC # Misfits Add — sleep distant NPCs to reduce tick load
+  - type: HTN
+    rootTask:
+      task: SimpleFollowHostileCompound # HTN compound must include FollowCompound so pet can follow its owner

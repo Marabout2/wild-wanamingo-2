@@ -1,0 +1,41 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/hud/ms_ui_slots_34.dmi)",
+    "size": {
+        "x": 34,
+        "y": 33
+    },
+    "states": [
+        {
+            "name": "head"
+        },
+        {
+            "name": "ears"
+        },
+        {
+            "name": "mask"
+        },
+        {
+            "name": "glasses"
+        },
+        {
+            "name": "id"
+        },
+        {
+            "name": "suit"
+        },
+        {
+            "name": "neck"
+        },
+        {
+            "name": "shoes"
+        },
+        {
+            "name": "uniform"
+        },
+        {
+            "name": "gloves"
+        }
+    ]
+}

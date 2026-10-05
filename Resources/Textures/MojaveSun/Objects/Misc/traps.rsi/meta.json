@@ -1,0 +1,94 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/objects/ms_traps.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "lasertripwire"
+        },
+        {
+            "name": "1_0"
+        },
+        {
+            "name": "tripwire"
+        },
+        {
+            "name": "1_1"
+        },
+        {
+            "name": "pressureplate"
+        },
+        {
+            "name": "1_2"
+        },
+        {
+            "name": "frag_primed"
+        },
+        {
+            "name": "frag_primed_in_hand"
+        },
+        {
+            "name": "frag_primed_in_hand-1",
+            "directions": 4
+        },
+        {
+            "name": "frag_primed_in_hand-2",
+            "directions": 4
+        },
+        {
+            "name": "frag_armed"
+        },
+        {
+            "name": "frag_armed_in_hand"
+        },
+        {
+            "name": "frag_armed_in_hand-1",
+            "directions": 4
+        },
+        {
+            "name": "frag_armed_in_hand-2",
+            "directions": 4
+        },
+        {
+            "name": "0_2"
+        },
+        {
+            "name": "mine"
+        },
+        {
+            "name": "mine-1",
+            "directions": 4
+        },
+        {
+            "name": "mine-2",
+            "directions": 4
+        },
+        {
+            "name": "oneshot_armed",
+            "directions": 4
+        },
+        {
+            "name": "oneshot",
+            "directions": 4
+        },
+        {
+            "name": "extuinguisher"
+        },
+        {
+            "name": "grenadebouquet"
+        },
+        {
+            "name": "tinchimes"
+        },
+        {
+            "name": "0_4"
+        },
+        {
+            "name": "0_4-1"
+        }
+    ]
+}

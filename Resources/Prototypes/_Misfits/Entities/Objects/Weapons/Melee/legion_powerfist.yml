@@ -1,0 +1,33 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Weapons/Melee/legion_powerfist.yml
+
+- type: entity
+  parent: ClothingHandsBase
+  id: N14ClothingHandsPowerFistGoliath
+  name: goliath power fist
+  description: A captured Legion shock gauntlet built around a piston-assisted ram that hurls targets backward.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Clothing/Hands/PowerGauntlets/basic.rsi
+    state: icon
+    scale: 0.75, 0.75
+  - type: Item
+    size: Normal
+    sprite: Nuclear14/Clothing/Hands/PowerGauntlets/basic.rsi
+  - type: Clothing
+    sprite: Misfits/Objects/Weapons/Melee/powerfist.rsi
+    slots: [gloves]
+  - type: MeleeWeapon
+    soundHit:
+      collection: MetalThud
+    range: 1.3
+    attackRate: 0.8
+    damage:
+      types:
+        Blunt: 35
+        Structural: 15
+    animation: WeaponArcFist
+    wideAnimation: WeaponArcFist
+    mustBeEquippedToUse: true
+  - type: MeleeThrowOnHit
+    speed: 10
+    distance: 0.25

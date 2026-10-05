@@ -1,0 +1,75 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/structure/cabinets.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "filing_cabinet",
+            "directions": 4
+        },
+        {
+            "name": "filing_cabinet-open",
+            "directions": 4
+        },
+        {
+            "name": "filing_cabinet_busted",
+            "directions": 4
+        },
+        {
+            "name": "filing_cabinet_busted-open",
+            "directions": 4
+        },
+        {
+            "name": "filing_cabinet_empty",
+            "directions": 4
+        },
+        {
+            "name": "filing_cabinet_empty-open",
+            "directions": 4
+        },
+        {
+            "name": "filing_cabinet_small",
+            "directions": 4
+        },
+        {
+            "name": "filing_cabinet_small-open",
+            "directions": 4
+        },
+        {
+            "name": "filing_cabinet_small_busted",
+            "directions": 4
+        },
+        {
+            "name": "filing_cabinet_small_busted-open",
+            "directions": 4
+        },
+        {
+            "name": "circabinet_orange"
+        },
+        {
+            "name": "circabinet_orange-open"
+        },
+        {
+            "name": "circabinet_orange_tall"
+        },
+        {
+            "name": "circabinet_orange_tall-open"
+        },
+        {
+            "name": "circabinet_torquise"
+        },
+        {
+            "name": "circabinet_torquise-open"
+        },
+        {
+            "name": "circabinet_torquise_tall"
+        },
+        {
+            "name": "circabinet_torquise_tall-open"
+        }
+    ]
+}

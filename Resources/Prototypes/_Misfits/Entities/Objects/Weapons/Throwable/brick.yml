@@ -1,0 +1,24 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Weapons/Throwable/brick.yml
+
+- type: entity
+  parent: BaseItem
+  id: ThrowingBrick
+  name: brick
+  description: An ordinary brick that gives you an insatiable desire to throw it.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Misc/materials.rsi
+    state: adobe_brick
+  - type: MeleeWeapon
+    soundHit:
+      collection: MetalThud
+    range: 1
+    attackRate: 2
+    damage:
+      types:
+        Blunt: 7 #its meant to be thrown but you can hit people with bricks too so
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Blunt: 12
+        Structural: 50 #this is so it can break windows in one hit

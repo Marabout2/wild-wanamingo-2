@@ -1,0 +1,134 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/hud/ms_ui_health.dmi)",
+    "size": {
+        "x": 96,
+        "y": 96
+    },
+    "states": [
+        {
+            "name": "base_for_aligning_health"
+        },
+        {
+            "name": "healthdoll_OVERLAY"
+        },
+        {
+            "name": "healthdoll_DEAD"
+        },
+        {
+            "name": "head2"
+        },
+        {
+            "name": "r_arm1"
+        },
+        {
+            "name": "r_arm2"
+        },
+        {
+            "name": "l_arm1"
+        },
+        {
+            "name": "l_arm2"
+        },
+        {
+            "name": "chest1"
+        },
+        {
+            "name": "chest2"
+        },
+        {
+            "name": "groin1"
+        },
+        {
+            "name": "groin2"
+        },
+        {
+            "name": "r_leg1"
+        },
+        {
+            "name": "r_leg2"
+        },
+        {
+            "name": "l_leg1"
+        },
+        {
+            "name": "l_leg2"
+        },
+        {
+            "name": "r_arm3"
+        },
+        {
+            "name": "l_arm3"
+        },
+        {
+            "name": "chest3"
+        },
+        {
+            "name": "groin3"
+        },
+        {
+            "name": "r_leg3"
+        },
+        {
+            "name": "l_leg3"
+        },
+        {
+            "name": "status_O2"
+        },
+        {
+            "name": "status_cold"
+        },
+        {
+            "name": "status_hot"
+        },
+        {
+            "name": "status_pressure"
+        },
+        {
+            "name": "status_fire"
+        },
+        {
+            "name": "status_toxic"
+        },
+        {
+            "name": "status_nutrition"
+        },
+        {
+            "name": "status_thirst"
+        },
+        {
+            "name": "mood1"
+        },
+        {
+            "name": "mood2"
+        },
+        {
+            "name": "mood3"
+        },
+        {
+            "name": "mood4"
+        },
+        {
+            "name": "mood5"
+        },
+        {
+            "name": "mood6"
+        },
+        {
+            "name": "mood7"
+        },
+        {
+            "name": "mood8"
+        },
+        {
+            "name": "mood9"
+        },
+        {
+            "name": "mood_happiness_good"
+        },
+        {
+            "name": "mood_happiness_bad"
+        }
+    ]
+}

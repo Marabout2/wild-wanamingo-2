@@ -1,0 +1,42 @@
+# Mojave Sun 13 sprites on copies of Wizden items (behaviour comes from the parent).
+# Sprites: Resources/Textures/MojaveSun (CC-BY-NC-SA-3.0, Mojave Sun 13).
+
+- type: entity
+  parent: LightBulb
+  id: F14LightBulb
+  name: light bulb
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Power/light_bulb.rsi
+    layers:
+    - state: icon
+      map: [ "enum.LightBulbVisualLayers.Base" ]
+  - type: Item
+    sprite: MojaveSun/Objects/Power/light_bulb.rsi
+    storedSprite:
+      sprite: MojaveSun/Objects/Power/light_bulb.rsi
+      state: icon
+  - type: LightBulb
+    normalSpriteState: icon
+    brokenSpriteState: broken-icon
+    burnedSpriteState: burned-icon
+
+- type: entity
+  parent: LightTube
+  id: F14LightTube
+  name: light tube
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Power/light_tube.rsi
+    layers:
+    - state: icon
+      map: [ "enum.LightBulbVisualLayers.Base" ]
+  - type: Item
+    sprite: MojaveSun/Objects/Power/light_tube.rsi
+    storedSprite:
+      sprite: MojaveSun/Objects/Power/light_tube.rsi
+      state: icon
+  - type: LightBulb
+    normalSpriteState: icon
+    brokenSpriteState: broken-icon
+    burnedSpriteState: burned-icon

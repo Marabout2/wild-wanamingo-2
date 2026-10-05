@@ -1,0 +1,19 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Reagents/white_phosphorus.yml
+
+- type: reagent
+  id: MisfitsWhitePhosphorusSmoke
+  name: reagent-name-white-phosphorus-smoke
+  group: Elements
+  desc: reagent-desc-white-phosphorus-smoke
+  physicalDesc: reagent-physical-desc-powdery
+  color: "#F8F8F8B0"
+  recognizable: true
+  reactiveEffects:
+    Acidic:
+      methods: [ Touch ]
+      effects:
+      - !type:HealthChange
+        ignoreResistances: false
+        damage:
+          types:
+            Caustic: 4

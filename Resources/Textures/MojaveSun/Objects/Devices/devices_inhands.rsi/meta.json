@@ -1,0 +1,91 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/mob/inhands/misc/devices_lefthand.dmi, mojave/icons/mob/inhands/misc/devices_righthand.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "assembly-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "assembly-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "cell-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "cell-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "electropack-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "electropack-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "flashlight-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "flashlight-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "beacon-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "beacon-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "signaler-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "signaler-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "electronic-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "electronic-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "restock_unit-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "restock_unit-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "flashdark-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "flashdark-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "RPED-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "RPED-inhand-right",
+            "directions": 4
+        }
+    ]
+}

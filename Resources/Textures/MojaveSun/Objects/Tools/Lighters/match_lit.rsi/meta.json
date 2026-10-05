@@ -1,0 +1,66 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/objects/tools/lightables_inventory.dmi)",
+    "size": {
+        "x": 40,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "icon_1",
+            "delays": [
+                [
+                    0.15,
+                    0.1,
+                    0.15,
+                    0.15
+                ]
+            ]
+        },
+        {
+            "name": "icon_2",
+            "delays": [
+                [
+                    0.15,
+                    0.1,
+                    0.15,
+                    0.15
+                ]
+            ]
+        },
+        {
+            "name": "icon_3",
+            "delays": [
+                [
+                    0.15,
+                    0.1,
+                    0.15,
+                    0.15
+                ]
+            ]
+        },
+        {
+            "name": "icon_4",
+            "delays": [
+                [
+                    0.15,
+                    0.1,
+                    0.15,
+                    0.15
+                ]
+            ]
+        },
+        {
+            "name": "icon_5",
+            "delays": [
+                [
+                    0.15,
+                    0.1,
+                    0.15,
+                    0.15
+                ]
+            ]
+        }
+    ]
+}

@@ -1,0 +1,65 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/objects/food/prewar_food.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "generic_can_1"
+        },
+        {
+            "name": "generic_can_1-1"
+        },
+        {
+            "name": "generic_can_1-2"
+        },
+        {
+            "name": "generic_can_1-3"
+        },
+        {
+            "name": "generic_can_1-4"
+        },
+        {
+            "name": "generic_can_1-5"
+        },
+        {
+            "name": "generic_can_1_trash"
+        },
+        {
+            "name": "generic_can_2"
+        },
+        {
+            "name": "generic_can_2-1"
+        },
+        {
+            "name": "generic_can_2-2"
+        },
+        {
+            "name": "generic_can_2-3"
+        },
+        {
+            "name": "generic_can_2_trash"
+        },
+        {
+            "name": "generic_can_3"
+        },
+        {
+            "name": "generic_can_3-1"
+        },
+        {
+            "name": "generic_can_3-2"
+        },
+        {
+            "name": "generic_can_3-3"
+        },
+        {
+            "name": "generic_can_3-4"
+        },
+        {
+            "name": "generic_can_3_trash"
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/effects/gurps.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "vomit_1"
+        },
+        {
+            "name": "vomit_2"
+        },
+        {
+            "name": "vomit_3"
+        },
+        {
+            "name": "vomit_4"
+        },
+        {
+            "name": "vomittox_1"
+        },
+        {
+            "name": "vomittox_2"
+        },
+        {
+            "name": "vomittox_3"
+        },
+        {
+            "name": "vomittox_4"
+        },
+        {
+            "name": "rot_1"
+        },
+        {
+            "name": "rot_2"
+        },
+        {
+            "name": "rot_3"
+        },
+        {
+            "name": "rot_4"
+        }
+    ]
+}

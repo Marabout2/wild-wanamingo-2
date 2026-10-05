@@ -1,0 +1,26 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Entities/Objects/Consumable/Smokeables/smokeables.yml
+
+- type: entity
+  parent: PaperRolling
+  id: N14RollingPaper
+  suffix: Full
+  components:
+  - type: Stack
+    stackType: N14RollingPaper
+    count: 5
+  - type: Sprite
+    sprite: Nuclear14/Objects/Consumable/Smokeables/smokeables.rsi
+    state: rollie_paper
+    scale: 0.6, 0.6
+  - type: Item
+    sprite: Nuclear14/Objects/Consumable/Smokeables/smokeables.rsi
+    size: Tiny
+
+- type: entity
+  id: N14RollingPaper1
+  suffix: Single
+  parent: N14RollingPaper
+  components:
+    - type: Stack
+      count: 1

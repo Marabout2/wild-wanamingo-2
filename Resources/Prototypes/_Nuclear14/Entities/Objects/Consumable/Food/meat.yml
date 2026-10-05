@@ -1,0 +1,198 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Entities/Objects/Consumable/Food/meat.yml
+
+- type: entity
+  parent: FoodMeatRawBase
+  id: N14FoodMeatBase
+  abstract: true
+  components:
+  - type: Sprite
+    scale: 0.75, 0.75
+    sprite: Nuclear14/Objects/Consumable/Food/meat.rsi
+    state: brahminmeat
+    netsync: false
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 1
+  - type: Temperature
+  - type: InternalTemperature
+    conductance: 0.43
+  - type: Perishable
+    # raw meat rots in 15 minutes, get it into the freezer fast or preserve it.
+    rotAfter: 900
+    # don't want meat giving off ammonia only bodies
+    molsPerSecondPerUnitMass: 0
+
+# Use tags for Raw, Cooked and Cutlet
+
+# Raw
+
+- type: entity
+  name: raw irradiated meat
+  parent: [N14FoodMeatBase, BaseSlicingRefinableFood]
+  id: N14FoodMeatRadRaw
+  description: A morsel of raw irradiated meat
+  components:
+  - type: Tag
+    tags:
+    - Raw
+  - type: Sprite
+    state: morsels
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: N14UncookedAnimalProteinsRad
+          Quantity: 5
+  - type: ToolRefinable
+    refineResult:
+    - id: N14FoodMeatRadCutlet
+      amount: 3
+  - type: StaticPrice # Forge-Change
+    price: 2
+
+- type: entity
+  name: raw brahmin steak
+  parent: [N14FoodMeatRadRaw, BaseSlicingRefinableFood]
+  id: N14FoodMeatBrahmin
+  description: A raw piece of rump brahmin.
+  components:
+  - type: Sprite
+    state: brahminmeat
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: N14UncookedAnimalProteinsRad
+          Quantity: 9
+  - type: ToolRefinable
+    refineResult:
+    - id: N14FoodMeatBrahminCutlet
+      amount: 3
+  - type: StaticPrice # Forge-Change
+    price: 1 # PH
+
+- type: entity
+  parent: N14FoodMeatBrahmin
+  id: N14FoodMeatPigrat
+  name: raw pigrat meat
+  description: Raw morsels of pigrat meat.
+  components:
+  - type: Sprite
+    state: morsels
+  - type: StaticPrice # Forge-Change
+    price: 10
+
+- type: entity
+  name: raw Yao Guai meat
+  parent: [N14FoodMeatBrahmin, BaseSlicingRefinableFood]
+  id: N14FoodMeatYaoguai
+  description: A very muscular slab of raw yao-guai meat.
+  components:
+  - type: Sprite
+    state: brahminmeat
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: N14UncookedAnimalProteinsRad
+          Quantity: 9
+  - type: ToolRefinable
+    refineResult:
+    - id: N14FoodMeatYaoguaiCutlet
+      amount: 3
+  - type: StaticPrice # Forge-Change
+    price: 1
+
+- type: entity
+  name: raw gecko meat
+  parent: N14FoodMeatRadRaw
+  id: N14FoodMeatGecko
+  description: tough chunk of gecko meat. It glistens.
+  components:
+  - type: Sprite
+    state: silvergeckomeat
+  - type: StaticPrice # Forge-Change
+    price: 3
+
+- type: entity
+  name: raw golden gecko meat
+  parent: N14FoodMeatRadRaw
+  id: N14FoodMeatGeckoGolden
+  description: tough chunk of golden gecko meat. It glistens.
+  components:
+  - type: Sprite
+    state: goldengeckomeat
+  - type: StaticPrice # Forge-Change
+    price: 10
+
+- type: entity
+  name: raw radroach fillet
+  parent: N14FoodMeatRadRaw
+  id: N14FoodMeatRadroachFillet
+  description: radroach fillet
+  components:
+  - type: Sprite
+    state: radroachfillet
+  - type: StaticPrice # Forge-Change
+    price: 1
+
+- type: entity
+  name: raw rad cutlet
+  parent: N14FoodMeatBase
+  id: N14FoodMeatRadCutlet
+  description: A raw meat cutlet from a wasteland animal.
+  components:
+  - type: Tag
+    tags:
+    - Raw
+    - Cutlet
+  - type: Sprite
+    sprite: Objects/Consumable/Food/meat.rsi
+    state: cutlet
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: N14UncookedAnimalProteinsRad
+          Quantity: 3
+        - ReagentId: N14RadParticleFood
+          Quantity: 1
+  - type: Temperature
+  - type: InternalTemperature
+    conductance: 0.43
+  - type: Perishable
+    # raw meat rots in 15 minutes, get it into the freezer fast or preserve it.
+    rotAfter: 900
+    # don't want meat giving off ammonia only bodies
+    molsPerSecondPerUnitMass: 0
+
+- type: entity
+  name: raw brahmin cutlet
+  parent: N14FoodMeatRadCutlet
+  id: N14FoodMeatBrahminCutlet
+  description: A very grisly cutlet of brahmin meat.
+  components:
+  - type: Sprite
+    layers:
+    - state: cutlet
+    - state: cutlet-alpha
+      color: brown
+
+- type: entity
+  name: raw yao-guai cutlet
+  parent: N14FoodMeatRadCutlet
+  id: N14FoodMeatYaoguaiCutlet
+  description: A very grisly cutlet of raw yao-guai meat.
+  components:
+  - type: Sprite
+    layers:
+    - state: cutlet
+    - state: cutlet-alpha
+      color: brown

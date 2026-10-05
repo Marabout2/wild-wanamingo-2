@@ -1,0 +1,473 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Entities/Mobs/NPCs/lizards.yml
+
+- type: entity
+  name: gecko
+  id: N14MobGecko
+  parent: N14MobBaseHostileScaley
+  description: Looks like a dinosaur. The bite is worse than the claws.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: gecko
+      sprite: Nuclear14/Mobs/Animals/gecko.rsi
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 4                         # Forge-Change
+    baseSprintSpeed : 5                       # Forge-Change
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+            radius: 0.3
+        density: 20
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      130: Dead
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: gecko
+      Critical:
+        Base: gecko
+      Dead:
+        Base: dead
+  - type: MeleeWeapon
+    altDisarm: false
+    hidden: true
+    soundHit:
+      collection: N14GeckoAttack #Misfits Change
+    angle: 60
+    animation: WeaponArcBite
+    wideAnimation: WeaponArcBite
+    damage:
+      types:
+        Slash: 8                        # Forge-Change
+  - type: IdleSound #Misfits Change
+  - type: SpamEmitSound #Misfits Change
+    minInterval: 10
+    maxInterval: 60
+    sound:
+      collection: N14GeckoIdle
+      params:
+        volume: -10
+        maxDistance: 5
+  - type: AggroSound #Misfits Change
+    sound:
+      collection: N14GeckoAttack
+      params:
+        volume: -3
+        maxDistance: 10
+  - type: Butcherable
+    spawned:
+    - id: N14FoodMeatGecko
+      amount: 3
+    - id: N14MaterialHideGecko
+      amount: 1
+  #- type: Reproductive
+    #breedChance: 0.05
+    #birthPopup: reproductive-laid-egg-popup
+    #makeOffspringInfant: false
+    #partnerWhitelist:
+      #tags:
+      #- Gecko
+    #offspring:
+    # id: N14FoodEggGeckoFertilized
+     #maxAmount: 3
+ #- type: ReproductivePartner
+ #- type: EggLayer
+   #eggSpawn:
+   #- id: N14FoodEggGecko
+#- type: Tag
+   # tags:
+    #- Gecko
+
+- type: entity
+  name: golden gecko
+  id: N14MobGeckoGolden
+  parent: N14MobGecko
+  description: A beautiful golden gecko. Don't let it scratch.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: gecko
+      sprite: Nuclear14/Mobs/Animals/goldengecko.rsi
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      190: Dead                            # Forge-Change
+  - type: MeleeWeapon
+    altDisarm: false
+    hidden: true
+    soundHit:
+      collection: N14GeckoAttack #Misfits Change
+    angle: 60
+    animation: WeaponArcBite
+    wideAnimation: WeaponArcBite
+    damage:
+      types:
+        Slash: 14                          # Forge-Change
+        Radiation: 5                       # Forge-Change
+  - type: Butcherable
+    spawned:
+    - id: N14FoodMeatGeckoGolden
+      amount: 3
+    - id: N14MaterialHideGeckoGolden
+      amount: 1
+  # - type: Reproductive
+    # breedChance: 0.05
+    # birthPopup: reproductive-laid-egg-popup
+    # makeOffspringInfant: false
+    # partnerWhitelist:
+      # tags:
+      # - Gecko
+    # offspring:
+    # - id: N14FoodEggGeckoFertilized
+      # maxAmount: 3
+  # - type: ReproductivePartner
+  # - type: EggLayer
+    # eggSpawn:
+    # - id: N14FoodEggGecko
+   #- type: Tag
+ # tags:
+   #  - Gecko
+  - type: AggroSound #Misfits Change
+    sound:
+      collection: N14GeckoAttack
+      params:
+        volume: -3
+        maxDistance: 10
+
+
+# Nightstalker Cub
+
+- type: entity
+  name: deathclaw
+  id: N14MobDeathclaw
+  parent: N14MobBaseHostileScaley
+  description: Look at those claws.
+  components:
+  - type: NpcFactionMember #Misfits Add - Deathclaw is its own faction; hostile to everything except other deathclaws
+    factions:
+    - Deathclaw
+  - type: Damageable
+    damageModifierSet: N14ToughAnimal
+  - type: Injurable
+    damageContainer: Biological
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: deathclaw
+      sprite: Nuclear14/Mobs/Animals/deathclaw.rsi
+  - type: HTN
+    rootTask:
+      task: N14HostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
+      MeleeRange: !type:Single
+        1.5
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+            radius: 0.4 # TODO: Test this can fit through doors
+        density: 100
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: MobState
+    allowedStates:
+      - Alive
+      - Critical
+      - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      400: Critical
+      500: Dead
+  - type: Stamina
+    baseCritThreshold: 999
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      100: 1.05
+      150: 1.1
+      200: 1.15
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: deathclaw
+      Critical:
+        Base: crit
+      Dead:
+        Base: dead
+  - type: MeleeWeapon
+    altDisarm: false
+    hidden: true
+    soundHit:
+      collection: N14DeathclawAttack #Misfits Change
+    angle: 60
+    animation: WeaponArcClaw
+    wideAnimation: WeaponArcClaw
+    damage:
+      types:
+        Blunt: 15
+        Slash: 25
+        Piercing: 5
+    range: 2
+  - type: IdleSound #Misfits Change
+  - type: SpamEmitSound #Misfits Change
+    minInterval: 10
+    maxInterval: 30
+    sound:
+      collection: N14DeathclawIdle
+      params:
+        volume: -8
+        maxDistance: 5
+  - type: AggroSound #Misfits Change
+    sound:
+      collection: N14DeathclawAttack
+      params:
+        volume: -3
+        maxDistance: 10
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 3
+    baseSprintSpeed : 6
+  - type: Hands
+  - type: Puller
+  - type: Tool
+    speedModifier: 1.5
+    qualities:
+      - Prying
+  - type: Prying
+    pryPowered: !type:Bool
+        true
+    force: !type:Bool
+      true
+    useSound:
+      path: /Audio/Items/crowbar.ogg
+  - type: Insulated
+  # - type: GhostRole
+    # prob: 0.5
+    # makeSentient: true
+    # name: deathclaw
+    # description: You're a smart killer. Use tactics to hunt and stalk.
+  - type: NoSlip
+  - type: NoPull #Misfits Add - Deathclaws are too powerful to be grabbed
+  # - type: Reproductive
+    # breedChance: 0.05
+    # birthPopup: reproductive-laid-egg-popup
+    # makeOffspringInfant: false
+    # partnerWhitelist:
+      # tags:
+      # - Deathclaw
+    # offspring:
+    # - id: N14FoodEggDeathclawFertilized
+      # maxAmount: 1
+  # - type: ReproductivePartner
+  # - type: EggLayer
+    # eggSpawn:
+    # - id: N14FoodEggDeathclaw
+  - type: Tag
+    tags:
+    - Deathclaw
+  - type: Butcherable
+    spawned:
+    - id: N14FoodMeatRadRaw
+      amount: 12
+    - id: N14MaterialRawLeather1
+      amount: 8
+
+#MARK: Albino Deathclaw
+
+- type: entity
+  name: albino deathclaw
+  id: N14MobDeathclawAlbino
+  parent: N14MobDeathclaw
+  description: Look at those white claws.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: deathclawalbino
+      sprite: Nuclear14/Mobs/Animals/deathclawalbino.rsi
+  - type: MeleeWeapon
+    altDisarm: false
+    hidden: true
+    soundHit:
+      collection: N14DeathclawAttack #Misfits Change
+    angle: 60
+    animation: WeaponArcClaw
+    wideAnimation: WeaponArcClaw
+    damage:
+      types:
+        Blunt: 17
+        Slash: 17
+        Piercing: 7
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      500: Critical
+      750: Dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      100: 1.1
+      150: 1.15
+      200: 1.2
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: deathclaw
+      Critical:
+        Base: dead # TODO: Crit sprite
+      Dead:
+        Base: dead
+  - type: AggroSound #Misfits Change
+    sound:
+      collection: N14DeathclawAttack
+      params:
+        volume: -3
+        maxDistance: 10
+
+- type: entity
+  name: deathclaw maid
+  id: N14MobDeathclawMaid
+  parent: N14MobDeathclaw
+  description: They put maid outfit on that thing?!
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: maidclaw
+      sprite: Nuclear14/Mobs/Animals/maidclaw.rsi
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: maidclaw
+      Critical:
+        Base: crit
+      Dead:
+        Base: dead
+  - type: AggroSound #Misfits Change
+    sound:
+      collection: N14DeathclawAttack
+      params:
+        volume: -3
+        maxDistance: 10
+
+#MARK: Metal Deathclaw
+
+- type: entity
+  name: metal deathclaw
+  id: N14MobDeathclawMetal
+  parent: N14MobDeathclawAlbino
+  description: They put armor on that thing?!
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: deathclawmetal
+      sprite: Nuclear14/Mobs/Animals/deathclawmetal.rsi
+  - type: MeleeWeapon
+    altDisarm: false
+    hidden: true
+    soundHit:
+      collection: N14DeathclawAttack #Misfits Change
+    angle: 60
+    animation: WeaponArcClaw
+    wideAnimation: WeaponArcClaw
+    damage:
+      types:
+        Blunt: 15
+        Slash: 25
+        Piercing: 7
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      500: Critical
+      750: Dead
+  - type: Reflect
+    reflects: [ NonEnergy ]
+    reflectProb: 0.3
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      100: 1.1
+      150: 1.15
+      200: 1.2
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: deathclawmetal
+      Critical:
+        Base: crit
+      Dead:
+        Base: dead
+  - type: AggroSound #Misfits Change
+    sound:
+      collection: N14DeathclawAttack
+      params:
+        volume: -3
+        maxDistance: 10
+
+
+# Fatass, aka the Lurker
+
+- type: entity
+  name: Lurker
+  id: N14MobRadLurker
+  parent: N14MobDeathclaw
+  description: It's a Lurker, the creature from the green waters. It might be fat, but is extremely fast and dangerous.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    scale: 0.8, 0.8
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: lurker
+      sprite: Nuclear14/Mobs/Animals/lurker.rsi
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: lurker
+      Critical:
+        Base: lurker_dead
+      Dead:
+        Base: lurker_dead
+  - type: MeleeWeapon
+    altDisarm: false
+    hidden: true
+    soundHit:
+      collection: N14DeathclawAttack #Misfits Change
+    angle: 60
+    animation: WeaponArcClaw
+    wideAnimation: WeaponArcClaw
+    damage:
+      types:
+        Blunt: 5
+        Slash: 15
+        Piercing: 5
+  - type: AggroSound #Misfits Change
+    sound:
+      collection: N14DeathclawAttack
+      params:
+        volume: -3
+        maxDistance: 10

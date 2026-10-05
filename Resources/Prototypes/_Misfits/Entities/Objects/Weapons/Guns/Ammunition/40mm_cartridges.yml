@@ -1,0 +1,26 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Weapons/Guns/Ammunition/40mm_cartridges.yml
+
+- type: entity
+  id: Misfits40mmGrenadePlasma
+  parent: 40mmGrenadeFrag
+  name: 40mm plasma grenade
+  description: A 40mm round that releases a compact burst of caustic green plasma.
+  components:
+  - type: CartridgeAmmo
+    proto: Misfits40mmPlasmaProjectile
+
+- type: entity
+  id: Misfits40mmGrenadeBuckshot
+  parent: 40mmGrenadeFrag
+  name: 40mm buckshot round
+  description: A 40mm shell containing twenty small buckshot pellets. Fires directly from the launcher without an explosion.
+  components:
+  - type: CartridgeAmmo
+    proto: Misfits40mmBuckshotSpread
+  - type: Sprite
+    sprite: Misfits/Legacy/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
+    layers:
+    - state: buckshot
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: SpentAmmoVisuals
+    state: buckshot

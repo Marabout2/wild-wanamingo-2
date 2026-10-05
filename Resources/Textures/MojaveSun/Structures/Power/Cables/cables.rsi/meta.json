@@ -1,0 +1,109 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/objects/cables.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "cable_red_straight",
+            "directions": 4
+        },
+        {
+            "name": "cable_red_curved",
+            "directions": 4
+        },
+        {
+            "name": "cable_red_intersect",
+            "directions": 4
+        },
+        {
+            "name": "cable_red_connector",
+            "directions": 4
+        },
+        {
+            "name": "cable_red_spliced",
+            "directions": 4
+        },
+        {
+            "name": "cable_blue_straight",
+            "directions": 4
+        },
+        {
+            "name": "cable_blue_curved",
+            "directions": 4
+        },
+        {
+            "name": "cable_blue_intersect",
+            "directions": 4
+        },
+        {
+            "name": "cable_blue_connector",
+            "directions": 4
+        },
+        {
+            "name": "cable_blue_spliced",
+            "directions": 4,
+            "delays": [
+                [
+                    0.1,
+                    0.1
+                ],
+                [
+                    0.1,
+                    0.1
+                ],
+                [
+                    0.1,
+                    0.1
+                ],
+                [
+                    0.1,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "cable_green_straight",
+            "directions": 4
+        },
+        {
+            "name": "cable_green_curved",
+            "directions": 4
+        },
+        {
+            "name": "cable_green_intersect",
+            "directions": 4
+        },
+        {
+            "name": "cable_green_connector",
+            "directions": 4
+        },
+        {
+            "name": "cable_green_spliced",
+            "directions": 4
+        },
+        {
+            "name": "cable_black_straight",
+            "directions": 4
+        },
+        {
+            "name": "cable_black_curved",
+            "directions": 4
+        },
+        {
+            "name": "cable_black_intersect",
+            "directions": 4
+        },
+        {
+            "name": "cable_black_connector",
+            "directions": 4
+        },
+        {
+            "name": "cable_black_spliced",
+            "directions": 4
+        }
+    ]
+}

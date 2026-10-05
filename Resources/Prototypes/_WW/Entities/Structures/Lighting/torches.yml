@@ -1,0 +1,32 @@
+# Mojave Sun 13 sprites on copies of Misfits/N14 prototypes (Wizden ones where N14 has none).
+# Sprites: Resources/Textures/MojaveSun (CC-BY-NC-SA-3.0, Mojave Sun 13).
+
+- type: entity
+  parent: N14TorchWall
+  id: F14TorchWall
+  name: wall torch
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Wallmounts/Lighting/lighting.rsi
+    state: wall_torch_lit
+  - type: Icon
+    sprite: MojaveSun/Structures/Wallmounts/Lighting/lighting.rsi
+    state: wall_torch_lit
+  - type: FireVisuals
+    sprite: MojaveSun/Structures/Wallmounts/Lighting/lighting.rsi
+    normalState: wall_torch_lit
+
+- type: entity
+  parent: N14Torch
+  id: F14Torch
+  name: torch
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Wallmounts/Lighting/lighting.rsi
+    state: torch_lit
+  - type: Icon
+    sprite: MojaveSun/Structures/Wallmounts/Lighting/lighting.rsi
+    state: torch_lit
+  - type: FireVisuals
+    sprite: MojaveSun/Structures/Wallmounts/Lighting/lighting.rsi
+    normalState: torch_lit

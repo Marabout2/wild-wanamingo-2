@@ -1,3 +1,5 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Materials/sand.yml
+
 - type: entity
   parent: N14MaterialBase
   id: N14Sand
@@ -29,8 +31,16 @@
   - type: Tag
     tags:
     - RawMaterial
-  - type: StaticPrice
+  - type: StackPrice
     price: 1
+
+- type: entity
+  parent: N14Sand
+  id: N14Sand10
+  suffix: 10
+  components:
+  - type: Stack
+    count: 10
 
 - type: entity
   parent: N14Sand
@@ -39,3 +49,11 @@
   components:
   - type: Stack
     count: 1
+
+- type: entity
+  parent: N14Sand
+  id: N14Sand5
+  suffix: 5
+  components:
+  - type: Stack
+    count: 5

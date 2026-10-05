@@ -1,0 +1,77 @@
+# Mojave Sun 13 sprites on copies of Wizden items (behaviour comes from the parent).
+# Sprites: Resources/Textures/MojaveSun (CC-BY-NC-SA-3.0, Mojave Sun 13).
+
+- type: entity
+  parent: FlashlightLantern
+  id: F14Flashlight
+  name: flashlight
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Tools/flashlight.rsi
+    layers:
+    - state: icon
+    - state: on-icon
+      visible: false
+      map: [ "light" ]
+  - type: Item
+    sprite: MojaveSun/Objects/Tools/flashlight.rsi
+    storedSprite:
+      sprite: MojaveSun/Objects/Tools/flashlight.rsi
+      state: icon
+  - type: ToggleableVisuals
+    spriteLayer: light
+    inhandVisuals:
+      left:
+      - state: on-inhand-left
+      right:
+      - state: on-inhand-right
+
+- type: entity
+  parent: FlashlightLantern
+  id: F14FlashlightCrafted
+  name: makeshift flashlight
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Tools/flashlight_crafted.rsi
+    layers:
+    - state: icon
+    - state: on-icon
+      visible: false
+      map: [ "light" ]
+  - type: Item
+    sprite: MojaveSun/Objects/Tools/flashlight_crafted.rsi
+    storedSprite:
+      sprite: MojaveSun/Objects/Tools/flashlight_crafted.rsi
+      state: icon
+  - type: ToggleableVisuals
+    spriteLayer: light
+    inhandVisuals:
+      left:
+      - state: on-inhand-left
+      right:
+      - state: on-inhand-right
+
+- type: entity
+  parent: FlashlightSeclite
+  id: F14Seclite
+  name: seclite
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Tools/seclite.rsi
+    layers:
+    - state: icon
+    - state: on-icon
+      visible: false
+      map: [ "light" ]
+  - type: Item
+    sprite: MojaveSun/Objects/Tools/seclite.rsi
+    storedSprite:
+      sprite: MojaveSun/Objects/Tools/seclite.rsi
+      state: icon
+  - type: ToggleableVisuals
+    spriteLayer: light
+    inhandVisuals:
+      left:
+      - state: on-inhand-left
+      right:
+      - state: on-inhand-right

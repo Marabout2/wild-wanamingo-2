@@ -1,0 +1,32 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/hud/ms_ui_hands.dmi)",
+    "size": {
+        "x": 160,
+        "y": 48
+    },
+    "states": [
+        {
+            "name": "base"
+        },
+        {
+            "name": "rhand_active"
+        },
+        {
+            "name": "rhand"
+        },
+        {
+            "name": "rhand_wield"
+        },
+        {
+            "name": "lhand_active"
+        },
+        {
+            "name": "lhand"
+        },
+        {
+            "name": "lhand_wield"
+        }
+    ]
+}

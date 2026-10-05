@@ -1,0 +1,124 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Entities/Mobs/NPCs/ghouls.yml
+
+- type: entity
+  name: Feral Ghoul
+  id: N14MobGhoulFeral
+  parent: N14MobBaseHostileFeral
+  description: Humans who have lost all capacity for thought, driven only by instinct with an increased level of aggression and appetite. They cannot be saved.
+  components:
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      100: Dead
+  - type: MeleeWeapon
+    hidden: true
+    soundHit:
+      collection: N14GhoulAttack #Misfits Change
+    angle: 0
+    animation: WeaponArcFist
+    damage:
+      types:
+        Slash: 7
+    range: 1
+  - type: IdleSound #Misfits Change
+  - type: SpamEmitSound #Misfits Change
+    minInterval: 10
+    maxInterval: 60
+    sound:
+      collection: N14GhoulIdle
+      params:
+        volume: -15
+        maxDistance: 5
+  - type: AggroSound #Misfits Change
+    sound:
+      collection: N14GhoulAggro
+      params:
+        volume: -12
+        maxDistance: 10
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: alive
+      sprite: Nuclear14/Mobs/Ghouls/ghoul-feral.rsi
+
+- type: entity
+  parent: N14MobBaseHostileFeral
+  id: N14MobGhoulFeralReaver
+  name: Feral Ghoul Reaver
+  description: Wasteland warriors still clad in the remains of their metal armor, their mind may be gone but the muscle memory from years of combat remains.
+  components:
+  - type: MeleeWeapon
+    hidden: true
+    soundHit:
+      collection: N14GhoulAttack #Misfits Change
+    angle: 0
+    animation: WeaponArcFist
+    damage:
+      types:
+        Slash: 7
+    range: 1
+  - type: IdleSound #Misfits Change
+  - type: SpamEmitSound #Misfits Change
+    minInterval: 10
+    maxInterval: 60
+    sound:
+      collection: N14GhoulIdle
+      params:
+        volume: -15
+        maxDistance: 5
+  - type: AggroSound #Misfits Change
+    sound:
+      collection: N14GhoulAggro
+      params:
+        volume: -12
+        maxDistance: 10
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: alive
+      sprite: Nuclear14/Mobs/Ghouls/ghoul-reaver.rsi
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      100: Dead
+
+- type: entity
+  parent: N14MobBaseHostileFeral
+  id: N14MobGhoulFeralRotter
+  name: Feral Ghoul Rotter
+  description: Even with their lifespan and regeneration, ghouls can fall apart too. This one is rotting alive, if you can call this festering thing alive.
+  components:
+  - type: MeleeWeapon
+    hidden: true
+    soundHit:
+      collection: N14GhoulAttack #Misfits Change
+    angle: 0
+    animation: WeaponArcFist
+    damage:
+      types:
+        Slash: 7
+    range: 1
+  - type: IdleSound #Misfits Change
+  - type: SpamEmitSound #Misfits Change
+    minInterval: 10
+    maxInterval: 60
+    sound:
+      collection: N14GhoulIdle
+      params:
+        volume: -15
+        maxDistance: 5
+  - type: AggroSound #Misfits Change
+    sound:
+      collection: N14GhoulAggro
+      params:
+        volume: -12
+        maxDistance: 10
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: alive
+      sprite: Nuclear14/Mobs/Ghouls/ghoul-rotter.rsi

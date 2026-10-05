@@ -1,0 +1,20 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Weapons/Throwable/tongue_spike.yml
+
+- type: entity
+  parent: GrenadeBase
+  id: LemonGrenade
+  name: combustible lemon
+  description: When life gives you lemons, commit arson.
+  components:
+  - type: Sprite
+    sprite: Misfits/Objects/Specific/Hydroponics/lemonade.rsi
+    layers:
+    - state: produce
+      map: ["enum.TriggerVisualLayers.Base"]
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 5
+    intensitySlope: 3
+    totalIntensity: 5
+    canCreateVacuum: false

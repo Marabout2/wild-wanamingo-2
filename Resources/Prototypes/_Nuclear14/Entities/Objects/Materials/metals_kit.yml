@@ -1,4 +1,5 @@
-# Mapping kit additions to metals.yml, ported from wild-wanamingo.
+# More of metals.yml. Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Entities/Objects/Materials/metals.yml
 
 - type: entity
   parent: IngotBase
@@ -56,6 +57,19 @@
     state: ingot_lead
   - type: Stack
     count: 1
+
+- type: entity
+  parent: N14IngotLead
+  id: N14IngotLead20
+  name: lead bar
+  suffix: 20
+  components:
+  - type: Sprite
+    state: ingot_lead
+  - type: Stack
+    count: 20
+
+#MARK: Aluminum
 
 - type: entity
   parent: IngotBase

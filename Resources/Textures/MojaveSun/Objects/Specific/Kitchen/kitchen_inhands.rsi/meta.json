@@ -1,0 +1,43 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/mob/inhands/equipment/kitchen_lefthand.dmi, mojave/icons/mob/inhands/equipment/kitchen_righthand.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "rolling_pin-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "rolling_pin-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "fork-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "fork-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "spoon-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "spoon-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "carton-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "carton-inhand-right",
+            "directions": 4
+        }
+    ]
+}

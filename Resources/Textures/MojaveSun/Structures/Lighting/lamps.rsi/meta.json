@@ -1,0 +1,29 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/structure/lamps.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "handmadelamp"
+        },
+        {
+            "name": "handmadelamp_on"
+        },
+        {
+            "name": "tablelamp"
+        },
+        {
+            "name": "tablelamp_on"
+        },
+        {
+            "name": "lamp"
+        },
+        {
+            "name": "lamp_on"
+        }
+    ]
+}

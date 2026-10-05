@@ -1,0 +1,254 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/objects/smokeables/smokeables_inventory.dmi)",
+    "size": {
+        "x": 40,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "generic_pack"
+        },
+        {
+            "name": "generic_pack_open"
+        },
+        {
+            "name": "marl_pack"
+        },
+        {
+            "name": "marl_pack_open"
+        },
+        {
+            "name": "wins_pack"
+        },
+        {
+            "name": "wins_pack_open"
+        },
+        {
+            "name": "salem_pack"
+        },
+        {
+            "name": "salem_pack_open"
+        },
+        {
+            "name": "kool_pack"
+        },
+        {
+            "name": "kool_pack_open"
+        },
+        {
+            "name": "lucky_pack"
+        },
+        {
+            "name": "repub_pack"
+        },
+        {
+            "name": "repub_pack_open"
+        },
+        {
+            "name": "custom_pack"
+        },
+        {
+            "name": "custom_pack_open"
+        },
+        {
+            "name": "overlay_lucky"
+        },
+        {
+            "name": "overlay_cig_8"
+        },
+        {
+            "name": "overlay_cig_7"
+        },
+        {
+            "name": "overlay_cig_6"
+        },
+        {
+            "name": "overlay_cig_5"
+        },
+        {
+            "name": "overlay_cig_4"
+        },
+        {
+            "name": "overlay_cig_3"
+        },
+        {
+            "name": "overlay_cig_2"
+        },
+        {
+            "name": "overlay_cig_1"
+        },
+        {
+            "name": "overlay_cig_0"
+        },
+        {
+            "name": "overlay_rolled_8"
+        },
+        {
+            "name": "overlay_rolled_7"
+        },
+        {
+            "name": "overlay_rolled_6"
+        },
+        {
+            "name": "overlay_rolled_5"
+        },
+        {
+            "name": "overlay_rolled_4"
+        },
+        {
+            "name": "overlay_rolled_3"
+        },
+        {
+            "name": "overlay_rolled_2"
+        },
+        {
+            "name": "overlay_rolled_1"
+        },
+        {
+            "name": "overlay_rolled_0"
+        },
+        {
+            "name": "cigarette_1"
+        },
+        {
+            "name": "cigarette_2"
+        },
+        {
+            "name": "cigarette_3"
+        },
+        {
+            "name": "cigarette_4"
+        },
+        {
+            "name": "cigarette_5"
+        },
+        {
+            "name": "rollie_1"
+        },
+        {
+            "name": "rollie_2"
+        },
+        {
+            "name": "rollie_3"
+        },
+        {
+            "name": "rollie_4"
+        },
+        {
+            "name": "rollie_5"
+        },
+        {
+            "name": "winston"
+        },
+        {
+            "name": "winston_1"
+        },
+        {
+            "name": "winston_2"
+        },
+        {
+            "name": "winston_3"
+        },
+        {
+            "name": "winston_4"
+        },
+        {
+            "name": "winston_5"
+        },
+        {
+            "name": "marl"
+        },
+        {
+            "name": "marl_1"
+        },
+        {
+            "name": "marl_2"
+        },
+        {
+            "name": "marl_3"
+        },
+        {
+            "name": "marl_4"
+        },
+        {
+            "name": "marl_5"
+        },
+        {
+            "name": "salem"
+        },
+        {
+            "name": "salem_1"
+        },
+        {
+            "name": "salem_2"
+        },
+        {
+            "name": "salem_3"
+        },
+        {
+            "name": "salem_4"
+        },
+        {
+            "name": "salem_5"
+        },
+        {
+            "name": "kool"
+        },
+        {
+            "name": "kool_1"
+        },
+        {
+            "name": "kool_2"
+        },
+        {
+            "name": "kool_3"
+        },
+        {
+            "name": "kool_4"
+        },
+        {
+            "name": "kool_5"
+        },
+        {
+            "name": "lucky"
+        },
+        {
+            "name": "lucky_1"
+        },
+        {
+            "name": "lucky_2"
+        },
+        {
+            "name": "lucky_3"
+        },
+        {
+            "name": "lucky_4"
+        },
+        {
+            "name": "lucky_5"
+        },
+        {
+            "name": "repub"
+        },
+        {
+            "name": "repub_1"
+        },
+        {
+            "name": "repub_2"
+        },
+        {
+            "name": "repub_3"
+        },
+        {
+            "name": "repub_4"
+        },
+        {
+            "name": "repub_5"
+        },
+        {
+            "name": "repub_butt"
+        }
+    ]
+}

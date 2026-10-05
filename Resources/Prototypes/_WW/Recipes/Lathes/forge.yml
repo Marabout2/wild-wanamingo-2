@@ -1,0 +1,141 @@
+# Forge recipes for the F14 melee weapons (Mojave Sun 13 sprites on Wizden weapons).
+# Forged from steel sheets, iron bars and wood; Misfits' own melee recipes need its faction blueprints.
+
+- type: latheRecipe
+  id: F14FireAxe
+  result: F14FireAxe
+  completetime: 8
+  materials:
+    Steel: 600
+    Wood: 200
+
+- type: latheRecipe
+  id: F14KitchenKnife
+  result: F14KitchenKnife
+  completetime: 3
+  materials:
+    Steel: 200
+
+- type: latheRecipe
+  id: F14KnifeBowie
+  result: F14KnifeBowie
+  completetime: 4
+  materials:
+    Steel: 300
+    N14Iron: 100
+
+- type: latheRecipe
+  id: F14KnifeSoviet
+  result: F14KnifeSoviet
+  completetime: 4
+  materials:
+    Steel: 300
+    N14Iron: 100
+
+- type: latheRecipe
+  id: F14KnifeBayonet
+  result: F14KnifeBayonet
+  completetime: 4
+  materials:
+    Steel: 300
+
+- type: latheRecipe
+  id: F14KnifeTribal
+  result: F14KnifeTribal
+  completetime: 4
+  materials:
+    N14Iron: 300
+    Wood: 100
+
+- type: latheRecipe
+  id: F14SurvivalKnife
+  result: F14SurvivalKnife
+  completetime: 4
+  materials:
+    Steel: 300
+    N14Iron: 100
+
+- type: latheRecipe
+  id: F14KnifeHunting
+  result: F14KnifeHunting
+  completetime: 4
+  materials:
+    Steel: 300
+    Wood: 100
+
+- type: latheRecipe
+  id: F14ThrowingKnife
+  result: F14ThrowingKnife
+  completetime: 2
+  materials:
+    Steel: 100
+
+- type: latheRecipe
+  id: F14Cleaver
+  result: F14Cleaver
+  completetime: 4
+  materials:
+    Steel: 400
+
+- type: latheRecipe
+  id: F14CleaverRusty
+  result: F14CleaverRusty
+  completetime: 4
+  materials:
+    N14Iron: 400
+
+- type: latheRecipe
+  id: F14Machete
+  result: F14Machete
+  completetime: 6
+  materials:
+    Steel: 500
+    N14Iron: 200
+
+- type: latheRecipe
+  id: F14Gladius
+  result: F14Gladius
+  completetime: 6
+  materials:
+    Steel: 600
+    N14Iron: 200
+
+- type: latheRecipe
+  id: F14Katana
+  result: F14Katana
+  completetime: 10
+  materials:
+    Steel: 800
+    N14Iron: 300
+
+- type: latheRecipe
+  id: F14KatanaRed
+  result: F14KatanaRed
+  completetime: 10
+  materials:
+    Steel: 800
+    N14Iron: 300
+
+- type: latheRecipe
+  id: F14Pickaxe
+  result: F14Pickaxe
+  completetime: 6
+  materials:
+    N14Iron: 400
+    Wood: 200
+
+- type: latheRecipe
+  id: F14Sledgehammer
+  result: F14Sledgehammer
+  completetime: 8
+  materials:
+    N14Iron: 800
+    Wood: 200
+
+- type: latheRecipe
+  id: F14HatchetBroad
+  result: F14HatchetBroad
+  completetime: 5
+  materials:
+    Steel: 400
+    Wood: 100

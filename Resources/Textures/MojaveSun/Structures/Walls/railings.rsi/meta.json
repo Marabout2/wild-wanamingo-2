@@ -1,0 +1,87 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/structure/railings.dmi)",
+    "size": {
+        "x": 32,
+        "y": 48
+    },
+    "states": [
+        {
+            "name": "railings_sewer",
+            "directions": 4
+        },
+        {
+            "name": "civ_full",
+            "directions": 8
+        },
+        {
+            "name": "civ_solo",
+            "directions": 4
+        },
+        {
+            "name": "civ_end",
+            "directions": 8
+        },
+        {
+            "name": "civ_end_b",
+            "directions": 8
+        },
+        {
+            "name": "indus_full",
+            "directions": 8
+        },
+        {
+            "name": "indus_solo",
+            "directions": 4
+        },
+        {
+            "name": "indus_end",
+            "directions": 8
+        },
+        {
+            "name": "indus_end_b",
+            "directions": 8
+        },
+        {
+            "name": "wood_full",
+            "directions": 8
+        },
+        {
+            "name": "wood_solo",
+            "directions": 4
+        },
+        {
+            "name": "wood_end",
+            "directions": 8
+        },
+        {
+            "name": "wood_full_b",
+            "directions": 8
+        },
+        {
+            "name": "wood_gate",
+            "directions": 8
+        },
+        {
+            "name": "wood_snow_full",
+            "directions": 8
+        },
+        {
+            "name": "wood_snow_solo",
+            "directions": 4
+        },
+        {
+            "name": "wood_snow_end",
+            "directions": 8
+        },
+        {
+            "name": "wood_snow_full_b",
+            "directions": 8
+        },
+        {
+            "name": "wood_snow_gate",
+            "directions": 8
+        }
+    ]
+}

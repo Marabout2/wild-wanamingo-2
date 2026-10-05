@@ -1,0 +1,75 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/mob/inhands/items_lefthand.dmi, mojave/icons/mob/inhands/items_righthand.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "tribalspear-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "tribalspear-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "mat-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "mat-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "rug-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "rug-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "rug_rubber-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "rug_rubber-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "scrap-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "scrap-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "rope-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "rope-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "paper-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "paper-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "toolbox-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "toolbox-inhand-right",
+            "directions": 4
+        }
+    ]
+}

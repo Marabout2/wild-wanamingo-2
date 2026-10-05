@@ -1,0 +1,30 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Stacks/consumable_stacks.yml
+
+- type: stack
+  id: N14LeavesTobaccoDried
+  name: misfits-kit-dried-tobacco-leaves
+  icon: { sprite: Nuclear14/Objects/Consumable/Smokeables/smokeables.rsi, state: tobacco_dried_1 }
+  spawn: N14LeavesTobaccoDried
+  maxCount: 5
+
+- type: stack
+  id: N14LeavesCannabisDried
+  name: misfits-kit-dried-cannabis-leaves
+  icon: { sprite: Nuclear14/Objects/Consumable/Smokeables/smokeables.rsi, state: cannabis_dried }
+  spawn: N14LeavesCannabisDried
+  maxCount: 5
+
+- type: stack
+  id: N14GroundTobacco
+  name: misfits-kit-ground-tobacco
+  icon: { sprite: Nuclear14/Objects/Consumable/Smokeables/smokeables.rsi, state: tobacco_powderpile }
+  spawn: N14GroundTobacco
+  maxCount: 5
+
+- type: stack
+  id: N14RollingPaper
+  name: misfits-kit-rolling-paper
+  icon: { sprite: Nuclear14/Objects/Consumable/Smokeables/smokeables.rsi, state: rollie_paper }
+  spawn: N14RollingPaper1
+  maxCount: 5

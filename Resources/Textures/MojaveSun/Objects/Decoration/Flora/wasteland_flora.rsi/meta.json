@@ -1,0 +1,278 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/flora/wastelandflora.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "tarberry1p"
+        },
+        {
+            "name": "tarberry1"
+        },
+        {
+            "name": "tarberry2p"
+        },
+        {
+            "name": "tarberry2"
+        },
+        {
+            "name": "tarberry3p"
+        },
+        {
+            "name": "tarberry3"
+        },
+        {
+            "name": "blackberry1p"
+        },
+        {
+            "name": "blackberry1"
+        },
+        {
+            "name": "blackberry2p"
+        },
+        {
+            "name": "blackberry2"
+        },
+        {
+            "name": "blackberry3p"
+        },
+        {
+            "name": "blackberry3"
+        },
+        {
+            "name": "mutfruit1p"
+        },
+        {
+            "name": "mutfruit1"
+        },
+        {
+            "name": "mutfruit2p"
+        },
+        {
+            "name": "mutfruit2"
+        },
+        {
+            "name": "mutfruit3p"
+        },
+        {
+            "name": "mutfruit3"
+        },
+        {
+            "name": "ashrose1p"
+        },
+        {
+            "name": "ashrose1"
+        },
+        {
+            "name": "ashrose2p"
+        },
+        {
+            "name": "ashrose2"
+        },
+        {
+            "name": "ashrose3p"
+        },
+        {
+            "name": "ashrose3"
+        },
+        {
+            "name": "root1p"
+        },
+        {
+            "name": "root1"
+        },
+        {
+            "name": "root2p"
+        },
+        {
+            "name": "root2"
+        },
+        {
+            "name": "root3p"
+        },
+        {
+            "name": "root3"
+        },
+        {
+            "name": "aster1p"
+        },
+        {
+            "name": "aster1"
+        },
+        {
+            "name": "aster2p"
+        },
+        {
+            "name": "aster2"
+        },
+        {
+            "name": "aster3p"
+        },
+        {
+            "name": "aster3"
+        },
+        {
+            "name": "brocflower1p"
+        },
+        {
+            "name": "brocflower2"
+        },
+        {
+            "name": "brocflower2p"
+        },
+        {
+            "name": "xander1p"
+        },
+        {
+            "name": "xander2p"
+        },
+        {
+            "name": "blightshroom1p"
+        },
+        {
+            "name": "blightshroom1"
+        },
+        {
+            "name": "blightshroom2p"
+        },
+        {
+            "name": "blightshroom2"
+        },
+        {
+            "name": "blightshroom3p"
+        },
+        {
+            "name": "blightshroom3"
+        },
+        {
+            "name": "brainshroom1p"
+        },
+        {
+            "name": "brainshroom1"
+        },
+        {
+            "name": "brainshroom2p"
+        },
+        {
+            "name": "brainshroom2"
+        },
+        {
+            "name": "brainshroom3p"
+        },
+        {
+            "name": "brainshroom3"
+        },
+        {
+            "name": "fireshroom1p"
+        },
+        {
+            "name": "fireshroom1"
+        },
+        {
+            "name": "fireshroom2p"
+        },
+        {
+            "name": "fireshroom2"
+        },
+        {
+            "name": "fireshroom3p"
+        },
+        {
+            "name": "fireshroom3"
+        },
+        {
+            "name": "gutshroom1p"
+        },
+        {
+            "name": "gutshroom1"
+        },
+        {
+            "name": "gutshroom2p"
+        },
+        {
+            "name": "gutshroom2"
+        },
+        {
+            "name": "gutshroom3p"
+        },
+        {
+            "name": "gutshroom3"
+        },
+        {
+            "name": "lureweed1p"
+        },
+        {
+            "name": "lureweed1"
+        },
+        {
+            "name": "lureweed2p"
+        },
+        {
+            "name": "lureweed2"
+        },
+        {
+            "name": "lureweed3p"
+        },
+        {
+            "name": "lureweed3"
+        },
+        {
+            "name": "narashroom1p"
+        },
+        {
+            "name": "narashroom1"
+        },
+        {
+            "name": "narashroom2p"
+        },
+        {
+            "name": "narashroom2"
+        },
+        {
+            "name": "narashroom3p"
+        },
+        {
+            "name": "narashroom3"
+        },
+        {
+            "name": "barrelc1"
+        },
+        {
+            "name": "barrelc2"
+        },
+        {
+            "name": "yucca1p"
+        },
+        {
+            "name": "d_xander1p"
+        },
+        {
+            "name": "d_brocflower1"
+        },
+        {
+            "name": "d_brocflower1p"
+        },
+        {
+            "name": "d_aster1"
+        },
+        {
+            "name": "d_aster1p"
+        },
+        {
+            "name": "d_ashrose1"
+        },
+        {
+            "name": "d_ashrose1p"
+        },
+        {
+            "name": "mindshroom1"
+        },
+        {
+            "name": "gremlinstool1"
+        }
+    ]
+}

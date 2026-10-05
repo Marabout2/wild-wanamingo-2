@@ -1,4 +1,5 @@
-# Mapping kit additions to material_stacks.yml, ported from wild-wanamingo.
+# More of material_stacks.yml. Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Stacks/material_stacks.yml
 
 - type: stack
   id: Circuitry
@@ -8,6 +9,41 @@
   maxCount: 15
 
 - type: stack
+  id: N14Gunpowder
+  name: misfits-kit-gunpowder
+  icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: powder_lead }
+  spawn: N14Gunpowder1
+  maxCount: 10
+
+- type: stack
+  id: N14Paper
+  name: misfits-kit-paper
+  icon: { sprite: "/Textures/Nuclear14/Objects/Misc/clutter.rsi", state: paper }
+  spawn: N14Paper1
+  maxCount: 10
+
+- type: stack
+  id: Leather
+  name: misfits-kit-leather
+  icon: { sprite: Nuclear14/Objects/Misc/materials.rsi, state: leather_3 }
+  spawn: N14MaterialLeather1
+  maxCount: 15
+
+- type: stack
+  id: RawLeather
+  name: misfits-kit-raw-leather
+  icon: { sprite: Nuclear14/Objects/Misc/materials.rsi, state: raw_leather_2 }
+  spawn: N14MaterialRawLeather1
+  maxCount: 15
+
+- type: stack
+  id: AntChitin
+  name: misfits-kit-ant-chitin
+  icon: { sprite: Nuclear14/Objects/Misc/mob_drops.rsi, state: chitin_3 }
+  spawn: N14MaterialAntChitin1
+  maxCount: 3
+
+- type: stack
   id: Thread
   name: misfits-kit-thread
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: thread }
@@ -15,6 +51,48 @@
   maxCount: 10
 
 # Ores
+
+- type: stack
+  id: N14LeadOre
+  name: misfits-kit-lead-ore
+  icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: lead }
+  spawn: N14LeadOre1
+  maxCount: 10
+
+- type: stack
+  id: N14CopperOre
+  name: misfits-kit-copper-ore
+  icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: copper }
+  spawn: N14CopperOre1
+  maxCount: 30
+
+- type: stack
+  id: N14IronOre
+  name: misfits-kit-iron-ore
+  icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: iron }
+  spawn: N14IronOre1
+  maxCount: 30
+
+- type: stack
+  id: N14GoldOre
+  name: misfits-kit-gold-ore
+  icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: gold }
+  spawn: N14GoldOre1
+  maxCount: 30
+
+- type: stack
+  id: N14SilverOre
+  name: misfits-kit-silver-ore
+  icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: silver }
+  spawn: N14SilverOre1
+  maxCount: 30
+
+- type: stack
+  id: SulfurOre
+  name: misfits-kit-sulfur-ore
+  icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: sulfur }
+  spawn: SulfurOre1
+  maxCount: 10
 
 - type: stack
   id: Lead

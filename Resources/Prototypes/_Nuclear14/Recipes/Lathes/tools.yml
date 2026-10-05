@@ -1,0 +1,266 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Recipes/Lathes/tools.yml
+
+- type: latheRecipe
+  id: N14Wirecutter
+  icon:
+    sprite: Objects/Tools/wirecutters.rsi
+    state: cutters-map
+  result: N14Wirecutter
+  categories:
+  - N14Tools
+  completetime: 2
+  materials:
+    Steel: 200
+    Plastic: 50
+
+- type: latheRecipe
+  id: N14Screwdriver
+  icon:
+    sprite: Objects/Tools/screwdriver.rsi
+    state: screwdriver-map
+  result: N14Screwdriver
+  categories:
+  - N14Tools
+  completetime: 2
+  materials:
+    Steel: 200
+    Plastic: 50
+
+- type: latheRecipe
+  id: N14Welder
+  result: N14Welder
+  categories:
+  - N14Tools
+  completetime: 2
+  materials:
+    Steel: 400
+
+- type: latheRecipe
+  id: N14Wrench
+  result: N14Wrench
+  categories:
+  - N14Tools
+  completetime: 2
+  materials:
+    Steel: 200
+
+- type: latheRecipe
+  id: N14CableStack
+  result: CableApcStack1
+  categories:
+  - N14Parts
+  completetime: 1
+  materials:
+    N14Copper: 10 #Misfits Change: Makes More sense
+    Cloth: 1
+
+- type: latheRecipe
+  id: N14CableMVStack
+  result: CableMVStack1
+  categories:
+  - N14Parts
+  completetime: 1
+  materials:
+    N14Copper: 20 #Misfits Change: Makes More sense
+    Cloth: 5
+
+- type: latheRecipe
+  id: N14CableHVStack
+  result: CableHVStack1
+  categories:
+  - N14Parts
+  completetime: 2
+  materials:
+    N14Copper: 30 #Misfits Change: Makes More sense
+    Cloth: 10
+
+- type: latheRecipe
+  id: N14Crowbar
+  result: Crowbar
+  categories:
+  - N14Tools
+  completetime: 2
+  materials:
+    Steel: 200
+
+- type: latheRecipe
+  id: N14Pickaxe
+  result: Pickaxe
+  categories:
+  - N14Tools
+  completetime: 4
+  materials:
+    Steel: 1000
+    Wood: 500
+
+- type: latheRecipe
+  id: N14Multitool
+  result: N14Multitool
+  categories:
+  - N14Tools
+  completetime: 2
+  materials:
+    N14Copper: 200 #Misfits Change: Makes More sense
+    Plastic: 400
+
+- type: latheRecipe
+  id: N14NetworkConfigurator
+  result: NetworkConfigurator
+  categories:
+  - N14Tools
+  completetime: 2
+  materials:
+    N14Copper: 200 #Misfits Change: Makes More sense
+    Plastic: 200
+
+- type: latheRecipe
+  id: N14PowerDrill
+  result: N14PowerDrill
+  categories:
+  - N14Tools
+  completetime: 2
+  materials:
+    N14Copper: 500 #Misfits Change: Makes More sense
+    Steel: 100
+    Plastic: 200
+
+- type: latheRecipe
+  id: N14HandheldGPSBasic
+  result: HandheldGPSBasic
+  categories:
+  - N14Tools
+  completetime: 2
+  materials:
+    Plastic: 300
+    N14Copper: 200 #Misfits Change: Makes More sense
+    Glass: 300
+
+- type: latheRecipe
+  id: N14TRayScanner
+  result: trayScanner
+  categories:
+  - N14Tools
+  completetime: 2
+  materials:
+    Plastic: 300
+    N14Copper: 200 #Misfits Change: Makes More sense
+    Glass: 300
+
+- type: latheRecipe
+  id: N14GasAnalyzer
+  result: GasAnalyzer
+  categories:
+  - N14Tools
+  completetime: 2
+  materials:
+    Plastic: 300
+    N14Copper: 200 #Misfits Change: Makes More sense
+    Glass: 300
+
+- type: latheRecipe
+  id: N14SprayPainter
+  result: SprayPainter
+  categories:
+  - N14Tools
+  completetime: 2
+  materials:
+    Steel: 300
+    Plastic: 100
+
+- type: latheRecipe
+  id: N14MiningDrill
+  result: MiningDrill
+  categories:
+  - N14Tools
+  completetime: 3
+  materials:
+    Steel: 300
+    N14Copper: 200 #Misfits Change: Makes More sense
+    Plastic: 100
+
+- type: latheRecipe
+  id: N14HandheldRadio
+  result: RadioHandheld
+  categories:
+  - N14Tools
+  completetime: 5
+  materials:
+    Steel: 100
+    Circuitry: 100
+
+- type: latheRecipe
+  id: N14HydroponicsToolClippers
+  result: N14HydroponicsToolClippers
+  categories:
+  - N14Tools
+  completetime: 3
+  materials:
+    Steel: 100
+
+- type: latheRecipe
+  id: N14HydroponicsToolHatchet
+  result: N14HydroponicsToolHatchet
+  categories:
+  - N14Tools
+  completetime: 3
+  materials:
+    Steel: 100
+
+- type: latheRecipe
+  id: N14HydroponicsToolScythe
+  result: N14HydroponicsToolScythe
+  categories:
+  - N14Tools
+  completetime: 5
+  materials:
+    Steel: 200
+
+- type: latheRecipe
+  id: N14HydroponicsToolHoe
+  result: N14HydroponicsToolHoe
+  categories:
+  - N14Tools
+  completetime: 3
+  materials:
+    Steel: 100
+
+- type: latheRecipe
+  id: N14HandLabeler
+  result: HandLabeler
+  categories:
+  - N14Tools
+  completetime: 2
+  materials:
+    Plastic: 100
+
+- type: latheRecipe
+  id: N14GeigerCounter
+  result: GeigerCounter
+  categories:
+  - N14Tools
+  completetime: 2
+  materials:
+    Plastic: 100
+    Circuitry: 50
+
+- type: latheRecipe
+  id: N14RemoteSignaller
+  result: RemoteSignaller
+  categories:
+  - N14Tools
+  completetime: 2
+  materials:
+    N14Copper: 50
+    Plastic: 300
+    Circuitry: 100
+
+- type: latheRecipe
+  id: N14Binoculars
+  result: N14Binoculars
+  categories:
+  - N14Tools
+  completetime: 2
+  materials:
+    Glass: 100
+    Steel: 100

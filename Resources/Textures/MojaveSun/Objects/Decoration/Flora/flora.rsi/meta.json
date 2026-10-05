@@ -1,0 +1,83 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/flora/flora.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "drygrass_2"
+        },
+        {
+            "name": "drygrass_3"
+        },
+        {
+            "name": "drygrass_4"
+        },
+        {
+            "name": "drygrass_6"
+        },
+        {
+            "name": "drygrass_7"
+        },
+        {
+            "name": "drygrass_8"
+        },
+        {
+            "name": "drygrass_9"
+        },
+        {
+            "name": "drygrass_10"
+        },
+        {
+            "name": "drygrass_11"
+        },
+        {
+            "name": "drygrass_12"
+        },
+        {
+            "name": "drygrass_14"
+        },
+        {
+            "name": "drygrass_15"
+        },
+        {
+            "name": "tall_cactus1"
+        },
+        {
+            "name": "tall_cactus2"
+        },
+        {
+            "name": "tall_cactus3"
+        },
+        {
+            "name": "leafy_plant1"
+        },
+        {
+            "name": "leafy_plant2"
+        },
+        {
+            "name": "short_cactus2"
+        },
+        {
+            "name": "short_cactus3"
+        },
+        {
+            "name": "snowgrass_4"
+        },
+        {
+            "name": "snowgrass_5"
+        },
+        {
+            "name": "snowgrass_6"
+        },
+        {
+            "name": "snowgrass_7"
+        },
+        {
+            "name": "snowgrass_8"
+        }
+    ]
+}

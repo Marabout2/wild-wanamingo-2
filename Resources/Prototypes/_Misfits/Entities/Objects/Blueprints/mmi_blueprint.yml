@@ -1,0 +1,6 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Blueprints/mmi_blueprint.yml
+
+- type: entity
+  parent: MMI
+  id: N14MMI
+  suffix: N14

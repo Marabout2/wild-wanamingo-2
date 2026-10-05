@@ -1,0 +1,6 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/Decals/wood_trim_thin.yml
+# (Misfits' copy of a Space Station 14 or other-fork file.)
+
+- type: decal
+  id: WoodTrimThin
+  abstract: true

@@ -1,0 +1,78 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Weapons/Throwable/grenades.yml
+
+- type: entity
+  id: MisfitsGrenadeTinExplosion
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TriggerOnSpawn
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: N14DefaultStructural
+    maxIntensity: 3
+    intensitySlope: 10
+    totalIntensity: 30
+    canCreateVacuum: false
+    maxTileBreak: 0
+    tileBreakScale: 0
+
+- type: entity
+  id: MisfitsGrenadeFragExplosion
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TriggerOnSpawn
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: N14DefaultStructural
+    maxIntensity: 8
+    intensitySlope: 4
+    totalIntensity: 50
+    canCreateVacuum: false
+    maxTileBreak: 0
+    tileBreakScale: 0
+
+- type: entity
+  id: MisfitsGrenadeFragDefensiveExplosion
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TriggerOnSpawn
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: N14DefaultStructural
+    maxIntensity: 4
+    intensitySlope: 4
+    totalIntensity: 20
+    canCreateVacuum: false
+    maxTileBreak: 0
+    tileBreakScale: 0
+
+- type: entity
+  id: MisfitsPulseGrenadeExplosion
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TriggerOnSpawn
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: MisfitsPulse
+    maxIntensity: 5
+    intensitySlope: 5
+    totalIntensity: 20
+    canCreateVacuum: false
+    maxTileBreak: 0
+    tileBreakScale: 0
+
+- type: entity
+  parent: SmokeGrenade
+  id: MisfitsGrenadeWhitePhosphorus
+  name: white phosphorus grenade
+  description: A screening grenade that releases pale, corrosive smoke. Prolonged exposure causes severe chemical burns.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Grenades/smoke.rsi
+    color: "#E8E8E8"
+  - type: SmokeOnTrigger
+    duration: 25
+    spreadAmount: 50
+    solution:
+      reagents:
+      - ReagentId: MisfitsWhitePhosphorusSmoke
+        Quantity: 50

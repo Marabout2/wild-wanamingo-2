@@ -1,0 +1,136 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/structure/pipes.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "normal"
+        },
+        {
+            "name": "rand",
+            "directions": 4
+        },
+        {
+            "name": "box"
+        },
+        {
+            "name": "brown"
+        },
+        {
+            "name": "turnaround"
+        },
+        {
+            "name": "double_down"
+        },
+        {
+            "name": "cont",
+            "directions": 8
+        },
+        {
+            "name": "valve",
+            "directions": 4
+        },
+        {
+            "name": "down",
+            "directions": 4
+        },
+        {
+            "name": "inwall",
+            "directions": 4
+        },
+        {
+            "name": "normal_single"
+        },
+        {
+            "name": "rand_single",
+            "directions": 4
+        },
+        {
+            "name": "valve_single"
+        },
+        {
+            "name": "cont_single"
+        },
+        {
+            "name": "down_single",
+            "directions": 4
+        },
+        {
+            "name": "inwall_single",
+            "directions": 4
+        },
+        {
+            "name": "upeast"
+        },
+        {
+            "name": "upwest"
+        },
+        {
+            "name": "upeastrand",
+            "directions": 4
+        },
+        {
+            "name": "upwestrand",
+            "directions": 4
+        },
+        {
+            "name": "valve_upeast"
+        },
+        {
+            "name": "valve_upwest"
+        },
+        {
+            "name": "upcornereast_single"
+        },
+        {
+            "name": "upcornerwest_single"
+        },
+        {
+            "name": "upcornereast"
+        },
+        {
+            "name": "upcornerwest"
+        },
+        {
+            "name": "downcornereast"
+        },
+        {
+            "name": "downcornerwest"
+        },
+        {
+            "name": "piped"
+        },
+        {
+            "name": "vent"
+        },
+        {
+            "name": "top"
+        },
+        {
+            "name": "large_pipe_straight",
+            "directions": 4
+        },
+        {
+            "name": "large_pipe_pump"
+        },
+        {
+            "name": "large_pipe_intersection"
+        },
+        {
+            "name": "large_pipe_corner",
+            "directions": 4
+        },
+        {
+            "name": "large_pipe_intersection-t",
+            "directions": 4
+        },
+        {
+            "name": "large_pipe_ground",
+            "directions": 4
+        }
+    ]
+}

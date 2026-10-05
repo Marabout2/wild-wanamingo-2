@@ -1,3 +1,5 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Structures/Decoration/enclave_power_armor_display.yml
+
 - type: entity
   parent: BaseStructure
   id: MisfitsDecorationPowerArmorX01Display

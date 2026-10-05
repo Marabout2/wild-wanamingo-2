@@ -1,0 +1,62 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/objects/hamradio.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "highradio-off"
+        },
+        {
+            "name": "highradio-on"
+        },
+        {
+            "name": "highradio"
+        },
+        {
+            "name": "radio-off"
+        },
+        {
+            "name": "radio-on"
+        },
+        {
+            "name": "radio"
+        },
+        {
+            "name": "recradio-off"
+        },
+        {
+            "name": "recradio-on"
+        },
+        {
+            "name": "recradio"
+        },
+        {
+            "name": "radioking_wood-off"
+        },
+        {
+            "name": "radioking_wood-on"
+        },
+        {
+            "name": "radioking_wood"
+        },
+        {
+            "name": "radioking_black-off"
+        },
+        {
+            "name": "radioking_black-on"
+        },
+        {
+            "name": "radioking_black"
+        },
+        {
+            "name": "jukebox_on"
+        },
+        {
+            "name": "jukebox_off"
+        }
+    ]
+}

@@ -1,0 +1,89 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/objects/medical/iv_fillings.dmi, mojave/icons/objects/medical/medical_inventory.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "iv_empty"
+        },
+        {
+            "name": "iv_blood25"
+        },
+        {
+            "name": "iv_blood50"
+        },
+        {
+            "name": "iv_blood75"
+        },
+        {
+            "name": "iv_blood100"
+        },
+        {
+            "name": "iv_empty_injecting"
+        },
+        {
+            "name": "iv_blood_injecting25"
+        },
+        {
+            "name": "iv_blood_injecting50"
+        },
+        {
+            "name": "iv_blood_injecting75"
+        },
+        {
+            "name": "iv_blood_injecting100"
+        },
+        {
+            "name": "iv_rad25"
+        },
+        {
+            "name": "iv_rad50"
+        },
+        {
+            "name": "iv_rad75"
+        },
+        {
+            "name": "iv_rad100"
+        },
+        {
+            "name": "iv_rad_injecting25"
+        },
+        {
+            "name": "iv_rad_injecting50"
+        },
+        {
+            "name": "iv_rad_injecting75"
+        },
+        {
+            "name": "iv_rad_injecting100"
+        },
+        {
+            "name": "iv_empty_injecting25"
+        },
+        {
+            "name": "iv_empty_injecting50"
+        },
+        {
+            "name": "iv_empty_injecting75"
+        },
+        {
+            "name": "iv_empty_injecting100"
+        },
+        {
+            "name": "iv_empty25"
+        },
+        {
+            "name": "iv_empty50"
+        },
+        {
+            "name": "iv_empty75"
+        },
+        {
+            "name": "iv_empty100"
+        }
+    ]
+}

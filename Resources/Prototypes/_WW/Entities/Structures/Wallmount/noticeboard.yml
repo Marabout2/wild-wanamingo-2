@@ -1,0 +1,20 @@
+# Mojave Sun 13 sprites on copies of Misfits/N14 prototypes (Wizden ones where N14 has none).
+# Sprites: Resources/Textures/MojaveSun (CC-BY-NC-SA-3.0, Mojave Sun 13).
+
+- type: entity
+  parent: N14NoticeBoard
+  id: F14NoticeBoard
+  name: notice board
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Wallmounts/noticeboard.rsi
+    layers:
+    - state: nboard-0
+      map: ["enum.StorageFillLayers.Fill"]
+    offset: 0, 0.25
+  - type: Icon
+    sprite: MojaveSun/Structures/Wallmounts/noticeboard.rsi
+    state: nboard-0
+  - type: StorageFillVisualizer
+    maxFillLevels: 6
+    fillBaseName: nboard

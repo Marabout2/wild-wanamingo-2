@@ -1,0 +1,18 @@
+# Mojave Sun 13 sprites on copies of Misfits/N14 prototypes (Wizden ones where N14 has none).
+# Sprites: Resources/Textures/MojaveSun (CC-BY-NC-SA-3.0, Mojave Sun 13).
+
+- type: entity
+  parent: N14GeneratorPrewar
+  id: F14GeneratorLarge
+  name: large generator
+  description: A big old generator that uses fuel to run.
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Machines/machinery_64x64.rsi
+    offset: 0.5, 0.5
+    layers:
+    - state: generator_off
+      map: [ "enum.GeneratorVisualLayers.Body" ]
+  - type: Icon
+    sprite: MojaveSun/Structures/Machines/machinery_64x64.rsi
+    state: generator_off

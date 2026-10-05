@@ -1,0 +1,10 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Reagents/Consumable/food.yml
+
+- type: reagent
+  id: N14RadParticleFood
+  name: reagent-name-rad-particle-food
+  desc: reagent-desc-rad-particle-food
+  physicalDesc: reagent-physical-desc-metallic
+  color: "#FFFFE5"
+  parent: Uranium

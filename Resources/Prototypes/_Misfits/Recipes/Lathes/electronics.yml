@@ -1,0 +1,32 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Recipes/Lathes/electronics.yml
+
+- type: latheRecipe
+  abstract: true
+  parent: BaseElectronicsRecipe
+  id: N14BaseCircuitboardRecipe
+  categories:
+  - Circuitry
+  completetime: 4
+  materials:
+    Circuitry: 200
+    N14Copper: 300
+
+- type: latheRecipe
+  id: N14ElectrolysisUnitMachineCircuitboard
+  parent: N14BaseCircuitboardRecipe
+  result: ElectrolysisUnitMachineCircuitboard
+
+- type: latheRecipe
+  id: N14CentrifugeMachineCircuitboard
+  parent: N14BaseCircuitboardRecipe
+  result: CentrifugeMachineCircuitboard
+
+- type: latheRecipe
+  id: N14DoorElectronics
+  parent: N14BaseCircuitboardRecipe
+  result: DoorElectronics
+
+- type: latheRecipe
+  id: N14JukeboxCircuitBoard
+  parent: N14BaseCircuitboardRecipe
+  result: JukeboxCircuitBoard

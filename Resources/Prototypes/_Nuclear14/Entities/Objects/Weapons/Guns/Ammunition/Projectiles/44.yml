@@ -1,0 +1,19 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Projectiles/44.yml
+
+- type: entity
+  id: N14Bullet44
+  name: bullet (.44 magnum)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 30
+        Blunt: 5
+  # Misfits Add - .44 Magnum high-velocity revolver round; better range than standard pistol
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 10.0
+    maxFalloffTiles: 15.0
+    minDamageMultiplier: 0.52

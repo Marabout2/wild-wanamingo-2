@@ -1,0 +1,173 @@
+# Mojave Sun 13 sprites on copies of Misfits/N14 prototypes (Wizden ones where N14 has none).
+# Sprites: Resources/Textures/MojaveSun (CC-BY-NC-SA-3.0, Mojave Sun 13).
+
+- type: entity
+  parent: Poweredlight
+  id: F14PoweredLightTube
+  name: light
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Wallmounts/Lighting/lighting.rsi
+    offset: 0, 0
+    noRot: false
+    layers:
+    - map: ["enum.PoweredLightLayers.Base"]
+      state: light_tube
+    - map: ["enum.PoweredLightLayers.Glow"]
+      sprite: MojaveSun/Structures/Wallmounts/Lighting/lighting_overlay.rsi
+      state: light_tube
+      shader: unshaded
+  - type: Icon
+    sprite: MojaveSun/Structures/Wallmounts/Lighting/lighting.rsi
+    state: light_tube
+  - type: PoweredLightVisuals
+    spriteStateMap:
+      empty: light_tube-empty
+      off: light_tube
+      on: light_tube
+      broken: light_tube-broken
+      burned: light_tube-burned
+  - type: PoweredLight
+    hasLampOnSpawn: F14LightTube
+
+- type: entity
+  parent: PoweredlightEmpty
+  id: F14PoweredLightTubeEmpty
+  name: light
+  suffix: Empty
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Wallmounts/Lighting/lighting.rsi
+    offset: 0, 0
+    noRot: false
+    layers:
+    - map: ["enum.PoweredLightLayers.Base"]
+      state: light_tube
+    - map: ["enum.PoweredLightLayers.Glow"]
+      sprite: MojaveSun/Structures/Wallmounts/Lighting/lighting_overlay.rsi
+      state: light_tube
+      shader: unshaded
+  - type: Icon
+    sprite: MojaveSun/Structures/Wallmounts/Lighting/lighting.rsi
+    state: light_tube
+  - type: PoweredLightVisuals
+    spriteStateMap:
+      empty: light_tube-empty
+      off: light_tube
+      on: light_tube
+      broken: light_tube-broken
+      burned: light_tube-burned
+
+- type: entity
+  parent: PoweredSmallLight
+  id: F14PoweredLightBulb
+  name: small light
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Wallmounts/Lighting/lighting.rsi
+    offset: 0, 0
+    noRot: false
+    layers:
+    - map: ["enum.PoweredLightLayers.Base"]
+      state: light_bulb
+    - map: ["enum.PoweredLightLayers.Glow"]
+      sprite: MojaveSun/Structures/Wallmounts/Lighting/lighting_overlay.rsi
+      state: light_bulb
+      shader: unshaded
+  - type: Icon
+    sprite: MojaveSun/Structures/Wallmounts/Lighting/lighting.rsi
+    state: light_bulb
+  - type: PoweredLightVisuals
+    spriteStateMap:
+      empty: light_bulb-empty
+      off: light_bulb
+      on: light_bulb
+      broken: light_bulb-broken
+      burned: light_bulb-burned
+  - type: PoweredLight
+    hasLampOnSpawn: F14LightBulb
+
+- type: entity
+  parent: PoweredSmallLightEmpty
+  id: F14PoweredLightBulbEmpty
+  name: small light
+  suffix: Empty
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Wallmounts/Lighting/lighting.rsi
+    offset: 0, 0
+    noRot: false
+    layers:
+    - map: ["enum.PoweredLightLayers.Base"]
+      state: light_bulb
+    - map: ["enum.PoweredLightLayers.Glow"]
+      sprite: MojaveSun/Structures/Wallmounts/Lighting/lighting_overlay.rsi
+      state: light_bulb
+      shader: unshaded
+  - type: Icon
+    sprite: MojaveSun/Structures/Wallmounts/Lighting/lighting.rsi
+    state: light_bulb
+  - type: PoweredLightVisuals
+    spriteStateMap:
+      empty: light_bulb-empty
+      off: light_bulb
+      on: light_bulb
+      broken: light_bulb-broken
+      burned: light_bulb-burned
+
+- type: entity
+  parent: PoweredSmallLight
+  id: F14PoweredLightBulbIndust
+  name: industrial light
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Wallmounts/Lighting/lighting.rsi
+    offset: 0, 0
+    noRot: false
+    layers:
+    - map: ["enum.PoweredLightLayers.Base"]
+      state: light_bulb_indust
+    - map: ["enum.PoweredLightLayers.Glow"]
+      sprite: MojaveSun/Structures/Wallmounts/Lighting/lighting_overlay.rsi
+      state: light_bulb_indust
+      shader: unshaded
+  - type: Icon
+    sprite: MojaveSun/Structures/Wallmounts/Lighting/lighting.rsi
+    state: light_bulb_indust
+  - type: PoweredLightVisuals
+    spriteStateMap:
+      empty: light_bulb_indust-empty
+      off: light_bulb_indust
+      on: light_bulb_indust
+      broken: light_bulb_indust-broken
+      burned: light_bulb_indust-burned
+  - type: PoweredLight
+    hasLampOnSpawn: F14LightBulb
+
+- type: entity
+  parent: PoweredSmallLightEmpty
+  id: F14PoweredLightBulbIndustEmpty
+  name: industrial light
+  suffix: Empty
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Wallmounts/Lighting/lighting.rsi
+    offset: 0, 0
+    noRot: false
+    layers:
+    - map: ["enum.PoweredLightLayers.Base"]
+      state: light_bulb_indust
+    - map: ["enum.PoweredLightLayers.Glow"]
+      sprite: MojaveSun/Structures/Wallmounts/Lighting/lighting_overlay.rsi
+      state: light_bulb_indust
+      shader: unshaded
+  - type: Icon
+    sprite: MojaveSun/Structures/Wallmounts/Lighting/lighting.rsi
+    state: light_bulb_indust
+  - type: PoweredLightVisuals
+    spriteStateMap:
+      empty: light_bulb_indust-empty
+      off: light_bulb_indust
+      on: light_bulb_indust
+      broken: light_bulb_indust-broken
+      burned: light_bulb_indust-burned

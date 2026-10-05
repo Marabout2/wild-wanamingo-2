@@ -1,3 +1,5 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Structures/Doors/vault_door_enclave.yml
+
 - type: entity
   parent: N14DoorVaultControls
   id: MisfitsDoorVaultEnclaveControls

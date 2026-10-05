@@ -1,0 +1,32 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/objects/food/prewar_food.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "yumegg"
+        },
+        {
+            "name": "yumegg_open"
+        },
+        {
+            "name": "yumegg_1"
+        },
+        {
+            "name": "yumegg_2"
+        },
+        {
+            "name": "yumegg_3"
+        },
+        {
+            "name": "yumegg_3-1"
+        },
+        {
+            "name": "yumegg_trash"
+        }
+    ]
+}

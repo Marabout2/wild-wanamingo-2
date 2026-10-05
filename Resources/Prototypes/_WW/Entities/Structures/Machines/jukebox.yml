@@ -1,0 +1,21 @@
+# Mojave Sun 13 sprites on copies of Misfits/N14 prototypes (Wizden ones where N14 has none).
+# Sprites: Resources/Textures/MojaveSun (CC-BY-NC-SA-3.0, Mojave Sun 13).
+
+- type: entity
+  parent: Jukebox
+  id: F14Jukebox
+  name: jukebox
+  description: A pre-war jukebox. Somehow it still plays.
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Devices/hamradio.rsi
+    layers:
+    - state: jukebox_off
+      map: ["enum.JukeboxVisualLayers.Base"]
+  - type: Icon
+    sprite: MojaveSun/Objects/Devices/hamradio.rsi
+    state: jukebox_off
+  - type: Jukebox
+    onState: jukebox_on
+    offState: jukebox_off
+    selectState: jukebox_on

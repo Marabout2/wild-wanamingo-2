@@ -1,0 +1,157 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/structure/lighting.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "torch"
+        },
+        {
+            "name": "torch_lit",
+            "delays": [
+                [
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "wall_torch",
+            "directions": 4
+        },
+        {
+            "name": "wall_torch_lit",
+            "directions": 4,
+            "delays": [
+                [
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
+                ],
+                [
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
+                ],
+                [
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
+                ],
+                [
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "light_tube",
+            "directions": 4
+        },
+        {
+            "name": "light_tube-broken",
+            "directions": 4
+        },
+        {
+            "name": "light_tube-burned",
+            "directions": 4
+        },
+        {
+            "name": "light_tube-empty",
+            "directions": 4
+        },
+        {
+            "name": "light_bulb_indust",
+            "directions": 4
+        },
+        {
+            "name": "light_bulb_indust-broken",
+            "directions": 4
+        },
+        {
+            "name": "light_bulb_indust-burned",
+            "directions": 4
+        },
+        {
+            "name": "light_bulb_indust-empty",
+            "directions": 4
+        },
+        {
+            "name": "light_bulb",
+            "directions": 4
+        },
+        {
+            "name": "light_bulb-broken",
+            "directions": 4
+        },
+        {
+            "name": "light_bulb-burned",
+            "directions": 4
+        },
+        {
+            "name": "light_bulb-empty",
+            "directions": 4
+        }
+    ]
+}

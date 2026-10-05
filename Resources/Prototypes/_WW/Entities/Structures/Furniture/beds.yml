@@ -1,0 +1,184 @@
+# Mojave Sun 13 sprites on copies of Misfits/N14 prototypes (Wizden ones where N14 has none).
+# Sprites: Resources/Textures/MojaveSun (CC-BY-NC-SA-3.0, Mojave Sun 13).
+
+- type: entity
+  parent: N14Bed
+  id: F14BedWireBed
+  name: wire bed
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Furniture/beds.rsi
+    state: wire_bed
+  - type: Icon
+    sprite: MojaveSun/Structures/Furniture/beds.rsi
+    state: wire_bed
+
+- type: entity
+  parent: N14Bed
+  id: F14BedMetalBed
+  name: metal bed
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Furniture/beds.rsi
+    state: metal_bed
+  - type: Icon
+    sprite: MojaveSun/Structures/Furniture/beds.rsi
+    state: metal_bed
+
+- type: entity
+  parent: N14Bed
+  id: F14BedCot
+  name: cot
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Furniture/beds.rsi
+    state: cot
+  - type: Icon
+    sprite: MojaveSun/Structures/Furniture/beds.rsi
+    state: cot
+
+- type: entity
+  parent: N14Bed
+  id: F14BedWoodBed
+  name: wooden bed
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Furniture/beds.rsi
+    state: wood_bed
+  - type: Icon
+    sprite: MojaveSun/Structures/Furniture/beds.rsi
+    state: wood_bed
+
+- type: entity
+  parent: N14Bed
+  id: F14BedBedwmattess1
+  name: bed
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Furniture/beds.rsi
+    state: bedwmattess1
+  - type: Icon
+    sprite: MojaveSun/Structures/Furniture/beds.rsi
+    state: bedwmattess1
+
+- type: entity
+  parent: N14Bed
+  id: F14BedBedwmattress2
+  name: bed
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Furniture/beds.rsi
+    state: bedwmattress2
+  - type: Icon
+    sprite: MojaveSun/Structures/Furniture/beds.rsi
+    state: bedwmattress2
+
+- type: entity
+  parent: Mattress
+  id: F14DirtyMattress
+  name: dirty mattress
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Furniture/beds.rsi
+    state: dirty_mattress
+  - type: Icon
+    sprite: MojaveSun/Structures/Furniture/beds.rsi
+    state: dirty_mattress
+
+- type: entity
+  parent: Mattress
+  id: F14OldMattress
+  name: old mattress
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Furniture/beds.rsi
+    state: old_mattress
+  - type: Icon
+    sprite: MojaveSun/Structures/Furniture/beds.rsi
+    state: old_mattress
+
+- type: entity
+  parent: Mattress
+  id: F14StainedMattress
+  name: stained mattress
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Furniture/beds.rsi
+    state: stained_mattress
+  - type: Icon
+    sprite: MojaveSun/Structures/Furniture/beds.rsi
+    state: stained_mattress
+
+- type: entity
+  parent: Mattress
+  id: F14YellowedMattress
+  name: yellowed mattress
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Furniture/beds.rsi
+    state: yellowed_mattress
+  - type: Icon
+    sprite: MojaveSun/Structures/Furniture/beds.rsi
+    state: yellowed_mattress
+
+- type: entity
+  parent: Mattress
+  id: F14FilthyMattress
+  name: filthy mattress
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Furniture/beds.rsi
+    state: filthy_mattress
+  - type: Icon
+    sprite: MojaveSun/Structures/Furniture/beds.rsi
+    state: filthy_mattress
+
+- type: entity
+  parent: Mattress
+  id: F14StaleMattress
+  name: stale mattress
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Furniture/beds.rsi
+    state: stale_mattress
+  - type: Icon
+    sprite: MojaveSun/Structures/Furniture/beds.rsi
+    state: stale_mattress
+
+- type: entity
+  parent: Mattress
+  id: F14SleepingBagRed
+  name: sleeping bag
+  suffix: red
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Furniture/beds.rsi
+    state: sleepingbag_red
+  - type: Icon
+    sprite: MojaveSun/Structures/Furniture/beds.rsi
+    state: sleepingbag_red
+
+- type: entity
+  parent: Mattress
+  id: F14SleepingBagGreen
+  name: sleeping bag
+  suffix: green
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Furniture/beds.rsi
+    state: sleepingbag_green
+  - type: Icon
+    sprite: MojaveSun/Structures/Furniture/beds.rsi
+    state: sleepingbag_green
+
+- type: entity
+  parent: MedicalBed
+  id: F14BedMedical
+  name: medical bed
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Furniture/beds.rsi
+    state: bed_medical
+  - type: Icon
+    sprite: MojaveSun/Structures/Furniture/beds.rsi
+    state: bed_medical

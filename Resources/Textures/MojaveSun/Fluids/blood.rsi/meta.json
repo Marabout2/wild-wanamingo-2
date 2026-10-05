@@ -1,0 +1,267 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/effects/blood.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "floor1"
+        },
+        {
+            "name": "floor2"
+        },
+        {
+            "name": "floor3"
+        },
+        {
+            "name": "floor4"
+        },
+        {
+            "name": "floor5"
+        },
+        {
+            "name": "floor6"
+        },
+        {
+            "name": "floor7"
+        },
+        {
+            "name": "splatter1"
+        },
+        {
+            "name": "splatter2"
+        },
+        {
+            "name": "splatter3"
+        },
+        {
+            "name": "splatter4"
+        },
+        {
+            "name": "splatter5"
+        },
+        {
+            "name": "splatter6"
+        },
+        {
+            "name": "drip1"
+        },
+        {
+            "name": "drip2"
+        },
+        {
+            "name": "drip3"
+        },
+        {
+            "name": "drip4"
+        },
+        {
+            "name": "drip5"
+        },
+        {
+            "name": "blood1",
+            "directions": 4
+        },
+        {
+            "name": "blood2",
+            "directions": 4
+        },
+        {
+            "name": "trails_1",
+            "directions": 8
+        },
+        {
+            "name": "trails_2",
+            "directions": 8
+        },
+        {
+            "name": "ltrails_1",
+            "directions": 8
+        },
+        {
+            "name": "ltrails_2",
+            "directions": 8
+        },
+        {
+            "name": "floor1-old"
+        },
+        {
+            "name": "floor2-old"
+        },
+        {
+            "name": "floor3-old"
+        },
+        {
+            "name": "floor4-old"
+        },
+        {
+            "name": "floor5-old"
+        },
+        {
+            "name": "floor6-old"
+        },
+        {
+            "name": "floor7-old"
+        },
+        {
+            "name": "splatter1-old"
+        },
+        {
+            "name": "splatter2-old"
+        },
+        {
+            "name": "splatter3-old"
+        },
+        {
+            "name": "splatter4-old"
+        },
+        {
+            "name": "splatter5-old"
+        },
+        {
+            "name": "splatter6-old"
+        },
+        {
+            "name": "drip1-old"
+        },
+        {
+            "name": "drip2-old"
+        },
+        {
+            "name": "drip3-old"
+        },
+        {
+            "name": "drip4-old"
+        },
+        {
+            "name": "drip5-old"
+        },
+        {
+            "name": "tracks-old",
+            "directions": 8
+        },
+        {
+            "name": "trails_1-old",
+            "directions": 8
+        },
+        {
+            "name": "trails_2-old",
+            "directions": 8
+        },
+        {
+            "name": "ltrails_1-old",
+            "directions": 8
+        },
+        {
+            "name": "ltrails_2-old",
+            "directions": 8
+        },
+        {
+            "name": "uniformblood",
+            "directions": 4
+        },
+        {
+            "name": "armorblood",
+            "directions": 4
+        },
+        {
+            "name": "helmetblood",
+            "directions": 4
+        },
+        {
+            "name": "suitblood",
+            "directions": 4
+        },
+        {
+            "name": "maskblood",
+            "directions": 4
+        },
+        {
+            "name": "shoeblood",
+            "directions": 4
+        },
+        {
+            "name": "coatblood",
+            "directions": 4
+        },
+        {
+            "name": "bloodyhands",
+            "directions": 4
+        },
+        {
+            "name": "gib1"
+        },
+        {
+            "name": "gib2"
+        },
+        {
+            "name": "gib3"
+        },
+        {
+            "name": "gib4"
+        },
+        {
+            "name": "gib5"
+        },
+        {
+            "name": "gib6"
+        },
+        {
+            "name": "gib7"
+        },
+        {
+            "name": "giblimb1"
+        },
+        {
+            "name": "giblimb2"
+        },
+        {
+            "name": "giblimb3"
+        },
+        {
+            "name": "giblimb4"
+        },
+        {
+            "name": "gibhead"
+        },
+        {
+            "name": "gib1-old"
+        },
+        {
+            "name": "gib2-old"
+        },
+        {
+            "name": "gib3-old"
+        },
+        {
+            "name": "gib4-old"
+        },
+        {
+            "name": "gib5-old"
+        },
+        {
+            "name": "gib6-old"
+        },
+        {
+            "name": "gib7-old"
+        },
+        {
+            "name": "giblimb1-old"
+        },
+        {
+            "name": "giblimb2-old"
+        },
+        {
+            "name": "giblimb3-old"
+        },
+        {
+            "name": "giblimb4-old"
+        },
+        {
+            "name": "gibhead-old"
+        }
+    ]
+}

@@ -1,0 +1,101 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Roles/ai_factions.yml
+
+- type: npcFaction
+  id: PlayerSentryBot
+  friendly:
+  - HostileRobot
+
+# #Misfits Add - Player Super Mutant faction for FEV Mutant job prototypes.
+# Kept separate from the NPC SuperMutant faction so NPC mutants don't auto-aggro player mutants.
+
+- type: npcFaction
+  id: BrotherhoodOfSteel
+  friendly:
+  - BrotherhoodOfSteelSecureArea
+  hostile:
+  - WastelandInsect
+  - WastelandAnimal
+  - Deathclaw #Misfits Add - Deathclaw is enemy of everything
+  - Raider
+  - HostileRobot
+  - Enclave
+  - Feral
+
+- type: npcFaction
+  id: BrotherhoodOfSteelSecureArea
+  friendly:
+  - BrotherhoodOfSteel
+  hostile:
+  - Wastelander
+  - CaravanCompany
+  - CaravanCompanySecureArea
+  - NCR
+  - NCRSecureArea
+  - Rangers
+  - Townsfolk
+  - TownsfolkSecureArea
+  - Tribal
+  - TribalSecureArea
+  - Vault
+  - VaultSecureArea
+  - Zetan
+  - WastelandAnimal
+  - WastelandInsect
+  - Deathclaw #Misfits Add - Deathclaw is enemy of everything
+  - Raider
+  - CaesarLegion
+  - HostileRobot
+  - Enclave
+  - Feral
+
+# #Misfits Add - Enclave remnant faction for player jobs and future map-side automation.
+
+- type: npcFaction
+  id: Enclave
+  hostile:
+  - BrotherhoodOfSteel
+  - BrotherhoodOfSteelSecureArea
+  - NCR
+  - NCRSecureArea
+  - CaesarLegion
+  - WastelandInsect
+  - WastelandAnimal
+  - Deathclaw
+  - Raider
+  - Feral
+
+# #Misfits Add - Followers of the Apocalypse player faction.
+# Used by BuildFactionFilter to target death-alert chat messages at Followers players.
+# Neutral to all factions — Followers are non-hostile humanitarians.
+
+- type: npcFaction
+  id: Followers
+
+# #Misfits Add - Deathclaw faction. Hostile to everything, neutral only to other deathclaws.
+
+- type: npcFaction
+  id: Deathclaw
+  hostile:
+  - Wastelander
+  - BrotherhoodOfSteel
+  - BrotherhoodOfSteelSecureArea
+  - CaravanCompany
+  - CaravanCompanySecureArea
+  - NCR
+  - NCRSecureArea
+  - Rangers
+  - Townsfolk
+  - TownsfolkSecureArea
+  - Tribal
+  - TribalSecureArea
+  - Vault
+  - VaultSecureArea
+  - Zetan
+  - WastelandAnimal
+  - WastelandInsect
+  - Raider
+  - HostileRobot
+  - Feral
+  - CaesarLegion
+  - SuperMutant
+  - Enclave

@@ -1,0 +1,47 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/structure/ms_bones.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "0_1"
+        },
+        {
+            "name": "2_1"
+        },
+        {
+            "name": "3_1"
+        },
+        {
+            "name": "4_1"
+        },
+        {
+            "name": "5_1"
+        },
+        {
+            "name": "6_1"
+        },
+        {
+            "name": "0_0"
+        },
+        {
+            "name": "1_0"
+        },
+        {
+            "name": "scoliosis"
+        },
+        {
+            "name": "3_0"
+        },
+        {
+            "name": "cow"
+        },
+        {
+            "name": "horse"
+        }
+    ]
+}

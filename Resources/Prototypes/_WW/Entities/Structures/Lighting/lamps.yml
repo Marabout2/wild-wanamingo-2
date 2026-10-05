@@ -1,0 +1,59 @@
+# Mojave Sun 13 sprites on copies of Misfits/N14 prototypes (Wizden ones where N14 has none).
+# Sprites: Resources/Textures/MojaveSun (CC-BY-NC-SA-3.0, Mojave Sun 13).
+
+- type: entity
+  parent: BaseLamp
+  id: F14LampTable
+  name: table lamp
+  description: A lamp to light up a desk.
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Lighting/lamps.rsi
+    layers:
+    - state: tablelamp
+      map: [ "base" ]
+    - state: tablelamp_on
+      map: [ "light" ]
+  - type: Icon
+    sprite: MojaveSun/Structures/Lighting/lamps.rsi
+    state: tablelamp
+  - type: Item
+    sprite: Objects/Misc/Lights/lamp.rsi
+
+- type: entity
+  parent: BaseLamp
+  id: F14LampHandmade
+  name: handmade lamp
+  description: A lamp to light up a desk.
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Lighting/lamps.rsi
+    layers:
+    - state: handmadelamp
+      map: [ "base" ]
+    - state: handmadelamp_on
+      map: [ "light" ]
+  - type: Icon
+    sprite: MojaveSun/Structures/Lighting/lamps.rsi
+    state: handmadelamp
+  - type: Item
+    sprite: Objects/Misc/Lights/lamp.rsi
+
+- type: entity
+  parent: BaseLamp
+  id: F14LampDesk
+  name: desk lamp
+  description: A lamp to light up a desk.
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Lighting/lamps.rsi
+    layers:
+    - state: lamp
+      map: [ "base" ]
+    - state: lamp_on
+      map: [ "light" ]
+  - type: Icon
+    sprite: MojaveSun/Structures/Lighting/lamps.rsi
+    state: lamp
+  - type: Item
+    sprite: Objects/Misc/Lights/lamp.rsi

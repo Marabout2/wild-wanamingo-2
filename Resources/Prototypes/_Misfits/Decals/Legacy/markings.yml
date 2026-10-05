@@ -1,0 +1,16 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/Decals/markings.yml
+# (Misfits' copy of a Space Station 14 or other-fork file.)
+
+- type: decal
+  id: Markings
+  abstract: true
+
+- type: decal
+  id: Bots
+  parent: Markings
+  abstract: true
+
+- type: decal
+  id: Warn
+  parent: Markings
+  abstract: true

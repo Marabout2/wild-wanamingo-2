@@ -1,0 +1,32 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/SoundCollections/casing.yml
+
+- type: soundCollection
+  id: N14PistolCasingEject
+  files:
+  - "/Audio/Nuclear14/Weapons/Effects/Casing/Pistol/casing_fall_1.ogg"
+  - "/Audio/Nuclear14/Weapons/Effects/Casing/Pistol/casing_fall_2.ogg"
+  - "/Audio/Nuclear14/Weapons/Effects/Casing/Pistol/casing_fall_3.ogg"
+  - "/Audio/Nuclear14/Weapons/Effects/Casing/Pistol/casing_fall_4.ogg"
+  - "/Audio/Nuclear14/Weapons/Effects/Casing/Pistol/casing_fall_5.ogg"
+  - "/Audio/Nuclear14/Weapons/Effects/Casing/Pistol/casing_fall_6.ogg"
+
+- type: soundCollection
+  id: N14RifleCasingEject
+  files:
+  - "/Audio/Nuclear14/Weapons/Effects/Casing/Rifle/casing_fall_1.ogg"
+  - "/Audio/Nuclear14/Weapons/Effects/Casing/Rifle/casing_fall_2.ogg"
+  - "/Audio/Nuclear14/Weapons/Effects/Casing/Rifle/casing_fall_3.ogg"
+  - "/Audio/Nuclear14/Weapons/Effects/Casing/Rifle/casing_fall_4.ogg"
+  - "/Audio/Nuclear14/Weapons/Effects/Casing/Rifle/casing_fall_5.ogg"
+  - "/Audio/Nuclear14/Weapons/Effects/Casing/Rifle/casing_fall_6.ogg"
+
+- type: soundCollection
+  id: N14ShellEject
+  files:
+  - "/Audio/Nuclear14/Weapons/Effects/Casing/Shotgun/shotgun_fall_1.ogg"
+  - "/Audio/Nuclear14/Weapons/Effects/Casing/Shotgun/shotgun_fall_2.ogg"
+  - "/Audio/Nuclear14/Weapons/Effects/Casing/Shotgun/shotgun_fall_3.ogg"
+  - "/Audio/Nuclear14/Weapons/Effects/Casing/Shotgun/shotgun_fall_4.ogg"
+  - "/Audio/Nuclear14/Weapons/Effects/Casing/Shotgun/shotgun_fall_5.ogg"
+  - "/Audio/Nuclear14/Weapons/Effects/Casing/Shotgun/shotgun_fall_6.ogg"

@@ -1,0 +1,6 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/Decals/dirty.yml
+# (Misfits' copy of a Space Station 14 or other-fork file.)
+
+- type: decal
+  id: Dirty
+  abstract: true

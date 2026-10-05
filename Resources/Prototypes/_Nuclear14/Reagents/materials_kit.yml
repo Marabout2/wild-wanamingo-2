@@ -1,4 +1,5 @@
-# Mapping kit additions to materials.yml, ported from wild-wanamingo.
+# More of materials.yml. Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Reagents/materials.yml
 
 - type: material
   id: Circuitry
@@ -82,6 +83,24 @@
 # making the output unusable in N14 hand-crafting recipes (e.g. cardboard).
 
 - type: material
+  id: N14Paper
+  stackEntity: N14Paper1
+  name: materials-N14paper
+  unit: materials-unit-piece
+  icon: { sprite: /Textures/Nuclear14/Objects/Misc/clutter.rsi, state: paper }
+  color: "#d9d9d9"
+  price: 0.0003
+
+- type: material
+  id: N14Gunpowder
+  stackEntity: N14Gunpowder1
+  name: materials-gunpowder
+  unit: materials-unit-piece
+  icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: powder_lead }
+  color: "#3E201D"
+  price: 0.075
+
+- type: material
   id: ScrapElectronic
   stackEntity: N14ScrapElectronic1
   name: materials-scrap-electronic
@@ -142,14 +161,63 @@
   color: "#C0C0C0"
   price: 0.005
 
+- type: reagent
+  id: N14Gunpowder
+  name: reagent-name-gunpowder
+  desc: reagent-desc-gunpowder
+  physicalDesc: reagent-physical-desc-powdery
+  color: "#3E201D"
+  boilingPoint: 673.0
+  meltingPoint: 607.0
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 0.05
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.25
+
 - type: material
   id: Charcoal
-  stackEntity: Charcoal
+  stackEntity: Charcoal1
   name: materials-charcoal
   unit: materials-unit-piece
   icon: { sprite: /Textures/Nuclear14/Objects/Misc/materials.rsi, state: powder_lead }
   color: "#1D3B3E"
   price: 0.005
+
+- type: material
+  id: Leather
+  stackEntity: N14MaterialLeather1
+  name: materials-leather
+  unit: materials-unit-roll
+  icon: { sprite: Nuclear14/Objects/Misc/materials.rsi, state: leather_3 }
+  price: 0.02
+
+- type: material
+  id: Exoskeleton
+  stackEntity: N14MaterialExoskeleton
+  name: materials-exoskeleton
+  unit: materials-unit-piece
+  icon: { sprite: Nuclear14/Objects/Misc/mob_drops.rsi, state: rad_exo }
+  price: 0.05
+
+- type: material
+  id: AntChitin
+  stackEntity: N14MaterialAntChitin1
+  name: materials-antchitin
+  unit: materials-unit-piece
+  icon: { sprite: Nuclear14/Objects/Misc/mob_drops.rsi, state: chitin_3 }
+  price: 0.05
+
+- type: material
+  id: RawLeather
+  stackEntity: N14MaterialRawLeather1
+  name: materials-raw-leather
+  unit: materials-unit-roll
+  icon: { sprite: Nuclear14/Objects/Misc/materials.rsi, state: raw_leather_2 }
+  price: 0.01
 
 - type: material
   id: Thread

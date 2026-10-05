@@ -1,0 +1,37 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Actions/n14_scope.yml
+
+- type: entity
+  id: N14ActionToggleScope
+  parent: BaseAction
+  name: n14-action-toggle-scope
+  description: n14-action-toggle-scope-description
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Action
+    checkCanInteract: true
+  - type: Sprite
+    layers:
+    - sprite: Misfits/Objects/Devices/binoculars.rsi
+      state: binoculars_civ
+      map: [ "enum.ActionVisuals.Icon" ]
+  - type: InstantAction
+    event: !type:ToggleActionEvent {}
+
+# N14 cycle zoom level action — cycles through available zoom levels on multi-zoom scopes
+
+- type: entity
+  id: N14ActionCycleZoomLevel
+  parent: BaseAction
+  name: n14-action-cycle-zoom
+  description: n14-action-cycle-zoom-description
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Action
+    checkCanInteract: true
+  - type: Sprite
+    layers:
+    - sprite: Nuclear14/Objects/Misc/crafting_junk.rsi
+      state: scope
+      map: [ "enum.ActionVisuals.Icon" ]
+  - type: InstantAction
+    event: !type:ScopeCycleZoomLevelEvent {}

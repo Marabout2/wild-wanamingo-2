@@ -1,0 +1,11 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/Decals/bricktile_dark.yml
+# (Misfits' copy of a Space Station 14 or other-fork file.)
+
+- type: decal
+  id: BrickTile
+  abstract: true
+
+- type: decal
+  id: BrickTileDark
+  parent: BrickTile
+  abstract: true

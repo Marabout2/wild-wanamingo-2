@@ -1,0 +1,16 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Weapons/Guns/Ammunition/Projectiles/357.yml
+
+- type: entity
+  id: N14Bullet357
+  name: bullet (.357 magnum)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 22
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 6.0
+    maxFalloffTiles: 12.0
+    minDamageMultiplier: 0.50

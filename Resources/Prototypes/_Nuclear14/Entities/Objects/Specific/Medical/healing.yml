@@ -1,0 +1,32 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Entities/Objects/Specific/Medical/healing.yml
+
+- type: entity
+  id: N14OintmentAdv10
+  parent: RegenerativeMesh
+  suffix: full
+  components:
+  - type: Stack
+    stackType: N14OintmentAdv10
+    count: 10
+  - type: Healing
+    damageContainers:
+      - Biological
+    damage:
+      types:
+        Blunt: -4
+        Heat: -5
+        Shock: -5
+        Cold: -5
+        Caustic: -5
+
+- type: entity
+  id: N14OintmentAdv1
+  parent: N14OintmentAdv10
+  suffix: Single
+  components:
+  - type: Stack
+    stackType: N14OintmentAdv10
+    count: 1
+
+#misfit end

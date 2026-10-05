@@ -1,0 +1,53 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/effects/distortion/distort.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "unnamed-1"
+        },
+        {
+            "name": "martian1"
+        },
+        {
+            "name": "martian2"
+        },
+        {
+            "name": "martian3"
+        },
+        {
+            "name": "martian4"
+        },
+        {
+            "name": "martian5"
+        },
+        {
+            "name": "martian6"
+        },
+        {
+            "name": "martian7"
+        },
+        {
+            "name": "acid"
+        },
+        {
+            "name": "cut_torso"
+        },
+        {
+            "name": "cut_legs"
+        },
+        {
+            "name": "lengthen_torso"
+        },
+        {
+            "name": "lengthen_legs"
+        },
+        {
+            "name": "warp_down"
+        }
+    ]
+}

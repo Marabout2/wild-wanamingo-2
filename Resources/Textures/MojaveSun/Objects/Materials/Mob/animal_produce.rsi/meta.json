@@ -1,0 +1,53 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/mob/animalproduce.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "brahmin_tongue"
+        },
+        {
+            "name": "brahmin_horn"
+        },
+        {
+            "name": "brahmiluff_horn"
+        },
+        {
+            "name": "clucker_feather"
+        },
+        {
+            "name": "slepnir_hoof"
+        },
+        {
+            "name": "pigrat_snout"
+        },
+        {
+            "name": "molerat_tooth"
+        },
+        {
+            "name": "gecko_claw"
+        },
+        {
+            "name": "nightstalker_tooth"
+        },
+        {
+            "name": "radstag_antler"
+        },
+        {
+            "name": "wolf_tooth"
+        },
+        {
+            "name": "egg"
+        },
+        {
+            "name": "egg_round"
+        },
+        {
+            "name": "radscorp_poison"
+        }
+    ]
+}

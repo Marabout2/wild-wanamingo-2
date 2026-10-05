@@ -1,0 +1,71 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/hud/ms_ui_target.dmi)",
+    "size": {
+        "x": 96,
+        "y": 96
+    },
+    "states": [
+        {
+            "name": "base_for_aligning_doll"
+        },
+        {
+            "name": "zone_sel"
+        },
+        {
+            "name": "head1"
+        },
+        {
+            "name": "head"
+        },
+        {
+            "name": "mouth1"
+        },
+        {
+            "name": "mouth"
+        },
+        {
+            "name": "eyes1"
+        },
+        {
+            "name": "eyes"
+        },
+        {
+            "name": "chest1"
+        },
+        {
+            "name": "chest"
+        },
+        {
+            "name": "r_arm1"
+        },
+        {
+            "name": "r_arm"
+        },
+        {
+            "name": "l_arm1"
+        },
+        {
+            "name": "l_arm"
+        },
+        {
+            "name": "groin1"
+        },
+        {
+            "name": "groin"
+        },
+        {
+            "name": "r_leg1"
+        },
+        {
+            "name": "r_leg"
+        },
+        {
+            "name": "l_leg1"
+        },
+        {
+            "name": "l_leg"
+        }
+    ]
+}

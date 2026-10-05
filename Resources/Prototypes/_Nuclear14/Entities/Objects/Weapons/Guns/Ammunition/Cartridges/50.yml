@@ -1,0 +1,69 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Cartridges/50.yml
+
+- type: entity
+  parent: BaseCartridge
+  id: N14Cartridge50
+  name: cartridge (.50 anti-materiel)
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - N14Cartridge50
+  - type: CartridgeAmmo
+    proto: N14Bullet50
+    soundEject:
+      collection: N14RifleCasingEject
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/large_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 2
+  - type: EmitSoundOnLand
+    sound:
+      collection: N14RifleCasingEject
+      params:
+        volume: -1
+  - type: EmitSoundOnCollide
+    sound:
+      collection: N14RifleCasingEject
+      params:
+        volume: -1
+
+- type: entity
+  parent: BaseCartridge
+  id: N14Cartridge50HEIAP
+  name: cartridge (.50 HEIAP anti-materiel)
+  suffix: HEIAP
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - N14Cartridge50HEIAP
+  - type: CartridgeAmmo
+    proto: N14Bullet50HEIAP
+    soundEject:
+      collection: N14RifleCasingEject
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/large_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 4
+  - type: EmitSoundOnLand
+    sound:
+      collection: N14RifleCasingEject
+      params:
+        volume: -1
+  - type: EmitSoundOnCollide
+    sound:
+      collection: N14RifleCasingEject
+      params:
+        volume: -1

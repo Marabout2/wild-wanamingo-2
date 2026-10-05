@@ -1,0 +1,98 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/structure/grave.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "cairn"
+        },
+        {
+            "name": "tombstone0"
+        },
+        {
+            "name": "tombstone1"
+        },
+        {
+            "name": "tombstone2"
+        },
+        {
+            "name": "cross0"
+        },
+        {
+            "name": "cross1"
+        },
+        {
+            "name": "cross2"
+        },
+        {
+            "name": "cross3"
+        },
+        {
+            "name": "plank"
+        },
+        {
+            "name": "grave_light_0"
+        },
+        {
+            "name": "grave_light_1"
+        },
+        {
+            "name": "grave_light_2"
+        },
+        {
+            "name": "grave_light_3"
+        },
+        {
+            "name": "grave_light_4"
+        },
+        {
+            "name": "grave_light_5"
+        },
+        {
+            "name": "grave_light_6"
+        },
+        {
+            "name": "grave_light_7"
+        },
+        {
+            "name": "grave_light_8"
+        },
+        {
+            "name": "grave_light_9"
+        },
+        {
+            "name": "grave_dark_0"
+        },
+        {
+            "name": "grave_dark_1"
+        },
+        {
+            "name": "grave_dark_2"
+        },
+        {
+            "name": "grave_dark_3"
+        },
+        {
+            "name": "grave_dark_4"
+        },
+        {
+            "name": "grave_dark_5"
+        },
+        {
+            "name": "grave_dark_6"
+        },
+        {
+            "name": "grave_dark_7"
+        },
+        {
+            "name": "grave_dark_8"
+        },
+        {
+            "name": "grave_dark_9"
+        }
+    ]
+}

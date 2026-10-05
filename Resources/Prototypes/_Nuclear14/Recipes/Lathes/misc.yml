@@ -1,0 +1,148 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Recipes/Lathes/misc.yml
+
+- type: latheRecipe
+  id: N14LightTube
+  result: LightTube
+  categories:
+  - N14Lights
+  completetime: 2
+  materials:
+    N14Copper: 50 #Misfits Change: Makes More sense
+    Glass: 100 # Forge-Change
+
+- type: latheRecipe
+  id: N14LedLightTube
+  result: LedLightTube
+  categories:
+  - N14Lights
+  completetime: 2
+  materials:
+    N14Copper: 50 #Misfits Change: Makes More sense
+    Glass: 100 # Forge-Change
+
+- type: latheRecipe
+  id: N14SodiumLightTube
+  result: SodiumLightTube
+  categories:
+  - N14Lights
+  completetime: 2
+  materials:
+    N14Copper: 50 #Misfits Change: Makes More sense
+    Glass: 100 # Forge-Change
+
+- type: latheRecipe
+  id: N14ExteriorLightTube
+  result: ExteriorLightTube
+  categories:
+  - N14Lights
+  completetime: 2
+  materials:
+    N14Copper: 50 #Misfits Change: Makes More sense
+    Glass: 100 # Forge-Change
+
+- type: latheRecipe
+  id: N14LightBulb
+  result: LightBulb
+  categories:
+  - N14Lights
+  completetime: 2
+  materials:
+    N14Copper: 50 #Misfits Change: Makes More sense
+    Glass: 100 # Forge-Change
+
+- type: latheRecipe
+  id: N14LedLightBulb
+  result: LedLightBulb
+  categories:
+  - N14Lights
+  completetime: 2
+  materials:
+    N14Copper: 50 #Misfits Change: Makes More sense
+    Glass: 100 # Forge-Change
+
+- type: latheRecipe
+  id: N14GlowstickRed
+  result: GlowstickRed
+  categories:
+  - N14Lights
+  completetime: 2
+  materials:
+    Plastic: 50
+
+- type: latheRecipe
+  id: N14Flare
+  result: Flare
+  categories:
+  - N14Lights
+  completetime: 2
+  materials:
+    Plastic: 50
+    Sulfur: 25
+
+- type: latheRecipe
+  id: N14FlashlightLantern
+  result: EmptyFlashlightLantern
+  categories:
+  - N14Lights
+  completetime: 2
+  materials:
+    Steel: 50
+    N14Copper: 50 #Misfits Change: Makes More sense
+    Glass: 100
+    Plastic: 100
+
+- type: latheRecipe
+  id: N14Matchbox
+  result: Matchbox
+  categories:
+  - N14Misc
+  completetime: 1
+  materials:
+    Wood: 100
+
+- type: latheRecipe
+  id: ClothingBeltQuiver
+  result: ClothingBeltQuiver
+  categories:
+  - N14Containers
+  completetime: 4
+  materials:
+    Leather: 400
+    Cloth: 200
+
+- type: latheRecipe
+  id: ArrowRegular
+  result: ArrowRegular
+  categories:
+  - N14Ammo
+  completetime: 1
+  materials:
+    Steel: 10
+    Wood: 20
+#   N14Paper: 10
+
+#Misfits Remove: Blueprint entities deleted with Stalker14 crafting system
+#- type: latheRecipe
+#  id: N14WeaponLaserRevolverBlueprint
+#  result: N14WeaponLaserRevolverBlueprint
+#  category: N14Blueprints
+#  completetime: 1
+#  materials:
+#    N14Paper: 100
+
+#- type: latheRecipe
+#  id: N14WeaponLaserRifleMakeshiftBlueprint
+#  result: N14WeaponLaserRifleMakeshiftBlueprint
+#  category: N14Blueprints
+#  completetime: 1
+#  materials:
+#    N14Paper: 100
+
+#- type: latheRecipe
+#  id: N14WeaponRifle556PipeBlueprint
+#  result: N14WeaponRifle556PipeBlueprint
+#  category: N14Blueprints
+#  completetime: 1
+#  materials:
+#    N14Paper: 100

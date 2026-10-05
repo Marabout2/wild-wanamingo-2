@@ -1,0 +1,26 @@
+# Smelting the scrap types that Misfits had no recipes for. The rest of the smelter's recipes are the
+# Misfits forge refining recipes (see F14SmelterStatic in _Nuclear14/Recipes/Lathes/Packs/workbenches_kit.yml).
+
+- type: latheRecipe
+  id: F14IngotAluminumScrap
+  result: N14IngotAluminum1
+  applyMaterialDiscount: false
+  completetime: 2
+  materials:
+    F14ScrapAluminum: 200
+
+- type: latheRecipe
+  id: F14IngotSilverScrap
+  result: N14IngotSilver1
+  applyMaterialDiscount: false
+  completetime: 2
+  materials:
+    F14ScrapSilver: 200
+
+- type: latheRecipe
+  id: F14SheetGlassScrap
+  result: SheetGlass1
+  applyMaterialDiscount: false
+  completetime: 2
+  materials:
+    F14ScrapGlass: 200

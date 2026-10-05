@@ -1,0 +1,44 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/structure/deposits.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "coal-deposit"
+        },
+        {
+            "name": "uranium-deposit"
+        },
+        {
+            "name": "aluminium-deposit"
+        },
+        {
+            "name": "gold-deposit"
+        },
+        {
+            "name": "silver-deposit"
+        },
+        {
+            "name": "iron-deposit"
+        },
+        {
+            "name": "brass-deposit"
+        },
+        {
+            "name": "lead-deposit"
+        },
+        {
+            "name": "copper-deposit"
+        },
+        {
+            "name": "sulfur-deposit"
+        },
+        {
+            "name": "sulfur-growth"
+        }
+    ]
+}

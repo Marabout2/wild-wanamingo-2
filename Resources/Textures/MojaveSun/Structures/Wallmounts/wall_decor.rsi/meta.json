@@ -1,0 +1,29 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/structure/wall_decor.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "flag_westbos"
+        },
+        {
+            "name": "flag_trans"
+        },
+        {
+            "name": "mine_warn"
+        },
+        {
+            "name": "cross"
+        },
+        {
+            "name": "notice_robot"
+        },
+        {
+            "name": "noisefoam"
+        }
+    ]
+}

@@ -1,0 +1,88 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Entities/Objects/Misc/junk.yml
+
+- type: entity
+  parent: BaseItem
+  id: N14JunkItemBase
+  name: junk
+  description: It's junk!
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Misc/crafting_junk.rsi
+  # - type: Craftable # Corvax-Change  # #Misfits Remove: Stalker14 crafting system
+  - type: Material
+  - type: Tag
+    tags:
+    - JunkItem
+    - Trash
+    - RawMaterial
+
+- type: entity
+  parent: N14JunkItemBase
+  id: N14JunkItemBaseBreak # Breakable glass parent
+  name: junk
+  description: It's junk!
+  abstract: true
+  components:
+  - type: Damageable
+    damageModifierSet: Glass
+  - type: Injurable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+          params:
+            volume: -4
+      - !type:SpillBehavior
+        solution: beaker
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          ShardGlass:
+            min: 1
+            max: 1
+        transferForensics: true
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: DamageOnLand
+    damage:
+      types:
+        Blunt: 10 # glass resistance set reduces damage. Need to land twice (w/o hitting wall)
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Blunt: 5
+  - type: DamageOnHighSpeedImpact
+    minimumSpeed: 2
+    damage:
+      types:
+        Blunt: 5
+  - type: Tag
+    tags:
+    - JunkItem
+    - Trash
+    - RawMaterial
+  - type: ToolRefinable
+    refineResult:
+    - id: SheetGlass1
+  - type: PhysicalComposition
+  materialComposition:
+      Glass: 50
+
+- type: entity
+  parent: N14JunkItemBase
+  id: N14JunkItemBaseAluminum # Parent anything made from aluminum to this.
+  abstract: true
+  components:
+  - type: ToolRefinable
+    refineResult:
+    - id: N14IngotAluminum1
+  - type: PhysicalComposition
+    materialComposition:
+      Aluminum: 50

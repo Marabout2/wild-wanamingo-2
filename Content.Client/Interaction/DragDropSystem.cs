@@ -1,6 +1,6 @@
 using System.Numerics;
 using Content.Client.CombatMode;
-using Content.Client.Misfits.Administration.Events; // Misfits Change: admin drag-teleport hook
+using Content.Client._Misfits.Administration.Events; // Misfits Change: admin drag-teleport hook
 using Content.Client.Gameplay;
 using Content.Client.Graphics;
 using Content.Client.Outline;

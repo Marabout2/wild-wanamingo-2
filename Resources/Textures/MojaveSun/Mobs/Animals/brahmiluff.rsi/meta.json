@@ -1,0 +1,26 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/mob/32x64.dmi)",
+    "size": {
+        "x": 64,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "brahmiluff",
+            "directions": 4
+        },
+        {
+            "name": "brahmiluff_dead"
+        },
+        {
+            "name": "brahmiluff_saddled",
+            "directions": 4
+        },
+        {
+            "name": "brahmiluff_bagged",
+            "directions": 4
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/Recipes/Construction/Graphs/furniture/noticeboard.yml
+# (Misfits' copy of a Space Station 14 or other-fork file.)
+
+- type: constructionGraph
+  id: NoticeBoard
+  start: start
+  graph:
+    - node: start
+      actions:
+        - !type:DestroyEntity {}
+      edges:
+        - to: noticeBoard
+          completed:
+            - !type:SnapToGrid { }
+          steps:
+            - material: WoodPlank
+              amount: 3
+              doAfter: 2
+    - node: noticeBoard
+      entity: NoticeBoard
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: MaterialWoodPlank
+              amount: 3
+          steps:
+            - tool: Prying
+              doAfter: 3

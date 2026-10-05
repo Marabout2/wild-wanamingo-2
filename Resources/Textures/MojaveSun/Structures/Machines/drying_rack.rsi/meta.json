@@ -1,0 +1,161 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/structure/drying_rack.dmi)",
+    "size": {
+        "x": 64,
+        "y": 48
+    },
+    "states": [
+        {
+            "name": "drying_rack"
+        },
+        {
+            "name": "drying_rack_roped"
+        },
+        {
+            "name": "tobacco_1"
+        },
+        {
+            "name": "tobacco_2"
+        },
+        {
+            "name": "tobacco_3"
+        },
+        {
+            "name": "tobacco_4"
+        },
+        {
+            "name": "tobacco_5"
+        },
+        {
+            "name": "tobacco_6"
+        },
+        {
+            "name": "tobacco_7"
+        },
+        {
+            "name": "tobacco_8"
+        },
+        {
+            "name": "tobacco_dried_1"
+        },
+        {
+            "name": "tobacco_dried_2"
+        },
+        {
+            "name": "tobacco_dried_3"
+        },
+        {
+            "name": "tobacco_dried_4"
+        },
+        {
+            "name": "tobacco_dried_5"
+        },
+        {
+            "name": "tobacco_dried_6"
+        },
+        {
+            "name": "tobacco_dried_7"
+        },
+        {
+            "name": "tobacco_dried_8"
+        },
+        {
+            "name": "cut_xander_1"
+        },
+        {
+            "name": "cut_xander_2"
+        },
+        {
+            "name": "cut_xander_3"
+        },
+        {
+            "name": "cut_xander_4"
+        },
+        {
+            "name": "cut_xander_5"
+        },
+        {
+            "name": "cut_xander_6"
+        },
+        {
+            "name": "cut_xander_7"
+        },
+        {
+            "name": "cut_xander_8"
+        },
+        {
+            "name": "cut_xander_dried_1"
+        },
+        {
+            "name": "cut_xander_dried_2"
+        },
+        {
+            "name": "cut_xander_dried_3"
+        },
+        {
+            "name": "cut_xander_dried_4"
+        },
+        {
+            "name": "cut_xander_dried_5"
+        },
+        {
+            "name": "cut_xander_dried_6"
+        },
+        {
+            "name": "cut_xander_dried_7"
+        },
+        {
+            "name": "cut_xander_dried_8"
+        },
+        {
+            "name": "brocflower_1"
+        },
+        {
+            "name": "brocflower_2"
+        },
+        {
+            "name": "brocflower_3"
+        },
+        {
+            "name": "brocflower_4"
+        },
+        {
+            "name": "brocflower_5"
+        },
+        {
+            "name": "brocflower_6"
+        },
+        {
+            "name": "brocflower_7"
+        },
+        {
+            "name": "brocflower_8"
+        },
+        {
+            "name": "brocflower_dried_1"
+        },
+        {
+            "name": "brocflower_dried_2"
+        },
+        {
+            "name": "brocflower_dried_3"
+        },
+        {
+            "name": "brocflower_dried_4"
+        },
+        {
+            "name": "brocflower_dried_5"
+        },
+        {
+            "name": "brocflower_dried_6"
+        },
+        {
+            "name": "brocflower_dried_7"
+        },
+        {
+            "name": "brocflower_dried_8"
+        }
+    ]
+}

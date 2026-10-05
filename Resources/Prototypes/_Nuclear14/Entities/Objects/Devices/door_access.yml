@@ -1,3 +1,6 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Entities/Objects/Devices/door_access.yml
+
 - type: entity
   parent: DoorElectronics
   id: DoorElectronicsBOSMidwestPaladinCommander
@@ -42,6 +45,17 @@
   components:
   - type: AccessReader
     access: [["BOS"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsBOSMidwestOffDuty
+  suffix: BOSM, OffDuty, Locked
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AccessReader
+    access: [["BOS"], ["BOSOffDuty"]]
+
+# BoS Washington
 
 - type: entity
   parent: DoorElectronics

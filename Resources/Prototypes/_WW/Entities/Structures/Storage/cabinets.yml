@@ -1,0 +1,204 @@
+# Mojave Sun 13 sprites on copies of Misfits/N14 prototypes (Wizden ones where N14 has none).
+# Sprites: Resources/Textures/MojaveSun (CC-BY-NC-SA-3.0, Mojave Sun 13).
+
+- type: entity
+  parent: N14filingCabinet
+  id: F14FilingCabinet
+  name: filing cabinet
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Storage/cabinets.rsi
+    state: filing_cabinet
+    layers:
+    - state: filing_cabinet
+    - state: filing_cabinet-open
+      map: ["openLayer"]
+    noRot: false
+    snapCardinals: false
+  - type: Icon
+    sprite: MojaveSun/Structures/Storage/cabinets.rsi
+    state: filing_cabinet
+  - type: Transform
+    noRot: false
+
+- type: entity
+  parent: N14filingCabinet
+  id: F14FilingCabinetBusted
+  name: busted filing cabinet
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Storage/cabinets.rsi
+    state: filing_cabinet_busted
+    layers:
+    - state: filing_cabinet_busted
+    - state: filing_cabinet_busted-open
+      map: ["openLayer"]
+    noRot: false
+    snapCardinals: false
+  - type: Icon
+    sprite: MojaveSun/Structures/Storage/cabinets.rsi
+    state: filing_cabinet_busted
+  - type: Transform
+    noRot: false
+
+- type: entity
+  parent: N14filingCabinet
+  id: F14FilingCabinetEmpty
+  name: filing cabinet
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Storage/cabinets.rsi
+    state: filing_cabinet_empty
+    layers:
+    - state: filing_cabinet_empty
+    - state: filing_cabinet_empty-open
+      map: ["openLayer"]
+    noRot: false
+    snapCardinals: false
+  - type: Icon
+    sprite: MojaveSun/Structures/Storage/cabinets.rsi
+    state: filing_cabinet_empty
+  - type: Transform
+    noRot: false
+
+- type: entity
+  parent: N14filingCabinet
+  id: F14FilingCabinetSmall
+  name: small filing cabinet
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Storage/cabinets.rsi
+    state: filing_cabinet_small
+    layers:
+    - state: filing_cabinet_small
+    - state: filing_cabinet_small-open
+      map: ["openLayer"]
+    noRot: false
+    snapCardinals: false
+  - type: Icon
+    sprite: MojaveSun/Structures/Storage/cabinets.rsi
+    state: filing_cabinet_small
+  - type: Transform
+    noRot: false
+
+- type: entity
+  parent: N14filingCabinet
+  id: F14FilingCabinetSmallBusted
+  name: busted small filing cabinet
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Storage/cabinets.rsi
+    state: filing_cabinet_small_busted
+    layers:
+    - state: filing_cabinet_small_busted
+    - state: filing_cabinet_small_busted-open
+      map: ["openLayer"]
+    noRot: false
+    snapCardinals: false
+  - type: Icon
+    sprite: MojaveSun/Structures/Storage/cabinets.rsi
+    state: filing_cabinet_small_busted
+  - type: Transform
+    noRot: false
+
+- type: entity
+  parent: N14filingCabinet
+  id: F14CabinetOrange
+  name: cabinet
+  suffix: orange
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Storage/circular_cabinets.rsi
+    state: circabinet_orange
+    layers:
+    - state: circabinet_orange
+    - state: circabinet_orange-open
+      map: ["openLayer"]
+  - type: Icon
+    sprite: MojaveSun/Structures/Storage/circular_cabinets.rsi
+    state: circabinet_orange
+
+- type: entity
+  parent: N14filingCabinet
+  id: F14CabinetPristineOrange
+  name: cabinet
+  suffix: orange, pristine
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Storage/circular_cabinets.rsi
+    state: pristine_circabinet_orange
+    layers:
+    - state: pristine_circabinet_orange
+    - state: pristine_circabinet_orange-open
+      map: ["openLayer"]
+  - type: Icon
+    sprite: MojaveSun/Structures/Storage/circular_cabinets.rsi
+    state: pristine_circabinet_orange
+
+- type: entity
+  parent: N14filingCabinet
+  id: F14CabinetTallOrange
+  name: tall cabinet
+  suffix: orange
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Storage/cabinets.rsi
+    state: circabinet_orange_tall
+    layers:
+    - state: circabinet_orange_tall
+    - state: circabinet_orange_tall-open
+      map: ["openLayer"]
+  - type: Icon
+    sprite: MojaveSun/Structures/Storage/cabinets.rsi
+    state: circabinet_orange_tall
+
+- type: entity
+  parent: N14filingCabinet
+  id: F14CabinetTurquoise
+  name: cabinet
+  suffix: turquoise
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Storage/circular_cabinets.rsi
+    state: circabinet_torquise
+    layers:
+    - state: circabinet_torquise
+    - state: circabinet_torquise-open
+      map: ["openLayer"]
+  - type: Icon
+    sprite: MojaveSun/Structures/Storage/circular_cabinets.rsi
+    state: circabinet_torquise
+
+- type: entity
+  parent: N14filingCabinet
+  id: F14CabinetPristineTurquoise
+  name: cabinet
+  suffix: turquoise, pristine
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Storage/circular_cabinets.rsi
+    state: pristine_circabinet_torquise
+    layers:
+    - state: pristine_circabinet_torquise
+    - state: pristine_circabinet_torquise-open
+      map: ["openLayer"]
+  - type: Icon
+    sprite: MojaveSun/Structures/Storage/circular_cabinets.rsi
+    state: pristine_circabinet_torquise
+
+- type: entity
+  parent: N14filingCabinet
+  id: F14CabinetTallTurquoise
+  name: tall cabinet
+  suffix: turquoise
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Storage/cabinets.rsi
+    state: circabinet_torquise_tall
+    layers:
+    - state: circabinet_torquise_tall
+    - state: circabinet_torquise_tall-open
+      map: ["openLayer"]
+  - type: Icon
+    sprite: MojaveSun/Structures/Storage/cabinets.rsi
+    state: circabinet_torquise_tall

@@ -1,0 +1,24 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Recipes/Lathes/armor.yml
+
+- type: latheRecipe
+  id: MakeshiftShield
+  result: MakeshiftShield
+  categories:
+  - N14Shield
+  completetime: 6
+  materials:
+    Steel: 600
+    Wood: 200
+
+- type: latheRecipe
+  id: WoodenBuckler
+  result: WoodenBuckler
+  categories:
+  - N14Shield
+  completetime: 6
+  materials:
+    Steel: 200
+    Wood: 800
+
+# Accessories

@@ -1,0 +1,83 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/structure/beds.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "wire_bed"
+        },
+        {
+            "name": "metal_bed"
+        },
+        {
+            "name": "cot"
+        },
+        {
+            "name": "wood_bed"
+        },
+        {
+            "name": "dirty_mattress"
+        },
+        {
+            "name": "old_mattress"
+        },
+        {
+            "name": "stained_mattress"
+        },
+        {
+            "name": "yellowed_mattress"
+        },
+        {
+            "name": "filthy_mattress"
+        },
+        {
+            "name": "stale_mattress"
+        },
+        {
+            "name": "pillow1"
+        },
+        {
+            "name": "pillow2"
+        },
+        {
+            "name": "bedwmattess1"
+        },
+        {
+            "name": "bedwmattress2"
+        },
+        {
+            "name": "sleepingbag_red"
+        },
+        {
+            "name": "sleepingbag_red_a"
+        },
+        {
+            "name": "sleepingbag_red_fold"
+        },
+        {
+            "name": "sleepingbag_green"
+        },
+        {
+            "name": "sleepingbag_green_a"
+        },
+        {
+            "name": "sleepingbag_green_fold"
+        },
+        {
+            "name": "rollingbed_up"
+        },
+        {
+            "name": "rollingbed_down"
+        },
+        {
+            "name": "bed_medical"
+        },
+        {
+            "name": "bed_surgery"
+        }
+    ]
+}

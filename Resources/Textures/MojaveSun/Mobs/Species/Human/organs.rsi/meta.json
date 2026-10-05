@@ -1,0 +1,419 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/objects/organs/organs_inventory.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "brain"
+        },
+        {
+            "name": "heart"
+        },
+        {
+            "name": "heart-on"
+        },
+        {
+            "name": "heart-off"
+        },
+        {
+            "name": "liver"
+        },
+        {
+            "name": "kidneys"
+        },
+        {
+            "name": "stomach"
+        },
+        {
+            "name": "lungs"
+        },
+        {
+            "name": "eyeballs"
+        },
+        {
+            "name": "tonguenormal"
+        },
+        {
+            "name": "ears"
+        },
+        {
+            "name": "intestines"
+        },
+        {
+            "name": "brain-x"
+        },
+        {
+            "name": "brain-x-d"
+        },
+        {
+            "name": "demon_heart-on",
+            "delays": [
+                [
+                    0.1,
+                    0.1,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "demon_heart-off"
+        },
+        {
+            "name": "heart-x"
+        },
+        {
+            "name": "heart-c"
+        },
+        {
+            "name": "heart-c-on",
+            "delays": [
+                [
+                    0.4,
+                    0.2,
+                    0.4,
+                    0.2
+                ]
+            ]
+        },
+        {
+            "name": "heart-c-u"
+        },
+        {
+            "name": "heart-c-u-on"
+        },
+        {
+            "name": "heart-c-u2"
+        },
+        {
+            "name": "heart-c-u2-on",
+            "delays": [
+                [
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "liver-x"
+        },
+        {
+            "name": "liver-p"
+        },
+        {
+            "name": "liver-c"
+        },
+        {
+            "name": "liver-c-u"
+        },
+        {
+            "name": "liver-c-u2"
+        },
+        {
+            "name": "kidneys-x"
+        },
+        {
+            "name": "kidneys-c"
+        },
+        {
+            "name": "kidneys-c-u2"
+        },
+        {
+            "name": "stomach-x"
+        },
+        {
+            "name": "stomach-c"
+        },
+        {
+            "name": "stomach-c-u"
+        },
+        {
+            "name": "stomach-c-u2"
+        },
+        {
+            "name": "stomach-p"
+        },
+        {
+            "name": "lungs_ethereal"
+        },
+        {
+            "name": "lungs-x"
+        },
+        {
+            "name": "lungs-plasma"
+        },
+        {
+            "name": "lungs-ashwalker"
+        },
+        {
+            "name": "lungs-c"
+        },
+        {
+            "name": "lungs-c-u"
+        },
+        {
+            "name": "lungs-c-u2"
+        },
+        {
+            "name": "appendix"
+        },
+        {
+            "name": "appendixinflamed"
+        },
+        {
+            "name": "innards"
+        },
+        {
+            "name": "brain-old"
+        },
+        {
+            "name": "blacktumor"
+        },
+        {
+            "name": "toolkit_implant"
+        },
+        {
+            "name": "eye_implant"
+        },
+        {
+            "name": "eye_implant_overlay"
+        },
+        {
+            "name": "brain_implant"
+        },
+        {
+            "name": "brain_implant_overlay"
+        },
+        {
+            "name": "chest_implant"
+        },
+        {
+            "name": "chest_implant_overlay"
+        },
+        {
+            "name": "fugu_gland"
+        },
+        {
+            "name": "pheropod"
+        },
+        {
+            "name": "plasma_tiny"
+        },
+        {
+            "name": "plasma_small"
+        },
+        {
+            "name": "plasma"
+        },
+        {
+            "name": "plasma_large"
+        },
+        {
+            "name": "random_fly_1"
+        },
+        {
+            "name": "random_fly_2"
+        },
+        {
+            "name": "random_fly_3"
+        },
+        {
+            "name": "random_fly_4"
+        },
+        {
+            "name": "random_fly_5"
+        },
+        {
+            "name": "neurotox"
+        },
+        {
+            "name": "acid"
+        },
+        {
+            "name": "hivenode"
+        },
+        {
+            "name": "eggsac"
+        },
+        {
+            "name": "ling_eyeshield"
+        },
+        {
+            "name": "ling_thermal"
+        },
+        {
+            "name": "severedmonkeytail"
+        },
+        {
+            "name": "severedtail"
+        },
+        {
+            "name": "arm_laser"
+        },
+        {
+            "name": "arm_laser_charge1"
+        },
+        {
+            "name": "arm_laser_charge2"
+        },
+        {
+            "name": "arm_laser_charge3"
+        },
+        {
+            "name": "arm_laser_charge4"
+        },
+        {
+            "name": "arm_laser_empty"
+        },
+        {
+            "name": "arm_taser"
+        },
+        {
+            "name": "implant_mask"
+        },
+        {
+            "name": "imp_jetpack"
+        },
+        {
+            "name": "imp_jetpack-on",
+            "delays": [
+                [
+                    0.5,
+                    0.1,
+                    0.1,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "implant-toolkit"
+        },
+        {
+            "name": "implant-power"
+        },
+        {
+            "name": "implant-filter"
+        },
+        {
+            "name": "implant-reinforcers"
+        },
+        {
+            "name": "implant-reinforcers2"
+        },
+        {
+            "name": "cursedheart-off"
+        },
+        {
+            "name": "cursedheart-on",
+            "delays": [
+                [
+                    0.6,
+                    0.1,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "tonguelizard"
+        },
+        {
+            "name": "silvertongue"
+        },
+        {
+            "name": "tonguefly"
+        },
+        {
+            "name": "tonguezombie"
+        },
+        {
+            "name": "tongueayylmao"
+        },
+        {
+            "name": "tonguexeno"
+        },
+        {
+            "name": "tonguebone"
+        },
+        {
+            "name": "tonguerobot"
+        },
+        {
+            "name": "electrotongue"
+        },
+        {
+            "name": "tongueplasma"
+        },
+        {
+            "name": "tonguetied"
+        },
+        {
+            "name": "adamantine_resonator"
+        },
+        {
+            "name": "legion_soul_unstable",
+            "delays": [
+                [
+                    0.1,
+                    0.1,
+                    0.2
+                ]
+            ]
+        },
+        {
+            "name": "legion_soul",
+            "delays": [
+                [
+                    0.1,
+                    0.1,
+                    0.6
+                ]
+            ]
+        },
+        {
+            "name": "legion_soul_inert"
+        },
+        {
+            "name": "voice_of_god"
+        },
+        {
+            "name": "eyeballs-moth"
+        },
+        {
+            "name": "eyeballs-fly"
+        },
+        {
+            "name": "cybernetic_eyeballs"
+        },
+        {
+            "name": "snail_eyeballs"
+        },
+        {
+            "name": "burning_eyes"
+        },
+        {
+            "name": "adapted_eyes"
+        },
+        {
+            "name": "ears-c"
+        },
+        {
+            "name": "ears-c-u"
+        },
+        {
+            "name": "adamantine_cords"
+        },
+        {
+            "name": "ethereal_heart"
+        },
+        {
+            "name": "ethereal_heart_overlay"
+        }
+    ]
+}

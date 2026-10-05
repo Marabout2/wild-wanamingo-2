@@ -1,0 +1,129 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/structure/powerlines.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "plinemount_navy",
+            "directions": 4
+        },
+        {
+            "name": "plinecord_navy",
+            "directions": 4
+        },
+        {
+            "name": "plinedam-vert_navy",
+            "directions": 4
+        },
+        {
+            "name": "plinedam-hor_navy",
+            "directions": 4
+        },
+        {
+            "name": "plinemount_green",
+            "directions": 4
+        },
+        {
+            "name": "plinecord_green",
+            "directions": 4
+        },
+        {
+            "name": "plinedam-vert_green",
+            "directions": 4
+        },
+        {
+            "name": "plinedam-hor_green",
+            "directions": 4
+        },
+        {
+            "name": "plinemount_blue",
+            "directions": 4
+        },
+        {
+            "name": "plinecord_blue",
+            "directions": 4
+        },
+        {
+            "name": "plinedam-vert_blue",
+            "directions": 4
+        },
+        {
+            "name": "plinedam-hor_blue",
+            "directions": 4
+        },
+        {
+            "name": "plinemount_red",
+            "directions": 4
+        },
+        {
+            "name": "plinecord_red",
+            "directions": 4
+        },
+        {
+            "name": "plinedam-vert_red",
+            "directions": 4
+        },
+        {
+            "name": "plinedam-hor_red",
+            "directions": 4
+        },
+        {
+            "name": "plinejunction"
+        },
+        {
+            "name": "plinejunction_navy"
+        },
+        {
+            "name": "plinejunction_red"
+        },
+        {
+            "name": "plinejunction_green"
+        },
+        {
+            "name": "plinejunction_blue"
+        },
+        {
+            "name": "plinecord-junction_navy",
+            "directions": 4
+        },
+        {
+            "name": "plinecord-junction_green",
+            "directions": 4
+        },
+        {
+            "name": "plinecord-junction_blue",
+            "directions": 4
+        },
+        {
+            "name": "plinecord-junction_red",
+            "directions": 4
+        },
+        {
+            "name": "plinemount_shadow",
+            "directions": 4
+        },
+        {
+            "name": "plinecord_shadow",
+            "directions": 4
+        },
+        {
+            "name": "plinedam-vert_shadow",
+            "directions": 4
+        },
+        {
+            "name": "plinedam-hor_shadow",
+            "directions": 4
+        },
+        {
+            "name": "pline_junction_shadow"
+        },
+        {
+            "name": "plinecord_junction_shadow",
+            "directions": 4
+        }
+    ]
+}

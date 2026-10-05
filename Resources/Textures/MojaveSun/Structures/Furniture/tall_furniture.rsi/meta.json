@@ -1,0 +1,43 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/structure/32x64_tall_furniture.dmi)",
+    "size": {
+        "x": 32,
+        "y": 64
+    },
+    "states": [
+        {
+            "name": "wood_shelf",
+            "directions": 4
+        },
+        {
+            "name": "wood_shelf-alt",
+            "directions": 4
+        },
+        {
+            "name": "metal_shelf",
+            "directions": 4
+        },
+        {
+            "name": "store_shelf",
+            "directions": 4
+        },
+        {
+            "name": "store_shelf_metal",
+            "directions": 4
+        },
+        {
+            "name": "bookshelf",
+            "directions": 4
+        },
+        {
+            "name": "mirror",
+            "directions": 4
+        },
+        {
+            "name": "mirror_broke",
+            "directions": 4
+        }
+    ]
+}

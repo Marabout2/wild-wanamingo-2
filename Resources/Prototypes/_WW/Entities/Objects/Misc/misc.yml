@@ -1,0 +1,78 @@
+# Mojave Sun 13 sprites on copies of Wizden items (behaviour comes from the parent).
+# Sprites: Resources/Textures/MojaveSun (CC-BY-NC-SA-3.0, Mojave Sun 13).
+
+- type: entity
+  parent: Handcuffs
+  id: F14Handcuffs
+  name: handcuffs
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Misc/handcuffs.rsi
+    state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Misc/handcuffs.rsi
+    storedSprite:
+      sprite: MojaveSun/Objects/Misc/handcuffs.rsi
+      state: icon
+
+- type: entity
+  parent: RadioHandheld
+  id: F14RadioHandheld
+  name: handheld radio
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Devices/handradio.rsi
+    layers:
+    - state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Devices/handradio.rsi
+    storedSprite:
+      sprite: MojaveSun/Objects/Devices/handradio.rsi
+      state: icon
+    heldPrefix: null
+
+- type: entity
+  parent: Medkit
+  id: F14Medkit
+  name: first aid kit
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Specific/Medical/medicalkit.rsi
+    state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Specific/Medical/medicalkit.rsi
+    storedSprite:
+      sprite: MojaveSun/Objects/Specific/Medical/medicalkit.rsi
+      state: icon
+    heldPrefix: null
+
+- type: entity
+  parent: MedkitFilled
+  id: F14MedkitFilled
+  name: first aid kit
+  suffix: Filled
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Specific/Medical/medicalkit.rsi
+    state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Specific/Medical/medicalkit.rsi
+    storedSprite:
+      sprite: MojaveSun/Objects/Specific/Medical/medicalkit.rsi
+      state: icon
+    heldPrefix: null
+
+- type: entity
+  parent: Medkit
+  id: F14DoctorsBag
+  name: doctor's bag
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Specific/Medical/doctorsbag.rsi
+    state: icon
+  - type: Item
+    sprite: MojaveSun/Objects/Specific/Medical/doctorsbag.rsi
+    storedSprite:
+      sprite: MojaveSun/Objects/Specific/Medical/doctorsbag.rsi
+      state: icon
+    heldPrefix: null

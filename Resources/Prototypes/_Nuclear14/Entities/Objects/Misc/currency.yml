@@ -1,0 +1,297 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Entities/Objects/Misc/currency.yml
+
+- type: entity
+  parent: BaseItem
+  id: N14CurrencyCap
+  name: bottlecap
+  description: A bottlecap from a bottle of Nuka-Cola.
+  components:
+  - type: Cash
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      Credit: 1
+  - type: StackPrice
+    price: 0
+  - type: Tag
+    tags:
+      - Currency
+      - BottleCap
+  - type: Stack
+    stackType: Caps
+    count: 1
+    baseLayer: base
+    layerStates:
+    - caps
+    - caps2
+    - caps3
+    - moneypouch
+    - moneybag
+  - type: Sprite
+    sprite: Nuclear14/Objects/Misc/currency.rsi
+    state: caps
+    scale: 0.6, 0.6
+    layers:
+    - state: caps3
+      map: ["base"]
+  - type: Physics
+    bodyType: Dynamic
+  - type: Fixtures
+    fixtures:
+      fix1:
+        density: 30
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.35,-0.2,0.25,0.1"
+        mask:
+        - ItemMask
+  - type: Appearance
+  - type: Item
+    size: Tiny
+  # cherry-pick from space-station#32938 courtesy of Ilya246
+  # end cherry-pick from ss#32938
+
+- type: stack
+  id: Caps
+  name: misfits-kit-caps
+  icon: { sprite: Nuclear14/Objects/Misc/currency.rsi, state: caps3 }
+  spawn: N14CurrencyCap
+
+- type: entity
+  parent: N14CurrencyCap
+  id: N14CurrencyCap10
+  suffix: 10
+  components:
+  - type: Icon
+    sprite: Nuclear14/Objects/Misc/currency.rsi
+    state: caps3
+  - type: Stack
+    count: 10
+
+- type: entity
+  parent: N14CurrencyCap
+  id: N14CurrencyCap50
+  suffix: 50
+  components:
+  - type: Icon
+    sprite: Nuclear14/Objects/Misc/storage.rsi
+    state: moneypouch
+  - type: Stack
+    count: 50
+
+- type: entity
+  parent: N14CurrencyCap
+  id: N14CurrencyCap100
+  suffix: 100
+  components:
+  - type: Icon
+    sprite: Nuclear14/Objects/Misc/storage.rsi
+    state: moneybag
+  - type: Stack
+    count: 100
+
+- type: entity
+  parent: N14CurrencyCap
+  id: N14CurrencyCap500
+  suffix: 500
+  components:
+  - type: Icon
+    sprite: Nuclear14/Objects/Misc/storage.rsi
+    state: moneybag
+  - type: Stack
+    count: 500
+
+# Pre-War
+
+- type: entity
+  parent: BaseItem
+  id: N14CurrencyPrewar
+  name: pre-war money
+  description: Wads of useless paper. Make it rain!
+  components:
+  - type: Cash
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      Credit: 0
+  - type: StackPrice
+    price: 0
+  - type: Tag
+    tags:
+      - Currency
+  - type: Stack
+    stackType: PrewarMoney
+    count: 1
+    baseLayer: base
+    layerStates:
+    - prewar
+    - prewar2
+    - prewar3
+  - type: Sprite
+    sprite: Nuclear14/Objects/Misc/currency.rsi
+    state: prewar3
+    layers:
+    - state: prewar
+      map: ["base"]
+  - type: Appearance
+  - type: Item
+    size: Tiny
+
+- type: stack
+  id: PrewarMoney
+  name: misfits-kit-pre-war-money
+  icon: { sprite: /Textures/Nuclear14/Objects/Misc/currency.rsi, state: prewar3 }
+  spawn: N14CurrencyPrewar
+
+- type: entity
+  parent: N14CurrencyPrewar
+  id: N14CurrencyPrewarMoney10
+  suffix: 10
+  components:
+  - type: Icon
+    sprite: Nuclear14/Objects/Misc/currency.rsi
+    state: prewar2
+  - type: Stack
+    count: 10
+
+- type: entity
+  parent: N14CurrencyPrewar
+  id: N14CurrencyPrewarMoney50
+  suffix: 50
+  components:
+  - type: Icon
+    sprite: Nuclear14/Objects/Misc/currency.rsi
+    state: prewar3
+  - type: Stack
+    count: 50
+
+- type: entity
+  parent: N14CurrencyPrewar
+  id: N14CurrencyPrewarMoney100
+  suffix: 100
+  components:
+  - type: Icon
+    sprite: Nuclear14/Objects/Misc/currency.rsi
+    state: prewar3
+  - type: Stack
+    count: 100
+
+- type: entity
+  parent: N14CurrencyPrewar
+  id: N14CurrencyPrewarMoney500
+  suffix: 500
+  components:
+  - type: Icon
+    sprite: Nuclear14/Objects/Misc/currency.rsi
+    state: prewar3
+  - type: Stack
+    count: 500
+
+- type: material
+  id: NcrCredit
+  name: ncrCredit
+  unit: materials-unit-bill
+  stackEntity: N14CurrencyNCRDollar
+  icon: { sprite: /Textures/Nuclear14/Objects/Misc/currency.rsi, state: ncr3 }
+  price: 0.5 # Corvax-Change
+
+# NCR Dollars
+
+- type: entity
+  parent: BaseItem
+  id: N14CurrencyNCRDollar
+  name: NCR dollar
+  description: Wads of paper, these ones bear the insignia of the NCR. Make it rain!
+  components:
+  - type: Cash
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      NcrCredit: 1
+  - type: StackPrice
+    price: 0
+  - type: Tag
+    tags:
+      - Currency
+  - type: Stack
+    stackType: NCRDollar
+    count: 1
+    baseLayer: base
+    layerStates:
+    - ncr
+    - ncr2
+    - ncr3
+  - type: Sprite
+    sprite: Nuclear14/Objects/Misc/currency.rsi
+    state: ncr3
+    scale: 0.6, 0.6
+    layers:
+    - state: ncr3
+      map: ["base"]
+  - type: Physics
+    bodyType: Dynamic
+  - type: Fixtures
+    fixtures:
+      fix1:
+        density: 30
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.35,-0.2,0.25,0.1"
+        mask:
+        - ItemMask
+  - type: Appearance
+  - type: Item
+    size: Tiny
+
+- type: stack
+  id: NCRDollar
+  name: misfits-kit-ncr-dollars
+  icon: { sprite: /Textures/Nuclear14/Objects/Misc/currency.rsi, state: ncr3 }
+  spawn: N14CurrencyNCRDollar
+
+- type: entity
+  parent: N14CurrencyNCRDollar
+  id: N14CurrencyNCRDollar10
+  suffix: 10
+  components:
+  - type: Icon
+    sprite: Nuclear14/Objects/Misc/currency.rsi
+    state: ncr2
+  - type: Stack
+    count: 10
+
+- type: entity
+  parent: N14CurrencyNCRDollar
+  id: N14CurrencyNCRDollar50
+  suffix: 50
+  components:
+  - type: Icon
+    sprite: Nuclear14/Objects/Misc/currency.rsi
+    state: ncr3
+  - type: Stack
+    count: 50
+
+- type: entity
+  parent: N14CurrencyNCRDollar
+  id: N14CurrencyNCRDollar100
+  suffix: 100
+  components:
+  - type: Icon
+    sprite: Nuclear14/Objects/Misc/currency.rsi
+    state: ncr3
+  - type: Stack
+    count: 100
+
+- type: entity
+  parent: N14CurrencyNCRDollar
+  id: N14CurrencyNCRDollar500
+  suffix: 500
+  components:
+  - type: Icon
+    sprite: Nuclear14/Objects/Misc/currency.rsi
+    state: ncr3
+  - type: Stack
+    count: 500
+
+# Legion Aureus

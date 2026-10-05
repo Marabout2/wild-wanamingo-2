@@ -1,0 +1,78 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Melee/axes.yml
+
+- type: entity
+  name: hatchet
+  parent: BaseItem
+  id: N14Hatchet
+  description: A tool that's just as useful as a weapon. Used for chopping things.
+  components:
+  - type: Clothing
+    sprite: Nuclear14/Objects/Weapons/Melee/hatchet.rsi
+    slots:
+    - Belt
+  - type: Tag
+    tags:
+    - BotanyHatchet
+    - Axe
+  - type: Sprite
+    sprite: Nuclear14/Objects/Weapons/Melee/hatchet.rsi
+    state: icon
+    netsync: false
+  - type: UseDelay
+  - type: EmbeddableProjectile
+    sound: /Audio/Weapons/star_hit.ogg
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Blunt: 8
+        Slash: 24
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Blunt: 8
+        Slash: 28
+  - type: Item
+    sprite: Nuclear14/Objects/Weapons/Melee/hatchet.rsi
+    size: Normal
+  - type: StaticPrice
+    price: 20
+
+- type: entity
+  name: tribal hatchet
+  parent: BaseItem
+  id: N14TribalHatchet
+  description: A tool that's just as useful as a weapon. Used for chopping things.
+  components:
+  - type: Clothing
+    sprite: Nuclear14/Objects/Weapons/Melee/tribalhatchet.rsi
+    slots:
+    - Belt
+  - type: Tag
+    tags:
+    - BotanyHatchet
+    - Axe
+  - type: Sprite
+    sprite: Nuclear14/Objects/Weapons/Melee/tribalhatchet.rsi
+    state: icon
+    netsync: false
+  - type: UseDelay
+  - type: EmbeddableProjectile
+    sound: /Audio/Weapons/star_hit.ogg
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Blunt: 8
+        Slash: 28
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Blunt: 8
+        Slash: 30
+  - type: Item
+    sprite: Nuclear14/Objects/Weapons/Melee/tribalhatchet.rsi
+    size: Normal
+  - type: StaticPrice
+    price: 25

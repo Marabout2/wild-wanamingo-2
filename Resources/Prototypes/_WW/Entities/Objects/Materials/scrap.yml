@@ -1,0 +1,99 @@
+# Scrap that Misfits had ingots for but no scrap item: aluminum, silver and glass.
+# Smelted back into ingots/sheets at the smelter. Sprites from Mojave Sun 13.
+
+- type: entity
+  parent: N14ScrapBase
+  id: F14ScrapAluminum
+  name: aluminum scrap
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      F14ScrapAluminum: 100
+  - type: Stack
+    count: 30
+    stackType: F14ScrapAluminum
+    baseLayer: base
+  - type: Sprite
+    sprite: MojaveSun/Objects/Materials/scrap.rsi
+    state: scrap_aluminum
+  - type: Appearance
+  - type: StackPrice
+    price: 1
+
+- type: entity
+  parent: F14ScrapAluminum
+  id: F14ScrapAluminum1
+  suffix: Single
+  components:
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: N14ScrapBase
+  id: F14ScrapSilver
+  name: silver scrap
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      F14ScrapSilver: 100
+  - type: Stack
+    count: 30
+    stackType: F14ScrapSilver
+    baseLayer: base
+  - type: Sprite
+    sprite: MojaveSun/Objects/Materials/scrap.rsi
+    state: scrap_silver
+  - type: Appearance
+  - type: StackPrice
+    price: 2
+
+- type: entity
+  parent: F14ScrapSilver
+  id: F14ScrapSilver1
+  suffix: Single
+  components:
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: N14ScrapBase
+  id: F14ScrapGlass
+  name: glass scrap
+  description: Broken glass. It can be melted back into sheets.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      F14ScrapGlass: 100
+  - type: Stack
+    count: 30
+    stackType: F14ScrapGlass
+    baseLayer: base
+    layerStates:
+    - scrap_glass
+    - scrap_glass_2
+    - scrap_glass_3
+  - type: Sprite
+    sprite: MojaveSun/Objects/Materials/scrap.rsi
+    state: scrap_glass_3
+    layers:
+    - state: scrap_glass_3
+      map: ["base"]
+  - type: Appearance
+  - type: StackPrice
+    price: 1
+
+- type: entity
+  parent: F14ScrapGlass
+  id: F14ScrapGlass1
+  suffix: Single
+  components:
+  - type: Sprite
+    state: scrap_glass
+  - type: Stack
+    count: 1

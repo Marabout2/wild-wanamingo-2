@@ -1,0 +1,22 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Devices/military_detonator.yml
+
+- type: entity
+  parent: RemoteSignallerAdvanced
+  id: MisfitsMilitaryDetonator
+  name: military detonator
+  description: A rugged military clacker used to initiate linked demolition charges over an extended range of about 75 meters.
+  components:
+  - type: Sprite
+    sprite: Misfits/Objects/Devices/military_detonator.rsi
+    state: icon
+  - type: WirelessNetworkConnection
+    range: 75
+  - type: EmitSoundOnUse
+    # Let the inherited Signaller component handle the same use event and transmit.
+    handle: false
+    sound:
+      path: /Audio/Machines/machine_switch.ogg
+      params:
+        volume: 4
+  - type: StaticPrice
+    price: 75

@@ -1,0 +1,71 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/structure/turf_decor.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "drought_1"
+        },
+        {
+            "name": "drought_2"
+        },
+        {
+            "name": "drought_3"
+        },
+        {
+            "name": "drought_4"
+        },
+        {
+            "name": "drought_5"
+        },
+        {
+            "name": "drought_6"
+        },
+        {
+            "name": "drought_7"
+        },
+        {
+            "name": "drought_8"
+        },
+        {
+            "name": "drought_9"
+        },
+        {
+            "name": "drought_10"
+        },
+        {
+            "name": "drought_11"
+        },
+        {
+            "name": "drought_16"
+        },
+        {
+            "name": "drought_17"
+        },
+        {
+            "name": "drought_18"
+        },
+        {
+            "name": "drought_22"
+        },
+        {
+            "name": "drought_27"
+        },
+        {
+            "name": "drought_28"
+        },
+        {
+            "name": "drought_29"
+        },
+        {
+            "name": "drought_30"
+        },
+        {
+            "name": "drought_32"
+        }
+    ]
+}

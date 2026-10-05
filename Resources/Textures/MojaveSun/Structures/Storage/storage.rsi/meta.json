@@ -1,0 +1,49 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/structure/storage.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "normwasher_open",
+            "directions": 4
+        },
+        {
+            "name": "industwasher_open",
+            "directions": 4
+        },
+        {
+            "name": "safe"
+        },
+        {
+            "name": "safe-open"
+        },
+        {
+            "name": "safe_spinner"
+        },
+        {
+            "name": "safe_spinner-open"
+        },
+        {
+            "name": "fridge2"
+        },
+        {
+            "name": "fridge2_door"
+        },
+        {
+            "name": "fridge2_open"
+        },
+        {
+            "name": "fridge3"
+        },
+        {
+            "name": "fridge3_door"
+        },
+        {
+            "name": "fridge3_open"
+        }
+    ]
+}

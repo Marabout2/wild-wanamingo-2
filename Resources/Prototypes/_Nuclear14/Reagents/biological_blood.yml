@@ -1,0 +1,11 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Reagents/biological.yml
+# Rewritten for Wizden's metabolism: creature blood behaves like Wizden's Blood. Misfits' bloodsucker healing
+# and radiation side effects come back with the species port.
+
+- type: reagent
+  parent: Blood
+  id: WastelandBlood
+  name: reagent-name-wasteland-blood
+  desc: reagent-desc-wasteland-blood
+  physicalDesc: reagent-physical-desc-necrotic

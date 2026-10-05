@@ -1,0 +1,50 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/hud/ms_ui_inventory.dmi)",
+    "size": {
+        "x": 122,
+        "y": 155
+    },
+    "states": [
+        {
+            "name": "base_for_aligning"
+        },
+        {
+            "name": "buttons_for_aligning"
+        },
+        {
+            "name": "base"
+        },
+        {
+            "name": "head"
+        },
+        {
+            "name": "ear"
+        },
+        {
+            "name": "mask"
+        },
+        {
+            "name": "eyes"
+        },
+        {
+            "name": "id"
+        },
+        {
+            "name": "armor"
+        },
+        {
+            "name": "cloak"
+        },
+        {
+            "name": "boots"
+        },
+        {
+            "name": "uniform"
+        },
+        {
+            "name": "gloves"
+        }
+    ]
+}

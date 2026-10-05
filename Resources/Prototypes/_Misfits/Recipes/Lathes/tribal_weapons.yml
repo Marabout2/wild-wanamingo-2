@@ -1,0 +1,54 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Recipes/Lathes/tribal_weapons.yml
+
+- type: latheRecipe
+  id: N14TribalWarBow
+  icon:
+    sprite: Misfits/Objects/Weapons/Guns/Bow/tribal_bow.rsi
+    state: unwielded
+  result: N14TribalWarBow
+  categories:
+  - N14Weapons
+  completetime: 16
+  materials:
+    Wood: 750
+    Cloth: 400
+
+- type: latheRecipe
+  id: N14TribalRecurveBow
+  icon:
+    sprite: Misfits/Objects/Weapons/Guns/Bow/tribal_bow.rsi
+    state: unwielded
+  result: N14TribalRecurveBow
+  categories:
+  - N14Weapons
+  completetime: 8
+  materials:
+    Wood: 400
+    Cloth: 200
+
+- type: latheRecipe
+  id: N14ArrowTribal
+  icon:
+    sprite: Objects/Weapons/Guns/Projectiles/arrows.rsi
+    state: tip
+  result: N14ArrowTribal
+  categories:
+  - N14Ammo
+  completetime: 2
+  materials:
+    Steel: 25
+    Cloth: 10
+
+- type: latheRecipe
+  id: N14ArrowBroadHead
+  icon:
+    sprite: Objects/Weapons/Guns/Projectiles/arrows.rsi
+    state: tip
+  result: N14ArrowBroadHead
+  categories:
+  - N14Ammo
+  completetime: 2
+  materials:
+    Steel: 25
+    Cloth: 10
+    Glass: 10

@@ -1,0 +1,55 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/structure/windows/panes.dmi)",
+    "size": {
+        "x": 32,
+        "y": 64
+    },
+    "states": [
+        {
+            "name": "basic",
+            "directions": 4
+        },
+        {
+            "name": "basic_damaged",
+            "directions": 4
+        },
+        {
+            "name": "rbasic_black",
+            "directions": 4
+        },
+        {
+            "name": "rbasic_rust",
+            "directions": 4
+        },
+        {
+            "name": "rbasic_white",
+            "directions": 4
+        },
+        {
+            "name": "basic_75-E"
+        },
+        {
+            "name": "basic_75-W"
+        },
+        {
+            "name": "basic_50-N"
+        },
+        {
+            "name": "basic_50-E"
+        },
+        {
+            "name": "basic_50-W"
+        },
+        {
+            "name": "basic_25-N"
+        },
+        {
+            "name": "basic_25-E"
+        },
+        {
+            "name": "basic_25-W"
+        }
+    ]
+}

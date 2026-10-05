@@ -1,3 +1,5 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Structures/Wallmount/walldecor.yml
+
 - type: entity
   parent: N14FlagWallUS
   id: MisfitsFlagWallBrotherhoodBonneville509

@@ -1,0 +1,36 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/Decals/crayons.yml
+# (Misfits' copy of a Space Station 14 or other-fork file.)
+
+- type: decal
+  id: Crayons
+  abstract: true
+
+- type: decal
+  id: Numbers
+  parent: Crayons
+  abstract: true
+
+- type: decal
+  id: Alphabet
+  parent: Crayons
+  abstract: true
+
+- type: decal
+  id: Graffiti
+  parent: Crayons
+  abstract: true
+
+- type: decal
+  id: Symbols
+  parent: Crayons
+  abstract: true
+
+- type: decal
+  id: Info
+  parent: Crayons
+  abstract: true
+
+- type: decal
+  id: Brushes
+  parent: Crayons
+  abstract: true

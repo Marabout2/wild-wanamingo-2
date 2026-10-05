@@ -1,0 +1,20 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Entities/Objects/Weapons/Guns/Ammunition/Projectiles/5mm.yml
+
+- type: entity
+  id: N14Bullet5mm
+  name: bullet (5mm)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Reflective # #Misfits Change Add: 5mm is sub-5.56mm; ricochets off power armor.
+    reflective: [ NonEnergy ]
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 12 # Forge-Change
+  # Misfits Add - 5mm varmint/minigun round; small caliber with notable energy loss
+  - type: BallisticDamageFalloff
+    falloffStartTiles: 6.0
+    maxFalloffTiles: 12.0
+    minDamageMultiplier: 0.50

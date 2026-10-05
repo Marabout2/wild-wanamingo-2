@@ -1,0 +1,115 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/structure/bridge.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "rope_overchar_1"
+        },
+        {
+            "name": "rope_overchar_2"
+        },
+        {
+            "name": "rope_overchar_4"
+        },
+        {
+            "name": "rope_overchar_8"
+        },
+        {
+            "name": "rope_overchar_special"
+        },
+        {
+            "name": "rope_underchar_4"
+        },
+        {
+            "name": "rope_underchar_8"
+        },
+        {
+            "name": "rope_underplanks_1"
+        },
+        {
+            "name": "rope_underplanks_2"
+        },
+        {
+            "name": "rope_underplanks_4"
+        },
+        {
+            "name": "rope_underplanks_8"
+        },
+        {
+            "name": "planks_1",
+            "directions": 4
+        },
+        {
+            "name": "planks_2",
+            "directions": 4
+        },
+        {
+            "name": "planks_3",
+            "directions": 4
+        },
+        {
+            "name": "planks_4",
+            "directions": 4
+        },
+        {
+            "name": "planks_5",
+            "directions": 4
+        },
+        {
+            "name": "rope_shadows",
+            "directions": 4
+        },
+        {
+            "name": "planks_1_shadow",
+            "directions": 4
+        },
+        {
+            "name": "planks_2_shadow",
+            "directions": 4
+        },
+        {
+            "name": "planks_3_shadow",
+            "directions": 4
+        },
+        {
+            "name": "planks_4_shadow",
+            "directions": 4
+        },
+        {
+            "name": "planks_5_shadow",
+            "directions": 4
+        },
+        {
+            "name": "rope_overchar_end_2"
+        },
+        {
+            "name": "rope_overchar_end_4"
+        },
+        {
+            "name": "rope_overchar_end_8"
+        },
+        {
+            "name": "rope_underchar_end_4"
+        },
+        {
+            "name": "rope_underchar_end_8"
+        },
+        {
+            "name": "rope_underplanks_end_1"
+        },
+        {
+            "name": "rope_underplanks_end_2"
+        },
+        {
+            "name": "rope_underplanks_end_4"
+        },
+        {
+            "name": "rope_underplanks_end_8"
+        }
+    ]
+}

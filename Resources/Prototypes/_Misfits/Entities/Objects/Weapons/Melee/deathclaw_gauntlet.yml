@@ -1,0 +1,29 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Weapons/Melee/deathclaw_gauntlet.yml
+
+- type: entity
+  parent: ClothingHandsBase
+  id: N14ClothingHandsDeathclawGauntlet
+  name: deathclaw gauntlet
+  description: A brutal melee gauntlet built from a deathclaw hand, bone, and scrap bracing.
+  components:
+  - type: Sprite
+    sprite: Misfits/Objects/Weapons/Melee/deathclawgauntlet.rsi
+    state: icon
+  - type: Item
+    size: Normal
+    sprite: Misfits/Objects/Weapons/Melee/deathclawgauntlet.rsi
+  - type: Clothing
+    sprite: Misfits/Objects/Weapons/Melee/deathclawgauntlet.rsi
+    slots: [gloves]
+  - type: MeleeWeapon
+    soundHit:
+      collection: MetalThud
+    range: 1.2
+    attackRate: 1.1
+    damage:
+      types:
+        Slash: 24
+        Piercing: 6
+    animation: WeaponArcFist
+    wideAnimation: WeaponArcFist
+    mustBeEquippedToUse: true

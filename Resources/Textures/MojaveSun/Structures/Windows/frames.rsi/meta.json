@@ -1,0 +1,451 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/structure/windows/frames.dmi)",
+    "size": {
+        "x": 32,
+        "y": 64
+    },
+    "states": [
+        {
+            "name": "sewer",
+            "directions": 4
+        },
+        {
+            "name": "brick",
+            "directions": 4
+        },
+        {
+            "name": "brickalt",
+            "directions": 4
+        },
+        {
+            "name": "brickgray",
+            "directions": 4
+        },
+        {
+            "name": "concretealt",
+            "directions": 4
+        },
+        {
+            "name": "concrete",
+            "directions": 4
+        },
+        {
+            "name": "dungeon",
+            "directions": 4
+        },
+        {
+            "name": "dungeonrust",
+            "directions": 4
+        },
+        {
+            "name": "rmetal",
+            "directions": 4
+        },
+        {
+            "name": "rrustmetal",
+            "directions": 4
+        },
+        {
+            "name": "rustmetal",
+            "directions": 4
+        },
+        {
+            "name": "metal",
+            "directions": 4
+        },
+        {
+            "name": "scrap",
+            "directions": 4
+        },
+        {
+            "name": "scrapred",
+            "directions": 4
+        },
+        {
+            "name": "scrapblue",
+            "directions": 4
+        },
+        {
+            "name": "scrapwhite",
+            "directions": 4
+        },
+        {
+            "name": "vault",
+            "directions": 4
+        },
+        {
+            "name": "rustvault",
+            "directions": 4
+        },
+        {
+            "name": "wood",
+            "directions": 4
+        },
+        {
+            "name": "woodfresh",
+            "directions": 4
+        },
+        {
+            "name": "sewer_t-E"
+        },
+        {
+            "name": "sewer_t-W"
+        },
+        {
+            "name": "brick_t-E"
+        },
+        {
+            "name": "brick_t-W"
+        },
+        {
+            "name": "brickalt_t-E"
+        },
+        {
+            "name": "brickalt_t-W"
+        },
+        {
+            "name": "brickgray_t-E"
+        },
+        {
+            "name": "brickgray_t-W"
+        },
+        {
+            "name": "concretealt_t-E"
+        },
+        {
+            "name": "concretealt_t-W"
+        },
+        {
+            "name": "concrete_t-E"
+        },
+        {
+            "name": "concrete_t-W"
+        },
+        {
+            "name": "dungeon_t-E"
+        },
+        {
+            "name": "dungeon_t-W"
+        },
+        {
+            "name": "dungeonrust_t-E"
+        },
+        {
+            "name": "dungeonrust_t-W"
+        },
+        {
+            "name": "rmetal_t-E"
+        },
+        {
+            "name": "rmetal_t-W"
+        },
+        {
+            "name": "rrustmetal_t-E"
+        },
+        {
+            "name": "rrustmetal_t-W"
+        },
+        {
+            "name": "rustmetal_t-E"
+        },
+        {
+            "name": "rustmetal_t-W"
+        },
+        {
+            "name": "metal_t-E"
+        },
+        {
+            "name": "metal_t-W"
+        },
+        {
+            "name": "scrap_t-E"
+        },
+        {
+            "name": "scrap_t-W"
+        },
+        {
+            "name": "scrapred_t-E"
+        },
+        {
+            "name": "scrapred_t-W"
+        },
+        {
+            "name": "scrapblue_t-E"
+        },
+        {
+            "name": "scrapblue_t-W"
+        },
+        {
+            "name": "scrapwhite_t-E"
+        },
+        {
+            "name": "scrapwhite_t-W"
+        },
+        {
+            "name": "vault_t-E"
+        },
+        {
+            "name": "vault_t-W"
+        },
+        {
+            "name": "rustvault_t-E"
+        },
+        {
+            "name": "rustvault_t-W"
+        },
+        {
+            "name": "wood_t-E"
+        },
+        {
+            "name": "wood_t-W"
+        },
+        {
+            "name": "woodfresh_t-E"
+        },
+        {
+            "name": "woodfresh_t-W"
+        },
+        {
+            "name": "sewer_m-E"
+        },
+        {
+            "name": "sewer_m-W"
+        },
+        {
+            "name": "brick_m-E"
+        },
+        {
+            "name": "brick_m-W"
+        },
+        {
+            "name": "brickalt_m-E"
+        },
+        {
+            "name": "brickalt_m-W"
+        },
+        {
+            "name": "brickgray_m-E"
+        },
+        {
+            "name": "brickgray_m-W"
+        },
+        {
+            "name": "concretealt_m-E"
+        },
+        {
+            "name": "concretealt_m-W"
+        },
+        {
+            "name": "concrete_m-E"
+        },
+        {
+            "name": "concrete_m-W"
+        },
+        {
+            "name": "dungeon_m-E"
+        },
+        {
+            "name": "dungeon_m-W"
+        },
+        {
+            "name": "dungeonrust_m-E"
+        },
+        {
+            "name": "dungeonrust_m-W"
+        },
+        {
+            "name": "rmetal_m-E"
+        },
+        {
+            "name": "rmetal_m-W"
+        },
+        {
+            "name": "rrustmetal_m-E"
+        },
+        {
+            "name": "rrustmetal_m-W"
+        },
+        {
+            "name": "rustmetal_m-E"
+        },
+        {
+            "name": "rustmetal_m-W"
+        },
+        {
+            "name": "metal_m-E"
+        },
+        {
+            "name": "metal_m-W"
+        },
+        {
+            "name": "scrap_m-E"
+        },
+        {
+            "name": "scrap_m-W"
+        },
+        {
+            "name": "scrapred_m-E"
+        },
+        {
+            "name": "scrapred_m-W"
+        },
+        {
+            "name": "scrapblue_m-E"
+        },
+        {
+            "name": "scrapblue_m-W"
+        },
+        {
+            "name": "scrapwhite_m-E"
+        },
+        {
+            "name": "scrapwhite_m-W"
+        },
+        {
+            "name": "vault_m-E"
+        },
+        {
+            "name": "vault_m-W"
+        },
+        {
+            "name": "rustvault_m-E"
+        },
+        {
+            "name": "rustvault_m-W"
+        },
+        {
+            "name": "wood_m-E"
+        },
+        {
+            "name": "wood_m-W"
+        },
+        {
+            "name": "woodfresh_m-E"
+        },
+        {
+            "name": "woodfresh_m-W"
+        },
+        {
+            "name": "sewer_f-E"
+        },
+        {
+            "name": "sewer_f-W"
+        },
+        {
+            "name": "brick_f-E"
+        },
+        {
+            "name": "brick_f-W"
+        },
+        {
+            "name": "brickalt_f-E"
+        },
+        {
+            "name": "brickalt_f-W"
+        },
+        {
+            "name": "brickgray_f-E"
+        },
+        {
+            "name": "brickgray_f-W"
+        },
+        {
+            "name": "concretealt_f-E"
+        },
+        {
+            "name": "concretealt_f-W"
+        },
+        {
+            "name": "concrete_f-E"
+        },
+        {
+            "name": "concrete_f-W"
+        },
+        {
+            "name": "dungeon_f-E"
+        },
+        {
+            "name": "dungeon_f-W"
+        },
+        {
+            "name": "dungeonrust_f-E"
+        },
+        {
+            "name": "dungeonrust_f-W"
+        },
+        {
+            "name": "rmetal_f-E"
+        },
+        {
+            "name": "rmetal_f-W"
+        },
+        {
+            "name": "rrustmetal_f-E"
+        },
+        {
+            "name": "rrustmetal_f-W"
+        },
+        {
+            "name": "rustmetal_f-E"
+        },
+        {
+            "name": "rustmetal_f-W"
+        },
+        {
+            "name": "metal_f-E"
+        },
+        {
+            "name": "metal_f-W"
+        },
+        {
+            "name": "scrap_f-E"
+        },
+        {
+            "name": "scrap_f-W"
+        },
+        {
+            "name": "scrapred_f-E"
+        },
+        {
+            "name": "scrapred_f-W"
+        },
+        {
+            "name": "scrapblue_f-E"
+        },
+        {
+            "name": "scrapblue_f-W"
+        },
+        {
+            "name": "scrapwhite_f-E"
+        },
+        {
+            "name": "scrapwhite_f-W"
+        },
+        {
+            "name": "vault_f-E"
+        },
+        {
+            "name": "vault_f-W"
+        },
+        {
+            "name": "rustvault_f-E"
+        },
+        {
+            "name": "rustvault_f-W"
+        },
+        {
+            "name": "wood_f-E"
+        },
+        {
+            "name": "wood_f-W"
+        },
+        {
+            "name": "woodfresh_f-E"
+        },
+        {
+            "name": "woodfresh_f-W"
+        }
+    ]
+}

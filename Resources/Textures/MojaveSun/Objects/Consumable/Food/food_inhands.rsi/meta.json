@@ -1,0 +1,179 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/mob/inhands/misc/food_lefthand.dmi, mojave/icons/mob/inhands/misc/food_righthand.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "chips-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "chips-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "burger-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "burger-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "cola-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "cola-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "sodawater-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "sodawater-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "tonic-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "tonic-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "purple_can-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "purple_can-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "thirteen_loko-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "thirteen_loko-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "space_mountain_wind-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "space_mountain_wind-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "dr_gibb-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "dr_gibb-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "starkist-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "starkist-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "space-up-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "space-up-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "lemon-lime-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "lemon-lime-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "egg-mime-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "egg-mime-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "powercrepe-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "powercrepe-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "broken_beer-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "broken_beer-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "golden_cup-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "golden_cup-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "banana_peel-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "banana_peel-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "bluespace_peel-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "bluespace_peel-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "mimana_peel-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "mimana_peel-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "moonflower-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "moonflower-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "chocolatebox-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "chocolatebox-inhand-right",
+            "directions": 4
+        }
+    ]
+}

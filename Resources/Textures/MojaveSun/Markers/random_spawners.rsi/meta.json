@@ -1,0 +1,438 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/effects/random_spawners.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "static_spawns-move"
+        },
+        {
+            "name": "rainbow"
+        },
+        {
+            "name": "questionmark"
+        },
+        {
+            "name": "trash"
+        },
+        {
+            "name": "lootdrop"
+        },
+        {
+            "name": "gloves"
+        },
+        {
+            "name": "lipstick"
+        },
+        {
+            "name": "glowstick"
+        },
+        {
+            "name": "tape"
+        },
+        {
+            "name": "cola"
+        },
+        {
+            "name": "wallet"
+        },
+        {
+            "name": "syringe"
+        },
+        {
+            "name": "implanter"
+        },
+        {
+            "name": "marker"
+        },
+        {
+            "name": "crayon"
+        },
+        {
+            "name": "toy"
+        },
+        {
+            "name": "deck"
+        },
+        {
+            "name": "circuit"
+        },
+        {
+            "name": "cash"
+        },
+        {
+            "name": "beer"
+        },
+        {
+            "name": "syndicate"
+        },
+        {
+            "name": "chips"
+        },
+        {
+            "name": "heater"
+        },
+        {
+            "name": "shiv"
+        },
+        {
+            "name": "donkpocket"
+        },
+        {
+            "name": "condiment"
+        },
+        {
+            "name": "beacon"
+        },
+        {
+            "name": "chair",
+            "directions": 4
+        },
+        {
+            "name": "suit"
+        },
+        {
+            "name": "hat"
+        },
+        {
+            "name": "cap"
+        },
+        {
+            "name": "backpack"
+        },
+        {
+            "name": "tank_holder"
+        },
+        {
+            "name": "canister"
+        },
+        {
+            "name": "rollerbed"
+        },
+        {
+            "name": "dirty_mattress"
+        },
+        {
+            "name": "grille"
+        },
+        {
+            "name": "girder"
+        },
+        {
+            "name": "barricade"
+        },
+        {
+            "name": "table"
+        },
+        {
+            "name": "table_fancy"
+        },
+        {
+            "name": "briefcase"
+        },
+        {
+            "name": "box_small"
+        },
+        {
+            "name": "flashlight"
+        },
+        {
+            "name": "ansible_crystal"
+        },
+        {
+            "name": "matter_bin"
+        },
+        {
+            "name": "rack_parts"
+        },
+        {
+            "name": "table_parts"
+        },
+        {
+            "name": "paint"
+        },
+        {
+            "name": "coin"
+        },
+        {
+            "name": "dice_bag"
+        },
+        {
+            "name": "dice"
+        },
+        {
+            "name": "carpet"
+        },
+        {
+            "name": "tile"
+        },
+        {
+            "name": "cardboard"
+        },
+        {
+            "name": "sandstone"
+        },
+        {
+            "name": "wood"
+        },
+        {
+            "name": "seed"
+        },
+        {
+            "name": "esword"
+        },
+        {
+            "name": "esword_dual"
+        },
+        {
+            "name": "handcuffs"
+        },
+        {
+            "name": "gauze"
+        },
+        {
+            "name": "eyes"
+        },
+        {
+            "name": "scapel"
+        },
+        {
+            "name": "pill"
+        },
+        {
+            "name": "firstaid"
+        },
+        {
+            "name": "toolbox"
+        },
+        {
+            "name": "wrench"
+        },
+        {
+            "name": "tank"
+        },
+        {
+            "name": "crate"
+        },
+        {
+            "name": "crate_secure"
+        },
+        {
+            "name": "locker"
+        },
+        {
+            "name": "locker_clothing"
+        },
+        {
+            "name": "dresser"
+        },
+        {
+            "name": "cabinet"
+        },
+        {
+            "name": "fridge"
+        },
+        {
+            "name": "lamp"
+        },
+        {
+            "name": "lighter"
+        },
+        {
+            "name": "cigarettes"
+        },
+        {
+            "name": "stamp"
+        },
+        {
+            "name": "pen"
+        },
+        {
+            "name": "folder"
+        },
+        {
+            "name": "paper"
+        },
+        {
+            "name": "soup"
+        },
+        {
+            "name": "can"
+        },
+        {
+            "name": "pizzabox"
+        },
+        {
+            "name": "vending_restock"
+        },
+        {
+            "name": "book"
+        },
+        {
+            "name": "mopbucket"
+        },
+        {
+            "name": "caution"
+        },
+        {
+            "name": "tray"
+        },
+        {
+            "name": "trash_bin"
+        },
+        {
+            "name": "box"
+        },
+        {
+            "name": "soap"
+        },
+        {
+            "name": "moisture_trap"
+        },
+        {
+            "name": "shard"
+        },
+        {
+            "name": "rune"
+        },
+        {
+            "name": "peel"
+        },
+        {
+            "name": "vomit"
+        },
+        {
+            "name": "loot"
+        },
+        {
+            "name": "ms13_medfluid"
+        },
+        {
+            "name": "ms13_medical"
+        },
+        {
+            "name": "ms13_cola"
+        },
+        {
+            "name": "ms13_beer"
+        },
+        {
+            "name": "ms13_alcohol"
+        },
+        {
+            "name": "ms13_PA"
+        },
+        {
+            "name": "ms13_gloves"
+        },
+        {
+            "name": "ms13_under"
+        },
+        {
+            "name": "ms13_suit"
+        },
+        {
+            "name": "ms13_helmet"
+        },
+        {
+            "name": "ms13_glasses"
+        },
+        {
+            "name": "ms13_shoes"
+        },
+        {
+            "name": "ms13_hat"
+        },
+        {
+            "name": "ms13_ammo"
+        },
+        {
+            "name": "ms13_melee"
+        },
+        {
+            "name": "ms13_gun"
+        },
+        {
+            "name": "ms13_mushroom"
+        },
+        {
+            "name": "ms13_produce"
+        },
+        {
+            "name": "ms13_seeds"
+        },
+        {
+            "name": "ms13_currency"
+        },
+        {
+            "name": "ms13_medicalbag"
+        },
+        {
+            "name": "loot-static"
+        },
+        {
+            "name": "ms13_medfluid-static"
+        },
+        {
+            "name": "ms13_medical-static"
+        },
+        {
+            "name": "ms13_cola-static"
+        },
+        {
+            "name": "ms13_beer-static"
+        },
+        {
+            "name": "ms13_alcohol-static"
+        },
+        {
+            "name": "ms13_gloves-static"
+        },
+        {
+            "name": "ms13_under-static"
+        },
+        {
+            "name": "ms13_suit-static"
+        },
+        {
+            "name": "ms13_helmet-static"
+        },
+        {
+            "name": "ms13_glasses-static"
+        },
+        {
+            "name": "ms13_shoes-static"
+        },
+        {
+            "name": "ms13_hat-static"
+        },
+        {
+            "name": "ms13_ammo-static"
+        },
+        {
+            "name": "ms13_melee-static"
+        },
+        {
+            "name": "ms13_gun-static"
+        },
+        {
+            "name": "ms13_mushroom-static"
+        },
+        {
+            "name": "ms13_produce-static"
+        },
+        {
+            "name": "ms13_seeds-static"
+        },
+        {
+            "name": "ms13_currency-static"
+        },
+        {
+            "name": "ms13_medicalbag-static"
+        }
+    ]
+}

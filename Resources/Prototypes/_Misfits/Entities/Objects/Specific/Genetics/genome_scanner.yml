@@ -1,0 +1,7 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Specific/Genetics/genome_scanner.yml
+
+- type: entity
+  parent: PaperArtifactAnalyzer
+  id: PaperGeneticsScanner
+  name: genetics printout
+  description: Information printed from a handheld genome scanner.

@@ -1,0 +1,63 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/structure/crates.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "vault_standard"
+        },
+        {
+            "name": "vault_standardopen"
+        },
+        {
+            "name": "vault_standard_cleanopen"
+        },
+        {
+            "name": "vault_compactopen"
+        },
+        {
+            "name": "vault_compact_clean"
+        },
+        {
+            "name": "vault_compact_cleanopen"
+        },
+        {
+            "name": "vault_longopen"
+        },
+        {
+            "name": "vault_long_cleanopen"
+        },
+        {
+            "name": "vault_bigopen"
+        },
+        {
+            "name": "vault_big_cleanopen"
+        },
+        {
+            "name": "enclaveopen",
+            "directions": 4
+        },
+        {
+            "name": "armyopen"
+        },
+        {
+            "name": "aluminumopen"
+        },
+        {
+            "name": "redopen"
+        },
+        {
+            "name": "vaultopen"
+        },
+        {
+            "name": "medicalopen"
+        },
+        {
+            "name": "3X_crate"
+        }
+    ]
+}

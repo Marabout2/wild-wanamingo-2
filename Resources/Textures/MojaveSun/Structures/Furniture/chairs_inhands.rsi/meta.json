@@ -1,0 +1,107 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/mob/inhands/misc/chairs_lefthand.dmi, mojave/icons/mob/inhands/misc/chairs_righthand.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "stool-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "stool-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "woodenchair-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "woodenchair-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "metal_chair-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "metal_chair-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "metal_chair_broken-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "metal_chair_broken-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "metal_chair_unfinished-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "metal_chair_unfinished-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "metal_chair_folding-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "metal_chair_folding-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "wood_chair-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "wood_chair-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "wood_chair_padded-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "wood_chair_padded-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "office_chair-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "office_chair-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "office_chair_broken-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "office_chair_broken-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "office_chair_blue-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "office_chair_blue-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "plastic_chair-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "plastic_chair-inhand-right",
+            "directions": 4
+        }
+    ]
+}

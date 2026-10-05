@@ -1,0 +1,43 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Specific/Robotics/borg_modules.yml
+
+- type: entity
+  id: N14BorgWeaponStunbaton
+  parent: Stunbaton
+  name: integrated stun baton
+  description: A stun baton integrated into a Protectron chassis. Its internal cell draws from the robot's power reserves and recharges automatically.
+  suffix: borg, integrated
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: BatterySelfRecharger
+    autoRechargeRate: 20 # ~50s to refill from empty (1000 charge = 20 stuns)
+
+# Self-recharging high-capacity cell used by borg-integrated lights. # #Misfits Fix
+
+- type: entity
+  id: N14BorgPowerCellHigh
+  parent: PowerCellHigh
+  name: borg microreactor power cell
+  description: A high-capacity power cell with an integrated microreactor. Recharges itself slowly over time.
+  suffix: Full, borg
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: BatterySelfRecharger
+    autoRechargeRate: 18 # ~1 minute to refill from empty
+
+# Integrated security flashlight for Police Protectron — self-recharging cell. # #Misfits Fix
+
+- type: entity
+  id: N14BorgWeaponSeclite
+  parent: FlashlightSeclite
+  name: integrated security flashlight
+  description: A robust security flashlight integrated into a Protectron chassis. Its microreactor cell recharges automatically.
+  suffix: borg, integrated
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: N14BorgPowerCellHigh
+
+# Security module — provides stun baton, handcuffs, and a flashlight for Police Protectrons.

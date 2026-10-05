@@ -1,0 +1,29 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/hydroponics/soil.dmi)",
+    "size": {
+        "x": 38,
+        "y": 38
+    },
+    "states": [
+        {
+            "name": "cardboard"
+        },
+        {
+            "name": "cardboard_full"
+        },
+        {
+            "name": "crate"
+        },
+        {
+            "name": "crate_full"
+        },
+        {
+            "name": "tray"
+        },
+        {
+            "name": "tray_full"
+        }
+    ]
+}

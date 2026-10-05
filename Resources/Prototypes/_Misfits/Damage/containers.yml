@@ -1,0 +1,10 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Damage/containers.yml
+
+- type: damageContainer
+  id: MisfitsNPCBiological
+  supportedGroups:
+  - Brute
+  - Burn
+  - Toxin
+  - Airloss
+  - Genetic

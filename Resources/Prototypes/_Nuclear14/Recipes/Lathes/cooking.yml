@@ -1,0 +1,130 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Recipes/Lathes/cooking.yml
+
+- type: latheRecipe
+  id: N14ButchersCleaver
+  result: N14ButchersCleaver
+  completetime: 2
+  categories:
+  - N14Kitchen
+  materials:
+    Steel: 300
+    Plastic: 50
+
+- type: latheRecipe
+  id: N14KitchenKnife
+  result: N14KitchenKnife
+  completetime: 2
+  categories:
+  - N14Kitchen
+  materials:
+    Steel: 200
+    Plastic: 50
+
+- type: latheRecipe
+  id: N14DrinkMug
+  result: DrinkMug
+  completetime: 1
+  categories:
+  - N14Kitchen
+  materials:
+    Glass: 100
+
+- type: latheRecipe
+  id: N14DrinkMugMetal
+  result: DrinkMugMetal
+  completetime: 1
+  categories:
+  - N14Kitchen
+  materials:
+    Steel: 100
+
+- type: latheRecipe
+  id: N14DrinkGlass
+  result: DrinkGlass
+  completetime: 1
+  categories:
+  - N14Kitchen
+  materials:
+    Glass: 100
+
+- type: latheRecipe
+  id: N14DrinkShotGlass
+  result: DrinkShotGlass
+  completetime: 1
+  categories:
+  - N14Kitchen
+  materials:
+    Glass: 100
+
+- type: latheRecipe
+  id: N14DrinkGlassCoupeShaped
+  result: DrinkGlassCoupeShaped
+  completetime: 1
+  categories:
+  - N14Kitchen
+  materials:
+    Glass: 100
+
+- type: latheRecipe
+  id: N14FoodPlate
+  result: FoodPlate
+  completetime: 1
+  categories:
+  - N14Kitchen
+  materials:
+    Glass: 100
+
+- type: latheRecipe
+  id: N14FoodPlateSmall
+  result: FoodPlateSmall
+  completetime: 1
+  categories:
+  - N14Kitchen
+  materials:
+    Glass: 50
+
+- type: latheRecipe
+  id: N14FoodPlatePlastic
+  result: FoodPlatePlastic
+  completetime: 1
+  categories:
+  - N14Kitchen
+  materials:
+    Plastic: 100
+
+- type: latheRecipe
+  id: N14FoodPlateSmallPlastic
+  result: FoodPlateSmallPlastic
+  completetime: 1
+  categories:
+  - N14Kitchen
+  materials:
+    Plastic: 50
+
+- type: latheRecipe
+  id: N14FoodPlateTin
+  result: FoodPlateTin
+  completetime: 1
+  categories:
+  - N14Kitchen
+  materials:
+    Steel: 100
+
+- type: latheRecipe
+  id: N14FoodKebabSkewer
+  result: FoodKebabSkewer
+  completetime: 1
+  categories:
+  - N14Kitchen
+  materials:
+    Steel: 100
+
+- type: latheRecipe
+  id: PlantBag
+  result: PlantBag
+  categories:
+  - N14Kitchen
+  completetime: 5
+  materials:
+    Cloth: 300

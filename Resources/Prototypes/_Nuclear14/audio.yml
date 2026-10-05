@@ -1,0 +1,21 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/audio.yml
+
+- type: soundCollection
+  id: AmbienceEyebot
+  files:
+    - /Audio/Nuclear14/Music/MUS_Patriotic_America.ogg 
+    - /Audio/Nuclear14/Music/MUS_Patriotic_BattleHymn.ogg
+    - /Audio/Nuclear14/Music/MUS_Patriotic_BattleHymn_mono.ogg
+    - /Audio/Nuclear14/Music/MUS_Patriotic_Dixie.ogg
+    - /Audio/Nuclear14/Music/MUS_Patriotic_Montezuma.ogg
+    - /Audio/Nuclear14/Music/MUS_Patriotic_Presidential.ogg
+    - /Audio/Nuclear14/Music/MUS_Patriotic_Stars.ogg
+    - /Audio/Nuclear14/Music/MUS_Patriotic_Washington.ogg
+    - /Audio/Nuclear14/Music/MUS_Patriotic_Yankee.ogg
+
+#- type: soundCollection
+#  id: AmbienceSupermarket
+#  files:
+#    - /Audio/Ambience/ambimaint1.ogg
+#

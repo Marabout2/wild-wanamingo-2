@@ -1,0 +1,20 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/hydroponics/growing.dmi, mojave/icons/hydroponics/harvest/harvest_inventory.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "stage-1"
+        },
+        {
+            "name": "dead"
+        },
+        {
+            "name": "produce"
+        }
+    ]
+}

@@ -1,0 +1,710 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/mob/humanoid.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "human"
+        },
+        {
+            "name": "human_head_m",
+            "directions": 4
+        },
+        {
+            "name": "human_head_f",
+            "directions": 4
+        },
+        {
+            "name": "human_chest_m",
+            "directions": 4
+        },
+        {
+            "name": "human_chest_f",
+            "directions": 4
+        },
+        {
+            "name": "human_r_arm",
+            "directions": 4
+        },
+        {
+            "name": "human_l_arm",
+            "directions": 4
+        },
+        {
+            "name": "human_r_hand",
+            "directions": 4
+        },
+        {
+            "name": "human_l_hand",
+            "directions": 4
+        },
+        {
+            "name": "human_r_leg",
+            "directions": 4
+        },
+        {
+            "name": "human_l_leg",
+            "directions": 4
+        },
+        {
+            "name": "lizard_head_m",
+            "directions": 4
+        },
+        {
+            "name": "lizard_head_f",
+            "directions": 4
+        },
+        {
+            "name": "lizard_r_leg",
+            "directions": 4
+        },
+        {
+            "name": "lizard_l_leg",
+            "directions": 4
+        },
+        {
+            "name": "pod_head_m",
+            "directions": 4
+        },
+        {
+            "name": "pod_head_f",
+            "directions": 4
+        },
+        {
+            "name": "pod_chest_m",
+            "directions": 4
+        },
+        {
+            "name": "pod_chest_f",
+            "directions": 4
+        },
+        {
+            "name": "pod_r_arm",
+            "directions": 4
+        },
+        {
+            "name": "pod_l_arm",
+            "directions": 4
+        },
+        {
+            "name": "pod_r_hand",
+            "directions": 4
+        },
+        {
+            "name": "pod_l_hand",
+            "directions": 4
+        },
+        {
+            "name": "pod_r_leg",
+            "directions": 4
+        },
+        {
+            "name": "pod_l_leg",
+            "directions": 4
+        },
+        {
+            "name": "plant_head_m",
+            "directions": 4
+        },
+        {
+            "name": "plant_head_f",
+            "directions": 4
+        },
+        {
+            "name": "plant_chest_m",
+            "directions": 4
+        },
+        {
+            "name": "plant_chest_f",
+            "directions": 4
+        },
+        {
+            "name": "plant_r_arm",
+            "directions": 4
+        },
+        {
+            "name": "plant_l_arm",
+            "directions": 4
+        },
+        {
+            "name": "plant_r_hand",
+            "directions": 4
+        },
+        {
+            "name": "plant_l_hand",
+            "directions": 4
+        },
+        {
+            "name": "plant_r_leg",
+            "directions": 4
+        },
+        {
+            "name": "plant_l_leg",
+            "directions": 4
+        },
+        {
+            "name": "jelly_head_m",
+            "directions": 4
+        },
+        {
+            "name": "jelly_head_f",
+            "directions": 4
+        },
+        {
+            "name": "jelly_chest_m",
+            "directions": 4
+        },
+        {
+            "name": "jelly_chest_f",
+            "directions": 4
+        },
+        {
+            "name": "jelly_r_arm",
+            "directions": 4
+        },
+        {
+            "name": "jelly_l_arm",
+            "directions": 4
+        },
+        {
+            "name": "jelly_r_hand",
+            "directions": 4
+        },
+        {
+            "name": "jelly_l_hand",
+            "directions": 4
+        },
+        {
+            "name": "jelly_r_leg",
+            "directions": 4
+        },
+        {
+            "name": "jelly_l_leg",
+            "directions": 4
+        },
+        {
+            "name": "slime_r_leg",
+            "directions": 4
+        },
+        {
+            "name": "slime_l_leg",
+            "directions": 4
+        },
+        {
+            "name": "golem_head_m",
+            "directions": 4
+        },
+        {
+            "name": "golem_head_f",
+            "directions": 4
+        },
+        {
+            "name": "golem_chest_m",
+            "directions": 4
+        },
+        {
+            "name": "golem_chest_f",
+            "directions": 4
+        },
+        {
+            "name": "golem_r_arm",
+            "directions": 4
+        },
+        {
+            "name": "golem_l_arm",
+            "directions": 4
+        },
+        {
+            "name": "golem_r_hand",
+            "directions": 4
+        },
+        {
+            "name": "golem_l_hand",
+            "directions": 4
+        },
+        {
+            "name": "golem_r_leg",
+            "directions": 4
+        },
+        {
+            "name": "golem_l_leg",
+            "directions": 4
+        },
+        {
+            "name": "digitigrade_1_r_leg",
+            "directions": 4
+        },
+        {
+            "name": "digitigrade_1_l_leg",
+            "directions": 4
+        },
+        {
+            "name": "digitigrade_2_r_leg",
+            "directions": 4
+        },
+        {
+            "name": "digitigrade_2_l_leg",
+            "directions": 4
+        },
+        {
+            "name": "lum_head_m",
+            "directions": 4
+        },
+        {
+            "name": "lum_head_f",
+            "directions": 4
+        },
+        {
+            "name": "lum_chest_m",
+            "directions": 4
+        },
+        {
+            "name": "lum_chest_f",
+            "directions": 4
+        },
+        {
+            "name": "lum_r_arm",
+            "directions": 4
+        },
+        {
+            "name": "lum_l_arm",
+            "directions": 4
+        },
+        {
+            "name": "lum_r_hand",
+            "directions": 4
+        },
+        {
+            "name": "lum_l_hand",
+            "directions": 4
+        },
+        {
+            "name": "lum_r_leg",
+            "directions": 4
+        },
+        {
+            "name": "lum_l_leg",
+            "directions": 4
+        },
+        {
+            "name": "stargazer_head_m",
+            "directions": 4
+        },
+        {
+            "name": "stargazer_head_f",
+            "directions": 4
+        },
+        {
+            "name": "stargazer_chest_m",
+            "directions": 4
+        },
+        {
+            "name": "stargazer_chest_f",
+            "directions": 4
+        },
+        {
+            "name": "stargazer_r_arm",
+            "directions": 4
+        },
+        {
+            "name": "stargazer_l_arm",
+            "directions": 4
+        },
+        {
+            "name": "stargazer_r_hand",
+            "directions": 4
+        },
+        {
+            "name": "stargazer_l_hand",
+            "directions": 4
+        },
+        {
+            "name": "stargazer_r_leg",
+            "directions": 4
+        },
+        {
+            "name": "stargazer_l_leg",
+            "directions": 4
+        },
+        {
+            "name": "mush_l_arm",
+            "directions": 4
+        },
+        {
+            "name": "mush_head_f",
+            "directions": 4
+        },
+        {
+            "name": "mush_chest_m",
+            "directions": 4
+        },
+        {
+            "name": "mush_r_leg",
+            "directions": 4
+        },
+        {
+            "name": "mush_r_arm",
+            "directions": 4
+        },
+        {
+            "name": "mush_head_m",
+            "directions": 4
+        },
+        {
+            "name": "mush_l_leg",
+            "directions": 4
+        },
+        {
+            "name": "mush_chest_f",
+            "directions": 4
+        },
+        {
+            "name": "ethereal_head_m",
+            "directions": 4,
+            "delays": [
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "ethereal_head_f",
+            "directions": 4,
+            "delays": [
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "ethereal_chest_m",
+            "directions": 4,
+            "delays": [
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "ethereal_chest_f",
+            "directions": 4,
+            "delays": [
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "ethereal_r_arm",
+            "directions": 4,
+            "delays": [
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "ethereal_l_arm",
+            "directions": 4,
+            "delays": [
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "ethereal_r_hand",
+            "directions": 4,
+            "delays": [
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "ethereal_l_hand",
+            "directions": 4,
+            "delays": [
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "ethereal_r_leg",
+            "directions": 4,
+            "delays": [
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "ethereal_l_leg",
+            "directions": 4,
+            "delays": [
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "ethereal_head",
+            "directions": 4,
+            "delays": [
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "ethereal_chest",
+            "directions": 4,
+            "delays": [
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.2,
+                    0.2,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "snail_head",
+            "directions": 4
+        },
+        {
+            "name": "snail_chest",
+            "directions": 4
+        },
+        {
+            "name": "snail_r_arm",
+            "directions": 4
+        },
+        {
+            "name": "snail_l_arm",
+            "directions": 4
+        },
+        {
+            "name": "snail_r_hand",
+            "directions": 4
+        },
+        {
+            "name": "snail_l_hand",
+            "directions": 4
+        },
+        {
+            "name": "snail_r_leg",
+            "directions": 4
+        },
+        {
+            "name": "snail_l_leg",
+            "directions": 4
+        }
+    ]
+}

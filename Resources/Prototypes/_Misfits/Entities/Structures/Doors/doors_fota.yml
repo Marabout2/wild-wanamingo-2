@@ -1,3 +1,5 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Structures/Doors/doors_fota.yml
+
 - type: entity
   parent: N14DoorWoodSlanted
   id: N14DoorWoodSecureLockedFotA

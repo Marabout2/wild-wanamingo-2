@@ -1,0 +1,860 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Entities/Mobs/NPCs/robots.yml
+
+- type: entity
+  abstract: true
+  parent: MobSiliconBase
+  id: N14MobRobotHostile
+  suffix: hostile npc
+  name: robot
+  description: Designed to serve humankind. Maybe it ended it.
+  components:
+  - type: InputMover
+  - type: MobMover
+  - type: NpcFactionMember
+    factions:
+    - HostileRobot
+  #- type: MobRobotAggro #Misfits Change — removed: NPC hostile robots should be hostile to player robots, not neutral.
+  - type: ProximityNPC # Misfits Add — sleep distant NPCs to reduce tick load
+  - type: HTN
+    rootTask:
+      task: N14HostileCompound
+    blackboard:
+      NavSmash: !type:Bool
+        true
+  - type: Sprite
+    drawdepth: Mobs
+  - type: Physics
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 3
+    baseSprintSpeed : 6
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+            radius: 0.4
+        density: 150
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: MobState
+    allowedStates:
+      - Alive
+      - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      100: Dead
+    stateAlertDict:
+      Alive: BorgHealth
+      Dead: HumanDead
+  - type: Stamina
+    baseCritThreshold: 20
+  - type: MovementAlwaysTouching
+  - type: Appearance
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: alive
+      Dead:
+        Base: dead
+  # - type: Bloodstream
+    # bloodMaxVolume: 50
+  - type: CombatMode
+  # - type: GhostTakeoverAvailable
+  # - type: GhostRole
+    # prob: 0.33
+    # makeSentient: true
+    # name: hostile attacker # wave defence
+    # description: |
+      # Wreak havoc and kill all humans!
+  - type: ReplacementAccent
+    accent: genericAggressive
+  - type: Damageable
+    damageModifierSet: WastelandAnimal
+  - type: Injurable
+    damageContainer: Biological
+  - type: Puller
+    needsHands: true
+  - type: Grammar # Misfits Change - proper noun so names appear capitalized in says/emotes when possessed
+    attributes:
+      proper: true
+  - type: TypingIndicator
+    proto: robot
+  - type: Speech
+    speechVerb: Robotic
+    speechSounds: Pai
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          N14ScrapElectronic1:
+            min: 1
+            max: 3
+          N14MaterialCircuitry1:
+            min: 1
+            max: 3
+          N14Scrap1:
+            min: 1
+            max: 3
+          N14CurrencyPrewar: #Misfits Change /Add: Drop prewar money on death (5-25)
+            min: 5
+            max: 25
+      - !type:PlaySoundBehavior # Misfits Change - robot death sound
+        sound:
+          path: /Audio/Misfits/Legacy/Machines/AI/borg_death.ogg
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Tag #Misfits Change - robot footstep sounds
+    tags:
+    - DoorBumpOpener
+    - FootstepSound
+    - SiliconEmotes
+  - type: Deathgasp #Misfits Change - keep robot death emotes consistent with silicon mobs
+    prototype: SiliconDeathgasp
+  - type: Vocal #Misfits Change - generic fallback emotes for robots without a dedicated sound set
+    emoteSounds: UnisexSilicon
+
+- type: entity
+  abstract: true
+  parent: N14MobRobotHostile
+  id: N14MobRobotHostileMelee
+  components:
+  - type: MeleeWeapon
+    hidden: true
+    soundHit:
+        path: /Audio/Effects/metal_thud1.ogg
+    angle: 0
+    animation: WeaponArcPunch
+    damage:
+      types:
+        Blunt: 1.66667
+        Slash: 1.66667
+        Piercing: 1.66667
+
+- type: entity
+  parent: N14MobRobotHostileMelee
+  id: N14MobRobotAssaultronHostile
+  name: Assaultron
+  description: Horrifying. Fast. Deadly.
+  components:
+  - type: IdleSound #Misfits Change - use the dedicated Assaultron idle loop set
+  - type: SpamEmitSound #Misfits Change - periodic Assaultron idle chatter
+    minInterval: 10
+    maxInterval: 35
+    sound:
+      collection: N14AssaultronIdle
+      params:
+        volume: -6
+        maxDistance: 7
+  - type: HTN
+    rootTask:
+      task: N14RangedHostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      200: Dead # Corvax-Change
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          N14ScrapElectronic1:
+            min: 1
+            max: 3
+          N14MaterialCircuitry1:
+            min: 1
+            max: 3
+          N14Scrap1:
+            min: 1
+            max: 3
+          N14CurrencyPrewar: #Misfits Change /Add: Drop prewar money on death (5-25)
+            min: 5
+            max: 25
+      - !type:PlaySoundBehavior # Misfits Change - robot death sound
+        sound:
+          path: /Audio/Misfits/Legacy/Machines/AI/borg_death.ogg
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 3
+    baseSprintSpeed : 6
+  - type: MeleeWeapon #Misfits Change - replace generic clangs with Assaultron attack vocals
+    hidden: true
+    soundHit:
+      collection: N14AssaultronAttack
+    angle: 0
+    animation: WeaponArcPunch
+    damage:
+      types:
+        Slash: 15 #Misfits Tweak - tone down NPC assaultron claw lethality per balance request
+  # - type: GhostRole
+    # prob: 1
+    # makeSentient: true
+    # name: Assaultron
+    # description: |
+      # Protect your area and remove any trespassers.
+  - type: Sprite
+    sprite: Nuclear14/Mobs/Robots/assaultron.rsi
+    layers:
+    - state: icon
+      map: ["movement"]
+    # - state: icon
+      # map: [ "enum.DamageStateVisualLayers.Base" ]
+    - state: icon  # change me
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: icon # change me
+      shader: unshaded
+      map: ["light"]
+      visible: false
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: walking
+    noMovementLayers:
+      movement:
+        state: icon
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: deathclaw
+      Dead:
+        Base: dead
+  - type: AggroSound #Misfits Change
+    sound:
+      collection: N14AssaultronAttack
+      params:
+        volume: -3
+        maxDistance: 12
+  # Misfits Add - robot/broadcast languages when player-controlled.
+
+- type: entity
+  parent: N14MobRobotHostileMelee
+  id: N14MobRobotProtectronHostile
+  name: Protectron
+  description: A common protectron looking for a fight.
+  components:
+  - type: IdleSound #Misfits Change - use the dedicated Protectron idle loop set
+  - type: SpamEmitSound #Misfits Change - periodic Protectron idle chatter
+    minInterval: 12
+    maxInterval: 45
+    sound:
+      collection: N14ProtectronIdle
+      params:
+        volume: -7
+        maxDistance: 6
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 1.5
+    baseSprintSpeed : 3
+  - type: MeleeWeapon #Misfits Change - replace generic clangs with Protectron attack vocals
+    hidden: true
+    soundHit:
+      collection: N14ProtectronAttack
+    angle: 0
+    animation: WeaponArcPunch
+    damage:
+      types:
+        Blunt: 1.66667
+        Slash: 1.66667
+        Piercing: 1.66667
+  - type: Sprite
+    sprite: Nuclear14/Mobs/Robots/protectron.rsi
+    layers:
+    - state: icon
+      map: ["movement"]
+    - state: icon  # change me
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: icon # change me
+      shader: unshaded
+      map: ["light"]
+      visible: false
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: walking
+    noMovementLayers:
+      movement:
+        state: icon
+  # - type: GhostRole
+    # prob: 1
+    # makeSentient: true
+    # name: protectron
+    # description: |
+      # Protect your area and remove any trespassers.
+  - type: HTN
+    rootTask:
+      task: N14HostileCompound
+    blackboard:
+      NavSmash: !type:Bool
+        true
+  - type: AggroSound #Misfits Change
+    sound:
+      collection: N14ProtectronAttack
+      params:
+        volume: -3
+        maxDistance: 12
+  # Misfits Add - robot/broadcast languages when player-controlled.
+
+- type: entity
+  parent: N14MobRobotProtectronHostile
+  id: N14MobRobotProtectronBuilderHostile
+  name: Protectron
+  description: A protectron builder looking for a fight.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Mobs/Robots/protectron-builder.rsi
+    layers:
+    - state: icon
+      map: ["movement"]
+    - state: icon  # change me
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: icon # change me
+      shader: unshaded
+      map: ["light"]
+      visible: false
+  # Misfits Add - robot/broadcast languages when player-controlled.
+
+- type: entity
+  parent: N14MobRobotProtectronHostile
+  id: N14MobRobotProtectronFireHostile
+  name: Protectron
+  description: A protectron firefighter looking for a fight.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Mobs/Robots/protectron-fire.rsi
+    layers:
+    - state: icon
+      map: ["movement"]
+    - state: icon  # change me
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: icon # change me
+      shader: unshaded
+      map: ["light"]
+      visible: false
+  # Misfits Add - robot/broadcast languages when player-controlled.
+
+- type: entity
+  parent: N14MobRobotProtectronHostile
+  id: N14MobRobotProtectronPoliceHostile
+  name: Protectron
+  description: A protectron police bot looking for a fight.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Mobs/Robots/protectron-police.rsi
+    layers:
+    - state: icon
+      map: ["movement"]
+    - state: icon  # change me
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: icon # change me
+      shader: unshaded
+      map: ["light"]
+      visible: false
+  - type: Gun #Mobs currently cannot bolt a gun, so we have to simulate them firing it
+    minAngle: 9
+    maxAngle: 18
+    angleIncrease: 3
+    angleDecay: 4
+    fireRate: 1
+    soundGunshot:
+      collection: N14RechargerRifleGunshot
+    useKey: false
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+  - type: BasicEntityAmmoProvider
+    proto: BulletLaser
+    capacity: 9
+    count: 9
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 2
+    rechargeSound:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+  - type: HTN
+    rootTask:
+      task: N14RangedHostileCompound
+    blackboard:
+      NavSmash: !type:Bool
+        true
+  # Misfits Add - robot/broadcast languages when player-controlled.
+
+- type: entity
+  parent: N14MobRobotProtectronPoliceHostile
+  id: N14MobRobotSecuritronHostile
+  name: Securitron
+  description: A securitron rolling patrol looking for a fight.
+  components:
+  - type: SpamEmitSound
+    minInterval: 12
+    maxInterval: 45
+    sound:
+      collection: N14SecuritronIdle
+      params:
+        volume: -7
+        maxDistance: 6
+  - type: Sprite
+    sprite: Nuclear14/Mobs/Robots/securitron-gray.rsi
+    layers:
+    - state: icon
+      map: ["movement"]
+    - state: icon
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: icon
+      shader: unshaded
+      map: ["light"]
+      visible: false
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: walking
+    noMovementLayers:
+      movement:
+        state: icon
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 2
+    baseSprintSpeed: 3.5
+  - type: AggroSound
+    sound:
+      collection: N14SecuritronAttack
+      params:
+        volume: -3
+        maxDistance: 12
+
+- type: entity
+  parent: N14MobRobotSecuritronHostile
+  id: N14MobRobotSecuritronBlueHostile
+  name: Securitron
+  description: A blue securitron rolling patrol looking for a fight.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Mobs/Robots/securitron-blue.rsi
+
+- type: entity
+  parent: N14MobRobotSecuritronHostile
+  id: N14MobRobotSecuritronBrownHostile
+  name: Securitron
+  description: A brown securitron rolling patrol looking for a fight.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Mobs/Robots/securitron-brown.rsi
+
+- type: entity
+  parent: N14MobRobotSecuritronHostile
+  id: N14MobRobotSecuritronRedHostile
+  name: Securitron
+  description: A red securitron rolling patrol looking for a fight.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Mobs/Robots/securitron-red.rsi
+
+- type: entity
+  parent: N14MobRobotSecuritronHostile
+  id: N14MobRobotSecuritronYellowHostile
+  name: Securitron
+  description: A yellow securitron rolling patrol looking for a fight.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Mobs/Robots/securitron-yellow.rsi
+
+- type: entity
+  parent: N14MobRobotHostileMelee
+  id: N14MobRobotMrHandyClaw
+  name: Mr Handy
+  description: A domestic Mr Handy model with a claw attachment.
+  suffix: hostile, claw
+  components:
+  - type: IdleSound #Misfits Change - use the dedicated Mr. Handy idle loop set
+  - type: SpamEmitSound #Misfits Change - periodic Mr. Handy idle chatter
+    minInterval: 12
+    maxInterval: 45
+    sound:
+      collection: N14HandyIdle
+      params:
+        volume: -7
+        maxDistance: 6
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 2
+    baseSprintSpeed : 4
+  - type: MeleeWeapon
+    hidden: true
+    soundHit:
+      collection: N14HandyAttack
+    angle: 0
+    animation: WeaponArcPunch
+    damage:
+      types:
+        Piercing: 5
+  - type: Sprite
+    sprite: Nuclear14/Mobs/Robots/mrhandyclaw.rsi
+    layers:
+    - state: icon
+      map: ["movement"]
+    - state: icon  # change me
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: icon # change me
+      shader: unshaded
+      map: ["light"]
+      visible: false
+  - type: SyncSprite
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: walking
+    noMovementLayers:
+      movement:
+        state: icon
+  - type: Destructible # Misfits Change - Mr Handy specific death sound
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          N14ScrapElectronic1:
+            min: 1
+            max: 3
+          N14MaterialCircuitry1:
+            min: 1
+            max: 3
+          N14Scrap1:
+            min: 1
+            max: 3
+          N14CurrencyPrewar: #Misfits Change /Add: Drop prewar money on death (5-25)
+            min: 5
+            max: 25
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Misfits/Mobs/Handy/robo_death.ogg
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  # - type: GhostRole
+    # prob: 1
+    # makeSentient: true
+    # name: Mr Handy
+    # description: |
+      # Protect your area and remove any trespassers.
+  # - type: AmbientSound
+    # range: 6
+    # volume: -3
+    # sound: /Audio/Misfits/Legacy/DeltaV/Glimmer_Creatures/mite.ogg
+  # - type: AmbientOnPowered
+  - type: AggroSound #Misfits Change
+    sound:
+      collection: N14HandyAttack
+      params:
+        volume: -3
+        maxDistance: 10
+  # Misfits Add - robot/broadcast languages when player-controlled.
+
+- type: entity
+  parent: N14MobRobotMrHandyClaw
+  id: N14MobRobotMrHandySaw
+  description: A domestic Mr Handy model with a saw attachment.
+  suffix: hostile, saw
+  components:
+  - type: MeleeWeapon
+    hidden: true
+    soundHit:
+      path: /Audio/Misfits/Legacy/Weapons/chainsaw.ogg
+    angle: 0
+    animation: WeaponArcPunch
+    damage:
+      types:
+        Slash: 3
+    attackRate: 0.5
+  - type: Sprite
+    sprite: Nuclear14/Mobs/Robots/mrhandysaw.rsi
+    layers:
+    - state: icon
+      map: ["movement"]
+    - state: icon  # change me
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: icon # change me
+      shader: unshaded
+      map: ["light"]
+      visible: false
+  - type: AggroSound #Misfits Change
+    sound:
+      collection: N14HandyAttack
+      params:
+        volume: -3
+        maxDistance: 10
+  # Misfits Add - robot/broadcast languages when player-controlled.
+
+- type: entity
+  parent: N14MobRobotHostile
+  id: N14MobRobotMrHandyGutsy
+  name: Mr Gutsy
+  description: A military Mr Gutsy model with a plasma attachment.
+  suffix: hostile, plasma
+  components:
+  - type: IdleSound #Misfits Change - use the dedicated Mr. Gutsy idle loop set
+  - type: SpamEmitSound #Misfits Change - periodic Mr. Gutsy idle chatter
+    minInterval: 12
+    maxInterval: 45
+    sound:
+      collection: N14GutsyIdle
+      params:
+        volume: -7
+        maxDistance: 6
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 2
+    baseSprintSpeed : 4
+  - type: Sprite
+    sprite: Nuclear14/Mobs/Robots/mrhandygutsy.rsi
+    layers:
+    - state: icon
+      map: ["movement"]
+    - state: icon  # change me
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: icon # change me
+      shader: unshaded
+      map: ["light"]
+      visible: false
+  - type: SyncSprite
+  # - type: GhostRole
+    # prob: 1
+    # makeSentient: true
+    # name: Mr Gutsy
+    # description: |
+      # Protect your area and remove any trespassers.
+  - type: Gun #Mobs currently cannot bolt a gun, so we have to simulate them firing it
+    minAngle: 9
+    maxAngle: 18
+    angleIncrease: 3
+    angleDecay: 4
+    fireRate: 1
+    soundGunshot:
+      collection: N14PlasmaPistolGunshot
+    useKey: false
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+  - type: BasicEntityAmmoProvider
+    proto: BulletPlasma
+    capacity: 9
+    count: 9
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 2
+    rechargeSound:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+  - type: HTN
+    rootTask:
+      task: N14RangedHostileCompound
+    blackboard:
+      NavSmash: !type:Bool
+        true
+  - type: AggroSound #Misfits Change
+    sound:
+      collection: N14GutsyAttack
+      params:
+        volume: -3
+        maxDistance: 10
+  # Misfits Add - robot/broadcast languages when player-controlled.
+
+- type: entity
+  parent: N14MobRobotHostile
+  id: N14MobRobotRobobrain
+  name: Robobrain
+  description: A military Robobrain outfitted with a laser weapon.
+  suffix: hostile, laser
+  components:
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 1.5
+    baseSprintSpeed : 3
+  - type: Sprite
+    sprite: Nuclear14/Mobs/Robots/robobrain.rsi
+    layers:
+    - state: icon
+      map: ["movement"]
+    - state: icon  # change me
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: icon # change me
+      shader: unshaded
+      map: ["light"]
+      visible: false
+  # - type: GhostRole
+    # prob: 1
+    # makeSentient: true
+    # name: Robobrain
+    # description: |
+      # Protect your area and remove any trespassers.
+  - type: Gun #Mobs currently cannot bolt a gun, so we have to simulate them firing it
+    minAngle: 6
+    maxAngle: 12
+    angleIncrease: 2
+    angleDecay: 4
+    fireRate: 1
+    soundGunshot:
+      collection: N14RechargerRifleGunshot
+    useKey: false
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+  - type: BasicEntityAmmoProvider
+    proto: BulletLaser
+    capacity: 9
+    count: 9
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 2
+    rechargeSound:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+  - type: HTN
+    rootTask:
+      task: N14RangedHostileCompound
+    blackboard:
+      NavSmash: !type:Bool
+        true
+  - type: AggroSound #Misfits Change
+    sound:
+      collection: N14ProtectronAttack
+      params:
+        volume: -3
+        maxDistance: 12
+  # Misfits Add - robot/broadcast languages when player-controlled.
+
+- type: entity
+  parent: N14MobRobotHostile
+  id: N14MobRobotEyebot
+  name: Eyebot
+  description: A military Eyebot playing a catchy tune.
+  suffix: hostile, laser
+  components:
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 3
+    baseSprintSpeed : 6
+  - type: Sprite
+    sprite: Nuclear14/Mobs/Robots/eyebot.rsi
+    layers:
+    - state: icon
+    - state: shadow_eyebot
+  # - type: GhostRole
+    # prob: 1
+    # makeSentient: true
+    # name: Eyebot
+    # description: |
+      # Protect your area and remove any trespassers.
+  - type: Gun #Mobs currently cannot bolt a gun, so we have to simulate them firing it
+    minAngle: 12
+    maxAngle: 24
+    angleIncrease: 4
+    angleDecay: 4
+    fireRate: 1
+    soundGunshot:
+      collection: N14RechargerRifleGunshot
+    useKey: false
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+  - type: BasicEntityAmmoProvider
+    proto: BulletLaser
+    capacity: 9
+    count: 9
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 2
+    rechargeSound:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+  - type: HTN
+    rootTask:
+      task: N14RangedHostileCompound
+    blackboard:
+      NavSmash: !type:Bool
+        true
+  - type: Destructible # Misfits Change - Eyebot specific death sound
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          N14ScrapElectronic1:
+            min: 1
+            max: 3
+          N14MaterialCircuitry1:
+            min: 1
+            max: 3
+          N14Scrap1:
+            min: 1
+            max: 3
+          N14CurrencyPrewar: #Misfits Change /Add: Drop prewar money on death (5-25)
+            min: 5
+            max: 25
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Misfits/Mobs/Eyebot/robo_death.ogg
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: AmbientSound
+    range: 6
+    volume: -3
+    sound:
+      collection: AmbienceEyebot
+  - type: IdleSound #Misfits Change - layer in the dedicated Eyebot chatter set alongside the ambient music loop
+  - type: SpamEmitSound #Misfits Change - periodic Eyebot beeps and announcements
+    minInterval: 10
+    maxInterval: 35
+    sound:
+      collection: N14EyebotIdle
+      params:
+        volume: -6
+        maxDistance: 6
+  - type: AggroSound #Misfits Change
+    sound:
+      collection: N14EyebotAttack
+      params:
+        volume: -3
+        maxDistance: 12
+  # Misfits Add - robot/broadcast languages when player-controlled.
+
+- type: entity
+  id: N14SentryBotOverloadLightEmitter
+  name: sentry bot overload light emitter
+  description: A hidden helper entity for the sentry bot's overload warning lights.
+  save: false
+  components:
+  - type: PointLight
+    enabled: false
+    color: red
+    radius: 5
+    softness: 2
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+    # Misfits Change /Fix: netsync must be enabled so clients can see the light toggle during overload flash.
+
+# Misfits Change /Add: Sentry Bot - hostile NPC with twin gatling lasers, high HP, and armor

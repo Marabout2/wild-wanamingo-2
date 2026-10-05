@@ -1,0 +1,126 @@
+# Wizden cable coils with Mojave Sun 13's wire coil icons; they lay the F14 cables.
+# They keep Wizden's stack types (CableHV, CableMV, Cable) so construction recipes that need cable accept them.
+# Held sprites are still Wizden's: MS13 has no in-hand sprites for wire.
+
+- type: entity
+  parent: CableHVStack
+  id: F14CableHVStack
+  name: HV cable coil
+  suffix: Full
+  description: Thick red wire for connecting generators to heavy machinery and substations.
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Tools/cable_coils.rsi
+    state: redwire_3
+    layers:
+    - state: redwire_3
+      map: ["base"]
+  - type: Stack
+    layerStates:
+    - redwire
+    - redwire_2
+    - redwire_3
+  - type: CablePlacer
+    cablePrototypeID: F14CableHV
+
+- type: entity
+  parent: F14CableHVStack
+  id: F14CableHVStack10
+  suffix: 10
+  components:
+  - type: Sprite
+    state: redwire_2
+  - type: Stack
+    count: 10
+
+- type: entity
+  parent: F14CableHVStack
+  id: F14CableHVStack1
+  suffix: 1
+  components:
+  - type: Sprite
+    state: redwire
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: CableMVStack
+  id: F14CableMVStack
+  name: MV cable coil
+  suffix: Full
+  description: Blue wire for connecting substations to APCs.
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Tools/cable_coils.rsi
+    state: bluewire_3
+    layers:
+    - state: bluewire_3
+      map: ["base"]
+  - type: Stack
+    layerStates:
+    - bluewire
+    - bluewire_2
+    - bluewire_3
+  - type: CablePlacer
+    cablePrototypeID: F14CableMV
+
+- type: entity
+  parent: F14CableMVStack
+  id: F14CableMVStack10
+  suffix: 10
+  components:
+  - type: Sprite
+    state: bluewire_2
+  - type: Stack
+    count: 10
+
+- type: entity
+  parent: F14CableMVStack
+  id: F14CableMVStack1
+  suffix: 1
+  components:
+  - type: Sprite
+    state: bluewire
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: CableApcStack
+  id: F14CableLVStack
+  name: LV cable coil
+  suffix: Full
+  description: Green wire for connecting APCs to lights and machines.
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Tools/cable_coils.rsi
+    state: greenwire_3
+    layers:
+    - state: greenwire_3
+      map: ["base"]
+  - type: Stack
+    layerStates:
+    - greenwire
+    - greenwire_2
+    - greenwire_3
+  - type: CablePlacer
+    cablePrototypeID: F14CableLV
+
+- type: entity
+  parent: F14CableLVStack
+  id: F14CableLVStack10
+  suffix: 10
+  components:
+  - type: Sprite
+    state: greenwire_2
+  - type: Stack
+    count: 10
+
+- type: entity
+  parent: F14CableLVStack
+  id: F14CableLVStack1
+  suffix: 1
+  components:
+  - type: Sprite
+    state: greenwire
+  - type: Stack
+    count: 1

@@ -1,0 +1,421 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/mob/hair_extensions.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "hair_trimmed_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_tightbun_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_a_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_b_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_d_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_f_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_coffeehouse_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_shavedpart_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_cornrows_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_poofy_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_bowlcut2_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_trimflat_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_hedgehog_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_spikey_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_undercut_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_undercutleft_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_undercutright_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_topknot_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_cia_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_business_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_business2_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_business3_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_business4_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_sidecut_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_cornrowbraid_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_cornrowbun_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_cornrowtail_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_emo_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_emofringe_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_halfbang_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_messy_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_shorthair2_generic",
+            "directions": 4,
+            "delays": [
+                [
+                    0.1,
+                    0.1
+                ],
+                [
+                    0.1,
+                    0.1
+                ],
+                [
+                    0.1,
+                    0.1
+                ],
+                [
+                    0.1,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "hair_shorthair3_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_bedhead_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_bedheadv2_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_dreads_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_80s_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_vlong_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_ponytail_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_unshaven_mohawk_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_afro_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_afro2_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_bigafro_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_c_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_boddicker_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_e_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_thinning_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_buzzcut_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_quiff_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_manbun_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_swept_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_oxton_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_keanu_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_combover_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_pompadour_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_bigpompadour_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_pixie_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_part_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_bun_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_ponytail3_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_gentle_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_bobcut_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_bob_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_bob2_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_bob4_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_bedheadv3_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_curls_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_parted_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_fringetail_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_kagami_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_veryshortovereyealternate_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_stail_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_flair_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_shorthime_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_braidfront_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_pigtails_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_hbraid_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_bun3_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_spikyponytail_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_pigtails2_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_bunhead2_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_ponytail4_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_country_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_twintail_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_longsidepart_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_longemo_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_himeup_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_himecut_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_himecut2_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_longfringe_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_vlongfringe_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_lbangs_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_braidtail_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_largebun_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_halfshaved_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_modern_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_long3_generic",
+            "directions": 4
+        },
+        {
+            "name": "hair_longovereye_generic",
+            "directions": 4
+        }
+    ]
+}

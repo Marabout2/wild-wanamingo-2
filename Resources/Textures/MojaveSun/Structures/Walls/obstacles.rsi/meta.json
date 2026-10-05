@@ -1,0 +1,61 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/objects/obstacles.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "fence_door_front_closed"
+        },
+        {
+            "name": "fence_door_front_open"
+        },
+        {
+            "name": "fence_door_side_closed"
+        },
+        {
+            "name": "fence_door_side_open"
+        },
+        {
+            "name": "normal_fence",
+            "directions": 4
+        },
+        {
+            "name": "cut_fence",
+            "directions": 4
+        },
+        {
+            "name": "fence_intersect_bottom"
+        },
+        {
+            "name": "fence_intersect_middle"
+        },
+        {
+            "name": "fence_intersect_corner",
+            "directions": 4
+        },
+        {
+            "name": "fence_corner",
+            "directions": 4
+        },
+        {
+            "name": "b_handrail",
+            "directions": 8
+        },
+        {
+            "name": "b_handrail_end",
+            "directions": 4
+        },
+        {
+            "name": "b_handrail_intersect",
+            "directions": 4
+        },
+        {
+            "name": "y_handrail_intersect",
+            "directions": 4
+        }
+    ]
+}

@@ -1,0 +1,122 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/structure/ms_devs.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "Original_Idea"
+        },
+        {
+            "name": "Koshenko"
+        },
+        {
+            "name": "TheRiddler"
+        },
+        {
+            "name": "TheRealScarHomie"
+        },
+        {
+            "name": "Technobug"
+        },
+        {
+            "name": "Minegriss"
+        },
+        {
+            "name": "Polyzonial"
+        },
+        {
+            "name": "Killa"
+        },
+        {
+            "name": "Hekzder"
+        },
+        {
+            "name": "Gomble"
+        },
+        {
+            "name": "SpookyWasTaken"
+        },
+        {
+            "name": "Memager"
+        },
+        {
+            "name": "Rapird"
+        },
+        {
+            "name": "StarlessHorizon"
+        },
+        {
+            "name": "Kekskruemelkittey"
+        },
+        {
+            "name": "ThatGuyThere"
+        },
+        {
+            "name": "1glitchycent"
+        },
+        {
+            "name": "Hyperio"
+        },
+        {
+            "name": "MrPibb"
+        },
+        {
+            "name": "Dime"
+        },
+        {
+            "name": "Sparrowbird611"
+        },
+        {
+            "name": "BadAtThisGame"
+        },
+        {
+            "name": "Fattybunbah"
+        },
+        {
+            "name": "ma44"
+        },
+        {
+            "name": "Chlorine"
+        },
+        {
+            "name": "INFRARED_BARON"
+        },
+        {
+            "name": "Bobjoga"
+        },
+        {
+            "name": "therest"
+        },
+        {
+            "name": "goofery-move"
+        },
+        {
+            "name": "sentry_plush"
+        },
+        {
+            "name": "lubeman"
+        },
+        {
+            "name": "KOBAN"
+        },
+        {
+            "name": "hellpig_plush"
+        },
+        {
+            "name": "fridge"
+        },
+        {
+            "name": "atlas_hammer"
+        },
+        {
+            "name": "severance"
+        },
+        {
+            "name": "mininuke"
+        }
+    ]
+}

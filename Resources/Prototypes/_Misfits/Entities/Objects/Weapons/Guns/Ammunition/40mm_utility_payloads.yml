@@ -1,0 +1,28 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Weapons/Guns/Ammunition/40mm_utility_payloads.yml
+
+- type: entity
+  id: Misfits40mmBuckshotPellet
+  parent: PelletShotgun12
+  name: 40mm buckshot pellet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    # Keep the twenty-pellet identity without allowing a point-blank hit to deal
+    # the previous 200 raw damage. All twenty hits now total 80 before mitigation.
+    damage:
+      types:
+        Piercing: 4
+    deleteOnCollide: true
+
+- type: entity
+  id: Misfits40mmBuckshotSpread
+  parent: Misfits40mmBuckshotPellet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: ProjectileSpread
+    proto: Misfits40mmBuckshotPellet
+    count: 20
+    spread: 20
+
+# Utility rounds inherit only the zero-impact-damage projectile and its
+# spawn/delete trigger behavior. No explosive blast is attached to these rounds.

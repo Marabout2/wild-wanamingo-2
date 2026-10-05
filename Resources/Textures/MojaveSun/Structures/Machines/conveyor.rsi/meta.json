@@ -1,0 +1,41 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/structure/conveyorbelts.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "gray_straight",
+            "directions": 4
+        },
+        {
+            "name": "gray_corner",
+            "directions": 4
+        },
+        {
+            "name": "gray_three_way",
+            "directions": 4
+        },
+        {
+            "name": "gray_cross"
+        },
+        {
+            "name": "blue_straight",
+            "directions": 4
+        },
+        {
+            "name": "blue_corner",
+            "directions": 4
+        },
+        {
+            "name": "blue_three_way",
+            "directions": 4
+        },
+        {
+            "name": "blue_cross"
+        }
+    ]
+}

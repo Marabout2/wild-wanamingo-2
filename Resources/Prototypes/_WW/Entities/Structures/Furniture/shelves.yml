@@ -1,0 +1,139 @@
+# Mojave Sun 13 sprites on copies of Misfits/N14 prototypes (Wizden ones where N14 has none).
+# Sprites: Resources/Textures/MojaveSun (CC-BY-NC-SA-3.0, Mojave Sun 13).
+
+- type: entity
+  parent: N14ShelfWood1
+  id: F14ShelfWood
+  name: wooden shelf
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Furniture/tall_furniture.rsi
+    state: wood_shelf
+    offset: 0, 0.5
+    noRot: false
+    snapCardinals: false
+  - type: Icon
+    sprite: MojaveSun/Structures/Furniture/tall_furniture.rsi
+    state: wood_shelf
+  - type: Transform
+    noRot: false
+
+- type: entity
+  parent: N14ShelfWood1
+  id: F14ShelfWoodAlt
+  name: wooden shelf
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Furniture/tall_furniture.rsi
+    state: wood_shelf-alt
+    offset: 0, 0.5
+    noRot: false
+    snapCardinals: false
+  - type: Icon
+    sprite: MojaveSun/Structures/Furniture/tall_furniture.rsi
+    state: wood_shelf-alt
+  - type: Transform
+    noRot: false
+
+- type: entity
+  parent: N14ShelfWood1
+  id: F14ShelfMetal
+  name: metal shelf
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Furniture/tall_furniture.rsi
+    state: metal_shelf
+    offset: 0, 0.5
+    noRot: false
+    snapCardinals: false
+  - type: Icon
+    sprite: MojaveSun/Structures/Furniture/tall_furniture.rsi
+    state: metal_shelf
+  - type: Transform
+    noRot: false
+
+- type: entity
+  parent: N14ShelfWood1
+  id: F14ShelfStore
+  name: store shelf
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Furniture/tall_furniture.rsi
+    state: store_shelf
+    offset: 0, 0.5
+    noRot: false
+    snapCardinals: false
+  - type: Icon
+    sprite: MojaveSun/Structures/Furniture/tall_furniture.rsi
+    state: store_shelf
+  - type: Transform
+    noRot: false
+
+- type: entity
+  parent: N14ShelfWood1
+  id: F14ShelfStoreMetal
+  name: store shelf
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Furniture/tall_furniture.rsi
+    state: store_shelf_metal
+    offset: 0, 0.5
+    noRot: false
+    snapCardinals: false
+  - type: Icon
+    sprite: MojaveSun/Structures/Furniture/tall_furniture.rsi
+    state: store_shelf_metal
+  - type: Transform
+    noRot: false
+
+- type: entity
+  parent: N14BookshelfDirty
+  id: F14Bookshelf
+  name: bookshelf
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Furniture/tall_furniture.rsi
+    layers:
+    - state: bookshelf
+    offset: 0, 0.5
+    noRot: false
+    snapCardinals: false
+  - type: Icon
+    sprite: MojaveSun/Structures/Furniture/tall_furniture.rsi
+    state: bookshelf
+  - type: Transform
+    noRot: false
+
+- type: entity
+  parent: N14JunkMirror
+  id: F14Mirror
+  name: mirror
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Furniture/tall_furniture.rsi
+    state: mirror
+    offset: 0, 0.5
+    noRot: false
+    snapCardinals: false
+  - type: Icon
+    sprite: MojaveSun/Structures/Furniture/tall_furniture.rsi
+    state: mirror
+  - type: Transform
+    noRot: false
+
+- type: entity
+  parent: N14JunkMirror
+  id: F14MirrorBroken
+  name: broken mirror
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Furniture/tall_furniture.rsi
+    state: mirror_broke
+    offset: 0, 0.5
+    noRot: false
+    snapCardinals: false
+  - type: Icon
+    sprite: MojaveSun/Structures/Furniture/tall_furniture.rsi
+    state: mirror_broke
+  - type: Transform
+    noRot: false

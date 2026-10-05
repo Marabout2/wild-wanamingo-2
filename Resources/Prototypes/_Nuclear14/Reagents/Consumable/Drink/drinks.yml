@@ -1,0 +1,28 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Reagents/Consumable/Drink/drinks.yml
+
+- type: reagent
+  id: TeaBarrelCactus
+  parent: GreenTea
+  name: reagent-name-tea-barrelcactus
+  desc: reagent-desc-tea-barrelcactus
+
+- type: reagent
+  id: TeaMutfruit
+  parent: GreenTea
+  name: reagent-name-tea-mutfruit
+  desc: reagent-desc-tea-mutfruit
+
+- type: reagent
+  id: TeaNettle
+  parent: GreenTea
+  name: reagent-name-tea-nettle
+  desc: reagent-desc-tea-nettle
+
+- type: reagent
+  id: TeaXander
+  parent: GreenTea
+  name: reagent-name-tea-xander
+  desc: reagent-desc-tea-xander
+
+  ## Other Teas

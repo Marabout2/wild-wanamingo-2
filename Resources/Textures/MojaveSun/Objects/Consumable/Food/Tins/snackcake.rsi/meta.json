@@ -1,0 +1,38 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/objects/food/prewar_food.dmi)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "snackcake"
+        },
+        {
+            "name": "snackcake_open"
+        },
+        {
+            "name": "snackcake_1"
+        },
+        {
+            "name": "snackcake_2"
+        },
+        {
+            "name": "snackcake_3"
+        },
+        {
+            "name": "snackcake_4"
+        },
+        {
+            "name": "snackcake_5"
+        },
+        {
+            "name": "snackcake_5-1"
+        },
+        {
+            "name": "snackcake_trash"
+        }
+    ]
+}

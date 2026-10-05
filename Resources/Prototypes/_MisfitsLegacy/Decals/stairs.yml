@@ -1,5 +1,0 @@
-# Ported from Resources/Prototypes/Decals/stairs.yml in wild-wanamingo.
-
-- type: decal
-  id: Deprecated
-  abstract: true

@@ -1,5 +1,0 @@
-# Ported from Resources/Prototypes/Decals/wood_trim_thin.yml in wild-wanamingo.
-
-- type: decal
-  id: WoodTrimThin
-  abstract: true

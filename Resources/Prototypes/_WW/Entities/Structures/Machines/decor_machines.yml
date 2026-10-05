@@ -1,0 +1,186 @@
+# Mojave Sun 13 sprites on copies of Misfits/N14 prototypes (Wizden ones where N14 has none).
+# Sprites: Resources/Textures/MojaveSun (CC-BY-NC-SA-3.0, Mojave Sun 13).
+
+- type: entity
+  abstract: true
+  parent: BaseStructure
+  id: F14DecorMachineBase
+  components:
+  - type: Sprite
+    noRot: false
+    snapCardinals: false
+  - type: Transform
+    noRot: false
+  - type: InteractionOutline
+  - type: Rotatable
+  - type: Anchorable
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Injurable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+
+- type: entity
+  parent: F14DecorMachineBase
+  id: F14IVDrip
+  name: IV drip
+  description: A stand for hanging IV bags.
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Machines/Medical/medical.rsi
+    state: iv_drip
+  - type: Icon
+    sprite: MojaveSun/Structures/Machines/Medical/medical.rsi
+    state: iv_drip
+
+- type: entity
+  parent: F14DecorMachineBase
+  id: F14MedicalStand
+  name: medical stand
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Machines/Medical/medical.rsi
+    state: medical_stand
+  - type: Icon
+    sprite: MojaveSun/Structures/Machines/Medical/medical.rsi
+    state: medical_stand
+
+- type: entity
+  parent: F14DecorMachineBase
+  id: F14SurgicalLamp
+  name: surgical lamp
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Machines/Medical/medical.rsi
+    state: medlamp_on
+  - type: Icon
+    sprite: MojaveSun/Structures/Machines/Medical/medical.rsi
+    state: medlamp_on
+  - type: PointLight
+    radius: 4
+    energy: 1.5
+    color: "#FFF6E0"
+
+- type: entity
+  parent: F14DecorMachineBase
+  id: F14DryingRack
+  name: drying rack
+  description: A wooden rack for drying plants and hides.
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Machines/drying_rack.rsi
+    state: drying_rack
+    offset: 0.5, 0.25
+  - type: Icon
+    sprite: MojaveSun/Structures/Machines/drying_rack.rsi
+    state: drying_rack
+
+- type: entity
+  parent: F14DecorMachineBase
+  id: F14DryingRackRoped
+  name: drying rack
+  suffix: roped
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Machines/drying_rack.rsi
+    state: drying_rack_roped
+    offset: 0.5, 0.25
+  - type: Icon
+    sprite: MojaveSun/Structures/Machines/drying_rack.rsi
+    state: drying_rack_roped
+
+- type: entity
+  parent: F14DecorMachineBase
+  id: F14TankBig
+  name: big tank
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Storage/Tanks/tank_96x48.rsi
+    state: big_tank
+    offset: 1, 0.25
+  - type: Icon
+    sprite: MojaveSun/Structures/Storage/Tanks/tank_96x48.rsi
+    state: big_tank
+
+- type: entity
+  parent: F14DecorMachineBase
+  id: F14TankBigBroken
+  name: broken big tank
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Structures/Storage/Tanks/tank_96x48.rsi
+    state: big_tank_broken
+    offset: 1, 0.25
+  - type: Icon
+    sprite: MojaveSun/Structures/Storage/Tanks/tank_96x48.rsi
+    state: big_tank_broken
+
+- type: entity
+  parent: F14DecorMachineBase
+  id: F14RadioHighradio
+  name: radio set
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Devices/hamradio.rsi
+    state: highradio
+  - type: Icon
+    sprite: MojaveSun/Objects/Devices/hamradio.rsi
+    state: highradio
+
+- type: entity
+  parent: F14DecorMachineBase
+  id: F14RadioRadio
+  name: radio
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Devices/hamradio.rsi
+    state: radio
+  - type: Icon
+    sprite: MojaveSun/Objects/Devices/hamradio.rsi
+    state: radio
+
+- type: entity
+  parent: F14DecorMachineBase
+  id: F14RadioRecradio
+  name: radio receiver
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Devices/hamradio.rsi
+    state: recradio
+  - type: Icon
+    sprite: MojaveSun/Objects/Devices/hamradio.rsi
+    state: recradio
+
+- type: entity
+  parent: F14DecorMachineBase
+  id: F14RadioRadiokingWood
+  name: Radiation King radio
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Devices/hamradio.rsi
+    state: radioking_wood
+  - type: Icon
+    sprite: MojaveSun/Objects/Devices/hamradio.rsi
+    state: radioking_wood
+
+- type: entity
+  parent: F14DecorMachineBase
+  id: F14RadioRadiokingBlack
+  name: Radiation King radio
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Devices/hamradio.rsi
+    state: radioking_black
+  - type: Icon
+    sprite: MojaveSun/Objects/Devices/hamradio.rsi
+    state: radioking_black
