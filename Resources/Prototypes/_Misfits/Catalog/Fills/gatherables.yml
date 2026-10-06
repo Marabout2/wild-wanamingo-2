@@ -1,0 +1,16 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Catalog/Fills/gatherables.yml
+
+- type: entityTable
+  id: WildZoyAll
+  table: !type:AllSelector
+    children:
+    - id: MisfitsFloraProduceWildZoybeans
+      prob: 0.75
+      amount: !type:RangeNumberSelector
+        range: 1, 3
+
+- type: entityTable
+  id: WildZoyClippers
+  table: !type:AllSelector
+    children:
+    - id: ZoybeanSeeds

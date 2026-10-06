@@ -1,0 +1,20 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Clothing/Legion/principes_pa.yml
+
+- type: entity
+  parent: N14ClothingHeadHatCenturionHelmet
+  id: MisfitsLegionPrincipesHelmet
+  name: Principes Helmet
+  description: A heavily butchered T-60 helmet, stripped to its base components and decorated in the colors of a Veteran decanus.
+  components:
+  - type: Sprite
+    sprite: Misfits/Clothing/CaesarLegion/Principes/principes_helmet.rsi
+  - type: Clothing
+    sprite: Misfits/Clothing/CaesarLegion/Principes/principes_helmet.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.75
+        Heat: 0.8
+    priceMultiplier: 0.5

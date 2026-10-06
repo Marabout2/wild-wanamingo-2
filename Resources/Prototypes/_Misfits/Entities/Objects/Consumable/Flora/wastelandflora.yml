@@ -1,0 +1,22 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Consumable/Flora/wastelandflora.yml
+
+- type: entity
+  parent: N14WastelandFlora
+  id: MisfitsWastelandFloraWildZoy
+  name: wild zoybean plant
+  description: A wild zoybean plant. It looks healthy.
+  components:
+  - type: Sprite
+    sprite: Misfits/Objects/Specific/Hydroponics/zoybeans.rsi
+    state: harvest
+  - type: OreVein
+    currentOre: WildZoy
+  - type: Gatherable
+    toolWhitelist:
+      components:
+      - Hands
+      tags:
+      - PlantSampleTaker
+    loot:
+      All: !type:NestedSelector
+        tableId: WildZoyAll

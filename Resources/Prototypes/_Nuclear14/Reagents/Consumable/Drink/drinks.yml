@@ -2,10 +2,107 @@
 # Resources/Prototypes/_Nuclear14/Reagents/Consumable/Drink/drinks.yml
 
 - type: reagent
+  id: N14MilkBrahmin
+  parent: Milk
+  name: reagent-name-milk-brahmin
+  desc: reagent-desc-milk-brahmin
+  metabolisms:
+    Bloodstream:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Radiation: -1
+
+- type: reagent
+  id: N14MilkBighorner
+  parent: Milk
+  name: reagent-name-milk-bighorner
+  desc: reagent-desc-milk-bighorner
+
+- type: reagent
+  id: N14MilkRadstag
+  parent: Milk
+  name: reagent-name-milk-radstag
+  desc: reagent-desc-milk-radstag
+
+# Tea
+## Plant Teas
+
+- type: reagent
+  id: TeaAgave
+  parent: GreenTea
+  name: reagent-name-tea-agave
+  desc: reagent-desc-tea-agave
+  metabolisms:
+    Digestion:
+      effects:
+      - !type:AdjustReagent
+        reagent: Sugar
+        amount: 0.4
+      - !type:Satiate
+        satiationType: Thirst
+        factor: 4
+
+- type: reagent
+  id: TeaBlackberry
+  parent: TeaAgave
+  name: reagent-name-tea-blackberry
+  desc: reagent-desc-tea-blackberry
+
+- type: reagent
   id: TeaBarrelCactus
   parent: GreenTea
   name: reagent-name-tea-barrelcactus
   desc: reagent-desc-tea-barrelcactus
+
+- type: reagent
+  id: TeaBroc
+  parent: GreenTea
+  name: reagent-name-tea-broc
+  desc: reagent-desc-tea-broc
+  metabolisms:
+    Digestion:
+      effects:
+      - !type:Satiate
+        satiationType: Thirst
+        factor: 3
+    Bloodstream:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Heat: -0.0625
+            Shock: -0.0625
+            Cold: -0.0625
+            Caustic: -0.0625
+            Blunt: -0.0833333
+            Slash: -0.0833333
+            Piercing: -0.0833333
+
+- type: reagent
+  id: TeaDatura
+  parent: GreenTea
+  name: reagent-name-tea-datura
+  desc: reagent-desc-tea-datura
+  metabolisms:
+    Digestion:
+      effects:
+      - !type:Satiate
+        satiationType: Thirst
+        factor: 3
+    Bloodstream:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Asphyxiation: 2.5
+
+- type: reagent
+  id: TeaHoneyMesquite
+  parent: TeaAgave
+  name: reagent-name-tea-honeymesquite
+  desc: reagent-desc-tea-honeymesquite
 
 - type: reagent
   id: TeaMutfruit
@@ -20,9 +117,57 @@
   desc: reagent-desc-tea-nettle
 
 - type: reagent
+  id: TeaPricklypear
+  parent: TeaAgave
+  name: reagent-name-tea-pricklypear
+  desc: reagent-desc-tea-pricklypear
+
+- type: reagent
+  id: TeaStarlightberry
+  parent: TeaAgave
+  name: reagent-name-tea-starlightberry
+  desc: reagent-desc-tea-starlightberry
+
+- type: reagent
+  id: TeaTarberry
+  parent: TeaAgave
+  name: reagent-name-tea-tarberry
+  desc: reagent-desc-tea-tarberry
+
+- type: reagent
+  id: TeaWhiteHorsenettle
+  parent: TeaDatura
+  name: reagent-name-tea-whitehorsenettle
+  desc: reagent-desc-tea-whitehorsenettle
+
+- type: reagent
   id: TeaXander
   parent: GreenTea
   name: reagent-name-tea-xander
   desc: reagent-desc-tea-xander
 
   ## Other Teas
+
+- type: reagent
+  parent: TeaAgave
+  id: TeaFireantNectar
+  name: reagent-name-tea-fireantnectar
+  desc: reagent-desc-tea-fireantnectar
+  metabolisms:
+    Digestion:
+      effects:
+      - !type:AdjustReagent
+        reagent: Sugar
+        amount: 0.4
+      - !type:Satiate
+        satiationType: Thirst
+        factor: 4
+    Bloodstream:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Heat: -1.5
+            Caustic: -1
+
+## Maple Syrup

@@ -95,6 +95,16 @@
   maxCount: 10
 
 - type: stack
+  id: FertilizerOre
+  name: misfits-kit-fertilizer-ore
+  icon: { sprite: "/Textures/Nuclear14/Objects/Misc/crafting_material.rsi", state: ore_fertilizer }
+  spawn: FertilizerOre1
+  maxCount: 10
+
+
+# Metals etc
+
+- type: stack
   id: Lead
   name: misfits-kit-lead
   icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: ingot_lead }

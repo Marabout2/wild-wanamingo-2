@@ -1,0 +1,50 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Entities/Objects/Consumable/Food/crackers.yml
+
+- type: entity
+  parent: N14CookedFoodBreadSliceBase
+  id: N14FoodCrackerBase
+  name: cracker
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Misfits/Objects/Consumable/Food/Rations/crackers.rsi # #Misfits Change - Desert Rose 2 cracker sprites
+    layers:
+    - state: c_cracker
+  - type: StaticPrice
+    price: 1
+
+# C Cracker
+
+- type: entity
+  name: c ration cracker
+  parent: N14FoodCrackerBase
+  id: N14FoodCrackerCSlice
+  description: A c type cracker, plain and old cracker. Little stale.
+  components:
+  - type: Edible
+    edible: Food
+
+- type: entity
+  name: k ration cracker
+  parent: N14FoodCrackerBase
+  id: N14FoodCrackerKSlice
+  description: A k type cracker, also called ranger cracker due to it's buttery flavour.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - butter
+      - bread
+  - type: Edible
+    edible: Food
+  - type: Sprite
+    layers:
+    - state: k_cracker
+  - type: Solution
+    solution:
+      maxVol: 10
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 5
+      - ReagentId: Vitamin
+        Quantity: 1

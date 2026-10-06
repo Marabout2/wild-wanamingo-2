@@ -1,0 +1,27 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Reagents/Consumable/Drink/alcohol.yml
+
+- type: reagent
+  parent: Beer
+  id: N14GammaGulpBeer
+  group: N14Alcohol
+  name: reagent-name-gammagulpbeer 
+  desc: reagent-desc-gammagulpbeer
+
+- type: reagent
+  parent: Rum
+  id: N14RoentgenRum
+  group: N14Alcohol
+  name: reagent-name-roentgenrum
+  desc: reagent-desc-roentgenrum
+
+- type: reagent
+  parent: Wine
+  id: N14Wine
+  group: N14Alcohol
+  name: reagent-name-wine
+  desc: reagent-desc-wine
+
+# Mixtures
+
+## N14RumNuka

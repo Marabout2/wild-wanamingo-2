@@ -198,3 +198,36 @@
   components:
   - type: Stack
     count: 1
+
+- type: entity
+  parent: OreBase
+  id: FertilizerOre
+  name: fertilizer
+  suffix: Full
+  components:
+  - type: Stack # Misfits Fix - re-enabled fertilizer ore stacking
+    stackType: FertilizerOre
+    count: 10
+  - type: Sprite
+    sprite: /Textures/Nuclear14/Objects/Misc/crafting_material.rsi
+    state: ore_fertilizer
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      Fertilizer: 50
+  - type: Extractable
+    grindableSolutionName: fertilizer
+  - type: SolutionContainerManager
+    solutions:
+      fertilizer:
+        reagents:
+        - ReagentId: Fertilizer
+          Quantity: 50
+
+- type: entity
+  id: FertilizerOre1
+  parent: FertilizerOre
+  suffix: Single
+  components:
+    - type: Stack # Misfits Fix - re-enabled fertilizer ore stacking
+      count: 1

@@ -1,0 +1,49 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Consumable/Drinks/icecold_nukacola.yml
+
+- type: entity
+  parent: N14DrinkNukaCola
+  id: N14DrinkNukaColaIceCold
+  name: Ice Cold Nuka-Cola
+  suffix: Ice Cold
+
+- type: entity
+  parent: N14DrinkNukaColaCherry
+  id: N14DrinkNukaColaCherryIceCold
+  name: Ice Cold Nuka-Cola Cherry
+  suffix: Ice Cold
+
+- type: entity
+  parent: N14DrinkNukaColaGrape
+  id: N14DrinkNukaColaGrapeIceCold
+  name: Ice Cold Nuka-Cola Grape
+  suffix: Ice Cold
+
+- type: entity
+  parent: N14DrinkNukaColaOrange
+  id: N14DrinkNukaColaOrangeIceCold
+  name: Ice Cold Nuka-Cola Orange
+  suffix: Ice Cold
+
+- type: entity
+  parent: N14DrinkNukaColaQuantum
+  id: N14DrinkNukaColaQuantumIceCold
+  name: Ice Cold Nuka-Cola Quantum
+  suffix: Ice Cold
+
+- type: entity
+  parent: N14DrinkNukaColaQuartz
+  id: N14DrinkNukaColaQuartzIceCold
+  name: Ice Cold Nuka-Cola Quartz
+  suffix: Ice Cold
+
+- type: entity
+  parent: N14DrinkNukaColaVictory
+  id: N14DrinkNukaColaVictoryIceCold
+  name: Ice Cold Nuka-Cola Victory
+  suffix: Ice Cold
+
+- type: entity
+  parent: N14DrinkNukaColaWild
+  id: N14DrinkNukaColaWildIceCold
+  name: Ice Cold Nuka-Cola Wild
+  suffix: Ice Cold

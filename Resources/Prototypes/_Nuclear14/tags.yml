@@ -8,10 +8,19 @@
   id: BottleCap
 
 - type: Tag
+  id: ComposterCompatible
+
+- type: Tag
   id: Currency
 
 - type: Tag
+  id: Jam
+
+- type: Tag
   id: Magazine
+
+- type: Tag
+  id: Pickled
 
 - type: Tag
   id: RawLeather
@@ -23,7 +32,21 @@
   id: Turbo
 
 - type: Tag
+  id: WeldingGoggles
+
+# Medical Items
+
+- type: Tag
   id: N14EmptySyringe
+
+- type: Tag
+  id: N14EmptyNukaBottle
+
+- type: Tag
+  id: Abraxo
+
+- type: Tag
+  id: Tincan
 
 - type: Tag
   id: Scrap
@@ -42,6 +65,12 @@
 
 - type: Tag
   id: N14PoliceBaton
+
+- type: Tag
+  id: PoliceVest
+
+- type: Tag
+  id: FollowerLabcoat
 
 - type: Tag
   id: N14Welder
@@ -227,6 +256,9 @@
 
 - type: Tag
   id: N14Magazine50AMRHEIAP
+
+- type: Tag
+  id:  SpeedLoader
 
 - type: Tag
   id: Magazine308M60Box

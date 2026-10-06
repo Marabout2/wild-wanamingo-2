@@ -1,0 +1,20 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Clothing/Legion/legionpa.yml
+
+- type: entity
+  parent: N14ClothingHeadHatBaseHelmetMetal
+  id: N14ClothingHeadHatLegionpa
+  name: Gravis Pattern Helmet
+  description: Once a T45 helmet, heavily modified by legion with a solid steel face mask and a plume of a Prime Decanus.
+  components:
+  - type: Sprite
+    sprite: Misfits/Clothing/CaesarLegion/legionpahelmet.rsi
+  - type: Clothing
+    sprite: Misfits/Clothing/CaesarLegion/legionpahelmet.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.75
+        Heat: 0.8
+    priceMultiplier: 0.5

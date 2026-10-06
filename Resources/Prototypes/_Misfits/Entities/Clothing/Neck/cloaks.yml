@@ -1,0 +1,14 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Clothing/Neck/cloaks.yml
+
+- type: entity
+  parent: ClothingNeckBase
+  id: M14ClothingNeckCloakWesternPoncho
+  name: thick decorated poncho
+  description: Dark brown with white patterns, thick enough to provide some protection.
+  components:
+  - type: Sprite
+    sprite: Misfits/Clothing/Neck/WesternPoncho.rsi
+  - type: Clothing
+    sprite: Misfits/Clothing/Neck/WesternPoncho.rsi
+  - type: StaticPrice
+    price: 50

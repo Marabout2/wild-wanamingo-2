@@ -1,0 +1,6 @@
+# Wasteland reagents (N14/Misfits) have their own page; Wizden's Chemicals page is at the UI's per-frame update limit.
+- type: guideEntry
+  id: F14WastelandChemicals
+  name: guide-entry-f14-wasteland-chemicals
+  text: "/ServerInfo/_WW/Guidebook/WastelandChemicals.xml"
+  filterEnabled: True

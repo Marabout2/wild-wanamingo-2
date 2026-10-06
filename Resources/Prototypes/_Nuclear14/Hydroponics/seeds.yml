@@ -1,0 +1,723 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Hydroponics/seeds.yml
+
+- type: entity
+  parent: BasePlant
+  id: N14WildAgave
+  categories: [HideSpawnMenu]
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Specific/Hydroponics/agave.rsi
+  - type: PlantData
+    name: clipping-wild-agave-name
+    noun: clipping-wild-agave-noun
+    packetPrototype: N14FloraWildAgaveClippingSeed
+    productPrototypes: [ N14FloraProduceWildAgave ]
+  - type: Plant
+    lifespan: 25
+    maturation: 20
+    production: 1
+    yield: 5
+    potency: 10
+    growthStages: 3
+  - type: PlantGrowth
+    waterConsumption: 2
+  - type: PlantChemicals
+    chemicals:
+      ExtractAgaveNectar:
+        min: 1
+        max: 10
+        potencyDivisor: 25
+
+- type: entity
+  parent: BasePlant
+  id: N14WildBananaYucca
+  categories: [HideSpawnMenu]
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Specific/Hydroponics/yucca.rsi
+  - type: PlantData
+    name: clipping-wild-banana-yucca-name
+    noun: clipping-wild-banana-yucca-noun
+    packetPrototype: N14FloraWildBananaYuccaClippingSeed
+    productPrototypes: [ N14FloraProduceWildBananaYucca ]
+  - type: Plant
+    lifespan: 25
+    maturation: 20
+    production: 1
+    yield: 5
+    potency: 10
+    growthStages: 4
+  - type: PlantGrowth
+    waterConsumption: 2
+  - type: PlantChemicals
+    chemicals:
+      ExtractBananaYucca:
+        min: 1
+        max: 10
+        potencyDivisor: 25
+
+- type: entity
+  parent: BasePlant
+  id: N14WildBarrelCactus
+  categories: [HideSpawnMenu]
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Specific/Hydroponics/barrelcactus.rsi
+  - type: PlantData
+    name: clipping-wild-barrel-cactus-name
+    noun: clipping-wild-barrel-cactus-noun
+    packetPrototype: N14FloraWildBarrelCactusClippingSeed
+    productPrototypes: [ N14FloraProduceWildBarrelCactusFruit ]
+  - type: Plant
+    lifespan: 25
+    maturation: 20
+    production: 1
+    yield: 5
+    potency: 10
+    growthStages: 4
+  - type: PlantGrowth
+    waterConsumption: 2
+  - type: PlantChemicals
+    chemicals:
+      ExtractCactusWater:
+        min: 1
+        max: 10
+        potencyDivisor: 25
+
+- type: entity
+  parent: BasePlant
+  id: N14WildBlackberry
+  categories: [HideSpawnMenu]
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Specific/Hydroponics/blackberry.rsi
+  - type: PlantData
+    name: clipping-wild-blackberry-name
+    noun: clipping-wild-blackberry-noun
+    packetPrototype: N14FloraWildBlackberryClippingSeed
+    productPrototypes: [ N14FloraProduceWildBlackberries ]
+  - type: Plant
+    lifespan: 25
+    maturation: 20
+    production: 1
+    yield: 5
+    potency: 10
+    growthStages: 4
+  - type: PlantGrowth
+    waterConsumption: 2
+  - type: PlantChemicals
+    chemicals:
+      ExtractBlackberries:
+        min: 1
+        max: 10
+        potencyDivisor: 25
+
+- type: entity
+  parent: BasePlant
+  id: N14WildBroc
+  categories: [HideSpawnMenu]
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Specific/Hydroponics/broc.rsi
+  - type: PlantData
+    name: clipping-wild-broc-name
+    noun: clipping-wild-broc-noun
+    packetPrototype: N14FloraWildBrocFlowerClippingSeed
+    productPrototypes: [ N14FloraProduceWildBrocFlower ]
+  - type: Plant
+    lifespan: 25
+    maturation: 20
+    production: 1
+    yield: 5
+    potency: 10
+    growthStages: 3
+  - type: PlantGrowth
+    waterConsumption: 2
+  - type: PlantChemicals
+    chemicals:
+      ExtractBroc:
+        min: 1
+        max: 10
+        potencyDivisor: 25
+
+- type: entity
+  parent: BasePlant
+  id: N14WildBuffaloGourd
+  categories: [HideSpawnMenu]
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Specific/Hydroponics/buffalogourd.rsi
+  - type: PlantData
+    name: clipping-wild-buffalo-gourd-name
+    noun: clipping-wild-buffalo-gourd-noun
+    packetPrototype: N14FloraWildBuffaloGourdClippingSeed
+    productPrototypes: [ N14FloraProduceWildBuffaloGourd ]
+  - type: Plant
+    lifespan: 25
+    maturation: 20
+    production: 1
+    yield: 5
+    potency: 10
+    growthStages: 3
+  - type: PlantGrowth
+    waterConsumption: 2
+  - type: PlantChemicals
+    chemicals:
+      ExtractBuffaloGourd:
+        min: 1
+        max: 10
+        potencyDivisor: 25
+
+- type: entity
+  parent: BasePlant
+  id: N14WildCabbage
+  categories: [HideSpawnMenu]
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Specific/Hydroponics/cabbage.rsi
+  - type: PlantData
+    name: clipping-wild-cabbage-name
+    noun: clipping-wild-cabbage-noun
+    packetPrototype: N14FloraWildCabbageClippingSeed
+    productPrototypes: [ N14FloraProduceWildCabbage ]
+  - type: Plant
+    lifespan: 25
+    maturation: 20
+    production: 1
+    yield: 5
+    potency: 10
+    growthStages: 3
+  - type: PlantGrowth
+    waterConsumption: 2
+  - type: PlantChemicals
+    chemicals:
+      ExtractCabbage:
+        min: 1
+        max: 10
+        potencyDivisor: 25
+
+- type: entity
+  parent: BasePlant
+  id: N14WildCarrot
+  categories: [HideSpawnMenu]
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Specific/Hydroponics/carrot.rsi
+  - type: PlantData
+    name: clipping-wild-carrot-name
+    noun: clipping-wild-carrot-noun
+    packetPrototype: N14FloraWildCarrotClippingSeed
+    productPrototypes: [ N14FloraProduceWildCarrot ]
+  - type: Plant
+    lifespan: 25
+    maturation: 20
+    production: 1
+    yield: 5
+    potency: 10
+    growthStages: 3
+  - type: PlantGrowth
+    waterConsumption: 2
+  - type: PlantChemicals
+    chemicals:
+      ExtractCarrot:
+        min: 1
+        max: 10
+        potencyDivisor: 25
+
+- type: entity
+  parent: BasePlant
+  id: N14CoyoteTobacco
+  categories: [HideSpawnMenu]
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Specific/Hydroponics/coyotetobacco.rsi
+  - type: PlantData
+    name: clipping-coyote-tobacco-name
+    noun: clipping-coyote-tobacco-noun
+    packetPrototype: N14FloraWildCoyoteTobaccoClippingSeed
+    productPrototypes: [ N14FloraProduceWildCoyoteTobacco ]
+  - type: Plant
+    lifespan: 25
+    maturation: 20
+    production: 1
+    yield: 5
+    potency: 10
+    growthStages: 4
+  - type: PlantGrowth
+    waterConsumption: 2
+  - type: PlantChemicals
+    chemicals:
+      ExtractCoyoteTobacco:
+        min: 1
+        max: 10
+        potencyDivisor: 20
+
+- type: entity
+  parent: BasePlant
+  id: N14WildCannabis
+  categories: [HideSpawnMenu]
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Specific/Hydroponics/cannabis.rsi
+  - type: PlantData
+    name: clipping-cannabis-name
+    noun: clipping-cannabis-noun
+    packetPrototype: N14FloraWildCannabisClippingSeed
+    productPrototypes: [ N14FloraProduceWildCannabis ]
+  - type: Plant
+    lifespan: 25
+    maturation: 20
+    production: 1
+    yield: 5
+    potency: 10
+    growthStages: 4
+  - type: PlantGrowth
+    waterConsumption: 2
+  - type: PlantChemicals
+    chemicals:
+      ExtractCannabis:
+        min: 1
+        max: 10
+        potencyDivisor: 20
+
+- type: entity
+  parent: BasePlant
+  id: N14Datura
+  categories: [HideSpawnMenu]
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Specific/Hydroponics/datura.rsi
+  - type: PlantData
+    name: clipping-datura-name
+    noun: clipping-datura-noun
+    packetPrototype: N14FloraDaturaClippingSeed
+    productPrototypes: [ N14FloraProduceWildDaturaFlower ]
+  - type: Plant
+    lifespan: 25
+    maturation: 20
+    production: 1
+    yield: 5
+    potency: 10
+    growthStages: 3
+  - type: PlantGrowth
+    waterConsumption: 2
+  - type: PlantChemicals
+    chemicals:
+      ExtractDatura:
+        min: 1
+        max: 10
+        potencyDivisor: 20
+
+- type: entity
+  parent: BasePlant
+  id: N14WildGlowpepper
+  categories: [HideSpawnMenu]
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Specific/Hydroponics/jalapeno.rsi
+  - type: PlantData
+    name: clipping-glowpepper-name
+    noun: clipping-glowpepper-noun
+    packetPrototype: N14FloraWildGlowpepperClippingSeed
+    productPrototypes: [ N14FloraProduceWildGlowpepper ]
+  - type: Plant
+    lifespan: 25
+    maturation: 20
+    production: 1
+    yield: 5
+    potency: 10
+    growthStages: 4
+  - type: PlantGrowth
+    waterConsumption: 2
+  - type: PlantChemicals
+    chemicals:
+      ExtractGlowpepper:
+        min: 1
+        max: 10
+        potencyDivisor: 20
+
+- type: entity
+  parent: BasePlant
+  id: N14WildMaize
+  categories: [HideSpawnMenu]
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Specific/Hydroponics/maize.rsi
+  - type: PlantData
+    name: clipping-maize-name
+    noun: clipping-maize-noun
+    packetPrototype: N14FloraWildMaizeClippingSeed
+    productPrototypes: [ N14FloraProduceWildMaize ]
+  - type: Plant
+    lifespan: 25
+    maturation: 15
+    production: 1
+    yield: 3
+    potency: 20
+    growthStages: 3
+  - type: PlantGrowth
+    waterConsumption: 2
+  - type: PlantChemicals
+    chemicals:
+      Nutriment:
+        min: 1
+        max: 10
+        potencyDivisor: 10
+      Vitamin:
+        min: 1
+        max: 4
+        potencyDivisor: 25
+
+- type: entity
+  parent: BasePlant
+  id: N14WildMesquite
+  categories: [HideSpawnMenu]
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Specific/Hydroponics/mesquite.rsi
+  - type: PlantData
+    name: clipping-mesquite-name
+    noun: clipping-mesquite-noun
+    packetPrototype: N14FloraWildHoneyMesquiteClippingSeed
+    productPrototypes: [ N14FloraProduceWildMesquitePods ]
+  - type: Plant
+    lifespan: 25
+    maturation: 15
+    production: 1
+    yield: 9
+    potency: 20
+    growthStages: 5
+  - type: PlantGrowth
+    waterConsumption: 2
+  - type: PlantChemicals
+    chemicals:
+      ExtractHoneyMesquitePod:
+        min: 1
+        max: 10
+        potencyDivisor: 25
+
+- type: entity
+  parent: BasePlant
+  id: N14WildMutfruit
+  categories: [HideSpawnMenu]
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Specific/Hydroponics/mutfruit.rsi
+  - type: PlantData
+    name: clipping-mutfruit-name
+    noun: clipping-mutfruit-noun
+    packetPrototype: N14FloraWildMutfruitClippingSeed
+    productPrototypes: [ N14FloraProduceWildMutfruit ]
+  - type: Plant
+    lifespan: 25
+    maturation: 15
+    production: 1
+    yield: 3
+    potency: 20
+    growthStages: 4
+  - type: PlantGrowth
+    waterConsumption: 2
+  - type: PlantChemicals
+    chemicals:
+      ExtractMutfruit:
+        min: 1
+        max: 10
+        potencyDivisor: 25
+
+- type: entity
+  parent: BasePlant
+  id: N14WildNettle
+  categories: [HideSpawnMenu]
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/nettle.rsi
+  - type: PlantData
+    name: seeds-nettle-name
+    noun: seeds-noun-seeds
+    packetPrototype: N14FloraWildNettleClippingSeed
+    productPrototypes: [ N14FloraProduceWildNettle ]
+  - type: Plant
+    lifespan: 25
+    maturation: 8
+    production: 1
+    yield: 2
+    potency: 20
+    growthStages: 5
+  - type: PlantGrowth
+    waterConsumption: 0.6
+  - type: PlantChemicals
+    chemicals:
+      Histamine:
+        min: 1
+        max: 25
+        potencyDivisor: 4
+
+- type: entity
+  parent: BasePlant
+  id: N14WildOnion
+  categories: [HideSpawnMenu]
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Specific/Hydroponics/onion.rsi
+  - type: PlantData
+    name: clipping-wild-onion-name
+    noun: clipping-wild-onion-noun
+    packetPrototype: N14FloraWildOnionClippingSeed
+    productPrototypes: [ N14FloraProduceWildOnion ]
+  - type: Plant
+    lifespan: 30
+    maturation: 15
+    production: 1
+    yield: 4
+    potency: 10
+    growthStages: 3
+  - type: PlantGrowth
+    waterConsumption: 2
+  - type: PlantChemicals
+    chemicals:
+      Nutriment:
+        min: 1
+        max: 10
+        potencyDivisor: 10
+      Vitamin:
+        min: 1
+        max: 4
+        potencyDivisor: 25
+      Allicin:
+        min: 1
+        max: 4
+        potencyDivisor: 25
+
+- type: entity
+  parent: BasePlant
+  id: N14WildPinyon
+  categories: [HideSpawnMenu]
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Specific/Hydroponics/pinyon.rsi
+  - type: PlantData
+    name: clipping-pinyon-name
+    noun: clipping-pinyon-noun
+    packetPrototype: N14FloraWildPinyonClippingSeed
+    productPrototypes: [ N14FloraProduceWildPinyonNuts ]
+  - type: Plant
+    lifespan: 25
+    maturation: 15
+    production: 1
+    yield: 3
+    potency: 20
+    growthStages: 3
+  - type: PlantGrowth
+    waterConsumption: 2
+  - type: PlantChemicals
+    chemicals:
+      Nutriment:
+        min: 1
+        max: 6
+        potencyDivisor: 10
+      Vitamin:
+        min: 1
+        max: 4
+        potencyDivisor: 10
+
+- type: entity
+  parent: BasePlant
+  id: N14WildPricklyPear
+  categories: [HideSpawnMenu]
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Specific/Hydroponics/pricklypear.rsi
+  - type: PlantData
+    name: clipping-prickly-pear-name
+    noun: clipping-prickly-pear-noun
+    packetPrototype: N14FloraWildPricklyPearClippingSeed
+    productPrototypes: [ N14FloraProduceWildPricklyPearFruit ]
+  - type: Plant
+    lifespan: 25
+    maturation: 15
+    production: 6
+    yield: 3
+    potency: 20
+    growthStages: 4
+  - type: PlantGrowth
+    waterConsumption: 2
+  - type: PlantChemicals
+    chemicals:
+      ExtractPricklyPearFruit:
+        min: 1
+        max: 10
+        potencyDivisor: 25
+
+- type: entity
+  parent: BasePlant
+  id: N14WildRazorgrain
+  categories: [HideSpawnMenu]
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Specific/Hydroponics/razorgrain.rsi
+  - type: PlantData
+    name: clipping-wild-razorgrain-name
+    noun: clipping-wild-razorgrain-noun
+    packetPrototype: N14FloraWildRazorgrainClippingSeed
+    productPrototypes: [ N14FloraProduceWildRazorgrain ]
+  - type: Plant
+    lifespan: 25
+    maturation: 6
+    production: 1
+    yield: 4
+    potency: 5
+    growthStages: 3
+  - type: PlantGrowth
+    waterConsumption: 2
+    nutrientConsumption: 0.15
+  - type: PlantChemicals
+    chemicals:
+      ExtractRazorgrainFlour:
+        min: 1
+        max: 10
+        potencyDivisor: 25
+
+- type: entity
+  parent: BasePlant
+  id: N14Starlight
+  categories: [HideSpawnMenu]
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Specific/Hydroponics/starlight.rsi
+  - type: PlantData
+    name: seeds-starlight-name
+    noun: seeds-starlight-seeds
+    packetPrototype: N14FloraWildStarlightBerryClippingSeed
+    productPrototypes: [ N14FloraProduceWildStarlightBerries ]
+  - type: Plant
+    lifespan: 30
+    maturation: 20
+    production: 1
+    yield: 4
+    potency: 10
+    growthStages: 3
+  - type: PlantGrowth
+    waterConsumption: 2
+  - type: PlantChemicals
+    chemicals:
+      Nutriment:
+        min: 1
+        max: 10
+        potencyDivisor: 10
+      Vitamin:
+        min: 1
+        max: 4
+        potencyDivisor: 25
+
+- type: entity
+  parent: BasePlant
+  id: N14Tarberry
+  categories: [HideSpawnMenu]
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Specific/Hydroponics/tarberry.rsi
+  - type: PlantData
+    name: seeds-tarberry-name
+    noun: seeds-tarberry-seeds
+    packetPrototype: N14FloraWildTarberryClippingSeed
+    productPrototypes: [ N14FloraProduceWildTarberries ]
+  - type: Plant
+    lifespan: 30
+    maturation: 20
+    production: 1
+    yield: 4
+    potency: 10
+    growthStages: 3
+  - type: PlantGrowth
+    waterConsumption: 2
+  - type: PlantChemicals
+    chemicals:
+      ExtractTarberries:
+        min: 1
+        max: 10
+        potencyDivisor: 25
+
+- type: entity
+  parent: BasePlant
+  id: N14WildTato
+  categories: [HideSpawnMenu]
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Specific/Hydroponics/tato.rsi
+  - type: PlantData
+    name: clipping-wild-tato-name
+    noun: clipping-wild-tato-noun
+    packetPrototype: N14FloraWildTatoClippingSeed
+    productPrototypes: [ N14FloraProduceWildTato ]
+  - type: Plant
+    lifespan: 30
+    maturation: 20
+    production: 1
+    yield: 4
+    potency: 10
+    growthStages: 3
+  - type: PlantGrowth
+    waterConsumption: 2
+  - type: PlantChemicals
+    chemicals:
+      ExtractTato:
+        min: 1
+        max: 10
+        potencyDivisor: 25
+
+- type: entity
+  parent: BasePlant
+  id: N14WildWhiteHorsenettle
+  categories: [HideSpawnMenu]
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Specific/Hydroponics/whitehorsenettle.rsi
+  - type: PlantData
+    name: clipping-wild-white-horsenettle-name
+    noun: clipping-wild-white-horsenettle-noun
+    packetPrototype: N14FloraWildWhiteHorsenettleClippingSeed
+    productPrototypes: [ N14FloraProduceWildWhiteHorsenettle ]
+  - type: Plant
+    lifespan: 30
+    maturation: 20
+    production: 1
+    yield: 4
+    potency: 10
+    growthStages: 3
+  - type: PlantGrowth
+    waterConsumption: 2
+  - type: PlantChemicals
+    chemicals:
+      ExtractWhiteHorsenettle:
+        min: 1
+        max: 10
+        potencyDivisor: 25
+
+- type: entity
+  parent: BasePlant
+  id: N14WildXander
+  categories: [HideSpawnMenu]
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Specific/Hydroponics/xander.rsi
+  - type: PlantData
+    name: clipping-wild-xander-name
+    noun: clipping-wild-xander-noun
+    packetPrototype: N14FloraWildXanderRootClippingSeed
+    productPrototypes: [ N14FloraProduceWildXander ]
+  - type: Plant
+    lifespan: 30
+    maturation: 20
+    production: 1
+    yield: 4
+    potency: 10
+    growthStages: 3
+  - type: PlantGrowth
+    waterConsumption: 2
+  - type: PlantChemicals
+    chemicals:
+      ExtractXander:
+        min: 1
+        max: 10
+        potencyDivisor: 25

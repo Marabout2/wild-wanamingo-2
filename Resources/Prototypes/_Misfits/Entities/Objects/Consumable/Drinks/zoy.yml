@@ -1,0 +1,26 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Consumable/Drinks/zoy.yml
+
+- type: entity
+  parent: [DrinkGlassVisualsOpenable, DrinkBottleBaseFull50]
+  id: MisfitsDrinkZoyMilk
+  name: zoy milk
+  description: A glass bottle of zoy milk.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 50
+        reagents:
+        - ReagentId: MisfitsMilkZoy
+          Quantity: 50
+  - type: Sprite
+    sprite: Nuclear14/Objects/Consumable/Drinks/milk.rsi
+    layers:
+    - state: icon
+      map: ["enum.OpenableVisuals.Layer"]
+    - state: fill1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
+  - type: SolutionContainerVisuals
+    maxFillLevels: 6
+    fillBaseName: fill

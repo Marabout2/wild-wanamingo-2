@@ -1,0 +1,43 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Clothing/Ears/bos_headsets.yml
+
+- type: entity
+  parent: N14ClothingHeadsetAlt
+  id: N14ClothingHeadsetBrotherhoodOfSteel
+  name: Brotherhood radio earpiece
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyBrotherhoodOfSteel
+      - EncryptionKeyWastelandGlobal
+  - type: EncryptionKeyHolder
+    keysUnlocked: false
+  - type: Sprite
+    sprite: Misfits/Clothing/Ears/Headsets/bos.rsi
+  - type: Clothing
+    sprite: Misfits/Clothing/Ears/Headsets/bos.rsi
+
+- type: entity
+  parent: N14ClothingHeadsetLightScribe
+  id: N14ClothingHeadsetBrotherhoodOfSteelScribe
+  name: Brotherhood scribe headset
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyBrotherhoodOfSteel
+      - EncryptionKeyWastelandGlobal
+  - type: EncryptionKeyHolder
+    keysUnlocked: false
+  # Keep light-capable state names while applying the new BoS sprite set.
+  - type: Sprite
+    sprite: Misfits/Clothing/Ears/Headsets/boslight.rsi
+    layers:
+    - state: icon
+    - state: light-icon
+      shader: unshaded
+      visible: false
+      map: [ "light" ]
+  - type: Clothing
+    sprite: Misfits/Clothing/Ears/Headsets/boslight.rsi
+    equippedPrefix: off

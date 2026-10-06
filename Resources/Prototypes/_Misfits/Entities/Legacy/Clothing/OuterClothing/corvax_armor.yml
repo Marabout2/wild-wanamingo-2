@@ -1,0 +1,74 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/Corvax/Entities/Clothing/OuterClothing/armor.yml
+# (Misfits' copy of a Space Station 14 or other-fork file.)
+
+- type: entity
+  parent: N14FalloutArmorBase
+  id: N14ClothingOuterDeanLegionnaireVeteranArmor
+  #Misfits Change /Fix:/ corrected malformed component list indentation.
+  name: heavy legionary armor
+  description: "The heavy version of legionary armor slows down the wearer, but gives good protection from external threats."
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/Corvax/Clothing/OuterClothing/Armor/deanveteranarmor.rsi
+  - type: Clothing
+    sprite: Misfits/Legacy/Corvax/Clothing/OuterClothing/Armor/deanveteranarmor.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95 # This should not be straight worse than Prime. Many picked Prime over Veteran because of this.
+    sprintModifier: 0.95
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.60
+        Slash: 0.60
+        Piercing: 0.55 # Billy again. This shit is for veteran decani. 35% with 10% slow? you fuckin kidding me? buff to 45%.
+        Heat: 0.60 # legion should not have heat protection over Blunt/slash. >:(
+                   # BUT WHAT IF IT DID ANYWAY? -tytos
+  - type: ExplosionResistance
+    damageCoefficient: 0.65
+#  - type: ClothingSpecialModifier
+#    strengthModifier: 2
+
+- type: entity
+  parent: N14FalloutArmorBase
+  id: N14ClothingOuterDeanLegionnairePrimeArmor
+  name: heavy legionary armor
+  description: "Though this heavy plate offers no added mobility, it stands as the Forgemaster's most protective suit of armor."
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/Corvax/Clothing/OuterClothing/Armor/deanprimearmor.rsi
+  - type: Clothing
+    sprite: Misfits/Legacy/Corvax/Clothing/OuterClothing/Armor/deanprimearmor.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.70
+        Slash: 0.70
+        Piercing: 0.60 # prime is slightly above "recruit" so here is 5% extra resist. sprite does literally have more metal on it.
+        Heat: 0.70 # worse on heat
+  - type: ExplosionResistance
+    damageCoefficient: 0.65
+#  - type: ClothingSpecialModifier
+#    strengthModifier: 2
+
+- type: entity
+  parent: N14FalloutArmorBase
+  id: N14ClothingOuterLegionnaireBaseArmor
+  name: legionnaire armor
+  description: "The most standard and common armor."
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/Corvax/Clothing/OuterClothing/Armor/basearmor.rsi
+  - type: Clothing
+    sprite: Misfits/Legacy/Corvax/Clothing/OuterClothing/Armor/basearmor.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 1.05 #A little faster than the previous recon
+    sprintModifier: 1.05
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.80
+        Slash: 0.80
+        Piercing: 0.75 # 20 fucking %? no. dogshit. here is 25%. You get nothing else. -Bill
+        Heat: 0.85 #Legion is weak to heat
+  - type: ExplosionResistance
+    damageCoefficient: 0.85

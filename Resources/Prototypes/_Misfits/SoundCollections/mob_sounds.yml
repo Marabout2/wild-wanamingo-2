@@ -1,6 +1,13 @@
 # Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/SoundCollections/mob_sounds.yml
 
 - type: soundCollection
+  id: N14BloatflyAttack
+  files:
+    - /Audio/Misfits/Mobs/Bloatfly/bloatfly_attack.ogg
+
+# Deathclaw attack sounds (roars/aggro)
+
+- type: soundCollection
   id: N14DeathclawAttack
   files:
     - /Audio/Misfits/Mobs/Deathclaw/aggro1.ogg

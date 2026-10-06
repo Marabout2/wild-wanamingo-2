@@ -3,8 +3,203 @@
 
 - type: reagent
   id: N14RadParticleFood
+  group: Wasteland
   name: reagent-name-rad-particle-food
   desc: reagent-desc-rad-particle-food
   physicalDesc: reagent-physical-desc-metallic
   color: "#FFFFE5"
   parent: Uranium
+
+- type: reagent
+  id: N14FireAntNectar
+  group: Wasteland
+  name: reagent-name-fireantnectar
+  desc: reagent-desc-fireantnectar
+  physicalDesc: reagent-physical-desc-clumpy
+  color: "#cc4814"
+  metabolisms:
+    Bloodstream:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Heat: -0.25
+            Shock: -0.25
+            Cold: -0.25
+            Caustic: -0.25
+    Digestion:
+      effects:
+      - !type:Satiate
+        satiationType: Hunger
+        factor: 3
+      - !type:AdjustReagent
+        reagent: Sugar
+        amount: 0.4
+
+- type: reagent
+  id: N14BloatflyAcid
+  group: Wasteland
+  name: reagent-name-bloatflyacid
+  desc: reagent-desc-bloatflyacid
+  physicalDesc: reagent-physical-desc-clumpy
+  color: "#9ceb4d"
+  metabolisms:
+    Bloodstream:
+      effects:
+      - !type:HealthChange
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Human ]
+        damage:
+          types:
+            Poison: 1
+
+- type: reagent
+  id: N14BloatflyMilk
+  group: Wasteland
+  name: reagent-name-bloatflymilk
+  desc: reagent-desc-bloatflymilk
+  physicalDesc: reagent-physical-desc-thick-and-grainy
+  color: "#CBFF00"
+  recognizable: true
+  flavor: pilk
+  metabolisms:
+    Digestion:
+      effects:
+      - !type:Satiate
+        satiationType: Thirst
+        factor: 4
+
+- type: reagent
+  id: N14CazadorAcid
+  group: Wasteland
+  name: reagent-name-cazadoracid
+  desc: reagent-desc-cazadoracid
+  physicalDesc: reagent-physical-desc-clumpy
+  color: "#9ceb4d"
+  metabolisms:
+    Bloodstream:
+      effects:
+      - !type:HealthChange
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Human ]
+        damage:
+          types:
+            Poison: 2
+
+- type: reagent
+  parent: BaseDrink
+  id: AgaveJam
+  name: reagent-name-agavejam
+  desc: reagent-desc-agavejam
+  physicalDesc: reagent-physical-desc-sugary
+  flavor: sweet
+  color: "#e9f2ed"
+
+- type: reagent
+  parent: BaseDrink
+  id: BlackberryJam
+  name: reagent-name-blackberryjam
+  desc: reagent-desc-blackberryjam
+  physicalDesc: reagent-physical-desc-sugary
+  flavor: sweet
+  color: "#1c0029"
+
+- type: reagent
+  parent: BaseDrink
+  id: CactusJam
+  name: reagent-name-cactusjam
+  desc: reagent-desc-cactusjam
+  physicalDesc: reagent-physical-desc-sugary
+  flavor: sweet
+  color: "#a7bb20"
+
+- type: reagent
+  parent: BaseDrink
+  id: BrocJam
+  name: reagent-name-brocjam
+  desc: reagent-desc-brocjam
+  physicalDesc: reagent-physical-desc-sugary
+  flavor: sweet
+  color: "#d79e1c"
+
+- type: reagent
+  parent: BaseDrink
+  id: MultifruitJam
+  name: reagent-name-multifruitjam
+  desc: reagent-desc-multifruitjam
+  physicalDesc: reagent-physical-desc-sugary
+  flavor: sweet
+  color: "#7640dc"
+
+- type: reagent
+  parent: BaseDrink
+  id: PickledCabbage
+  name: reagent-name-pickledcabbage
+  desc: reagent-desc-pickledcabbage
+  physicalDesc: reagent-physical-desc-sugary
+  flavor: sweet
+  color: "#6e7e33"
+
+- type: reagent
+  parent: BaseDrink
+  id: PickledCarrots
+  name: reagent-name-pickledcarrots
+  desc: reagent-desc-pickledcarrots
+  physicalDesc: reagent-physical-desc-sugary
+  flavor: sweet
+  color: "#984607"
+
+- type: reagent
+  parent: BaseDrink
+  id: PickledCorn
+  name: reagent-name-pickledcorn
+  desc: reagent-desc-pickledcorn
+  physicalDesc: reagent-physical-desc-sugary
+  flavor: sweet
+  color: "#c69d0b"
+
+- type: reagent
+  parent: BaseDrink
+  id: PickledJalapenos
+  name: reagent-name-pickledjalapenos
+  desc: reagent-desc-pickledjalapenos
+  physicalDesc: reagent-physical-desc-sugary
+  flavor: sweet
+  color: "#36420d"
+
+- type: reagent
+  parent: BaseDrink
+  id: PickledOnions
+  name: reagent-name-pickledonions
+  desc: reagent-desc-pickledonions
+  physicalDesc: reagent-physical-desc-sugary
+  flavor: sweet
+  color: "#772130"
+
+- type: reagent
+  parent: BaseDrink
+  id: PricklyPearJam
+  name: reagent-name-pricklypearjam
+  desc: reagent-desc-pricklypearjam
+  physicalDesc: reagent-physical-desc-sugary
+  flavor: sweet
+  color: "#a01e79"
+
+- type: reagent
+  parent: BaseDrink
+  id: StarlightJam
+  name: reagent-name-starlightjam
+  desc: reagent-desc-starlightjam
+  physicalDesc: reagent-physical-desc-sugary
+  flavor: sweet
+  color: "#d77bba"
+
+- type: reagent
+  parent: BaseDrink
+  id: TarberryJam
+  name: reagent-name-tarberryjam
+  desc: reagent-desc-tarberryjam
+  physicalDesc: reagent-physical-desc-sugary
+  flavor: sweet

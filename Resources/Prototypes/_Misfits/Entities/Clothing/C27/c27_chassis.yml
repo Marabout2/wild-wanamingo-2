@@ -1,0 +1,12 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Clothing/C27/c27_chassis.yml
+
+- type: entity
+  parent: UnsensoredClothingUniformBase
+  id: ClothingC27Chassis
+  name: c-27 chassis plating
+  description: A set of dull metal body plates that bolt onto the standard C-27 frame. Functionally a uniform — the unit's actual armor goes over this.
+  components:
+  - type: Sprite
+    sprite: Misfits/Clothing/Uniforms/Jumpsuit/c27_chassis.rsi
+  - type: Clothing
+    sprite: Misfits/Clothing/Uniforms/Jumpsuit/c27_chassis.rsi

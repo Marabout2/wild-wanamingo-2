@@ -1,0 +1,51 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/Entities/Objects/Consumable/Drinks/drinks.yml
+# (Misfits' copy of a Space Station 14 or other-fork file.)
+
+- type: entity
+  parent: DrinkBase
+  id: DrinkGlassBase
+  abstract: true
+  components:
+  - type: Damageable
+    damageModifierSet: Glass
+  - type: Injurable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:SpillBehavior { }
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          ShardGlass:
+            min: 1
+            max: 1
+        transferForensics: true
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: DamageOnLand
+    ignoreResistances: true
+    damage:
+      types:
+        Blunt: 5
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Blunt: 5
+  - type: PhysicalComposition
+    materialComposition:
+      Glass: 25
+  - type: ExaminableSolution
+    solution: drink
+  - type: FitsInDispenser
+    solution: drink
+  - type: Tag
+    tags:
+      - DrinkGlass
+
+# Transformable container - normal glass

@@ -1,0 +1,120 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Entities/Objects/Consumable/Food/noodles.yml
+
+- type: entity
+  parent: FoodInjectableBase
+  id: N14CookedFoodNoodlesBase
+  abstract: true
+  description: Now that's a nice pasta!
+  components:
+  - type: Item
+    storedRotation: -90
+  - type: Sprite
+    sprite: Objects/Consumable/Food/noodles.rsi
+  - type: Solution
+    solution:
+      maxVol: 25
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 20
+
+- type: entity
+  name: boiled spaghetti
+  parent: N14CookedFoodNoodlesBase
+  id: N14CookedFoodNoodlesBoiled
+  description: A plain dish of noodles, this needs more ingredients.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - pasta
+  - type: Sprite
+    state: boiled
+# Tastes like pasta.
+
+- type: entity
+  name: spaghetti
+  parent: N14CookedFoodNoodlesBase
+  id: N14CookedFoodNoodles
+  description: Spaghetti and crushed tatos. People used to eat this slop?
+  components:
+  - type: FlavorProfile
+    flavors:
+      - pasta
+      - F14Tato
+      - terrible
+  - type: Sprite
+    state: tomato
+  - type: Tag
+    tags:
+    - Fruit
+# Tastes like pasta, tomato.
+
+- type: entity
+  name: spaghetti and meatballs
+  parent: N14CookedFoodNoodlesBase
+  id: N14CookedFoodNoodlesMeatball
+  description: It's kind of annoying to eat, but tasty. #N14 change
+  components:
+  - type: FlavorProfile
+    flavors:
+      - pasta
+      - meaty
+      - F14Tato
+  - type: Sprite
+    state: meatball
+  - type: Solution
+    solution:
+      maxVol: 15
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 8
+      - ReagentId: Vitamin
+        Quantity: 4
+  - type: Tag
+    tags:
+    - Meat
+# Tastes like pasta, meat.
+
+- type: entity
+  name: chow mein
+  parent: N14CookedFoodNoodlesBase
+  id: N14CookedFoodNoodlesChowmein
+  description: A nice mix of noodles and fried vegetables.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - pasta
+      - oily
+      - onion
+      - carrot
+  - type: Sprite
+    state: chowmein
+  - type: Solution
+    solution:
+      maxVol: 15
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 7
+      - ReagentId: Vitamin
+        Quantity: 6
+
+- type: entity
+  name: butter noodles
+  parent: N14CookedFoodNoodlesBase
+  id: N14CookedFoodNoodlesButter
+  description: Noodles covered in savory butter. Simple and slippery, but delicious.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - pasta
+      - butter
+  - type: Sprite
+    state: butter
+  - type: Solution
+    solution:
+      maxVol: 15
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 8
+      - ReagentId: Vitamin
+        Quantity: 1

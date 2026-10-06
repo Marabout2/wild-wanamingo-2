@@ -1,0 +1,498 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Entities/Objects/Consumable/Food/Baked/cake.yml
+
+- type: entity
+  parent: FoodInjectableBase
+  id: N14CookedFoodCakeBase
+  abstract: true
+  components:
+  - type: FlavorProfile
+    flavors:
+      - sweet
+  - type: Edible
+    edible: Food
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Baked/cake.rsi
+  - type: Solution
+    solution:
+      maxVol: 30
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 20
+      - ReagentId: Vitamin
+        Quantity: 5
+  - type: Item
+    size: Normal
+  - type: Tag
+    tags:
+    - Cake
+
+- type: entity
+  parent: N14CookedFoodCakeBase
+  id: N14CookedFoodCakeSliceBase
+  abstract: true
+  description: A decadent slice of simple cake.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - sweet
+  - type: Edible
+    edible: Food
+  - type: Solution
+    solution:
+      maxVol: 10
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 4
+      - ReagentId: Vitamin
+        Quantity: 1
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - Cake
+    - Slice
+
+# Custom Cake Example
+
+- type: entity
+  name: tarberry cake #N14 change
+  parent: [N14CookedFoodCakeBase, BaseSlicingRefinableFood]
+  id: N14CookedFoodCakeTarberry
+  description: A hearty, filling tarberry cake. #N14 change
+  components:
+  - type: Sprite
+    layers:
+    - state: plain
+    - state: alpha-filling
+      color: blue
+  - type: ToolRefinable
+    refineResult:
+    - id: N14CookedFoodCakeTarberrySlice
+      amount: 1
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: entity
+  name: tarberry slice #N14 change
+  parent: N14CookedFoodCakeSliceBase
+  id: N14CookedFoodCakeTarberrySlice
+  description: Stains - and sticks to - your teeth. #N14 change
+  components:
+  - type: Sprite
+    layers:
+    - state: plain-slice
+    - state: alpha-slice-filling
+      color: blue
+  - type: Tag
+    tags:
+    - Fruit
+    - Slice
+
+# Cake
+
+- type: entity
+  name: cake
+  parent: [N14CookedFoodCakeBase, BaseSlicingRefinableFood]
+  id: N14CookedFoodCakePlain
+  description: A plain cake. Obscene luxury, even so. #N14 change
+  components:
+  - type: Sprite
+    state: plain
+  - type: ToolRefinable
+    refineResult:
+    - id: N14CookedFoodCakePlainSlice
+      amount: 1
+
+- type: entity
+  name: slice of cake
+  parent: N14CookedFoodCakeSliceBase
+  id: N14CookedFoodCakePlainSlice
+  description: A decadent slice of simple cake. #N14 change
+  components:
+  - type: Sprite
+    state: plain-slice
+# Tastes like sweetness, cake.
+
+- type: entity
+  name: carrot cake
+  parent: [N14CookedFoodCakeBase, BaseSlicingRefinableFood]
+  id: N14CookedFoodCakeCarrot
+  description: Cake? Actual cake in the wasteland? Pinch yourself. Make sure you're not in heaven. #N14 change
+  components:
+  - type: Sprite
+    state: carrot
+  - type: ToolRefinable
+    refineResult:
+    - id: N14CookedFoodCakeCarrotSlice
+      amount: 1
+  - type: Solution
+    solution:
+      maxVol: 30
+      reagents:
+      - ReagentId: JuiceCarrot
+        Quantity: 15
+      - ReagentId: Sugar
+        Quantity: 5
+      - ReagentId: Vitamin
+        Quantity: 5
+      - ReagentId: Nutriment #Misfits Fix: carrot cake lacked direct hunger satiation; all other cakes carry Nutriment
+        Quantity: 10
+
+- type: entity
+  name: slice of carrot cake
+  parent: N14CookedFoodCakeSliceBase
+  id: N14CookedFoodCakeCarrotSlice
+  description: Delicious! Also good for your eyes, if you're a dumbfuck who welded without protection. #N14 change
+  components:
+  - type: Sprite
+    state: carrot-slice
+  - type: Solution
+    solution:
+      maxVol: 6
+      reagents:
+      - ReagentId: JuiceCarrot
+        Quantity: 3
+      - ReagentId: Sugar
+        Quantity: 1
+      - ReagentId: Vitamin
+        Quantity: 1
+      - ReagentId: Nutriment #Misfits Fix: proportional to whole cake fix (10/5 ratio = 2 per slice)
+        Quantity: 2
+
+- type: entity
+  name: brain cake
+  parent: [N14CookedFoodCakeBase, BaseSlicingRefinableFood]
+  id: N14CookedFoodCakeBrain
+  description: Food for thought. #N14 change
+  components:
+  - type: Sprite
+    state: brain
+  - type: ToolRefinable
+    refineResult:
+    - id: N14CookedFoodCakeBrainSlice
+      amount: 1
+
+- type: entity
+  name: slice of brain cake
+  parent: N14CookedFoodCakeSliceBase
+  id: N14CookedFoodCakeBrainSlice
+  description: Lemme tell you something about prions. THEY'RE DELICIOUS.
+  components:
+  - type: Sprite
+    state: brain-slice
+# Tastes like sweetness, cake, brains.
+
+- type: entity
+  name: cheese cake
+  parent: [N14CookedFoodCakeBase, BaseSlicingRefinableFood]
+  id: N14CookedFoodCakeCheese
+  description: DANGEROUSLY cheesy.
+  components:
+  - type: Sprite
+    state: cheese
+  - type: ToolRefinable
+    refineResult:
+    - id: N14CookedFoodCakeCheeseSlice
+      amount: 1
+
+- type: entity
+  name: slice of cheese cake
+  parent: N14CookedFoodCakeSliceBase
+  id: N14CookedFoodCakeCheeseSlice
+  description: Slice of pure cheestisfaction. #god this should be changed sometime
+  components:
+  - type: Sprite
+    state: cheese-slice
+# Tastes like sweetness, cream cheese.
+
+- type: entity
+  name: orange cake
+  parent: [N14CookedFoodCakeBase, BaseSlicingRefinableFood]
+  id: N14CookedFoodCakeOrange
+  description: A cake with added orange.
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/Objects/Consumable/Food/Baked/cake.rsi
+    state: orange
+  - type: ToolRefinable
+    refineResult:
+    - id: N14CookedFoodCakeOrangeSlice
+      amount: 1
+  - type: Tag
+    tags:
+    - Cake
+    - Fruit
+
+- type: entity
+  name: slice of orange cake
+  parent: N14CookedFoodCakeSliceBase
+  id: N14CookedFoodCakeOrangeSlice
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/Objects/Consumable/Food/Baked/cake.rsi
+    state: orange-slice
+  - type: Tag
+    tags:
+    - Cake
+    - Fruit
+    - Slice
+# Tastes like sweetness, cake, oranges.
+
+- type: entity
+  name: lime cake
+  parent: [N14CookedFoodCakeBase, BaseSlicingRefinableFood]
+  id: N14CookedFoodCakeLime
+  description: A cake with added lime.
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/Objects/Consumable/Food/Baked/cake.rsi
+    state: lime
+  - type: ToolRefinable
+    refineResult:
+    - id: N14CookedFoodCakeLimeSlice
+      amount: 1
+  - type: Tag
+    tags:
+    - Cake
+    - Fruit
+
+- type: entity
+  name: slice of lime cake
+  parent: N14CookedFoodCakeSliceBase
+  id: N14CookedFoodCakeLimeSlice
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/Objects/Consumable/Food/Baked/cake.rsi
+    state: lime-slice
+  - type: Tag
+    tags:
+    - Cake
+    - Fruit
+    - Slice
+# Tastes like sweetness, cake, limes.
+
+- type: entity
+  name: lemon cake
+  parent: [N14CookedFoodCakeBase, BaseSlicingRefinableFood]
+  id: N14CookedFoodCakeLemon
+  description: A cake with added lemon.
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/Objects/Consumable/Food/Baked/cake.rsi
+    state: lemon
+  - type: ToolRefinable
+    refineResult:
+    - id: N14CookedFoodCakeLemonSlice
+      amount: 1
+  - type: Tag
+    tags:
+    - Cake
+    - Fruit
+
+- type: entity
+  name: slice of lemon cake
+  parent: N14CookedFoodCakeSliceBase
+  id: N14CookedFoodCakeLemonSlice
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/Objects/Consumable/Food/Baked/cake.rsi
+    state: lemon-slice
+  - type: Tag
+    tags:
+    - Cake
+    - Fruit
+    - Slice
+# Tastes like sweetness, cake, lemons.
+
+- type: entity
+  name: chocolate cake
+  parent: [N14CookedFoodCakeBase, BaseSlicingRefinableFood]
+  id: N14CookedFoodCakeChocolate
+  description: A cake with added chocolate.
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/Objects/Consumable/Food/Baked/cake.rsi
+    state: chocolate
+  - type: ToolRefinable
+    refineResult:
+    - id: N14CookedFoodCakeChocolateSlice
+      amount: 1
+  - type: Solution
+    solution:
+      maxVol: 35
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 20
+      - ReagentId: Theobromine
+        Quantity: 5
+      - ReagentId: Vitamin
+        Quantity: 5
+
+- type: entity
+  name: slice of chocolate cake
+  parent: N14CookedFoodCakeSliceBase
+  id: N14CookedFoodCakeChocolateSlice
+  description: All for you... #N14 change
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/Objects/Consumable/Food/Baked/cake.rsi
+    state: chocolate-slice
+  - type: Solution
+    solution:
+      maxVol: 8
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 4
+      - ReagentId: Theobromine
+        Quantity: 1
+      - ReagentId: Vitamin
+        Quantity: 1
+
+- type: entity
+  name: mutfruit cake #N14 change
+  parent: [N14CookedFoodCakeBase, BaseSlicingRefinableFood]
+  id: N14CookedFoodCakeMutfruit
+  description: A cake with a gooey mutfruit centre. #N14 change
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/Objects/Consumable/Food/Baked/cake.rsi
+    state: apple
+  - type: ToolRefinable
+    refineResult:
+    - id: N14CookedFoodCakeMutfruitSlice
+      amount: 1
+  - type: Tag
+    tags:
+    - Cake
+    - Fruit
+
+- type: entity
+  name: slice of apple cake
+  parent: N14CookedFoodCakeSliceBase
+  id: N14CookedFoodCakeMutfruitSlice
+  description: A slice of heavenly cake. Squishy. #N14 change
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/Objects/Consumable/Food/Baked/cake.rsi
+    state: apple-slice
+  - type: Tag
+    tags:
+    - Cake
+    - Fruit
+    - Slice
+# Tastes like sweetness, cake, slime.
+
+- type: entity
+  name: pumpkin-spice cake
+  parent: [N14CookedFoodCakeBase, BaseSlicingRefinableFood]
+  id: N14CookedFoodCakePumpkin
+  description: A hollow cake with real pumpkin.
+  components:
+  - type: Sprite
+    state: pumpkinspice
+  - type: ToolRefinable
+    refineResult:
+    - id: N14CookedFoodCakePumpkinSlice
+      amount: 1
+  - type: Solution
+    solution:
+      maxVol: 50
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 32
+      - ReagentId: Vitamin
+        Quantity: 11
+  - type: Tag
+    tags:
+    - Fruit
+    - Cake
+
+- type: entity
+  name: slice of pumpkin-spice cake
+  parent: N14CookedFoodCakeSliceBase
+  id: N14CookedFoodCakePumpkinSlice
+  description: A spicy slice of pumpkin goodness.
+  components:
+  - type: Sprite
+    state: pumpkinspice-slice
+  - type: Solution
+    solution:
+      maxVol: 15
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 6.4
+      - ReagentId: Vitamin
+        Quantity: 2.2
+  - type: Tag
+    tags:
+    - Cake
+    - Fruit
+    - Slice
+# Tastes like sweetness, cake, pumpkin.
+
+- type: entity
+  name: birthday cake
+  parent: [N14CookedFoodCakeBase, BaseSlicingRefinableFood]
+  id: N14CookedFoodCakeBirthday
+  description: You made it another year in the wastes AND you got cake. #N14 change
+  components:
+  - type: Sprite
+    state: birthday
+  - type: ToolRefinable
+    refineResult:
+    - id: N14CookedFoodCakeBirthdaySlice
+      amount: 1
+
+- type: entity
+  name: slice of birthday cake
+  parent: N14CookedFoodCakeSliceBase
+  id: N14CookedFoodCakeBirthdaySlice
+  description: A slice of your birthday.
+  components:
+  - type: Sprite
+    state: birthday-slice
+# Tastes like sweetness, cake, christmas.
+
+- type: entity
+  name: vanilla cake
+  parent: [N14CookedFoodCakeBase, BaseSlicingRefinableFood]
+  id: N14CookedFoodCakeVanilla
+  description: A vanilla frosted cake.
+  components:
+  - type: Sprite
+    state: vanilla
+  - type: ToolRefinable
+    refineResult:
+    - id: N14CookedFoodCakeVanillaSlice
+      amount: 1
+  - type: Solution
+    solution:
+      maxVol: 45
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 20
+      - ReagentId: Vitamin
+        Quantity: 5
+      - ReagentId: Sugar
+        Quantity: 15
+
+- type: entity
+  name: slice of vanilla cake
+  parent: N14CookedFoodCakeSliceBase
+  id: N14CookedFoodCakeVanillaSlice
+  description: A slice of vanilla frosted cake.
+  components:
+  - type: Sprite
+    state: vanilla-slice
+  - type: Solution
+    solution:
+      maxVol: 45
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 4
+      - ReagentId: Vitamin
+        Quantity: 1
+      - ReagentId: Sugar
+        Quantity: 3

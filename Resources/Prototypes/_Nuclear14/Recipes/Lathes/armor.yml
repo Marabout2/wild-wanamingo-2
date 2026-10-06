@@ -2,6 +2,149 @@
 # Resources/Prototypes/_Nuclear14/Recipes/Lathes/armor.yml
 
 - type: latheRecipe
+  id: N14ClothingOuterCoatLeatherDuster
+  result: N14ClothingOuterCoatLeatherDuster
+  categories:
+  - N14Armor
+  completetime: 4
+  materials:
+    Cloth: 500
+    Leather: 300
+    Thread: 200
+
+- type: latheRecipe
+  id: N14ClothingOuterCoatWinterArmored
+  result: N14ClothingOuterCoatWinterArmored
+  categories:
+  - N14Armor
+  completetime: 4
+  materials:
+    Cloth: 600
+    Leather: 100
+    Thread: 200
+
+- type: latheRecipe
+  id: N14ClothingOuterBlackRobes
+  result: N14ClothingOuterBlackRobes
+  categories:
+  - N14Armor
+  completetime: 4
+  materials:
+    Cloth: 600
+    Leather: 100
+    Thread: 200
+
+- type: latheRecipe
+  id: N14ClothingOuterLeatherRobes
+  result: N14ClothingOuterLeatherRobes
+  categories:
+  - N14Armor
+  completetime: 4
+  materials:
+    Cloth: 600
+    Leather: 100
+    Thread: 200
+
+- type: latheRecipe
+  id: N14ClothingOuterLeatherArmor
+  result: N14ClothingOuterLeatherArmor
+  categories:
+  - N14Armor
+  completetime: 4
+  materials:
+    Leather: 500
+    Thread: 200
+
+- type: latheRecipe
+  id: N14ClothingOuterLightLeatherArmor
+  result: N14ClothingOuterLightLeatherArmor
+  categories:
+  - N14Armor
+  completetime: 4
+  materials:
+    Leather: 500
+    Thread: 200
+    RawLeather: 200
+
+- type: latheRecipe
+  id: N14ClothingOuterReinforcedLeatherArmor
+  result: N14ClothingOuterReinforcedLeatherArmor
+  categories:
+  - N14Armor
+  completetime: 4
+  materials:
+    Leather: 500
+    Thread: 200
+    RawLeather: 500
+
+- type: latheRecipe
+  id: N14ClothingOuterChitinArmor
+  result: N14ClothingOuterChitinArmor
+  categories:
+  - N14Armor
+  completetime: 6
+  materials:
+    AntChitin: 300
+    Cloth: 450
+
+- type: latheRecipe
+  id: N14ClothingOuterPainspike
+  result: N14ClothingOuterPainspike
+  categories:
+  - N14Armor
+  completetime: 6
+  materials:
+    Cloth: 400
+    Steel: 600
+    Leather: 100
+
+- type: latheRecipe
+  id: N14ClothingOuterTribalArmorHeavy
+  result: N14ClothingOuterTribalArmorHeavy
+  categories:
+  - N14Armor
+  completetime: 8
+  materials:
+    Cloth: 500
+    Leather: 500
+    Wood: 2000
+
+- type: latheRecipe
+  id: N14ClothingOuterInsectArmor
+  result: N14ClothingOuterInsectArmor
+  categories:
+  - N14Armor
+  completetime: 8
+  materials:
+    # AntChitin: 600
+    Exoskeleton: 300
+    Cloth: 350
+
+- type: latheRecipe
+  id: N14ClothingOuterMetalArmor
+  result: N14ClothingOuterMetalArmor
+  categories:
+  - N14Armor
+  completetime: 8
+  materials:
+    Cloth: 1000
+    Steel: 2000
+
+- type: latheRecipe
+  id: N14ClothingOuterZealotDuster
+  result: N14ClothingOuterZealotDuster
+  categories:
+  - N14Armor
+  completetime: 8
+  materials:
+    Cloth: 1000
+    Steel: 1000
+    Leather: 300
+    Thread: 200
+
+# Shield's
+
+- type: latheRecipe
   id: MakeshiftShield
   result: MakeshiftShield
   categories:

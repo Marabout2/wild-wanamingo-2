@@ -102,6 +102,17 @@
     Wood: 100
 
 - type: latheRecipe
+  id: ClothingBeltQuiverSpear
+  result: ClothingBeltQuiverSpear
+  categories:
+  - N14Containers
+  completetime: 4
+  materials:
+    Steel: 100
+    Leather: 300
+    Cloth: 100
+
+- type: latheRecipe
   id: ClothingBeltQuiver
   result: ClothingBeltQuiver
   categories:

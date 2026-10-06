@@ -1,0 +1,8 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Stacks/consumable_stacks.yml
+
+- type: stack
+  id: ZoyBeans
+  name: misfits-kit-zoy-beans
+  icon: { sprite: Misfits/Objects/Specific/Hydroponics/zoybeans.rsi, state: produce }
+  spawn: MisfitsFloraProduceWildZoybeans
+  maxCount: 4

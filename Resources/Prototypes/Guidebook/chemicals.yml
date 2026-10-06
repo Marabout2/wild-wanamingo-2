@@ -13,6 +13,7 @@
   - Biological
   - Special
   - Others
+  - F14WastelandChemicals # WW Change: wasteland reagents get their own page
   filterEnabled: True
 
 - type: guideEntry

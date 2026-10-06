@@ -21,6 +21,11 @@
 - type: Tag
   id: N14MagazineHeavy556Rifle
 
+- type: Tag # #Cythisiax Fixed - was lowercase 'type: tag'
+  id: BwonsamdiHarness
+
+# Misfits Add - identifies the medical ethanol bottle for crafting.
+
 - type: Tag
   id: SpeedLoader45
 

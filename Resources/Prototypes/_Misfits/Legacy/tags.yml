@@ -2,4 +2,22 @@
 # (Misfits' copy of a Space Station 14 or other-fork file.)
 
 - type: Tag
+  id: DrinkGlass
+
+- type: Tag
+  id: HidesBeard # for full coverage helmet / masks where beard shouldn't show
+
+- type: Tag
+  id: Lighter
+
+- type: Tag
+  id: PlantSampleTaker
+
+- type: Tag
+  id: SkewerMushroom
+
+- type: Tag
   id: Wall
+
+- type: Tag
+  id: ThrowingKnife # Storage whitelist: ClothingBeltMedical, SyndicateThrowingKnivesKit

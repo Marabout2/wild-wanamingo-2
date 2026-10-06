@@ -21,8 +21,12 @@
 - type: latheRecipePack
   id: F14WorkbenchForgeStatic
   recipes:
+  - N14ClothingOuterPainspike
+  - N14ClothingOuterMetalArmor
+  - N14ClothingOuterZealotDuster
   - MakeshiftShield
   - WoodenBuckler
+  - ClothingBeltQuiverSpear
   - F14FireAxe
   - F14KitchenKnife
   - F14KnifeBowie
@@ -55,6 +59,7 @@
   - N14Crowbar
   - N14Pickaxe
   - N14SprayPainter
+  - N14ClothingEyesGlassesWelding
   - N14HydroponicsToolHoe
   - N14HydroponicsToolHatchet
   - HydroponicsToolSpade
@@ -152,6 +157,16 @@
 - type: latheRecipePack
   id: F14WorkbenchArmorbenchStatic
   recipes:
+  - N14ClothingOuterCoatLeatherDuster
+  - N14ClothingOuterCoatWinterArmored
+  - N14ClothingOuterLeatherArmor
+  - N14ClothingOuterChitinArmor
+  - N14ClothingOuterTribalArmorHeavy
+  - N14ClothingOuterInsectArmor
+  - N14ClothingOuterReinforcedLeatherArmor
+  - N14ClothingOuterLightLeatherArmor
+  - N14ClothingOuterLeatherRobes
+  - N14ClothingOuterBlackRobes
   - N14MaterialLeather
   - ClothingBeltQuiver
 
@@ -263,6 +278,7 @@
   - N14IngotZinc
   - N14IngotAluminumBauxite
   - N14IngotBrassZinc
+  - N14SaltRefine
   - SheetPlasticScrap
   - N14IngotBrassScrap
   - N14IngotCopperScrap

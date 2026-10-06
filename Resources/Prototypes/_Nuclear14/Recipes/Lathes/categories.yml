@@ -14,6 +14,10 @@
   name: lathe-category-ammo-magazines
 
 - type: latheCategory
+  id: N14Armor
+  name: lathe-category-armor
+
+- type: latheCategory
   id: N14Containers
   name: lathe-category-containers
 

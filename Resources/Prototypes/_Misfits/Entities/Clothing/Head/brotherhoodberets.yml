@@ -1,0 +1,34 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Clothing/Head/brotherhoodberets.yml
+
+- type: entity
+  parent: ClothingHeadBase
+  id: N14ClothingScribeBeret
+  name: Head Scribe Beret
+  description: A beret worn by head scribes within the brotherhood of steel.
+  components:
+  - type: Sprite
+    sprite: Misfits/Clothing/Head/hsberet.rsi
+  - type: Clothing
+    sprite: Misfits/Clothing/Head/hsberet.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: N14ClothingPaladinBeret
+  name: Head Paladin Beret
+  description: A beret worn by paladins within the brotherhood of steel.
+  components:
+  - type: Sprite
+    sprite: Misfits/Clothing/Head/headpaladinberet.rsi
+  - type: Clothing
+    sprite: Misfits/Clothing/Head/headpaladinberet.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: N14ClothingHeadKnightBeret
+  name: Head Knight Beret
+  description: A beret worn by knights within the brotherhood of steel.
+  components:
+  - type: Sprite
+    sprite: Misfits/Clothing/Head/headknightberet.rsi
+  - type: Clothing
+    sprite: Misfits/Clothing/Head/headknightberet.rsi

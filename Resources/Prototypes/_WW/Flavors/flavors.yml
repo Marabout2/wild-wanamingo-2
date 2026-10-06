@@ -1,0 +1,21 @@
+# Flavors N14 food referenced but never defined.
+
+- type: flavor
+  id: F14Tato
+  flavorType: Complex
+  description: flavor-complex-f14-tato
+
+- type: flavor
+  id: F14Mutfruit
+  flavorType: Complex
+  description: flavor-complex-f14-mutfruit
+
+- type: flavor
+  id: F14Crisp
+  flavorType: Base
+  description: flavor-base-f14-crisp
+
+- type: flavor
+  id: F14Floral
+  flavorType: Base
+  description: flavor-base-f14-floral

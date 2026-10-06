@@ -3,7 +3,7 @@
 - type: reagent
   id: MisfitsWhitePhosphorusSmoke
   name: reagent-name-white-phosphorus-smoke
-  group: Elements
+  group: Wasteland
   desc: reagent-desc-white-phosphorus-smoke
   physicalDesc: reagent-physical-desc-powdery
   color: "#F8F8F8B0"

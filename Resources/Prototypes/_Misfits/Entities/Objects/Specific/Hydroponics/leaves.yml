@@ -1,0 +1,19 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Specific/Hydroponics/leaves.yml
+
+- type: entity
+  name: coca leaves
+  parent: ProduceBase
+  id: LeavesCoca
+  description: "Drench it in welding fuel to make some fine powder."
+  components:
+  - type: Sprite
+    sprite: Misfits/Objects/Specific/Hydroponics/coca_plant.rsi
+  - type: Produce
+    plantId: CocaPlant
+  - type: Seed
+    plantId: CocaPlant
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: CocaSlurry
+        Quantity: 10

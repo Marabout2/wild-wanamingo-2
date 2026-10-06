@@ -198,7 +198,7 @@
     verbText: refined-slice-verb-name
     verbDefaultTooltip: refined-slice-verb-message-default
     toolMissingQualityTooltip: refined-slice-verb-message-tool
-    startRefinePopupType: small
+    popupType: Small # WW Change: field was renamed in ToolRefinableComponent; caught once child prototypes override ToolRefinable
     popupForUser: refined-butchered-success
     popupForOther: refined-butchered-success-others
     tooltipQualityHint: tool-refinable-component-hint-slicing

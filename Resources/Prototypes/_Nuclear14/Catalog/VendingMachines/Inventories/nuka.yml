@@ -1,0 +1,21 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Catalog/VendingMachines/Inventories/nuka.yml
+
+- type: vendingMachineInventory
+  id: NukaRadInventory
+  startingInventory:
+    N14DrinkIrradiatedNukaColaBottleFull: 8
+
+- type: vendingMachineInventory
+  id: NukaInventory
+  startingInventory:
+    N14DrinkNukaCola: 6
+    N14DrinkNukaColaCherry: 4
+    N14DrinkNukaColaGrape: 3
+    N14DrinkNukaColaOrange: 3
+    N14DrinkNukaColaQuantum: 2
+    N14DrinkNukaColaQuartz: 2
+    N14DrinkNukaColaVictory: 2
+    N14DrinkNukaColaWild: 2
+
+# higher number higher chances (also maximum amount)

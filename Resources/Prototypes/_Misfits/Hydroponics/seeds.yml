@@ -1,0 +1,166 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Hydroponics/seeds.yml
+
+- type: entity
+  parent: BasePlant
+  id: Lemonade
+  categories: [HideSpawnMenu]
+  components:
+  - type: Sprite
+    sprite: Misfits/Objects/Specific/Hydroponics/lemonade.rsi
+  - type: PlantData
+    name: seeds-lemonade-name
+    noun: seeds-noun-seeds
+    packetPrototype: LemonadeSeeds
+    productPrototypes: [ FoodLemonade ]
+    mutationPrototypes: [LimePlants ]
+  - type: Plant
+    lifespan: 55
+    maturation: 6
+    production: 6
+    yield: 3
+    potency: 10
+  - type: PlantHarvest
+    harvestRepeat: Repeat
+  - type: PlantChemicals
+    chemicals:
+      WeldingFuel:
+        min: 1
+        max: 5
+        potencyDivisor: 20
+      Napalm:
+        min: 1
+        max: 4
+        potencyDivisor: 25
+      ChlorineTrifluoride:
+        min: 2
+        max: 3
+        potencyDivisor: 100
+
+- type: entity
+  parent: BasePlant
+  id: CocaPlant
+  categories: [HideSpawnMenu]
+  components:
+  - type: Sprite
+    sprite: Misfits/Objects/Specific/Hydroponics/coca_plant.rsi
+  - type: PlantData
+    name: seeds-cocaplant-name
+    noun: seeds-noun-seeds
+    packetPrototype: CocaSeeds
+    productPrototypes: [ LeavesCoca ]
+  - type: Plant
+    lifespan: 75
+    maturation: 5
+    production: 5
+    yield: 2
+    potency: 10
+    growthStages: 3
+  - type: PlantGrowth
+    waterConsumption: 0.4
+  - type: PlantHarvest
+    harvestRepeat: Repeat
+  - type: PlantChemicals
+    chemicals:
+      CocaSlurry:
+        min: 1
+        max: 10
+        potencyDivisor: 10
+
+- type: entity
+  parent: BasePlant
+  id: CoconutPlant
+  categories: [HideSpawnMenu]
+  components:
+  - type: Sprite
+    sprite: Misfits/Objects/Specific/Hydroponics/coconut.rsi
+  - type: PlantData
+    name: seeds-coconut-name
+    noun: seeds-noun-seeds
+    packetPrototype: CoconutSeeds
+    productPrototypes: [ FoodCoconut ]
+  - type: Plant
+    lifespan: 80
+    maturation: 12
+    production: 1
+    yield: 8
+    potency: 25
+  - type: PlantGrowth
+    waterConsumption: 1
+    nutrientConsumption: 1
+  - type: PlantHarvest
+    harvestRepeat: SelfHarvest
+  - type: PlantChemicals
+    chemicals:
+      CoconutFlesh:
+        min: 1
+        max: 20
+        potencyDivisor: 2
+      Vitamin:
+        min: 1
+        max: 10
+        potencyDivisor: 2
+      CoconutWater:
+        min: 1
+        max: 10
+        potencyDivisor: 2
+
+- type: entity
+  parent: BasePlant
+  id: CherryBomb
+  categories: [HideSpawnMenu]
+  components:
+  - type: Sprite
+    sprite: Misfits/Objects/Specific/Hydroponics/cherry.rsi
+  - type: PlantData
+    name: seeds-cherrybomb-name
+    noun: seeds-noun-seeds
+    packetPrototype: CherryBombSeeds
+    productPrototypes: [ FoodCherryBomb ]
+  - type: Plant
+    lifespan: 55
+    maturation: 3
+    production: 3
+    yield: 6
+    potency: 10
+  - type: PlantHarvest
+    harvestRepeat: Repeat
+  - type: PlantChemicals
+    chemicals:
+      Nutriment:
+        min: 1
+        max: 3
+        potencyDivisor: 30
+      Vitamin:
+        min: 1
+        max: 3
+        potencyDivisor: 40
+
+- type: entity
+  parent: BasePlant
+  id: zoybean
+  categories: [HideSpawnMenu]
+  components:
+  - type: Sprite
+    sprite: Misfits/Objects/Specific/Hydroponics/zoybeans.rsi
+  - type: PlantData
+    name: seeds-zoybean-name
+    noun: seeds-noun-seeds
+    packetPrototype: ZoybeanSeeds
+    productPrototypes: [ MisfitsFloraProduceWildZoybeans ]
+  - type: Plant
+    lifespan: 30
+    maturation: 20
+    production: 1
+    yield: 3
+    potency: 5
+    growthStages: 2
+  - type: PlantGrowth
+    nutrientConsumption: 0.4
+  - type: PlantHarvest
+    harvestRepeat: NoRepeat
+  - type: PlantChemicals
+    chemicals:
+      Nutriment:
+        min: 1
+        max: 2
+        potencyDivisor: 50

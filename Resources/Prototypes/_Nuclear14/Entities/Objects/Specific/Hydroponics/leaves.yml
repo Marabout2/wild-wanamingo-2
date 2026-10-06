@@ -17,6 +17,30 @@
 # Copied full vanilla code just so my sprite wasn't black
 
 - type: entity
+  name: ground cannabis
+  parent: BaseItem
+  id: N14GroundCannabis
+  description: "Ground cannabis, ready to take you on a trip."
+  components:
+    - type: Stack
+      stackType: N14GroundCannabis
+      count: 1
+    - type: Solution
+      solution:
+        reagents:
+          - ReagentId: THC
+            Quantity: 20
+    - type: Sprite
+      sprite: Nuclear14/Objects/Consumable/Smokeables/smokeables.rsi
+      state: cannabis_powderpile
+    - type: Tag
+      tags:
+        - Smokable
+    - type: Item
+      size: Tiny
+      
+
+- type: entity
   name: dried tobacco leaves
   parent: LeavesTobaccoDried
   id: N14LeavesTobaccoDried

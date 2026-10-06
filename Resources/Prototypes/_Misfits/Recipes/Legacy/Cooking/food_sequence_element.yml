@@ -1,0 +1,14 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/Recipes/Cooking/food_sequence_element.yml
+# (Misfits' copy of a Space Station 14 or other-fork file.)
+
+- type: foodSequenceElement
+  id: MushroomSkewer
+  name: food-sequence-content-mushroom
+  sprites:
+  - sprite: Objects/Consumable/Food/skewer.rsi
+    state: skewer-mushroom
+  tags:
+  - Vegetable
+  - SkewerMushroom
+
+# Aloe

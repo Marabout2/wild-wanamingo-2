@@ -1,0 +1,44 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Reagents/Consumable/Drink/liquids.yml
+
+- type: reagent
+  id: WaterDirty
+  group: Wasteland
+  name: reagent-name-water-dirty
+  parent: Water
+  desc: reagent-desc-water-dirty
+  physicalDesc: reagent-physical-desc-translucent
+  metabolisms:
+    Digestion:
+      effects:
+      - !type:Satiate
+        satiationType: Thirst
+        factor: 2
+    Bloodstream:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Radiation: 0.25
+            Poison: 0.1
+
+- type: reagent
+  id: WaterIrradiated
+  group: Wasteland
+  name: reagent-name-water-irradiated
+  parent: Water
+  desc: reagent-desc-water-irradiated
+  physicalDesc: reagent-physical-desc-glowing
+  metabolisms:
+    Digestion:
+      effects:
+      - !type:Satiate
+        satiationType: Thirst
+        factor: 2
+    Bloodstream:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Radiation: 1 # You really shouldn't drink this.
+            Poison: 0.1
