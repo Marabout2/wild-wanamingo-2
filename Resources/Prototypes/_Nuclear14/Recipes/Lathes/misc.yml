@@ -157,3 +157,83 @@
 #  completetime: 1
 #  materials:
 #    N14Paper: 100
+
+- type: latheRecipe
+  id: N14JunkComponentScrew
+  result: N14JunkComponentScrew
+  categories:
+  - Parts
+  completetime: 2
+  materials:
+    N14Copper: 100 # Forge-Change
+
+#Misfits Add: Recipes for some other useful junk.
+
+- type: latheRecipe
+  id: N14JunkComponentGearSmall
+  result: N14JunkComponentGearSmall
+  categories:
+  - Parts
+  completetime: 2
+  materials:
+    N14Copper: 150
+
+- type: latheRecipe
+  id: N14JunkComponentGearLarge
+  result: N14JunkComponentGearLarge
+  categories:
+  - Parts
+  completetime: 2
+  materials:
+    N14Copper: 200
+
+- type: latheRecipe
+  id: N14JunkComponentSensorModule
+  result: N14JunkComponentSensorModule
+  categories:
+  - Parts
+  completetime: 2
+  materials:
+    Circuitry: 100
+    N14Copper: 50
+
+- type: latheRecipe
+  id: N14JunkComponentDiode1
+  result: N14JunkComponentDiode1
+  categories:
+  - Parts
+  completetime: 2
+  materials:
+    Circuitry: 50
+    N14Copper: 25
+
+- type: latheRecipe
+  id: N14JunkComponentFuse1
+  result: N14JunkComponentFuse1
+  categories:
+  - Parts
+  completetime: 2
+  materials:
+    Circuitry: 50
+    N14Copper: 25
+
+- type: latheRecipe
+  id: N14JunkComponentSwitch
+  result: N14JunkComponentSwitch
+  categories:
+  - Parts
+  completetime: 2
+  materials:
+    Circuitry: 100
+    Plastic: 50
+    N14Copper: 25
+
+- type: latheRecipe
+  id: N14JunkTimer
+  result: N14JunkTimer
+  categories:
+  - Parts
+  completetime: 2
+  materials:
+    Circuitry: 50
+    N14Copper: 25

@@ -1,0 +1,22 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Reagents/products.yml
+
+- type: reagent
+  id: Turpentine
+  name: reagent-name-turpentine
+  group: Products
+  desc: reagent-desc-turpentine
+  physicalDesc: reagent-physical-desc-acrid
+  color: "#f0f1f3"
+  metabolisms:
+    Bloodstream:
+      effects: # TODO: Add negative effects
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectSeeingRainbow
+        type: Add
+        time: 5
+      - !type:Jitter
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.5

@@ -1,0 +1,24 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/InventoryTemplates/borg.yml
+# Changed for Wild Wanamingo: the id slot holds an ID card for now (the Misfits navigation module isn't ported).
+
+# Player-controlled robots: an ears slot for a headset and a locked id slot.
+- type: inventoryTemplate
+  id: borgRobot
+  slots:
+  - name: ears
+    slotTexture: ears
+    slotFlags: EARS
+    stripTime: 3
+    uiWindowPos: 0,0
+    strippingWindowPos: 0,0
+    displayName: Ears
+  - name: id
+    slotTexture: id
+    fullTextureName: template_small
+    slotFlags: IDCARD
+    slotGroup: SecondHotbar
+    stripTime: 999
+    stripHidden: true
+    uiWindowPos: 1,0
+    strippingWindowPos: 1,0
+    displayName: ID

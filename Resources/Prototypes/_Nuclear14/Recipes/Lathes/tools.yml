@@ -256,6 +256,17 @@
     Circuitry: 50
 
 - type: latheRecipe
+  id: N14HandheldHealthAnalyzer
+  result: N14HandheldHealthAnalyzer
+  categories:
+  - N14Tools
+  completetime: 2
+  materials:
+    N14Gold: 50
+    Plastic: 300
+    Circuitry: 100
+
+- type: latheRecipe
   id: N14RemoteSignaller
   result: RemoteSignaller
   categories:

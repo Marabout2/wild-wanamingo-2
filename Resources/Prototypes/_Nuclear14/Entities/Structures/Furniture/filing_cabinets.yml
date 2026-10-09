@@ -42,3 +42,12 @@
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
+
+- type: entity
+  parent: [ N14filingCabinet, N14BaseSmallLockerStorageFill ]
+  id: N14LootFilingCabinet
+  suffix: Loot,Random
+  components:
+  - type: Storage
+    grid:
+    - 0,0,5,6

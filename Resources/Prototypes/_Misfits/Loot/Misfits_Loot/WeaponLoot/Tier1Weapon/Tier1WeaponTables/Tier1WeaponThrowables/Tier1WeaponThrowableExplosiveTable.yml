@@ -1,0 +1,12 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier1Weapon/Tier1WeaponTables/Tier1WeaponThrowables/Tier1WeaponThrowableExplosiveTable.yml
+
+- type: entityTable
+  id: M14WeaponLootTier1_ThrowablesExplosive
+  table: !type:GroupSelector
+    children:
+    - !type:EntSelector
+      id: N14TinNade
+    - !type:EntSelector
+      id: N14FirecrackerHalf
+    - !type:EntSelector
+      id: N14Firecracker

@@ -114,6 +114,15 @@
 # Supermutant attack sounds (roar/aggro)
 
 - type: soundCollection
+  id: N14SupermutantAttack
+  files:
+    - /Audio/Misfits/Mobs/Supermutant/attack1.ogg
+    - /Audio/Misfits/Mobs/Supermutant/attack2.ogg
+    - /Audio/Misfits/Mobs/Supermutant/attack3.ogg
+
+# Supermutant alert/aggro
+
+- type: soundCollection
   id: N14GhoulAttack
   files:
     - /Audio/Misfits/Mobs/Ghoul/aggro1.ogg
@@ -234,6 +243,33 @@
     - /Audio/Misfits/Mobs/Eyebot/idle2.ogg
 
 # Sentry Bot aggro/attack sounds
+
+- type: soundCollection
+  id: N14SentryAttack
+  files:
+    - /Audio/Misfits/Mobs/Sentry/aggro1.ogg
+    - /Audio/Misfits/Mobs/Sentry/aggro2.ogg
+    - /Audio/Misfits/Mobs/Sentry/aggro3.ogg
+    - /Audio/Misfits/Mobs/Sentry/aggro4.ogg
+    - /Audio/Misfits/Mobs/Sentry/aggro5.ogg
+
+# Sentry Bot ambient idle
+
+- type: soundCollection
+  id: N14SentryIdle
+  files:
+    - /Audio/Misfits/Mobs/Sentry/idle1.ogg
+    - /Audio/Misfits/Mobs/Sentry/idle2.ogg
+    - /Audio/Misfits/Mobs/Sentry/idle3.ogg
+    - /Audio/Misfits/Mobs/Sentry/idle4.ogg
+    - /Audio/Misfits/Mobs/Sentry/taunt1.ogg
+    - /Audio/Misfits/Mobs/Sentry/taunt2.ogg
+    - /Audio/Misfits/Mobs/Sentry/taunt3.ogg
+    - /Audio/Misfits/Mobs/Sentry/taunt4.ogg
+    - /Audio/Misfits/Mobs/Sentry/taunt5.ogg
+    - /Audio/Misfits/Mobs/Sentry/taunt6.ogg
+
+# Assaultron aggro/attack sounds (from DesertRose f13npc/assaultron)
 
 - type: soundCollection
   id: N14AssaultronAttack

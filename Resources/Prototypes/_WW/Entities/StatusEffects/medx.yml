@@ -1,0 +1,17 @@
+# Med-X: takes the edge off incoming damage while it's in your system (Misfits' MedXProtection status, N14MedXProtection
+# modifier set: 25% less of every damage type below).
+- type: entity
+  parent: StatusEffectDamageModifierBase
+  id: F14StatusEffectMedXProtection
+  name: med-x protection
+  components:
+  - type: DamageModifierStatusEffect
+    modifiers:
+      coefficients:
+        Blunt: 0.75
+        Slash: 0.75
+        Piercing: 0.75
+        Heat: 0.75
+        Cold: 0.75
+        Shock: 0.75
+        Caustic: 0.75

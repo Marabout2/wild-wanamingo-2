@@ -41,3 +41,55 @@
         startingItem: N14BorgPowerCellHigh
 
 # Security module — provides stun baton, handcuffs, and a flashlight for Police Protectrons.
+
+- type: entity
+  id: N14BorgModuleSecurity
+  parent: [ BaseBorgModule, BaseProviderBorgModule ]
+  name: security cyborg module
+  description: A law-enforcement module. Provides a stun baton, handcuffs, and a security flashlight for patrol and detainment duties.
+  components:
+  - type: Sprite
+    layers:
+    - state: generic
+    - state: security
+  - type: ItemBorgModule
+    hands:
+    - item: N14BorgWeaponStunbaton
+    - item: Handcuffs
+    - item: N14BorgWeaponSeclite
+
+- type: entity
+  id: MisfitsBorgModuleTribalSpirit
+  parent: [ BaseBorgModule, BaseProviderBorgModule ]
+  name: spirit-tender module
+  description: A borg "module" that has been haphazardly jammed together over decades or centuries.
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/Objects/Specific/Robotics/borgmodule.rsi
+    layers:
+    - state: service
+    - state: icon-gardening
+  - type: ItemBorgModule
+    hands:
+    - item: N14HydroponicsToolHoe
+    - item: N14HydroponicsToolClippers
+    - item: WelderMini
+    - item: N14Screwdriver
+
+- type: entity
+  id: MisfitsBorgModuleTribalHarvest
+  parent: [ BaseBorgModule, BaseProviderBorgModule ]
+  name: harvest module
+  description: The half-broken remains of an agricultural protectron module
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/Objects/Specific/Robotics/borgmodule.rsi
+    layers:
+    - state: service
+    - state: icon-harvesting
+  - type: ItemBorgModule
+    hands:
+    - item: N14ripper
+    - item: N14HydroponicsToolShovel
+    - item: Bucket
+    - item: Syringe

@@ -1,0 +1,70 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Entities/Mobs/Robots/borg_chassis.yml
+
+- type: entity
+  id: N14RobotBOSMidwestBase # for inheritance only
+  abstract: true
+  components:
+  - type: NpcFactionMember
+    factions:
+      - BrotherhoodOfSteel
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - BrotherhoodOfSteel
+  - type: ActiveRadio
+    channels:
+    - BrotherhoodOfSteel
+  # - type: AccessReader
+    # access: [["BOSMidwest"]
+  # - type: ContainerFill
+    # containers:
+      # borg_brain:
+        # - PositronicBrain
+      # borg_module:
+        # - BorgModuleService
+        # - BorgModuleMusique
+        # - BorgModuleGardening
+        # - BorgModuleHarvesting
+        # - BorgModuleFireExtinguisher
+        # - BorgModuleRadiationDetection
+        # - BorgModuleTool
+        # - BorgModuleSyndicateWeapon
+  - type: Access
+    enabled: false
+    groups:
+    - BOS
+    
+
+- type: entity
+  id: N14RobotBOSWashingtonBase # for inheritance only
+  abstract: true
+  components:
+  - type: NpcFactionMember
+    factions:
+      - BrotherhoodOfSteel
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - BrotherhoodOfSteel
+  - type: ActiveRadio
+    channels:
+    - BrotherhoodOfSteel
+  # - type: AccessReader
+    # access: [["BOSWashington"]
+  # - type: ContainerFill
+    # containers:
+      # borg_brain:
+        # - PositronicBrain
+      # borg_module:
+        # - BorgModuleService
+        # - BorgModuleMusique
+        # - BorgModuleGardening
+        # - BorgModuleHarvesting
+        # - BorgModuleFireExtinguisher
+        # - BorgModuleRadiationDetection
+        # - BorgModuleTool
+        # - BorgModuleSyndicateWeapon
+  - type: Access
+    enabled: false
+    groups:
+    - BOS
+    

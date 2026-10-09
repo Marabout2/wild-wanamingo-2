@@ -2,6 +2,15 @@
 # Resources/Prototypes/_Nuclear14/Catalog/Fills/gatherables.yml
 
 - type: entityTable
+  id: WildAgave
+  table: !type:AllSelector
+    children:
+    - id: N14FloraProduceWildAgave
+      prob: 0.75
+      amount: !type:RangeNumberSelector
+        range: 1, 2
+
+- type: entityTable
   id: WildAgaveAll
   table: !type:AllSelector
     children:
@@ -387,6 +396,13 @@
   table: !type:AllSelector
     children:
     - id: N14FloraWildTarberryClippingSeed
+      prob: 0.75
+
+- type: entityTable
+  id: N14FloraWildTarberryClippingSeed
+  table: !type:AllSelector
+    children:
+    - id: SpaceCash
       prob: 0.75
 
 - type: entityTable

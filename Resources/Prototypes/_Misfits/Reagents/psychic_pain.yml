@@ -1,0 +1,507 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Reagents/psychic_pain.yml
+
+- type: reagent
+  id: MisfitsClearhead
+  name: reagent-name-misfits-clearhead
+  group: Wasteland
+  desc: reagent-desc-misfits-clearhead
+  physicalDesc: reagent-physical-desc-clear
+  flavor: medicine
+  color: "#dbe8e8"
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 0.2
+      effects:
+      # Entry-level psychiatric stabilizer.
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectSeeingRainbow
+        time: 6
+        type: Remove
+      # TODO C#: SuppressHallucinationsReagent
+      # suppression: 0.20
+      # duration: 8
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentCondition
+          reagent: MisfitsClearhead
+          min: 25
+        damage:
+          types:
+            Poison: 0.25
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectDrowsiness
+        conditions:
+        - !type:ReagentCondition
+          reagent: MisfitsClearhead
+          min: 25
+        time: 2
+        type: Add
+
+- type: reagent
+  id: MisfitsChlorpromazine
+  name: reagent-name-misfits-chlorpromazine
+  group: Wasteland
+  desc: reagent-desc-misfits-chlorpromazine
+  physicalDesc: reagent-physical-desc-crystalline
+  flavor: medicine
+  color: "#e4e0ca"
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 0.1
+      effects:
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectSeeingRainbow
+        time: 15
+        type: Remove
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectDrowsiness
+        time: 3
+        type: Add
+      - !type:MovementSpeedModifier
+        walkSpeedModifier: 0.95
+        sprintSpeedModifier: 0.95
+      # TODO C#: SuppressHallucinationsReagent
+      # suppression: 0.50
+      # duration: 12
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentCondition
+          reagent: MisfitsChlorpromazine
+          min: 20
+        damage:
+          types:
+            Poison: 0.4
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectDrowsiness
+        conditions:
+        - !type:ReagentCondition
+          reagent: MisfitsChlorpromazine
+          min: 20
+        time: 6
+        type: Add
+
+- type: reagent
+  id: MisfitsLucidine
+  name: reagent-name-misfits-lucidine
+  group: Wasteland
+  desc: reagent-desc-misfits-lucidine
+  physicalDesc: reagent-physical-desc-gleaming
+  flavor: medicine
+  color: "#a7d9db"
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 0.1
+      effects:
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectSeeingRainbow
+        time: 20
+        type: Remove
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectDrowsiness
+        time: 2
+        type: Add
+      # TODO C#: SuppressHallucinationsReagent
+      # suppression: 0.70
+      # duration: 15
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentCondition
+          reagent: MisfitsLucidine
+          min: 25
+        damage:
+          types:
+            Poison: 0.5
+
+- type: reagent
+  id: MisfitsPsychocline
+  name: reagent-name-misfits-psychocline
+  group: Wasteland
+  desc: reagent-desc-misfits-psychocline
+  physicalDesc: reagent-physical-desc-cloudy
+  flavor: medicine
+  color: "#b7a9c8"
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 0.2
+      effects:
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectSeeingRainbow
+        time: 30
+        type: Remove
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectDrowsiness
+        time: 5
+        type: Add
+      - !type:MovementSpeedModifier
+        walkSpeedModifier: 0.90
+        sprintSpeedModifier: 0.90
+      # TODO C#: SuppressHallucinationsReagent
+      # suppression: 0.90
+      # duration: 15
+      - !type:ModifyKnockdown
+        conditions:
+        - !type:ReagentCondition
+          reagent: MisfitsPsychocline
+          min: 25
+        time: 2
+        type: Add
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentCondition
+          reagent: MisfitsPsychocline
+          min: 25
+        damage:
+          types:
+            Poison: 0.75
+
+- type: reagent
+  id: MisfitsNeurostatic
+  name: reagent-name-misfits-neurostatic
+  group: Wasteland
+  desc: reagent-desc-misfits-neurostatic
+  physicalDesc: reagent-physical-desc-gleaming
+  flavor: medicine
+  color: "#83c5d6"
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 0.05
+      effects:
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectSeeingRainbow
+        time: 30
+        type: Remove
+      # Expensive high-grade psychiatric stabilizer with little routine sedation.
+      # TODO C#: SuppressHallucinationsReagent
+      # suppression: 1.00
+      # duration: 30
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentCondition
+          reagent: MisfitsNeurostatic
+          min: 20
+        damage:
+          types:
+            Poison: 0.35
+            Cellular: 0.10
+
+# ============================================================================
+# PAIN MANAGEMENT
+# ============================================================================
+
+- type: reagent
+  id: MisfitsWillowbark
+  name: reagent-name-misfits-willowbark
+  group: Wasteland
+  desc: reagent-desc-misfits-willowbark
+  physicalDesc: reagent-physical-desc-powdery
+  flavor: bitter
+  color: "#8c7045"
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 0.1
+      effects:
+      - !type:Vomit
+        probability: 0.03
+
+- type: reagent
+  id: MisfitsAnodyne
+  name: reagent-name-misfits-anodyne
+  group: Wasteland
+  desc: reagent-desc-misfits-anodyne
+  physicalDesc: reagent-physical-desc-soothing
+  flavor: medicine
+  color: "#b8a879"
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 0.1
+      effects:
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectDrowsiness
+        time: 1
+        type: Add
+
+- type: reagent
+  id: MisfitsAnalgesine
+  name: reagent-name-misfits-analgesine
+  group: Wasteland
+  desc: reagent-desc-misfits-analgesine
+  physicalDesc: reagent-physical-desc-clear
+  flavor: medicine
+  color: "#d7d7cf"
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 0.1
+      effects:
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectDrowsiness
+        time: 1
+        type: Add
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentCondition
+          reagent: MisfitsAnalgesine
+          min: 30
+        damage:
+          types:
+            Poison: 0.4
+
+- type: reagent
+  id: MisfitsNerveblock
+  name: reagent-name-misfits-nerveblock
+  group: Wasteland
+  desc: reagent-desc-misfits-nerveblock
+  physicalDesc: reagent-physical-desc-viscous
+  flavor: medicine
+  color: "#b6c7d2"
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 0.1
+      effects:
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectDrowsiness
+        time: 2
+        type: Add
+      - !type:MovementSpeedModifier
+        walkSpeedModifier: 0.85
+        sprintSpeedModifier: 0.85
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentCondition
+          reagent: MisfitsNerveblock
+          min: 25
+        damage:
+          types:
+            Asphyxiation: 1
+            Poison: 0.4
+
+- type: reagent
+  id: MisfitsTraumadol
+  name: reagent-name-misfits-traumadol
+  group: Wasteland
+  desc: reagent-desc-misfits-traumadol
+  physicalDesc: reagent-physical-desc-cloudy
+  flavor: medicine
+  color: "#cfb28b"
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 0.1
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Blunt: -0.333333
+            Slash: -0.333333
+            Piercing: -0.333333
+            Heat: -0.25
+            Shock: -0.25
+            Cold: -0.25
+            Caustic: -0.25
+      - !type:ModifyBleed
+        amount: -0.5
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentCondition
+          reagent: MisfitsTraumadol
+          min: 25
+        damage:
+          types:
+            Poison: 1
+
+- type: reagent
+  id: MisfitsAnesthezine
+  name: reagent-name-misfits-anesthezine
+  group: Wasteland
+  desc: reagent-desc-misfits-anesthezine
+  physicalDesc: reagent-physical-desc-thick
+  flavor: medicine
+  color: "#c7c1dc"
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 0.1
+      effects:
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectDrowsiness
+        time: 8
+        type: Add
+      - !type:MovementSpeedModifier
+        walkSpeedModifier: 0.70
+        sprintSpeedModifier: 0.70
+      - !type:ModifyKnockdown
+        conditions:
+        - !type:ReagentCondition
+          reagent: MisfitsAnesthezine
+          min: 15
+        time: 3
+        type: Add
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentCondition
+          reagent: MisfitsAnesthezine
+          min: 25
+        damage:
+          types:
+            Asphyxiation: 2
+            Poison: 0.5
+
+- type: reagent
+  id: MisfitsNeuroblock
+  name: reagent-name-misfits-neuroblock
+  group: Wasteland
+  desc: reagent-desc-misfits-neuroblock
+  physicalDesc: reagent-physical-desc-gleaming
+  flavor: medicine
+  color: "#a8d0d5"
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 0.05
+      effects:
+      # Minimal sedation, but dangerous if stacked.
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentCondition
+          reagent: MisfitsNeuroblock
+          min: 20
+        damage:
+          types:
+            Asphyxiation: 0.75
+            Cellular: 0.20
+
+# ============================================================================
+# CROSS-SPECIALTY ENDGAME
+# ============================================================================
+
+- type: reagent
+  id: MisfitsNeuroreguline
+  name: reagent-name-misfits-neuroreguline
+  group: Wasteland
+  desc: reagent-desc-misfits-neuroreguline
+  physicalDesc: reagent-physical-desc-gleaming
+  flavor: medicine
+  color: "#91d9d0"
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 0.05
+      effects:
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectSeeingRainbow
+        time: 30
+        type: Remove
+      # TODO C#: SuppressHallucinationsReagent
+      # suppression: 1.00
+      # duration: 30
+      - !type:HealthChange
+        damage:
+          types:
+            Cellular: -0.10
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentCondition
+          reagent: MisfitsNeuroreguline
+          min: 15
+        damage:
+          types:
+            Poison: 0.5
+            Asphyxiation: 0.5
+
+# ============================================================================
+# NARC TREAT!
+# ============================================================================
+
+- type: reagent
+  id: MisfitsWakeguard
+  name: reagent-name-misfits-wakeguard
+  group: Wasteland
+  desc: reagent-desc-misfits-wakeguard
+  physicalDesc: reagent-physical-desc-clear
+  flavor: medicine
+  color: "#d9e9cf"
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 0.1
+      effects:
+      - !type:ResetNarcolepsy
+        TimerReset: 900
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectDrowsiness
+        time: 10
+        type: Remove
+      - !type:Jitter
+        probability: 0.03
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentCondition
+          reagent: MisfitsWakeguard
+          min: 25
+        damage:
+          types:
+            Poison: 0.50
+            Asphyxiation: 0.25
+
+# ============================================================================
+# LONG-DURATION NARC TREAT!
+# ============================================================================
+
+- type: reagent
+  id: MisfitsSomnoreguline
+  name: reagent-name-misfits-somnoreguline
+  group: Wasteland
+  desc: reagent-desc-misfits-somnoreguline
+  physicalDesc: reagent-physical-desc-gleaming
+  flavor: medicine
+  color: "#b9d8c8"
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 0.05
+      effects:
+      - !type:ResetNarcolepsy
+        TimerReset: 2700
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectDrowsiness
+        time: 15
+        type: Remove
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectForcedSleeping
+        time: 5
+        type: Remove
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentCondition
+          reagent: MisfitsSomnoreguline
+          min: 20
+        damage:
+          types:
+            Poison: 0.30
+            Cellular: 0.10
+
+# ============================================================================
+# SHORT-ACTING NARC TREAT!
+# ============================================================================
+
+- type: reagent
+  id: MisfitsVigilazine
+  name: reagent-name-misfits-vigilazine
+  group: Wasteland
+  desc: reagent-desc-misfits-vigilazine
+  physicalDesc: reagent-physical-desc-powdery
+  flavor: bitter
+  color: "#d2fffa"
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 0.2
+      effects:
+      - !type:ResetNarcolepsy
+        TimerReset: 600
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectDrowsiness
+        time: 8
+        type: Remove
+      - !type:Jitter
+        probability: 0.06
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentCondition
+          reagent: MisfitsVigilazine
+          min: 20
+        damage:
+          types:
+            Poison: 0.50

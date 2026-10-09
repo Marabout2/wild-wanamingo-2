@@ -1,0 +1,66 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Species/c27.yml
+# Changed for Wild Wanamingo: rewritten for Wizden's species prototype. The ZAX model isn't ported. Misfits'
+# whitelist/job restrictions and Corvax 1.25x height come back elsewhere (whitelisting/jobs; sprite scale on the mob).
+
+- type: species
+  id: C27
+  name: species-name-c27
+  roundStart: true
+  randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  prototype: N14MobC27
+  dollPrototype: AppearanceC27
+  skinColoration: Hues
+  defaultSkinTone: "#9a8a72"
+  sexes:
+  - Unsexed
+  defaultSoundsBySex: # male, female, unsexed
+  - UnisexSilicon
+  - UnisexSilicon
+  - UnisexSilicon
+  voices:
+  - UnisexSilicon
+  maleFirstNames: C27FirstGeneric
+  femaleFirstNames: C27FirstGeneric
+  naming: First
+
+- type: species
+  id: C27NCR
+  name: species-name-c27-ncr
+  roundStart: true
+  randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  prototype: N14MobC27NCR
+  dollPrototype: AppearanceC27NCR
+  skinColoration: Hues
+  defaultSkinTone: "#9a8a72"
+  sexes:
+  - Unsexed
+  defaultSoundsBySex: # male, female, unsexed
+  - UnisexSilicon
+  - UnisexSilicon
+  - UnisexSilicon
+  voices:
+  - UnisexSilicon
+  maleFirstNames: C27FirstGeneric
+  femaleFirstNames: C27FirstGeneric
+  naming: First
+
+- type: species
+  id: C27BoS
+  name: species-name-c27-bos
+  roundStart: true
+  randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  prototype: N14MobC27BoS
+  dollPrototype: AppearanceC27BoS
+  skinColoration: Hues
+  defaultSkinTone: "#9a8a72"
+  sexes:
+  - Unsexed
+  defaultSoundsBySex: # male, female, unsexed
+  - UnisexSilicon
+  - UnisexSilicon
+  - UnisexSilicon
+  voices:
+  - UnisexSilicon
+  maleFirstNames: C27FirstGeneric
+  femaleFirstNames: C27FirstGeneric
+  naming: First

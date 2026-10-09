@@ -1,0 +1,78 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Reagents/toxins.yml
+
+- type: reagent
+  id: FireToxin
+  name: reagent-name-firetoxin
+  group: Wasteland
+  desc: reagent-desc-firetoxin
+  flavor: tingly
+  color: "#cf3600"
+  physicalDesc: reagent-physical-desc-burning
+  plantMetabolism:
+  - !type:PlantAdjustToxins
+    amount: 10
+  - !type:PlantAdjustHealth
+    amount: -5
+  metabolisms:
+    Bloodstream:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Heat: 3
+            Poison: 2
+
+#MARK: Nightstalker Venom
+#While not nearly as potent as cazador venom and is a lot slower acting, it will still kill in multiple bites
+
+- type: reagent
+  id: NightstalkerVenom
+  name: reagent-name-nightstalker-venom
+  group: Wasteland
+  desc: reagent-desc-nightstalker-venom
+  flavor: terrible
+  color: "#cf3600"
+  physicalDesc: reagent-physical-desc-viscous
+  plantMetabolism:
+  - !type:PlantAdjustToxins
+    amount: 10
+  - !type:PlantAdjustHealth
+    amount: -5
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 0.1 #Very Slow acting, default 0.5
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 1
+            Asphyxiation: 1
+            Bloodloss: 1
+
+#MARK: Cazador Venom
+#Insanely potent venom which while acts at half speed, can knock down just about anyone in just a few injections
+
+- type: reagent
+  id: CazadorVenom
+  name: reagent-name-cazador-venom
+  group: Wasteland
+  desc: reagent-desc-cazador-venom
+  flavor: terrible
+  color: "#cf3600"
+  physicalDesc: reagent-physical-desc-bubbling
+  plantMetabolism:
+  - !type:PlantAdjustToxins
+    amount: 10
+  - !type:PlantAdjustHealth
+    amount: -5
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 0.2 #Slow acting, default 0.5
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 1
+            Asphyxiation: 0.75
+            Bloodloss: 0.75

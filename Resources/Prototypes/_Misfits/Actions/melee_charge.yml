@@ -1,0 +1,22 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Actions/weapons.yml
+# Changed for Wild Wanamingo: icon/range moved to Wizden's Sprite and TargetAction components.
+
+- type: entity
+  parent: BaseAction
+  id: MisfitsActionMeleeCharge
+  name: Charge!
+  description: Charge in the designated direction at a steep stamina cost.
+  components:
+  - type: Sprite
+    sprite: Misfits/Interface/Actions/melee_charge.rsi
+    layers:
+    - state: charge
+  - type: ActionStaminaCost
+    staminaPercent: 35
+  - type: TargetAction
+    checkCanAccess: false
+    range: 10 # how far you can click, not how far you dash
+  - type: WorldTargetAction
+    event: !type:MeleeChargeEvent
+      speed: 10
+      range: 3.5

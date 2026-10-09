@@ -219,6 +219,16 @@ namespace Content.Server.Database
             profile.EyeColor = appearance.EyeColor.ToHex();
             profile.SkinColor = appearance.SkinColor.ToHex();
             profile.SpawnPriority = (int) humanoid.SpawnPriority;
+
+            // Misfits Change - character SPECIAL stats
+            var special = humanoid.Special;
+            profile.SpecialStrength = special.Strength;
+            profile.SpecialPerception = special.Perception;
+            profile.SpecialEndurance = special.Endurance;
+            profile.SpecialCharisma = special.Charisma;
+            profile.SpecialIntelligence = special.Intelligence;
+            profile.SpecialAgility = special.Agility;
+            profile.SpecialLuck = special.Luck;
             profile.OrganMarkings = JsonSerializer.SerializeToDocument(dataNode.ToJsonNode());
 
             // support for downgrades - at some point this should be removed

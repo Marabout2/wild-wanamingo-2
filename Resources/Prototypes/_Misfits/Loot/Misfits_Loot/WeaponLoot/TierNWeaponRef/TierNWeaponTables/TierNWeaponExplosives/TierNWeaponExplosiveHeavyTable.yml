@@ -1,0 +1,9 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/TierNWeaponRef/TierNWeaponTables/TierNWeaponExplosives/TierNWeaponExplosiveHeavyTable.yml
+
+- type: entityTable
+  id: M14WeaponLootTierN_GunsExplosiveHeavy
+  table: !type:GroupSelector
+    children:
+    - !type:EntSelector
+      id: N14WeaponLauncherMissile
+      weight: 7

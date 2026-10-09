@@ -1,3 +1,4 @@
+using Content.Shared._WW.Nutrition; // WW Change
 using Content.Shared.Alert;
 using Content.Shared.Nutrition.Components;
 using Content.Shared.Nutrition.Prototypes;
@@ -197,6 +198,11 @@ public abstract partial class SatiationSystem : EntitySystem
         }
 
         satiation.ActualChangeRate = proto.BaseChangeRate * currentChangeMod;
+
+        // WW Change - other systems (SPECIAL Endurance) can scale how fast this satiation changes
+        var rateEv = new SatiationChangeRateModifierEvent(satiation.SatiationType);
+        RaiseLocalEvent(entity, ref rateEv);
+        satiation.ActualChangeRate *= rateEv.Multiplier;
         satiation.NextChangeRateModUpdateTime = EvolvesToBoundAt(
             satiation,
             proto,

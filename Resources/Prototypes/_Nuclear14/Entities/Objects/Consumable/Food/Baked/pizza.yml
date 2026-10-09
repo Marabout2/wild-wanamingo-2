@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Entities/Objects/Consumable/Food/Baked/pizza.yml
 
 - type: entity
-  parent: [FoodInjectableBase, BaseSlicingRefinableFood]
+  parent: FoodInjectableBase
   id: N14CookedFoodPizzaBase
   abstract: true
   components:

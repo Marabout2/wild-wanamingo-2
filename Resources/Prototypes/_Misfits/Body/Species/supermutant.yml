@@ -1,0 +1,237 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Species/supermutant.yml,
+# nightkin.yml, Entities/Mobs/Species/supermutant.yml, Entities/Mobs/Player/supermutant.yml, nightkin.yml
+# Changed for Wild Wanamingo: rewritten for Wizden's organ-based bodies. Size is the mob's sprite scale (Misfits used
+# Corvax height). Not ported yet (they patch Wizden's movement/wield/pull code): the 2x damage with held weapons
+# (Nyano Oni; unarmed 2x is BonusMeleeDamage below), fireman carry, grab stun, loud footsteps, and the nightkin
+# Stealth Boy cloak, gun accuracy and silent barefoot steps.
+
+# No hair: super mutants only take body markings.
+- type: markingsGroup
+  parent: Undergarments
+  id: SuperMutant
+  onlyGroupWhitelisted: true
+  limits:
+    enum.HumanoidVisualLayers.Hair:
+      limit: 0
+      required: false
+    enum.HumanoidVisualLayers.FacialHair:
+      limit: 0
+      required: false
+    enum.HumanoidVisualLayers.Chest:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.LArm:
+      limit: 2
+      required: false
+    enum.HumanoidVisualLayers.RArm:
+      limit: 2
+      required: false
+    enum.HumanoidVisualLayers.LHand:
+      limit: 2
+      required: false
+    enum.HumanoidVisualLayers.RHand:
+      limit: 2
+      required: false
+    enum.HumanoidVisualLayers.LLeg:
+      limit: 2
+      required: false
+    enum.HumanoidVisualLayers.RLeg:
+      limit: 2
+      required: false
+    enum.HumanoidVisualLayers.LFoot:
+      limit: 2
+      required: false
+    enum.HumanoidVisualLayers.RFoot:
+      limit: 2
+      required: false
+
+- type: entity
+  parent: AppearanceHuman
+  id: AppearanceSuperMutant
+  categories: [ HideSpawnMenu ]
+  name: super mutant appearance
+  components:
+  - type: Inventory
+    templateId: supermutant
+    speciesId: supermutant
+  - type: InitialBody
+    organs:
+      Torso: OrganSuperMutantTorso
+      Head: OrganSuperMutantHead
+      ArmLeft: OrganSuperMutantArmLeft
+      ArmRight: OrganSuperMutantArmRight
+      HandRight: OrganSuperMutantHandRight
+      HandLeft: OrganSuperMutantHandLeft
+      LegLeft: OrganSuperMutantLegLeft
+      LegRight: OrganSuperMutantLegRight
+      FootLeft: OrganSuperMutantFootLeft
+      FootRight: OrganSuperMutantFootRight
+      Brain: OrganHumanBrain
+      Eyes: OrganHumanEyes
+      Tongue: OrganHumanTongue
+      Appendix: OrganHumanAppendix
+      Ears: OrganHumanEars
+      Lungs: OrganHumanLungs
+      Heart: OrganHumanHeart
+      Stomach: OrganHumanStomach
+      Liver: OrganHumanLiver
+      Kidneys: OrganHumanKidneys
+  - type: HumanoidProfile
+    species: SuperMutant
+
+# Stats shared by super mutants and nightkin.
+- type: entity
+  abstract: true
+  id: N14BaseMobSuperMutantStats
+  components:
+  - type: Sprite
+    scale: 1.5, 1.5
+  - type: Icon
+    sprite: Misfits/Mobs/Species/SuperMutant/parts.rsi
+    state: full
+  - type: Perishable
+    rotAfter: 3600
+  - type: Damageable
+    damageModifierSet: SuperMutant
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 2.0
+    baseSprintSpeed: 3.5
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      200: Critical
+      400: Dead
+  - type: Stamina
+    baseCritThreshold: 1000 # 10x human
+    decay: 30 # 10x recovery
+  - type: RadiationReceiver
+  - type: RadiationHealing
+    healCap: 360 # 90% of the 400 death threshold
+  - type: MeleeWeapon
+    soundHit:
+      collection: Punch
+    angle: 30
+    animation: WeaponArcFist
+    attackRate: 1
+    damage:
+      types:
+        Blunt: 15
+  - type: BonusMeleeDamage # 2x unarmed (Misfits: Nyano Oni multiplier)
+    damageModifierSet:
+      coefficients:
+        Blunt: 2.0
+        Slash: 2.0
+        Piercing: 2.0
+        Shock: 2.0
+  - type: Vocal
+    emoteSounds: MisfitsSuperMutantEmotes
+  - type: Butcherable
+    spawned:
+    - id: N14FoodMeatSupermutant
+      amount: 5
+  - type: NpcFactionMember
+    factions:
+    - Wastelander
+
+- type: entity
+  parent:
+  - AppearanceSuperMutant
+  - BaseSpeciesMobOrganic
+  - N14BaseMobSuperMutantStats
+  id: N14MobSuperMutant
+  name: Urist McSupermutant
+
+- type: entity
+  parent: OrganHuman
+  id: OrganSuperMutantExternal
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Misfits/Mobs/Species/SuperMutant/parts.rsi
+  - type: VisualOrgan
+    data:
+      sprite: Misfits/Mobs/Species/SuperMutant/parts.rsi
+  - type: VisualOrganMarkings
+    markingData:
+      group: SuperMutant
+
+- type: entity
+  parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganSuperMutantExternal ]
+  id: OrganSuperMutantTorso
+
+- type: entity
+  parent: [ OrganBaseHeadSexed, OrganBaseHead, OrganSuperMutantExternal ]
+  id: OrganSuperMutantHead
+
+- type: entity
+  parent: [ OrganBaseArmLeft, OrganSuperMutantExternal ]
+  id: OrganSuperMutantArmLeft
+
+- type: entity
+  parent: [ OrganBaseArmRight, OrganSuperMutantExternal ]
+  id: OrganSuperMutantArmRight
+
+- type: entity
+  parent: [ OrganBaseHandLeft, OrganSuperMutantExternal ]
+  id: OrganSuperMutantHandLeft
+
+- type: entity
+  parent: [ OrganBaseHandRight, OrganSuperMutantExternal ]
+  id: OrganSuperMutantHandRight
+
+- type: entity
+  parent: [ OrganBaseLegLeft, OrganSuperMutantExternal ]
+  id: OrganSuperMutantLegLeft
+
+- type: entity
+  parent: [ OrganBaseLegRight, OrganSuperMutantExternal ]
+  id: OrganSuperMutantLegRight
+
+- type: entity
+  parent: [ OrganBaseFootLeft, OrganSuperMutantExternal ]
+  id: OrganSuperMutantFootLeft
+
+- type: entity
+  parent: [ OrganBaseFootRight, OrganSuperMutantExternal ]
+  id: OrganSuperMutantFootRight
+
+# --- Nightkin: super mutant body (skin tone gives the blue-purple), lighter on their feet.
+
+- type: entity
+  parent: AppearanceSuperMutant
+  id: AppearanceNightkin
+  categories: [ HideSpawnMenu ]
+  name: nightkin appearance
+  components:
+  - type: HumanoidProfile
+    species: Nightkin
+
+- type: entity
+  parent:
+  - AppearanceNightkin
+  - BaseSpeciesMobOrganic
+  - N14BaseMobSuperMutantStats
+  id: N14MobNightkinPlayer
+  name: Urist McNightkin
+  components:
+  - type: MovementSpeedModifier # faster than super mutants, still slower than humans
+    baseWalkSpeed: 2.5
+    baseSprintSpeed: 4
+  - type: SlowOnDamage # too big to limp early: no slowdown until 200 damage (crit is 200 here too)
+    speedModifierThresholds:
+      200: 0.85
+  - type: PassiveDamage # unnatural regeneration, always on; even claws out of crit slowly
+    allowedStates:
+    - Alive
+    - Critical
+    damage:
+      types:
+        Blunt: -0.20
+        Slash: -0.20
+        Piercing: -0.20
+        Heat: -0.20
+        Cold: -0.20
+        Shock: -0.20
+        Caustic: -0.20
+        Asphyxiation: -0.35
+        Bloodloss: -0.10

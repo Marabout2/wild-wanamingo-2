@@ -1,0 +1,16 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Misc/radcube.yml
+
+- type: entity
+  parent: BoxCardboard
+  name: rad cube box
+  id: RadCubeBox
+  description: A faded cardboard box, presumably filled with monkey cubes.
+  components:
+  - type: StorageFill
+    contents: []
+  - type: Storage
+    grid:
+    - 0,0,2,1
+  - type: Sprite
+    sprite: Misfits/Objects/Misc/radcube.rsi
+    state: box_rad

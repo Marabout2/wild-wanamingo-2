@@ -1,0 +1,330 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Mobs/Player/sentient_deathclaw.yml
+# Changed for Wild Wanamingo: playable deathclaws are the NPC deathclaw plus an empty visual body and a profile (no
+# organs, markings or clothing slots), so the character editor and spawning work with Wizden's body code. Misfits'
+# BorgHands are Wizden starting hands. Not ported yet: claw butchering (Wizden has no knife-butcher verb), languages,
+# lying down, and Bwonsamdi's loa kit (dread roar, ritual claim, mercy, soul compass/sense, structure breaker,
+# innate mutations, thermal vision, harness slot).
+
+# --- Lobby dolls (sprite only)
+
+- type: entity
+  id: AppearanceDeathclaw
+  categories: [ HideSpawnMenu ]
+  name: deathclaw appearance
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Nuclear14/Mobs/Animals/deathclaw.rsi
+    state: deathclaw
+  - type: VisualBody
+  - type: HumanoidProfile
+    species: Deathclaw
+
+- type: entity
+  parent: AppearanceDeathclaw
+  id: AppearanceDeathclawAdolescent
+  categories: [ HideSpawnMenu ]
+  name: adolescent deathclaw appearance
+  components:
+  - type: Sprite
+    sprite: Misfits/Mobs/Animals/deathclawadolescent.rsi
+  - type: HumanoidProfile
+    species: DeathclawAdolescent
+
+- type: entity
+  parent: AppearanceDeathclaw
+  id: AppearanceDeathclawHatchling
+  categories: [ HideSpawnMenu ]
+  name: hatchling deathclaw appearance
+  components:
+  - type: Sprite
+    sprite: Misfits/Mobs/Animals/deathclawhatchling.rsi
+  - type: HumanoidProfile
+    species: DeathclawHatchling
+
+- type: entity
+  parent: AppearanceDeathclaw
+  id: AppearanceBwonsamdi
+  categories: [ HideSpawnMenu ]
+  name: bwonsamdi appearance
+  components:
+  - type: Sprite
+    sprite: Misfits/Mobs/Animals/deathclawbwonsamdi.rsi
+  - type: HumanoidProfile
+    species: BwonsamdiDeathclaw
+
+# --- Playable deathclaws
+
+# The NPC deathclaw plus player parts (speech, hands, charge); the variants below inherit these.
+- type: entity
+  parent: N14MobDeathclaw
+  id: N14MobDeathclawSentient
+  name: sentient deathclaw
+  description: An unusually intelligent deathclaw, watchful and capable of speech.
+  components:
+  - type: VisualBody
+  - type: HumanoidProfile
+    species: Deathclaw
+  - type: ReplacementAccent # replaces the NPC's growl-only genericAggressive with plain speech
+    accent: misfitsDeathclaw
+  - type: LizardAccent # drawn-out hiss (Misfits: elongated sibilants)
+  - type: Speech
+    speechSounds: MisfitsDeathclaw
+    speechVerb: LargeMob
+    allowedEmotes:
+    - MisfitsDeathclawGrowl
+    - MisfitsDeathclawRoar
+  - type: Vocal
+    emoteSounds: MisfitsDeathclawEmotes
+    screamId: MisfitsDeathclawRoar
+  - type: Emoting
+  - type: Tag
+    tags:
+    - Deathclaw
+    - FootstepSound
+  - type: NpcFactionMember
+    factions:
+    - Wastelander
+  - type: Hands
+    startingHands:
+      hand_right:
+        location: Right
+      hand_left:
+        location: Left
+  - type: ComplexInteraction
+  - type: Puller
+    needsHands: false
+  - type: SentientDeathclaw
+  - type: ActionGrant
+    actions:
+    - MisfitsActionMeleeCharge
+  - type: MeleeChargeAudio
+    activationSound:
+      path: /Audio/Misfits/Mobs/Deathclaw/aggro1.ogg
+      params:
+        volume: 1
+        maxDistance: 18
+    impactSound:
+      path: /Audio/Effects/Footsteps/largethud.ogg
+      params:
+        volume: 4
+        maxDistance: 20
+
+- type: entity
+  parent: N14MobDeathclawSentient
+  id: N14MobDeathclawSentientAdolescent
+  name: adolescent sentient deathclaw
+  description: An intelligent young deathclaw, not yet fully grown.
+  components:
+  - type: HumanoidProfile
+    species: DeathclawAdolescent
+  - type: Sprite
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: deathclaw
+      sprite: Misfits/Mobs/Animals/deathclawadolescent.rsi
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+            radius: 0.35
+        density: 75
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      320: Critical
+      410: Dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      80: 1.05
+      120: 1.1
+      160: 1.15
+  - type: MeleeWeapon
+    altDisarm: false
+    hidden: true
+    soundHit:
+      collection: N14DeathclawAttack
+    angle: 60
+    animation: WeaponArcClaw
+    wideAnimation: WeaponArcClaw
+    damage:
+      types:
+        Blunt: 11
+        Slash: 18
+        Piercing: 4
+    range: 1.75
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 3.25
+    baseSprintSpeed: 6.25
+
+- type: entity
+  parent: N14MobDeathclawSentient
+  id: N14MobDeathclawSentientHatchling
+  name: hatchling sentient deathclaw
+  description: An intelligent Deathclaw hatchling, small but still dangerous.
+  components:
+  - type: HumanoidProfile
+    species: DeathclawHatchling
+  - type: Sprite
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: deathclaw
+      sprite: Misfits/Mobs/Animals/deathclawhatchling.rsi
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+            radius: 0.3
+        density: 50
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      210: Critical
+      280: Dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      55: 1.05
+      85: 1.1
+      110: 1.15
+  - type: MeleeWeapon
+    altDisarm: false
+    hidden: true
+    soundHit:
+      collection: N14DeathclawAttack
+    angle: 60
+    animation: WeaponArcClaw
+    wideAnimation: WeaponArcClaw
+    damage:
+      types:
+        Blunt: 7
+        Slash: 11
+        Piercing: 3
+    range: 1.5
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 3.5
+    baseSprintSpeed: 6.5
+
+# Bwonsamdi: a deathclaw of unnatural size bound to the loa of death. Body and stats only for now.
+- type: entity
+  parent: N14MobDeathclawSentient
+  id: N14MobDeathclawPlayer
+  name: Bwonsamdi
+  description: A deathclaw of unnatural size and strength, bound to the loa of death and marked with strange, restless designs.
+  components:
+  - type: HumanoidProfile
+    species: BwonsamdiDeathclaw
+  - type: Sprite
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: deathclaw
+      sprite: Misfits/Mobs/Animals/deathclawbwonsamdi.rsi
+  - type: Damageable
+    damageModifierSet: N14DeathclawHide # half damage from everything
+  - type: Fixtures # mech-like: too heavy to shove, fills the tile
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+            radius: 0.45
+        density: 21390
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      1300: Critical
+      1000000: Dead # goes down but never dies
+  - type: PassiveDamage # slow regeneration, even while down
+    allowedStates:
+    - Alive
+    - Critical
+    damage:
+      types:
+        Blunt: -1.0
+        Slash: -1.0
+        Piercing: -1.0
+        Heat: -1.0
+        Shock: -1.0
+        Cold: -1.0
+        Poison: -1.0
+        Cellular: -1.0
+        Caustic: -1.0
+        Bloodloss: -1.0
+        Radiation: -1.0
+  - type: Reflect # half of all bullets glance off its hide
+    reflects: NonEnergy
+    reflectProb: 0.5
+    soundOnReflect:
+      collection: MetalBulletImpact
+  - type: ActiveRadio # hears every channel
+    receiveAllChannels: true
+  - type: IntrinsicRadioReceiver
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - WastelandGlobal
+    - Eighties
+    - VaultCommon
+    - BrotherhoodOfSteel
+    - Enclave
+    - NCR
+    - OSI
+    - NCRRangers
+    - Legion
+    - PBS
+    - FollowersOfApocalypse
+    - Townsfolk
+    - Common
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepThud
+      params:
+        volume: 6
+        maxDistance: 30
+  - type: NpcFactionMember
+    factions:
+    - Wastelander
+    - Tribal
+  - type: MeleeWeapon
+    altDisarm: false
+    hidden: true
+    attackRate: 1.0
+    soundHit:
+      collection: N14DeathclawAttack
+    angle: 60
+    animation: WeaponArcClaw
+    wideAnimation: WeaponArcClaw
+    damage:
+      types:
+        Blunt: 15
+        Slash: 25
+        Piercing: 5
+        Structural: 300
+    range: 2
+  - type: MeleeChargeAudio
+    activationSound:
+      path: /Audio/Misfits/Mobs/Deathclaw/aggro1.ogg
+      params:
+        volume: 3
+        maxDistance: 25
+    impactSound:
+      path: /Audio/Effects/Footsteps/largethud.ogg
+      params:
+        volume: 8
+        maxDistance: 30
+  - type: PointLight # low green loa glow
+    radius: 3
+    energy: 1.5
+    color: "#2aff5e"
+    castShadows: false

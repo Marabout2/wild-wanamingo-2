@@ -1,0 +1,363 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Species/robot.yml
+# Changed for Wild Wanamingo: rewritten for Wizden's species prototype. Z.A.X models aren't ported. Misfits'
+# whitelist/job locks come back with jobs. Robots have no sex; their emotes are the silicon set.
+
+- type: species
+  id: RobotMrHandy
+  name: species-name-robot-mr-handy
+  roundStart: true
+  randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  prototype: N14PlayerSyntheticMrHandy
+  dollPrototype: AppearanceRobotMrHandy
+  skinColoration: Hues
+  sexes:
+  - Unsexed
+  defaultSoundsBySex: # male, female, unsexed
+  - UnisexSilicon
+  - UnisexSilicon
+  - UnisexSilicon
+  voices:
+  - UnisexSilicon
+  maleFirstNames: RobotMrHandyFirst
+  femaleFirstNames: RobotMrHandyFirst
+  naming: First
+
+- type: species
+  id: RobotProtectron
+  name: species-name-robot-protectron
+  roundStart: true
+  randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  prototype: N14PlayerSyntheticProtectron
+  dollPrototype: AppearanceRobotProtectron
+  skinColoration: Hues
+  sexes:
+  - Unsexed
+  defaultSoundsBySex: # male, female, unsexed
+  - UnisexSilicon
+  - UnisexSilicon
+  - UnisexSilicon
+  voices:
+  - UnisexSilicon
+  maleFirstNames: RobotProtectronFirst
+  femaleFirstNames: RobotProtectronFirst
+  naming: First
+
+- type: species
+  id: RobotProtectronPolice
+  name: species-name-robot-protectron-police
+  roundStart: true
+  randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  prototype: N14PlayerSyntheticProtectronPolice
+  dollPrototype: AppearanceRobotProtectronPolice
+  skinColoration: Hues
+  sexes:
+  - Unsexed
+  defaultSoundsBySex: # male, female, unsexed
+  - UnisexSilicon
+  - UnisexSilicon
+  - UnisexSilicon
+  voices:
+  - UnisexSilicon
+  maleFirstNames: RobotProtectronFirst
+  femaleFirstNames: RobotProtectronFirst
+  naming: First
+
+- type: species
+  id: RobotProtectronBuilder
+  name: species-name-robot-protectron-builder
+  roundStart: true
+  randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  prototype: N14PlayerSyntheticProtectronBuilder
+  dollPrototype: AppearanceRobotProtectronBuilder
+  skinColoration: Hues
+  sexes:
+  - Unsexed
+  defaultSoundsBySex: # male, female, unsexed
+  - UnisexSilicon
+  - UnisexSilicon
+  - UnisexSilicon
+  voices:
+  - UnisexSilicon
+  maleFirstNames: RobotProtectronFirst
+  femaleFirstNames: RobotProtectronFirst
+  naming: First
+
+- type: species
+  id: RobotProtectronFire
+  name: species-name-robot-protectron-fire
+  roundStart: true
+  randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  prototype: N14PlayerSyntheticProtectronFire
+  dollPrototype: AppearanceRobotProtectronFire
+  skinColoration: Hues
+  sexes:
+  - Unsexed
+  defaultSoundsBySex: # male, female, unsexed
+  - UnisexSilicon
+  - UnisexSilicon
+  - UnisexSilicon
+  voices:
+  - UnisexSilicon
+  maleFirstNames: RobotProtectronFirst
+  femaleFirstNames: RobotProtectronFirst
+  naming: First
+
+- type: species
+  id: RobotProtectronTribal
+  name: species-name-robot-protectron-tribal
+  roundStart: true
+  randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  prototype: N14PlayerSyntheticProtectronTribal
+  dollPrototype: AppearanceRobotProtectronTribal
+  skinColoration: Hues
+  sexes:
+  - Unsexed
+  defaultSoundsBySex: # male, female, unsexed
+  - UnisexSilicon
+  - UnisexSilicon
+  - UnisexSilicon
+  voices:
+  - UnisexSilicon
+  maleFirstNames: RobotProtectronFirst
+  femaleFirstNames: RobotProtectronFirst
+  naming: First
+
+- type: species
+  id: RobotSecuritron
+  name: species-name-robot-securitron-gray
+  roundStart: true
+  randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  prototype: N14PlayerSyntheticSecuritronGray
+  dollPrototype: AppearanceRobotSecuritron
+  skinColoration: Hues
+  sexes:
+  - Unsexed
+  defaultSoundsBySex: # male, female, unsexed
+  - UnisexSilicon
+  - UnisexSilicon
+  - UnisexSilicon
+  voices:
+  - UnisexSilicon
+  maleFirstNames: RobotProtectronFirst
+  femaleFirstNames: RobotProtectronFirst
+  naming: First
+
+- type: species
+  id: RobotSecuritronBlue
+  name: species-name-robot-securitron-blue
+  roundStart: true
+  randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  prototype: N14PlayerSyntheticSecuritronBlue
+  dollPrototype: AppearanceRobotSecuritronBlue
+  skinColoration: Hues
+  sexes:
+  - Unsexed
+  defaultSoundsBySex: # male, female, unsexed
+  - UnisexSilicon
+  - UnisexSilicon
+  - UnisexSilicon
+  voices:
+  - UnisexSilicon
+  maleFirstNames: RobotProtectronFirst
+  femaleFirstNames: RobotProtectronFirst
+  naming: First
+
+- type: species
+  id: RobotSecuritronBrown
+  name: species-name-robot-securitron-brown
+  roundStart: true
+  randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  prototype: N14PlayerSyntheticSecuritronBrown
+  dollPrototype: AppearanceRobotSecuritronBrown
+  skinColoration: Hues
+  sexes:
+  - Unsexed
+  defaultSoundsBySex: # male, female, unsexed
+  - UnisexSilicon
+  - UnisexSilicon
+  - UnisexSilicon
+  voices:
+  - UnisexSilicon
+  maleFirstNames: RobotProtectronFirst
+  femaleFirstNames: RobotProtectronFirst
+  naming: First
+
+- type: species
+  id: RobotSecuritronRed
+  name: species-name-robot-securitron-red
+  roundStart: true
+  randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  prototype: N14PlayerSyntheticSecuritronRed
+  dollPrototype: AppearanceRobotSecuritronRed
+  skinColoration: Hues
+  sexes:
+  - Unsexed
+  defaultSoundsBySex: # male, female, unsexed
+  - UnisexSilicon
+  - UnisexSilicon
+  - UnisexSilicon
+  voices:
+  - UnisexSilicon
+  maleFirstNames: RobotProtectronFirst
+  femaleFirstNames: RobotProtectronFirst
+  naming: First
+
+- type: species
+  id: RobotSecuritronYellow
+  name: species-name-robot-securitron-yellow
+  roundStart: true
+  randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  prototype: N14PlayerSyntheticSecuritronYellow
+  dollPrototype: AppearanceRobotSecuritronYellow
+  skinColoration: Hues
+  sexes:
+  - Unsexed
+  defaultSoundsBySex: # male, female, unsexed
+  - UnisexSilicon
+  - UnisexSilicon
+  - UnisexSilicon
+  voices:
+  - UnisexSilicon
+  maleFirstNames: RobotProtectronFirst
+  femaleFirstNames: RobotProtectronFirst
+  naming: First
+
+- type: species
+  id: RobotMrGutsy
+  name: species-name-robot-mr-gutsy
+  roundStart: true
+  randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  prototype: N14PlayerSyntheticMrGutsy
+  dollPrototype: AppearanceRobotMrGutsy
+  skinColoration: Hues
+  sexes:
+  - Unsexed
+  defaultSoundsBySex: # male, female, unsexed
+  - UnisexSilicon
+  - UnisexSilicon
+  - UnisexSilicon
+  voices:
+  - UnisexSilicon
+  maleFirstNames: RobotMrGutsyFirst
+  femaleFirstNames: RobotMrGutsyFirst
+  naming: First
+
+- type: species
+  id: RobotAssaultron
+  name: species-name-robot-assaultron
+  roundStart: true
+  randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  prototype: N14PlayerSyntheticAssaultron
+  dollPrototype: AppearanceRobotAssaultron
+  skinColoration: Hues
+  sexes:
+  - Unsexed
+  defaultSoundsBySex: # male, female, unsexed
+  - UnisexSilicon
+  - UnisexSilicon
+  - UnisexSilicon
+  voices:
+  - UnisexSilicon
+  maleFirstNames: RobotAssaultronFirst
+  femaleFirstNames: RobotAssaultronFirst
+  naming: First
+
+- type: species
+  id: RobotAssaultronTesla
+  name: species-name-robot-assaultron-tesla
+  roundStart: true
+  randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  prototype: N14PlayerSyntheticAssaultronTesla
+  dollPrototype: AppearanceRobotAssaultronTesla
+  skinColoration: Hues
+  sexes:
+  - Unsexed
+  defaultSoundsBySex: # male, female, unsexed
+  - UnisexSilicon
+  - UnisexSilicon
+  - UnisexSilicon
+  voices:
+  - UnisexSilicon
+  maleFirstNames: RobotAssaultronFirst
+  femaleFirstNames: RobotAssaultronFirst
+  naming: First
+
+- type: species
+  id: RobotSentryBot
+  name: species-name-robot-sentrybot
+  roundStart: true
+  randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  prototype: N14PlayerSyntheticSentryBotMinigun
+  dollPrototype: AppearanceRobotSentryBot
+  skinColoration: Hues
+  sexes:
+  - Unsexed
+  defaultSoundsBySex: # male, female, unsexed
+  - UnisexSilicon
+  - UnisexSilicon
+  - UnisexSilicon
+  voices:
+  - UnisexSilicon
+  maleFirstNames: RobotSentryBotFirst
+  femaleFirstNames: RobotSentryBotFirst
+  naming: First
+
+- type: species
+  id: RobotSentryBotLaser
+  name: species-name-robot-sentrybot-laser
+  roundStart: true
+  randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  prototype: N14PlayerSyntheticSentryBotLaser
+  dollPrototype: AppearanceRobotSentryBotLaser
+  skinColoration: Hues
+  sexes:
+  - Unsexed
+  defaultSoundsBySex: # male, female, unsexed
+  - UnisexSilicon
+  - UnisexSilicon
+  - UnisexSilicon
+  voices:
+  - UnisexSilicon
+  maleFirstNames: RobotSentryBotFirst
+  femaleFirstNames: RobotSentryBotFirst
+  naming: First
+
+- type: species
+  id: RobotRobobrain
+  name: species-name-robot-robobrain
+  roundStart: true
+  randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  prototype: N14PlayerSyntheticRobobrain
+  dollPrototype: AppearanceRobotRobobrain
+  skinColoration: Hues
+  sexes:
+  - Unsexed
+  defaultSoundsBySex: # male, female, unsexed
+  - UnisexSilicon
+  - UnisexSilicon
+  - UnisexSilicon
+  voices:
+  - UnisexSilicon
+  maleFirstNames: RobotRobobrainFirst
+  femaleFirstNames: RobotRobobrainFirst
+  naming: First
+
+- type: species
+  id: RobotRobobrainLaser
+  name: species-name-robot-robobrain-laser
+  roundStart: true
+  randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  prototype: N14PlayerSyntheticRobobrainLaser
+  dollPrototype: AppearanceRobotRobobrainLaser
+  skinColoration: Hues
+  sexes:
+  - Unsexed
+  defaultSoundsBySex: # male, female, unsexed
+  - UnisexSilicon
+  - UnisexSilicon
+  - UnisexSilicon
+  voices:
+  - UnisexSilicon
+  maleFirstNames: RobotRobobrainFirst
+  femaleFirstNames: RobotRobobrainFirst
+  naming: First

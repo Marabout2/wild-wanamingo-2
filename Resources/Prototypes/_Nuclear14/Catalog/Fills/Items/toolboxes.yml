@@ -1,0 +1,55 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Catalog/Fills/Items/toolboxes.yml
+
+- type: entity
+  id: N14ToolboxFilled1
+  name: toolbox
+  suffix: Filled, always
+  parent: ToolboxEmergency
+  components:
+  - type: StorageFill
+    contents:
+      - id: N14Screwdriver
+      - id: Crowbar
+      - id: N14Wirecutter
+      - id: N14Wrench
+      - id: N14Multitool
+      - id: N14Welder
+      - id: trayScanner
+      - id: ClothingHandsGlovesColorYellow
+
+- type: entity
+  id: N14ToolboxMechanical
+  name: toolbox
+  suffix: Filled, always
+  parent: ToolboxMechanical
+  components:
+  - type: StorageFill
+    contents:
+      - id: N14Screwdriver
+      - id: Crowbar
+      - id: N14Wirecutter
+      - id: N14Wrench
+      - id: N14Multitool
+      - id: N14Welder
+        
+
+- type: entity
+  id: N14ToolboxFilled2
+  name: toolbox
+  suffix: Filled, loot
+  parent: ToolboxEmergency
+  components:
+  - type: StorageFill
+    contents:
+      - id: N14Screwdriver
+      - id: Crowbar
+      - id: N14Wirecutter
+      - id: N14Wrench
+      - id: N14Multitool
+        prob: 0.5
+      - id: N14Welder
+      - id: trayScanner
+        prob: 0.5
+      - id: ClothingHandsGlovesColorYellow
+        prob: 0.25

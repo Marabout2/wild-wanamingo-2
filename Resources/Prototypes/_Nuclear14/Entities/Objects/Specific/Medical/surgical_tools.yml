@@ -1,0 +1,299 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Entities/Objects/Specific/Medical/surgical_tools.yml
+
+- type: entity
+  parent: BaseItem
+  id: N14BaseToolSurgery
+  abstract: true
+  components:
+  - type: Sprite
+  - type: Tag
+    tags:
+    - SurgeryTool
+  - type: StaticPrice
+    price: 20
+
+# Cautery
+
+- type: entity
+  name: cautery
+  id: N14Cautery
+  suffix: N14, New
+  parent: N14BaseToolSurgery
+  description: A surgical tool used to cauterize open wounds.
+  components:
+  - type: Sprite
+    sprite: _Shitmed/Objects/Specific/Medical/Surgery/cautery.rsi
+    state: cautery
+  - type: Item
+    sprite: _Shitmed/Objects/Specific/Medical/Surgery/cautery.rsi
+    storedRotation: 90
+  - type: MeleeWeapon
+    damage:
+       types:
+        Heat: 5
+    soundHit:
+      path: /Audio/Effects/lightburn.ogg
+  - type: ThrowingAngle
+    angle: 45
+  - type: StaticPrice
+    price: 40
+
+- type: entity
+  name: cautery
+  id: N14CauteryRust
+  suffix: N14, Old
+  parent: N14Cautery
+  description: A surgical tool used to cauterize open wounds. It's covered in rust.
+  components:
+  - type: Sprite
+    sprite: _Shitmed/Objects/Specific/Medical/Surgery/cautery.rsi
+    state: cautery
+  - type: Item
+    sprite: _Shitmed/Objects/Specific/Medical/Surgery/cautery.rsi
+    storedRotation: 90
+  - type: StaticPrice
+    price: 25
+
+# Drill
+
+- type: entity
+  name: drill
+  id: N14Drill
+  suffix: N14, New
+  parent: N14BaseToolSurgery
+  description: A surgical drill for making holes into hard material.
+  components:
+  - type: Sprite
+    sprite: _Shitmed/Objects/Specific/Medical/Surgery/drill.rsi
+    state: drill
+  - type: Item
+    sprite: _Shitmed/Objects/Specific/Medical/Surgery/drill.rsi
+    shape:
+    - 0,0,1,0
+    - 1,1,1,1
+  - type: MeleeWeapon
+    attackRate: 1.3333
+    range: 1.4
+    damage:
+      types:
+        Piercing: 6
+        Blunt: 2
+    angle: 20
+    soundHit:
+      path: /Audio/Items/drill_hit.ogg
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Piercing: 9
+        Blunt: 2
+  - type: EmbeddableProjectile
+  - type: ThrowingAngle
+    angle: 90
+  - type: StaticPrice
+    price: 30
+
+- type: entity
+  name: drill
+  id: N14DrillRusted
+  suffix: N14, Old
+  parent: N14Drill
+  description: A surgical drill for making holes into hard material. It's covered in rust.
+  components:
+  - type: Sprite
+    sprite: _Shitmed/Objects/Specific/Medical/Surgery/drill.rsi
+    state: drill
+  - type: Item
+    sprite: _Shitmed/Objects/Specific/Medical/Surgery/drill.rsi
+    shape:
+    - 0,0,1,0
+    - 1,1,1,1
+  - type: StaticPrice
+    price: 20
+
+# Scalpel
+
+- type: entity
+  name: scalpel
+  id: N14Scalpel
+  suffix: N14, New
+  parent: N14BaseToolSurgery
+  description: A surgical tool used to make incisions into flesh.
+  components:
+  - type: Tool
+    qualities:
+    - Slicing
+  - type: Utensil
+    types:
+      - Knife
+  - type: Sprite
+    sprite: _Shitmed/Objects/Specific/Medical/Surgery/scalpel.rsi
+    state: scalpel
+  - type: Item
+    sprite: _Shitmed/Objects/Specific/Medical/Surgery/scalpel.rsi
+    storedRotation: 90
+  - type: MeleeWeapon
+    wideAnimationRotation: 90
+    swingLeft: true
+    attackRate: .8
+    range: 1.4
+    damage:
+      types:
+        Slash: 3
+        Piercing: 2
+    angle: 20
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: EmbeddableProjectile
+  - type: ThrowingAngle
+    angle: 90
+  - type: StaticPrice
+    price: 20
+
+- type: entity
+  name: scalpel
+  id: N14ScalpelRusted
+  suffix: N14, Old
+  parent: N14Scalpel
+  description: A surgical tool used to make incisions into flesh. It's covered in rust.
+  components:
+  - type: Sprite
+    sprite: _Shitmed/Objects/Specific/Medical/Surgery/scalpel.rsi
+    state: scalpel
+  - type: Item
+    sprite: _Shitmed/Objects/Specific/Medical/Surgery/scalpel.rsi
+    storedRotation: 90
+  - type: StaticPrice
+    price: 12
+
+# Retractor
+
+- type: entity
+  name: retractor
+  id: N14Retractor
+  suffix: N14, New
+  parent: N14BaseToolSurgery
+  description: A surgical tool used to hold open incisions.
+  components:
+  - type: Sprite
+    sprite: _Shitmed/Objects/Specific/Medical/Surgery/retractor.rsi
+    state: retractor
+  - type: Item
+    sprite: _Shitmed/Objects/Specific/Medical/Surgery/retractor.rsi
+    storedRotation: 90
+  - type: MeleeWeapon
+    wideAnimationRotation: 90
+    attackRate: 1.25
+    range: 1.4
+    damage:
+      types:
+        Slash: 2.5
+        Blunt: 2.0
+    angle: 20
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: ThrowingAngle
+    angle: 315
+  - type: EmbeddableProjectile
+  - type: StaticPrice
+    price: 30
+
+- type: entity
+  name: retractor
+  id: N14RetractorRusted
+  suffix: N14, Old
+  parent: N14Retractor
+  description: A surgical tool used to hold open incisions. It's covered in rust.
+  components:
+  - type: Sprite
+    sprite: _Shitmed/Objects/Specific/Medical/Surgery/retractor.rsi
+    state: retractor
+  - type: Item
+    sprite: _Shitmed/Objects/Specific/Medical/Surgery/retractor.rsi
+    storedRotation: 90
+  - type: StaticPrice
+    price: 30
+
+# Hemostat
+
+- type: entity
+  parent: N14BaseToolSurgery
+  id: N14Bonesetter
+  suffix: N14, New
+  name: bone setter
+  description: Used for setting bones back into place.
+  components:
+  - type: Sprite
+    sprite: _Shitmed/Objects/Specific/Medical/Surgery/bonesetter.rsi
+    state: bonesetter
+  - type: Item
+    sprite: _Shitmed/Objects/Specific/Medical/Surgery/bonesetter.rsi
+  - type: StaticPrice
+    price: 35
+
+- type: entity
+  parent: N14Bonesetter
+  id: N14BonesetterRusted
+  suffix: N14, Old
+  name: bone setter
+  description: Used for setting bones back into place. It's covered in rust.
+  components:
+  - type: Sprite
+    sprite: _Shitmed/Objects/Specific/Medical/Surgery/bonesetter.rsi
+    state: bonesetter
+  - type: Item
+    sprite: _Shitmed/Objects/Specific/Medical/Surgery/bonesetter.rsi
+  - type: StaticPrice
+    price: 20
+
+# Bone Gel
+
+- type: entity
+  name: circular saw
+  id: N14SawElectric
+  suffix: N14, New
+  parent: N14BaseToolSurgery
+  description: For heavy duty cutting.
+  components:
+  - type: Sprite
+    sprite: _Shitmed/Objects/Specific/Medical/Surgery/circular-saw.rsi
+    state: circular-saw
+  - type: Item
+    sprite: _Shitmed/Objects/Specific/Medical/Surgery/circular-saw.rsi
+    storedRotation: 90
+  - type: MeleeWeapon
+    attackRate: .86
+    range: 1.5
+    bluntStaminaDamageFactor: 3.0
+    damage:
+      types:
+        Blunt: 4.5
+        Slash: 5.5
+    angle: 360
+    soundHit:
+      path: /Audio/Items/drill_hit.ogg
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Slash: 8
+        Blunt: 2
+  - type: ThrowingAngle
+    angle: 90
+  - type: Tool
+    qualities:
+      - Sawing
+    speedModifier: 1.5
+
+- type: entity
+  name: circular saw
+  id: N14SawElectricRusted
+  suffix: N14, Old
+  parent: N14SawElectric
+  description: For heavy duty cutting. It's covered in rust.
+  components:
+  - type: Sprite
+    sprite: _Shitmed/Objects/Specific/Medical/Surgery/circular-saw.rsi
+    state: circular-saw
+  - type: Item
+    sprite: _Shitmed/Objects/Specific/Medical/Surgery/circular-saw.rsi
+    storedRotation: 90

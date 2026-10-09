@@ -9,6 +9,28 @@
   maxCount: 10 # Forge-Change
 
 - type: stack
+  id: N14DirtyGauze10
+  name: misfits-kit-roll-of-gauze
+  icon: { sprite: "Nuclear14/Objects/Specific/Medical/ms13_medical.rsi", state: gauze_diy1 }
+  spawn: N14DirtyGauze1
+  maxCount: 10
+
+- type: stack
+  id: N14CleanGauze10
+  name: misfits-kit-roll-of-gauze
+  icon: { sprite: "Nuclear14/Objects/Specific/Medical/ms13_medical.rsi", state: gauze }
+  spawn: N14CleanGauze1
+  maxCount: 10
+
+- type: stack
+  id: N14Ointment10
+  name: misfits-kit-oitnment
+  icon: { sprite: "Nuclear14/Objects/Specific/Medical/ms13_medical.rsi", state: tube1 }
+  spawn: N14Ointment1
+  maxCount: 10
+# misfit add:
+
+- type: stack
   id: N14OintmentAdv10
   name: regenerative-mesh
   icon: {sprite: "/Textures/Objects/Specific/Medical/medical.rsi", state: regenerative-mesh}

@@ -9,6 +9,13 @@
   maxCount: 15
 
 - type: stack
+  id: BrahminHide
+  name: misfits-kit-brahmin-hides
+  icon: { sprite: Nuclear14/Objects/Misc/mob_drops.rsi, state: hide_brahmin_2 }
+  spawn: N14MaterialBrahminHide1
+  maxCount: 4
+
+- type: stack
   id: N14Gunpowder
   name: misfits-kit-gunpowder
   icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: powder_lead }
@@ -215,7 +222,7 @@
 
 - type: stack
   id: N14Cement
-  name: cement
+  name: misfits-kit-cement
   icon: { sprite: "/Textures/Nuclear14/Objects/Misc/materials.rsi", state: powder_brass }
   spawn: N14MaterialCement1
   maxCount: 30

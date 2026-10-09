@@ -1,0 +1,30 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Catalog/Fills/Blueprints/minor_factions.yml
+
+- type: entity
+  id: MisfitsCrateAluminiumBlueprintsTribe
+  suffix: Filled, Blueprints, Tribe
+  parent: N14CrateAluminium
+  components:
+  - type: StorageFill
+    contents: []
+
+- type: entity
+  id: MisfitsCrateAluminiumBlueprints80s
+  suffix: Filled, Blueprints, 80s
+  parent: N14CrateAluminium
+  components:
+  - type: StorageFill
+    contents: []
+
+- type: entity
+  id: MisfitsCrateAluminiumBlueprintsEnclave
+  suffix: Filled, Blueprints, Enclave
+  parent: N14CrateAluminium
+  components:
+  - type: StorageFill
+    contents:
+    - id: BoxFolderGrey
+    # #Misfits Add - Enclave faction blueprints. This crate already exists on the
+    # Enclave map and Wendover but held only the folder above, so none of the
+    # Enclave blueprints had an obtain path. The gauss ordnance plans below are
+    # pre-existing and were likewise unobtainable outside admin spawn.

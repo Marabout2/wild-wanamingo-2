@@ -1,0 +1,7 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Datasets/Names/c27_names.yml
+# Changed for Wild Wanamingo: converted to a localizedDataset.
+- type: localizedDataset
+  id: C27FirstGeneric
+  values:
+    prefix: names-c27-first-generic-
+    count: 107

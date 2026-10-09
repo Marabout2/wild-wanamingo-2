@@ -1,6 +1,7 @@
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
+using Content.Shared._Misfits.Special; // Misfits Change
 using Content.Shared.CCVar;
 using Content.Shared.Chat.Prototypes;
 using Content.Shared.EntityEffects.Effects;
@@ -102,6 +103,13 @@ namespace Content.Shared.Preferences
         [DataField]
         public HumanoidCharacterAppearance Appearance { get; set; } = new();
 
+        // Misfits Change - character SPECIAL stats
+        /// <summary>
+        /// Base S.P.E.C.I.A.L. stats picked in the character editor.
+        /// </summary>
+        [DataField]
+        public SpecialProfile Special { get; private set; } = SpecialProfile.Default();
+
         /// <summary>
         /// When spawning into a round what's the preferred spot to spawn.
         /// </summary>
@@ -193,6 +201,7 @@ namespace Content.Shared.Preferences
                 new HashSet<ProtoId<TraitPrototype>>(other.TraitPreferences),
                 new Dictionary<string, RoleLoadout>(other.Loadouts))
         {
+            Special = SpecialProfile.EnsureValid(other.Special); // Misfits Change
         }
 
         /// <summary>
@@ -265,6 +274,7 @@ namespace Content.Shared.Preferences
             var random = IoCManager.Resolve<IRobustRandom>();
 
             var pool = prototypeManager.EnumeratePrototypes<SpeciesPrototype>()
+                .Where(x => x.RandomSelectable) // WW Change
                 .Where(x => ignoredSpecies == null ? x.RoundStart : x.RoundStart && !ignoredSpecies.Contains(x.ID))
                 .ToArray();
             var species = random.Pick(pool);
@@ -544,6 +554,12 @@ namespace Content.Shared.Preferences
             };
         }
 
+        // Misfits Change - character SPECIAL stats
+        public HumanoidCharacterProfile WithSpecial(SpecialProfile special)
+        {
+            return new(this) { Special = SpecialProfile.EnsureValid(special) };
+        }
+
         public HumanoidCharacterProfile WithTraitPreference(ProtoId<TraitPrototype> traitId, IPrototypeManager protoManager)
         {
             // null category is assumed to be default.
@@ -626,6 +642,7 @@ namespace Content.Shared.Preferences
             if (!_traitPreferences.SequenceEqual(other._traitPreferences)) return false;
             if (!Loadouts.SequenceEqual(other.Loadouts)) return false;
             if (FlavorText != other.FlavorText) return false;
+            if (!Special.Equals(other.Special)) return false; // Misfits Change
             return Appearance.Equals(other.Appearance);
         }
 
@@ -781,6 +798,8 @@ namespace Content.Shared.Preferences
             _traitPreferences.Clear();
             _traitPreferences.UnionWith(GetValidTraits(traits, prototypeManager));
 
+            Special = SpecialProfile.EnsureValid(Special); // Misfits Change - over-budget or out-of-range stats reset
+
             // Checks prototypes exist for all loadouts and dump / set to default if not.
             var toRemove = new ValueList<string>();
 
@@ -877,6 +896,7 @@ namespace Content.Shared.Preferences
             hashCode.Add(_antagPreferences);
             hashCode.Add(_traitPreferences);
             hashCode.Add(_loadouts);
+            hashCode.Add(Special); // Misfits Change
             hashCode.Add(Name);
             hashCode.Add(FlavorText);
             hashCode.Add(Species);

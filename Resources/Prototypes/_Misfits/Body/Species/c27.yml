@@ -1,0 +1,280 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Species/c27.yml,
+# Entities/Mobs/Species/c27.yml, Entities/Mobs/Customization/Markings/c27_model.yml
+# Changed for Wild Wanamingo: rewritten for Wizden's organ-based bodies. C-27s are like Wizden's skeletons: no
+# breathing, blood or internal organs (BaseSpeciesMob, external parts only). Each model (generic/NCR/BoS) is its own
+# marking group that forces its factory paint. Their parts.rsi has no feet, so the feet show the leg sprite (same
+# pixels). Not ported yet: languages. The Corvax 1.25x height is a sprite scale. The ZAX model isn't ported.
+
+# --- Factory paint (forced torso marking per model)
+
+- type: markingsGroup
+  parent: Undergarments
+  id: C27
+  onlyGroupWhitelisted: true
+  limits:
+    enum.HumanoidVisualLayers.Chest:
+      limit: 1
+      required: true
+      default: [ C27ModelGeneric ]
+    enum.HumanoidVisualLayers.Head:
+      limit: 1
+      required: false
+
+- type: markingsGroup
+  parent: C27
+  id: C27NCR
+  limits:
+    enum.HumanoidVisualLayers.Chest:
+      limit: 1
+      required: true
+      default: [ C27ModelNCR ]
+
+- type: markingsGroup
+  parent: C27
+  id: C27BoS
+  limits:
+    enum.HumanoidVisualLayers.Chest:
+      limit: 1
+      required: true
+      default: [ C27ModelBoS ]
+
+- type: marking
+  id: C27ModelGeneric
+  bodyPart: Chest
+  groupWhitelist: [ C27, C27NCR, C27BoS ]
+  forcedColoring: true
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#9a8a72" # neutral wasteland gunmetal
+  sprites:
+  - sprite: Misfits/Mobs/Species/C27/parts.rsi
+    state: torso_m
+
+- type: marking
+  id: C27ModelNCR
+  bodyPart: Chest
+  groupWhitelist: [ C27, C27NCR, C27BoS ]
+  forcedColoring: true
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#b59548" # NCR khaki
+  sprites:
+  - sprite: Misfits/Mobs/Species/C27/parts.rsi
+    state: torso_m
+
+- type: marking
+  id: C27ModelBoS
+  bodyPart: Chest
+  groupWhitelist: [ C27, C27NCR, C27BoS ]
+  forcedColoring: true
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#2c4a6e" # Brotherhood of Steel blue
+  sprites:
+  - sprite: Misfits/Mobs/Species/C27/parts.rsi
+    state: torso_m
+
+# --- Body
+
+- type: entity
+  parent: BaseSpeciesAppearance
+  id: AppearanceC27
+  categories: [ HideSpawnMenu ]
+  name: c-27 appearance
+  components:
+  - type: Inventory
+    templateId: c27
+    speciesId: c27
+  - type: InitialBody
+    organs:
+      Torso: OrganC27Torso
+      Head: OrganC27Head
+      ArmLeft: OrganC27ArmLeft
+      ArmRight: OrganC27ArmRight
+      HandRight: OrganC27HandRight
+      HandLeft: OrganC27HandLeft
+      LegLeft: OrganC27LegLeft
+      LegRight: OrganC27LegRight
+      FootLeft: OrganC27FootLeft
+      FootRight: OrganC27FootRight
+  - type: HumanoidProfile
+    species: C27
+
+- type: entity
+  parent: AppearanceC27
+  id: AppearanceC27NCR
+  categories: [ HideSpawnMenu ]
+  name: c-27 NCR appearance
+  components:
+  - type: InitialBody
+    organs:
+      Torso: OrganC27TorsoNCR
+  - type: HumanoidProfile
+    species: C27NCR
+
+- type: entity
+  parent: AppearanceC27
+  id: AppearanceC27BoS
+  categories: [ HideSpawnMenu ]
+  name: c-27 BoS appearance
+  components:
+  - type: InitialBody
+    organs:
+      Torso: OrganC27TorsoBoS
+  - type: HumanoidProfile
+    species: C27BoS
+
+- type: entity
+  abstract: true
+  id: N14BaseMobC27Stats
+  components:
+  - type: Sprite
+    scale: 1.25, 1.25
+  - type: Icon
+    sprite: Misfits/Mobs/Species/C27/parts.rsi
+    state: full
+  - type: NpcFactionMember
+    factions:
+    - Wastelander
+  - type: EncryptionKeyHolder
+    keySlots: 4
+  - type: IntrinsicRadioReceiver
+  - type: IntrinsicRadioTransmitter
+  - type: ActiveRadio
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyWastelandGlobal
+  - type: Damageable
+    damageModifierSet: MisfitsC27Silicon
+  - type: Injurable
+    damageContainer: Silicon # welders and cable coils heal it, like borgs
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      200: Critical
+      400: Dead
+    allowRevives: true
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 2.5
+    baseSprintSpeed: 2.5 # no sprinting
+  - type: Stamina
+    baseCritThreshold: 120
+  - type: Reflect # bare chassis ricochets 10% of bullets (Misfits: small/medium calibers; Wizden only splits energy/non-energy)
+    reflects: NonEnergy
+    reflectProb: 0.1
+    spread: 90
+    soundOnReflect:
+      collection: MetalBulletImpact
+  - type: Speech
+    speechVerb: Robotic
+    speechSounds: Borg
+  - type: Vocal
+    emoteSounds: UnisexSilicon
+  - type: TypingIndicator
+    proto: robot
+
+- type: entity
+  parent: [ AppearanceC27, BaseSpeciesMob, N14BaseMobC27Stats ]
+  id: N14MobC27
+  name: c-27 humanoid robot
+
+- type: entity
+  parent: [ AppearanceC27NCR, BaseSpeciesMob, N14BaseMobC27Stats ]
+  id: N14MobC27NCR
+  name: c-27 humanoid robot
+
+- type: entity
+  parent: [ AppearanceC27BoS, BaseSpeciesMob, N14BaseMobC27Stats ]
+  id: N14MobC27BoS
+  name: c-27 humanoid robot
+
+# --- Parts (metal, no organs inside)
+
+- type: entity
+  parent: OrganBase
+  id: OrganC27External
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Misfits/Mobs/Species/C27/parts.rsi
+  - type: VisualOrgan
+    data:
+      sprite: Misfits/Mobs/Species/C27/parts.rsi
+  - type: VisualOrganMarkings
+    markingData:
+      group: C27
+
+- type: entity
+  parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganC27External ]
+  id: OrganC27Torso
+
+- type: entity
+  parent: OrganC27Torso
+  id: OrganC27TorsoNCR
+  components:
+  - type: VisualOrganMarkings
+    markingData:
+      group: C27NCR
+
+- type: entity
+  parent: OrganC27Torso
+  id: OrganC27TorsoBoS
+  components:
+  - type: VisualOrganMarkings
+    markingData:
+      group: C27BoS
+
+- type: entity
+  parent: [ OrganBaseHeadSexed, OrganBaseHead, OrganC27External ]
+  id: OrganC27Head
+
+- type: entity
+  parent: [ OrganBaseArmLeft, OrganC27External ]
+  id: OrganC27ArmLeft
+
+- type: entity
+  parent: [ OrganBaseArmRight, OrganC27External ]
+  id: OrganC27ArmRight
+
+- type: entity
+  parent: [ OrganBaseHandLeft, OrganC27External ]
+  id: OrganC27HandLeft
+
+- type: entity
+  parent: [ OrganBaseHandRight, OrganC27External ]
+  id: OrganC27HandRight
+
+- type: entity
+  parent: [ OrganBaseLegLeft, OrganC27External ]
+  id: OrganC27LegLeft
+
+- type: entity
+  parent: [ OrganBaseLegRight, OrganC27External ]
+  id: OrganC27LegRight
+
+- type: entity
+  parent: [ OrganBaseFootLeft, OrganC27External ]
+  id: OrganC27FootLeft
+  components:
+  - type: Sprite
+    state: l_leg
+  - type: VisualOrgan
+    data:
+      state: l_leg
+
+- type: entity
+  parent: [ OrganBaseFootRight, OrganC27External ]
+  id: OrganC27FootRight
+  components:
+  - type: Sprite
+    state: r_leg
+  - type: VisualOrgan
+    data:
+      state: r_leg

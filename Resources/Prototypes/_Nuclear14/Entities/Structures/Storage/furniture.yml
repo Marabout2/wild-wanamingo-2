@@ -42,9 +42,19 @@
     sprite: Nuclear14/Structures/Storage/Furniture/safe.rsi
 
 - type: entity
+  parent: [ N14ClosetSafe, N14BaseMilitaryStorageFill ]
+  id: N14LootClosetSafe
+  suffix: Loot, Random Military
+
+- type: entity
   parent: [ N14ClosetSafe, N14StorageFillCurrencyFill ]
   id: N14LootClosetSafeCurrency
   suffix: Loot, Currency one stack random
+
+- type: entity
+  parent: [ N14ClosetSafe, N14StorageFillSafePrewarFill ]
+  id: N14LootClosetSafePrewar
+  suffix: Loot, safe pre-war
 
 - type: entity
   parent: N14ClosetSafe

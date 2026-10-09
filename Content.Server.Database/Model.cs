@@ -344,6 +344,16 @@ namespace Content.Server.Database
         public string EyeColor { get; set; } = null!;
         public string SkinColor { get; set; } = null!;
         public int SpawnPriority { get; set; } = 0;
+
+        // Misfits Change - character SPECIAL stats (1-10, 5 is average)
+        public int SpecialStrength { get; set; } = 5;
+        public int SpecialPerception { get; set; } = 5;
+        public int SpecialEndurance { get; set; } = 5;
+        public int SpecialCharisma { get; set; } = 5;
+        public int SpecialIntelligence { get; set; } = 5;
+        public int SpecialAgility { get; set; } = 5;
+        public int SpecialLuck { get; set; } = 5;
+
         public List<Job> Jobs { get; } = new();
         public List<Antag> Antags { get; } = new();
         public List<Trait> Traits { get; } = new();

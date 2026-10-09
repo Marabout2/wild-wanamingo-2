@@ -1,0 +1,14 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/GeneratedYaml/generatedLootSpawnerRefs/Tier1MedsSpawnRef.yml
+
+- type: entity
+  abstract: true
+  id: M14Tier1Spawner_RefMeds
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/Markers/cross.rsi
+    layers:
+    - state: mono
+      color: lightGray
+    - sprite: Nuclear14/Objects/Specific/Medical/drugs.rsi
+      state: stimpak

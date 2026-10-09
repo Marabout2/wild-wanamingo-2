@@ -1,0 +1,36 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Entities/Markers/Spawners/latejoin.yml
+
+- type: entity
+  id: N14LatejoinMarkerBase
+  abstract: true
+  description: right click > enter, to leave the round.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Transform
+    anchored: true
+  - type: Sprite
+    drawdepth: FloorObjects
+    sprite: Nuclear14/Structures/Walls/nc14/matrix.rsi
+    state: matrix
+  - type: Cryostorage
+  - type: DragInsertContainer
+    containerId: storage
+  - type: ExitContainerOnMove
+    containerId: storage
+  - type: ContainerContainer
+    containers:
+      storage: !type:ContainerSlot
+  - type: InteractionOutline
+
+- type: entity
+  name: latejoin spawn point
+  parent: N14LatejoinMarkerBase
+  id: N14SpawnPointLatejoin
+  suffix: Wastelander
+  components:
+  - type: SpawnPoint
+    spawn_type: LateJoin
+
+# Brotherhood Midwest

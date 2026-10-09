@@ -1,0 +1,27 @@
+# Luck 1 (SPECIAL): occasionally fumbles guns, catches, injectors, defibs and climbing. Misfits gave these characters
+# a 10% clumsy chance; no honk, just bad luck.
+- type: entity
+  parent: [ StatusEffectClumsyAll, MobStatusEffectBase ]
+  id: F14StatusEffectClumsyLuck
+  name: bad luck
+  components:
+  - type: ClumsyCatchStatusEffect
+    clumsyChance: 0.1
+    clumsySound: null
+  - type: ClumsyDefibStatusEffect
+    clumsyChance: 0.1
+    clumsySound: null
+  - type: ClumsyGunStatusEffect
+    clumsyChance: 0.1
+    clumsySound: null
+    failDamage:
+      types:
+        Blunt: 5
+        Piercing: 4
+        Heat: 3
+  - type: ClumsyInjectorStatusEffect
+    clumsyChance: 0.1
+    clumsySound: null
+  - type: ClumsyVaultStatusEffect
+    clumsyChance: 0.1
+    clumsySound: null

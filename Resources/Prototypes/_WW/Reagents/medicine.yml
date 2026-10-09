@@ -1,0 +1,16 @@
+# Addictol: cures addiction outright (Fixer only suppresses it).
+- type: reagent
+  id: F14Addictol
+  name: reagent-name-f14-addictol
+  group: Wasteland
+  desc: reagent-desc-f14-addictol
+  physicalDesc: reagent-physical-desc-soothing
+  flavor: medicine
+  color: "#b8322e"
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 0.5
+      effects:
+      - !type:CureAddiction
+      - !type:Jitter
+        probability: 0.2

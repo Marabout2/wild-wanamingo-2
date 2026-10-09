@@ -1,0 +1,20 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Catalog/Fills/Factions/misc.yml
+
+- type: entity
+  id: MisfitsBriefcaseBrownNCRMedals
+  suffix: Filled, NCR
+  parent: BriefcaseBrown
+  components:
+  - type: StorageFill
+    contents:
+    - id: MisfitsClothingNeckGoldbearmedalNCR
+      amount: 2
+    - id: MisfitsClothingNeckBronzebearNCR
+      amount: 3
+    - id: MisfitsClothingNeckPredatormedalNCR
+    - id: MisfitsClothingNeckBrahminBrainmedalNCR
+    - id: MisfitsClothingNeckEngineeringmedalNCR
+    - id: MisfitsClothingNeckMedicalmedalNCR
+    - id: MisfitsClothingNeckScoutmedalNCR
+    - id: MisfitsCClothingNeckSecuritymedalNCR
+      amount: 2

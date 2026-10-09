@@ -298,7 +298,7 @@
   components:
   - type: Sprite
     sprite: Nuclear14/Objects/Consumable/Food/pre-war.rsi
-    netsync: false
+    state: crisps_trash
   - type: Item
     sprite: Nuclear14/Objects/Consumable/Food/pre-war.rsi
     heldPrefix: packet

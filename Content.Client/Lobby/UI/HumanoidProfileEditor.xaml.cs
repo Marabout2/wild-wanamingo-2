@@ -295,6 +295,8 @@ namespace Content.Client.Lobby.UI
 
             #endregion Markings
 
+            InitializeSpecialTab(); // Misfits Change - S.P.E.C.I.A.L. tab
+
             RefreshFlavorText();
 
             #region Dummy
@@ -393,6 +395,7 @@ namespace Content.Client.Lobby.UI
             RefreshSpecies();
             RefreshTraits();
             RefreshFlavorText();
+            UpdateSpecialControls(); // Misfits Change
             ReloadPreview();
 
             if (Profile != null)

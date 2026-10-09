@@ -1,0 +1,20 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/GeneratedYaml/generatedLootSpawnerRefs/Tier3ConsumableSpawnRef.yml
+
+- type: entity
+  abstract: true
+  id: M14Tier3Spawner_RefConsumable
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/Markers/cross.rsi
+    layers:
+    - state: mono
+      color: '#00b3ff'
+    - sprite: Nuclear14/Objects/Consumable/Drinks/nuka_cola_new.rsi
+      state: quantum
+      offset: 0.15, 0
+      scale: .7, .7
+    - sprite: Nuclear14/Objects/Specific/Medical/ms13_medical.rsi
+      state: bitterdrank
+      offset: -0.15, 0
+      scale: .7, .7

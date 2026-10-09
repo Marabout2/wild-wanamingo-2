@@ -121,6 +121,24 @@
     Steel: 100
 
 - type: latheRecipe
+  id: N14JunkCookpot
+  result: N14JunkCookpot
+  completetime: 1
+  categories:
+  - N14Kitchen
+  materials:
+    Steel: 100
+
+- type: latheRecipe
+  id: N14JunkCoffeepot
+  result: N14JunkCoffeepot
+  completetime: 1
+  categories:
+  - N14Kitchen
+  materials:
+    Steel: 100
+
+- type: latheRecipe
   id: PlantBag
   result: PlantBag
   categories:

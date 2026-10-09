@@ -1,0 +1,151 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Recipes/Crafting/medicine.yml
+
+- type: stack
+  id: MisfitsSnakebiteTourniquet
+  name: misfits-kit-snakebite-tourniquet
+  icon:
+    sprite: Nuclear14/Objects/Specific/Medical/ms13_medical_new.rsi
+    state: tourniquet
+  spawn: MisfitsSnakebiteTourniquet
+  maxCount: 10
+
+- type: stack
+  id: MisfitsHealingSalve
+  name: misfits-kit-healing-salve
+  icon:
+    sprite: Nuclear14/Objects/Specific/Medical/ms13_medical_new.rsi
+    state: ointment1
+  spawn: MisfitsHealingSalve
+  maxCount: 10
+
+- type: stack
+  id: MisfitsHerbalAnodyne
+  name: misfits-kit-herbal-anodyne
+  icon:
+    sprite: Nuclear14/Objects/Specific/Medical/ms13_medical_new.rsi
+    state: aloe2
+  spawn: MisfitsHerbalAnodyne
+  maxCount: 10
+
+- type: stack
+  id: MisfitsHerbalAntimicrobial
+  name: misfits-kit-herbal-antimicrobial
+  icon:
+    sprite: Nuclear14/Objects/Specific/Medical/ms13_medical_new.rsi
+    state: aloe3
+  spawn: MisfitsHerbalAntimicrobial
+  maxCount: 10
+
+- type: entity
+  parent: BaseHealingItem
+  id: MisfitsSnakebiteTourniquet
+  name: snakebite tourniquet
+  description: A treated binding packed with ground buffalo gourd for venomous bites and severe bleeding.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Specific/Medical/ms13_medical_new.rsi
+    state: tourniquet
+  - type: Healing
+    damageContainers:
+    - Biological
+    damage:
+      types:
+        Poison: -2
+        Blunt: 0.666667
+        Slash: 0.666667
+        Piercing: 0.666667
+    bloodlossModifier: -10
+    delay: 1.5
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+  - type: Stack
+    stackType: MisfitsSnakebiteTourniquet
+    count: 1
+
+- type: entity
+  parent: BaseHealingItem
+  id: MisfitsHealingSalve
+  name: healing salve
+  description: A sticky herbal salve used to close lacerations and other slashing wounds. It is deliberately specialized rather than a universal ointment.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Specific/Medical/ms13_medical_new.rsi
+    state: ointment1
+  - type: Item
+    heldPrefix: ointment
+  - type: Healing
+    damageContainers:
+    - Biological
+    # BRUTE SPECIALIST: SLASH.
+    damage:
+      types:
+        Slash: -12
+    # Helps with the hemorrhage associated with open lacerations.
+    bloodlossModifier: -3
+    delay: 2
+    healingBeginSound:
+      path: "/Audio/Items/Medical/ointment_begin.ogg"
+    healingEndSound:
+      path: "/Audio/Items/Medical/ointment_end.ogg"
+  - type: Stack
+    stackType: MisfitsHealingSalve
+    count: 1
+
+- type: entity
+  parent: BaseHealingItem
+  id: MisfitsHerbalAnodyne
+  name: herbal anodyne
+  description: A soothing herbal balm massaged into bruised and battered tissue. It is specialized for blunt trauma rather than cuts or burns.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Specific/Medical/ms13_medical_new.rsi
+    state: aloe2
+  - type: Item
+    heldPrefix: ointment
+  - type: Healing
+    damageContainers:
+    - Biological
+    # BRUTE SPECIALIST: BLUNT.
+    damage:
+      types:
+        Blunt: -10
+    delay: 2.5
+    healingBeginSound:
+      path: "/Audio/Items/Medical/ointment_begin.ogg"
+    healingEndSound:
+      path: "/Audio/Items/Medical/ointment_end.ogg"
+  - type: Stack
+    stackType: MisfitsHerbalAnodyne
+    count: 1
+
+- type: entity
+  parent: BaseHealingItem
+  id: MisfitsHerbalAntimicrobial
+  name: herbal antimicrobial
+  description: A pungent herbal poultice used to neutralize chemical burns and clean contaminated tissue.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Specific/Medical/ms13_medical_new.rsi
+    state: aloe3
+  - type: Item
+    heldPrefix: ointment
+  - type: Healing
+    damageContainers:
+    - Biological
+    # BURN SPECIALIST: CAUSTIC.
+    # A small Poison heal represents cleaning contaminated tissue without turning
+    # this into a general antidote.
+    damage:
+      types:
+        Caustic: -10
+        Poison: -2
+    delay: 2.5
+    healingBeginSound:
+      path: "/Audio/Items/Medical/ointment_begin.ogg"
+    healingEndSound:
+      path: "/Audio/Items/Medical/ointment_end.ogg"
+  - type: Stack
+    stackType: MisfitsHerbalAntimicrobial
+    count: 1

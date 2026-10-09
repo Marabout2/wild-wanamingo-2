@@ -6,13 +6,13 @@
   name: zoy milk
   description: A glass bottle of zoy milk.
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 50
-        reagents:
-        - ReagentId: MisfitsMilkZoy
-          Quantity: 50
+  - type: Solution
+    id: drink
+    solution:
+      maxVol: 50
+      reagents:
+      - ReagentId: MisfitsMilkZoy
+        Quantity: 50
   - type: Sprite
     sprite: Nuclear14/Objects/Consumable/Drinks/milk.rsi
     layers:

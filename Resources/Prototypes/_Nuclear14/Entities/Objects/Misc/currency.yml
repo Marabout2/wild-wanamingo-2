@@ -2,6 +2,33 @@
 # Resources/Prototypes/_Nuclear14/Entities/Objects/Misc/currency.yml
 
 - type: entity
+  name: wallet
+  id: N14Wallet
+  parent: BaseStorageItem
+  description: A wallet for storing lots of money.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Misc/storage.rsi
+    state: wallet
+    offset: "0.0,-0.02"
+    # scale: 0.8, 0.8
+  - type: Item
+    storedRotation: -90
+  - type: Storage
+    grid:
+    - 0,0,2,1
+    maxItemSize: Normal
+    quickInsert: true
+    areaInsert: true
+    whitelist:
+      tags:
+      - BottleCap
+      - Currency
+      - DoorBumpOpener
+  # Pull loose bottlecaps into the wallet while it is worn, like an OreBag.
+  - type: Dumpable
+
+- type: entity
   parent: BaseItem
   id: N14CurrencyCap
   name: bottlecap

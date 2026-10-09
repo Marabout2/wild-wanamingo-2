@@ -1,9 +1,10 @@
 // Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Content.Shared/_Misfits/Scope/SharedScopeSystem.cs (Misfits ported it from RMC-14, https://github.com/RMC-14/RMC-14)
-// Changed for Wild Wanamingo: night-vision/thermal scope modes and the Perception (SPECIAL) delay are removed until
-// those systems are ported; zoom levels cycle with the action instead of the scroll wheel.
+// Changed for Wild Wanamingo: night-vision/thermal scope modes are removed until those systems are ported; zoom levels
+// cycle with the action instead of the scroll wheel.
 
 // #Misfits Add - Core shared scoping system (ported from RMC-14 Scoping)
 using System.Numerics;
+using Content.Shared._Misfits.Special;
 using Content.Shared.Actions;
 using Content.Shared.Camera;
 using Content.Shared.DoAfter;
@@ -30,6 +31,7 @@ namespace Content.Shared._Misfits.Scope;
 public abstract partial class SharedScopeSystem : EntitySystem
 {
     [Dependency] private ActionContainerSystem _actionContainer = default!;
+    [Dependency] private SharedSpecialSystem _special = default!;
     [Dependency] private SharedActionsSystem _actionsSystem = default!;
     [Dependency] private SharedContainerSystem _container = default!;
     [Dependency] private SharedContentEyeSystem _contentEye = default!;
@@ -331,7 +333,8 @@ public abstract partial class SharedScopeSystem : EntitySystem
         var ev = new ScopeDoAfterEvent(cardinalDir);
         var zoomLevel = GetCurrentZoomLevel(scope);
         var delay = zoomLevel.DoAfter;
-        // Misfits scaled the delay for guns by the user's Perception (SPECIAL); add back when SPECIAL is ported.
+        if (TryGetActiveEntity(scope, out var active) && HasComp<GunComponent>(active))
+            delay *= _special.GetPerceptionScopeDelayMultiplier(user);
 
         var doAfter = new DoAfterArgs(EntityManager, user, delay, ev, scope, null, scope)
         {

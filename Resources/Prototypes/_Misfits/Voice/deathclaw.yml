@@ -1,0 +1,44 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Voice/deathclaw.yml
+
+- type: speechSounds
+  id: MisfitsDeathclaw
+  saySound:
+    path: /Audio/Misfits/Mobs/Deathclaw/idle.ogg
+  askSound:
+    path: /Audio/Misfits/Mobs/Deathclaw/aggro1.ogg
+  exclaimSound:
+    path: /Audio/Misfits/Mobs/Deathclaw/taunt.ogg
+
+- type: emoteSounds
+  id: MisfitsDeathclawEmotes
+  params:
+    variation: 0.08
+  sounds:
+    MisfitsDeathclawGrowl:
+      path: /Audio/Misfits/Mobs/Deathclaw/aggro2.ogg
+    MisfitsDeathclawRoar:
+      path: /Audio/Misfits/Mobs/Deathclaw/taunt.ogg
+
+- type: emote
+  id: MisfitsDeathclawGrowl
+  name: misfits-emote-name-deathclaw-growl
+  category: Vocal
+  icon: Misfits/Interface/Emotes/growl.png
+  available: false
+  whitelist:
+    components:
+    - SentientDeathclaw
+  chatMessages:
+  - misfits-emote-message-deathclaw-growl
+
+- type: emote
+  id: MisfitsDeathclawRoar
+  name: misfits-emote-name-deathclaw-roar
+  category: Vocal
+  icon: Interface/Emotes/scream.png
+  available: false
+  whitelist:
+    components:
+    - SentientDeathclaw
+  chatMessages:
+  - misfits-emote-message-deathclaw-roar

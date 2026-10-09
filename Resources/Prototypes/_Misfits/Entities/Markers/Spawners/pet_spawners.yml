@@ -1,0 +1,27 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Markers/Spawners/pet_spawners.yml
+
+- type: entity
+  id: MisfitsPetSpawnerBase
+  name: pet spawner
+  abstract: true
+  components:
+  - type: Transform
+  - type: Sprite              # actually, maybe SOME sprite, but not one players will see
+    drawdepth: Overdoors
+    sprite: Markers/cross.rsi
+
+# Dog companion spawner
+
+- type: entity
+  parent: MisfitsPetSpawnerBase
+  id: MisfitsPetSpawnerEyebot
+  name: companion eyebot spawner
+  components:
+  - type: GhostRole
+    name: ghost-role-information-n14pet-eyebot-name
+    description: ghost-role-information-n14pet-eyebot-description
+    rules: ghost-role-component-default-rules
+  - type: GhostRoleMobSpawner
+    prototype: N14MobPetEyebot
+
+# Eyebot MBoS companion spawner (Brotherhood of Steel)

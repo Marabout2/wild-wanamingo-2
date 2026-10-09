@@ -8,10 +8,10 @@
   id: N14FoodJarBase
   components:
   - type: Appearance
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
+  - type: Solution
+    id: drink
+    solution:
+      maxVol: 30
   - type: SolutionContainerVisuals
     maxFillLevels: 7
     fillBaseName: fill
@@ -68,13 +68,13 @@
   name: agave jam
   description: A jar filled with agave jam. Wait... people make agave jam?
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: AgaveJam
-          Quantity: 30
+  - type: Solution
+    id: drink
+    solution:
+      maxVol: 30
+      reagents:
+      - ReagentId: AgaveJam
+        Quantity: 30
 
 - type: entity
   parent: N14FoodJamBase
@@ -83,13 +83,13 @@
   description: A jar filled with blackberry jam. What a treat!
   components:
   - type: FlavorProfile
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: BlackberryJam
-          Quantity: 30
+  - type: Solution
+    id: drink
+    solution:
+      maxVol: 30
+      reagents:
+      - ReagentId: BlackberryJam
+        Quantity: 30
 
 - type: entity
   parent: N14FoodJamBase
@@ -101,13 +101,13 @@
     flavors:
     - medicine
     - F14Floral
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: BrocJam
-          Quantity: 30
+  - type: Solution
+    id: drink
+    solution:
+      maxVol: 30
+      reagents:
+      - ReagentId: BrocJam
+        Quantity: 30
 
 - type: entity
   parent: N14FoodJamBase
@@ -119,13 +119,13 @@
     flavors:
     - sour
     - F14Crisp
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: CactusJam
-          Quantity: 30
+  - type: Solution
+    id: drink
+    solution:
+      maxVol: 30
+      reagents:
+      - ReagentId: CactusJam
+        Quantity: 30
 
 - type: entity
   parent: N14FoodJamBase
@@ -133,13 +133,13 @@
   name: multifruit jam
   description: A jar filled with multifruit jam. Now where is some toast?
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: MultifruitJam
-          Quantity: 30
+  - type: Solution
+    id: drink
+    solution:
+      maxVol: 30
+      reagents:
+      - ReagentId: MultifruitJam
+        Quantity: 30
 
 - type: entity
   parent: N14FoodJamBase
@@ -147,13 +147,13 @@
   name: prickly pear jam
   description: A jar filled with prickly pear jam. Now THIS is jam!
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: PricklyPearJam
-          Quantity: 30
+  - type: Solution
+    id: drink
+    solution:
+      maxVol: 30
+      reagents:
+      - ReagentId: PricklyPearJam
+        Quantity: 30
 
 - type: entity
   parent: N14FoodJamBase
@@ -161,13 +161,13 @@
   name: starlight jam
   description: A jar filled with starlight jam. Its a pretty color.
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: StarlightJam
-          Quantity: 30
+  - type: Solution
+    id: drink
+    solution:
+      maxVol: 30
+      reagents:
+      - ReagentId: StarlightJam
+        Quantity: 30
 
 - type: entity
   parent: N14FoodJamBase
@@ -175,15 +175,13 @@
   name: tarberry jam
   description: A jar filled with tarberry jam. It gives you a strange feeling...
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: TarberryJam
-          Quantity: 30
-
-# Start of pickled jars
+  - type: Solution
+    id: drink
+    solution:
+      maxVol: 30
+      reagents:
+      - ReagentId: TarberryJam
+        Quantity: 30
 
 - type: entity
   parent: N14PickledBase
@@ -191,13 +189,13 @@
   name: pickled cabbage
   description: A jar filled with pickled cabbage. How old is this?
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: PickledCabbage
-          Quantity: 30
+  - type: Solution
+    id: drink
+    solution:
+      maxVol: 30
+      reagents:
+      - ReagentId: PickledCabbage
+        Quantity: 30
 
 - type: entity
   parent: N14PickledBase
@@ -205,13 +203,13 @@
   name: pickled carrots
   description: A jar filled with pickled carrots. I guess people will pickle anything now-a-days.
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: PickledCarrots
-          Quantity: 30
+  - type: Solution
+    id: drink
+    solution:
+      maxVol: 30
+      reagents:
+      - ReagentId: PickledCarrots
+        Quantity: 30
 
 - type: entity
   parent: N14PickledBase
@@ -219,13 +217,13 @@
   name: pickled corn
   description: A jar filled with pickled corn. Aw, its baby corn.
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: PickledCorn
-          Quantity: 30
+  - type: Solution
+    id: drink
+    solution:
+      maxVol: 30
+      reagents:
+      - ReagentId: PickledCorn
+        Quantity: 30
 
 - type: entity
   parent: N14PickledBase
@@ -233,13 +231,13 @@
   name: pickled jalapenos
   description: A jar filled with pickled jalapenos. So hot!
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: PickledJalapenos
-          Quantity: 30
+  - type: Solution
+    id: drink
+    solution:
+      maxVol: 30
+      reagents:
+      - ReagentId: PickledJalapenos
+        Quantity: 30
 
 - type: entity
   parent: N14PickledBase
@@ -247,10 +245,10 @@
   name: pickled onions
   description: A jar filled with pickled onions. What a crunch!
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: PickledOnions
-          Quantity: 30
+  - type: Solution
+    id: drink
+    solution:
+      maxVol: 30
+      reagents:
+      - ReagentId: PickledOnions
+        Quantity: 30

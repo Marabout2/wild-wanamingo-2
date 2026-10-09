@@ -1,0 +1,74 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Markers/Spawners/pets.yml
+
+- type: entity
+  parent: MarkerBase
+  id: MisfitsSpawnerRabbitFollowersPet
+  name: dr. thumper rabbit pet followers spawner
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: Nuclear14/Mobs/Animals/rabbit.rsi
+      state: rabbit
+    - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+    - MisfitsMobRabbitFollowersPet
+
+- type: entity
+  parent: MarkerBase
+  id: MisfitsSpawnerMobLizardBoSPet1
+  name: timmy bos pet spawner
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: Mobs/Animals/lizard.rsi
+      state: lizard
+    - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+    - MisfitsMobLizardBoSPet1
+
+- type: entity
+  parent: MarkerBase
+  id: MisfitsSpawnerMobLizardBoSPet2
+  name: jimmy bos pet spawner
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: Mobs/Animals/lizard.rsi
+      state: lizard
+    - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+    - MisfitsMobLizardBoSPet2
+
+- type: entity
+  parent: MarkerBase
+  id: MisfitsSpawnerMobPetDogLegion
+  name: legion dog spawner
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: Nuclear14/Mobs/Animals/dogwolf.rsi
+      state: wolf
+    - state: ai
+  - type: ConditionalSpawner
+    prototypes: []
+
+- type: entity
+  parent: MarkerBase
+  id: MisfitsSpawnerMobPetRadToad
+  name: rad toad spawner
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: Misfits/Mobs/NPCs/radtoad.rsi
+      state: radtoad
+    - state: ai
+  - type: ConditionalSpawner
+    prototypes: []

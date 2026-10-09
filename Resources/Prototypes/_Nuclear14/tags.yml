@@ -14,6 +14,9 @@
   id: Currency
 
 - type: Tag
+  id: JunkItem
+
+- type: Tag
   id: Jam
 
 - type: Tag
@@ -29,6 +32,9 @@
   id: Jet
 
 - type: Tag
+  id: HydraInhaler
+
+- type: Tag
   id: Turbo
 
 - type: Tag
@@ -37,22 +43,69 @@
 # Medical Items
 
 - type: Tag
+  id: N14DirtyGauze
+
+- type: Tag
+  id: N14CleanGauze
+
+- type: Tag
   id: N14EmptySyringe
 
 - type: Tag
   id: N14EmptyNukaBottle
 
 - type: Tag
+  id: N14TribalMedicine # #Misfits Add: used to whitelist tribal medicines (powder, poultice) in the Medical Belt
+
+#MARK: Crafts
+
+- type: Tag
   id: Abraxo
+
+- type: Tag
+  id: SensorModule
+
+- type: Tag
+  id: Baseball
+
+- type: Tag
+  id: JunkTimer
+
+- type: Tag
+  id: Turpentine
+
+- type: Tag
+  id: JunkKettle
 
 - type: Tag
   id: Tincan
 
 - type: Tag
+  id: N14JunkLunchbox
+
+- type: Tag
   id: Scrap
 
 - type: Tag
+  id: Phial
+
+- type: Tag
+  id: CookPot
+
+- type: Tag
+  id: DuctTape
+
+- type: Tag
+  id: Screw
+
+- type: Tag
+  id: Gear
+
+- type: Tag
   id: YaoguaiHide
+
+- type: Tag
+  id: GearSmall
 
 - type: Tag
   id: RifleScope # #Misfits Fix: uncommented — used by N14JunkGunpartsRifleScope
@@ -61,10 +114,70 @@
   id: N14FirearmMuzzleAttachment
 
 - type: Tag
+  id: RifleStock1
+
+- type: Tag
+  id: RecoilComp
+
+- type: Tag
+  id: Action
+
+- type: Tag
+  id: Bolt
+
+- type: Tag
+  id: Stock
+
+- type: Tag
+  id: StockWood
+
+- type: Tag
+  id: RifleFrame
+
+- type: Tag
+  id: GunFrame
+
+- type: Tag
+  id: PistolFrame
+
+- type: Tag
+  id: N14AdvancedFrame
+
+- type: Tag
+  id: Receiver
+
+- type: Tag
+  id: Barrel
+
+- type: Tag
+  id: Trigger
+
+- type: Tag
+  id: WeaponParts1
+
+- type: Tag
+  id: WeaponParts2
+
+- type: Tag
+  id: WeaponParts3
+
+- type: Tag
   id: VarmintRifle
 
 - type: Tag
+  id: Mainboard
+
+- type: Tag
+  id: Sensor
+
+- type: Tag
+  id: N14Igniter
+
+- type: Tag
   id: N14PoliceBaton
+
+- type: Tag
+  id: Switch
 
 - type: Tag
   id: PoliceVest
@@ -314,3 +427,6 @@
 
 - type: Tag
   id: Deathclaw
+
+- type: Tag
+  id: NightstalkerPelt

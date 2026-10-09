@@ -157,6 +157,24 @@
     Glass: 100
 
 - type: latheRecipe
+  id: N14HydraInhaler
+  result: N14HydraInhaler
+  completetime: 2
+  categories:
+  - N14Chemistry
+  materials:
+    Glass: 100
+
+- type: latheRecipe
+  id: N14RadAwayPhialEmpty
+  result: N14RadAwayPhialEmpty
+  completetime: 2
+  categories:
+  - N14Chemistry
+  materials:
+    Glass: 100
+
+- type: latheRecipe
   id: N14ChemistryEmptyBottle01
   result: ChemistryEmptyBottle01
   completetime: 2

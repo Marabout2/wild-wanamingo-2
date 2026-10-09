@@ -1,0 +1,253 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Species/ghoul.yml, ghoulglowing.yml, Entities/Mobs/Species/ghouls.yml,
+# Entities/Mobs/Player/ghouls.yml
+# Changed for Wild Wanamingo: rewritten for Wizden's organ-based bodies. Ghouls are humans with ghoul skin (their
+# parts.rsi has the same states as Wizden's human one), radiation healing and tougher insides. Misfits' custom
+# starvation/dehydration damage is left out (Wizden's Satiation replaces hunger and thirst).
+
+# Same marking slots as humans (hair, facial hair...).
+- type: markingsGroup
+  parent: Human
+  id: Ghoul
+
+# --- Ghoul
+
+- type: entity
+  parent: AppearanceHuman
+  id: AppearanceGhoul
+  categories: [ HideSpawnMenu ]
+  name: ghoul appearance
+  components:
+  - type: InitialBody
+    organs:
+      Torso: OrganGhoulTorso
+      Head: OrganGhoulHead
+      ArmLeft: OrganGhoulArmLeft
+      ArmRight: OrganGhoulArmRight
+      HandRight: OrganGhoulHandRight
+      HandLeft: OrganGhoulHandLeft
+      LegLeft: OrganGhoulLegLeft
+      LegRight: OrganGhoulLegRight
+      FootLeft: OrganGhoulFootLeft
+      FootRight: OrganGhoulFootRight
+      Brain: OrganHumanBrain
+      Eyes: OrganHumanEyes
+      Tongue: OrganHumanTongue
+      Appendix: OrganHumanAppendix
+      Ears: OrganHumanEars
+      Lungs: OrganHumanLungs
+      Heart: OrganHumanHeart
+      Stomach: OrganHumanStomach
+      Liver: OrganHumanLiver
+      Kidneys: OrganHumanKidneys
+  - type: HumanoidProfile
+    species: Ghoul
+
+- type: entity
+  parent:
+  - AppearanceGhoul
+  - BaseSpeciesMobOrganic
+  id: N14MobGhoul
+  name: Urist McGhoul
+  components:
+  - type: Icon
+    sprite: Nuclear14/Mobs/Species/Ghoul/parts.rsi
+    state: full
+  - type: Perishable
+    rotAfter: 3600 # an entire in-game day
+  - type: Damageable
+    damageModifierSet: Ghoul
+  - type: RadiationReceiver
+  - type: RadiationHealing
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      100: Critical
+      150: Dead
+  - type: NpcFactionMember
+    factions:
+    - Wastelander
+
+- type: entity
+  parent: OrganHuman
+  id: OrganGhoulExternal
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Mobs/Species/Ghoul/parts.rsi
+  - type: VisualOrgan
+    data:
+      sprite: Nuclear14/Mobs/Species/Ghoul/parts.rsi
+  - type: VisualOrganMarkings
+    markingData:
+      group: Ghoul
+
+- type: entity
+  parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganGhoulExternal ]
+  id: OrganGhoulTorso
+
+- type: entity
+  parent: [ OrganBaseHeadSexed, OrganBaseHead, OrganGhoulExternal ]
+  id: OrganGhoulHead
+  components:
+  - type: VisualOrganMarkings
+    hideableLayers:
+    - enum.HumanoidVisualLayers.Hair
+    - enum.HumanoidVisualLayers.Snout
+    - enum.HumanoidVisualLayers.FacialHair
+
+- type: entity
+  parent: [ OrganBaseArmLeft, OrganGhoulExternal ]
+  id: OrganGhoulArmLeft
+
+- type: entity
+  parent: [ OrganBaseArmRight, OrganGhoulExternal ]
+  id: OrganGhoulArmRight
+
+- type: entity
+  parent: [ OrganBaseHandLeft, OrganGhoulExternal ]
+  id: OrganGhoulHandLeft
+
+- type: entity
+  parent: [ OrganBaseHandRight, OrganGhoulExternal ]
+  id: OrganGhoulHandRight
+
+- type: entity
+  parent: [ OrganBaseLegLeft, OrganGhoulExternal ]
+  id: OrganGhoulLegLeft
+
+- type: entity
+  parent: [ OrganBaseLegRight, OrganGhoulExternal ]
+  id: OrganGhoulLegRight
+
+- type: entity
+  parent: [ OrganBaseFootLeft, OrganGhoulExternal ]
+  id: OrganGhoulFootLeft
+
+- type: entity
+  parent: [ OrganBaseFootRight, OrganGhoulExternal ]
+  id: OrganGhoulFootRight
+
+# --- Glowing ghoul: glows, emits a little radiation, resists gamma, and is frailer.
+
+- type: entity
+  parent: AppearanceHuman
+  id: AppearanceGhoulGlowing
+  categories: [ HideSpawnMenu ]
+  name: glowing ghoul appearance
+  components:
+  - type: InitialBody
+    organs:
+      Torso: OrganGhoulGlowingTorso
+      Head: OrganGhoulGlowingHead
+      ArmLeft: OrganGhoulGlowingArmLeft
+      ArmRight: OrganGhoulGlowingArmRight
+      HandRight: OrganGhoulGlowingHandRight
+      HandLeft: OrganGhoulGlowingHandLeft
+      LegLeft: OrganGhoulGlowingLegLeft
+      LegRight: OrganGhoulGlowingLegRight
+      FootLeft: OrganGhoulGlowingFootLeft
+      FootRight: OrganGhoulGlowingFootRight
+      Brain: OrganHumanBrain
+      Eyes: OrganHumanEyes
+      Tongue: OrganHumanTongue
+      Appendix: OrganHumanAppendix
+      Ears: OrganHumanEars
+      Lungs: OrganHumanLungs
+      Heart: OrganHumanHeart
+      Stomach: OrganHumanStomach
+      Liver: OrganHumanLiver
+      Kidneys: OrganHumanKidneys
+  - type: HumanoidProfile
+    species: GhoulGlowing
+
+- type: entity
+  parent:
+  - AppearanceGhoulGlowing
+  - BaseSpeciesMobOrganic
+  id: N14MobGhoulGlowing
+  name: Urist McGlow
+  components:
+  - type: Icon
+    sprite: Nuclear14/Mobs/Species/GhoulGlowing/parts.rsi
+    state: full
+  - type: Perishable
+    rotAfter: 3600
+  - type: Damageable
+    damageModifierSet: F14GhoulGlowing # GhoulGlowing x N14GammaShield (Wizden allows one set)
+  - type: RadiationReceiver
+  - type: RadiationHealing
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      90: Critical
+      130: Dead
+  - type: PointLight
+    radius: 2
+    energy: 0.5
+  - type: RadiationSource
+    intensity: 0.5
+    slope: 0.25
+  - type: NpcFactionMember
+    factions:
+    - Wastelander
+
+- type: entity
+  parent: OrganHuman
+  id: OrganGhoulGlowingExternal
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Mobs/Species/GhoulGlowing/parts.rsi
+  - type: VisualOrgan
+    data:
+      sprite: Nuclear14/Mobs/Species/GhoulGlowing/parts.rsi
+  - type: VisualOrganMarkings
+    markingData:
+      group: Ghoul
+
+- type: entity
+  parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganGhoulGlowingExternal ]
+  id: OrganGhoulGlowingTorso
+
+- type: entity
+  parent: [ OrganBaseHeadSexed, OrganBaseHead, OrganGhoulGlowingExternal ]
+  id: OrganGhoulGlowingHead
+  components:
+  - type: VisualOrganMarkings
+    hideableLayers:
+    - enum.HumanoidVisualLayers.Hair
+    - enum.HumanoidVisualLayers.Snout
+    - enum.HumanoidVisualLayers.FacialHair
+
+- type: entity
+  parent: [ OrganBaseArmLeft, OrganGhoulGlowingExternal ]
+  id: OrganGhoulGlowingArmLeft
+
+- type: entity
+  parent: [ OrganBaseArmRight, OrganGhoulGlowingExternal ]
+  id: OrganGhoulGlowingArmRight
+
+- type: entity
+  parent: [ OrganBaseHandLeft, OrganGhoulGlowingExternal ]
+  id: OrganGhoulGlowingHandLeft
+
+- type: entity
+  parent: [ OrganBaseHandRight, OrganGhoulGlowingExternal ]
+  id: OrganGhoulGlowingHandRight
+
+- type: entity
+  parent: [ OrganBaseLegLeft, OrganGhoulGlowingExternal ]
+  id: OrganGhoulGlowingLegLeft
+
+- type: entity
+  parent: [ OrganBaseLegRight, OrganGhoulGlowingExternal ]
+  id: OrganGhoulGlowingLegRight
+
+- type: entity
+  parent: [ OrganBaseFootLeft, OrganGhoulGlowingExternal ]
+  id: OrganGhoulGlowingFootLeft
+
+- type: entity
+  parent: [ OrganBaseFootRight, OrganGhoulGlowingExternal ]
+  id: OrganGhoulGlowingFootRight

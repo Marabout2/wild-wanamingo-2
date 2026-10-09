@@ -1,0 +1,43 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier3Weapon/Tier3WeaponTables/Tier3WeaponEnergy/TwoHanded/Tier3EnergyTwoHandedBase.yml
+
+- type: entityTable
+  id: M14WeaponLootTier3_EnergyRifle
+  table: !type:GroupSelector
+    children:
+      - !type:NestedSelector
+          tableId: M14WeaponLootTier3_EnergyRifleAuto
+      - !type:NestedSelector
+          tableId: M14WeaponLootTier3_EnergyRifleSemi
+
+- type: entityTable
+  id: M14WeaponLootTier3_EnergyRifleAuto
+  table: !type:GroupSelector
+    children:
+      - !type:NestedSelector
+          tableId: M14WeaponLootTier3_LaserRifleAuto
+#      - !type:NestedSelector
+#          tableId: M14WeaponLootTier3_PlasmaRifleAuto
+      - !type:NestedSelector
+          tableId: M14WeaponLootTier3_OtherRifleAuto
+
+- type: entityTable
+  id: M14WeaponLootTier3_EnergyRifleSemi
+  table: !type:GroupSelector
+    children:
+      - !type:NestedSelector
+          tableId: M14WeaponLootTier3_LaserRifleSemi
+      - !type:NestedSelector
+          tableId: M14WeaponLootTier3_PlasmaRifleSemi
+#      - !type:NestedSelector
+#          tableId: M14WeaponLootTier3_OtherRifleSemi
+
+- type: entityTable
+  id: M14WeaponLootTier3_EnergyHeavy
+  table: !type:GroupSelector
+    children:
+#      - !type:NestedSelector
+#          tableId: M14WeaponLootTier3_LaserHeavy
+#      - !type:NestedSelector
+#          tableId: M14WeaponLootTier3_PlasmaHeavy
+      - !type:NestedSelector
+          tableId: M14WeaponLootTier3_OtherHeavy

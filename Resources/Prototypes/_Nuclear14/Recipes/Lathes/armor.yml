@@ -145,6 +145,17 @@
 # Shield's
 
 - type: latheRecipe
+  id: N14InsectShield
+  result: N14InsectShield
+  categories:
+  - N14Shield
+  completetime: 6
+  materials:
+    # AntChitin: 150
+    Exoskeleton: 50
+    Wood: 400
+
+- type: latheRecipe
   id: MakeshiftShield
   result: MakeshiftShield
   categories:

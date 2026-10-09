@@ -8,6 +8,12 @@
 # and (combined with MisfitsC27ArmorComponent in Phase D) to enforce species-locked equipment.
 
 - type: Tag
+  id: C27Wearable
+
+# #Misfits Add - Tags for construction materials (cement/concrete/brick building system).
+# Referenced by TagComponent on N14MaterialCement, N14MaterialConcrete, and N14MaterialBrick.
+
+- type: Tag
   id: Cement
 
 - type: Tag

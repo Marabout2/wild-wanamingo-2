@@ -1,0 +1,92 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Catalog/Fills/Factions/idcards.yml
+
+- type: entity
+  name: ID card box
+  parent: BoxCardboard
+  id: BoxIDVault
+  description: A box of spare ID cards.
+  components:
+  - type: StorageFill
+    contents: []
+  - type: Sprite
+    layers:
+    - state: box
+    - state: pda
+
+- type: entity
+  name: medallion box
+  parent: BoxCardboard
+  id: BoxIDLegion
+  description: A box of spare medallions.
+  components:
+  - type: StorageFill
+    contents: []
+  - type: Sprite
+    layers:
+    - state: box
+    - state: pda
+
+- type: entity
+  name: dog tag box
+  parent: BoxCardboard
+  id: BoxIDNCR
+  description: A box of spare ID cards.
+  components:
+  - type: StorageFill
+    contents: []
+  - type: Sprite
+    layers:
+    - state: box
+    - state: pda
+
+- type: entity
+  name: followers ID card box
+  parent: BoxCardboard
+  id: BoxIDFollowers
+  description: A box of spare ID cards.
+  components:
+  - type: StorageFill
+    contents: []
+  - type: Sprite
+    layers:
+    - state: box
+    - state: pda
+
+- type: entity
+  name: holotags box
+  parent: BoxCardboard
+  id: BoxIDBrotherhoodOfSteel
+  description: A box of spare holotags.
+  components:
+  - type: StorageFill
+    contents: []
+  - type: Sprite
+    layers:
+    - state: box
+    - state: pda
+
+- type: entity
+  name: passport box
+  parent: BoxCardboard
+  id: BoxIDTown
+  description: A box of spare passports.
+  components:
+  - type: StorageFill
+    contents: []
+  - type: Sprite
+    layers:
+    - state: box
+    - state: pda
+
+- type: entity
+  name: pendant box
+  parent: BoxCardboard
+  id: BoxIDTribe
+  description: A box of spare pendants.
+  components:
+  - type: StorageFill
+    contents: []
+  - type: Sprite
+    layers:
+    - state: box
+    - state: pda

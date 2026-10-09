@@ -79,6 +79,8 @@
   - N14FoodPlateSmallPlastic
   - N14FoodPlateTin
   - N14FoodKebabSkewer
+  - N14JunkCookpot
+  - N14JunkCoffeepot
   - PlantBag
   - FoodBowlBig
   - N14Mop
@@ -103,9 +105,12 @@
   - N14JetInhaler
   - N14Med-XInjector
   - N14TurboInhaler
+  - N14HydraInhaler
   - N14ChemicalSyringeAntidoteEmpty
   - N14PsychoSyringe
   - N14CombatInjector
+  - N14RadAwayPhialEmpty
+  - N14CleanGauze1
   - N14LightTube
   - N14LedLightTube
   - N14SodiumLightTube
@@ -114,6 +119,9 @@
   - N14LedLightBulb
   - N14Flare
   - N14Matchbox
+  - N14JunkComponentScrew
+  - N14JunkComponentGearSmall
+  - N14JunkComponentGearLarge
   - FloorTileItemMetalIndustrial
   - FloorTileItemMetalMS13
   - FloorTileItemMetalGrate
@@ -134,11 +142,17 @@
   - N14MiningDrill
   - N14HandheldRadio
   - N14GeigerCounter
+  - N14HandheldHealthAnalyzer
   - N14RemoteSignaller
   - N14Binoculars
   - N14FlashlightLantern
   - N14GlowstickRed
   - MicroManipulatorStockPart
+  - N14JunkComponentSensorModule
+  - N14JunkComponentDiode1
+  - N14JunkComponentFuse1
+  - N14JunkComponentSwitch
+  - N14JunkTimer
   - LandMineKick
   - LandMineExplosive
   - LandMineModular
@@ -167,6 +181,7 @@
   - N14ClothingOuterLightLeatherArmor
   - N14ClothingOuterLeatherRobes
   - N14ClothingOuterBlackRobes
+  - N14InsectShield
   - N14MaterialLeather
   - ClothingBeltQuiver
 
@@ -262,6 +277,19 @@
   - N14LongSword
   - N14Bola
   - ThrowingKnife
+  - N14JunkGunpartsAction
+  - N14JunkGunpartsBarrel
+  - N14JunkGunpartsBolt
+  - N14JunkGunpartsFrame
+  - N14JunkGunpartsFramePistol
+  - N14JunkGunpartsReceiver
+  - N14JunkGunpartsRecoilComp
+  - N14JunkGunpartsRifleFrame
+  - N14JunkGunpartsRifleStock
+  - N14JunkGunpartsRifleScope
+  - N14JunkGunpartsStock
+  - N14JunkGunpartsStockWood
+  - N14JunkGunpartsTrigger
 
 - type: latheRecipePack
   id: F14SmelterStatic

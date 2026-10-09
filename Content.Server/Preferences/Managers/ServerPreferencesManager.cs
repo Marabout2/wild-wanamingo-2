@@ -1,4 +1,5 @@
 using System.Diagnostics.CodeAnalysis;
+using Content.Shared._Misfits.Special; // Misfits Change
 using System.Linq;
 using System.Text.Json;
 using System.Threading;
@@ -176,6 +177,18 @@ namespace Content.Server.Preferences.Managers
                 loadouts[role.RoleName] = loadout;
             }
 
+            // Misfits Change - character SPECIAL stats
+            var special = new SpecialProfile
+            {
+                Strength = profile.SpecialStrength,
+                Perception = profile.SpecialPerception,
+                Endurance = profile.SpecialEndurance,
+                Charisma = profile.SpecialCharisma,
+                Intelligence = profile.SpecialIntelligence,
+                Agility = profile.SpecialAgility,
+                Luck = profile.SpecialLuck,
+            };
+
             return new HumanoidCharacterProfile(
                 profile.CharacterName,
                 profile.FlavorText,
@@ -196,7 +209,7 @@ namespace Content.Server.Preferences.Managers
                 antags.ToHashSet(),
                 traits.ToHashSet(),
                 loadouts
-            );
+            ).WithSpecial(special); // Misfits Change
         }
 
         private async void HandleSelectCharacterMessage(MsgSelectCharacter message)

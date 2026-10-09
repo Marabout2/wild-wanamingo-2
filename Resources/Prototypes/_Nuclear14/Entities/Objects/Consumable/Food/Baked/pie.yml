@@ -2,7 +2,7 @@
 # Resources/Prototypes/_Nuclear14/Entities/Objects/Consumable/Food/Baked/pie.yml
 
 - type: entity
-  parent: [FoodInjectableBase, BaseSlicingRefinableFood]
+  parent: FoodInjectableBase
   id: N14CookedFoodPieBase
   abstract: true
   components:

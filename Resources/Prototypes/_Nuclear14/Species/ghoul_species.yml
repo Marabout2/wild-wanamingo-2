@@ -1,0 +1,26 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Species/ghoul.yml, ghoulglowing.yml
+# Changed for Wild Wanamingo: rewritten for Wizden's species prototype (organ bodies via dollPrototype; Corvax
+# height/width fields removed, Wizden species have no scaling).
+
+- type: species
+  id: Ghoul
+  name: species-name-ghoul
+  roundStart: true
+  prototype: N14MobGhoul
+  dollPrototype: AppearanceGhoul
+  skinColoration: HumanToned
+  minAge: 18
+  oldAge: 250
+  maxAge: 300
+
+- type: species
+  id: GhoulGlowing
+  name: species-name-ghoul-glowing
+  roundStart: true
+  prototype: N14MobGhoulGlowing
+  dollPrototype: AppearanceGhoulGlowing
+  skinColoration: HumanToned
+  minAge: 200
+  oldAge: 250
+  maxAge: 300

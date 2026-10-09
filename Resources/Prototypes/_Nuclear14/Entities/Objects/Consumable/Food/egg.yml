@@ -117,13 +117,14 @@
   parent: N14FoodEggDeathclaw
   suffix: Fertilized, Deathclaw
   components:
-  - type: TimedSpawner
+  - type: WastelandSpawner
     prototypes:
     - N14MobDeathclaw
     - Eggshells
     intervalSeconds: 60
     minimumEntitiesSpawned: 2
     maximumEntitiesSpawned: 2
+    ignoreSpawnBlock: true # Forge-Change
   - type: TimedDespawn #delete the egg after the death claw spawns
     lifetime: 61
   - type: StaticPrice # Forge-Change
@@ -165,13 +166,14 @@
   parent: N14FoodEggGecko
   suffix: Fertilized, Gecko
   components:
-  - type: TimedSpawner
+  - type: WastelandSpawner
     prototypes:
     - N14MobGecko
     - Eggshells
     intervalSeconds: 60
     minimumEntitiesSpawned: 2
     maximumEntitiesSpawned: 2
+    ignoreSpawnBlock: true # Forge-Change
   - type: TimedDespawn #delete the egg after the chicken spawns
     lifetime: 61
   - type: StaticPrice # Forge-Change

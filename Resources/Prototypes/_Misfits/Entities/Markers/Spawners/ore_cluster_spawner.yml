@@ -1,0 +1,27 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Markers/Spawners/ore_cluster_spawner.yml
+
+- type: entity
+  id: MisfitsOreClusterSpawnerBase
+  abstract: true
+  name: ore cluster spawner
+  description: Invisible procedural rock cluster marker. Places mineable rock entities on round start.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Transform
+    anchored: true
+  - type: Marker  # Misfits Add — required for Show Spawns (showmarkers command) visibility
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Sprite
+    # Misfits Change: Two-layer composite — basalt floor base + ore-vein overlay — so the
+    # spawner is visually recognisable as an ore mining zone to mappers and in-game players.
+    snapCardinals: true
+    drawdepth: Overdoors
+    sprite: Tiles/Planet/basalt.rsi
+    layers:
+      - state: basalt1                        # basalt floor base texture
+      - sprite: Structures/Walls/rock.rsi
+        state: rock_asteroid_ore              # generic ore-vein indicator overlay
+
+# Default: drought rock walls matching Wendover's aesthetic, ~4–9 tile radius

@@ -1,0 +1,77 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Species/deathclaw.yml
+# Changed for Wild Wanamingo: rewritten for Wizden's species prototype. Misfits' whitelist/job locks
+# (SentientDeathclawRegular, SentientDeathclaw for Bwonsamdi) come back with jobs/whitelisting. Deathclaws are
+# animal bodies: no markings, sizes or skin tone (the tone is ignored by their sprite).
+
+- type: species
+  id: Deathclaw
+  name: species-name-deathclaw
+  roundStart: true
+  randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  prototype: N14MobDeathclawSentient
+  dollPrototype: AppearanceDeathclaw
+  skinColoration: Hues
+  defaultSkinTone: "#7a5a45"
+  sexes:
+  - Unsexed
+  defaultSoundsBySex: # male, female, unsexed
+  - MisfitsDeathclawEmotes
+  - MisfitsDeathclawEmotes
+  - MisfitsDeathclawEmotes
+  voices:
+  - MisfitsDeathclawEmotes
+
+- type: species
+  id: DeathclawAdolescent
+  name: species-name-deathclaw-adolescent
+  roundStart: true
+  randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  prototype: N14MobDeathclawSentientAdolescent
+  dollPrototype: AppearanceDeathclawAdolescent
+  skinColoration: Hues
+  defaultSkinTone: "#7a5a45"
+  sexes:
+  - Unsexed
+  defaultSoundsBySex: # male, female, unsexed
+  - MisfitsDeathclawEmotes
+  - MisfitsDeathclawEmotes
+  - MisfitsDeathclawEmotes
+  voices:
+  - MisfitsDeathclawEmotes
+
+- type: species
+  id: DeathclawHatchling
+  name: species-name-deathclaw-hatchling
+  roundStart: true
+  randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  prototype: N14MobDeathclawSentientHatchling
+  dollPrototype: AppearanceDeathclawHatchling
+  skinColoration: Hues
+  defaultSkinTone: "#7a5a45"
+  sexes:
+  - Unsexed
+  defaultSoundsBySex: # male, female, unsexed
+  - MisfitsDeathclawEmotes
+  - MisfitsDeathclawEmotes
+  - MisfitsDeathclawEmotes
+  voices:
+  - MisfitsDeathclawEmotes
+
+# Separate from the ordinary deathclaw so its whitelist never grants the loa role.
+- type: species
+  id: BwonsamdiDeathclaw
+  name: species-name-bwonsamdi-deathclaw
+  roundStart: true
+  randomSelectable: false # picked on purpose (Misfits whitelisted it)
+  prototype: N14MobDeathclawPlayer
+  dollPrototype: AppearanceBwonsamdi
+  skinColoration: Hues
+  defaultSkinTone: "#7a5a45"
+  sexes:
+  - Unsexed
+  defaultSoundsBySex: # male, female, unsexed
+  - MisfitsDeathclawEmotes
+  - MisfitsDeathclawEmotes
+  - MisfitsDeathclawEmotes
+  voices:
+  - MisfitsDeathclawEmotes

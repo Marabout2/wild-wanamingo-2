@@ -139,6 +139,10 @@
     - paper
     - paper
   - type: Material
+  - type: Tag
+    tags:
+    - Sheet
+    - Document
   - type: Sprite
     sprite: /Textures/Nuclear14/Objects/Misc/clutter.rsi
     state: paper

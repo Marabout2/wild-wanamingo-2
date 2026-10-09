@@ -1,0 +1,59 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier3Weapon/Tier3WeaponSpawns/Tier3WeaponSpawns_general.yml
+
+- type: entity
+  name: Tier3 Weapon Spawner
+  abstract: true
+  suffix: Tier3
+  id: M14Tier3Spawner_Ref
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/Markers/cross.rsi
+    layers:
+    - state: mono
+      color: '#00b3ff'
+    - sprite: Effects/crayondecals.rsi
+      state: questionmark
+      scale: 1.2, 1.2
+
+# Every weapon on this tiers table(melee,guns, energy ect...)
+
+- type: entity
+  name: Tier3 Weapon Spawner
+  suffix: Tier3
+  id: M14Tier3WeaponSpawner_Single_All
+  parent: M14Tier3Spawner_Ref
+  components:
+    - type: EntityTableSpawner
+      deleteSpawnerAfterSpawn: false
+
+      table: !type:NestedSelector
+        rolls: !type:ConstantNumberSelector
+          value: 1
+        tableId: M14WeaponLootTier3
+
+- type: entity
+  name: Tier3 Weapon Spawner 0-3
+  suffix: Tier3
+  id: M14Tier3WeaponSpawner_Mult0_3_All
+  parent: M14Tier3Spawner_Ref
+  components:
+    - type: EntityTableSpawner
+      deleteSpawnerAfterSpawn: false
+      table: !type:NestedSelector
+        rolls: !type:RangeNumberSelector
+          range: 0, 2
+        tableId: M14WeaponLootTier3
+
+- type: entity
+  name: Tier3 Weapon Spawner 1-2
+  suffix: Tier3
+  id: M14Tier3WeaponSpawner_Mult1_2_All
+  parent: M14Tier3Spawner_Ref
+  components:
+    - type: EntityTableSpawner
+      deleteSpawnerAfterSpawn: false
+      table: !type:NestedSelector
+        rolls: !type:RangeNumberSelector
+          range: 1, 1
+        tableId: M14WeaponLootTier3

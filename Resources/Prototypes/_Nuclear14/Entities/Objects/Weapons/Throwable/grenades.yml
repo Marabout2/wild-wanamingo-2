@@ -255,12 +255,12 @@
   - type: FireVisuals
     sprite: Nuclear14/Objects/Weapons/Grenades/NukaCocktail.rsi
     normalState: primed
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        reagents:
-        - ReagentId: WeldingFuel
-          Quantity: 30
+  - type: Solution
+    id: drink
+    solution:
+      reagents:
+      - ReagentId: WeldingFuel
+        Quantity: 30
   - type: Spillable
     solution: drink
 

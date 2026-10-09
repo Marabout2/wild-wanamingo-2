@@ -1,0 +1,49 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Recipes/Crafting/topical_variants.yml
+
+- type: entity
+  parent: MisfitsSnakebiteTourniquet
+  id: MisfitsSnakebiteTourniquet10
+  suffix: Full
+  components:
+  - type: Stack
+    stackType: MisfitsSnakebiteTourniquet
+    count: 10
+
+# ============================================================================
+# HEALING SALVE
+# ============================================================================
+
+- type: entity
+  parent: MisfitsHealingSalve
+  id: MisfitsHealingSalve10
+  suffix: Full
+  components:
+  - type: Stack
+    stackType: MisfitsHealingSalve
+    count: 10
+
+# ============================================================================
+# HERBAL ANODYNE
+# ============================================================================
+
+- type: entity
+  parent: MisfitsHerbalAnodyne
+  id: MisfitsHerbalAnodyne10
+  suffix: Full
+  components:
+  - type: Stack
+    stackType: MisfitsHerbalAnodyne
+    count: 10
+
+# ============================================================================
+# HERBAL ANTIMICROBIAL
+# ============================================================================
+
+- type: entity
+  parent: MisfitsHerbalAntimicrobial
+  id: MisfitsHerbalAntimicrobial10
+  suffix: Full
+  components:
+  - type: Stack
+    stackType: MisfitsHerbalAntimicrobial
+    count: 10

@@ -1,0 +1,38 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Datasets/Names/robot_*_names.yml
+# Changed for Wild Wanamingo: converted to localizedDatasets.
+
+- type: localizedDataset
+  id: RobotAssaultronFirst
+  values:
+    prefix: names-robot-assaultron-first-
+    count: 40
+
+- type: localizedDataset
+  id: RobotMrGutsyFirst
+  values:
+    prefix: names-robot-mr-gutsy-first-
+    count: 52
+
+- type: localizedDataset
+  id: RobotMrHandyFirst
+  values:
+    prefix: names-robot-mr-handy-first-
+    count: 72
+
+- type: localizedDataset
+  id: RobotProtectronFirst
+  values:
+    prefix: names-robot-protectron-first-
+    count: 44
+
+- type: localizedDataset
+  id: RobotRobobrainFirst
+  values:
+    prefix: names-robot-robobrain-first-
+    count: 42
+
+- type: localizedDataset
+  id: RobotSentryBotFirst
+  values:
+    prefix: names-robot-sentry-bot-first-
+    count: 44

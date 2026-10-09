@@ -1,0 +1,18 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/SpecialStats/actions.yml
+# Changed for Wild Wanamingo: icon moved to Wizden's action Sprite.
+
+# Intelligence 10 lets you read people's health at a glance; this toggles it.
+- type: entity
+  parent: BaseAction
+  id: ActionToggleSpecialMedicalHud
+  name: Toggle medical insight
+  description: Toggle the medical HUD granted by maximum Intelligence.
+  components:
+  - type: Action
+    useDelay: 0.25
+  - type: Sprite
+    sprite: Clothing/Eyes/Hud/med.rsi
+    layers:
+    - state: icon
+  - type: InstantAction
+    event: !type:SpecialMedicalHudToggleActionEvent

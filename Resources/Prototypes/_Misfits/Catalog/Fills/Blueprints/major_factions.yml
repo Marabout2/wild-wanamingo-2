@@ -1,0 +1,33 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Catalog/Fills/Blueprints/major_factions.yml
+
+- type: entity
+  id: MisfitsCrateAluminiumBlueprintsNCR
+  suffix: Filled, Blueprints, NCR
+  parent: N14CrateAluminium
+  components:
+  - type: StorageFill
+    contents: []
+
+- type: entity
+  id: MisfitsCrateAluminiumBlueprintsLegion
+  suffix: Filled, Blueprints, Legion
+  parent: N14CrateAluminium
+  components:
+  - type: StorageFill
+    contents: []
+
+- type: entity
+  id: MisfitsCrateAluminiumBlueprintsBoS
+  suffix: Filled, Blueprints, BoS
+  parent: N14CrateAluminium
+  components:
+  - type: StorageFill
+    contents: []
+
+- type: entity
+  id: MisfitsCrateAluminiumBlueprintsVault
+  suffix: Filled, Blueprints, Vault
+  parent: N14CrateAluminium
+  components:
+  - type: StorageFill
+    contents: []

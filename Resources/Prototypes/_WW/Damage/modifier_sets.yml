@@ -1,0 +1,16 @@
+# Glowing ghouls had two stacked modifier sets in Misfits (GhoulGlowing + N14GammaShield); Wizden's Damageable takes
+# one, so this is the two multiplied together.
+- type: damageModifierSet
+  id: F14GhoulGlowing
+  coefficients:
+    Blunt: 1.1
+    Slash: 1.1
+    Piercing: 1.1
+    Heat: 0.95
+    Shock: 0.95
+    Cold: 0.57
+    Poison: 0.48
+    Cellular: 0.02
+    Radiation: 0
+    Asphyxiation: 0.01
+    Bloodloss: 0.64

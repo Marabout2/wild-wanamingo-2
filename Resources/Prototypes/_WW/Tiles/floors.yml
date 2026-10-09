@@ -15,3 +15,8 @@
   heatCapacity: 10000
   weather: true
   indestructible: true
+
+# Maps saved before the F14 rename (e.g. Yuma) use the old ID.
+- type: tileAlias
+  id: FloorWastelandSand
+  target: F14FloorWastelandSand

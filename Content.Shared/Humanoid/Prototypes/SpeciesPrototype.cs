@@ -35,6 +35,13 @@ public sealed partial class SpeciesPrototype : IPrototype
     [DataField(required: true)]
     public bool RoundStart { get; private set; } = false;
 
+    // WW Change - species like deathclaws and robots are picked on purpose, never handed out at random
+    /// <summary>
+    /// Whether random characters (new players, guests, randomize) can roll this species.
+    /// </summary>
+    [DataField]
+    public bool RandomSelectable { get; private set; } = true;
+
     /// <summary>
     ///     Default skin tone for this species. This applies for non-human skin tones.
     /// </summary>

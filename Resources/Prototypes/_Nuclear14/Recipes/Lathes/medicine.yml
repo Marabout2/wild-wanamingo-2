@@ -1,0 +1,10 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Recipes/Lathes/medicine.yml
+
+- type: latheRecipe
+  id: N14CleanGauze1
+  result: N14CleanGauze1
+  applyMaterialDiscount: false
+  completetime: 5
+  materials:
+    Cloth: 200

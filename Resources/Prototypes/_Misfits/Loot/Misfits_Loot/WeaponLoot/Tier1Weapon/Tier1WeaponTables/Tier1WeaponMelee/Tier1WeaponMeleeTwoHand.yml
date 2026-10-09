@@ -1,0 +1,28 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Loot/Misfits_Loot/WeaponLoot/Tier1Weapon/Tier1WeaponTables/Tier1WeaponMelee/Tier1WeaponMeleeTwoHand.yml
+
+- type: entityTable
+  id: M14WeaponLootTier1_MeleeBluntTwoHanded
+  table: !type:GroupSelector
+    children:
+    - !type:EntSelector
+      id: N14BaseBallBat
+    - !type:EntSelector
+      id: N14NailBoard
+    - !type:EntSelector
+      id: N14PoolCue
+    - !type:EntSelector
+      id: N14GolfClub
+
+- type: entityTable
+  id: M14WeaponLootTier1_MeleeSharpTwoHanded
+  table: !type:GroupSelector
+    children:
+    - !type:EntSelector
+      id: N14WastelandSpear
+
+- type: entityTable
+  id: M14WeaponLootTier1_MeleeOtherTwoHanded
+  table: !type:GroupSelector
+    children:
+    - !type:EntSelector
+      id: Error

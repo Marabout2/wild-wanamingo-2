@@ -1,0 +1,239 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Mobs/Player/synthetics.yml (sprites)
+# Lobby previews for the player robots (Misfits used the robot itself as the doll): just the sprite, an empty
+# visual body and the profile.
+
+- type: entity
+  id: AppearanceRobotMrHandy
+  categories: [ HideSpawnMenu ]
+  name: RobotMrHandy appearance
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Nuclear14/Mobs/Robots/mrhandyclaw.rsi
+    state: icon
+  - type: VisualBody
+  - type: HumanoidProfile
+    species: RobotMrHandy
+
+- type: entity
+  id: AppearanceRobotProtectron
+  categories: [ HideSpawnMenu ]
+  name: RobotProtectron appearance
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Nuclear14/Mobs/Robots/protectron.rsi
+    state: icon
+  - type: VisualBody
+  - type: HumanoidProfile
+    species: RobotProtectron
+
+- type: entity
+  id: AppearanceRobotProtectronPolice
+  categories: [ HideSpawnMenu ]
+  name: RobotProtectronPolice appearance
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Nuclear14/Mobs/Robots/protectron-police.rsi
+    state: icon
+  - type: VisualBody
+  - type: HumanoidProfile
+    species: RobotProtectronPolice
+
+- type: entity
+  id: AppearanceRobotProtectronBuilder
+  categories: [ HideSpawnMenu ]
+  name: RobotProtectronBuilder appearance
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Nuclear14/Mobs/Robots/protectron-builder.rsi
+    state: icon
+  - type: VisualBody
+  - type: HumanoidProfile
+    species: RobotProtectronBuilder
+
+- type: entity
+  id: AppearanceRobotProtectronFire
+  categories: [ HideSpawnMenu ]
+  name: RobotProtectronFire appearance
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Nuclear14/Mobs/Robots/protectron-fire.rsi
+    state: icon
+  - type: VisualBody
+  - type: HumanoidProfile
+    species: RobotProtectronFire
+
+- type: entity
+  id: AppearanceRobotProtectronTribal
+  categories: [ HideSpawnMenu ]
+  name: RobotProtectronTribal appearance
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Misfits/Mobs/Robots/protectron-tribal.rsi
+    state: icon
+  - type: VisualBody
+  - type: HumanoidProfile
+    species: RobotProtectronTribal
+
+- type: entity
+  id: AppearanceRobotSecuritron
+  categories: [ HideSpawnMenu ]
+  name: RobotSecuritron appearance
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Nuclear14/Mobs/Robots/securitron-gray.rsi
+    state: icon
+  - type: VisualBody
+  - type: HumanoidProfile
+    species: RobotSecuritron
+
+- type: entity
+  id: AppearanceRobotSecuritronBlue
+  categories: [ HideSpawnMenu ]
+  name: RobotSecuritronBlue appearance
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Nuclear14/Mobs/Robots/securitron-blue.rsi
+    state: icon
+  - type: VisualBody
+  - type: HumanoidProfile
+    species: RobotSecuritronBlue
+
+- type: entity
+  id: AppearanceRobotSecuritronBrown
+  categories: [ HideSpawnMenu ]
+  name: RobotSecuritronBrown appearance
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Nuclear14/Mobs/Robots/securitron-brown.rsi
+    state: icon
+  - type: VisualBody
+  - type: HumanoidProfile
+    species: RobotSecuritronBrown
+
+- type: entity
+  id: AppearanceRobotSecuritronRed
+  categories: [ HideSpawnMenu ]
+  name: RobotSecuritronRed appearance
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Nuclear14/Mobs/Robots/securitron-red.rsi
+    state: icon
+  - type: VisualBody
+  - type: HumanoidProfile
+    species: RobotSecuritronRed
+
+- type: entity
+  id: AppearanceRobotSecuritronYellow
+  categories: [ HideSpawnMenu ]
+  name: RobotSecuritronYellow appearance
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Nuclear14/Mobs/Robots/securitron-yellow.rsi
+    state: icon
+  - type: VisualBody
+  - type: HumanoidProfile
+    species: RobotSecuritronYellow
+
+- type: entity
+  id: AppearanceRobotMrGutsy
+  categories: [ HideSpawnMenu ]
+  name: RobotMrGutsy appearance
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Nuclear14/Mobs/Robots/mrhandygutsy.rsi
+    state: icon
+  - type: VisualBody
+  - type: HumanoidProfile
+    species: RobotMrGutsy
+
+- type: entity
+  id: AppearanceRobotAssaultron
+  categories: [ HideSpawnMenu ]
+  name: RobotAssaultron appearance
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Nuclear14/Mobs/Robots/assaultron.rsi
+    state: icon
+  - type: VisualBody
+  - type: HumanoidProfile
+    species: RobotAssaultron
+
+- type: entity
+  id: AppearanceRobotAssaultronTesla
+  categories: [ HideSpawnMenu ]
+  name: RobotAssaultronTesla appearance
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Nuclear14/Mobs/Robots/assaultron.rsi
+    state: icon
+  - type: VisualBody
+  - type: HumanoidProfile
+    species: RobotAssaultronTesla
+
+- type: entity
+  id: AppearanceRobotSentryBot
+  categories: [ HideSpawnMenu ]
+  name: RobotSentryBot appearance
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Nuclear14/Mobs/Robots/sentrybot.rsi
+    state: icon
+    scale: 2.0, 2.0
+  - type: VisualBody
+  - type: HumanoidProfile
+    species: RobotSentryBot
+
+- type: entity
+  id: AppearanceRobotSentryBotLaser
+  categories: [ HideSpawnMenu ]
+  name: RobotSentryBotLaser appearance
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Nuclear14/Mobs/Robots/sentrybot.rsi
+    state: icon
+    scale: 2.0, 2.0
+  - type: VisualBody
+  - type: HumanoidProfile
+    species: RobotSentryBotLaser
+
+- type: entity
+  id: AppearanceRobotRobobrain
+  categories: [ HideSpawnMenu ]
+  name: RobotRobobrain appearance
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Nuclear14/Mobs/Robots/robobrain.rsi
+    state: icon
+  - type: VisualBody
+  - type: HumanoidProfile
+    species: RobotRobobrain
+
+- type: entity
+  id: AppearanceRobotRobobrainLaser
+  categories: [ HideSpawnMenu ]
+  name: RobotRobobrainLaser appearance
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Nuclear14/Mobs/Robots/robobrain.rsi
+    state: icon
+  - type: VisualBody
+  - type: HumanoidProfile
+    species: RobotRobobrainLaser

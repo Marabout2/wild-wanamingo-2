@@ -1,0 +1,78 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Markers/Spawners/brahdo.yml
+
+- type: entity
+  name: Brahdo Spawner
+  id: N14SpawnMobBrahdo
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes: []
+
+- type: entity
+  name: Brahdo Spawner
+  id: N14SpawnMobBrahdoLight
+  parent: MarkerBase
+  suffix: LeLight
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes: []
+
+- type: entity
+  name: Brahdo Spawner
+  id: N14SpawnMobBrahdoArmor
+  parent: MarkerBase
+  suffix: Armor
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes: []
+
+- type: entity
+  name: Brahdo Spawner
+  id: N14SpawnMobBrahdoArmorNCR
+  parent: MarkerBase
+  suffix: NCR
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes: []
+
+- type: entity
+  name: Brahdo Spawner
+  id: N14SpawnMobBrahdoLightLegion
+  parent: MarkerBase
+  suffix: Legion
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes: []
+
+- type: entity
+  name: Brahdo Spawner
+  id: N14SpawnMobBrahdoLightTribal
+  parent: MarkerBase
+  suffix: Tribal
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes: []

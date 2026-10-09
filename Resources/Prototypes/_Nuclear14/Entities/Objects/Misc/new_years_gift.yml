@@ -1,0 +1,91 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Entities/Objects/Misc/new_years_gift.yml
+
+- type: entity
+  parent: N14JunkLunchbox
+  id: N14JunkLunchboxFill
+  components:
+  - type: StorageFill
+    contents:
+      - id: DrinkWaterBottleFull
+        orGroup: Drink
+        prob: 0.6
+      - id: N14DrinkNukaCola
+        orGroup: Drink
+        prob: 0.4
+      - id: N14DrinkNukaColaYellow
+        orGroup: Drink
+        prob: 0.3
+      - id: N14DrinkNukaColaCherry
+        orGroup: Drink
+        prob: 0.2
+      - id: N14DrinkNukaColaGrape
+        orGroup: Drink
+        prob: 0.2
+      - id: N14DrinkNukaColaOrange
+        orGroup: Drink
+        prob: 0.2
+      - id: N14DrinkNukaColaWild
+        orGroup: Drink
+        prob: 0.1
+      - id: N14DrinkNukaColaQuartz
+        orGroup: Drink
+        prob: 0.1
+      - id: N14DrinkNukaColaVictory
+        orGroup: Drink
+        prob: 0.05
+      - id: N14DrinkNukaColaQuantum
+        orGroup: Drink
+        prob: 0.01
+      - id: N14CookedFoodDonutChocolate
+        prob: 0.25
+        amount: 3
+        orGroup: Sweets
+      - id: N14CookedFoodDonutPink
+        prob: 0.25
+        amount: 3
+        orGroup: Sweets
+      - id: N14CookedFoodDonutHomer
+        prob: 0.2
+        amount: 3
+        orGroup: Sweets
+      - id: N14CookedFoodDonutCaramel
+        prob: 0.25
+        amount: 3
+        orGroup: Sweets
+      - id: N14CookedFoodCakeTarberrySlice
+        prob: 0.2
+        amount: 3
+        orGroup: Sweets
+      - id: N14CookedFoodCakeCheeseSlice
+        prob: 0.25
+        amount: 3
+        orGroup: Sweets
+      - id: N14CookedFoodCakeChocolateSlice
+        prob: 0.25
+        amount: 3
+        orGroup: Sweets
+      - id: N14CookedFoodCakePlainSlice
+        prob: 0.25
+        amount: 3
+        orGroup: Sweets
+      - id: N14CookedFoodCakeMutfruitSlice
+        prob: 0.25
+        amount: 3
+        orGroup: Sweets
+      - id: N14CookedFoodCakeCarrotSlice
+        prob: 0.25
+        amount: 3
+        orGroup: Sweets
+      - id: N14CookedFoodBakedChevreChaud
+        prob: 0.25
+        amount: 3
+        orGroup: Sweets
+      - id: N14CookedFoodBreadBanana
+        prob: 0.15
+        orGroup: Sweets
+      - id: N14CookedFoodBreadCreamcheese
+        prob: 0.15
+        orGroup: Sweets
+
+#MARK: KitGift

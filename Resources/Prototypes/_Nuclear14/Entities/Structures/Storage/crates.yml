@@ -18,6 +18,11 @@
     spread: 90
 
 - type: entity
+  parent: [ N14CrateFootlocker, N14BaseSmallLockerStorageFill ]
+  id: N14LootCrateFootlocker
+  suffix: Loot, RandomSmall
+
+- type: entity
   parent: CrateGenericSteel
   id: N14CrateAluminium
   name: aluminium crate
@@ -52,6 +57,14 @@
             max: 4
 
 - type: entity
+  parent: [ N14CrateFootlocker, N14BaseLockerStorageFill ]
+  id: N14LootCrateAluminium
+  suffix: Loot, Random
+  components:
+  - type: EntityStorage
+    capacity: 40
+
+- type: entity
   parent: CrateGenericSteel
   id: N14CrateArmy
   name: army crate
@@ -61,6 +74,11 @@
     sprite: Nuclear14/Structures/Storage/Crates/armycrate.rsi
   - type: Sprite
     sprite: Nuclear14/Structures/Storage/Crates/armycrate.rsi
+
+- type: entity
+  parent: [ N14CrateFootlocker, N14BaseMilitaryStorageFill ]
+  id: N14LootCrateArmy
+  suffix: Loot, RandomMilitary
 
 - type: entity
   parent: N14CrateFootlocker
@@ -75,6 +93,11 @@
     # TODO: Will need an access locked variant.
 
 - type: entity
+  parent: [ N14CrateEnclave, N14BaseMilitaryStorageFill ]
+  id: N14LootCrateEnclave
+  suffix: Loot, RandomMilitary
+
+- type: entity
   parent: N14CrateFootlocker
   id: N14CrateEnclaveDirectional
   suffix: directional
@@ -87,6 +110,11 @@
     sprite: Nuclear14/Structures/Storage/Crates/enclavecrate.rsi
 
 - type: entity
+  parent: [ N14CrateEnclaveDirectional, N14BaseMilitaryStorageFill ]
+  id: N14LootCrateEnclaveDirectional
+  suffix: Loot, RandomMilitary
+
+- type: entity
   parent: CrateGenericSteel
   id: N14CrateMedical
   name: medical crate
@@ -96,6 +124,11 @@
     sprite: Nuclear14/Structures/Storage/Crates/medicalcrate.rsi
   - type: Sprite
     sprite: Nuclear14/Structures/Storage/Crates/medicalcrate.rsi
+
+- type: entity
+  parent: [ N14CrateMedical, N14StorageFillMedical ]
+  id: N14LootCrateMedical
+  suffix: Loot, Medical
 
 - type: entity
   parent: CrateGenericSteel
@@ -132,6 +165,14 @@
     sprite: Nuclear14/Structures/Storage/Crates/vaultbigrusted.rsi
 
 - type: entity
+  parent: [ N14CrateVaultBigRusted, N14BaseLockerStorageFill ]
+  id: N14LootCrateVaultBigRusted
+  suffix: Loot, Random
+  components:
+  - type: EntityStorage
+    capacity: 40
+
+- type: entity
   parent: CrateGenericSteel
   id: N14CrateVaultCompactRusted
   name: Vault-Tec crate
@@ -142,6 +183,14 @@
     sprite: Nuclear14/Structures/Storage/Crates/vaultcompactrusted.rsi
   - type: Sprite
     sprite: Nuclear14/Structures/Storage/Crates/vaultcompactrusted.rsi
+
+- type: entity
+  parent: [ N14CrateVaultCompactRusted, N14BaseLockerStorageFill ]
+  id: N14LootCrateVaultCompactRusted
+  suffix: Loot, Random
+  components:
+  - type: EntityStorage
+    capacity: 40
 
 - type: entity
   parent: CrateGenericSteel
@@ -155,6 +204,14 @@
     sprite: Nuclear14/Structures/Storage/Crates/vaultcrate.rsi
 
 - type: entity
+  parent: [ N14CrateVault, N14BaseLockerStorageFill ]
+  id: N14LootCrateVault
+  suffix: Loot, Random
+  components:
+  - type: EntityStorage
+    capacity: 40
+
+- type: entity
   parent: CrateGenericSteel
   id: N14CrateVaultLong
   name: Vault-Tec crate
@@ -164,6 +221,14 @@
     sprite: Nuclear14/Structures/Storage/Crates/vaultlong.rsi
   - type: Sprite
     sprite: Nuclear14/Structures/Storage/Crates/vaultlong.rsi
+
+- type: entity
+  parent: [ N14CrateVaultLong, N14BaseLockerStorageFill ]
+  id: N14LootCrateVaultLong
+  suffix: Loot, Random
+  components:
+  - type: EntityStorage
+    capacity: 40
 
 - type: entity
   parent: CrateGenericSteel
@@ -178,6 +243,14 @@
     sprite: Nuclear14/Structures/Storage/Crates/vaultlongrusted.rsi
 
 - type: entity
+  parent: [ N14CrateVaultLongRusted, N14BaseLockerStorageFill ]
+  id: N14LootCrateVaultLongRusted
+  suffix: Loot, Random
+  components:
+  - type: EntityStorage
+    capacity: 40
+
+- type: entity
   parent: CrateGenericSteel
   id: N14CrateVaultStandard
   name: Vault-Tec crate
@@ -187,6 +260,14 @@
     sprite: Nuclear14/Structures/Storage/Crates/vaultstandard.rsi
   - type: Sprite
     sprite: Nuclear14/Structures/Storage/Crates/vaultstandard.rsi
+
+- type: entity
+  parent: [ N14CrateVaultStandard, N14BaseLockerStorageFill ]
+  id: N14LootCrateVaultStandard
+  suffix: Loot, Random
+  components:
+  - type: EntityStorage
+    capacity: 40
 
 - type: entity
   parent: CrateGeneric
@@ -235,6 +316,16 @@
   - type: AntiRottingContainer
 
 - type: entity
+  parent: [ N14CrateFreezer, N14StorageFillDomestic ]
+  id: N14LootCrateFreezer
+  suffix: Loot, Random
+
+# Wooden
+  components:
+  - type: EntityStorage
+    capacity: 34
+
+- type: entity
   parent: CrateGeneric
   id: N14CrateWooden
   name: wooden crate
@@ -276,6 +367,13 @@
     sprite: Nuclear14/Structures/Storage/Crates/cratemilitary.rsi
   - type: Sprite
     sprite: Nuclear14/Structures/Storage/Crates/cratemilitary.rsi
+
+- type: entity
+  parent: [ N14CrateMilitary, N14BaseMilitaryStorageFill ]
+  id: N14LootCrateMilitary
+  suffix: Loot,Random Military
+
+# Breakable Crates (deconstruct or destroy)
 
 - type: entity
   parent: BaseStructureDynamic

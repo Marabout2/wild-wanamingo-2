@@ -89,6 +89,127 @@
 #MARK: Gun Parts
 
 - type: latheRecipe
+  id: N14JunkGunpartsAction
+  result: N14JunkGunpartsAction
+  categories:
+  - N14Parts
+  completetime: 2
+  materials:
+    N14Iron: 50
+
+- type: latheRecipe
+  id: N14JunkGunpartsBarrel
+  result: N14JunkGunpartsBarrel
+  categories:
+  - N14Parts
+  completetime: 4
+  materials:
+    N14Iron: 150
+
+- type: latheRecipe
+  id: N14JunkGunpartsBolt
+  result: N14JunkGunpartsBolt
+  categories:
+  - N14Parts
+  completetime: 2
+  materials:
+    N14Iron: 50
+
+- type: latheRecipe
+  id: N14JunkGunpartsFrame
+  result: N14JunkGunpartsFrame
+  categories:
+  - N14Parts
+  completetime: 3
+  materials:
+    Steel: 100
+
+- type: latheRecipe
+  id: N14JunkGunpartsFramePistol
+  result: N14JunkGunpartsFramePistol
+  categories:
+  - N14Parts
+  completetime: 3
+  materials:
+    Steel: 100
+
+- type: latheRecipe
+  id: N14JunkGunpartsReceiver
+  result: N14JunkGunpartsReceiver
+  categories:
+  - N14Parts
+  completetime: 3
+  materials:
+    Steel: 50
+
+- type: latheRecipe
+  id: N14JunkGunpartsRecoilComp
+  result: N14JunkGunpartsRecoilComp
+  categories:
+  - N14Parts
+  completetime: 3
+  materials:
+    Steel: 50
+
+- type: latheRecipe
+  id: N14JunkGunpartsRifleFrame
+  result: N14JunkGunpartsRifleFrame
+  categories:
+  - N14Parts
+  completetime: 3
+  materials:
+    N14Iron: 100
+
+- type: latheRecipe
+  id: N14JunkGunpartsRifleStock
+  result: N14JunkGunpartsRifleStock
+  categories:
+  - N14Parts
+  completetime: 3
+  materials:
+    Wood: 200
+
+- type: latheRecipe
+  id: N14JunkGunpartsRifleScope
+  result: N14JunkGunpartsRifleScope
+  categories:
+  - N14Parts
+  completetime: 3
+  materials:
+    Steel: 50
+    Glass: 50
+
+- type: latheRecipe
+  id: N14JunkGunpartsStock
+  result: N14JunkGunpartsStock
+  categories:
+  - N14Parts
+  completetime: 3
+  materials:
+    Steel: 200
+
+- type: latheRecipe
+  id: N14JunkGunpartsStockWood
+  result: N14JunkGunpartsStockWood
+  categories:
+  - N14Parts
+  completetime: 3
+  materials:
+    Wood: 200
+
+- type: latheRecipe
+  id: N14JunkGunpartsTrigger
+  result: N14JunkGunpartsTrigger
+  categories:
+  - N14Parts
+  completetime: 3
+  materials:
+    Steel: 50
+
+# MARK: Explosives
+# Misfits Add - anti-personnel landmine recipe; high cost reflecting real-world materials (steel body, large powder charge, lead shrapnel)
+
+- type: latheRecipe
   id: LandMineKick
   icon:
     sprite: Nuclear14/Objects/Misc/landmine.rsi

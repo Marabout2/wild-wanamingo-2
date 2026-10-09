@@ -1,0 +1,21 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Entities/Markers/Spawners/Random/vending.yml
+
+- type: entity
+  id: N14RandomVending
+  name: random vending machine spawner
+  suffix: N14, Any
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: Structures/Machines/VendingMachines/random.rsi
+        state: any
+  - type: RandomSpawner
+    prototypes:
+      - N14VendingMachineNukaColaNewFilled
+      - N14VendingMachineVimFilled
+      - N14VendingMachineCigaretteFilled
+      - N14VendingMachineCigaretteFilledRepublic
+    chance: 1
