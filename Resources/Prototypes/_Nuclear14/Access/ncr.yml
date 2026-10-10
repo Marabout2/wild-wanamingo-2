@@ -2,6 +2,10 @@
 # Resources/Prototypes/_Nuclear14/Access/ncr.yml
 
 - type: accessLevel
+  id: NCRCaptain
+  name: id-card-access-level-ncr-captain
+
+- type: accessLevel
   id: NCRLT
   name: id-card-access-level-ncr-lt
 
@@ -22,3 +26,12 @@
   name: id-card-access-level-ncr
 
 # #Misfits Add - Office of Science and Industry records and laboratory access.
+
+- type: accessGroup
+  id: NCRRanger
+  #Misfits Change /Fix/: NCR Rangers inherit their specialist access alongside shared NCR base access.
+  tags:
+  - NCR
+  - NCRSGT
+  - NCRMedic
+  - NCRRanger

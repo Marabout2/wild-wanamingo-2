@@ -65,7 +65,10 @@
         acts: [ "Destruction" ]
   - type: IconSmooth
     key: fence
-    base: fence
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ fence ]
+      base: fence
   - type: InteractionPopup
     interactSuccessString: fence-rattle-success
     messagePerceivedByOthers: fence-rattle-success

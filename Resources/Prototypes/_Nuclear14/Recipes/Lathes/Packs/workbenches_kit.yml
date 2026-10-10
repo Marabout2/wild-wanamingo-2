@@ -4,11 +4,17 @@
 
 - type: latheRecipePack
   id: F14WorkbenchIDPrinterVaultStatic
-  recipes: []
+  recipes:
+  - IDVault
+  - IDVaultEngineer
+  - IDVaultSecurity
+  - IDVaultDoctor
 
 - type: latheRecipePack
   id: F14WorkbenchIDPrinterNCRStatic
-  recipes: []
+  recipes:
+  - DogtagNCR
+  - DogtagNCRNCO
 
 - type: latheRecipePack
   id: F14WorkbenchIDPrinterBrotherhoodMidwestStatic
@@ -16,7 +22,13 @@
 
 - type: latheRecipePack
   id: F14WorkbenchIDPrinterTownspeopleStatic
-  recipes: []
+  recipes:
+  - PassportTownsfolk
+  - PassportTownsfolkShopkeeper
+  - PassportTownsfolkMechanic
+  - PassportTownsfolkDeputy
+  - PassportTownsfolkSheriff
+  - PassportTownsfolkMayor
 
 - type: latheRecipePack
   id: F14WorkbenchForgeStatic

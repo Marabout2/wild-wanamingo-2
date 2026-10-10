@@ -1,0 +1,327 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Roles/Jobs/, _Nuclear14/Roles/Jobs/
+# Changed for Wild Wanamingo: Yuma's roster. Names, slots and whitelists from the server's roster; gear is
+# Misfits' (minus the wallet slot and the skirt/satchel/duffel choices, which are loadouts in Wizden).
+# Misfits' playtime and species requirements are left out for now.
+
+- type: job
+  id: NCRCommander
+  name: job-name-ncr-commander
+  description: job-description-ncr-commander
+  playTimeTracker: NCRCommander
+  startingGear: NCRCommanderGear
+  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  supervisors: job-supervisors-ncr-commander
+  whitelisted: true
+  access:
+  - NCR
+  - NCRSGT
+  - NCRMedic
+  - NCRLT
+  - NCRCaptain
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - Wastelander
+          - NCR
+
+- type: startingGear
+  id: NCRCommanderGear
+  equipment:
+    head: N14ClothingHeadHatNCRBeretOfficer
+    back: N14ClothingBackpackNCR
+    jumpsuit: N14ClothingOfficerUniformNCRDesert
+    outerClothing: MisfitsNCRCommandArmor
+    shoes: N14ClothingBootsCombatFilled
+    belt: ClothingBeltNCR
+    eyes: ClothingEyesGlassesSunglasses
+    ears: N14ClothingHeadsetNCR
+    pocket1: NCRcaptainloadoutkits
+  storage:
+    back:
+    - MisfitsIFAKMilitary
+    - SyndicateWhistle
+    - N14Binoculars
+
+- type: job
+  id: NCRPlatoonLeader
+  name: job-name-ncr-platoon-leader
+  description: job-description-ncr-platoon-leader
+  playTimeTracker: NCRPlatoonLeader
+  startingGear: NCRPlatoonLeaderGear
+  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  supervisors: job-supervisors-ncr-commander
+  access:
+  - NCR
+  - NCRSGT
+  - NCRMedic
+  - NCRLT
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - Wastelander
+          - NCR
+
+- type: startingGear
+  id: NCRPlatoonLeaderGear
+  equipment:
+    head: N14ClothingHeadHatNCRBeretOfficer
+    back: N14ClothingBackpackNCR
+    jumpsuit: N14ClothingOfficerUniformNCRDesert
+    outerClothing: N14ClothingOuterNCRDressJacket
+    shoes: N14ClothingBootsCombatFilled
+    belt: ClothingBeltNCR
+    eyes: ClothingEyesGlassesSunglasses
+    ears: N14ClothingHeadsetNCR
+    pocket1: NCRLTloadoutkits
+    pocket2: RadioHandheld
+    id: N14IDNCRDogtagOfficer
+  storage:
+    back:
+    - MisfitsIFAKMilitary
+
+- type: job
+  id: NCRDoctor
+  name: job-name-ncr-doctor
+  description: job-description-ncr-doctor
+  playTimeTracker: NCRDoctor
+  startingGear: NCRDoctorGear
+  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  supervisors: job-supervisors-ncr-commander
+  access:
+  - NCR
+  - NCRMedic
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - Wastelander
+          - NCR
+
+- type: startingGear
+  id: NCRDoctorGear
+  equipment:
+    jumpsuit: N14ClothingUniformNCRDesert
+    outerClothing: N14ClothingOuterCoatFollowersArmored
+    back: N14ClothingBackpackNCR
+    shoes: N14ClothingBootsLeatherFilled
+    ears: N14ClothingHeadsetNCR
+    belt: ClothingBeltNCR
+    id: N14IDNCRDogtagDoctorSenior
+    pocket2: NCRmedicloadoutkits
+  storage:
+    back:
+    - MisfitsIFAKMilitary
+
+- type: job
+  id: NCRRO
+  name: job-name-ncr-requisition-officer
+  description: job-description-ncr-requisition-officer
+  playTimeTracker: NCRRO
+  startingGear: NCRRequisitionOfficerGear
+  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  supervisors: job-supervisors-ncr-commander
+  access:
+  - NCR
+  - NCRSGT
+  - NCRMedic
+  - NCRLT
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - Wastelander
+          - NCR
+
+- type: startingGear
+  id: NCRRequisitionOfficerGear
+  equipment:
+    head: N14ClothingHeadHatNCRBeretOfficer
+    back: N14ClothingBackpackNCR
+    jumpsuit: N14ClothingOfficerUniformNCRDesert
+    outerClothing: N14ClothingOuterNCRDressJacket
+    shoes: N14ClothingBootsCombatFilled
+    belt: ClothingBeltNCR
+    eyes: ClothingEyesGlassesSunglasses
+    ears: N14ClothingHeadsetNCR
+    pocket1: NCRLTloadoutkits
+    pocket2: RadioHandheld
+    id: N14IDNCRDogtagNCRRO
+  storage:
+    back:
+    - MisfitsIFAKMilitary
+
+- type: job
+  id: NCRNCO
+  name: job-name-ncr-nco
+  description: job-description-ncr-nco
+  playTimeTracker: NCRNCO
+  startingGear: NCRNCOGear
+  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  supervisors: job-supervisors-ncr-nco
+  access:
+  - NCR
+  - NCRSGT
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - Wastelander
+          - NCR
+
+- type: startingGear
+  id: NCRNCOGear
+  equipment:
+    back: N14ClothingBackpackNCR
+    hands: N14ClothingHandsGlovesCombat
+    jumpsuit: N14ClothingOfficerUniformNCRDesert
+    shoes: N14ClothingBootsCombatFilled
+    ears: N14ClothingHeadsetNCR
+    belt: ClothingBeltNCR
+    outerClothing: MisfitsNCRHeavyCombatArmor
+    pocket1: NCRSGTloadoutkits
+    pocket2: RadioHandheld
+    id: N14IDNCRDogtagNCO
+  storage:
+    back:
+    - MisfitsIFAKMilitary
+
+- type: job
+  id: NCRWS
+  name: job-name-ncr-weapon-specialist
+  description: job-description-ncr-weapon-specialist
+  playTimeTracker: NCRWS
+  startingGear: NCRWSGear
+  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  supervisors: job-supervisors-ncr-sergeant
+  access:
+  - NCR
+  - NCRMedic
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - Wastelander
+          - NCR
+
+- type: startingGear
+  id: NCRWSGear
+  equipment:
+    head: N14ClothingHeadHatNCRHelmetMetalDesert
+    back: N14ClothingBackpackNCR
+    jumpsuit: N14ClothingUniformNCRDesert
+    outerClothing: MisfitsNCRPouchedCombatArmor
+    shoes: N14ClothingBootsLeatherFilled
+    ears: N14ClothingHeadsetNCR
+    belt: ClothingBeltNCR
+    pocket1: NCRwsloadoutkits
+    id: N14IDNCRDogtagWS
+  storage:
+    back:
+    - MisfitsIFAKMilitary
+
+- type: job
+  id: NCRMedic
+  name: job-name-ncr-medic
+  description: job-description-ncr-medic
+  playTimeTracker: NCRMedic
+  startingGear: NCRMedicGear
+  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  supervisors: job-supervisors-ncr-nco
+  access:
+  - NCR
+  - NCRMedic
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - Wastelander
+          - NCR
+
+- type: startingGear
+  id: NCRMedicGear
+  equipment:
+    jumpsuit: N14ClothingUniformNCRMedicVariant
+    outerClothing: N14ClothingOuterCoatFollowersArmored
+    back: N14ClothingBackpackNCR
+    shoes: N14ClothingBootsLeatherFilled
+    ears: N14ClothingHeadsetNCR
+    head: N14ClothingHeadHatNCRBeretMedic
+    belt: ClothingBeltNCR
+    id: N14IDNCRDogtagDoctor
+    pocket2: NCRmedicloadoutkits
+  storage:
+    back:
+    - MisfitsIFAKMilitary
+
+- type: job
+  id: NCRCadet
+  name: job-name-ncr-recruit
+  description: job-description-ncr-recruit
+  playTimeTracker: NCRCadet
+  startingGear: NCRCadetGear
+  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  supervisors: job-supervisors-ncr
+  access:
+  - NCR
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - Wastelander
+          - NCR
+
+- type: startingGear
+  id: NCRCadetGear
+  equipment:
+    head: N14ClothingHeadHatNCRSidecap
+    back: N14ClothingBackpackNCR
+    jumpsuit: N14ClothingUniformNCRDesert
+    shoes: N14ClothingBootsLeatherFilled
+    ears: N14ClothingHeadsetNCR
+    pocket1: NCRtrooperloadoutkits
+    id: N14IDNCRDogtag
+  storage:
+    back:
+    - MisfitsIFAKMilitary
+
+- type: job
+  id: F14NCRGarrisonTrooper
+  name: job-name-f14-n-c-r-garrison-trooper
+  description: job-description-ncr-recruit
+  playTimeTracker: F14NCRGarrisonTrooper
+  startingGear: F14NCRGarrisonTrooperGear
+  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  supervisors: job-supervisors-ncr
+  access:
+  - NCR
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - Wastelander
+          - NCR
+
+- type: startingGear
+  id: F14NCRGarrisonTrooperGear
+  equipment:
+    head: N14ClothingHeadHatNCRSidecap
+    back: N14ClothingBackpackNCR
+    jumpsuit: N14ClothingUniformNCRDesert
+    shoes: N14ClothingBootsLeatherFilled
+    ears: N14ClothingHeadsetNCR
+    pocket1: NCRtrooperloadoutkits
+    id: N14IDNCRDogtag
+  storage:
+    back:
+    - MisfitsIFAKMilitary

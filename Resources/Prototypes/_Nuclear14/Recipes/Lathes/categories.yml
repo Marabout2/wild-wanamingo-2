@@ -60,3 +60,7 @@
 - type: latheCategory
   id: N14WeaponMelee
   name: lathe-category-weapons-melee
+
+- type: latheCategory
+  id: N14Identification
+  name: lathe-category-identification

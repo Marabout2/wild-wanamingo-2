@@ -1,0 +1,145 @@
+# One playtime tracker per Yuma job (rank pins and future timelocks read these).
+
+- type: playTimeTracker
+  id: NCRCommander
+
+- type: playTimeTracker
+  id: NCRPlatoonLeader
+
+- type: playTimeTracker
+  id: NCRDoctor
+
+- type: playTimeTracker
+  id: NCRRO
+
+- type: playTimeTracker
+  id: NCRNCO
+
+- type: playTimeTracker
+  id: NCRWS
+
+- type: playTimeTracker
+  id: NCRMedic
+
+- type: playTimeTracker
+  id: NCRCadet
+
+- type: playTimeTracker
+  id: F14NCRGarrisonTrooper
+
+- type: playTimeTracker
+  id: NCRVeteranRanger
+
+- type: playTimeTracker
+  id: NCRPatrolRanger
+
+- type: playTimeTracker
+  id: CaesarLegionCenturion
+
+- type: playTimeTracker
+  id: CaesarLegionVexillarius
+
+- type: playTimeTracker
+  id: CaesarLegionExplorer
+
+- type: playTimeTracker
+  id: CaesarLegionHoundmaster
+
+- type: playTimeTracker
+  id: CaesarLegionForgemaster
+
+- type: playTimeTracker
+  id: CaesarLegionDean
+
+- type: playTimeTracker
+  id: CaesarLegionLegionnaireRecruit
+
+- type: playTimeTracker
+  id: CaesarLegionLegionnaireWarrior
+
+- type: playTimeTracker
+  id: CaesarLegionLegionnaireVeteran
+
+- type: playTimeTracker
+  id: CaesarLegionAuxilia
+
+- type: playTimeTracker
+  id: CaesarLegionSlave
+
+- type: playTimeTracker
+  id: BoSWestElderCommander
+
+- type: playTimeTracker
+  id: BoSMidPaladinCommander
+
+- type: playTimeTracker
+  id: BoSHeadKnight
+
+- type: playTimeTracker
+  id: BoSWestScribe
+
+- type: playTimeTracker
+  id: BoSScribe
+
+- type: playTimeTracker
+  id: BoSPaladin
+
+- type: playTimeTracker
+  id: BoSKnight
+
+- type: playTimeTracker
+  id: BoSInitiate
+
+- type: playTimeTracker
+  id: TownMayor
+
+- type: playTimeTracker
+  id: TownSheriff
+
+- type: playTimeTracker
+  id: TownDeputy
+
+- type: playTimeTracker
+  id: WastelandBartender
+
+- type: playTimeTracker
+  id: WastelandFarmer
+
+- type: playTimeTracker
+  id: TownMechanic
+
+- type: playTimeTracker
+  id: TownShopkeeper
+
+- type: playTimeTracker
+  id: Townsperson
+
+- type: playTimeTracker
+  id: TribalElder
+
+- type: playTimeTracker
+  id: Tribal
+
+- type: playTimeTracker
+  id: TribalFarmer
+
+- type: playTimeTracker
+  id: TribalShaman
+
+- type: playTimeTracker
+  id: FollowerDirector
+
+- type: playTimeTracker
+  id: FollowerHead
+
+- type: playTimeTracker
+  id: FollowerDoctor
+
+- type: playTimeTracker
+  id: FollowerGuard
+
+- type: playTimeTracker
+  id: FollowerVolunteer
+
+- type: playTimeTracker
+  id: Wastelander

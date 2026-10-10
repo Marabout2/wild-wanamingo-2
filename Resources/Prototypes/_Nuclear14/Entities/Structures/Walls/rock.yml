@@ -12,8 +12,10 @@
     noRot: true
   - type: IconSmooth
     key: walls
-    mode: NoSprite
-  - type: SmoothEdge
+    states:
+    - !type:EdgeSpriteSmoothing
+      mask: [ walls, windows, grilles, marble, doors ]
+      base: rock_asteroid_
   - type: Icon
     sprite: Nuclear14/Structures/Walls/rock.rsi
     state: rock_asteroid
@@ -21,14 +23,6 @@
     sprite: Nuclear14/Structures/Walls/rock.rsi
     layers:
       - state: rock_asteroid
-      - map: [ "enum.EdgeLayer.South" ]
-        state: rock_asteroid_south
-      - map: [ "enum.EdgeLayer.East" ]
-        state: rock_asteroid_east
-      - map: [ "enum.EdgeLayer.North" ]
-        state: rock_asteroid_north
-      - map: [ "enum.EdgeLayer.West" ]
-        state: rock_asteroid_west
   - type: Damageable
     damageModifierSet: Rock
   - type: Injurable
@@ -60,14 +54,6 @@
     - type: Sprite
       layers:
         - state: rock_asteroid
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_asteroid_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_asteroid_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_asteroid_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_asteroid_west
         - state: rock_coal
 
 - type: entity
@@ -82,14 +68,6 @@
     - type: Sprite
       layers:
         - state: rock_asteroid
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_asteroid_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_asteroid_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_asteroid_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_asteroid_west
         - state: rock_gold
 
 - type: entity
@@ -104,14 +82,6 @@
     - type: Sprite
       layers:
         - state: rock_asteroid
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_asteroid_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_asteroid_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_asteroid_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_asteroid_west
         - state: rock_silver
 
 - type: entity
@@ -126,14 +96,6 @@
     - type: Sprite
       layers:
         - state: rock_asteroid
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_asteroid_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_asteroid_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_asteroid_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_asteroid_west
         - state: rock_tin
 
 - type: entity
@@ -148,14 +110,6 @@
     - type: Sprite
       layers:
         - state: rock_asteroid
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_asteroid_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_asteroid_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_asteroid_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_asteroid_west
         - state: rock_uranium
 
 - type: entity
@@ -190,20 +144,14 @@
   components:
   - type: IconSmooth
     key: walls
-    mode: NoSprite
-  - type: SmoothEdge
+    states:
+    - !type:EdgeSpriteSmoothing
+      mask: [ walls, windows, grilles, marble, doors ]
+      base: rock_asteroid_
   - type: Sprite
     sprite: Nuclear14/Structures/Walls/rock.rsi
     layers:
       - state: rock_asteroid_south
-      - map: [ "enum.EdgeLayer.South" ]
-        state: rock_asteroid_south
-      - map: [ "enum.EdgeLayer.East" ]
-        state: rock_asteroid_east
-      - map: [ "enum.EdgeLayer.North" ]
-        state: rock_asteroid_north
-      - map: [ "enum.EdgeLayer.West" ]
-        state: rock_asteroid_west
 
 - type: entity
   id: N14RockGreySalt
@@ -217,14 +165,6 @@
     - type: Sprite
       layers:
         - state: rock_asteroid
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_asteroid_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_asteroid_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_asteroid_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_asteroid_west
         - state: rock_salt
 
 - type: entity
@@ -267,23 +207,17 @@
               acts: ["Destruction"]
     - type: IconSmooth
       key: walls
-      mode: NoSprite
+      states:
+      - !type:EdgeSpriteSmoothing
+        mask: [ walls, windows, grilles, marble, doors ]
+        base: rock_
     - type: Icon
       sprite: Nuclear14/Structures/Walls/rock.rsi
       state: rock
-    - type: SmoothEdge
     - type: Sprite
       sprite: Nuclear14/Structures/Walls/rock.rsi
       layers:
         - state: rock
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_west
 
 # Ore veins
 - type: entity
@@ -298,14 +232,6 @@
     - type: Sprite
       layers:
         - state: rock
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_west
         - state: rock_coal
 
 - type: entity
@@ -320,14 +246,6 @@
     - type: Sprite
       layers:
         - state: rock
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_west
         - state: rock_gold
 
 - type: entity
@@ -342,14 +260,6 @@
     - type: Sprite
       layers:
         - state: rock
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_west
         - state: rock_silver
 
 - type: entity
@@ -364,14 +274,6 @@
     - type: Sprite
       layers:
         - state: rock
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_west
         - state: rock_tin
 
 - type: entity
@@ -386,14 +288,6 @@
     - type: Sprite
       layers:
         - state: rock
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_west
         - state: rock_uranium
 
 - type: entity
@@ -408,14 +302,6 @@
     - type: Sprite
       layers:
         - state: rock
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_west
         - state: rock_salt
 
 # Misfits Add - Procedural ore vein variant for random distribution on Wendover
@@ -443,14 +329,6 @@
       sprite: Nuclear14/Structures/Walls/rock.rsi
       layers:
         - state: rock_wall
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_wall_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_wall_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_wall_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_wall_west
 
 - type: entity
   id: N14WallRockBasaltCoal
@@ -464,14 +342,6 @@
     - type: Sprite
       layers:
         - state: rock_wall
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_wall_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_wall_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_wall_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_wall_west
         - state: rock_coal
 
 - type: entity
@@ -486,14 +356,6 @@
     - type: Sprite
       layers:
         - state: rock_wall
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_wall_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_wall_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_wall_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_wall_west
         - state: rock_gold
 
 - type: entity
@@ -508,14 +370,6 @@
     - type: Sprite
       layers:
         - state: rock_wall
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_wall_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_wall_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_wall_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_wall_west
         - state: rock_silver
 
 - type: entity
@@ -530,14 +384,6 @@
     - type: Sprite
       layers:
         - state: rock_wall
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_wall_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_wall_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_wall_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_wall_west
         - state: rock_tin
 
 - type: entity
@@ -552,14 +398,6 @@
     - type: Sprite
       layers:
         - state: rock_wall
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_wall_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_wall_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_wall_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_wall_west
         - state: rock_uranium
 
 - type: entity
@@ -574,14 +412,6 @@
     - type: Sprite
       layers:
         - state: rock_wall
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_wall_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_wall_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_wall_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_wall_west
         - state: rock_salt
 
 # Misfits Add - Procedural ore vein variant for random distribution on Wendover
@@ -609,14 +439,6 @@
       sprite: Nuclear14/Structures/Walls/rock.rsi
       layers:
         - state: rock_sand
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_sand_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_sand_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_sand_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_sand_west
 
 - type: entity
   id: N14WallRockSandCoal
@@ -630,14 +452,6 @@
     - type: Sprite
       layers:
         - state: rock_sand
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_sand_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_sand_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_sand_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_sand_west
         - state: rock_coal
 
 - type: entity
@@ -652,14 +466,6 @@
     - type: Sprite
       layers:
         - state: rock_sand
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_sand_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_sand_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_sand_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_sand_west
         - state: rock_gold
 
 - type: entity
@@ -674,14 +480,6 @@
     - type: Sprite
       layers:
         - state: rock_sand
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_sand_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_sand_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_sand_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_sand_west
         - state: rock_silver
 
 - type: entity
@@ -696,14 +494,6 @@
     - type: Sprite
       layers:
         - state: rock_sand
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_sand_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_sand_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_sand_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_sand_west
         - state: rock_tin
 
 - type: entity
@@ -718,14 +508,6 @@
     - type: Sprite
       layers:
         - state: rock_sand
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_sand_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_sand_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_sand_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_sand_west
         - state: rock_uranium
 
 - type: entity
@@ -740,14 +522,6 @@
     - type: Sprite
       layers:
         - state: rock_sand
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_sand_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_sand_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_sand_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_sand_west
         - state: rock_salt
 
 # Misfits Add - Procedural ore vein variant for random distribution on Wendover
@@ -775,14 +549,6 @@
       sprite: Nuclear14/Structures/Walls/rock.rsi
       layers:
         - state: rock_andesite
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_andesite_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_andesite_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_andesite_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_andesite_west
 
 - type: entity
   id: N14WallRockAndesiteCoal
@@ -796,14 +562,6 @@
     - type: Sprite
       layers:
         - state: rock_andesite
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_andesite_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_andesite_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_andesite_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_andesite_west
         - state: rock_coal
 
 - type: entity
@@ -818,14 +576,6 @@
     - type: Sprite
       layers:
         - state: rock_andesite
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_andesite_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_andesite_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_andesite_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_andesite_west
         - state: rock_gold
 
 - type: entity
@@ -840,14 +590,6 @@
     - type: Sprite
       layers:
         - state: rock_andesite
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_andesite_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_andesite_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_andesite_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_andesite_west
         - state: rock_silver
 
 - type: entity
@@ -862,14 +604,6 @@
     - type: Sprite
       layers:
         - state: rock_andesite
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_andesite_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_andesite_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_andesite_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_andesite_west
         - state: rock_tin
 
 - type: entity
@@ -884,14 +618,6 @@
     - type: Sprite
       layers:
         - state: rock_andesite
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_andesite_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_andesite_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_andesite_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_andesite_west
         - state: rock_uranium
 
 - type: entity
@@ -906,14 +632,6 @@
     - type: Sprite
       layers:
         - state: rock_andesite
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_andesite_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_andesite_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_andesite_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_andesite_west
         - state: rock_salt
 
 # Misfits Add - Procedural ore vein variant for random distribution on Wendover
@@ -954,6 +672,9 @@
         - WallLayer
   - type: IconSmooth
     key: walls
-    base: rock_
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ walls, windows, grilles, marble, doors ]
+      base: rock_
   - type: BlockWeather
 

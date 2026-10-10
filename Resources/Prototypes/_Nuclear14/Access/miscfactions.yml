@@ -29,6 +29,10 @@
   id: WastelandReporter
   name: id-card-access-level-townie-reporter
 
+- type: accessLevel # Corvax-Change begin
+  id: TownsPerson
+  name: id-card-access-level-townie-person # Corvax-Change end
+
 - type: accessLevel
   id: InnRoomOne
   name: id-card-access-level-townie-inn1
@@ -40,6 +44,25 @@
 - type: accessLevel
   id: InnRoomThree
   name: id-card-access-level-townie-inn3
+
+- type: accessGroup
+  id: Townie
+  tags:
+  - TownieLaw
+  - TownieMayor
+  - TownieShopkeeper
+  - TownieDoctor
+  - TownieMechanic
+  - WastelandBartender
+  - WastelandReporter
+  - WastelandChaplain # Corvax-Change
+  - TownsPerson # Corvax-Change
+  - WastelandFarmer # Corvax-Change
+  - InnRoomOne
+  - InnRoomTwo
+  - InnRoomThree
+
+# Wastelander
 
 - type: accessLevel
   id: WastelandChaplain
@@ -60,6 +83,17 @@
   name: id-card-access-level-tribe-chief
 
 #MARK: Followers
+
+- type: accessLevel
+  id: FollowersApocalypse
+  name: id-card-access-level-followers-apocalypse
+
+- type: accessGroup
+  id: FollowersApocalypse
+  tags:
+  - FollowersApocalypse
+
+#MARK: Zetan
 
 - type: accessLevel
   id: Enclave

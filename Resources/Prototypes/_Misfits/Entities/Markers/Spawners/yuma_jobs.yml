@@ -1,0 +1,616 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): job spawn markers (IDs from
+# Resources/Prototypes/_Nuclear14/Entities/Markers/Spawners/jobs.yml and Misfits' marker files)
+# Changed for Wild Wanamingo: Yuma's roster, drawn with N14's marker sheets (Misfits used Corvax's).
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: MisfitsSpawnPointNCRCaptain
+  name: n c r commander spawn point
+  components:
+  - type: SpawnPoint
+    job_id: NCRCommander
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/ncr.rsi
+    layers:
+    - state: green
+    - state: lt
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: N14SpawnPointNCRPlatoonLeader
+  name: n c r platoon leader spawn point
+  components:
+  - type: SpawnPoint
+    job_id: NCRPlatoonLeader
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/ncr.rsi
+    layers:
+    - state: green
+    - state: lt
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: MisfitsSpawnPointNCRDoctor
+  name: n c r doctor spawn point
+  components:
+  - type: SpawnPoint
+    job_id: NCRDoctor
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/ncr.rsi
+    layers:
+    - state: green
+    - state: medic
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: MisfitsSpawnPointNCRRO
+  name: n c r r o spawn point
+  components:
+  - type: SpawnPoint
+    job_id: NCRRO
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/ncr.rsi
+    layers:
+    - state: green
+    - state: engineer
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: MisfitsSpawnPointNCRSGT
+  name: n c r n c o spawn point
+  components:
+  - type: SpawnPoint
+    job_id: NCRNCO
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/ncr.rsi
+    layers:
+    - state: green
+    - state: sgt
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: MisfitsSpawnPointNCRWS
+  name: n c r w s spawn point
+  components:
+  - type: SpawnPoint
+    job_id: NCRWS
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/ncr.rsi
+    layers:
+    - state: green
+    - state: ws
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: MisfitsSpawnPointNCRMedic
+  name: n c r medic spawn point
+  components:
+  - type: SpawnPoint
+    job_id: NCRMedic
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/ncr.rsi
+    layers:
+    - state: green
+    - state: medic
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: MisfitsSpawnPointNCRCadet
+  name: n c r cadet spawn point
+  components:
+  - type: SpawnPoint
+    job_id: NCRCadet
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/ncr.rsi
+    layers:
+    - state: green
+    - state: cadet
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: F14SpawnPointNCRGarrisonTrooper
+  name: n c r garrison trooper spawn point
+  components:
+  - type: SpawnPoint
+    job_id: F14NCRGarrisonTrooper
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/ncr.rsi
+    layers:
+    - state: green
+    - state: soldier
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: N14SpawnPointNCRRangerVeteran
+  name: n c r veteran ranger spawn point
+  components:
+  - type: SpawnPoint
+    job_id: NCRVeteranRanger
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/rangers.rsi
+    layers:
+    - state: green
+    - state: veteran
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: N14SpawnPointRangerRecruit
+  name: n c r patrol ranger spawn point
+  components:
+  - type: SpawnPoint
+    job_id: NCRPatrolRanger
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/rangers.rsi
+    layers:
+    - state: green
+    - state: ranger
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: N14SpawnPointCenturion
+  name: caesar legion centurion spawn point
+  components:
+  - type: SpawnPoint
+    job_id: CaesarLegionCenturion
+  - type: Sprite
+    sprite: Markers/jobs.rsi
+    layers:
+    - state: green
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: N14SpawnPointVexillarius
+  name: caesar legion vexillarius spawn point
+  components:
+  - type: SpawnPoint
+    job_id: CaesarLegionVexillarius
+  - type: Sprite
+    sprite: Markers/jobs.rsi
+    layers:
+    - state: green
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: N14SpawnPointExplorer
+  name: caesar legion explorer spawn point
+  components:
+  - type: SpawnPoint
+    job_id: CaesarLegionExplorer
+  - type: Sprite
+    sprite: Markers/jobs.rsi
+    layers:
+    - state: green
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: N14SpawnPointHoundmaster
+  name: caesar legion houndmaster spawn point
+  components:
+  - type: SpawnPoint
+    job_id: CaesarLegionHoundmaster
+  - type: Sprite
+    sprite: Markers/jobs.rsi
+    layers:
+    - state: green
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: N14SpawnPointForgemaster
+  name: caesar legion forgemaster spawn point
+  components:
+  - type: SpawnPoint
+    job_id: CaesarLegionForgemaster
+  - type: Sprite
+    sprite: Markers/jobs.rsi
+    layers:
+    - state: green
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: N14SpawnPointDean
+  name: caesar legion dean spawn point
+  components:
+  - type: SpawnPoint
+    job_id: CaesarLegionDean
+  - type: Sprite
+    sprite: Markers/jobs.rsi
+    layers:
+    - state: green
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: N14SpawnPointLegionnaireRecruit
+  name: caesar legion legionnaire recruit spawn point
+  components:
+  - type: SpawnPoint
+    job_id: CaesarLegionLegionnaireRecruit
+  - type: Sprite
+    sprite: Markers/jobs.rsi
+    layers:
+    - state: green
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: N14SpawnPointLegionnaireWarrior
+  name: caesar legion legionnaire warrior spawn point
+  components:
+  - type: SpawnPoint
+    job_id: CaesarLegionLegionnaireWarrior
+  - type: Sprite
+    sprite: Markers/jobs.rsi
+    layers:
+    - state: green
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: N14SpawnPointLegionnaireVeteran
+  name: caesar legion legionnaire veteran spawn point
+  components:
+  - type: SpawnPoint
+    job_id: CaesarLegionLegionnaireVeteran
+  - type: Sprite
+    sprite: Markers/jobs.rsi
+    layers:
+    - state: green
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: N14SpawnPointAuxilia
+  name: caesar legion auxilia spawn point
+  components:
+  - type: SpawnPoint
+    job_id: CaesarLegionAuxilia
+  - type: Sprite
+    sprite: Markers/jobs.rsi
+    layers:
+    - state: green
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: SpawnPointCaesarLegionSlave
+  name: caesar legion slave spawn point
+  components:
+  - type: SpawnPoint
+    job_id: CaesarLegionSlave
+  - type: Sprite
+    sprite: Markers/jobs.rsi
+    layers:
+    - state: green
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: MisfitsSpawnPointBoSWestElderCommander
+  name: bo s west elder commander spawn point
+  components:
+  - type: SpawnPoint
+    job_id: BoSWestElderCommander
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/boswashington.rsi
+    layers:
+    - state: green
+    - state: commander
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: MisfitsSpawnPointBoSMidPaladinCommander
+  name: bo s mid paladin commander spawn point
+  components:
+  - type: SpawnPoint
+    job_id: BoSMidPaladinCommander
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/bosmid.rsi
+    layers:
+    - state: green
+    - state: commander
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: MisfitsSpawnPointBoSHeadKnight
+  name: bo s head knight spawn point
+  components:
+  - type: SpawnPoint
+    job_id: BoSHeadKnight
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/bosmid.rsi
+    layers:
+    - state: green
+    - state: knight
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: MisfitsSpawnPointBoSWestScribe
+  name: bo s west scribe spawn point
+  components:
+  - type: SpawnPoint
+    job_id: BoSWestScribe
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/bosmid.rsi
+    layers:
+    - state: green
+    - state: scribe
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: MisfitsSpawnPointBoSScribe
+  name: bo s scribe spawn point
+  components:
+  - type: SpawnPoint
+    job_id: BoSScribe
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/boswashington.rsi
+    layers:
+    - state: green
+    - state: scribe
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: MisfitsSpawnPointBoSPaladin
+  name: bo s paladin spawn point
+  components:
+  - type: SpawnPoint
+    job_id: BoSPaladin
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/boswashington.rsi
+    layers:
+    - state: green
+    - state: paladin
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: MisfitsSpawnPointBoSKnight
+  name: bo s knight spawn point
+  components:
+  - type: SpawnPoint
+    job_id: BoSKnight
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/boswashington.rsi
+    layers:
+    - state: green
+    - state: knight
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: MisfitsSpawnPointBoSInitiate
+  name: bo s initiate spawn point
+  components:
+  - type: SpawnPoint
+    job_id: BoSInitiate
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/boswashington.rsi
+    layers:
+    - state: green
+    - state: initiate
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: N14SpawnPointTownsfolkTownMayor
+  name: town mayor spawn point
+  components:
+  - type: SpawnPoint
+    job_id: TownMayor
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/town.rsi
+    layers:
+    - state: green
+    - state: mayor
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: N14SpawnPointTownsfolkTownSheriff
+  name: town sheriff spawn point
+  components:
+  - type: SpawnPoint
+    job_id: TownSheriff
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/town.rsi
+    layers:
+    - state: green
+    - state: sheriff
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: N14SpawnPointTownsfolkTownDeputy
+  name: town deputy spawn point
+  components:
+  - type: SpawnPoint
+    job_id: TownDeputy
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/town.rsi
+    layers:
+    - state: green
+    - state: deputy
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: N14SpawnPointWastelandBartender
+  name: wasteland bartender spawn point
+  components:
+  - type: SpawnPoint
+    job_id: WastelandBartender
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/wastelanders.rsi
+    layers:
+    - state: green
+    - state: bartender
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: N14SpawnPointWastelandFarmer
+  name: wasteland farmer spawn point
+  components:
+  - type: SpawnPoint
+    job_id: WastelandFarmer
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/wastelanders.rsi
+    layers:
+    - state: green
+    - state: farmer
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: N14SpawnPointTownsfolkTownMechanic
+  name: town mechanic spawn point
+  components:
+  - type: SpawnPoint
+    job_id: TownMechanic
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/town.rsi
+    layers:
+    - state: green
+    - state: mechanic
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: N14SpawnPointTownsfolkTownShopkeeper
+  name: town shopkeeper spawn point
+  components:
+  - type: SpawnPoint
+    job_id: TownShopkeeper
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/town.rsi
+    layers:
+    - state: green
+    - state: shopkeeper
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: N14SpawnPointTownsfolkTownsperson
+  name: townsperson spawn point
+  components:
+  - type: SpawnPoint
+    job_id: Townsperson
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/town.rsi
+    layers:
+    - state: green
+    - state: person
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: N14SpawnPointTribalElder
+  name: tribal elder spawn point
+  components:
+  - type: SpawnPoint
+    job_id: TribalElder
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/tribal.rsi
+    layers:
+    - state: green
+    - state: elder
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: N14SpawnPointTribal
+  name: tribal spawn point
+  components:
+  - type: SpawnPoint
+    job_id: Tribal
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/tribal.rsi
+    layers:
+    - state: green
+    - state: tribal
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: N14SpawnPointTribalFarmer
+  name: tribal farmer spawn point
+  components:
+  - type: SpawnPoint
+    job_id: TribalFarmer
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/tribal.rsi
+    layers:
+    - state: green
+    - state: farmer
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: N14SpawnPointTribalHealer
+  name: tribal shaman spawn point
+  components:
+  - type: SpawnPoint
+    job_id: TribalShaman
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/tribal.rsi
+    layers:
+    - state: green
+    - state: healer
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: MisfitsSpawnPointFollowerDirector
+  name: follower director spawn point
+  components:
+  - type: SpawnPoint
+    job_id: FollowerDirector
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/town.rsi
+    layers:
+    - state: green
+    - state: doctor
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: MisfitsSpawnPointFollowerHead
+  name: follower head spawn point
+  components:
+  - type: SpawnPoint
+    job_id: FollowerHead
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/town.rsi
+    layers:
+    - state: green
+    - state: doctor
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: MisfitsSpawnPointFollowerDoctor
+  name: follower doctor spawn point
+  components:
+  - type: SpawnPoint
+    job_id: FollowerDoctor
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/town.rsi
+    layers:
+    - state: green
+    - state: doctor
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: MisfitsSpawnPointFollowerGuard
+  name: follower guard spawn point
+  components:
+  - type: SpawnPoint
+    job_id: FollowerGuard
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/town.rsi
+    layers:
+    - state: green
+    - state: deputy
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: N14SpawnPointFollowers
+  name: follower volunteer spawn point
+  components:
+  - type: SpawnPoint
+    job_id: FollowerVolunteer
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/town.rsi
+    layers:
+    - state: green
+    - state: person
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: N14SpawnPointWastelander
+  name: wastelander spawn point
+  components:
+  - type: SpawnPoint
+    job_id: Wastelander
+  - type: Sprite
+    sprite: Nuclear14/Markers/Jobs/wastelanders.rsi
+    layers:
+    - state: green
+    - state: wastelander

@@ -1,0 +1,16 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/Entities/Clothing/Eyes/goggles.yml
+# (Misfits' copy of a Space Station 14 or other-fork file.)
+
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesNightVisionGoggles
+  name: night vision goggles
+  description: An advanced heads-up display which provides id data and vision in complete darkness.
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/Clothing/Eyes/Goggles/nightvision.rsi
+  - type: Clothing
+    sprite: Misfits/Legacy/Clothing/Eyes/Goggles/nightvision.rsi
+  - type: NightVision
+  - type: IdentityBlocker
+    coverage: EYES

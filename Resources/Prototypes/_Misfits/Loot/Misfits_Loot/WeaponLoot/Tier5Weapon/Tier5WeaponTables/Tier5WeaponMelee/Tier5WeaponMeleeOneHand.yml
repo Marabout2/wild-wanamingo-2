@@ -36,6 +36,9 @@
     - !type:EntSelector
       id: N14TribalSword
     - !type:EntSelector
+      id: N14Gladius
+
+    - !type:EntSelector
       id: N14ripper
 
     - !type:EntSelector

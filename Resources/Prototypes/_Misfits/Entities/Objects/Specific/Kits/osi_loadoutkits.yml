@@ -1,0 +1,112 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Specific/Kits/osi_loadoutkits.yml
+
+- type: entity
+  id: OSIloadoutkits
+  name: Undecided OSI Loadout Kit
+  parent: BaseLoadoutKit
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Objects/Misc/kits.rsi
+    state: medic
+  - type: ThiefUndeterminedBackpack
+    maxSelectedSets: 1
+    toolName: n14-loadout-kit-window-title
+    toolDesc: n14-loadout-kit-window-description
+    possibleSets:
+    - OSI_MechanicalSet
+    - OSI_MedicalSet
+    - OSI_FieldSet
+
+- type: thiefBackpackSet
+  id: OSI_MechanicalSet
+  name: n14-loadout-kit-osi-mechanicalset-name
+  description: n14-loadout-kit-osi-mechanicalset-description
+  sprite:
+    sprite: Nuclear14/Objects/Misc/kits.rsi
+    state: pointman
+  content:
+  - KitOSI_Mechanical
+
+- type: thiefBackpackSet
+  id: OSI_MedicalSet
+  name: n14-loadout-kit-osi-medicalset-name
+  description: n14-loadout-kit-osi-medicalset-description
+  sprite:
+    sprite: Nuclear14/Objects/Misc/kits.rsi
+    state: medic
+  content:
+  - KitOSI_Medical
+
+- type: thiefBackpackSet
+  id: OSI_FieldSet
+  name: n14-loadout-kit-osi-fieldset-name
+  description: n14-loadout-kit-osi-fieldset-description
+  sprite:
+    sprite: Nuclear14/Objects/Misc/kits.rsi
+    state: rifleman
+  content:
+  - KitOSI_Field
+
+- type: entity
+  id: KitOSI_Mechanical
+  name: mechanical OSI kit
+  parent: KitBase
+  description: A crate containing tools and technical supplies for an OSI scientist assigned to mechanical and industrial work.
+  components:
+  - type: Sprite
+    state: pointman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: ToolboxMechanicalFilled
+      - id: ToolboxElectricalFilled
+      - id: RadioHandheld
+      - id: N14Stimpak
+      - id: N14CleanGauze10
+      - id: N14Flare
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  id: KitOSI_Medical
+  name: medical OSI kit
+  parent: KitBase
+  description: A crate containing trauma and radiation support for an OSI scientist assigned to medical duties.
+  components:
+  - type: Sprite
+    state: medic
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14MedkitCombatFilled
+      - id: N14SuperStimpak
+      - id: N14RadAwayBloodbag
+      - id: N14CleanGauze10
+        amount: 2
+      - id: RadioHandheld
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  id: KitOSI_Field
+  name: field OSI kit
+  parent: KitBase
+  description: A crate containing a radiation suit, survey gear, and a sidearm for an OSI scientist operating in the field.
+  components:
+  - type: Sprite
+    state: rifleman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: GeigerCounter
+      - id: N14MedkitRadiationFilled
+      - id: N14WeaponPistol9mm
+      - id: N14Stimpak
+      - id: N14CleanGauze10
+      - id: N14Flare
+      - id: RadioHandheld
+    sound:
+      path: /Audio/Effects/unwrap.ogg

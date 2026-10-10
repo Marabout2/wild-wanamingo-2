@@ -1,0 +1,149 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Specific/Kits/UndecidedLoadout.yml
+
+- type: entity
+  id: LegionPriestessLoadoutKits
+  name: kit
+  description: "please only take one."
+  parent: LegionCenturionloadoutkits
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
+    state: base
+  - type: ThiefUndeterminedBackpack
+    maxSelectedSets: 1
+    toolName: n14-loadout-kit-window-title
+    toolDesc: n14-loadout-kit-window-description
+    possibleSets:
+    - PriestessHealingSet
+    - PriestessZealotSet
+    - PriestessPurifierSet
+
+- type: thiefBackpackSet
+  id: PriestessHealingSet
+  name: n14-loadout-kit-priestesshealingset-name
+  description: n14-loadout-kit-priestesshealingset-description
+  sprite:
+    sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
+    state: base
+  content:
+  - KitPriestessHealing
+
+- type: thiefBackpackSet
+  id: PriestessZealotSet
+  name: n14-loadout-kit-priestesszealotset-name
+  description: n14-loadout-kit-priestesszealotset-description
+  sprite:
+    sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
+    state: base
+  content:
+  - KitPriestessZealot
+
+- type: thiefBackpackSet
+  id: PriestessPurifierSet
+  name: n14-loadout-kit-priestesspurifierset-name
+  description: n14-loadout-kit-priestesspurifierset-description
+  sprite:
+    sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
+    state: base
+  content:
+  - KitPriestessPurifier
+
+  # acolyte kits
+
+- type: entity
+  id: LegionAcolyteLoadoutKits
+  name: kit
+  description: "please only take one."
+  parent: LegionCenturionloadoutkits
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
+    state: base
+  - type: ThiefUndeterminedBackpack
+    maxSelectedSets: 1
+    toolName: n14-loadout-kit-window-title
+    toolDesc: n14-loadout-kit-window-description
+    possibleSets:
+    - AcolyteHealingSet
+    - AcolyteZealotSet
+    - AcolyteSlaverSet
+
+- type: thiefBackpackSet
+  id: AcolyteHealingSet
+  name: n14-loadout-kit-acolytehealingset-name
+  description: n14-loadout-kit-acolytehealingset-description
+  sprite:
+    sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
+    state: base
+  content:
+  - KitAcolyteHealing
+
+- type: thiefBackpackSet
+  id: AcolyteZealotSet
+  name: n14-loadout-kit-acolytezealotset-name
+  description: n14-loadout-kit-acolytezealotset-description
+  sprite:
+    sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
+    state: base
+  content:
+  - KitAcolyteZealot
+
+- type: thiefBackpackSet
+  id: AcolyteSlaverSet
+  name: n14-loadout-kit-acolyteslaverset-name
+  description: n14-loadout-kit-acolyteslaverset-description
+  sprite:
+    sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
+    state: base
+  content:
+  - KitAcolyteSlaver
+
+# temple guard kits
+
+- type: entity
+  id: LegionTempleGuardLoadoutKits
+  name: kit
+  description: "please only take one."
+  parent: LegionCenturionloadoutkits
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
+    state: base
+  - type: ThiefUndeterminedBackpack
+    maxSelectedSets: 1
+    toolName: n14-loadout-kit-window-title
+    toolDesc: n14-loadout-kit-window-description
+    possibleSets:
+    - TempleGuardProtectorSet
+    - TempleGuardEnforcerSet
+    - TempleGuardExecutorSet
+
+- type: thiefBackpackSet
+  id: TempleGuardProtectorSet
+  name: n14-loadout-kit-templeguardprotectorset-name
+  description: n14-loadout-kit-templeguardprotectorset-description
+  sprite:
+    sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
+    state: base
+  content:
+  - KitTempleGuardProtector
+
+- type: thiefBackpackSet
+  id: TempleGuardEnforcerSet
+  name: n14-loadout-kit-templeguardenforcerset-name
+  description: n14-loadout-kit-templeguardenforcerset-description
+  sprite:
+    sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
+    state: base
+  content:
+  - KitTempleGuardEnforcer
+
+- type: thiefBackpackSet
+  id: TempleGuardExecutorSet
+  name: n14-loadout-kit-templeguardexecutorset-name
+  description: n14-loadout-kit-templeguardexecutorset-description
+  sprite:
+    sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
+    state: base
+  content:
+  - KitTempleGuardExecutor

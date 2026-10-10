@@ -1,0 +1,32 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/Corvax/Entities/Objects/Weapons/Melee/longblades.yml
+# (Misfits' copy of a Space Station 14 or other-fork file.)
+
+- type: entity
+  parent: N14Machete
+  id: N14Gladius
+  name: gladius
+  description: The old sword of the Roman Empire. It is now in use by the Legion...
+  components:
+  - type: Clothing
+    sprite: Misfits/Legacy/Corvax/Objects/Weapons/Melee/gladius.rsi
+    quickEquip: false
+    slots:
+    - Belt
+    - Back
+    - suitStorage
+  - type: Sprite
+    sprite: Misfits/Legacy/Corvax/Objects/Weapons/Melee/gladius.rsi
+    state: icon
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Slash: 25
+  - type: MeleeWeapon
+    attackRate: 0.9
+    damage:
+      types:
+        Slash: 48
+    soundHit:
+        path: /Audio/Weapons/bladeslice.ogg
+  - type: Item
+    sprite: Misfits/Legacy/Corvax/Objects/Weapons/Melee/gladius.rsi

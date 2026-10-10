@@ -1,0 +1,20 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Specific/Kits/legion_frumentarii_kits.yml
+
+- type: entity
+  name: frumentarii black-ops kit
+  parent: KitBase
+  id: KitFrumentariiBlackOps
+  description: A concealed kit for Frumentarii undercover operations. Contains civilian clothes, a scrap headset, and wastelander dogtags.
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/Corvax/Objects/Misc/kits.rsi
+    state: base
+  - type: Item
+    size: Normal
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14ClothingUniformJumpsuitSettlerRags  # civilian cover — blend in with wastelanders
+      - id: MisfitsClothingHeadsetWastelandScrap   # wasteland radio channel, inconspicuous
+      - id: N14ClothingNeckDogtags                 # fake wastelander ID for deep cover
+    sound:
+      path: /Audio/Effects/unwrap.ogg

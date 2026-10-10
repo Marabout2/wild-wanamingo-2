@@ -1,0 +1,66 @@
+- type: gameMapPool
+  id: F14WastelandMapPool
+  maps:
+  - Yuma
+
+- type: gameMap
+  id: Yuma
+  mapName: Yuma
+  mapPath: /Maps/_WW/Yuma.yml
+  minPlayers: 0
+  stations:
+    Yuma:
+      stationProto: F14WastelandStation
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Yuma
+      - type: StationJobs
+        availableJobs:
+          NCRCommander: [ 1, 1 ]
+          NCRPlatoonLeader: [ 1, 1 ]
+          NCRDoctor: [ 1, 1 ]
+          NCRRO: [ 1, 1 ]
+          NCRNCO: [ 2, 2 ]
+          NCRWS: [ 2, 2 ]
+          NCRMedic: [ 4, 4 ]
+          NCRCadet: [ 18, 18 ]
+          F14NCRGarrisonTrooper: [ 7, 7 ]
+          NCRVeteranRanger: [ 1, 1 ]
+          NCRPatrolRanger: [ 6, 6 ]
+          CaesarLegionCenturion: [ 1, 1 ]
+          CaesarLegionVexillarius: [ 1, 1 ]
+          CaesarLegionExplorer: [ 2, 2 ]
+          CaesarLegionHoundmaster: [ 1, 1 ]
+          CaesarLegionForgemaster: [ 1, 1 ]
+          CaesarLegionDean: [ 3, 3 ]
+          CaesarLegionLegionnaireRecruit: [ 10, 10 ]
+          CaesarLegionLegionnaireWarrior: [ 10, 10 ]
+          CaesarLegionLegionnaireVeteran: [ 10, 10 ]
+          CaesarLegionAuxilia: [ 4, 4 ]
+          CaesarLegionSlave: [ 6, 6 ]
+          BoSWestElderCommander: [ 1, 1 ]
+          BoSMidPaladinCommander: [ 1, 1 ]
+          BoSHeadKnight: [ 1, 1 ]
+          BoSWestScribe: [ 1, 1 ]
+          BoSScribe: [ 3, 3 ]
+          BoSPaladin: [ 3, 3 ]
+          BoSKnight: [ 3, 3 ]
+          BoSInitiate: [ 3, 3 ]
+          TownMayor: [ 1, 1 ]
+          TownSheriff: [ 1, 1 ]
+          TownDeputy: [ 8, 8 ]
+          WastelandBartender: [ 1, 1 ]
+          WastelandFarmer: [ 2, 2 ]
+          TownMechanic: [ 2, 2 ]
+          TownShopkeeper: [ 1, 1 ]
+          Townsperson: [ -1, -1 ]
+          TribalElder: [ 1, 1 ]
+          Tribal: [ 8, 8 ]
+          TribalFarmer: [ 4, 4 ]
+          TribalShaman: [ 3, 3 ]
+          FollowerDirector: [ 1, 1 ]
+          FollowerHead: [ 1, 1 ]
+          FollowerDoctor: [ 2, 2 ]
+          FollowerGuard: [ 2, 2 ]
+          FollowerVolunteer: [ 2, 2 ]
+          Wastelander: [ 10, 10 ]

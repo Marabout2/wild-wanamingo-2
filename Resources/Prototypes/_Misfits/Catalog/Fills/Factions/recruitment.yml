@@ -53,6 +53,9 @@
     - id: N14DrinkRoentgenRum
     - id: N14DrinkWhisky
     - id: N14DrinkWine
+    - id: N14IDNCRDogtagOfficer
+    - id: N14IDNCRDogtagNCO
+      amount: 2
 
 - type: entity
   id: MisfitsClosetSafeSpinnerBrotherhoodOfSteel

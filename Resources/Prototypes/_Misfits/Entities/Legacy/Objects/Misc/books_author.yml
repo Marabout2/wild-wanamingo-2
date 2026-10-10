@@ -1,0 +1,20 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/Entities/Objects/Misc/books_author.yml
+# (Misfits' copy of a Space Station 14 or other-fork file.)
+
+- type: entity
+  parent: BookBase
+  id: BookLegionLaw
+  name: Caesar's Legion Law Code
+  description: A comprehensive list of the laws and regulations governing Caesar's Legion.
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/Objects/Misc/books.rsi
+    layers:
+    - state: paper
+    - state: cover_strong
+      color: "#e01d1a"
+    - state: decor_wingette_circle
+      color: "#d3d317"
+    - state: icon_legion
+  - type: Paper
+    content: book-text-legion-law

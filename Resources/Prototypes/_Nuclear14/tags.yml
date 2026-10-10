@@ -17,6 +17,9 @@
   id: JunkItem
 
 - type: Tag
+  id: JunkPile
+
+- type: Tag
   id: Jam
 
 - type: Tag
@@ -36,6 +39,9 @@
 
 - type: Tag
   id: Turbo
+
+- type: Tag
+  id: IdCardVault
 
 - type: Tag
   id: WeldingGoggles

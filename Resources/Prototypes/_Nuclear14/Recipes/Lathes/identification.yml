@@ -1,0 +1,114 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Recipes/Lathes/identification.yml
+
+- type: latheRecipe
+  id: DogtagNCR
+  result: N14IDNCRDogtag
+  categories:
+  - N14Identification
+  completetime: 5
+  materials:
+    Steel: 100
+
+- type: latheRecipe
+  id: DogtagNCRNCO
+  result: N14IDNCRDogtagNCO
+  categories:
+  - N14Identification
+  completetime: 5
+  materials:
+    Steel: 100
+
+#MARK: Townsfolk
+
+- type: latheRecipe
+  id: PassportTownsfolk
+  result: N14IDPassportTownsfolk
+  categories:
+  - N14Identification
+  completetime: 5
+  materials:
+    N14Paper: 100
+
+- type: latheRecipe
+  id: PassportTownsfolkShopkeeper
+  result: N14IDShopkeeperTown
+  categories:
+  - N14Identification
+  completetime: 5
+  materials:
+    N14Paper: 100
+
+- type: latheRecipe
+  id: PassportTownsfolkMechanic
+  result: N14IDPassportTownMechanic
+  categories:
+  - N14Identification
+  completetime: 5
+  materials:
+    N14Paper: 100
+
+- type: latheRecipe
+  id: PassportTownsfolkDeputy
+  result: N14IDBadgeTownDeputy
+  categories:
+  - N14Identification
+  completetime: 5
+  materials:
+    Steel: 100
+
+- type: latheRecipe
+  id: PassportTownsfolkSheriff
+  result: N14IDBadgeTownSheriff
+  categories:
+  - N14Identification
+  completetime: 5
+  materials:
+    Steel: 100
+
+- type: latheRecipe
+  id: PassportTownsfolkMayor
+  result: N14IDBadgeTownMayor
+  categories:
+  - N14Identification
+  completetime: 5
+  materials:
+    Steel: 100
+
+#MARK: Townsfolk
+
+- type: latheRecipe
+  id: IDVault
+  result: N14IDCardVault
+  categories:
+  - N14Identification
+  completetime: 5
+  materials:
+    Steel: 100
+
+- type: latheRecipe
+  id: IDVaultEngineer
+  result: N14IDCardVaultEngineer
+  categories:
+  - N14Identification
+  completetime: 5
+  materials:
+    Steel: 100
+
+- type: latheRecipe
+  id: IDVaultSecurity
+  result: N14IDCardVaultSecurity
+  categories:
+  - N14Identification
+  completetime: 5
+  materials:
+    Steel: 100
+
+- type: latheRecipe
+  id: IDVaultDoctor
+  result: N14IDCardVaultDoctor
+  categories:
+  - N14Identification
+  completetime: 5
+  materials:
+    Steel: 100

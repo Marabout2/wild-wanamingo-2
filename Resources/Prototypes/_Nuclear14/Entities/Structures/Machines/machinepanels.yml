@@ -343,7 +343,7 @@
       deviceNetId: Wired
       receiveFrequencyId: SurveillanceCamera
       transmitFrequencyId: SurveillanceCamera
-    - type: WiredNetworkConnection
+    - type: WiredNetwork
     - type: DeviceNetworkRequiresPower
     - type: UserInterface
       interfaces:

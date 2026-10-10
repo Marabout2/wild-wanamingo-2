@@ -1,0 +1,178 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Roles/Jobs/, _Nuclear14/Roles/Jobs/
+# Changed for Wild Wanamingo: Yuma's roster. Names, slots and whitelists from the server's roster; gear is
+# Misfits' (minus the wallet slot and the skirt/satchel/duffel choices, which are loadouts in Wizden).
+# Misfits' playtime and species requirements are left out for now.
+
+- type: job
+  id: FollowerDirector
+  name: job-name-follower-director
+  description: job-description-follower-director
+  playTimeTracker: FollowerDirector
+  startingGear: FollowerDirectorGear
+  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  supervisors: job-supervisors-follower-director
+  accessGroups:
+  - FollowersApocalypse
+  - FotAHead
+  - FotADoctor
+  - FotA
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - Wastelander
+          - Followers
+
+- type: startingGear
+  id: FollowerDirectorGear
+  equipment:
+    jumpsuit: N14ClothingUniformJumpsuitFollowers
+    back: ClothingBackpackDuffelSurgeryFilled
+    shoes: N14ClothingBootsLeather
+    neck: ClothingNeckStethoscope
+    id: N14IDFollowerHead
+    ears: N14ClothingHeadsetFollowers
+    outerClothing: N14ClothingOuterCoatFollowerLab
+    belt: N14ClothingBeltMedicalFilled
+    pocket2: N14HandheldHealthAnalyzer
+    head: ClothingHeadHatBeretMedic
+
+- type: job
+  id: FollowerHead
+  name: job-name-follower-head
+  description: job-description-follower-head
+  playTimeTracker: FollowerHead
+  startingGear: FollowerHeadGear
+  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  supervisors: job-supervisors-follower-head
+  accessGroups:
+  - FollowersApocalypse
+  - FotAHead
+  - FotADoctor
+  - FotA
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - Wastelander
+          - Followers
+
+- type: startingGear
+  id: FollowerHeadGear
+  equipment:
+    jumpsuit: N14ClothingUniformJumpsuitFollowers
+    back: ClothingBackpackDuffelSurgeryFilled
+    shoes: N14ClothingBootsLeather
+    neck: ClothingNeckStethoscope
+    id: N14IDFollowerHead
+    ears: N14ClothingHeadsetFollowers
+    outerClothing: N14ClothingOuterCoatFollowerLab
+    belt: N14ClothingBeltMedicalFilled
+    pocket2: N14HandheldHealthAnalyzer
+    head: ClothingHeadHatBeretMedic
+
+- type: job
+  id: FollowerDoctor
+  name: job-name-follower-doctor
+  description: job-description-follower-doctor
+  playTimeTracker: FollowerDoctor
+  startingGear: FollowerDoctorGear
+  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  supervisors: job-supervisors-follower-doctor
+  accessGroups:
+  - FollowersApocalypse
+  - FotADoctor
+  - FotA
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - Wastelander
+          - Followers
+
+- type: startingGear
+  id: FollowerDoctorGear
+  equipment:
+    jumpsuit: N14ClothingUniformJumpsuitFollowers
+    back: ClothingBackpackDuffelSurgeryFilled
+    shoes: N14ClothingBootsLeather
+    neck: ClothingNeckStethoscope
+    id: N14IDFollowerDoctor
+    ears: N14ClothingHeadsetFollowers
+    outerClothing: N14ClothingOuterCoatFollowerLab
+    belt: N14ClothingBeltMedicalFilled
+    pocket2: N14HandheldHealthAnalyzer
+
+- type: job
+  id: FollowerGuard
+  name: job-name-follower-guard
+  description: job-description-follower-guard
+  playTimeTracker: FollowerGuard
+  startingGear: FollowerGuardGear
+  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  supervisors: job-supervisors-follower-guard
+  accessGroups:
+  - FollowersApocalypse
+  - FotA
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - Wastelander
+          - Followers
+
+- type: startingGear
+  id: FollowerGuardGear
+  equipment:
+    jumpsuit: N14ClothingUniformJumpsuitFollowers
+    back: N14ClothingBackpackSatchelMilitary
+    shoes: N14ClothingBootsLeatherFilled
+    id: N14IDFollowerGuard
+    ears: N14ClothingHeadsetFollowers
+    outerClothing: N14ClothingOuterCoatFollowersArmored
+    belt: ClothingBelt10mmfilled
+    pocket1: Handcuffs
+    pocket2: N14HandheldHealthAnalyzer
+  storage:
+    back:
+    - MisfitsSurvivalKitWastelander
+    - N14PoliceBaton
+    - N14CombatKnife
+    - MagazineBox10mm
+    - Brutepack
+
+- type: job
+  id: FollowerVolunteer
+  name: job-name-follower-volunteer
+  description: job-description-follower-volunteer
+  playTimeTracker: FollowerVolunteer
+  startingGear: FollowerVolunteerGear
+  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  supervisors: job-supervisors-follower-volunteer
+  accessGroups:
+  - FollowersApocalypse
+  - FotA
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - Wastelander
+          - Followers
+
+- type: startingGear
+  id: FollowerVolunteerGear
+  equipment:
+    jumpsuit: N14ClothingUniformJumpsuitFollowers
+    back: ClothingBackpackSatchelMedical
+    shoes: N14ClothingBootsLeather
+    neck: ClothingNeckStethoscope
+    id: N14IDFollowerVolunteer
+    ears: N14ClothingHeadsetFollowers
+    belt: ClothingBeltMedicalFilled
+    pocket1: N14HandheldHealthAnalyzer
+    pocket2: Brutepack

@@ -99,7 +99,10 @@
     state: full
   - type: IconSmooth
     key: windows
-    base: window
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ windows ]
+      base: window
     
 
 - type: entity

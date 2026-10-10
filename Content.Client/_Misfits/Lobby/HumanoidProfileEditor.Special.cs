@@ -451,6 +451,8 @@ namespace Content.Client.Lobby.UI
             var shotCrit = Math.Clamp(delta * tuning.LuckSingleShotCriticalChancePerPoint, 0f, 1f);
             var revolverCrit = Math.Clamp(shotCrit * 2f, 0f, 1f);
             var clumsy = value == 1 ? 0.10f : 0f;
+            // Matches LuckJunkBonusComponent.ChancePerLuckPoint (Misfits showed the unused tuning value here).
+            var luckyLoot = Math.Clamp(delta * 0.06666667f, 0f, 1f);
             var unlucky = value switch
             {
                 2 => 0.05f,
@@ -461,7 +463,7 @@ namespace Content.Client.Lobby.UI
 
             var unluckyDamage = 1f - Math.Clamp(tuning.LuckUnluckyDamageMultiplier, 0f, 1f);
 
-            return $"crit chance per hit {FormatUnsignedPercent(shotCrit)} (revolvers {FormatUnsignedPercent(revolverCrit)}), unlucky hit chance {FormatUnsignedPercent(unlucky)} for {FormatSignedPercent(-unluckyDamage)} damage, clumsy chance {FormatUnsignedPercent(clumsy)}.";
+            return $"crit chance per hit {FormatUnsignedPercent(shotCrit)} (revolvers {FormatUnsignedPercent(revolverCrit)}), unlucky hit chance {FormatUnsignedPercent(unlucky)} for {FormatSignedPercent(-unluckyDamage)} damage, lucky junk find chance {FormatUnsignedPercent(luckyLoot)}, clumsy chance {FormatUnsignedPercent(clumsy)}.";
         }
 
         private static string FormatSignedPercent(float value)

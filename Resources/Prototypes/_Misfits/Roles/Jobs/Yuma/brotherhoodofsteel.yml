@@ -1,0 +1,271 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Roles/Jobs/, _Nuclear14/Roles/Jobs/
+# Changed for Wild Wanamingo: Yuma's roster. Names, slots and whitelists from the server's roster; gear is
+# Misfits' (minus the wallet slot and the skirt/satchel/duffel choices, which are loadouts in Wizden).
+# Misfits' playtime and species requirements are left out for now.
+
+- type: job
+  id: BoSWestElderCommander
+  name: job-name-bos-west-elder-comm
+  description: job-description-bos-west-elder-comm
+  playTimeTracker: BoSWestElderCommander
+  startingGear: BoSWestElderCommanderGear
+  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  supervisors: job-supervisors-bos-west-elder
+  whitelisted: true
+  accessGroups:
+  - BOSElder
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - BrotherhoodOfSteel
+
+- type: startingGear
+  id: BoSWestElderCommanderGear
+  equipment:
+    jumpsuit: N14ClothingUniformJumpskirtBOSBlack
+    back: N14ClothingBackpackMilitary
+    shoes: N14ClothingBootsLeatherFilled
+    outerClothing: N14ClothingOuterBrotherhoodElderCoat
+    hands: N14ClothingHandsGlovesCombat
+    pocket1: BoSBrotherhoodElderKits
+    id: N14IDBrotherhoodOfSteelHolotagElder
+    ears: N14ClothingHeadsetBrotherhoodOfSteel
+    belt: N14ClothingBeltBoSWebbing
+  storage:
+    back:
+    - MisfitsIFAKMilitary
+
+- type: job
+  id: BoSMidPaladinCommander
+  name: job-name-bos-mid-paladin-comm
+  description: job-description-bos-mid-paladin-comm
+  playTimeTracker: BoSMidPaladinCommander
+  startingGear: BoSMidPaladinCommanderGear
+  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  supervisors: job-supervisors-bos-mid-commander
+  accessGroups:
+  - BOSHeadPaladin
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - BrotherhoodOfSteel
+
+- type: startingGear
+  id: BoSMidPaladinCommanderGear
+  equipment:
+    jumpsuit: N14ClothingUniformBosRecon
+    back: N14ClothingBackpackMilitary
+    shoes: N14ClothingBootsLeatherFilled
+    head: N14ClothingPaladinBeret
+    hands: N14ClothingHandsGlovesCombat
+    pocket1: BoSBrotherhoodHeadPaladinKits
+    ears: N14ClothingHeadsetBrotherhoodOfSteel
+    belt: MisfitsClothingBeltPaladinWebbing
+  storage:
+    back:
+    - MisfitsIFAKMilitary
+    - MisfitsGrenadePlasma
+    - GrenadeIncendiary
+
+- type: job
+  id: BoSHeadKnight
+  name: job-name-bos-headknight
+  description: job-description-bos-headknight
+  playTimeTracker: BoSHeadKnight
+  startingGear: BoSHeadKnightGear
+  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  supervisors: job-supervisors-bos-headknight
+  accessGroups:
+  - BOSHeadKnight
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - BrotherhoodOfSteel
+
+- type: startingGear
+  id: BoSHeadKnightGear
+  equipment:
+    jumpsuit: N14ClothingUniformJumpskirtBOSBlack
+    back: N14ClothingBackpackMilitary
+    shoes: N14ClothingBootsLeatherFilled
+    head: N14ClothingHeadKnightBeret
+    outerClothing: MisfitsBoSHeadKnightArmor
+    hands: N14ClothingHandsGlovesCombat
+    pocket1: BoSBrotherhoodHeadKnightKits
+    ears: N14ClothingHeadsetBrotherhoodOfSteel
+    belt: ClothingBeltBoSWebbing
+  storage:
+    back:
+    - N14ClothingHeadHatBrotherhoodHelmetPaladin
+    - MisfitsIFAKMilitary
+
+- type: job
+  id: BoSWestScribe
+  name: job-name-bos-west-scribe
+  description: job-description-bos-west-scribe
+  playTimeTracker: BoSWestScribe
+  startingGear: BoSWestScribeGear
+  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  supervisors: job-supervisors-bos-west
+  accessGroups:
+  - BOSHeadScribe
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - BrotherhoodOfSteel
+
+- type: startingGear
+  id: BoSWestScribeGear
+  equipment:
+    jumpsuit: N14ClothingUniformJumpskirtBOSBlack
+    back: N14ClothingBackpackSatchelMilitary
+    shoes: N14ClothingBootsLeatherFilled
+    head: N14ClothingScribeBeret
+    pocket1: BoSBrotherhoodHeadScribeKits
+    ears: N14ClothingHeadsetBrotherhoodOfSteelScribe
+    belt: ClothingBeltMilitary
+  storage:
+    back:
+    - MisfitsIFAKMilitary
+
+- type: job
+  id: BoSScribe
+  name: job-name-bos-scribe
+  description: job-description-bos-scribe
+  playTimeTracker: BoSScribe
+  startingGear: BoSScribeGear
+  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  supervisors: job-supervisors-bos-scribe
+  accessGroups:
+  - BOSScribe
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - BrotherhoodOfSteel
+
+- type: startingGear
+  id: BoSScribeGear
+  equipment:
+    jumpsuit: N14ClothingUniformJumpskirtBOSBlack
+    back: N14ClothingBackpackSatchelMilitary
+    shoes: N14ClothingBootsLeatherFilled
+    pocket1: BoSBrotherhoodScribeKits
+    id: N14IDBrotherhoodOfSteelHolotagScribe
+    ears: N14ClothingHeadsetBrotherhoodOfSteelScribe
+    belt: ClothingBeltMilitary
+  storage:
+    back:
+    - MisfitsIFAKMilitary
+
+- type: job
+  id: BoSPaladin
+  name: job-name-bos-paladin
+  description: job-description-bos-paladin
+  playTimeTracker: BoSPaladin
+  startingGear: BoSPaladinGear
+  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  supervisors: job-supervisors-bos-paladin
+  accessGroups:
+  - BOSPaladin
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - BrotherhoodOfSteel
+
+- type: startingGear
+  id: BoSPaladinGear
+  equipment:
+    jumpsuit: N14ClothingUniformBosRecon
+    back: N14ClothingBackpackMilitary
+    shoes: N14ClothingBootsLeatherFilled
+    head: N14ClothingHeadHatCapkhighBoS
+    hands: N14ClothingHandsGlovesCombat
+    pocket1: BoSBrotherhoodPaladinKits
+    id: N14IDBrotherhoodOfSteelHolotagPaladin
+    ears: N14ClothingHeadsetBrotherhoodOfSteel
+    belt: MisfitsClothingBeltPaladinWebbing
+  storage:
+    back:
+    - MisfitsIFAKMilitary
+    - GrenadeShrapnel
+
+- type: job
+  id: BoSKnight
+  name: job-name-bos-knight
+  description: job-description-bos-knight
+  playTimeTracker: BoSKnight
+  startingGear: BoSKnightGear
+  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  supervisors: job-supervisors-bos-knight
+  accessGroups:
+  - BOSKnight
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - BrotherhoodOfSteel
+
+- type: startingGear
+  id: BoSKnightGear
+  equipment:
+    jumpsuit: N14ClothingUniformJumpskirtBOSBlack
+    back: N14ClothingBackpackMilitary
+    shoes: N14ClothingBootsLeatherFilled
+    head: N14ClothingHeadHatCapkhighBoS
+    outerClothing: MisfitsBoSKnightArmor
+    hands: N14ClothingHandsGlovesCombat
+    pocket1: BoSBrotherhoodKnightKits
+    id: N14IDBrotherhoodOfSteelHolotagKnight
+    ears: N14ClothingHeadsetBrotherhoodOfSteel
+    belt: ClothingBeltBoSWebbing
+  storage:
+    back:
+    - N14ClothingHeadHatBrotherhoodHelmetMK2
+    - MisfitsIFAKMilitary
+    - N14Binoculars
+    - MisfitsGrenadeFragDefensive
+
+- type: job
+  id: BoSInitiate
+  name: job-name-bos-initiate
+  description: job-description-bos-initiate
+  playTimeTracker: BoSInitiate
+  startingGear: BoSInitiateGear
+  icon: JobIconPassenger # placeholder: Misfits used Corvax job icons
+  supervisors: job-supervisors-bos-initiate
+  accessGroups:
+  - BOSInitiate
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - BrotherhoodOfSteel
+
+- type: startingGear
+  id: BoSInitiateGear
+  equipment:
+    jumpsuit: N14ClothingUniformJumpskirtBOSBlack
+    back: N14ClothingBackpackMilitary
+    shoes: N14ClothingBootsLeatherFilled
+    outerClothing: N14ClothingOuterMBoSInitiateArmor
+    pocket1: BoSBrotherhoodInitiateKits
+    id: N14IDBrotherhoodOfSteelHolotagInitiate
+    ears: N14ClothingHeadsetBrotherhoodOfSteel
+    belt: ClothingBeltMilitary
+  storage:
+    back:
+    - MisfitsIFAKMilitary

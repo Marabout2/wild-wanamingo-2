@@ -22,20 +22,14 @@
             - WallLayer
     - type: IconSmooth
       key: walls
-      mode: NoSprite
-    - type: SmoothEdge
+      states:
+      - !type:EdgeSpriteSmoothing
+        mask: [ walls, windows, grilles, marble, doors ]
+        base: rock_
     - type: Sprite
       sprite: Misfits/Legacy/Structures/Walls/rock.rsi
       layers:
         - state: rock
-        - map: [ "enum.EdgeLayer.South" ]
-          state: rock_south
-        - map: [ "enum.EdgeLayer.East" ]
-          state: rock_east
-        - map: [ "enum.EdgeLayer.North" ]
-          state: rock_north
-        - map: [ "enum.EdgeLayer.West" ]
-          state: rock_west
 
 - type: entity
   abstract: true
@@ -78,5 +72,8 @@
   - type: Icon
     sprite: Nuclear14/Structures/Walls/nc14/fencechain.rsi
   - type: IconSmooth
-    key: fence # #Misfits Fix - was 'walls', causing fence to merge smooth group with tall walls and suppress wall faces
-    base: fence
+    key: fence
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ fence ]
+      base: fence

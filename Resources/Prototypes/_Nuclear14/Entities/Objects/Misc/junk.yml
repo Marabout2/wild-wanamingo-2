@@ -519,6 +519,22 @@
         type: TransferAmountBoundUserInterface
 
 - type: entity
+  parent: N14JunkVaultCanteen
+  id: N14JunkCeramicFlask
+  name: ceramic flask
+  description: A flask for holding drinks, medicine or even poison.
+  components:
+  - type: Sprite
+    state: ceramic-flask
+  - type: Solution
+    id: drink
+    solution:
+      maxVol: 30
+      reagents:
+      - ReagentId: Water
+        Quantity: 30
+
+- type: entity
   parent: N14JunkItemBaseMetal
   id: N14JunkGunpartsAction
   name: gun action (part)
@@ -1010,7 +1026,7 @@
     - type: DeviceNetwork
       deviceNetId: Wireless
       receiveFrequencyId: BasicDevice
-    - type: WirelessNetworkConnection
+    - type: WirelessNetwork
       range: 200
     - type: DeviceLinkSink
 

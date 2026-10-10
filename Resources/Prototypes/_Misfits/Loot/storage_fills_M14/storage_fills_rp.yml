@@ -226,6 +226,9 @@
         - id: N14ClothingHandsGlovesDriver
           prob: 0.07
           orGroup: Clothing
+        - id: N14ClothingHandsGlovesCombat
+          prob: 0.05
+          orGroup: Clothing
         - id: N14ClothingHandsGlovesNitrile
           prob: 0.07
           orGroup: Clothing
@@ -888,6 +891,9 @@
         - id: N14ClothingHandsGlovesDriver
           prob: 0.07
           orGroup: Clothing
+        - id: N14ClothingHandsGlovesCombat
+          prob: 0.05
+          orGroup: Clothing
         - id: N14ClothingHandsGlovesNitrile
           prob: 0.07
           orGroup: Clothing
@@ -1368,6 +1374,9 @@
           orGroup: Clothing
         - id: N14ClothingHandsGlovesDriver
           prob: 0.07
+          orGroup: Clothing
+        - id: N14ClothingHandsGlovesCombat
+          prob: 0.05
           orGroup: Clothing
         - id: N14ClothingHandsGlovesNitrile
           prob: 0.07
@@ -2419,6 +2428,9 @@
         - id: N14ClothingHandsGlovesDriver
           prob: 0.07
           orGroup: Clothing
+        - id: N14ClothingHandsGlovesCombat
+          prob: 0.05
+          orGroup: Clothing
         - id: N14ClothingHandsGlovesNitrile
           prob: 0.07
           orGroup: Clothing
@@ -2833,5 +2845,9 @@
         - id: N14CurrencyPrewarMoney100
           prob: 0.07
           orGroup: Currency
+        - id: N14IDPassport
+          prob: 0.07
+        - id: N14IDDoctor
+          prob: 0.07
         - id: IngotGold1
           prob: 0.07

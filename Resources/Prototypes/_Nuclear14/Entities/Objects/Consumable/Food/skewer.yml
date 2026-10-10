@@ -15,6 +15,7 @@
     flavors:
     - meaty
   - type: Sprite
+    sprite: Misfits/Legacy/Objects/Consumable/Food/skewer.rsi
     layers:
     - state: skewer
     - state: skewer-meat

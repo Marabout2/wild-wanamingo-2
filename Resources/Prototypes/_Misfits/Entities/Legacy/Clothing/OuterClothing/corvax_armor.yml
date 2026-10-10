@@ -52,6 +52,52 @@
 
 - type: entity
   parent: N14FalloutArmorBase
+  id: N14ClothingOuterLegionnaireVeteranArmor
+  name: armor of a legionnaire-veteran
+  description: "Good armor for combat, does not slow down the wearer and makes it easy to maneuver."
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/Corvax/Clothing/OuterClothing/Armor/veteranarmor.rsi
+  - type: Clothing
+    sprite: Misfits/Legacy/Corvax/Clothing/OuterClothing/Armor/veteranarmor.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 1.05
+    sprintModifier: 1.05
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.7
+        Heat: 0.75 #Legion weak to heat type damage
+  - type: ExplosionResistance
+    damageCoefficient: 0.8
+
+- type: entity
+  parent: N14FalloutArmorBase
+  id: N14ClothingLegionReconArmor
+  name: light reconnaissance armor
+  description: "Incredibly light armor with not the best protection, but you feel faster."
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/Corvax/Clothing/OuterClothing/Armor/lightreconnaissancearmor.rsi
+  - type: Clothing
+    sprite: Misfits/Legacy/Corvax/Clothing/OuterClothing/Armor/lightreconnaissancearmor.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 1.15 #A little faster than the previous recon
+    sprintModifier: 1.15
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.85
+        Slash: 0.85
+        Piercing: 0.85 #20% was a bit too good for what it provided
+        Heat: 0.90 # weak to heat
+  - type: ExplosionResistance
+    damageCoefficient: 0.85
+
+- type: entity
+  parent: N14FalloutArmorBase
   id: N14ClothingOuterLegionnaireBaseArmor
   name: legionnaire armor
   description: "The most standard and common armor."
@@ -72,3 +118,72 @@
         Heat: 0.85 #Legion is weak to heat
   - type: ExplosionResistance
     damageCoefficient: 0.85
+
+- type: entity
+  parent: N14FalloutArmorBase
+  id: N14ClothingOuterLegionnaireRecruitArmor
+  name: light legionnaire armor
+  description: "Not very reliable, but very light legionnaire armor."
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/Corvax/Clothing/OuterClothing/Armor/lightarmor.rsi
+  - type: Clothing
+    sprite: Misfits/Legacy/Corvax/Clothing/OuterClothing/Armor/lightarmor.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 1.10
+    sprintModifier: 1.10 # the little ones can enjoy the game too.
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.85
+        Slash: 0.85
+        Piercing: 0.85 # 10% is worse than some COATS btw. just want you to know that. gave them 15% -Bill
+        Heat: 0.9 # Legion is weak to heat
+  - type: ExplosionResistance
+    damageCoefficient: 0.95
+
+- type: entity
+  parent: N14FalloutArmorBase
+  id: N14ClothingOuterLegionnaireVexillariusArmor
+  name: vexillarius armor
+  description: "Reinforced armor worn by the Legion's Vexillarius standard bearer."
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/Corvax/Clothing/OuterClothing/Armor/vexillariusarmor.rsi
+  - type: Clothing
+    sprite: Misfits/Legacy/Corvax/Clothing/OuterClothing/Armor/vexillariusarmor.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 1.05 # basically the same as veteran
+    sprintModifier: 1.05
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.75
+        Slash: 0.75
+        Piercing: 0.70
+        Heat: 0.75 #metal does not offer any extra protection against heat.
+  - type: ExplosionResistance
+    damageCoefficient: 0.80
+
+- type: entity
+  parent: N14FalloutArmorBase
+  id: N14ClothingOuterLegionnaireExplorerArmor
+  name: explorer armor
+  description: "Light layered armor worn by Legion scouts and explorers."
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/Corvax/Clothing/OuterClothing/Armor/explorerarmor.rsi
+  - type: Clothing
+    sprite: Misfits/Legacy/Corvax/Clothing/OuterClothing/Armor/explorerarmor.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 1.10
+    sprintModifier: 1.10
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.80
+        Slash: 0.80
+        Piercing: 0.75
+        Heat: 0.70 #made entirely of leather, so it should offer better heat prot. also gives legion an actual option for heat armor
+  - type: ExplosionResistance
+    damageCoefficient: 0.80

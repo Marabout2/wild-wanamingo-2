@@ -30,7 +30,7 @@
   - type: Fixtures
   - type: DeviceNetwork
     deviceNetId: Wireless
-  - type: WirelessNetworkConnection
+  - type: WirelessNetwork
     range: 25
   - type: DeviceLinkSource
     ports:

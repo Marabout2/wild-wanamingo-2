@@ -740,6 +740,7 @@
     layers:
     - state: radawayphial_icon
       map: ["enum.SolutionContainerLayers.Fill"]
+  - type: Appearance
   - type: SolutionContainerVisuals
     maxFillLevels: 1
     changeColor: false

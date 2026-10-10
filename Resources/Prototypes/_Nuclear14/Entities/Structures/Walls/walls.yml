@@ -20,7 +20,10 @@
         acts: [ "Destruction" ]
   - type: IconSmooth
     key: wallsstore
-    base: store
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ wallsstore ]
+      base: store
 
 - type: entity
   parent: N14WallStore
@@ -44,7 +47,10 @@
     sprite: Nuclear14/Structures/Walls/nc14/ruins.rsi
   - type: IconSmooth
     key: wallsruins
-    base: ruin
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ wallsruins ]
+      base: ruin
 
 - type: entity
   parent: N14WallStore
@@ -57,7 +63,10 @@
     sprite: Nuclear14/Structures/Walls/nc14/brick.rsi
   - type: IconSmooth
     key: wallsbrick
-    base: brick
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ wallsbrick ]
+      base: brick
 
 - type: entity
   parent: N14WallStore
@@ -106,7 +115,10 @@
         acts: [ "Destruction" ]
   - type: IconSmooth
     key: wallsenclave
-    base: enclave
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ wallsenclave ]
+      base: enclave
 
 # Wood walls
 
@@ -170,7 +182,10 @@
         acts: ["Destruction"]
   - type: IconSmooth
     key: wallswood
-    base: wood
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ wallswood ]
+      base: wood
 
 - type: entity
   parent: BaseStructureDynamic
@@ -247,7 +262,10 @@
     sprite: Nuclear14/Structures/Walls/nc14/woodlognew.rsi
   - type: IconSmooth
     key: log
-    base: log
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ log ]
+      base: log
   - type: Construction
     graph: N14WoodWall
     node: logWall
@@ -281,7 +299,10 @@
         acts: ["Destruction"]
   - type: IconSmooth
     key: tent
-    base: tent
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ tent ]
+      base: tent
 
 - type: entity
   id: N14BlastDoorExteriorIndestructible

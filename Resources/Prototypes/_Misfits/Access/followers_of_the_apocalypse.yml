@@ -11,3 +11,21 @@
 - type: accessLevel
   id: FotAHead
   name: id-card-access-level-fota-head
+
+- type: accessGroup
+  id: FotA
+  tags:
+  - FotA
+
+- type: accessGroup
+  id: FotADoctor
+  tags:
+  - FotA
+  - FotADoctor 
+
+- type: accessGroup
+  id: FotAHead
+  tags:
+  - FotA
+  - FotADoctor
+  - FotAHead

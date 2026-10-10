@@ -30,6 +30,8 @@
     - !type:EntSelector
       id: N14TribalSword
     - !type:EntSelector
+      id: N14Gladius
+    - !type:EntSelector
       id: N14Hatchet
     - !type:EntSelector
       id: N14TribalHatchet

@@ -1,0 +1,25 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Entities/Objects/Misc/wastelander_dogtags.yml
+
+- type: entity
+  parent: ClothingNeckBase
+  id: N14ClothingNeckDogtags
+  name: wastelander dogtags
+  description: A pair of engraved metal identification tags. Can be inserted into a Pip-Boy.
+  components:
+  - type: Sprite
+    sprite: Misfits/Legacy/Clothing/Neck/Misc/dogtags.rsi
+  - type: Clothing
+    sprite: Misfits/Legacy/Clothing/Neck/Misc/dogtags.rsi
+    slots:
+    - idcard # #Misfits Add - allows dogtags to equip in the ID slot
+  - type: Access
+  - type: IdCard
+    nameLocId: n14-id-dogtag-name # #Misfits Add - display "dogtags" instead of default "ID card"
+    fullNameLocId: n14-id-dogtag-full-name
+  - type: StationRecordKeyStorage
+  - type: PresetIdCard
+    job: Wastelander
+  - type: Tag
+    tags:
+    - IdCardWastelander
+    - DoorBumpOpener

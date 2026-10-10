@@ -8,9 +8,9 @@
   description: A tactical assault belt.
   components:
   - type: Sprite
-    sprite: Clothing/Belt/assault.rsi
+    sprite: Misfits/Legacy/Clothing/Belt/assault.rsi
   - type: Clothing
-    sprite: Clothing/Belt/assault.rsi
+    sprite: Misfits/Legacy/Clothing/Belt/assault.rsi
   - type: Storage
     whitelist:
       tags:

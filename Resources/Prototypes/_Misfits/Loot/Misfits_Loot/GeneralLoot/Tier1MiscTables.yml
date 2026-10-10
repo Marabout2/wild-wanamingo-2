@@ -295,6 +295,9 @@
       tableId: M14PartsLootTier1_TrashFood
     - !type:NestedSelector
       tableId: M14PartsLootTier1_ScrapToys
+    - !type:EntSelector
+      id: N14IDPassport
+
 #- type: entityTable
 #  id: M14PartsLootTier1_JunkOddParts
 #  table: !type:GroupSelector

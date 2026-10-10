@@ -1,0 +1,17 @@
+# Standard: a regular wasteland round. No antagonists and no station events (meteors, power failures...); the
+# wasteland's own spawners and NPCs are the danger. Rollable antagonists, mid-round roles and other modes come later.
+- type: gamePreset
+  id: Standard
+  alias:
+  - standard
+  - wasteland
+  name: standard-title
+  description: standard-description
+  showInVote: true
+  mapPool: F14WastelandMapPool
+  rules:
+  - F14StandardRule
+
+- type: entity
+  parent: BaseGameRule
+  id: F14StandardRule

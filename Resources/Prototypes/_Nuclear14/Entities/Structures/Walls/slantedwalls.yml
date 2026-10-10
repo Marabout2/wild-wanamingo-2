@@ -154,7 +154,10 @@
     sprite: Nuclear14/Structures/Walls/ms13/slanted/adobe.rsi
   - type: IconSmooth
     key: walls
-    base: slantedadobe
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ walls, windows, grilles, marble, doors ]
+      base: slantedadobe
 
 - type: entity
   parent: [ N14WallAdobeSlantedIndestructible, N14BaseWallSlanted ]
@@ -178,7 +181,10 @@
     sprite: Nuclear14/Structures/Walls/ms13/slanted/brick.rsi
   - type: IconSmooth
     key: walls
-    base: slantedbrick
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ walls, windows, grilles, marble, doors ]
+      base: slantedbrick
 
 - type: entity
   parent: [ N14WallBrickSlantedIndestructible, N14BaseWallSlanted ]
@@ -197,7 +203,10 @@
     sprite: Nuclear14/Structures/Walls/ms13/slanted/brickalt.rsi
   - type: IconSmooth
     key: walls
-    base: slantedbrickalt
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ walls, windows, grilles, marble, doors ]
+      base: slantedbrickalt
 
 - type: entity
   parent: [ N14WallBrickAltSlantedIndestructible, N14BaseWallSlanted ]
@@ -216,7 +225,10 @@
     sprite: Nuclear14/Structures/Walls/ms13/slanted/brickgray.rsi
   - type: IconSmooth
     key: walls
-    base: slantedbrickgray
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ walls, windows, grilles, marble, doors ]
+      base: slantedbrickgray
 
 - type: entity
   parent: [ N14WallBrickGraySlantedIndestructible, N14BaseWallSlanted ]
@@ -235,7 +247,10 @@
     sprite: Nuclear14/Structures/Walls/ms13/slanted/bunker.rsi
   - type: IconSmooth
     key: walls
-    base: slantedbunker
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ walls, windows, grilles, marble, doors ]
+      base: slantedbunker
 
 - type: entity
   parent: [ N14WallBunkerSlantedIndestructible, N14BaseWallSlantedMetalStrong ]
@@ -254,7 +269,10 @@
     sprite: Nuclear14/Structures/Walls/ms13/slanted/comb.rsi
   - type: IconSmooth
     key: walls
-    base: slantedcomb
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ walls, windows, grilles, marble, doors ]
+      base: slantedcomb
 
 - type: entity
   parent: [ N14WallCombSlantedIndestructible, N14BaseWallSlanted ]
@@ -273,7 +291,10 @@
     sprite: Nuclear14/Structures/Walls/ms13/slanted/concrete.rsi
   - type: IconSmooth
     key: walls
-    base: slantedconcrete
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ walls, windows, grilles, marble, doors ]
+      base: slantedconcrete
 
 - type: entity
   parent: [ N14WallCombSlantedIndestructible, N14BaseWallSlanted ]
@@ -288,7 +309,10 @@
     sprite: Nuclear14/Structures/Walls/ms13/slanted/concrete.rsi
   - type: IconSmooth
     key: walls
-    base: slantedconcrete
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ walls, windows, grilles, marble, doors ]
+      base: slantedconcrete
   # Forge-Change-End
 
 - type: entity
@@ -302,7 +326,10 @@
     sprite: Nuclear14/Structures/Walls/ms13/slanted/concretealt.rsi
   - type: IconSmooth
     key: walls
-    base: slantedconcretealt
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ walls, windows, grilles, marble, doors ]
+      base: slantedconcretealt
 
 - type: entity
   parent: [ N14WallConcreteAltSlantedIndestructible, N14BaseWallSlanted ]
@@ -321,7 +348,10 @@
     sprite: Nuclear14/Structures/Walls/ms13/slanted/dungeon.rsi
   - type: IconSmooth
     key: walls
-    base: slanteddungeon
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ walls, windows, grilles, marble, doors ]
+      base: slanteddungeon
 
 - type: entity
   parent: [ N14WallDungeonSlantedIndestructible, N14BaseWallSlanted ]
@@ -340,7 +370,10 @@
     sprite: Nuclear14/Structures/Walls/ms13/slanted/dungeonalt.rsi
   - type: IconSmooth
     key: walls
-    base: slanteddungeonalt
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ walls, windows, grilles, marble, doors ]
+      base: slanteddungeonalt
 
 - type: entity
   parent: [ N14WallDungeonAltSlantedIndestructible, N14BaseWallSlanted ]
@@ -359,7 +392,10 @@
     sprite: Nuclear14/Structures/Walls/ms13/slanted/metal.rsi
   - type: IconSmooth
     key: walls
-    base: slantedmetal
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ walls, windows, grilles, marble, doors ]
+      base: slantedmetal
 
 - type: entity
   parent: [ N14WallMetalSlantedIndestructible, N14BaseWallSlantedMetal ]
@@ -378,7 +414,10 @@
     sprite: Nuclear14/Structures/Walls/ms13/slanted/prison.rsi
   - type: IconSmooth
     key: walls
-    base: slantedprison
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ walls, windows, grilles, marble, doors ]
+      base: slantedprison
 
 - type: entity
   parent: [ N14WallPrisonSlantedIndestructible, N14BaseWallSlantedMetal ]
@@ -397,7 +436,10 @@
     sprite: Nuclear14/Structures/Walls/ms13/slanted/reinfmetal.rsi
   - type: IconSmooth
     key: walls
-    base: slantedreinfmetal
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ walls, windows, grilles, marble, doors ]
+      base: slantedreinfmetal
 
 - type: entity
   parent: [ N14WallReinfMetalSlantedIndestructible, N14BaseWallSlantedMetal ]
@@ -416,7 +458,10 @@
     sprite: Nuclear14/Structures/Walls/ms13/slanted/rock.rsi
   - type: IconSmooth
     key: walls
-    base: slantedrock
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ walls, windows, grilles, marble, doors ]
+      base: slantedrock
 
 - type: entity
   parent: [ N14WallRockSlantedIndestructible, N14BaseWallSlantedMetal ]
@@ -453,7 +498,10 @@
     sprite: Nuclear14/Structures/Walls/ms13/slanted/rockdrought.rsi
   - type: IconSmooth
     key: walls
-    base: slantedrockdrought
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ walls, windows, grilles, marble, doors ]
+      base: slantedrockdrought
 
 - type: entity
   parent: [ N14WallRockDroughtSlantedIndestructible, N14BaseWallSlantedMetal ]
@@ -503,7 +551,10 @@
     sprite: Nuclear14/Structures/Walls/ms13/slanted/rockmammoth.rsi
   - type: IconSmooth
     key: walls
-    base: slantedrockmammoth
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ walls, windows, grilles, marble, doors ]
+      base: slantedrockmammoth
 
 - type: entity
   parent: [ N14WallRockMammothSlantedIndestructible, N14BaseWallSlantedMetal ]
@@ -538,7 +589,10 @@
     sprite: Nuclear14/Structures/Walls/ms13/slanted/roughscrap.rsi
   - type: IconSmooth
     key: walls
-    base: slantedroughscrap
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ walls, windows, grilles, marble, doors ]
+      base: slantedroughscrap
 
 - type: entity
   parent: [ N14WallRoughScrapSlantedIndestructible, N14BaseWallSlantedMetalWeak ]
@@ -561,7 +615,10 @@
     sprite: Nuclear14/Structures/Walls/ms13/slanted/rustindustrial.rsi
   - type: IconSmooth
     key: walls
-    base: slantedrustindustrial
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ walls, windows, grilles, marble, doors ]
+      base: slantedrustindustrial
 
 - type: entity
   parent: [ N14WallIndustrialRustSlantedIndestructible, N14BaseWallSlantedMetal ]
@@ -580,7 +637,10 @@
     sprite: Nuclear14/Structures/Walls/ms13/slanted/rustmetal.rsi
   - type: IconSmooth
     key: walls
-    base: slantedrustmetal
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ walls, windows, grilles, marble, doors ]
+      base: slantedrustmetal
 
 - type: entity
   parent: [ N14WallMetalRustSlantedIndestructible, N14BaseWallSlantedMetal ]
@@ -599,7 +659,10 @@
     sprite: Nuclear14/Structures/Walls/ms13/slanted/rustreinfmetal.rsi
   - type: IconSmooth
     key: walls
-    base: slantedrustreinfmetal
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ walls, windows, grilles, marble, doors ]
+      base: slantedrustreinfmetal
 
 - type: entity
   parent: [ N14WallReinfMetalRustSlantedIndestructible, N14BaseWallSlantedMetal ]
@@ -618,7 +681,10 @@
     sprite: Nuclear14/Structures/Walls/ms13/slanted/rustvault.rsi
   - type: IconSmooth
     key: walls
-    base: slantedrustvault
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ walls, windows, grilles, marble, doors ]
+      base: slantedrustvault
 
 - type: entity
   parent: [ N14WallVaultRustSlantedIndestructible, N14BaseWallSlantedMetalStrong ]
@@ -637,7 +703,10 @@
     sprite: Nuclear14/Structures/Walls/ms13/slanted/rustvaultvent.rsi
   - type: IconSmooth
     key: walls
-    base: slantedrustvaultvent
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ walls, windows, grilles, marble, doors ]
+      base: slantedrustvaultvent
 
 - type: entity
   parent: [ N14WallVaultVentsRustSlantedIndestructible, N14BaseWallSlantedMetal ]
@@ -656,7 +725,10 @@
     sprite: Nuclear14/Structures/Walls/ms13/slanted/scrap.rsi
   - type: IconSmooth
     key: walls
-    base: slantedscrap
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ walls, windows, grilles, marble, doors ]
+      base: slantedscrap
 
 - type: entity
   parent: [ N14WallScrapSlantedIndestructible, N14BaseWallSlantedMetalWeak ]
@@ -679,7 +751,10 @@
     sprite: Nuclear14/Structures/Walls/ms13/slanted/scrapblue.rsi
   - type: IconSmooth
     key: walls
-    base: slantedscrap
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ walls, windows, grilles, marble, doors ]
+      base: slantedscrap
 
 - type: entity
   parent: [ N14WallScrapBlueSlantedIndestructible, N14BaseWallSlantedMetalWeak ]
@@ -702,7 +777,10 @@
     sprite: Nuclear14/Structures/Walls/ms13/slanted/scrapred.rsi
   - type: IconSmooth
     key: walls
-    base: slantedscrap
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ walls, windows, grilles, marble, doors ]
+      base: slantedscrap
 
 - type: entity
   parent: [ N14WallScrapRedSlantedIndestructible, N14BaseWallSlantedMetalWeak ]
@@ -725,7 +803,10 @@
     sprite: Nuclear14/Structures/Walls/ms13/slanted/scrapwhite.rsi
   - type: IconSmooth
     key: walls
-    base: slantedscrap
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ walls, windows, grilles, marble, doors ]
+      base: slantedscrap
 
 - type: entity
   parent: [ N14WallScrapWhiteSlantedIndestructible, N14BaseWallSlantedMetalWeak ]
@@ -748,7 +829,10 @@
     sprite: Nuclear14/Structures/Walls/ms13/slanted/sewer.rsi
   - type: IconSmooth
     key: walls
-    base: slantedsewer
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ walls, windows, grilles, marble, doors ]
+      base: slantedsewer
 
 - type: entity
   parent: [ N14WallSewerSlantedIndestructible, N14BaseWallSlantedMetal ]
@@ -767,7 +851,10 @@
     sprite: Nuclear14/Structures/Walls/ms13/slanted/siding.rsi
   - type: IconSmooth
     key: walls
-    base: slantedsiding
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ walls, windows, grilles, marble, doors ]
+      base: slantedsiding
 
 - type: entity
   parent: [ N14WallSidingSlantedIndestructible, N14BaseWallSlantedWood ]
@@ -786,7 +873,10 @@
     sprite: Nuclear14/Structures/Walls/ms13/slanted/sidingblue.rsi
   - type: IconSmooth
     key: walls
-    base: slantedsiding
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ walls, windows, grilles, marble, doors ]
+      base: slantedsiding
 
 - type: entity
   parent: [ N14WallSidingBlueSlantedIndestructible, N14BaseWallSlantedWood ]
@@ -805,7 +895,10 @@
     sprite: Nuclear14/Structures/Walls/ms13/slanted/sidingred.rsi
   - type: IconSmooth
     key: walls
-    base: slantedsiding
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ walls, windows, grilles, marble, doors ]
+      base: slantedsiding
 
 - type: entity
   parent: [ N14WallSidingRedSlantedIndestructible, N14BaseWallSlantedWood ]
@@ -824,7 +917,10 @@
     sprite: Nuclear14/Structures/Walls/ms13/slanted/sidinggreen.rsi
   - type: IconSmooth
     key: walls
-    base: slantedsiding
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ walls, windows, grilles, marble, doors ]
+      base: slantedsiding
 
 - type: entity
   parent: [ N14WallSidingGreenSlantedIndestructible, N14BaseWallSlantedWood ]
@@ -843,7 +939,10 @@
     sprite: Nuclear14/Structures/Walls/ms13/slanted/vault.rsi
   - type: IconSmooth
     key: walls
-    base: slantedvault
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ walls, windows, grilles, marble, doors ]
+      base: slantedvault
 
 - type: entity
   parent: [ N14WallVaultSlantedIndestructible, N14BaseWallSlantedMetalStrong ]
@@ -862,7 +961,10 @@
     sprite: Nuclear14/Structures/Walls/ms13/slanted/vaultvent.rsi
   - type: IconSmooth
     key: walls
-    base: slantedvaultvent
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ walls, windows, grilles, marble, doors ]
+      base: slantedvaultvent
 
 - type: entity
   parent: [ N14WallVaultVentSlantedIndestructible, N14BaseWallSlantedMetal ]
@@ -881,7 +983,10 @@
     sprite: Nuclear14/Structures/Walls/ms13/slanted/wood.rsi
   - type: IconSmooth
     key: walls
-    base: slantedwood
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ walls, windows, grilles, marble, doors ]
+      base: slantedwood
 
 - type: entity
   parent: [ N14WallWoodSlantedIndestructible, N14BaseWallSlantedWood ]
@@ -904,7 +1009,10 @@
     sprite: Nuclear14/Structures/Walls/ms13/slanted/woodalt.rsi
   - type: IconSmooth
     key: walls
-    base: slantedwood
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ walls, windows, grilles, marble, doors ]
+      base: slantedwood
 
 - type: entity
   parent: [ N14WallWoodAltSlantedIndestructible, N14BaseWallSlantedWood ]

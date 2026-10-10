@@ -114,6 +114,24 @@
 
 - type: entity
   parent: ClothingHandsButcherable
+  id: N14ClothingHandsGlovesCombat
+  name: combat gloves
+  description: A pair of tactical gloves that give comfy protection to the whole hand.
+  components:
+  - type: Sprite
+    sprite: Nuclear14/Clothing/Hands/Gloves/combatgloves.rsi
+  - type: Clothing
+    sprite: Nuclear14/Clothing/Hands/Gloves/combatgloves.rsi
+  - type: Fiber
+    fiberMaterial: fibers-leather
+    fiberColor: fibers-black
+  - type: FingerprintMask
+  - type: Insulated
+  # - type: ClothingSpecialModifier
+    # enduranceModifier: 1
+
+- type: entity
+  parent: ClothingHandsButcherable
   id: N14ClothingHandsGlovesNitrile
   name: nitrile gloves
   description: A pair of nitrile gloves. Not very resistent but commonly used for medical purposes due to the sterile material.

@@ -1,0 +1,7 @@
+# A wasteland settlement: jobs and spawning only. No cargo, shuttles, CentComm, evacuation or alert levels.
+- type: entity
+  id: F14WastelandStation
+  parent:
+  - BaseStation
+  - BaseStationJobsSpawning
+  categories: [ HideSpawnMenu ]

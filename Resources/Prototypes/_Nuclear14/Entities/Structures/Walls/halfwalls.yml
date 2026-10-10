@@ -78,7 +78,10 @@
     damageContainer: Inorganic
   - type: IconSmooth
     key: windows
-    base: brick
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ windows ]
+      base: brick
     
 
 - type: entity
@@ -96,7 +99,10 @@
     damageContainer: Inorganic
   - type: IconSmooth
     key: windows
-    base: bunker
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ windows ]
+      base: bunker
     
 
 - type: entity
@@ -114,7 +120,10 @@
     damageContainer: Inorganic
   - type: IconSmooth
     key: windows
-    base: concrete
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ windows ]
+      base: concrete
     
 
 - type: entity
@@ -132,7 +141,10 @@
     damageContainer: Inorganic
   - type: IconSmooth
     key: windows
-    base: dungeon
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ windows ]
+      base: dungeon
     
 
 - type: entity
@@ -153,7 +165,10 @@
     damageContainer: Inorganic
   - type: IconSmooth
     key: windows
-    base: metal
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ windows ]
+      base: metal
     
 
 - type: entity
@@ -171,7 +186,10 @@
     damageContainer: Inorganic
   - type: IconSmooth
     key: windows
-    base: prison
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ windows ]
+      base: prison
     
 
 - type: entity
@@ -189,7 +207,10 @@
     damageContainer: Inorganic
   - type: IconSmooth
     key: windows
-    base: rmetal
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ windows ]
+      base: rmetal
 
     
 
@@ -216,7 +237,10 @@
         acts: [ "Destruction" ]
   - type: IconSmooth
     key: windows
-    base: rock
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ windows ]
+      base: rock
     
 
 - type: entity
@@ -234,7 +258,10 @@
     damageContainer: Inorganic
   - type: IconSmooth
     key: windows
-    base: rrmetal
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ windows ]
+      base: rrmetal
     
 
 - type: entity
@@ -252,7 +279,10 @@
     damageContainer: Inorganic
   - type: IconSmooth
     key: windows
-    base: rustmetal
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ windows ]
+      base: rustmetal
     
 
 - type: entity
@@ -270,7 +300,10 @@
     damageContainer: Inorganic
   - type: IconSmooth
     key: windows
-    base: scrap
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ windows ]
+      base: scrap
     
 
 - type: entity
@@ -288,7 +321,10 @@
     damageContainer: Inorganic
   - type: IconSmooth
     key: windows
-    base: sewer
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ windows ]
+      base: sewer
     
 
 - type: entity
@@ -314,7 +350,10 @@
         acts: [ "Destruction" ]
   - type: IconSmooth
     key: windows
-    base: siding
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ windows ]
+      base: siding
     
 
 - type: entity
@@ -332,7 +371,10 @@
     damageContainer: Inorganic
   - type: IconSmooth
     key: windows
-    base: vault
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ windows ]
+      base: vault
     
 
 - type: entity
@@ -358,7 +400,10 @@
         acts: [ "Destruction" ]
   - type: IconSmooth
     key: windows
-    base: wood
+    states:
+    - !type:CornerSpriteSmoothing
+      mask: [ windows ]
+      base: wood
   - type: Construction
     graph: N14HalfWall
     node: Wood

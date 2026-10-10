@@ -15,7 +15,7 @@ special-character-creation-description-endurance = More health, slower hunger an
 special-character-creation-description-charisma = How people take you. Low Charisma makes you awkward to talk to.
 special-character-creation-description-intelligence = Lets you analyze chemicals and read people's health. Very low Intelligence garbles your speech.
 special-character-creation-description-agility = Move and swing faster.
-special-character-creation-description-luck = Critical hits (double with revolvers). Low Luck brings unlucky hits and fumbles.
+special-character-creation-description-luck = Critical hits (double with revolvers) and lucky finds in junk piles. Low Luck brings unlucky hits and fumbles.
 
 # Title of Special labels in character creation screen
 special-character-creation-strength = Strength

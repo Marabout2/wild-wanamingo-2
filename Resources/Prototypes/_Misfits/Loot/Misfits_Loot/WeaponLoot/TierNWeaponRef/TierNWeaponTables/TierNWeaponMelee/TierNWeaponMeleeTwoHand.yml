@@ -44,6 +44,8 @@
       id: N14WastelandFlagSpear
     - !type:EntSelector
       id: N14WastelandSpear
+    - !type:EntSelector
+      id: N14PilumSpear # wegion
 
 - type: entityTable
   id: M14WeaponLootTierN_MeleeOtherTwoHanded

@@ -3,7 +3,8 @@
 # Entities/Mobs/Player/ghouls.yml
 # Changed for Wild Wanamingo: rewritten for Wizden's organ-based bodies. Ghouls are humans with ghoul skin (their
 # parts.rsi has the same states as Wizden's human one), radiation healing and tougher insides. Misfits' custom
-# starvation/dehydration damage is left out (Wizden's Satiation replaces hunger and thirst).
+# starvation/dehydration damage is left out (Wizden's Satiation replaces hunger and thirst). NPC factions come from the
+# job (Misfits also set Wastelander on the species).
 
 # Same marking slots as humans (hair, facial hair...).
 - type: markingsGroup
@@ -64,9 +65,6 @@
       0: Alive
       100: Critical
       150: Dead
-  - type: NpcFactionMember
-    factions:
-    - Wastelander
 
 - type: entity
   parent: OrganHuman
@@ -188,9 +186,6 @@
   - type: RadiationSource
     intensity: 0.5
     slope: 0.25
-  - type: NpcFactionMember
-    factions:
-    - Wastelander
 
 - type: entity
   parent: OrganHuman

@@ -12,6 +12,7 @@
     trash:
     - FoodKebabSkewer # Misfits Change /Fix/: eating a cooked kebab should leave a reusable plain skewer behind.
   - type: Sprite
+    sprite: Misfits/Legacy/Objects/Consumable/Food/skewer.rsi
     layers:
       - state: skewer
       - state: skewer-snake
