@@ -5,6 +5,7 @@
   parent: [ DrinkBaseMaterialGlass, SolutionNormal, DrinkBase, DrinkBaseOpenable, DrinkBaseEmptyTrash ]
   id: DrinkBottleGlassBase
   components:
+  - type: MolotovConvertible # Misfits Change: glass bottles (full or empty) take a cloth wick
   - type: Openable
     sound:
       collection: bottleOpenSounds
@@ -83,6 +84,8 @@
   name: Jailbreaker Verte
   description: One sip of this and you just know you're gonna have a good time.
   components:
+  - type: MolotovConvertible # Misfits Change: bottles take a cloth wick
+    wickOffset: "0,-0.1875" # Match the full absinthe bottle.
   - type: Label
     localizedLabel: reagent-name-absinthe
   - type: Sprite
@@ -93,6 +96,8 @@
   id: DrinkAbsintheBottleFull
   suffix: Full
   components:
+  - type: MolotovConvertible # Misfits Change: bottles take a cloth wick
+    wickOffset: "0,-0.1875" # Six pixels down to meet this bottle's neck.
   - type: Solution
     solution:
       reagents:
@@ -134,6 +139,8 @@
   name: bottle of nothing
   description: A bottle filled with nothing.
   components:
+  - type: MolotovConvertible # Misfits Change: bottles take a cloth wick
+    wickOffset: "0,0.03125"
   - type: Solution
     solution:
       reagents:
@@ -170,6 +177,8 @@
   name: cognac bottle
   description: A sweet and strongly alcoholic drink, made after numerous distillations and years of maturing. You might as well not scream 'SHITCURITY' this time.
   components:
+  - type: MolotovConvertible # Misfits Change: bottles take a cloth wick
+    wickOffset: "0,-0.0625" # Match the full cognac bottle.
   - type: Label
     localizedLabel: reagent-name-cognac
   - type: Sprite
@@ -180,6 +189,8 @@
   id: DrinkCognacBottleFull
   suffix: Full
   components:
+  - type: MolotovConvertible # Misfits Change: bottles take a cloth wick
+    wickOffset: "0,-0.0625"
   - type: Solution
     solution:
       reagents:
@@ -192,6 +203,8 @@
   name: Briar Rose grenadine syrup bottle
   description: Sweet and tangy, a bar syrup used to add color or flavor to drinks.
   components:
+  - type: MolotovConvertible # Misfits Change: bottles take a cloth wick
+    wickOffset: "0,-0.0625" # Two pixels down to meet this bottle's neck.
   - type: Solution
     solution:
       reagents:
@@ -269,6 +282,8 @@
   id: DrinkCoffeeLiqueurBottleFull
   suffix: Full
   components:
+  - type: MolotovConvertible # Misfits Change: bottles take a cloth wick
+    wickOffset: "0,-0.0625"
   - type: Solution
     solution:
       reagents:
@@ -481,6 +496,8 @@
   id: DrinkWineBottleFull
   suffix: Full
   components:
+  - type: MolotovConvertible # Misfits Change: bottles take a cloth wick
+    wickOffset: "0,0.03125"
   - type: Solution
     solution:
       reagents:
@@ -528,6 +545,8 @@
   name: beer growler  # beer it is. coffee. beer? coff-ee? be-er? c-o... b-e
   description: An alcoholic beverage made from malted grains, hops, yeast, and water. XL growler bottle.
   components:
+  - type: MolotovConvertible # Misfits Change: bottles take a cloth wick
+    wickOffset: "0,-0.0625"
   - type: Solution
     solution:
       reagents:
@@ -574,6 +593,8 @@
   name: beer bottle # beer it is. coffee. beer? coff-ee? be-er? c-o... b-e
   description: An alcoholic beverage made from malted grains, hops, yeast, and water.
   components:
+  - type: MolotovConvertible # Misfits Change: bottles take a cloth wick
+    wickOffset: "0,-0.0625"
   - type: Label
     localizedLabel: reagent-name-beer
   - type: Sprite
@@ -591,6 +612,8 @@
   id: DrinkBeerBottleFull
   suffix: Full
   components:
+  - type: MolotovConvertible # Misfits Change: bottles take a cloth wick
+    wickOffset: "0,-0.0625"
   - type: Solution
     solution:
       reagents:

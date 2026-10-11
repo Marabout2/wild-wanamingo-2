@@ -44,6 +44,8 @@
   name: milk bottle
   description: Looks good at holding milky substances.
   components:
+  - type: MolotovConvertible
+    wickOffset: "0,-0.0625"
   - type: Sprite
     sprite: Nuclear14/Objects/Consumable/Drinks/milk.rsi
 
@@ -55,6 +57,8 @@
   name: brahmin milk
   description: A glass bottle of brahmin milk.
   components:
+  - type: MolotovConvertible
+    wickOffset: "0,-0.0625" # Match the empty milk bottle.
   - type: Solution
     id: drink
     solution:
@@ -146,6 +150,8 @@
   name: Nuka-Cola bottle
   description: A refreshing beverage that has a extremely sugary taste. Reminds you of vanilla and cinnamon.
   components:
+  - type: MolotovConvertible
+    wickOffset: "0,-0.0625"
   - type: DamageOnLand
     ignoreResistances: true
     damage:
@@ -153,6 +159,10 @@
         Blunt: 5
   - type: Openable # Forge-Change
     closeable: false
+  - type: SpawnWhenOpened # Forge-Add
+    prototypes:
+    - id: N14CurrencyCap
+      amount: 1
   - type: Solution
     id: drink
     solution:
@@ -169,6 +179,8 @@
   name: irradiated Nuka-Cola bottle
   description: An unrefreshing beverage that has a extremely sugary taste. The aftertaste is bitter and burnt.
   components:
+  - type: MolotovConvertible
+    wickOffset: "0,-0.0625" # Match the standard Nuka-Cola bottle.
   - type: DamageOnLand
     ignoreResistances: true
     damage:
@@ -176,6 +188,10 @@
         Blunt: 5
   - type: Openable # Forge-Change
     closeable: false
+  - type: SpawnWhenOpened # Forge-Add
+    prototypes:
+    - id: N14CurrencyCap
+      amount: 1
   - type: Solution
     id: drink
     solution:
@@ -202,6 +218,10 @@
     state: empty
   - type: Openable # Forge-Change
     closeable: false
+  - type: SpawnWhenOpened # Forge-Add
+    prototypes:
+    - id: N14CurrencyCap
+      amount: 1
   - type: Destructible
     thresholds:
     - trigger:
@@ -226,6 +246,8 @@
     damage:
       types:
         Blunt: 5
+  - type: MolotovConvertible
+    wickOffset: "0,-0.15625" # Five pixels down for the short empty-bottle sprite.
 
 - type: entity
   parent: BrokenBottle
@@ -244,9 +266,11 @@
   description: The leading cola since 2044.
   suffix: full
   components:
-  - type: Sprite
-    sprite: Nuclear14/Objects/Consumable/Drinks/nuka_cola_new.rsi
-    state: cola
+  - type: MolotovConvertible
+    wickOffset: "0,-0.125" # Four pixels down; inherited by the flavored Nuka-Cola bottles.
+  - type: Sprite  # MS13 art
+    sprite: MojaveSun/Objects/Consumable/Drinks/nuka_cola.rsi
+    state: icon
   - type: Solution
     id: drink
     solution:
@@ -261,9 +285,9 @@
   name: Nuka-Cola Cherry
   description: Classic Nuka-Cola taste, but with a twist! You can taste cherries and syrup! It tingles the tongue.
   components:
-  - type: Sprite
-    sprite: Nuclear14/Objects/Consumable/Drinks/nuka_cola_new.rsi
-    state: cherry
+  - type: Sprite  # MS13 art
+    sprite: MojaveSun/Objects/Consumable/Drinks/nuka_cherry.rsi
+    state: icon
   - type: Solution
     id: drink
     solution:
@@ -278,9 +302,9 @@
   name: Nuka-Cola Grape
   description: Classic Nuka-Cola taste, but with a twist! You can taste grapes and syrup! It tingles the tongue.
   components:
-  - type: Sprite
-    sprite: Nuclear14/Objects/Consumable/Drinks/nuka_cola_new.rsi
-    state: grape
+  - type: Sprite  # MS13 art
+    sprite: MojaveSun/Objects/Consumable/Drinks/nuka_grape.rsi
+    state: icon
   - type: Solution
     id: drink
     solution:
@@ -296,9 +320,9 @@
   description: Classic Nuka-Cola taste, but with a twist! You can taste oranges and syrup! It tingles the tongue.
 
   components:
-  - type: Sprite
-    sprite: Nuclear14/Objects/Consumable/Drinks/nuka_cola_new.rsi
-    state: orange
+  - type: Sprite  # MS13 art
+    sprite: MojaveSun/Objects/Consumable/Drinks/nuka_orange.rsi
+    state: icon
   - type: Solution
     id: drink
     solution:
@@ -331,10 +355,10 @@
   name: Nuka-Cola Quantum
   description: An explosion of sweetness and fruit! You can taste various berry flavours.. And a lot of sugar!
   components:
-  - type: Sprite
-    sprite: Nuclear14/Objects/Consumable/Drinks/nuka_cola_new.rsi
+  - type: Sprite  # MS13 art
+    sprite: MojaveSun/Objects/Consumable/Drinks/nuka_quantum.rsi
     layers:
-    - state: quantum
+    - state: icon
       shader: unshaded
   - type: Solution
     id: drink
@@ -354,10 +378,10 @@
   name: Nuka-Cola Quartz
   description: Minty, fresh, extra fizzy.. This soda is a blast to the mouth of freshness.
   components:
-  - type: Sprite
-    sprite: Nuclear14/Objects/Consumable/Drinks/nuka_cola_new.rsi
+  - type: Sprite  # MS13 art
+    sprite: MojaveSun/Objects/Consumable/Drinks/nuka_quartz.rsi
     layers:
-    - state: quartz
+    - state: icon
       shader: unshaded
   - type: Solution
     id: drink
@@ -377,9 +401,9 @@
   name: Nuka-Cola Victory
   description: A mixture of vanilla, cinnamon, dash of cream, and a bit of spice.. It tingles the tongue.
   components:
-  - type: Sprite
-    sprite: Nuclear14/Objects/Consumable/Drinks/nuka_cola_new.rsi
-    state: victory
+  - type: Sprite  # MS13 art
+    sprite: MojaveSun/Objects/Consumable/Drinks/nuka_victory.rsi
+    state: icon
   - type: Solution
     id: drink
     solution:
@@ -394,9 +418,9 @@
   name: Nuka-Cola Wild
   description: Creamy, heavy, spicy, good ol' fashioned root beer-like taste.. It tingles the tongue.
   components:
-  - type: Sprite
-    sprite: Nuclear14/Objects/Consumable/Drinks/nuka_cola_new.rsi
-    state: wild
+  - type: Sprite  # MS13 art
+    sprite: MojaveSun/Objects/Consumable/Drinks/nuka_wild.rsi
+    state: icon
   - type: Solution
     id: drink
     solution:
@@ -515,9 +539,9 @@
   name: whiskey
   description: A bottle of standard looking whiskey
   components:
-  - type: Sprite
-    sprite: Nuclear14/Objects/Consumable/Drinks/alcohol.rsi
-    state: whisky
+  - type: Sprite  # MS13 art
+    sprite: MojaveSun/Objects/Consumable/Drinks/whiskey.rsi
+    state: icon
   - type: Solution
     id: drink
     solution:
@@ -532,9 +556,9 @@
   name: wine
   description: Nappa Valley Wine.
   components:
-  - type: Sprite
-    sprite: Nuclear14/Objects/Consumable/Drinks/alcohol.rsi
-    state: nappavalleywine
+  - type: Sprite  # MS13 art
+    sprite: MojaveSun/Objects/Consumable/Drinks/wine.rsi
+    state: icon
   - type: Solution
     id: drink
     solution:

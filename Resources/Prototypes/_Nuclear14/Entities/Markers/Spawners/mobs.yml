@@ -221,7 +221,8 @@
         state: gecko
       - state: ai
   - type: ConditionalSpawner
-    prototypes: []
+    prototypes:
+      - N14MobGeckoFire
 
 - type: entity
   name: Golden Gecko Spawner
@@ -250,7 +251,9 @@
         state: nightstalker
       - state: ai
   - type: ConditionalSpawner
-    prototypes: []
+    prototypes:
+      - N14MobNightstalkerCub
+      
 
 - type: entity
   name: Nightstalker Spawner
@@ -264,7 +267,9 @@
         state: nightstalker-1
       - state: ai
   - type: ConditionalSpawner
-    prototypes: []
+    prototypes:
+      - N14MobNightstalker
+      
 
 - type: entity
   name: Yao Guai Spawner
@@ -392,7 +397,9 @@
         state: fireant
       - state: ai
   - type: ConditionalSpawner
-    prototypes: []
+    prototypes:
+      - N14MobGiantFireAnt
+      
 
 - type: entity
   name: Radroach Spawner
@@ -422,7 +429,9 @@
         state: radscorpion
       - state: ai
   - type: ConditionalSpawner
-    prototypes: []
+    prototypes:
+      - N14MobRadscorpion
+      
 
 - type: entity
   name: Barkscorpion Spawner
@@ -436,7 +445,9 @@
         state: radscorpion
       - state: ai
   - type: ConditionalSpawner
-    prototypes: []
+    prototypes:
+      - N14MobRadscorpionBark
+      
 
 - type: entity
   name: Cazador Spawner
@@ -450,7 +461,9 @@
         state: cazador
       - state: ai
   - type: ConditionalSpawner
-    prototypes: []
+    prototypes:
+      - N14MobCazador
+
 # Ranged Raider Variants
 
 - type: entity

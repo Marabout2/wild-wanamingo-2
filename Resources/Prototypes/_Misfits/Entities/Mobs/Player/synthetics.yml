@@ -94,6 +94,9 @@
   suffix: player, synthetic
   description: A General Atomics Mr. Handy domestic servant robot, now guided by a living mind.
   components:
+  - type: BatteryAmmoProvider
+    proto: N14MFLaserRed
+    fireCost: 50
   - type: VisualBody
   - type: HumanoidProfile
     species: RobotMrHandy
@@ -149,6 +152,39 @@
         Shock: -0.5
         Caustic: -0.5
   - type: RobotSelfRepairAnnouncer # #Misfits Change: hull integrity warnings + self-repair popups
+
+  - type: Gun # #Misfits Add: built-in flamer — right-click in combat mode to fire
+    cameraRecoilScalar: 0
+    fireRate: 10
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    soundGunshot:
+      path: /Audio/Nuclear14/Weapons/Guns/Flames/flamer.ogg
+    useKey: false
+  - type: SolutionContainerManager # #Misfits Change: internal fuel tank feeds tile-fire flamer bursts
+    solutions:
+      chamber:
+        maxVol: 150
+        reagents:
+        - ReagentId: WeldingFuel
+          Quantity: 150
+  - type: FlamerAmmoProvider
+    solutionId: chamber
+    fireCost: 5
+    fireTilePrototype: MisfitsTileFire
+    range: 5
+  - type: NamedSolutionRegeneration # #Misfits Change: slow fuel regen preserves the old recharge cadence
+    solution: chamber
+    generated:
+      reagents:
+      - ReagentId: WeldingFuel
+        Quantity: 5
+    duration: 3
+  # #Misfits Fix - Removed RobotGunPowerDrain: the flamer drained the same chassis cell_slot that
+  # powers the built-in flashlight (HandheldLight). Spraying killed the light and it could not be
+  # re-enabled until the cell recharged — the reported "flashlight breaks when using blaster" bug.
+  # The flamer is already fuel/ammo-limited, so this doesn't make it free.
   - type: ContainerFill
     containers:
       borg_brain:

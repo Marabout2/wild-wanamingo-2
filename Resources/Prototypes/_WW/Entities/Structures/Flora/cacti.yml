@@ -1,0 +1,43 @@
+# Mojave Sun 13 cacti (mojave/icons/flora/flora.dmi).
+- type: entity
+  parent: N14FloraDesertCactus
+  id: F14FloraCactusTall
+  name: cactus
+  description: A tall desert cactus. Best admired from a distance.
+  components:
+  - type: Sprite
+    sprite: MojaveSun/Objects/Decoration/Flora/flora.rsi
+    layers:
+    - state: tall_cactus1
+      map: [ "cactus" ]
+  - type: RandomSprite
+    available:
+    - cactus:
+        tall_cactus1: ""
+        tall_cactus2: ""
+        tall_cactus3: ""
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+            bounds: "-0.2,-0.45,0.2,-0.1"
+        density: 1000
+        layer:
+        - WallLayer
+
+- type: entity
+  parent: F14FloraCactusTall
+  id: F14FloraCactusShort
+  description: A squat desert cactus.
+  components:
+  - type: Sprite
+    layers:
+    - state: short_cactus1
+      map: [ "cactus" ]
+  - type: RandomSprite
+    available:
+    - cactus:
+        short_cactus1: ""
+        short_cactus2: ""
+        short_cactus3: ""

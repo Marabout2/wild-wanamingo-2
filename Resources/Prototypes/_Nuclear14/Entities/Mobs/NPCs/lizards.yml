@@ -90,6 +90,95 @@
     #- Gecko
 
 - type: entity
+  parent: N14MobGecko
+  id: N14MobGeckoFire
+  name: fire gecko
+  description: A dangerous fire gecko. Don't let it get close!
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: gecko
+      sprite: Nuclear14/Mobs/Animals/firegecko.rsi
+  - type: MeleeWeapon
+    altDisarm: false
+    hidden: true
+    soundHit:
+      collection: N14GeckoAttack #Misfits Change
+    angle: 60
+    animation: WeaponArcBite
+    wideAnimation: WeaponArcBite
+    damage:
+      types:
+        Slash: 7                        # Forge-Change
+  - type: Butcherable
+    spawned:
+    - id: N14FoodMeatGeckoFire
+      amount: 3
+    - id: N14MaterialHideGeckoFire
+      amount: 1
+  # - type: Reproductive
+    # breedChance: 0.05
+    # birthPopup: reproductive-laid-egg-popup
+    # makeOffspringInfant: false
+    # partnerWhitelist:
+      # tags:
+      # - Gecko
+    # offspring:
+    # - id: N14FoodEggGeckoFertilized
+      # maxAmount: 3
+  # - type: ReproductivePartner
+  # - type: EggLayer
+    # eggSpawn:
+    # - id: N14FoodEggGecko
+  # - type: Tag
+    # tags:
+     #- Gecko
+  - type: Gun
+    cameraRecoilScalar: 0 #no recoil
+    fireRate: 3
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    soundGunshot:
+      path: /Audio/Nuclear14/Weapons/Guns/Flames/flamer.ogg
+  - type: SolutionContainerManager
+    solutions:
+      chamber:
+        maxVol: 100
+        reagents:
+        - ReagentId: WeldingFuel
+          Quantity: 100
+  - type: FlamerAmmoProvider
+    solutionId: chamber
+    fireCost: 5
+    fireTilePrototype: MisfitsTileFire
+    range: 4
+  - type: NamedSolutionRegeneration
+    solution: chamber
+    generated:
+      reagents:
+      - ReagentId: WeldingFuel
+        Quantity: 1
+    duration: 0.1
+  - type: HTN
+    rootTask:
+      task: N14RangedHostileCompound
+  - type: Flammable
+    fireSpread: false
+    canResistFire: true
+    firestackFade: -1
+  - type: Damageable
+    damageModifierSet: N14ScaleFireresist
+  - type: AggroSound #Misfits Change
+    sound:
+      collection: N14GeckoAttack
+      params:
+        volume: -3
+        maxDistance: 10
+
+- type: entity
   name: golden gecko
   id: N14MobGeckoGolden
   parent: N14MobGecko
@@ -149,6 +238,224 @@
 
 
 # Nightstalker Cub
+
+- type: entity
+  name: nightstalker cub
+  id: N14MobNightstalkerCub
+  parent: N14MobBaseHostile
+  description: Is it a coyote? Why does it have a rattler... This one is small.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: nightstalker
+      sprite: Nuclear14/Mobs/Animals/nightstalkercub.rsi
+  - type: Bloodstream
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: NightstalkerBlood
+        Quantity: 30
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 3.5
+    baseSprintSpeed : 4.5
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+            radius: 0.3
+        density: 20
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: MobState
+    allowedStates:
+      - Alive
+      - Critical
+      - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      100: Critical
+      150: Dead
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: nightstalker
+      Critical:
+        Base: dead
+      Dead:
+        Base: dead
+  - type: MeleeWeapon
+    altDisarm: false
+    hidden: true
+    soundHit:
+      collection: N14NightstalkerAttack #Misfits Change
+    angle: 60
+    animation: WeaponArcBite
+    wideAnimation: WeaponArcBite
+    damage:
+      types:
+        Slash: 3
+        Piercing: 3
+  - type: IdleSound #Misfits Change
+  - type: SpamEmitSound #Misfits Change
+    minInterval: 10
+    maxInterval: 60
+    sound:
+      collection: N14NightstalkerIdle
+      params:
+        volume: -10
+        maxDistance: 5
+  - type: AggroSound #Misfits Change
+    sound:
+      collection: N14NightstalkerAttack
+      params:
+        volume: -3
+        maxDistance: 10
+  - type: SolutionContainerManager
+    solutions:
+      melee:
+        maxVol: 3
+        reagents:
+        - ReagentId: NightstalkerVenom
+          Quantity: 3
+      udder:
+        maxVol: 3
+        reagents:
+        - ReagentId: NightstalkerVenom
+          Quantity: 3
+  - type: NamedSolutionRegeneration
+    solution: melee
+    generated:
+      reagents:
+      - ReagentId: NightstalkerVenom
+        Quantity: 1
+
+# Adult Nightstalker
+
+- type: entity
+  name: nightstalker
+  id: N14MobNightstalker
+  parent: N14MobBaseHostile
+  description: Is it a coyote? Why does it have a rattler...
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: nightstalker-1
+      sprite: Nuclear14/Mobs/Animals/nightstalker.rsi
+  - type: Bloodstream
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: NightstalkerBlood
+        Quantity: 50
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 3.5
+    baseSprintSpeed : 5
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+            radius: 0.20
+        density: 20
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: MobState
+    allowedStates:
+      - Alive
+      - Critical
+      - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      150: Critical
+      200: Dead
+  - type: Butcherable
+    spawned:
+    - id: N14MaterialNightstalkerPelt
+      amount: 1
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: nightstalker-1
+      Critical:
+        Base: dead
+      Dead:
+        Base: dead
+  - type: MeleeWeapon
+    altDisarm: false
+    hidden: true
+    soundHit:
+      collection: N14NightstalkerAttack #Misfits Change
+    angle: 60
+    animation: WeaponArcBite
+    wideAnimation: WeaponArcBite
+    damage:
+      types:
+        Slash: 5
+        Piercing: 5
+  - type: IdleSound #Misfits Change
+  - type: SpamEmitSound #Misfits Change
+    minInterval: 10
+    maxInterval: 60
+    sound:
+      collection: N14NightstalkerIdle
+      params:
+        volume: -8
+        maxDistance: 5
+  - type: AggroSound #Misfits Change
+    sound:
+      collection: N14NightstalkerAttack
+      params:
+        volume: -3
+        maxDistance: 10
+  - type: SolutionContainerManager
+    solutions:
+      melee:
+        maxVol: 10
+        reagents:
+        - ReagentId: NightstalkerVenom
+          Quantity: 5
+      udder:
+        maxVol: 10
+        reagents:
+        - ReagentId: NightstalkerVenom
+          Quantity: 10
+  - type: NamedSolutionRegeneration
+    solution: melee
+    generated:
+      reagents:
+      - ReagentId: NightstalkerVenom
+        Quantity: 0.25
+  - type: MeleeChemicalInjector
+    solution: melee
+    transferAmount: 1
+ #- type: Reproductive
+   #breedChance: 0.05
+   #birthPopup: reproductive-laid-egg-popup
+   #makeOffspringInfant: false
+   #partnerWhitelist:
+   #   tags:
+   #  - Nightstalker
+   #offspring:
+   #- id: N14FoodEggNightstalkerFertilized
+     #maxAmount: 3
+ #- type: ReproductivePartner
+ #- type: EggLayer
+   #eggSpawn:
+   #- id: N14FoodEggNightstalker
+ # - type: Tag
+#    tags:
+ #   - Nightstalker
+
+# Deathclaw
 
 - type: entity
   name: deathclaw

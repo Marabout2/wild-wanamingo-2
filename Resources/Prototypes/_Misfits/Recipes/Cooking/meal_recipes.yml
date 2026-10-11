@@ -1,0 +1,23 @@
+# Ported from Misfits (https://github.com/Misfit-Sanctuary/nuclear-14): Resources/Prototypes/_Misfits/Recipes/Cooking/meal_recipes.yml
+
+- type: microwaveMealRecipe
+  id: MisfitsRecipeZoyWaffleFlour
+  name: microwave-meal-recipe-n14-misfits-recipe-zoy-waffle-flour-name
+  result: N14CookedFoodBakedWaffleSoy
+  time: 10
+  reagents:
+    Flour: 5
+    MisfitsMilkZoy: 5
+    Egg: 6
+    SodaWater: 5
+
+- type: microwaveMealRecipe
+  id: MisfitsRecipeZoyWaffleRazorgrain
+  name: microwave-meal-recipe-n14-misfits-recipe-zoy-waffle-razorgrain-name
+  result: N14CookedFoodBakedWaffleSoy
+  time: 10
+  reagents:
+    ExtractRazorgrainFlour: 5
+    MisfitsMilkZoy: 5
+    Egg: 6
+    SodaWater: 5

@@ -1,0 +1,235 @@
+# Mojave Sun 13 flora decals (mojave/icons/flora/flora.dmi).
+
+- type: decal
+  id: F14FloraDryGrass1
+  tags: ["flora"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Objects/Decoration/Flora/flora.rsi
+    state: drygrass_1
+
+- type: decal
+  id: F14FloraDryGrass2
+  tags: ["flora"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Objects/Decoration/Flora/flora.rsi
+    state: drygrass_2
+
+- type: decal
+  id: F14FloraDryGrass3
+  tags: ["flora"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Objects/Decoration/Flora/flora.rsi
+    state: drygrass_3
+
+- type: decal
+  id: F14FloraDryGrass4
+  tags: ["flora"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Objects/Decoration/Flora/flora.rsi
+    state: drygrass_4
+
+- type: decal
+  id: F14FloraDryGrass5
+  tags: ["flora"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Objects/Decoration/Flora/flora.rsi
+    state: drygrass_5
+
+- type: decal
+  id: F14FloraDryGrass6
+  tags: ["flora"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Objects/Decoration/Flora/flora.rsi
+    state: drygrass_6
+
+- type: decal
+  id: F14FloraDryGrass7
+  tags: ["flora"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Objects/Decoration/Flora/flora.rsi
+    state: drygrass_7
+
+- type: decal
+  id: F14FloraDryGrass8
+  tags: ["flora"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Objects/Decoration/Flora/flora.rsi
+    state: drygrass_8
+
+- type: decal
+  id: F14FloraDryGrass9
+  tags: ["flora"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Objects/Decoration/Flora/flora.rsi
+    state: drygrass_9
+
+- type: decal
+  id: F14FloraDryGrass10
+  tags: ["flora"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Objects/Decoration/Flora/flora.rsi
+    state: drygrass_10
+
+- type: decal
+  id: F14FloraDryGrass11
+  tags: ["flora"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Objects/Decoration/Flora/flora.rsi
+    state: drygrass_11
+
+- type: decal
+  id: F14FloraDryGrass12
+  tags: ["flora"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Objects/Decoration/Flora/flora.rsi
+    state: drygrass_12
+
+- type: decal
+  id: F14FloraDryGrass13
+  tags: ["flora"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Objects/Decoration/Flora/flora.rsi
+    state: drygrass_13
+
+- type: decal
+  id: F14FloraDryGrass14
+  tags: ["flora"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Objects/Decoration/Flora/flora.rsi
+    state: drygrass_14
+
+- type: decal
+  id: F14FloraDryGrass15
+  tags: ["flora"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Objects/Decoration/Flora/flora.rsi
+    state: drygrass_15
+
+- type: decal
+  id: F14FloraLeafyPlant1
+  tags: ["flora"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Objects/Decoration/Flora/flora.rsi
+    state: leafy_plant1
+
+- type: decal
+  id: F14FloraLeafyPlant2
+  tags: ["flora"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Objects/Decoration/Flora/flora.rsi
+    state: leafy_plant2
+
+- type: decal
+  id: F14FloraLeafyPlant3
+  tags: ["flora"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Objects/Decoration/Flora/flora.rsi
+    state: leafy_plant3
+
+# Snow flora: for snowy maps only (not used by the wasteland biome).
+
+- type: decal
+  id: F14FloraSnowGrass1
+  tags: ["flora"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Objects/Decoration/Flora/flora_snow.rsi
+    state: snowgrass_1
+
+- type: decal
+  id: F14FloraSnowGrass2
+  tags: ["flora"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Objects/Decoration/Flora/flora_snow.rsi
+    state: snowgrass_2
+
+- type: decal
+  id: F14FloraSnowGrass3
+  tags: ["flora"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Objects/Decoration/Flora/flora_snow.rsi
+    state: snowgrass_3
+
+- type: decal
+  id: F14FloraSnowGrass4
+  tags: ["flora"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Objects/Decoration/Flora/flora_snow.rsi
+    state: snowgrass_4
+
+- type: decal
+  id: F14FloraSnowGrass5
+  tags: ["flora"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Objects/Decoration/Flora/flora_snow.rsi
+    state: snowgrass_5
+
+- type: decal
+  id: F14FloraSnowGrass6
+  tags: ["flora"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Objects/Decoration/Flora/flora_snow.rsi
+    state: snowgrass_6
+
+- type: decal
+  id: F14FloraSnowGrass7
+  tags: ["flora"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Objects/Decoration/Flora/flora_snow.rsi
+    state: snowgrass_7
+
+- type: decal
+  id: F14FloraSnowGrass8
+  tags: ["flora"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Objects/Decoration/Flora/flora_snow.rsi
+    state: snowgrass_8
+
+- type: decal
+  id: F14FloraSnowBush1
+  tags: ["flora"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Objects/Decoration/Flora/flora_snow.rsi
+    state: snowbush_1
+
+- type: decal
+  id: F14FloraSnowBush2
+  tags: ["flora"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Objects/Decoration/Flora/flora_snow.rsi
+    state: snowbush_2
+
+- type: decal
+  id: F14FloraSnowBush3
+  tags: ["flora"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Objects/Decoration/Flora/flora_snow.rsi
+    state: snowbush_3

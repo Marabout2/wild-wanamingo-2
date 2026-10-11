@@ -30,8 +30,9 @@
   id: N14FoodBlamcomaccheese
   description: Highly processed macaroni with white cheese sauce and a healthy dose of preservatives.
   components:
-  - type: Sprite
-    state: blamco
+  - type: Sprite  # MS13 art
+    sprite: MojaveSun/Objects/Consumable/Food/Tins/macncheese.rsi
+    state: macncheese
   - type: Edible
     edible: Food
     trash: 
@@ -77,7 +78,8 @@
   id: N14FoodCram
   description: People thought this was meat?
   components:
-  - type: Sprite
+  - type: Sprite  # MS13 art
+    sprite: MojaveSun/Objects/Consumable/Food/Tins/cram.rsi
     state: cram
   - type: Edible
     edible: Food
@@ -90,7 +92,8 @@
   id: N14FoodCrisps
   description: Salty, stale, and one of your five-a-day!
   components:
-  - type: Sprite
+  - type: Sprite  # MS13 art
+    sprite: MojaveSun/Objects/Consumable/Food/Tins/crisps.rsi
     state: crisps
   - type: Edible
     edible: Food
@@ -103,8 +106,9 @@
   id: N14FoodDandyboyapples
   description: Extremely sweet candied apples. Well preserved.
   components:
-  - type: Sprite
-    state: dandyapples
+  - type: Sprite  # MS13 art
+    sprite: MojaveSun/Objects/Consumable/Food/Tins/dandy.rsi
+    state: dandy
   - type: Edible
     edible: Food
     trash: 
@@ -116,8 +120,17 @@
   name: canned dog food
   description: A can of beef stew meant for dogs.
   components:
-  - type: Sprite
-    sprite: Nuclear14/Objects/Consumable/Food/dogfood.rsi
+  - type: Sprite  # MS13 art
+    sprite: MojaveSun/Objects/Consumable/Food/Tins/dogfood.rsi
+    layers:
+    - state: dogfood
+      map: ["icon"]
+  - type: GenericVisualizer
+    visuals:
+      enum.OpenableVisuals.Opened:
+        icon:
+          True: {state: "dogfood_open"}
+          False: {state: "dogfood"}
   - type: FlavorProfile
     flavors:
     - meaty
@@ -135,8 +148,9 @@
   id: N14FoodDogFoodTrash
   name: canned dog food
   components:
-  - type: Sprite
-    sprite: Nuclear14/Objects/Consumable/Food/dogfood.rsi
+  - type: Sprite  # MS13 art
+    sprite: MojaveSun/Objects/Consumable/Food/Tins/dogfood.rsi
+    state: dogfood_trash
 
 - type: entity
   parent: FoodTinBase
@@ -172,8 +186,9 @@
   id: N14FoodFancyladssnackcakes
   description: Small frosted cakes laden with sugar and other sweeteners.
   components:
-  - type: Sprite
-    state: fancylads
+  - type: Sprite  # MS13 art
+    sprite: MojaveSun/Objects/Consumable/Food/Tins/snackcake.rsi
+    state: snackcake
   - type: Edible
     edible: Food
     trash: 
@@ -185,7 +200,8 @@
   id: N14FoodInstamash
   description: A packet of freeze-dried powdered mashed potato. Just add water! # TODO add a reaction for this
   components:
-  - type: Sprite
+  - type: Sprite  # MS13 art
+    sprite: MojaveSun/Objects/Consumable/Food/Tins/instamash.rsi
     state: instamash
   - type: Edible
     edible: Food
@@ -198,8 +214,9 @@
   id: N14FoodPorkBeans
   description: Beans stewed in tomato sauce with chunks of cured pork belly. Savory.
   components:
-  - type: Sprite
-    state: porknbeans
+  - type: Sprite  # MS13 art
+    sprite: MojaveSun/Objects/Consumable/Food/Tins/porknbean.rsi
+    state: porknbean
   - type: Edible
     edible: Food
     trash: 
@@ -237,8 +254,9 @@
   id: N14FoodSalisburysteak
   description: A ready-to-eat meal of ground beef mixed with bread crumbs, onion, and egg, served with gravy.
   components:
-  - type: Sprite
-    state: steak
+  - type: Sprite  # MS13 art
+    sprite: MojaveSun/Objects/Consumable/Food/Tins/salisbury.rsi
+    state: salisbury
   - type: Edible
     edible: Food
     trash: 
@@ -258,7 +276,8 @@
   id: N14FoodSugarbombs
   description: A sugary pre-war food with little to no nutritional value. Enjoy the explosive great taste!
   components:
-  - type: Sprite
+  - type: Sprite  # MS13 art
+    sprite: MojaveSun/Objects/Consumable/Food/Tins/sugarbombs.rsi
     state: sugarbombs
   - type: Edible
     edible: Food
@@ -281,8 +300,9 @@
   id: N14FoodYumyumdeviledeggs
   description: Hard-boiled eggs stuffed with a spicy filling. Somehow still good.
   components:
-  - type: Sprite
-    state: yumyum
+  - type: Sprite  # MS13 art
+    sprite: MojaveSun/Objects/Consumable/Food/Tins/yumegg.rsi
+    state: yumegg
   - type: Edible
     edible: Food
     trash: 
@@ -333,8 +353,9 @@
   id: N14FoodBlamcomaccheeseTrash
   name: empty Blamco box
   components:
-  - type: Sprite
-    state: blamco_trash
+  - type: Sprite  # MS13 art
+    sprite: MojaveSun/Objects/Consumable/Food/Tins/macncheese.rsi
+    state: macncheese_trash
 
 - type: entity
   parent: N14FoodPacketTrash
@@ -357,7 +378,8 @@
   id: N14FoodCramTrash
   name: empty cram box
   components:
-  - type: Sprite
+  - type: Sprite  # MS13 art
+    sprite: MojaveSun/Objects/Consumable/Food/Tins/cram.rsi
     state: cram_trash
 
 - type: entity
@@ -365,7 +387,8 @@
   id: N14FoodCrispsTrash
   name: empty crisps pack
   components:
-  - type: Sprite
+  - type: Sprite  # MS13 art
+    sprite: MojaveSun/Objects/Consumable/Food/Tins/crisps.rsi
     state: crisps_trash
 
 - type: entity
@@ -373,23 +396,26 @@
   id: N14FoodDandyboyapplesTrash
   name: empty Dandyboy Apples box
   components:
-  - type: Sprite
-    state: dandyapples_trash
+  - type: Sprite  # MS13 art
+    sprite: MojaveSun/Objects/Consumable/Food/Tins/dandy.rsi
+    state: dandy_trash
 
 - type: entity
   parent: N14FoodPacketTrash
   id: N14FoodFancyladssnackcakesTrash
   name: empty Fancy Lads Snack Cakes box
   components:
-  - type: Sprite
-    state: fancylads_trash
+  - type: Sprite  # MS13 art
+    sprite: MojaveSun/Objects/Consumable/Food/Tins/snackcake.rsi
+    state: snackcake_trash
 
 - type: entity
   parent: N14FoodPacketTrash
   id: N14FoodInstamashTrash
   name: empty Instamash box
   components:
-  - type: Sprite
+  - type: Sprite  # MS13 art
+    sprite: MojaveSun/Objects/Consumable/Food/Tins/instamash.rsi
     state: instamash_trash
 
 - type: entity
@@ -397,15 +423,17 @@
   id: N14FoodSalisburysteakTrash
   name: empty Salisbury Steak box
   components:
-  - type: Sprite
-    state: steak_trash
+  - type: Sprite  # MS13 art
+    sprite: MojaveSun/Objects/Consumable/Food/Tins/salisbury.rsi
+    state: salisbury_trash
 
 - type: entity
   parent: N14FoodPacketTrash
   id: N14FoodSugarbombsTrash
   name: empty Sugar bombs box
   components:
-  - type: Sprite
+  - type: Sprite  # MS13 art
+    sprite: MojaveSun/Objects/Consumable/Food/Tins/sugarbombs.rsi
     state: sugarbombs_trash
 
 - type: entity
@@ -413,5 +441,6 @@
   id: N14FoodYumyumdeviledeggsTrash
   name: empty Yumyum Deviled Eggs box
   components:
-  - type: Sprite
-    state: yumyum_trash
+  - type: Sprite  # MS13 art
+    sprite: MojaveSun/Objects/Consumable/Food/Tins/yumegg.rsi
+    state: yumegg_trash

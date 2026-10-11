@@ -593,3 +593,5 @@ n14-id-dogtag-full-name = {$fullName}'s dogtags{$jobSuffix}
 n14-id-holotag-name = holotags{$jobSuffix}
 n14-id-holotag-full-name = {$fullName}'s holotags{$jobSuffix}
 lathe-category-identification = Identification
+reagent-name-nightstalker-blood = nightstalker blood
+reagent-desc-nightstalker-blood = blood from a nightstalker

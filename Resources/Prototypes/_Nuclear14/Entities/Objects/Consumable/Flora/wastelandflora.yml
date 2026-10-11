@@ -65,8 +65,11 @@
   name: wild banana yucca plant
   description: A wild yucca plant. It looks healthy.
   components:
-  - type: Sprite
-    state: wild_yucca
+  - type: Sprite  # MS13 art
+    sprite: MojaveSun/Objects/Decoration/Flora/wasteland_flora.rsi
+    layers:
+    - state: yucca1
+      map: [ "plant" ]
   - type: OreVein
     currentOre: WildBananaYucca
   - type: Gatherable
@@ -85,8 +88,17 @@
   name: wild barrel cactus
   description: A barrel cactus plant growing wild. It looks healthy.
   components:
-  - type: Sprite
-    state: wild_feracactus
+  - type: Sprite  # MS13 art
+    sprite: MojaveSun/Objects/Decoration/Flora/wasteland_flora.rsi
+    layers:
+    - state: barrelc1
+      map: [ "plant" ]
+  - type: RandomSprite
+    available:
+    - plant:
+        barrelc1: ""
+        barrelc2: ""
+        barrelc3: ""
   - type: OreVein
     currentOre: WildBarrelCactus
   - type: Gatherable
@@ -105,9 +117,17 @@
   name: wild blackberry bush
   description: A wild blackberry plant. It looks healthy.
   components:
-  - type: Sprite
-    sprite: Nuclear14/Objects/Specific/Hydroponics/blackberry.rsi
-    state: harvest
+  - type: Sprite  # MS13 art
+    sprite: MojaveSun/Objects/Decoration/Flora/wasteland_flora.rsi
+    layers:
+    - state: blackberry1
+      map: [ "plant" ]
+  - type: RandomSprite
+    available:
+    - plant:
+        blackberry1: ""
+        blackberry2: ""
+        blackberry3: ""
   - type: OreVein
     currentOre: WildBlackberries
   - type: Gatherable
@@ -126,8 +146,16 @@
   name: wild broc plant
   description: A broc plant growing wild. It's flowering.
   components:
-  - type: Sprite
-    state: wild_broc
+  - type: Sprite  # MS13 art
+    sprite: MojaveSun/Objects/Decoration/Flora/wasteland_flora.rsi
+    layers:
+    - state: brocflower1
+      map: [ "plant" ]
+  - type: RandomSprite
+    available:
+    - plant:
+        brocflower1: ""
+        brocflower2: ""
   - type: OreVein
     currentOre: WildBrocFlower
   - type: Gatherable
@@ -214,8 +242,17 @@
   name: cave fungus
   description: A healthy-looking fungi.
   components:
-  - type: Sprite
-    state: wild_fungus
+  - type: Sprite  # MS13 art
+    sprite: MojaveSun/Objects/Decoration/Flora/wasteland_flora.rsi
+    layers:
+    - state: shroom1
+      map: [ "plant" ]
+  - type: RandomSprite
+    available:
+    - plant:
+        shroom1: ""
+        shroom2: ""
+        shroom3: ""
   - type: OreVein
     currentOre: WildCaveFungus
   - type: Gatherable
@@ -234,8 +271,17 @@
   name: irradiated fungus
   description: A glowing fungi.
   components:
-  - type: Sprite
-    state: CaveFungusRad
+  - type: Sprite  # MS13 art
+    sprite: MojaveSun/Objects/Decoration/Flora/wasteland_flora.rsi
+    layers:
+    - state: glowshroom1
+      map: [ "plant" ]
+  - type: RandomSprite
+    available:
+    - plant:
+        glowshroom1: ""
+        glowshroom2: ""
+        glowshroom3: ""
   - type: OreVein
     currentOre: WildCaveFungusRad
   - type: PointLight
@@ -412,8 +458,17 @@
   name: wild mutfruit plant
   description: A wild mutfruit plant. It looks healthy.
   components:
-  - type: Sprite
-    state: wild_mutfruit
+  - type: Sprite  # MS13 art
+    sprite: MojaveSun/Objects/Decoration/Flora/wasteland_flora.rsi
+    layers:
+    - state: mutfruit1
+      map: [ "plant" ]
+  - type: RandomSprite
+    available:
+    - plant:
+        mutfruit1: ""
+        mutfruit2: ""
+        mutfruit3: ""
   - type: OreVein
     currentOre: WildMutfruit
   - type: Gatherable
@@ -556,11 +611,17 @@
   name: wild tarberry plant
   description: A wild tarberry plant. It looks healthy.
   components: # N14TODO: This should only grow on water
-  - type: Sprite
-    sprite: Nuclear14/Objects/Specific/Hydroponics/tarberry.rsi
+  - type: Sprite  # MS13 art
+    sprite: MojaveSun/Objects/Decoration/Flora/wasteland_flora.rsi
     layers:
-      - state: harvest
-      - state: produce # N14TODO: Needs a better sprite layer than this, look at the seed and product sprites and how they should work.
+    - state: tarberry1
+      map: [ "plant" ]
+  - type: RandomSprite
+    available:
+    - plant:
+        tarberry1: ""
+        tarberry2: ""
+        tarberry3: ""
   - type: OreVein
     currentOre: WildTarberries
   - type: Gatherable
@@ -619,8 +680,16 @@
   name: wild xander plant
   description: A xander plant growing wild. It looks healthy.
   components:
-  - type: Sprite
-    state: wild_xander
+  - type: Sprite  # MS13 art
+    sprite: MojaveSun/Objects/Decoration/Flora/wasteland_flora.rsi
+    layers:
+    - state: xander1
+      map: [ "plant" ]
+  - type: RandomSprite
+    available:
+    - plant:
+        xander1: ""
+        xander2: ""
   - type: OreVein
     currentOre: WildXander
   - type: Gatherable

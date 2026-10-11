@@ -48,7 +48,7 @@ public abstract partial class SharedSolutionContainerSystem
 
         if (container.Comp.Solutions == null)
         {
-            RemCompDeferred<SolutionManagerComponent>(container);
+            RemCompDeferred<SolutionContainerManagerComponent>(container); // WW Change - upstream removed the new SolutionManager here, losing every ported solution
             return;
         }
 
@@ -71,6 +71,6 @@ public abstract partial class SharedSolutionContainerSystem
 
         // Clear its data
         container.Comp.Solutions = null;
-        RemCompDeferred<SolutionManagerComponent>(container);
+        RemCompDeferred<SolutionContainerManagerComponent>(container); // WW Change - upstream removed the new SolutionManager here, losing every ported solution
     }
 }

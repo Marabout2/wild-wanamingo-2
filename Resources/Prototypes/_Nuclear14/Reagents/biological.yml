@@ -1,0 +1,62 @@
+# Ported from Nuclear 14 (https://github.com/Vault-Overseers/nuclear-14) via Misfits (https://github.com/Misfit-Sanctuary/nuclear-14):
+# Resources/Prototypes/_Nuclear14/Reagents/biological.yml
+
+- type: reagent
+  id: NightstalkerBlood
+  name: reagent-name-nightstalker-blood
+  group: Wasteland
+  desc: reagent-desc-nightstalker-blood
+  flavor: metallic
+  color: "#bf1029"
+  metamorphicSprite:
+    sprite: Objects/Consumable/Drinks/bloodglass.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 5
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  recognizable: true
+  physicalDesc: reagent-physical-desc-necrotic
+  metabolisms:
+    Digestion:
+      effects:
+      - !type:Satiate
+        satiationType: Thirst
+        factor: 0.5
+        conditions:
+          - !type:MetabolizerTypeCondition
+            type: [ Human ]
+            inverted: true
+      - !type:AdjustReagent
+        reagent: N14UncookedAnimalProteinsRad
+        amount: 0.5
+    Bloodstream:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.25
+            Radiation: 0.25
+      - !type:HealthChange
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Bloodsucker ]
+        damage:
+          types:
+            Blunt: -1
+            Slash: -1
+            Piercing: -1
+            Heat: -0.3125
+            Shock: -0.3125
+            Cold: -0.3125
+            Caustic: -0.3125
+            Poison: -0.25
+            Radiation: -0.05
+      - !type:Vomit
+        probability: 0.25
+  plantMetabolism:
+    - !type:PlantAdjustWater
+      amount: 0.25
+  footstepSound:
+    collection: FootstepBlood
+    params:
+      volume: 6

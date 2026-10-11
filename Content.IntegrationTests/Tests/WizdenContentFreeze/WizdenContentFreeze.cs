@@ -1,3 +1,4 @@
+using System.Linq;
 using Content.IntegrationTests.Fixtures;
 using Content.Shared.Kitchen;
 
@@ -24,7 +25,9 @@ public sealed class WizdenContentFreeze : GameTest
 
         var protoMan = server.ProtoMan;
 
-        var recipesCount = protoMan.Count<MicrowaveMealRecipePrototype>();
+        // WW Change - only Wizden's recipes are frozen; the Fallout ones (N14/Misfits IDs) are added on top
+        var recipesCount = protoMan.EnumeratePrototypes<MicrowaveMealRecipePrototype>()
+            .Count(p => !p.ID.StartsWith("N14") && !p.ID.StartsWith("Misfits"));
         var recipesLimit = 218;
 
         if (recipesCount > recipesLimit)

@@ -71,6 +71,17 @@
     Poison: 0.9
 
 - type: damageModifierSet
+  id: N14ScaleFireresist
+  coefficients:
+    Blunt: 1.1
+    Slash: 0.9
+    Cold: 1.5
+    Heat: 0
+    Poison: 0.9
+  flatReductions:
+    Heat: 10
+
+- type: damageModifierSet
   id: N14ToughAnimal # Made especially for deathclaws and other larger "boss" creatures.
   coefficients:
     Blunt: 0.8

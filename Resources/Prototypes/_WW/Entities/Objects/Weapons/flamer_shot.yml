@@ -1,0 +1,7 @@
+# One flamer shot: a hitscan entity that FlamerLineSystem turns into a line of tile fires.
+- type: entity
+  id: F14FlamerShot
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HitscanAmmo
+  - type: FlamerShot

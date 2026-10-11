@@ -1,0 +1,209 @@
+# Mojave Sun 13 wasteland ground decals: cacti (flora.dmi), craters (ground_decals.dmi), bones (bones.dmi).
+
+- type: decal
+  id: F14FloraCactusDecal1
+  tags: ["flora"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Objects/Decoration/Flora/flora.rsi
+    state: short_cactus1
+
+- type: decal
+  id: F14FloraCactusDecal2
+  tags: ["flora"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Objects/Decoration/Flora/flora.rsi
+    state: short_cactus2
+
+- type: decal
+  id: F14FloraCactusDecal3
+  tags: ["flora"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Objects/Decoration/Flora/flora.rsi
+    state: short_cactus3
+
+- type: decal
+  id: F14FloraCactusDecal4
+  tags: ["flora"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Objects/Decoration/Flora/flora.rsi
+    state: tall_cactus1
+
+- type: decal
+  id: F14FloraCactusDecal5
+  tags: ["flora"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Objects/Decoration/Flora/flora.rsi
+    state: tall_cactus2
+
+- type: decal
+  id: F14FloraCactusDecal6
+  tags: ["flora"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Objects/Decoration/Flora/flora.rsi
+    state: tall_cactus3
+
+- type: decal
+  id: F14Crater1
+  tags: ["dirty"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Decals/ground_decals.rsi
+    state: boom_1
+
+- type: decal
+  id: F14Crater2
+  tags: ["dirty"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Decals/ground_decals.rsi
+    state: boom_2
+
+- type: decal
+  id: F14Crater3
+  tags: ["dirty"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Decals/ground_decals.rsi
+    state: boom_3
+
+- type: decal
+  id: F14Crater4
+  tags: ["dirty"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Decals/ground_decals.rsi
+    state: boom_4
+
+- type: decal
+  id: F14Crater5
+  tags: ["dirty"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Decals/ground_decals.rsi
+    state: boom_5
+
+- type: decal
+  id: F14Crater6
+  tags: ["dirty"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Decals/ground_decals.rsi
+    state: boom_6
+
+- type: decal
+  id: F14Crater7
+  tags: ["dirty"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Decals/ground_decals.rsi
+    state: boom_7
+
+- type: decal
+  id: F14Crater8
+  tags: ["dirty"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Decals/ground_decals.rsi
+    state: boom_8
+
+- type: decal
+  id: F14Bones1
+  tags: ["dirty"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Structures/Decoration/bones.rsi
+    state: 0_1
+
+- type: decal
+  id: F14Bones2
+  tags: ["dirty"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Structures/Decoration/bones.rsi
+    state: 2_1
+
+- type: decal
+  id: F14Bones3
+  tags: ["dirty"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Structures/Decoration/bones.rsi
+    state: 3_1
+
+- type: decal
+  id: F14Bones4
+  tags: ["dirty"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Structures/Decoration/bones.rsi
+    state: 4_1
+
+- type: decal
+  id: F14Bones5
+  tags: ["dirty"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Structures/Decoration/bones.rsi
+    state: 5_1
+
+- type: decal
+  id: F14Bones6
+  tags: ["dirty"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Structures/Decoration/bones.rsi
+    state: 6_1
+
+- type: decal
+  id: F14Bones7
+  tags: ["dirty"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Structures/Decoration/bones.rsi
+    state: 0_0
+
+- type: decal
+  id: F14Bones8
+  tags: ["dirty"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Structures/Decoration/bones.rsi
+    state: 1_0
+
+- type: decal
+  id: F14Bones9
+  tags: ["dirty"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Structures/Decoration/bones.rsi
+    state: scoliosis
+
+- type: decal
+  id: F14Bones10
+  tags: ["dirty"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Structures/Decoration/bones.rsi
+    state: 3_0
+
+- type: decal
+  id: F14Bones11
+  tags: ["dirty"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Structures/Decoration/bones.rsi
+    state: cow
+
+- type: decal
+  id: F14Bones12
+  tags: ["dirty"]
+  snapCardinals: true
+  sprite:
+    sprite: MojaveSun/Structures/Decoration/bones.rsi
+    state: horse

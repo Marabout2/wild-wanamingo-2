@@ -36,6 +36,9 @@
   table: !type:GroupSelector
     children:
     - !type:EntSelector
+      id: N14WeaponFlamer
+      weight: 1
+    - !type:EntSelector
       id: N14WeaponGaussRifle
       weight: 1
 

@@ -1,0 +1,91 @@
+# The Wild Wanamingo desert: MS13 sand everywhere, with Fallout wild plants, cacti, dead trees and dry grass.
+# Layers are checked top-down; the first that matches a tile wins.
+- type: biomeTemplate
+  id: F14Wasteland
+  layers:
+    # Wild Fallout plants (gatherable)
+    - !type:BiomeEntityLayer
+      threshold: 0.92
+      noise:
+        seed: 11
+        frequency: 2
+        noiseType: OpenSimplex2
+      allowedTiles:
+      - F14FloorWastelandSand
+      entities:
+      - N14WastelandFloraWildMutfruit
+      - N14WastelandFloraWildBarrelCactus
+      - N14WastelandFloraWildBananaYucca
+      - N14WastelandFloraWildXander
+      - N14WastelandFloraWildBroc
+      - N14WastelandFloraWildAgave
+      - N14WastelandFloraWildPricklypear
+      - N14WastelandFloraWildBuffaloGourd
+      - N14WastelandFloraWildMesquite
+      - N14WastelandFloraWildPinyon
+      - N14WastelandFloraWildCoyote
+      - N14WastelandFloraWildDatura
+      - N14WastelandFloraWildWhiteHorsenettle
+      - N14WastelandFloraWildRazorgrain
+      - N14WastelandFloraWildTato
+    # Cacti
+    - !type:BiomeEntityLayer
+      threshold: 0.94
+      noise:
+        seed: 23
+        frequency: 2
+        noiseType: OpenSimplex2
+      allowedTiles:
+      - F14FloorWastelandSand
+      entities:
+      - F14FloraCactusTall
+      - F14FloraCactusShort
+      - F14FloraCactusShort
+    # Dead and bald trees, in loose groves
+    - !type:BiomeEntityLayer
+      threshold: 0.96
+      noise:
+        seed: 37
+        frequency: 2
+        noiseType: OpenSimplex2
+      allowedTiles:
+      - F14FloorWastelandSand
+      entities:
+      - N14FloraTreeDead1
+      - N14FloraTreeBald
+    # Dry grass and leafy scrub
+    - !type:BiomeDecalLayer
+      threshold: 0.4
+      divisions: 1
+      noise:
+        seed: 53
+        frequency: 0.6
+        noiseType: OpenSimplex2
+      allowedTiles:
+      - F14FloorWastelandSand
+      decals:
+      - F14FloraDryGrass1
+      - F14FloraDryGrass2
+      - F14FloraDryGrass3
+      - F14FloraDryGrass4
+      - F14FloraDryGrass5
+      - F14FloraDryGrass6
+      - F14FloraDryGrass7
+      - F14FloraDryGrass8
+      - F14FloraDryGrass9
+      - F14FloraDryGrass10
+      - F14FloraDryGrass11
+      - F14FloraDryGrass12
+      - F14FloraDryGrass13
+      - F14FloraDryGrass14
+      - F14FloraDryGrass15
+      - F14FloraLeafyPlant1
+      - F14FloraLeafyPlant2
+      - F14FloraLeafyPlant3
+    - !type:BiomeDummyLayer
+      id: Loot
+    # Fill: MS13 sand
+    - !type:BiomeTileLayer
+      threshold: -1
+      tile: F14FloorWastelandSand
+      variants: [0, 1, 2]

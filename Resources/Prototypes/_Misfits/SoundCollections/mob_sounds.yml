@@ -40,6 +40,23 @@
 # Nightstalker attack sounds (bite/attack)
 
 - type: soundCollection
+  id: N14NightstalkerAttack
+  files:
+    - /Audio/Misfits/Mobs/Nightstalker/attack1.ogg
+    - /Audio/Misfits/Mobs/Nightstalker/nightstalker_bite.ogg
+
+# Nightstalker ambient idle
+
+- type: soundCollection
+  id: N14NightstalkerIdle
+  files:
+    - /Audio/Misfits/Mobs/Nightstalker/idle1.ogg
+    - /Audio/Misfits/Mobs/Nightstalker/taunt1.ogg
+    - /Audio/Misfits/Mobs/Nightstalker/taunt2.ogg
+
+# Molerat attack sounds
+
+- type: soundCollection
   id: N14MoleratAttack
   files:
     - /Audio/Misfits/Mobs/Molerat/aggro1.ogg
@@ -64,6 +81,33 @@
     - /Audio/Misfits/Mobs/Scorpion/aggro.ogg
 
 # Radscorpion ambient idle
+
+- type: soundCollection
+  id: N14RadscorpionIdle
+  files:
+    - /Audio/Misfits/Mobs/Scorpion/taunt1.ogg
+    - /Audio/Misfits/Mobs/Scorpion/taunt2.ogg
+    - /Audio/Misfits/Mobs/Scorpion/taunt3.ogg
+
+# Cazador attack sounds (charge/sting)
+
+- type: soundCollection
+  id: N14CazadorAttack
+  files:
+    - /Audio/Misfits/Mobs/Cazador/cazador_charge1.ogg
+    - /Audio/Misfits/Mobs/Cazador/cazador_charge2.ogg
+    - /Audio/Misfits/Mobs/Cazador/cazador_charge3.ogg
+    - /Audio/Misfits/Mobs/Cazador/cazador_attack.ogg
+
+# Cazador ambient idle (buzz)
+
+- type: soundCollection
+  id: N14CazadorIdle
+  files:
+    - /Audio/Misfits/Mobs/Cazador/cazador_alert.ogg
+    - /Audio/Misfits/Mobs/Cazador/cazador_buzz.ogg
+
+# Dog attack sounds (charge/bark)
 
 - type: soundCollection
   id: N14DogAttack

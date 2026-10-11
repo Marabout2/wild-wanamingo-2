@@ -83,6 +83,25 @@
 
 - type: entity
   parent: N14TimedSpawnerMolerat
+  id: N14TimedSpawnerGeckoFire
+  name: Fire Gecko Timed Spawner
+  components:
+    - type: Sprite
+      layers:
+        - state: blue
+        - sprite: Nuclear14/Mobs/Animals/firegecko.rsi
+          state: gecko
+        - state: timed
+    - type: WastelandSpawner
+      prototypes:
+        - N14MobGeckoFire
+      chance: 0.65
+      intervalSeconds: 2400
+      minimumEntitiesSpawned: 1
+      maximumEntitiesSpawned: 3
+
+- type: entity
+  parent: N14TimedSpawnerMolerat
   id: N14TimedSpawnerGeckoGolden
   name: Golden Gecko Timed Spawner
   components:
@@ -99,6 +118,44 @@
       intervalSeconds: 2400
       minimumEntitiesSpawned: 1
       maximumEntitiesSpawned: 3
+
+- type: entity
+  parent: N14TimedSpawnerMolerat
+  id: N14TimedSpawnerNightstalkerCub
+  name: Nightstalker Cub Timed Spawner
+  components:
+    - type: Sprite
+      layers:
+        - state: blue
+        - sprite: Nuclear14/Mobs/Animals/nightstalkercub.rsi
+          state: nightstalker
+        - state: timed
+    - type: WastelandSpawner
+      prototypes:
+        - N14MobNightstalkerCub
+      chance: 0.65
+      intervalSeconds: 2400
+      minimumEntitiesSpawned: 1
+      maximumEntitiesSpawned: 2
+
+- type: entity
+  parent: N14TimedSpawnerMolerat
+  id: N14TimedSpawnerNightstalker
+  name: Nightstalker Timed Spawner
+  components:
+    - type: Sprite
+      layers:
+        - state: blue
+        - sprite: Nuclear14/Mobs/Animals/nightstalker.rsi
+          state: nightstalker-1
+        - state: timed
+    - type: WastelandSpawner
+      prototypes:
+        - N14MobNightstalker
+      chance: 0.65
+      intervalSeconds: 2400
+      minimumEntitiesSpawned: 1
+      maximumEntitiesSpawned: 2
 
 - type: entity
   parent: N14TimedSpawnerMolerat
@@ -220,6 +277,25 @@
 
 - type: entity
   parent: N14TimedSpawnerMolerat
+  id: N14TimedSpawnerFireant
+  name: Fire Ant Timed Spawner
+  components:
+    - type: Sprite
+      layers:
+        - state: blue
+        - sprite: Nuclear14/Mobs/Insects/fireant.rsi
+          state: fireant
+        - state: timed
+    - type: WastelandSpawner
+      prototypes:
+        - N14MobGiantFireAnt
+      chance: 0.75
+      intervalSeconds: 2400
+      minimumEntitiesSpawned: 1
+      maximumEntitiesSpawned: 2
+
+- type: entity
+  parent: N14TimedSpawnerMolerat
   id: N14TimedSpawnerRadroach
   name: Radroach Timed Spawner
   components:
@@ -236,6 +312,65 @@
       intervalSeconds: 2400
       minimumEntitiesSpawned: 1
       maximumEntitiesSpawned: 4
+
+- type: entity
+  parent: N14TimedSpawnerMolerat
+  id: N14TimedSpawnerRadscorpion
+  name: Radscorpion Timed Spawner
+  components:
+    - type: Sprite
+      layers:
+        - state: blue
+        - sprite: Nuclear14/Mobs/Insects/radscorpion.rsi
+          state: radscorpion
+        - state: timed
+    - type: WastelandSpawner
+      prototypes:
+        - N14MobRadscorpion
+      chance: 0.75
+      intervalSeconds: 2400
+      minimumEntitiesSpawned: 1
+      maximumEntitiesSpawned: 2
+
+- type: entity
+  parent: N14TimedSpawnerMolerat
+  id: N14TimedSpawnerRadscorpionBark
+  name: Radscorpion Bark Timed Spawner
+  components:
+    - type: Sprite
+      layers:
+        - state: blue
+        - sprite: Nuclear14/Mobs/Insects/radscorpionbark.rsi
+          state: radscorpion
+        - state: timed
+    - type: WastelandSpawner
+      prototypes:
+        - N14MobRadscorpionBark
+      chance: 0.75
+      intervalSeconds: 2400
+      minimumEntitiesSpawned: 1
+      maximumEntitiesSpawned: 2
+
+- type: entity
+  parent: N14TimedSpawnerMolerat
+  id: N14TimedSpawnerCazador
+  name: Cazador Timed Spawner
+  components:
+    - type: Sprite
+      layers:
+        - state: blue
+        - sprite: Nuclear14/Mobs/Insects/cazador.rsi
+          state: cazador
+        - state: timed
+    - type: WastelandSpawner
+      prototypes:
+        - N14MobCazador
+      chance: 0.75
+      intervalSeconds: 2400
+      minimumEntitiesSpawned: 1
+      maximumEntitiesSpawned: 2
+
+# Ranged Raider Variants
 
 - type: entity
   name: Feral Ghoul Timed Spawner

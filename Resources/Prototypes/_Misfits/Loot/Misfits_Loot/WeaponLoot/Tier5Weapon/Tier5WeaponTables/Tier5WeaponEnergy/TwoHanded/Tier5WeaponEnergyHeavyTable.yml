@@ -19,4 +19,7 @@
 - type: entityTable
   id: M14WeaponLootTier5_OtherHeavy
   table: !type:GroupSelector
-    children: []
+    children:
+    - !type:EntSelector
+      id: N14WeaponLegionScorcher
+      weight: 1

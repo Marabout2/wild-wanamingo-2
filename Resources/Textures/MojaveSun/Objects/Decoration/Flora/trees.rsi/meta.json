@@ -1,14 +1,32 @@
 {
     "version": 1,
     "license": "CC-BY-NC-SA-3.0",
-    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/flora/trees.dmi)",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e",
     "size": {
         "x": 64,
         "y": 128
     },
     "states": [
         {
-            "name": "unnamed-1"
+            "name": "pine_1_snow"
+        },
+        {
+            "name": "pine_1"
+        },
+        {
+            "name": "pine_1_alt"
+        },
+        {
+            "name": "bald"
+        },
+        {
+            "name": "dead_tree1"
+        },
+        {
+            "name": "dead_tree2"
+        },
+        {
+            "name": "dead_tree3"
         }
     ]
 }

@@ -1,7 +1,7 @@
 {
     "version": 1,
     "license": "CC-BY-NC-SA-3.0",
-    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e (mojave/icons/flora/wastelandflora.dmi)",
+    "copyright": "Taken from Mojave Sun 13 at https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e",
     "size": {
         "x": 32,
         "y": 32
@@ -116,6 +116,27 @@
             "name": "aster3"
         },
         {
+            "name": "shroom1"
+        },
+        {
+            "name": "shroom2"
+        },
+        {
+            "name": "shroom3"
+        },
+        {
+            "name": "glowshroom1"
+        },
+        {
+            "name": "glowshroom2"
+        },
+        {
+            "name": "glowshroom3"
+        },
+        {
+            "name": "brocflower1"
+        },
+        {
             "name": "brocflower1p"
         },
         {
@@ -128,7 +149,13 @@
             "name": "xander1p"
         },
         {
+            "name": "xander1"
+        },
+        {
             "name": "xander2p"
+        },
+        {
+            "name": "xander2"
         },
         {
             "name": "blightshroom1p"
@@ -242,10 +269,28 @@
             "name": "barrelc1"
         },
         {
+            "name": "barrelc1p"
+        },
+        {
             "name": "barrelc2"
         },
         {
+            "name": "barrelc2p"
+        },
+        {
+            "name": "barrelc3"
+        },
+        {
+            "name": "barrelc3p"
+        },
+        {
+            "name": "yucca1"
+        },
+        {
             "name": "yucca1p"
+        },
+        {
+            "name": "d_xander1"
         },
         {
             "name": "d_xander1p"
@@ -267,6 +312,15 @@
         },
         {
             "name": "d_ashrose1p"
+        },
+        {
+            "name": "flyamanita1"
+        },
+        {
+            "name": "pennybun1"
+        },
+        {
+            "name": "chanterelle1"
         },
         {
             "name": "mindshroom1"

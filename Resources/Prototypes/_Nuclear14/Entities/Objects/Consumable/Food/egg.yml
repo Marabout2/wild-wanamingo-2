@@ -211,6 +211,24 @@
     price: 1 # PH
 
 - type: entity
+  id: N14FoodEggNightstalkerFertilized
+  parent: N14FoodEggNightstalker
+  suffix: Fertilized, Nightstalker
+  components:
+  - type: WastelandSpawner
+    prototypes:
+    - N14MobNightstalkerCub
+    - Eggshells
+    intervalSeconds: 60
+    minimumEntitiesSpawned: 2
+    maximumEntitiesSpawned: 2
+    ignoreSpawnBlock: true # Forge-Change
+  - type: TimedDespawn #delete the egg after the chicken spawns
+    lifetime: 61
+  - type: StaticPrice # Forge-Change
+    price: 1 # PH
+
+- type: entity
   parent: N14FoodEggNightstalker
   id: N14CookedFoodEggNightstalkerBoiled
   name: boiled nightstalker egg

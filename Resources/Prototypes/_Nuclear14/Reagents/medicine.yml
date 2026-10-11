@@ -13,31 +13,31 @@
     Bloodstream:
       metabolismRate: 1.0
       effects:
-        - !type:AmbientDrugFlavorText
-          cooldownId: HealingMixtureAmbient
-          cooldown: 45
-          messageKeys:
-          - drug-ambience-healing-mixture-1
-          - drug-ambience-healing-mixture-2
-        - !type:HealthChange
-          damage:
-            types:
-              Heat: -2.25
-              Shock: -2.25
-              Cold: -2.25
-              Caustic: -2.25
-              Blunt: -3
-              Slash: -3
-              Piercing: -3
-              Asphyxiation: -1.5
-              Bloodloss: -1.5
-        - !type:ModifyBleed
-          amount: -2
-        - !type:Vomit
-          conditions:
-          - !type:ReagentCondition
-            reagent: HealingMixture
-            min: 30
+      - !type:AmbientDrugFlavorText
+        cooldownId: HealingMixtureAmbient
+        cooldown: 45
+        messageKeys:
+        - drug-ambience-healing-mixture-1
+        - drug-ambience-healing-mixture-2
+      - !type:HealthChange
+        damage:
+          types:
+            Heat: -2.25
+            Shock: -2.25
+            Cold: -2.25
+            Caustic: -2.25
+            Blunt: -3
+            Slash: -3
+            Piercing: -3
+            Asphyxiation: -1.5
+            Bloodloss: -1.5
+      - !type:ModifyBleed
+        amount: -2
+      - !type:Vomit
+        conditions:
+        - !type:ReagentCondition
+          reagent: HealingMixture
+          min: 30
 
 - type: reagent
   id: DirtyStimpak

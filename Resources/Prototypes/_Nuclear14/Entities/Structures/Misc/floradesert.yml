@@ -66,8 +66,8 @@
   name: bald tree
   description: "What? Even trees go bald."
   components:
-  - type: Sprite
-    sprite: Nuclear14/Structures/Misc/trees-ms.rsi
+  - type: Sprite  # MS13 art
+    sprite: MojaveSun/Objects/Decoration/Flora/trees.rsi
     state: bald
   - type: Fixtures
     fixtures:
